@@ -1,0 +1,14 @@
+@import "variables";
+@import "reset";
+
+:root {
+  font-size: 16px;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--main-bg-transparent) url(/texture_bg.jpg);
+  font: var(--body-font);
+}
+
+@import "main.responsive.scss";

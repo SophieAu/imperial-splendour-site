@@ -1,0 +1,19 @@
+$widescreen-breakpoint: 1440px;
+$tablet-breakpoint: 992px;
+$mobile-breakpoint: 768px;
+
+:root {
+  --header-footer-bg: #b19776;
+  --main-bg: #f9eeda;
+  --main-bg-transparent: #f9eeda99;
+
+  --body-font-family: "IM FELL English", Georgia, Times, serif;
+  --headline-font-family: "IM FELL English SC", Georgia, serif;
+
+  --headline-font: normal 3rem var(--headline-font-family);
+  --body-font: normal 1.5rem var(--body-font-family);
+
+  --max-body-width: 65rem;
+  --header-footer-height: 4.5rem;
+  --footer-mobile-height: 6.5rem;
+}

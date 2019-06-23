@@ -1,0 +1,20 @@
+@import "../styles/variables", "../styles/mixins";
+
+header {
+  @include header-footer;
+  position: fixed;
+  top: 0;
+
+  .header-logo {
+    height: 4rem;
+  }
+
+  .header-menu {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-column-gap: 4rem;
+
+    font: var(--headline-font);
+    font-size: 2.5rem;
+  }
+}

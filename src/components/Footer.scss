@@ -1,0 +1,35 @@
+@import "../styles/variables", "../styles/mixins";
+
+footer {
+  @include header-footer;
+  position: absolute;
+  bottom: 0;
+
+  .footer-credits {
+    padding-left: 2rem;
+  }
+
+  .footer-social-media-links {
+    > *:not(:last-child) {
+      padding-right: 1rem;
+    }
+
+    svg,
+    img {
+      height: 2.5rem;
+      fill: var(--main-bg);
+    }
+  }
+}
+
+@media (max-width: $tablet-breakpoint - 1) {
+  footer {
+    flex-direction: column;
+    height: 6.5rem;
+
+    .footer-social-media-links,
+    .footer-credits {
+      padding: 0.5rem 0;
+    }
+  }
+}

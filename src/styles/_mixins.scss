@@ -1,0 +1,15 @@
+@mixin header-footer {
+  background-color: var(--header-footer-bg);
+  background-image: url(/texture_headfoot.jpg);
+  box-shadow: 0 0 1.25rem 1rem rgba(142, 142, 142, 0.4);
+  box-shadow: 0 0 1.25rem 0.75rem rgba(0, 0, 0, 0.5);
+  z-index: 100;
+
+  height: var(--header-footer-height);
+  padding: 0 2.5rem 0 0.5rem;
+  width: calc(100vw - 0.5rem - 2.5rem);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
