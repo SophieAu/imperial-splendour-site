@@ -5,14 +5,18 @@ $mobile-breakpoint: 768px;
 :root {
   --header-footer-bg: #b19776;
   --main-bg: #f9eeda;
+  --white: #ffffff;
 
   --body-font-family: "IM FELL English", Georgia, Times, serif;
   --headline-font-family: "IM FELL English SC", Georgia, serif;
 
   --headline-font: normal 3rem var(--headline-font-family);
   --body-font: normal 1.5rem var(--body-font-family);
+  --button-font: normal 2.5rem / var(--download-button-height)
+    var(--headline-font-family);
 
   --max-body-width: 65rem;
   --header-footer-height: 4.5rem;
   --footer-mobile-height: 6.5rem;
+  --download-button-height: 6.25rem;
 }

@@ -1,0 +1,12 @@
+.btn-download {
+  background: no-repeat center/100% url(/texture_btn.png);
+  width: 18.125rem;
+  height: var(--download-button-height);
+
+  font: var(--button-font);
+  text-align: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
