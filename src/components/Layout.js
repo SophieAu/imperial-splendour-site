@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "./Header";
+import Header from "./ui/Header";
+import Footer from "./ui/Footer";
 import "../styles/main.scss";
-import Footer from "./Footer";
 
 const Layout = ({ children }) => (
   <>

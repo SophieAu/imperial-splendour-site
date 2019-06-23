@@ -1,5 +1,5 @@
 import React from "react";
-import Link, { ImageLink } from "./Link";
+import Link, { ImageLink } from "../Link";
 import "./Footer.scss";
 
 export default () => (

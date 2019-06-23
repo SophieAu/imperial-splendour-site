@@ -1,6 +1,6 @@
 import React from "react";
-import Link, { ImageLink } from "./Link";
-import Logo from "../assets/logo_header.png";
+import Link, { ImageLink } from "../Link";
+import Logo from "../../assets/logo_header.png";
 import "./Header.scss";
 
 export default () => (
