@@ -1,0 +1,38 @@
+.hero {
+  height: 62.5vw;
+  width: 100vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .hero-body {
+    padding-top: 2.5rem;
+    width: 100%;
+    flex: 1;
+
+    background: no-repeat bottom/100% url(/img/hero_bg.jpg);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+    .hero-logo {
+      width: 50vw;
+    }
+
+    .hero-text {
+      max-width: var(--max-body-width);
+      padding-bottom: 5rem;
+
+      font: var(--hero-font);
+      color: var(--white);
+    }
+  }
+
+  .hero-btn {
+    margin-top: calc(-1 * var(--download-button-height) / 2);
+  }
+}
