@@ -6,9 +6,18 @@
 }
 
 body {
-  min-height: 100vh;
-  background: var(--main-bg-transparent) url(/texture_bg.jpg);
+  background: var(--main-bg) url(/texture_bg.jpg);
   font: var(--body-font);
+}
+
+#___gatsby > * {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
 
 @import "main.responsive.scss";

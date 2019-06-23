@@ -2,8 +2,6 @@
 
 footer {
   @include header-footer;
-  position: absolute;
-  bottom: 0;
 
   .footer-credits {
     padding-left: 2rem;
