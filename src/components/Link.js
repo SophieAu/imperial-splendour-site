@@ -1,18 +1,19 @@
 import { Link as GatsbyLink } from "gatsby";
 import React from "react";
 
-const Link = ({ to, className, children }) =>
+const Link = ({ to, className, children, style }) =>
   /^http/.test(to) ? (
     <a
       className={className}
       href={to}
       target="_blank"
       rel="noopener noreferrer"
+      style={style}
     >
       {children}
     </a>
   ) : (
-    <GatsbyLink className={className} to={to}>
+    <GatsbyLink className={className} to={to} style={style}>
       {children}
     </GatsbyLink>
   );
