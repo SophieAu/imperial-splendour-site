@@ -2,6 +2,7 @@
 
 footer {
   @include header-footer;
+  height: var(--footer-height);
 
   .footer-credits {
     padding-left: 2rem;
@@ -23,7 +24,7 @@ footer {
 @media (max-width: $tablet-breakpoint - 1) {
   footer {
     flex-direction: column;
-    height: 6.5rem;
+    --footer-height: 6.5rem;
 
     .footer-social-media-links,
     .footer-credits {

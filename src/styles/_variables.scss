@@ -1,6 +1,7 @@
 $widescreen-breakpoint: 1440px;
 $tablet-breakpoint: 992px;
 $mobile-breakpoint: 768px;
+$mid-size: 1.75rem;
 
 :root {
   --header-footer-bg: #b19776;
@@ -15,9 +16,12 @@ $mobile-breakpoint: 768px;
   --button-font: normal 2.5rem / var(--download-button-height)
     var(--headline-font-family);
   --hero-font: normal 2.15rem var(--body-font-family);
+  --info-font: normal 1.75rem var(--body-font-family);
 
-  --max-body-width: 65rem;
-  --header-footer-height: 4.5rem;
+  --max-content-width: 65rem;
+  --max-body-width: 85rem;
+  --header-height: 4.5rem;
+  --footer-height: 4.5rem;
   --footer-mobile-height: 6.5rem;
   --download-button-height: 6.25rem;
 }

@@ -4,9 +4,10 @@ header {
   @include header-footer;
   position: fixed;
   top: 0;
+  height: var(--header-height);
 
   .header-logo {
-    height: 4rem;
+    height: 3.5rem;
   }
 
   .header-menu {
