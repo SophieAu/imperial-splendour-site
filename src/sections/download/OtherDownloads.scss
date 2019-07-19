@@ -1,0 +1,39 @@
+.other-downloads {
+  width: 100%;
+  max-width: var(--max-content-width);
+  margin-top: 2rem;
+
+  h2 {
+    margin: 0 0 1rem;
+  }
+
+  ul {
+    list-style: disc;
+    line-height: 2rem;
+    margin: 0 0 0 1rem;
+  }
+  li {
+    margin-bottom: 1rem;
+  }
+}
+
+.filehosts {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  div {
+    padding-right: 4rem;
+  }
+
+  div:last-child {
+    padding-right: 0;
+  }
+
+  img {
+    max-width: 16.25rem;
+    max-height: 3.125rem;
+  }
+}

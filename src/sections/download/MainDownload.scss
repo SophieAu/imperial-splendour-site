@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  max-width: var(--max-content-width);
+  margin: 2rem 0;
+}
+
+.requirements {
+  h2 {
+    margin: 0 0 1rem;
+  }
+
+  ul {
+    list-style: disc;
+    line-height: 2rem;
+    margin: 0 0 0 1rem;
+  }
+  li {
+    margin-bottom: 1rem;
+  }
+}
+
+.download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  p {
+    font-size: 1.25rem;
+    margin: 0.5rem 0 0;
+    text-align: center;
+    max-width: calc(var(--download-button-width) + 6rem);
+  }
+}
