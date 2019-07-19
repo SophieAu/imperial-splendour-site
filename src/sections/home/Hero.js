@@ -10,6 +10,6 @@ export default () => (
       <img className="hero-logo" src="/img/hero_logo.png" alt="" />
       <div className="hero-text">{HERO_TEXT}</div>
     </div>
-    <DownloadButton className="hero-btn" />
+    <DownloadButton linkTo="/download" className="hero-btn" />
   </section>
 );
