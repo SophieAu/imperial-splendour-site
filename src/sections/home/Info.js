@@ -18,16 +18,16 @@ const InfoBoxes = [
 ];
 
 export default () => (
-  <section class="info-boxes">
+  <section className="info-boxes">
     {InfoBoxes.map((box, i) =>
       i % 2 ? (
         <>
           <img className="info-image" src={box.image} alt="" />
-          <div class="info-text">{box.text}</div>
+          <div className="info-text">{box.text}</div>
         </>
       ) : (
         <>
-          <div class="info-text">{box.text}</div>
+          <div className="info-text">{box.text}</div>
           <img className="info-image" src={box.image} alt="" />
         </>
       )

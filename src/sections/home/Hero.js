@@ -6,9 +6,9 @@ const HERO_TEXT = `It is the year 1783. The American Revolution has shown the wo
 
 export default () => (
   <section className="hero">
-    <div class="hero-body">
+    <div className="hero-body">
       <img className="hero-logo" src="/img/hero_logo.png" alt="" />
-      <div class="hero-text">{HERO_TEXT}</div>
+      <div className="hero-text">{HERO_TEXT}</div>
     </div>
     <DownloadButton className="hero-btn" />
   </section>

@@ -8,7 +8,7 @@ export default () => (
     <ImageLink to="/" title="Homepage">
       <img className="header-logo" src={Logo} alt="Imperial Splendour Logo" />
     </ImageLink>
-    <div class="header-menu">
+    <div className="header-menu">
       <Link to="/download">Download</Link>
       <Link to="/blog">Blog</Link>
       <Link to="/about">About</Link>
