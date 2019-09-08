@@ -36,6 +36,22 @@ module.exports = {
         display: `minimal-ui`,
         icon: `favicon.png` // This path is relative to the root of the site.
       }
+    },
+    {
+      resolve: `gatsby-plugin-csp`,
+      options: {
+        disableOnDev: true,
+        directives: {
+          "default-src": "'none'",
+          "img-src": "'self' https://*",
+          "worker-src": "'none'",
+          "frame-src":
+            "'self' https://sketchfab.com/models/ https://www.youtube-nocookie.com/embed/",
+          "script-src": "'self' https://static.sketchfab.com/static/",
+          "style-src": "'self' https://fonts.googleapis.com/css",
+          "font-src": "'self' https://fonts.gstatic.com/s/"
+        }
+      }
     }
   ]
 };
