@@ -23,8 +23,8 @@ const Download = () => (
 );
 
 export default () => (
-  <div className="container">
+  <section className="container">
     <Requirements />
     <Download />
-  </div>
+  </section>
 );

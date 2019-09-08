@@ -21,3 +21,8 @@ export const download = {
     ]
   }
 };
+
+export const newsletterSignup = {
+  text: "Want to stay informed when there's a new patch or release? Subscribe to our newsletter:",
+  emailPlaceholder: "george3@british-empire.co.uk",
+}

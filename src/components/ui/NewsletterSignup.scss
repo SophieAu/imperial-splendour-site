@@ -1,0 +1,30 @@
+.newsletter {
+  text-align: center;
+  line-height: 2rem;
+  margin-bottom: 5rem;
+
+  p {
+    max-width: 40rem;
+  }
+}
+
+form {
+  display: flex;
+
+  input[type="email"] {
+    width: 25rem;
+    height: 5rem;
+    box-sizing: border-box;
+    padding-left: 1.75rem;
+    // font: 1rem $body-font;
+    background-image: url(/texture_input.png);
+    box-shadow: inset 0 0 4rem 0.25rem rgba(142, 142, 142, 0.2);
+    box-shadow: inset 0 0 1.25rem 0.625rem rgba(142, 142, 142, 0.5);
+    box-shadow: inset 0 0 0.5rem 0.25rem rgba(142, 142, 142, 0.8);
+  }
+
+  input {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+  }
+}
