@@ -8,7 +8,7 @@ const MailChimpForm = () => (
       action="https://imperialsplendour.us19.list-manage.com/subscribe/post?u=d68145bb4360d40f488bd3c5e&amp;id=263c850834"
       method="post"
       target="_blank"
-      novalidate
+      noValidate
     >
       <input
         type="email"
@@ -21,12 +21,12 @@ const MailChimpForm = () => (
         <input
           type="text"
           name="b_d68145bb4360d40f488bd3c5e_263c850834"
-          tabindex="-1"
+          tabIndex={-1}
           value=""
         />
       </div>
       <input
-        class="btn-download"
+        className="btn-download"
         type="submit"
         value="Subscribe"
         name="subscribe"
@@ -36,7 +36,7 @@ const MailChimpForm = () => (
 );
 
 export default () => (
-  <div class="newsletter">
+  <div className="newsletter">
     <p>{strings.text}</p>
     <MailChimpForm />
   </div>

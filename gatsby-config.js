@@ -1,5 +1,6 @@
 module.exports = {
   plugins: [
+    `gatsby-plugin-typescript`,
     `gatsby-plugin-feed`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
