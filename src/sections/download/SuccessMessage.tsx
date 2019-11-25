@@ -8,7 +8,7 @@ import { download } from "../../strings";
 
 export default () => (
   <section className="download-confirm">
-    <h2>You can download the files via the following file hosts:</h2>
+    <h2>{download.linkInfo}</h2>
     <div className="filehosts">
       <Link to="https://www.moddb.com/mods/imperial-splendour/downloads/reupload-rotr-119b-full">
         <img
