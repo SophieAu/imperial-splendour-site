@@ -1,6 +1,7 @@
 import React from "react";
-import Link, { ImageLink } from "../Link";
+import Link from "../Link";
 import "./Footer.scss";
+import ImageLink from "../ImageLink";
 
 export default () => (
   <footer className="footer">

@@ -24,22 +24,4 @@ const Link: React.FC<Props> = ({ to, className, children, style }) =>
     </GatsbyLink>
   );
 
-interface ImageProps {
-  to: string;
-  title: string;
-  className?: string;
-  style?: React.CSSProperties;
-}
-
-export const ImageLink: React.FC<ImageProps> = props => {
-  const { to, title, className, children } = props;
-
-  return (
-    <Link className={className} to={to} style={{ lineHeight: 0 }}>
-      <span style={{ display: "none" }}>{title}</span>
-      {children}
-    </Link>
-  );
-};
-
 export default Link;
