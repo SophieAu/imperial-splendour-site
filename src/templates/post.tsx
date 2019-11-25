@@ -9,7 +9,7 @@
 //     <HelmetData postTitle={post.frontmatter.title} />
 //     <div id="article">
 //       <Frontmatter frontmatter={post.frontmatter} />
-//       <PostBody body={post.html} />
+//       <div className="post-body" dangerouslySetInnerHTML={{ __html: post.html }} />
 //       <hr />
 //     </div>
 //   </Layout>
@@ -17,10 +17,10 @@
 
 // const HelmetData = ({ postTitle }) => (
 //   <Helmet>
-//     <title>{postTitle} | Sophie Au</title>
+//     <title>{`${postTitle} | Sophie Au`}</title>
 //     <meta
 //       name="description"
-//       content={"Homepage of Sophie Au | Blogpost about " + postTitle}
+//       content={`Homepage of Sophie Au | Blogpost about ${postTitle}`}
 //     />
 //   </Helmet>
 // );
@@ -41,13 +41,9 @@
 
 // const Crosspost = ({ site, url, prefix }) => (
 //   <div className="crosspost">
-//     This is a crosspost from {prefix && "the "}
-//     <a href={url}>{site}</a>.
+//     {`This is a crosspost from ${prefix && "the "}`}
+//     <a href={url}>{site}</a>{`.`}
 //   </div>
-// );
-
-// const PostBody = ({ body }) => (
-//   <div className="post-body" dangerouslySetInnerHTML={{ __html: body }} />
 // );
 
 // export const query = graphql`
