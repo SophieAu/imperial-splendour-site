@@ -2,12 +2,14 @@ import './index.scss';
 
 import React from 'react';
 
+import heroLogo from '../../static/img/hero_logo.png';
 import Layout from '../components/Layout';
 import DownloadButton from '../components/ui/DownloadButton';
+import { slugs } from '../config';
 import { home } from '../strings';
 
 const Home = () => (
-  <Layout>
+  <Layout title={home.pageTitle} description={home.pageDescription} slug={slugs.home}>
     <Hero />
     <Info />
   </Layout>
@@ -16,28 +18,25 @@ const Home = () => (
 const Hero = () => (
   <section className="hero">
     <div className="hero-body">
-      <img className="hero-logo" src="/img/hero_logo.png" alt="" />
+      <img className="hero-logo" src={heroLogo} alt={home.heroLogoAlt} />
       <div className="hero-text">{home.heroText}</div>
     </div>
-    <DownloadButton linkTo="/download" className="hero-btn" />
+    <DownloadButton linkTo={slugs.downloadIndex} className="hero-btn" />
   </section>
 );
 
 const Info = () => (
   <section className="info-boxes">
-    {home.infoBoxes.map((box, i) =>
-      i % 2 ? (
-        <>
-          <img className="info-image" src={box.image} alt="" />
-          <div className="info-text">{box.text}</div>
-        </>
-      ) : (
-        <>
-          <div className="info-text">{box.text}</div>
-          <img className="info-image" src={box.image} alt="" />
-        </>
-      )
-    )}
+    {home.infoBoxes.map((box, i) => (
+      <>
+        <img
+          className={`info-image-${i % 2 ? 'even' : 'odd'}`}
+          src={box.image}
+          alt={box.imageAlt}
+        />
+        <div className="info-text">{box.text}</div>
+      </>
+    ))}
   </section>
 );
 

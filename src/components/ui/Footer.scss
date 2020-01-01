@@ -1,4 +1,4 @@
-@import "../../styles/variables", "../../styles/mixins";
+@import '../../styles/variables', '../../styles/mixins';
 
 footer {
   @include header-footer;
@@ -24,7 +24,7 @@ footer {
 @media (max-width: $tablet-breakpoint - 1) {
   footer {
     flex-direction: column;
-    --footer-height: 6.5rem;
+    height: auto;
 
     .footer-social-media-links,
     .footer-credits {

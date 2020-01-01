@@ -9,6 +9,7 @@
   width: calc(100vw - 0.5rem - 2.5rem);
 
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }

@@ -1,17 +1,24 @@
 import '../styles/main.scss';
 
 import React from 'react';
-import { Helmet } from 'react-helmet';
 
+import SEO from './SEO';
 import Footer from './ui/Footer';
 import Header from './ui/Header';
 
-const Layout: React.FC<{ children?: React.ReactNode }> = ({ children }) => (
+interface Props {
+  title: string;
+  description: string;
+  slug: string;
+  children?: React.ReactNode;
+}
+
+const Layout: React.FC<Props> = ({ title, description, slug, children }) => (
   <>
-    <Helmet>
+    <SEO title={title} description={description} slug={slug}>
       <link href="https://fonts.googleapis.com/css?family=IM+Fell+English" rel="stylesheet" />
       <link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC" rel="stylesheet" />
-    </Helmet>
+    </SEO>
     <Header />
     <main>{children}</main>
     <Footer />

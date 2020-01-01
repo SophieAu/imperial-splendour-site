@@ -1,6 +1,8 @@
 $widescreen-breakpoint: 1440px;
+$desktop-breakpoint: 1024px;
 $tablet-breakpoint: 992px;
 $mobile-breakpoint: 768px;
+$small-mobile-breakpoint: 480px;
 $mid-size: 1.75rem;
 
 :root {
@@ -8,13 +10,12 @@ $mid-size: 1.75rem;
   --main-bg: #f9eeda;
   --white: #ffffff;
 
-  --body-font-family: "IM FELL English", Georgia, Times, serif;
-  --headline-font-family: "IM FELL English SC", Georgia, serif;
+  --body-font-family: 'IM FELL English', Georgia, Times, serif;
+  --headline-font-family: 'IM FELL English SC', Georgia, serif;
 
   --headline-font: normal 3rem var(--headline-font-family);
   --body-font: normal 1.5rem var(--body-font-family);
-  --button-font: normal 2.5rem / var(--download-button-height)
-    var(--headline-font-family);
+  --button-font: normal 2.5rem / var(--download-button-height) var(--headline-font-family);
   --hero-font: normal 2.15rem var(--body-font-family);
   --info-font: normal 1.75rem var(--body-font-family);
 
