@@ -1,4 +1,4 @@
-@import "../../styles/variables";
+@import '../styles/variables';
 
 .hero {
   height: 62.5vw;
@@ -39,4 +39,24 @@
   .hero-btn {
     margin-top: calc(-1 * var(--download-button-height) / 2);
   }
+}
+
+.info-boxes {
+  max-width: var(--max-body-width);
+  margin: 6rem;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 4rem;
+  align-items: center;
+}
+
+.info-text {
+  grid-column: span 2;
+  font: var(--info-font);
+}
+
+.info-image {
+  grid-column: span 3;
 }
