@@ -1,8 +1,10 @@
-import React from "react";
-import "./Info.scss";
-import { home } from "../../strings";
+import './Info.scss';
 
-export default () => (
+import React from 'react';
+
+import { home } from '../../strings';
+
+const Info = () => (
   <section className="info-boxes">
     {home.infoBoxes.map((box, i) =>
       i % 2 ? (
@@ -19,3 +21,5 @@ export default () => (
     )}
   </section>
 );
+
+export default Info;

@@ -1,10 +1,11 @@
-import React from "react";
-import Link from "../../components/Link";
+import './OtherDownloads.scss';
 
-import "./OtherDownloads.scss";
-import { download } from "../../strings";
+import React from 'react';
 
-export default () => (
+import Link from '../../components/Link';
+import { download } from '../../strings';
+
+const OtherDownloads = () => (
   <section className="other-downloads">
     <h2>{download.other.title}</h2>
     <ul>
@@ -16,3 +17,5 @@ export default () => (
     </ul>
   </section>
 );
+
+export default OtherDownloads;

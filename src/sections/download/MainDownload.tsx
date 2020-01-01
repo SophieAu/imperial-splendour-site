@@ -1,8 +1,9 @@
-import React from "react";
-import DownloadButton from "../../components/ui/DownloadButton";
+import './MainDownload.scss';
 
-import "./MainDownload.scss";
-import { download } from "../../strings";
+import React from 'react';
+
+import DownloadButton from '../../components/ui/DownloadButton';
+import { download } from '../../strings';
 
 const Requirements = () => (
   <div className="requirements">
@@ -22,9 +23,11 @@ const Download = () => (
   </div>
 );
 
-export default () => (
+const MainDownload = () => (
   <section className="container">
     <Requirements />
     <Download />
   </section>
 );
+
+export default MainDownload;

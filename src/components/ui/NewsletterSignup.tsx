@@ -1,6 +1,8 @@
-import React from "react";
-import "./NewsletterSignup.scss";
-import { newsletterSignup as strings } from "../../strings";
+import './NewsletterSignup.scss';
+
+import React from 'react';
+
+import { newsletterSignup as strings } from '../../strings';
 
 const MailChimpForm = () => (
   <div id="mc_embed_signup">
@@ -10,34 +12,20 @@ const MailChimpForm = () => (
       target="_blank"
       noValidate
     >
-      <input
-        type="email"
-        value=""
-        name="EMAIL"
-        placeholder={strings.emailPlaceholder}
-        required
-      />
+      <input type="email" value="" name="EMAIL" placeholder={strings.emailPlaceholder} required />
       <div id="newsletter-input" aria-hidden="true">
-        <input
-          type="text"
-          name="b_d68145bb4360d40f488bd3c5e_263c850834"
-          tabIndex={-1}
-          value=""
-        />
+        <input type="text" name="b_d68145bb4360d40f488bd3c5e_263c850834" tabIndex={-1} value="" />
       </div>
-      <input
-        className="btn-download"
-        type="submit"
-        value="Subscribe"
-        name="subscribe"
-      />
+      <input className="btn-download" type="submit" value="Subscribe" name="subscribe" />
     </form>
   </div>
 );
 
-export default () => (
+const NewsletterSignup = () => (
   <div className="newsletter">
     <p>{strings.text}</p>
     <MailChimpForm />
   </div>
 );
+
+export default NewsletterSignup;

@@ -1,6 +1,8 @@
-import React from "react";
-import "./DownloadButton.scss";
-import Link from "../Link";
+import './DownloadButton.scss';
+
+import React from 'react';
+
+import Link from '../Link';
 
 interface Props {
   linkTo: string;
@@ -8,7 +10,7 @@ interface Props {
 }
 
 const DownloadButton: React.FC<Props> = ({ linkTo, className }) => (
-  <Link to={linkTo} className={`btn-download ${className ? className : ""}`}>
+  <Link to={linkTo} className={`btn-download ${className ? className : ''}`}>
     Download
   </Link>
 );

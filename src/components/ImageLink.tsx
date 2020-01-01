@@ -1,5 +1,6 @@
-import React from "react";
-import Link from "./Link";
+import React from 'react';
+
+import Link from './Link';
 
 interface Props {
   to: string;
@@ -10,7 +11,7 @@ interface Props {
 
 const ImageLink: React.FC<Props> = ({ to, title, className, children }) => (
   <Link className={className} to={to} style={{ lineHeight: 0 }}>
-    <span style={{ display: "none" }}>{title}</span>
+    <span style={{ display: 'none' }}>{title}</span>
     {children}
   </Link>
 );

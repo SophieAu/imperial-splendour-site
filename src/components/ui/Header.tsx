@@ -1,10 +1,12 @@
-import React from "react";
-import Link from "../Link";
-import logo from "../../assets/logo_header.png";
-import "./Header.scss";
-import ImageLink from "../ImageLink";
+import './Header.scss';
 
-export default () => (
+import React from 'react';
+
+import logo from '../../assets/logo_header.png';
+import ImageLink from '../ImageLink';
+import Link from '../Link';
+
+const Header = () => (
   <header>
     <ImageLink to="/" title="Homepage">
       <img className="header-logo" src={logo} alt="Imperial Splendour Logo" />
@@ -16,3 +18,5 @@ export default () => (
     </div>
   </header>
 );
+
+export default Header;

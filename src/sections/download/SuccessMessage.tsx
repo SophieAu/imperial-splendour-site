@@ -1,12 +1,13 @@
-import React from "react";
-import Link from "../../components/Link";
-import gDrive from "../../assets/download_googledrive.svg";
-import mediaFire from "../../assets/download_mediafire.svg";
+import './SuccessMessage.scss';
 
-import "./SuccessMessage.scss";
-import { download } from "../../strings";
+import React from 'react';
 
-export default () => (
+import gDrive from '../../assets/download_googledrive.svg';
+import mediaFire from '../../assets/download_mediafire.svg';
+import Link from '../../components/Link';
+import { download } from '../../strings';
+
+const SuccessMessage = () => (
   <section className="download-confirm">
     <h2>{download.linkInfo}</h2>
     <div className="filehosts">
@@ -25,3 +26,5 @@ export default () => (
     </div>
   </section>
 );
+
+export default SuccessMessage;

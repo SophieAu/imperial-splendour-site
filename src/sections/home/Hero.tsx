@@ -1,10 +1,11 @@
-import React from "react";
-import DownloadButton from "../../components/ui/DownloadButton";
+import './Hero.scss';
 
-import { home } from "../../strings";
-import "./Hero.scss";
+import React from 'react';
 
-export default () => (
+import DownloadButton from '../../components/ui/DownloadButton';
+import { home } from '../../strings';
+
+const Hero = () => (
   <section className="hero">
     <div className="hero-body">
       <img className="hero-logo" src="/img/hero_logo.png" alt="" />
@@ -13,3 +14,5 @@ export default () => (
     <DownloadButton linkTo="/download" className="hero-btn" />
   </section>
 );
+
+export default Hero;
