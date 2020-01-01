@@ -10,8 +10,7 @@ interface Props {
 }
 
 const ImageLink: React.FC<Props> = ({ to, title, className, children }) => (
-  <Link className={className} to={to} style={{ lineHeight: 0 }}>
-    <span style={{ display: 'none' }}>{title}</span>
+  <Link className={className} to={to} style={{ lineHeight: 0 }} aria-label={title}>
     {children}
   </Link>
 );
