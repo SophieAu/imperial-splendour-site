@@ -1,5 +1,5 @@
-@import "variables";
-@import "reset";
+@import 'variables';
+@import 'reset';
 
 :root {
   font-size: 16px;
@@ -32,9 +32,13 @@ h2 {
   font: var(--headline-font);
 }
 
+a:hover {
+  color: var(--image-link-hover);
+}
+
 #newsletter-input {
   position: absolute;
   left: -5000px;
 }
 
-@import "main.responsive.scss";
+@import 'main.responsive.scss';
