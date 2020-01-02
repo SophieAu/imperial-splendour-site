@@ -17,7 +17,6 @@
   "author": "Sophie Au <sophie@sophieau.com>",
   "license": "MIT",
   "dependencies": {
-    "regenerator-transform": "^0.13.3",
     "gatsby": "^2.18.12",
     "gatsby-plugin-csp": "^1.1.3",
     "gatsby-plugin-feed": "^2.3.22",
