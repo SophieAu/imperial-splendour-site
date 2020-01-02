@@ -54,6 +54,10 @@ export const home = {
   ],
 };
 
+export const downloadButton = {
+  buttonText: 'Download',
+};
+
 export const footer = {
   creditsCopyright: ({ year }: { year: number }) => `© ${year},`,
   creditsSophie: 'Sophie Au',
