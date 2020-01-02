@@ -39,6 +39,15 @@ export const downloadRotR = {
   helpPost: '.',
 };
 
+export const downloadLauncher = {
+  pageTitle: 'Imperial Splendour | Download the Rise of the Republic Launcher',
+  pageDescription:
+    'Download and play Imperial Splendour to have the best Empire: Total War experience possible.',
+  confirmPreOne: 'Your download should be starting in a second.',
+  confirmPreTwo: "If it doesn't,",
+  confirmLink: 'download manually',
+};
+
 export const newsletterSignup = {
   text: "Want to stay informed when there's a new patch or release? Subscribe to our newsletter:",
   emailPlaceholder: 'george3@british-empire.co.uk',
