@@ -62,6 +62,14 @@ export const downloadButton = {
   buttonText: 'Download',
 };
 
+export const header = {
+  home: 'Homepage',
+  logoAlt: 'Imperial Splendour Logo',
+  download: 'Download',
+  about: 'About',
+  blog: 'Blog',
+};
+
 export const footer = {
   creditsCopyright: ({ year }: { year: number }) => `© ${year},`,
   creditsSophie: 'Sophie Au',
