@@ -33,7 +33,12 @@ h2 {
 }
 
 a:hover {
-  color: var(--image-link-hover);
+  color: var(--link-hover);
+
+  > * {
+    opacity: 0.5;
+    fill: var(--link-hover);
+  }
 }
 
 #newsletter-input {

@@ -11,7 +11,7 @@ interface Props {
 }
 
 const DownloadButton: React.FC<Props> = ({ linkTo, className }) => (
-  <Link to={linkTo} className={`btn-download ${className ? className : ''}`}>
+  <Link to={linkTo} className={`btn-download${className ? ` ${className}` : ''}`}>
     {downloadButton.buttonText}
   </Link>
 );

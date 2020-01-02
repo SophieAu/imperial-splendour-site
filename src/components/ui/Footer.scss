@@ -31,11 +31,6 @@ footer {
     img {
       height: 2.5rem;
       fill: var(--main-bg);
-
-      &:hover {
-        opacity: 0.5;
-        fill: var(--image-link-hover);
-      }
     }
   }
 }
