@@ -9,7 +9,11 @@ import { paths, slugs } from '../../config';
 import { download } from '../../strings';
 
 const DownloadIndex = () => (
-  <Layout slug={slugs.downloadIndex} description={'tst'} title={'test'}>
+  <Layout
+    slug={slugs.downloadIndex}
+    description={download.pageDescription}
+    title={download.pageTitle}
+  >
     <MainDownload />
     <OtherDownloads />
   </Layout>

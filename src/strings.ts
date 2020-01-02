@@ -2,6 +2,9 @@ import { paths } from './config';
 import { InfoBox } from './types';
 
 export const download = {
+  pageTitle: 'Imperial Splendour | Download',
+  pageDescription:
+    'Download and play Imperial Splendour to have the best Empire: Total War experience possible.',
   requirements: {
     title: 'Requirements',
     list: [
