@@ -29,6 +29,13 @@ export const download = {
   linkInfo: 'You can download the files via the following file hosts:',
 };
 
+export const downloadRotR = {
+  pageTitle: 'Imperial Splendour | Download',
+  pageDescription:
+    'Download and play Imperial Splendour to have the best Empire: Total War experience possible.',
+  imageLinkAlt: ({ platform }: { platform: string }) => `"Download RotR 1.1.9b on ${platform}`,
+};
+
 export const newsletterSignup = {
   text: "Want to stay informed when there's a new patch or release? Subscribe to our newsletter:",
   emailPlaceholder: 'george3@british-empire.co.uk',

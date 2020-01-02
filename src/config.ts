@@ -29,3 +29,9 @@ export const contributors = {
   sophie: 'https://sophieau.com',
   malte: 'https://github.com/QuintusHortensiusHortalus',
 };
+
+export const downloadLinks = {
+  googleDrive: 'https://drive.google.com/file/d/1hGwMR9gK2Fw_WJBTMV5vlB0rayqP3SPO/view?usp=sharing',
+  mediaFire: 'https://www.mediafire.com/file/a3acl0132aig3dk/RotR_1.1.9b_full.zip/file',
+  modDB: 'https://www.moddb.com/mods/imperial-splendour/downloads/reupload-rotr-119b-full',
+};
