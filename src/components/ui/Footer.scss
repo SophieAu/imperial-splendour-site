@@ -7,8 +7,12 @@ footer {
   .footer-credits {
     margin: 0;
     padding-left: 2rem;
-    a:hover {
-      text-decoration: underline;
+
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 

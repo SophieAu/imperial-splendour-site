@@ -32,12 +32,15 @@ h2 {
   font: var(--headline-font);
 }
 
-a:hover {
-  color: var(--link-hover);
+a {
+  text-decoration: underline;
+  &:hover {
+    color: var(--link-hover);
 
-  > * {
-    opacity: 0.5;
-    fill: var(--link-hover);
+    > * {
+      opacity: 0.5;
+      fill: var(--link-hover);
+    }
   }
 }
 
