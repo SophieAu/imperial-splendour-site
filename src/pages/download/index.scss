@@ -1,56 +1,62 @@
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+@import '../../styles/variables';
 
+.container,
+.other-downloads {
   width: 100%;
   max-width: var(--max-content-width);
-  margin: 2rem 0;
-}
 
-.requirements {
-  h2 {
+  h2,
+  ul,
+  li {
     margin: 0 0 1rem;
   }
 
   ul {
     list-style: disc;
     line-height: 2rem;
-    margin: 0 0 0 1rem;
-  }
-  li {
-    margin-bottom: 1rem;
   }
 }
 
-.download {
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding-top: 0.5rem;
 
-  p {
-    font-size: 1.25rem;
-    margin: 0.5rem 0 0;
-    text-align: center;
-    max-width: calc(var(--download-button-width) + 6rem);
+  .download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      font-size: 1.25rem;
+      margin: 0.5rem 0 0;
+      text-align: center;
+      max-width: calc(var(--download-button-width) + 6rem);
+    }
   }
 }
 
 .other-downloads {
-  width: 100%;
-  max-width: var(--max-content-width);
-  margin-top: 2rem;
+  margin: 2rem 0;
 
-  h2 {
-    margin: 0 0 1rem;
+  a {
+    text-decoration: underline;
   }
+}
 
-  ul {
-    list-style: disc;
-    line-height: 2rem;
-    margin: 0 0 0 1rem;
+@media (min-width: $tablet-breakpoint +1) {
+  .container {
+    margin: 2rem 0;
+    justify-content: space-between;
+    align-items: center;
   }
-  li {
-    margin-bottom: 1rem;
+}
+
+@media (max-width: $tablet-breakpoint) {
+  .container {
+    flex-direction: column-reverse;
+
+    > * {
+      margin: 2rem 0;
+    }
   }
 }

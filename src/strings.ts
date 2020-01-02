@@ -1,3 +1,4 @@
+import { paths } from './config';
 import { InfoBox } from './types';
 
 export const download = {
@@ -5,8 +6,8 @@ export const download = {
     title: 'Requirements',
     list: [
       'Empire: Total War',
-      'at least 10GB hard drive space',
-      'to use the launcher: at least Windows 7',
+      'At least 10GB hard drive space',
+      'To use the launcher: at least Windows 7',
     ],
   },
   main: {
@@ -17,8 +18,8 @@ export const download = {
     title: 'Other Downloads',
     list: [
       {
-        link: '/download/launcher',
-        description: 'Launcher Only',
+        link: paths.downloadLauncher,
+        description: 'Launcher only',
       },
     ],
   },

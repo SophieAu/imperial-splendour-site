@@ -5,10 +5,11 @@ import React from 'react';
 import Layout from '../../components/Layout';
 import Link from '../../components/Link';
 import DownloadButton from '../../components/ui/DownloadButton';
+import { paths, slugs } from '../../config';
 import { download } from '../../strings';
 
 const DownloadIndex = () => (
-  <Layout>
+  <Layout slug={slugs.downloadIndex} description={'tst'} title={'test'}>
     <MainDownload />
     <OtherDownloads />
   </Layout>
@@ -25,7 +26,7 @@ const MainDownload = () => (
       </ul>
     </div>
     <div className="download">
-      <DownloadButton linkTo="/download/rotr" />
+      <DownloadButton linkTo={paths.downloadRotR} />
       <p>{download.main.info}</p>
     </div>
   </section>
