@@ -53,3 +53,11 @@ export const home = {
     },
   ],
 };
+
+export const footer = {
+  creditsCopyright: ({ year }: { year: number }) => `© ${year},`,
+  creditsSophie: 'Sophie Au',
+  creditsAnd: 'and',
+  creditsMalte: 'Malte Lippmann',
+  socialImgAlt: ({ platform }: { platform: string }) => `Imperial Splendour on ${platform}`,
+};

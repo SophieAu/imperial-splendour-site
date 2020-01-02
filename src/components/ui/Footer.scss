@@ -5,11 +5,24 @@ footer {
   height: var(--footer-height);
 
   .footer-credits {
+    margin: 0;
     padding-left: 2rem;
+    a:hover {
+      text-decoration: underline;
+    }
   }
 
   .footer-social-media-links {
     padding-right: 2rem;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+
+    > *,
+    > * > a {
+      display: block;
+    }
+
     > *:not(:last-child) {
       padding-right: 1rem;
     }
@@ -18,6 +31,11 @@ footer {
     img {
       height: 2.5rem;
       fill: var(--main-bg);
+
+      &:hover {
+        opacity: 0.5;
+        fill: var(--image-link-hover);
+      }
     }
   }
 }
