@@ -4,11 +4,12 @@ import React from 'react';
 
 import gDrive from '../../assets/download_googledrive.svg';
 import mediaFire from '../../assets/download_mediafire.svg';
+import ImageLink from '../../components/ImageLink';
 import Layout from '../../components/Layout';
 import Link from '../../components/Link';
 import NewsletterSignup from '../../components/ui/NewsletterSignup';
 import { downloadLinks, slugs } from '../../config';
-import { download, downloadRotR } from '../../strings';
+import { downloadRotR } from '../../strings';
 
 const DownloadRotR = () => (
   <Layout
@@ -17,21 +18,32 @@ const DownloadRotR = () => (
     slug={slugs.downloadRotR}
   >
     <section className="download-confirm">
-      <h2>{download.linkInfo}</h2>
+      <h2>{downloadRotR.linkInfo}</h2>
       <div className="filehosts">
-        <Link to={downloadLinks.modDB}>
-          <img
-            src="https://button.moddb.com/download/medium/169793.png"
-            alt={downloadRotR.imageLinkAlt({ platform: 'Mod DB' })}
-          />
-        </Link>
-        <Link to={downloadLinks.mediaFire}>
-          <img src={mediaFire} alt={downloadRotR.imageLinkAlt({ platform: 'Mediafire' })} />
-        </Link>
-        <Link to={downloadLinks.googleDrive}>
-          <img src={gDrive} alt={downloadRotR.imageLinkAlt({ platform: 'Google Drive' })} />
-        </Link>
+        <ImageLink
+          to={downloadLinks.modDB}
+          title={downloadRotR.imageLinkAlt({ platform: 'Mod DB' })}
+        >
+          <img src="https://button.moddb.com/download/medium/169793.png" alt={'Mod DB'} />
+        </ImageLink>
+        <ImageLink
+          to={downloadLinks.mediaFire}
+          title={downloadRotR.imageLinkAlt({ platform: 'Mediafire' })}
+        >
+          <img src={mediaFire} alt={'Mediafire'} />
+        </ImageLink>
+        <ImageLink
+          to={downloadLinks.googleDrive}
+          title={downloadRotR.imageLinkAlt({ platform: 'Google Drive' })}
+        >
+          <img src={gDrive} alt={'Google Drive'} />
+        </ImageLink>
       </div>
+      <p>
+        {`${downloadRotR.helpPre} `}
+        <Link to={downloadLinks.tutorial}>{downloadRotR.helpLink}</Link>
+        {downloadRotR.helpPost}
+      </p>
     </section>
     <NewsletterSignup />
   </Layout>

@@ -26,14 +26,17 @@ export const download = {
       },
     ],
   },
-  linkInfo: 'You can download the files via the following file hosts:',
 };
 
 export const downloadRotR = {
-  pageTitle: 'Imperial Splendour | Download',
+  pageTitle: 'Imperial Splendour | Download Rise of the Republic',
   pageDescription:
     'Download and play Imperial Splendour to have the best Empire: Total War experience possible.',
+  linkInfo: 'You can download the files via the following file hosts:',
   imageLinkAlt: ({ platform }: { platform: string }) => `"Download RotR 1.1.9b on ${platform}`,
+  helpPre: ' If you need help, check out the',
+  helpLink: 'installation tutorial',
+  helpPost: '.',
 };
 
 export const newsletterSignup = {
