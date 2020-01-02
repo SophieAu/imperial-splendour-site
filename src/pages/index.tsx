@@ -7,7 +7,7 @@ import Layout from '../components/Layout';
 import DownloadButton from '../components/ui/DownloadButton';
 import { paths, slugs } from '../config';
 import { home } from '../strings';
-import { InfoBox } from '../types';
+import { InfoBox as InfoBoxType } from '../types';
 
 const Home = () => (
   <Layout title={home.pageTitle} description={home.pageDescription} slug={slugs.home}>
@@ -26,7 +26,7 @@ const Home = () => (
   </Layout>
 );
 
-const InfoBox: React.FC<{ box: InfoBox; i: number }> = ({ box, i }) => (
+const InfoBox: React.FC<{ box: InfoBoxType; i: number }> = ({ box, i }) => (
   <>
     <img className={`info-image-${i % 2 ? 'even' : 'odd'}`} src={box.image} alt={box.imageAlt} />
     <p className="info-text">{box.text}</p>
