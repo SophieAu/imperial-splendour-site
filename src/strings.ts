@@ -81,6 +81,27 @@ export const home = {
   infoBoxes,
 };
 
+export const about = {
+  pageTitle: 'About | Imperial Splendour',
+  pageDescription:
+    'Imperial Splendour attempts to create the best Empire: Total War experience possible without destroying the essence of the game.',
+  text:
+    "Play Empire: Total War the way it should have been. The historically accurate visuals and a soundtrack of contemporary composers transport you into the time of the revolutionary wars. Trade with the historical factions, go to war with historical generals, command armies in historically accurate uniforms. But don't forget: A reworked Campaign and Battle AI make the Great Campaign more challenging. It will not be easy for you to impose onto the world your Imperial Splendour.",
+  contributorTitle: 'Contributors',
+  contributors: [
+    { name: 'PikeStance', avatar: 'pike' },
+    { name: 'Quintus Hortensius Hortalus', avatar: 'QHH' },
+    { name: 'oleg2242', avatar: 'oleg2242' },
+    { name: 'Cro_Hunger999', avatar: 'cro' },
+    { name: 'TSanada', avatar: 'tsanada' },
+    { name: 'Herr Doctor', avatar: 'HD' },
+    { name: 'mad orc', avatar: 'mad_orc' },
+    { name: 'myfate', avatar: 'myfate' },
+  ],
+  avatarPath: (avatar: string) => require(`./assets/contributors/${avatar}_portrait.png`),
+  avatarAlt: ({ name }: { name: string }) => `Avatar of ${name}`,
+};
+
 export const downloadButton = {
   buttonText: 'Download',
 };
