@@ -1,11 +1,18 @@
 /* eslint-disable @typescript-eslint/camelcase */
 module.exports = {
+  siteMetadata: {
+    title: `Imperial Splendour`,
+    description: `Imperial Splendour attempts to create the best Empire: Total War experience possible without destroying the essence of the game.`,
+    author: `Sophie Au`,
+    siteUrl: `https://imperialsplendour.com`,
+  },
   plugins: [
-    `gatsby-plugin-typescript`,
     `gatsby-plugin-feed`,
-    `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
-    'gatsby-plugin-sharp',
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-typescript`,
     `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
