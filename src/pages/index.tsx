@@ -19,7 +19,7 @@ const Hero = () => (
   <section className="hero">
     <div className="hero-body">
       <img className="hero-logo" src={heroLogo} alt={home.heroLogoAlt} />
-      <div className="hero-text">{home.heroText}</div>
+      <p className="hero-text">{home.heroText}</p>
     </div>
     <DownloadButton linkTo={slugs.downloadIndex} className="hero-btn" />
   </section>
