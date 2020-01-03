@@ -8,6 +8,7 @@ $mid-size: 1.75rem;
 :root {
   --header-footer-bg: #b19776;
   --link-hover: #5c4e3c;
+  --blog-meta: #444444;
   --main-bg: #f9eeda;
   --white: #ffffff;
 
@@ -19,6 +20,7 @@ $mid-size: 1.75rem;
   --button-font: normal 2.5rem / var(--download-button-height) var(--headline-font-family);
   --hero-font: normal 2.15rem var(--body-font-family);
   --info-font: normal 1.75rem var(--body-font-family);
+  --blog-meta-font: italic 1.25rem var(--body-font-family);
 
   --max-content-width: 65rem;
   --max-body-width: 85rem;

@@ -4,9 +4,10 @@ import { graphql } from 'gatsby';
 import React from 'react';
 
 import Layout from '../components/Layout';
+import PostHeader from '../components/ui/PostHeader';
 import { slugs } from '../config';
-import { getSlug } from '../helpers';
 import { blog } from '../strings';
+import { GraphQLResponse } from '../types';
 
 export const query = graphql`
   query {
@@ -19,6 +20,7 @@ export const query = graphql`
             title
             author
             date(formatString: "YYYY-MM-DD")
+            formattedDate: date(formatString: "MMMM DD, YYYY")
             excerpt
           }
         }
@@ -27,38 +29,43 @@ export const query = graphql`
   }
 `;
 
-const Blog = ({ data }) => (
+const Blog: React.FC<GraphQLResponse> = ({ data }) => (
   <Layout title={blog.pageTitle} description={blog.pageDescription} slug={slugs.blog}>
-    <section className="posts">
-      <PostList posts={data.allMarkdownRemark.edges} />
-    </section>
+    <ul className="post-list">
+      {data.allMarkdownRemark.edges.map(post => {
+        const { id, frontmatter } = post.node;
+
+        return (
+          <li key={id}>
+            <div className="post">
+              <PostHeader {...frontmatter} />
+              <div className="excerpt">{frontmatter.excerpt}</div>
+            </div>
+          </li>
+        );
+      })}
+    </ul>
   </Layout>
 );
 
-const PostMeta: React.FC<{ date: string; author: string }> = ({ date, author }) => (
-  <div className="meta">
-    <p className="author">{author}</p>
-    <p className="date">{date}</p>
-  </div>
-);
-
-const PostList = ({ posts }) => (
-  <ul id="post-list">
-    {posts.map(post => {
-      const { id, frontmatter } = post.node;
-      const { excerpt, author, title, date } = frontmatter;
-      const slug = getSlug(title, date);
-      return (
-        <li key={id}>
-          <h2 className="title">
-            <a href={`blog/${slug}`}>{title}</a>
-          </h2>
-          <PostMeta date={date} author={author} />
-          <p className="excerpt">{excerpt}</p>
-        </li>
-      );
-    })}
-  </ul>
-);
-
 export default Blog;
+
+/*
+aginator.Pages.ByPublishDate.Reverse
+
+<div class="pagination">
+    {{ if .Paginator.HasPrev }}
+    <div class="newer">
+        <a href="{{.Paginator.Prev.URL}}">
+            < Newer</a></Newer>
+    </div>
+    {{ else }}
+    <div class="newer"></div>
+    {{ end }} {{ if .Paginator.HasNext }}
+    <div class="older">
+        <a href="{{.Paginator.Next.URL}}">Older ></a>
+    </div>{{ else }}
+    <div class="older"></div>
+    {{ end }}
+</div>
+*/

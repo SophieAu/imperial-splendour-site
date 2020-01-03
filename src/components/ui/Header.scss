@@ -1,6 +1,6 @@
 @import '../../styles/mixins';
 
-header {
+.site-header {
   @include header-footer;
   --logo-height: 3.5rem;
 

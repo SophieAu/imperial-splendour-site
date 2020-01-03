@@ -9,7 +9,7 @@ import ImageLink from '../ImageLink';
 import Link from '../Link';
 
 const Header = () => (
-  <header>
+  <header className="site-header">
     <nav className="header-menu">
       <ul>
         <li className="header-logo">

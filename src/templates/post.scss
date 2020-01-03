@@ -1,0 +1,17 @@
+.blog-post {
+  padding: 2.5rem 0;
+  max-width: 65rem;
+  width: 100%;
+
+  .text {
+    margin: 3rem 0;
+
+    img {
+      max-width: 100%;
+    }
+
+    li {
+      padding: 0.2rem 0;
+    }
+  }
+}

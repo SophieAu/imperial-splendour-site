@@ -1,24 +1,24 @@
-import 'prismjs/themes/prism-tomorrow.css';
+import './post.scss';
 
 import { graphql } from 'gatsby';
 import React from 'react';
 
 import Layout from '../components/Layout';
+import PostHeader from '../components/ui/PostHeader';
 import { getSlug } from '../helpers';
+import { SingleGraphQLResponse } from '../types';
 
-const Post = ({ data: { markdownRemark: post } }) => (
+const Post: React.FC<SingleGraphQLResponse> = ({ data: { markdownRemark: post } }) => (
   <Layout
     title={post.frontmatter.title}
     description={post.frontmatter.excerpt}
     slug={getSlug(post.frontmatter.title, post.frontmatter.date)}
   >
-    <div id="article">
-      <h1>{post.frontmatter.title}</h1>
-      <p className="date">{post.frontmatter.date}</p>
-      <p className="author">{post.frontmatter.author}</p>
-      <div className="post-body" dangerouslySetInnerHTML={{ __html: post.html }} />
+    <article className="blog-post">
+      <PostHeader {...post.frontmatter} />
+      <div className="text" dangerouslySetInnerHTML={{ __html: post.html }} />
       <hr />
-    </div>
+    </article>
   </Layout>
 );
 
@@ -30,6 +30,7 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "YYYY-MM-DD")
+        formattedDate: date(formatString: "MMMM DD, YYYY")
         author
         excerpt
       }
