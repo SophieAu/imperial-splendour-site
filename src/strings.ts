@@ -1,8 +1,11 @@
 import { paths } from './config';
 import { InfoBox } from './types';
 
+const SITE_TITLE = 'Imperial Splendour';
+const buildPageTitle = (title: string) => `${title} | ${SITE_TITLE}`;
+
 export const download = {
-  pageTitle: 'Imperial Splendour | Download',
+  pageTitle: buildPageTitle('Download'),
   pageDescription:
     'Download and play Imperial Splendour to have the best Empire: Total War experience possible.',
   requirements: {
@@ -29,7 +32,7 @@ export const download = {
 };
 
 export const downloadRotR = {
-  pageTitle: 'Imperial Splendour | Download Rise of the Republic',
+  pageTitle: buildPageTitle('Download Rise of the Republic'),
   pageDescription:
     'Download and play Imperial Splendour to have the best Empire: Total War experience possible.',
   linkInfo: 'You can download the files via the following file hosts:',
@@ -40,7 +43,7 @@ export const downloadRotR = {
 };
 
 export const downloadLauncher = {
-  pageTitle: 'Imperial Splendour | Download the Rise of the Republic Launcher',
+  pageTitle: buildPageTitle('Download the Rise of the Republic Launcher'),
   pageDescription:
     'Download and play Imperial Splendour to have the best Empire: Total War experience possible.',
   confirmPreOne: 'Your download should be starting in a second.',
@@ -73,7 +76,7 @@ const infoBoxes: InfoBox[] = [
 ];
 
 export const home = {
-  pageTitle: 'Imperial Splendour',
+  pageTitle: SITE_TITLE,
   pageDescription:
     'Imperial Splendour attempts to create the best Empire: Total War experience possible without destroying the essence of the game.',
   heroText: `It is the year 1783. The American Revolution has shown the world that the order of a monarch can be disputed by his own subjects. Colonies can claim independence in the name of Liberty. Events like this could topple the absolute monarchies that ruled Europe for nearly a thousand years.`,
@@ -82,7 +85,7 @@ export const home = {
 };
 
 export const about = {
-  pageTitle: 'About | Imperial Splendour',
+  pageTitle: buildPageTitle('About'),
   pageDescription:
     'Imperial Splendour attempts to create the best Empire: Total War experience possible without destroying the essence of the game.',
   text:
