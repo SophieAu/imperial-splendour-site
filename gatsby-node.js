@@ -1,6 +1,5 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const path = require(`path`);
-const { getSlug } = require(`./src/helpers`);
 
 const QUERY = `
   {
@@ -25,7 +24,14 @@ exports.createPages = ({ graphql, actions }) =>
 
     graphql(QUERY).then(result => {
       result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-        const slug = getSlug(node.title, node.date);
+        const { date, title } = node.frontmatter;
+
+        const formattedTitle = title
+          .toLowerCase()
+          .replace(/\s/g, '-')
+          .replace(/[^\w-]/g, '')
+          .replace(/(-+)/g, '-');
+        const slug = `${date}-${formattedTitle}`;
 
         actions.createPage({
           path: `blog/${slug}`,
