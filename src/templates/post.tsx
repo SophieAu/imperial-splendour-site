@@ -1,65 +1,40 @@
-// import React from "react";
-// import { Helmet } from "react-helmet";
-// import { graphql } from "gatsby";
-// import "prismjs/themes/prism-tomorrow.css";
-// import Layout from "../components/Layout";
+import 'prismjs/themes/prism-tomorrow.css';
 
-// export default ({ data: { markdownRemark: post } }) => (
-//   <Layout>
-//     <HelmetData postTitle={post.frontmatter.title} />
-//     <div id="article">
-//       <Frontmatter frontmatter={post.frontmatter} />
-//       <div className="post-body" dangerouslySetInnerHTML={{ __html: post.html }} />
-//       <hr />
-//     </div>
-//   </Layout>
-// );
+import { graphql } from 'gatsby';
+import React from 'react';
 
-// const HelmetData = ({ postTitle }) => (
-//   <Helmet>
-//     <title>{`${postTitle} | Sophie Au`}</title>
-//     <meta
-//       name="description"
-//       content={`Homepage of Sophie Au | Blogpost about ${postTitle}`}
-//     />
-//   </Helmet>
-// );
+import Layout from '../components/Layout';
+import { getSlug } from '../helpers';
 
-// const Frontmatter = ({ frontmatter }) => (
-//   <>
-//     <h1>{frontmatter.title}</h1>
-//     <p className="date">{frontmatter.date}</p>
-//     {!!frontmatter.crosspost && (
-//       <Crosspost
-//         url={frontmatter.crosspost.url}
-//         site={frontmatter.crosspost.site}
-//         prefix={!!frontmatter.crosspost.prefix}
-//       />
-//     )}
-//   </>
-// );
+const Post = ({ data: { markdownRemark: post } }) => (
+  <Layout
+    title={post.frontmatter.title}
+    description={post.frontmatter.excerpt}
+    slug={getSlug(post.frontmatter.title, post.frontmatter.date)}
+  >
+    <div id="article">
+      <h1>{post.frontmatter.title}</h1>
+      <p className="date">{post.frontmatter.date}</p>
+      <p className="author">{post.frontmatter.author}</p>
+      <div className="post-body" dangerouslySetInnerHTML={{ __html: post.html }} />
+      <hr />
+    </div>
+  </Layout>
+);
 
-// const Crosspost = ({ site, url, prefix }) => (
-//   <div className="crosspost">
-//     {`This is a crosspost from ${prefix && "the "}`}
-//     <a href={url}>{site}</a>{`.`}
-//   </div>
-// );
+export const query = graphql`
+  query($id: String!) {
+    markdownRemark(id: { eq: $id }) {
+      id
+      html
+      frontmatter {
+        title
+        date(formatString: "YYYY-MM-DD")
+        author
+        excerpt
+      }
+    }
+  }
+`;
 
-// export const query = graphql`
-//   query($slug: String!) {
-//     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
-//       html
-//       frontmatter {
-//         title
-//         date(formatString: "DD MMMM YYYY")
-//         slug
-//         crosspost {
-//           site
-//           url
-//           prefix
-//         }
-//       }
-//     }
-//   }
-// `;
+export default Post;

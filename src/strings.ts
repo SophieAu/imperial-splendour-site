@@ -105,6 +105,12 @@ export const about = {
   avatarAlt: ({ name }: { name: string }) => `Avatar of ${name}`,
 };
 
+export const blog = {
+  pageTitle: buildPageTitle('Blog'),
+  pageDescription:
+    'Imperial Splendour attempts to create the best Empire: Total War experience possible without destroying the essence of the game.',
+};
+
 export const downloadButton = {
   buttonText: 'Download',
 };
