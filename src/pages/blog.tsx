@@ -41,7 +41,7 @@ const Blog: React.FC<GraphQLResponse> = ({ data }) => (
         return (
           <li key={id}>
             <div className="post">
-              <PostHeader {...frontmatter} />
+              <PostHeader {...frontmatter} isHeaderClickable={true} />
               <div className="excerpt">{frontmatter.excerpt}</div>
             </div>
           </li>

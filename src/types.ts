@@ -52,6 +52,7 @@ export type PostFrontmatter = {
   date: string;
   formattedDate: string;
   excerpt: string;
+  isHeaderClickable: boolean;
 };
 
 export type Comment = {

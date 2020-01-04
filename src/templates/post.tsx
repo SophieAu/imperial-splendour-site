@@ -20,7 +20,7 @@ const Post: React.FC<SingleGraphQLResponse> = ({
     slug={getSlug(postData.frontmatter.title, postData.frontmatter.date)}
   >
     <article className="blog-post">
-      <PostHeader {...postData.frontmatter} />
+      <PostHeader {...postData.frontmatter} isHeaderClickable={false} />
       <div className="text" dangerouslySetInnerHTML={{ __html: postData.html }} />
     </article>
     <Comments comments={allCommentsYaml?.edges} />
