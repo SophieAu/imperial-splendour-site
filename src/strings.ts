@@ -140,6 +140,8 @@ export const blog = {
   pageTitle: buildPageTitle('Blog'),
   pageDescription:
     'Imperial Splendour attempts to create the best Empire: Total War experience possible without destroying the essence of the game.',
+  previousPage: '< Newer',
+  nextPage: 'Older >',
 };
 
 export const post = {

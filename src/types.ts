@@ -66,3 +66,10 @@ export type Comment = {
     slug: string;
   };
 };
+
+export type BlogListContext = {
+  pageContext: {
+    numberOfPages: number;
+    currentPage: number;
+  };
+};

@@ -1,0 +1,35 @@
+@import '../styles/variables';
+
+.post-list {
+  padding: 1.5rem 0;
+  list-style-type: none;
+}
+
+.post {
+  padding: 3rem 0;
+
+  .excerpt {
+    padding-top: 1rem;
+  }
+}
+
+.pagination {
+  font-size: 1.875rem;
+  padding: 2rem 0 5rem;
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    > *:last-child {
+      text-align: right;
+    }
+
+    li > * {
+      text-decoration: none;
+    }
+  }
+}
