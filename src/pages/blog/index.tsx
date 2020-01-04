@@ -1,13 +1,13 @@
-import './blog.scss';
+import './index.scss';
 
 import { graphql } from 'gatsby';
 import React from 'react';
 
-import Layout from '../components/Layout';
-import PostHeader from '../components/ui/PostHeader';
-import { slugs } from '../config';
-import { blog } from '../strings';
-import { GraphQLResponse } from '../types';
+import Layout from '../../components/Layout';
+import PostHeader from '../../components/ui/PostHeader';
+import { slugs } from '../../config';
+import { blog } from '../../strings';
+import { GraphQLResponse } from '../../types';
 
 export const query = graphql`
   query {
