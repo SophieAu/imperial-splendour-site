@@ -1,26 +1,29 @@
 @import '../styles/variables';
 
-.about {
-  padding: 2.5rem 0;
-  max-width: var(--max-content-width);
+.about-text {
+  padding: 2.5rem 0 0;
+}
+
+.contributors {
+  margin-bottom: 2.5rem;
 
   h2 {
     margin-bottom: 0.75rem;
   }
-}
 
-.avatars {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  .avatars {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 
-  .contributor {
-    flex: 0 0 10rem;
-    max-width: 10rem;
-    text-align: center;
+    .contributor {
+      flex: 0 0 10rem;
+      max-width: 10rem;
+      text-align: center;
 
-    p {
-      margin: 0.5rem 0;
+      p {
+        margin: 0.5rem 0;
+      }
     }
   }
 }

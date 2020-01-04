@@ -8,8 +8,8 @@ import { about } from '../strings';
 
 const About = () => (
   <Layout title={about.pageTitle} description={about.pageDescription} slug={slugs.about}>
-    <div className="about">
-      <p>{about.text}</p>
+    <p className="about-text">{about.text}</p>
+    <section className="contributors">
       <h2>{about.contributorTitle}</h2>
       <div className="avatars">
         {about.contributors.map((cont, i) => (
@@ -19,7 +19,7 @@ const About = () => (
           </div>
         ))}
       </div>
-    </div>
+    </section>
   </Layout>
 );
 

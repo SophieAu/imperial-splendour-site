@@ -1,3 +1,5 @@
+import './terms-of-service.scss';
+
 import { graphql } from 'gatsby';
 import React from 'react';
 

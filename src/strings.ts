@@ -8,7 +8,8 @@ const buildPageTitle = (title: string) => `${title} | ${SITE_TITLE}`;
 // Components
 
 export const newsletterSignup = {
-  text: "Want to stay informed when there's a new patch or release? Subscribe to our newsletter:",
+  textQuestion: "Want to stay informed when there's a new patch or release?",
+  textCTA: 'Subscribe to our newsletter:',
   emailPlaceholder: 'george3@british-empire.co.uk',
 };
 

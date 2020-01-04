@@ -23,7 +23,8 @@ const MailChimpForm = () => (
 
 const NewsletterSignup = () => (
   <div className="newsletter">
-    <p>{strings.text}</p>
+    <p>{strings.textQuestion}</p>
+    <p>{strings.textCTA}</p>
     <MailChimpForm />
   </div>
 );
