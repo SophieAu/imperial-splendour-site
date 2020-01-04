@@ -34,6 +34,18 @@ export type SingleGraphQLResponse = {
   };
 };
 
+export type ToSGraphQLResponse = {
+  data: {
+    markdownRemark: {
+      frontmatter: {
+        title: string;
+        description: string;
+      };
+      html: string;
+    };
+  };
+};
+
 export type PostFrontmatter = {
   title: string;
   author: string;

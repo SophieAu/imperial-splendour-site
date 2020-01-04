@@ -11,7 +11,10 @@ import { GraphQLResponse } from '../types';
 
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/data/posts/" } }
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
       totalCount
       edges {
         node {
