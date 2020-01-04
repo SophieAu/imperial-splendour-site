@@ -8,41 +8,40 @@ import PostHeader from '../components/ui/PostHeader';
 import { paths } from '../config';
 import { getSlug } from '../helpers';
 import { post } from '../strings';
-import { SingleGraphQLResponse } from '../types';
+import { Comment, SingleGraphQLResponse } from '../types';
 
-const Post: React.FC<SingleGraphQLResponse> = ({ data: { markdownRemark: post } }) => (
+const Post: React.FC<SingleGraphQLResponse> = ({
+  data: { markdownRemark: postData, allCommentsYaml },
+}) => (
   <Layout
-    title={post.frontmatter.title}
-    description={post.frontmatter.excerpt}
-    slug={getSlug(post.frontmatter.title, post.frontmatter.date)}
+    title={post.pageTitle({ title: postData.frontmatter.title })}
+    description={postData.frontmatter.excerpt}
+    slug={getSlug(postData.frontmatter.title, postData.frontmatter.date)}
   >
     <article className="blog-post">
-      <PostHeader {...post.frontmatter} />
-      <div className="text" dangerouslySetInnerHTML={{ __html: post.html }} />
-      <hr />
+      <PostHeader {...postData.frontmatter} />
+      <div className="text" dangerouslySetInnerHTML={{ __html: postData.html }} />
     </article>
-    <Comments />
+    <Comments comments={allCommentsYaml?.edges} />
     <CommentForm />
   </Layout>
 );
 
-export const query = graphql`
-  query($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      id
-      html
-      frontmatter {
-        title
-        date(formatString: "YYYY-MM-DD")
-        formattedDate: date(formatString: "MMMM DD, YYYY")
-        author
-        excerpt
-      }
-    }
-  }
-`;
-
-export default Post;
+const Comments: React.FC<{ comments: Comment[] }> = ({ comments }) => (
+  <section className="post-comments">
+    <h2>{post.comments}</h2>
+    {!comments.length && <p>{post.emptyComments}</p>}
+    {comments.map(comment => (
+      <article key={comment.node.id}>
+        <header className="comment-header">
+          <p className="comment-poster">{comment.node.name}</p>
+          <p className="comment-date">{comment.node.date}</p>
+        </header>
+        <p className="comment-body">{comment.node.comment}</p>
+      </article>
+    ))}
+  </section>
+);
 
 const CommentForm = () => (
   <section className="comment-form">
@@ -82,28 +81,30 @@ const CommentForm = () => (
   </section>
 );
 
-const Comments = () => (
-  <section className="post-comments">
-    <h2>Comments</h2>
-  </section>
-);
+export const query = graphql`
+  query($id: String!, $slug: String!) {
+    allCommentsYaml(filter: { slug: { eq: $slug } }, sort: { fields: [date], order: ASC }) {
+      edges {
+        node {
+          id
+          name
+          comment
+          date(formatString: "MMMM DD, YYYY")
+        }
+      }
+    }
+    markdownRemark(id: { eq: $id }) {
+      id
+      html
+      frontmatter {
+        title
+        date(formatString: "YYYY-MM-DD")
+        formattedDate: date(formatString: "MMMM DD, YYYY")
+        author
+        excerpt
+      }
+    }
+  }
+`;
 
-/*
-existing comments
-
-  // {{ $slug := index (last 1 (split (delimit (split .URL "/") "," "") ",")) 0 }}
-  // {{ $.Scratch.Add "hasComments" 0 }}
-
-  // {{ range $index, $comments := $.Site.Data }}{{ if eq .slug $slug }}
-  // {{ $.Scratch.Add "hasComments" 1 }}
-  // <div className="comment-header">
-  //   <div className="comment-poster">{{ .name }}</div>
-  //   <div className="comment-date">{{dateFormat "January 2, 2006" .date }}</div>
-  // </div>
-  // <div className="comment-body">{{ .comment | markdownify }}</div>
-  // {{ end }}{{ end }}
-
-  // {{ if eq ($.Scratch.Get "hasComments") 0 }}
-  // <p>Nothing yet.</p>
-  // {{ end }}
-*/
+export default Post;

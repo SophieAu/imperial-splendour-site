@@ -1,3 +1,5 @@
+@import '../styles/variables';
+
 .blog-post,
 .post-comments,
 .comment-form {
@@ -22,22 +24,42 @@
 }
 
 .post-comments {
-  padding-bottom: 3rem;
-
-  h2 {
+  h2,
+  p {
     padding: 0;
     margin: 0;
-    padding-top: 3rem;
+  }
+
+  article {
+    padding: 1rem 0;
+  }
+  .comment-header {
+    width: 66%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-bottom: 0.25rem;
+
+    .comment-poster {
+      font-size: 2rem;
+    }
+
+    .comment-date {
+      font-size: 1.25rem;
+    }
+  }
+
+  .comment-body {
+    width: 66%;
   }
 }
 
 .comment-form {
-  padding-bottom: 3rem;
+  padding: 2rem 0 3rem;
 
   h2 {
     padding: 0;
     margin: 0;
-    padding-top: 3rem;
   }
 
   form {
@@ -83,30 +105,9 @@
       border: none;
     }
   }
-
-  .comment-header {
-    width: 66%;
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    padding-bottom: 0.25rem;
-
-    .comment-poster {
-      font-size: 2rem;
-    }
-
-    .comment-date {
-      font-size: 1.25rem;
-    }
-  }
-
-  .comment-body {
-    width: 66%;
-    padding-bottom: 1rem;
-  }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $desktop-breakpoint -1) {
   .post-comments {
     .comment-form {
       .text,

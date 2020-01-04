@@ -142,10 +142,13 @@ export const blog = {
 };
 
 export const post = {
+  pageTitle: ({ title }: { title: string }) => buildPageTitle(title),
   commentForm: 'Post a Comment',
   namePlaceholder: 'Name',
   commentPlaceholder: 'Your comment here',
   tosPre: 'I have read and sgree to the',
   tosLink: 'Terms of Service and Privacy Policy',
   commentButtonTitle: 'Submit',
+  comments: 'Comments',
+  emptyComments: 'Nothing yet.',
 };

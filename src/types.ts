@@ -28,6 +28,9 @@ export type SingleGraphQLResponse = {
       frontmatter: PostFrontmatter;
       html: string;
     };
+    allCommentsYaml: {
+      edges: Comment[];
+    };
   };
 };
 
@@ -37,4 +40,16 @@ export type PostFrontmatter = {
   date: string;
   formattedDate: string;
   excerpt: string;
+};
+
+export type Comment = {
+  node: {
+    id: number;
+    date: string;
+    name: string;
+    comment: string;
+    email?: string;
+    website?: string;
+    slug: string;
+  };
 };

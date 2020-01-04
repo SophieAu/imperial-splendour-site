@@ -14,6 +14,14 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-typescript`,
     `gatsby-transformer-sharp`,
+    'gatsby-transformer-yaml',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'comments',
+        path: `${__dirname}/data/comments/`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
