@@ -6,11 +6,12 @@ import { slugs } from '../../config';
 import { getSlug } from '../../helpers';
 import { postHeader } from '../../strings';
 import { PostFrontmatter } from '../../types';
+import Link from '../Link';
 
 const PostHeader: React.FC<PostFrontmatter> = ({ title, date, formattedDate, author }) => (
   <header className="post-header">
     <h1>
-      <a href={`${slugs.blog}/${getSlug(title, date)}`}>{title}</a>
+      <Link to={`${slugs.blog}/${getSlug(title, date)}`}>{title}</Link>
     </h1>
     <p className="date">{formattedDate}</p>
     <p className="author">{postHeader.author({ author })}</p>

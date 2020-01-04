@@ -4,6 +4,7 @@ import { graphql } from 'gatsby';
 import React from 'react';
 
 import Layout from '../components/Layout';
+import Link from '../components/Link';
 import PostHeader from '../components/ui/PostHeader';
 import { paths } from '../config';
 import { getSlug } from '../helpers';
@@ -71,7 +72,7 @@ const CommentForm = () => (
         <input type="checkbox" required />
         <p>
           {`${post.tosPre} `}
-          <a href={paths.termsOfService}>{post.tosLink}</a>
+          <Link to={paths.termsOfService}>{post.tosLink}</Link>
         </p>
       </div>
       <button className="btn-download" type="submit">
