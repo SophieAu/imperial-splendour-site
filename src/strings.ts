@@ -140,3 +140,12 @@ export const blog = {
   pageDescription:
     'Imperial Splendour attempts to create the best Empire: Total War experience possible without destroying the essence of the game.',
 };
+
+export const post = {
+  commentForm: 'Post a Comment',
+  namePlaceholder: 'Name',
+  commentPlaceholder: 'Your comment here',
+  tosPre: 'I have read and sgree to the',
+  tosLink: 'Terms of Service and Privacy Policy',
+  commentButtonTitle: 'Submit',
+};

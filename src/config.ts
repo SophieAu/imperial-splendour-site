@@ -8,6 +8,7 @@ export const slugs = {
   downloadRotR: 'download/rotr',
   blog: 'blog',
   about: 'about',
+  termsOfService: 'terms-of-service',
 };
 
 export const paths = {
@@ -17,6 +18,7 @@ export const paths = {
   blog: `/${slugs.blog}`,
   about: `/${slugs.about}`,
   downloadLauncher: `/${slugs.downloadLauncher}`,
+  termsOfService: `/${slugs.termsOfService}`,
 };
 
 export const socialMedia = {
