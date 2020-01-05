@@ -1,4 +1,64 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 /* eslint-disable @typescript-eslint/camelcase */
+const { createSlug } = require('./gatsby-helper');
+
+const gatsbyPluginFeedOptions = {
+  query: `
+  {
+    site {
+      siteMetadata {
+        title
+        description
+        siteUrl
+        site_url: siteUrl
+      }
+    }
+  }
+`,
+  feeds: [
+    {
+      serialize: ({ query: { site, allMarkdownRemark } }) =>
+        allMarkdownRemark.edges.map(edge => {
+          const { frontmatter, html } = edge.node;
+          const slug = createSlug(frontmatter.title, frontmatter.formattedDate);
+
+          return Object.assign({}, frontmatter, {
+            description: frontmatter.excerpt,
+            date: frontmatter.date,
+            author: frontmatter.author,
+            excerpt: frontmatter.excerpt,
+            url: site.siteMetadata.siteUrl + '/blog/' + slug,
+            guid: site.siteMetadata.siteUrl + '/blog/' + slug,
+            custom_elements: [{ 'content:encoded': html }],
+          });
+        }),
+      query: `
+      {
+        allMarkdownRemark(
+          sort: { order: DESC, fields: [frontmatter___date] },
+          filter: {fileAbsolutePath: {regex: "/data\/posts/"}}
+        ) {
+          edges {
+            node {
+              html
+              frontmatter {
+                author
+                excerpt
+                title
+                date
+                formattedDate: date(formatString: "YYYY-MM-DD")
+              }
+            }
+          }
+        }
+      }
+    `,
+      output: '/rss.xml',
+      title: "Imperial Splendour's RSS Feed",
+    },
+  ],
+};
+
 module.exports = {
   siteMetadata: {
     title: `Imperial Splendour`,
@@ -7,7 +67,6 @@ module.exports = {
     siteUrl: `https://imperialsplendour.com`,
   },
   plugins: [
-    `gatsby-plugin-feed`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-sitemap`,
@@ -15,6 +74,10 @@ module.exports = {
     `gatsby-plugin-typescript`,
     `gatsby-transformer-sharp`,
     'gatsby-transformer-yaml',
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: gatsbyPluginFeedOptions,
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {

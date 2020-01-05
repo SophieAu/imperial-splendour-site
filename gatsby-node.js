@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const { resolve } = require(`path`);
+const { createSlug } = require('./gatsby-helper');
 
 const POSTS_PER_PAGE = 6;
 
@@ -30,16 +31,6 @@ const POST_QUERY = `
 }
 `;
 
-const createSlug = (rawTitle, date) => {
-  const title = rawTitle
-    .toLowerCase()
-    .replace(/\s/g, '-')
-    .replace(/[^\w-]/g, '')
-    .replace(/(-+)/g, '-');
-
-  return `${date}-${title}`;
-};
-
 const buildBlogPosts = (nodes, createPage) => {
   const post = resolve(`./src/templates/post.tsx`);
 
@@ -64,7 +55,6 @@ const buildTermsOfService = (nodes, createPage) => {
       context: { id: node.id },
     });
   });
-  console.log('done');
 };
 
 const buildBlogListPagination = (nodes, createPage) => {

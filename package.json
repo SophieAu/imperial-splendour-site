@@ -8,6 +8,7 @@
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "serve": "gatsby serve",
+    "prod": "gatsby build && gatsby serve",
     "format": "prettier --write '{src,data}/**/*.{tsx,ts}'",
     "clean": "gatsby clean",
     "checks": "tsc && npm run lint",
