@@ -129,13 +129,14 @@ module.exports = {
         disableOnDev: true,
         mergeStyleHashes: false,
         directives: {
-          'default-src': "'none'",
+          'default-src': "'self'",
           'img-src': "'self' https://*",
           'worker-src': "'none'",
           'frame-src':
             "'self' https://sketchfab.com/models/ https://www.youtube-nocookie.com/embed/",
           'script-src': "'self' https://static.sketchfab.com/static/",
-          'style-src': "'self' 'unsafe-inline' blob:https://fonts.googleapis.com/css",
+          'style-src': "'self' 'unsafe-inline'",
+          'style-src-elem': "'self' https://fonts.googleapis.com/ 'unsafe-inline'",
           'font-src': "'self' https://fonts.gstatic.com/s/",
         },
       },
