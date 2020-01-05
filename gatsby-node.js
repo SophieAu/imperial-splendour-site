@@ -84,15 +84,6 @@ const buildBlogListPagination = (nodes, createPage) => {
       },
     });
     console.log(path);
-    console.log(
-      JSON.stringify({
-        limit: POSTS_PER_PAGE,
-        skip: i * POSTS_PER_PAGE,
-        numberOfPages,
-        currentPage: i + 1,
-      })
-    );
-    console.log();
   });
 };
 

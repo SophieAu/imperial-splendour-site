@@ -7,17 +7,49 @@ import Layout from '../components/Layout';
 import Link from '../components/Link';
 import PostHeader from '../components/ui/PostHeader';
 import { paths } from '../config';
-import { getSlug } from '../helpers';
 import { post } from '../strings';
 import { Comment, SingleGraphQLResponse } from '../types';
 
-const Post: React.FC<SingleGraphQLResponse> = ({
+export const query = graphql`
+  query($id: String!, $slug: String!) {
+    allCommentsYaml(filter: { slug: { eq: $slug } }, sort: { fields: [date], order: ASC }) {
+      edges {
+        node {
+          id
+          name
+          comment
+          date(formatString: "MMMM DD, YYYY")
+        }
+      }
+    }
+    markdownRemark(id: { eq: $id }) {
+      id
+      html
+      frontmatter {
+        title
+        date(formatString: "YYYY-MM-DD")
+        formattedDate: date(formatString: "MMMM DD, YYYY")
+        author
+        excerpt
+      }
+    }
+  }
+`;
+
+interface Props extends SingleGraphQLResponse {
+  pageContext: {
+    slug: string;
+  };
+}
+
+const Post: React.FC<Props> = ({
   data: { markdownRemark: postData, allCommentsYaml },
+  pageContext,
 }) => (
   <Layout
     title={post.pageTitle({ title: postData.frontmatter.title })}
     description={postData.frontmatter.excerpt}
-    slug={getSlug(postData.frontmatter.title, postData.frontmatter.date)}
+    slug={pageContext.slug}
   >
     <article className="blog-post">
       <PostHeader {...postData.frontmatter} isHeaderClickable={false} />
@@ -81,31 +113,5 @@ const CommentForm = () => (
     </form>
   </section>
 );
-
-export const query = graphql`
-  query($id: String!, $slug: String!) {
-    allCommentsYaml(filter: { slug: { eq: $slug } }, sort: { fields: [date], order: ASC }) {
-      edges {
-        node {
-          id
-          name
-          comment
-          date(formatString: "MMMM DD, YYYY")
-        }
-      }
-    }
-    markdownRemark(id: { eq: $id }) {
-      id
-      html
-      frontmatter {
-        title
-        date(formatString: "YYYY-MM-DD")
-        formattedDate: date(formatString: "MMMM DD, YYYY")
-        author
-        excerpt
-      }
-    }
-  }
-`;
 
 export default Post;
