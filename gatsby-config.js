@@ -135,8 +135,7 @@ module.exports = {
           'frame-src':
             "'self' https://sketchfab.com/models/ https://www.youtube-nocookie.com/embed/",
           'script-src': "'self' https://static.sketchfab.com/static/",
-          'style-src': "'self' 'unsafe-inline'",
-          'style-src-elem': "'self' https://fonts.googleapis.com/ 'unsafe-inline'",
+          'style-src': "'self' 'unsafe-inline' https://fonts.googleapis.com/",
           'font-src': "'self' https://fonts.gstatic.com/s/",
         },
       },
