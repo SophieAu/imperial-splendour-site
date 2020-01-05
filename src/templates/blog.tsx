@@ -34,6 +34,17 @@ export const query = graphql`
     }
   }
 `;
+
+const createSlug = (rawTitle: string, date: string) => {
+  const title = rawTitle
+    .toLowerCase()
+    .replace(/\s/g, '-')
+    .replace(/[^\w-]/g, '')
+    .replace(/(-+)/g, '-');
+
+  return `${date}-${title}`;
+};
+
 interface Props extends GraphQLResponse, BlogListContext {}
 
 const Blog: React.FC<Props> = ({ data, pageContext }) => (
@@ -42,7 +53,11 @@ const Blog: React.FC<Props> = ({ data, pageContext }) => (
       {data.allMarkdownRemark.edges.map(post => (
         <li key={post.node.id}>
           <div className="post">
-            <PostHeader {...post.node.frontmatter} isHeaderClickable={true} />
+            <PostHeader
+              slug={createSlug(post.node.frontmatter.title, post.node.frontmatter.date)}
+              {...post.node.frontmatter}
+              isHeaderClickable={true}
+            />
             <div className="excerpt">{post.node.frontmatter.excerpt}</div>
           </div>
         </li>
