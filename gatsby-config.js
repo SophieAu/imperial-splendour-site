@@ -130,7 +130,7 @@ module.exports = {
         mergeStyleHashes: false,
         directives: {
           'default-src': "'self'",
-          'img-src': "'self' https://*",
+          'img-src': "'self' data: https://*",
           'worker-src': "'none'",
           'frame-src':
             "'self' https://sketchfab.com/models/ https://www.youtube-nocookie.com/embed/",
