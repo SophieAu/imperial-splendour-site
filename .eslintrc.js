@@ -13,9 +13,7 @@ module.exports = {
     sourceType: 'module',
   },
   settings: {
-    react: {
-      version: 'detect', // Tell eslint-plugin-react to autodetect React version
-    },
+    react: { version: 'detect' },
   },
   rules: {
     'react/prop-types': 0,
