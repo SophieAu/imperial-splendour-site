@@ -15,7 +15,7 @@ If you have questions, complaints, or suggestions feel free to let us know. Ther
 * and of course in the comment section under each post
 
 ## Meta
-© 2019, [Sophie Au](sophieau.com) and [Malte Lippmann](https://github.com/QuintusHortensiusHortalus) – [@SolviAu](https://twitter.com/solviau)
+© [Sophie Au](sophieau.com) and [Malte Lippmann](https://github.com/QuintusHortensiusHortalus) – [@SolviAu](https://twitter.com/solviau)
 
 ## Credits
 The font used is [IM FELL English](https://fonts.google.com/specimen/IM+Fell+English).
