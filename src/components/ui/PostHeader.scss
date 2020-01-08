@@ -25,3 +25,19 @@
     padding-top: 0.5rem;
   }
 }
+
+@media (max-width: $tablet-breakpoint - 1) {
+  .post-header {
+    h1 {
+      grid-row: 2/3;
+    }
+
+    .author {
+      grid-row: 3/4;
+    }
+
+    .date {
+      grid-row: 1/2;
+    }
+  }
+}
