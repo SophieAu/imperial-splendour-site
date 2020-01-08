@@ -11,6 +11,14 @@ import NewsletterSignup from '../../components/ui/NewsletterSignup';
 import { downloadLinks, slugs } from '../../config';
 import { downloadRotR } from '../../strings';
 
+const modDB = 'https://button.moddb.com/download/medium/169793.png';
+
+const hosts = [
+  { platform: 'Mod DB', link: downloadLinks.modDB, imgSrc: modDB },
+  { platform: 'Mediafire', link: downloadLinks.mediaFire, imgSrc: mediaFire },
+  { platform: 'Google Drive', link: downloadLinks.googleDrive, imgSrc: gDrive },
+];
+
 const DownloadRotR = () => (
   <Layout
     title={downloadRotR.pageTitle}
@@ -20,24 +28,11 @@ const DownloadRotR = () => (
     <section className="download-confirm">
       <h2>{downloadRotR.linkInfo}</h2>
       <div className="filehosts">
-        <ImageLink
-          to={downloadLinks.modDB}
-          title={downloadRotR.imageLinkAlt({ platform: 'Mod DB' })}
-        >
-          <img src="https://button.moddb.com/download/medium/169793.png" alt={'Mod DB'} />
-        </ImageLink>
-        <ImageLink
-          to={downloadLinks.mediaFire}
-          title={downloadRotR.imageLinkAlt({ platform: 'Mediafire' })}
-        >
-          <img src={mediaFire} alt={'Mediafire'} />
-        </ImageLink>
-        <ImageLink
-          to={downloadLinks.googleDrive}
-          title={downloadRotR.imageLinkAlt({ platform: 'Google Drive' })}
-        >
-          <img src={gDrive} alt={'Google Drive'} />
-        </ImageLink>
+        {hosts.map(({ platform, link, imgSrc }) => (
+          <ImageLink key={platform} to={link} title={downloadRotR.imageLinkAlt({ platform })}>
+            <img src={imgSrc} alt={platform} />
+          </ImageLink>
+        ))}
       </div>
       <p>
         {`${downloadRotR.helpPre} `}
