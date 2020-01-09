@@ -22,11 +22,11 @@ const MailChimpForm = () => (
 );
 
 const NewsletterSignup = () => (
-  <div className="newsletter">
+  <section className="newsletter">
     <p>{strings.textQuestion}</p>
     <p>{strings.textCTA}</p>
     <MailChimpForm />
-  </div>
+  </section>
 );
 
 export default NewsletterSignup;

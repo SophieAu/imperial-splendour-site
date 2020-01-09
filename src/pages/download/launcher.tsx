@@ -15,14 +15,12 @@ const DownloadRotR = () => (
     slug={slugs.downloadLauncher}
     additionalHead={<meta httpEquiv="refresh" content={`0;URL='${downloadLinks.launcherOnly}'`} />}
   >
-    <div className="download-confirm">
-      <h2>
-        {downloadLauncher.confirmPreOne}
-        <br />
-        {`${downloadLauncher.confirmPreTwo} `}
-        <Link to={downloadLinks.launcherOnly}>{downloadLauncher.confirmLink}</Link>
-      </h2>
-    </div>
+    <h2 className="download-confirm">
+      {downloadLauncher.confirmPreOne}
+      <br />
+      {`${downloadLauncher.confirmPreTwo} `}
+      <Link to={downloadLinks.launcherOnly}>{downloadLauncher.confirmLink}</Link>
+    </h2>
     <NewsletterSignup />
   </Layout>
 );

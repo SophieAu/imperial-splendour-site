@@ -8,14 +8,14 @@ import { PostFrontmatter } from '../../types';
 import Link from '../Link';
 
 interface Props extends PostFrontmatter {
-  slug: string;
+  slug?: string;
   isHeaderClickable: boolean;
 }
 
 const PostHeader: React.FC<Props> = props => (
   <header className="post-header">
     <h1>
-      {props.isHeaderClickable ? (
+      {props.isHeaderClickable && props.slug ? (
         <Link to={`${slugs.blog}/${props.slug}`}>{props.title}</Link>
       ) : (
         <>{props.title}</>

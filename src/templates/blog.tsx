@@ -51,15 +51,13 @@ const Blog: React.FC<Props> = ({ data, pageContext }) => (
   <Layout title={blog.pageTitle} description={blog.pageDescription} slug={slugs.blog}>
     <ul className="post-list">
       {data.allMarkdownRemark.edges.map(post => (
-        <li key={post.node.id}>
-          <div className="post">
-            <PostHeader
-              slug={createSlug(post.node.frontmatter.title, post.node.frontmatter.date)}
-              {...post.node.frontmatter}
-              isHeaderClickable={true}
-            />
-            <div className="excerpt">{post.node.frontmatter.excerpt}</div>
-          </div>
+        <li key={post.node.id} className="post">
+          <PostHeader
+            slug={createSlug(post.node.frontmatter.title, post.node.frontmatter.date)}
+            {...post.node.frontmatter}
+            isHeaderClickable={true}
+          />
+          <p className="excerpt">{post.node.frontmatter.excerpt}</p>
         </li>
       ))}
     </ul>
