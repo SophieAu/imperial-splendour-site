@@ -1,3 +1,5 @@
+@import '../../styles/variables';
+
 .download-confirm {
   text-align: center;
   padding: 4rem 0;
@@ -29,5 +31,15 @@
   img {
     max-width: 16.25rem;
     max-height: 3.125rem;
+  }
+}
+
+@media (max-width: $tablet-breakpoint - 1) {
+  .filehosts {
+    flex-direction: column;
+    padding: 1rem 0;
+    > * {
+      padding: 1rem 0;
+    }
   }
 }
