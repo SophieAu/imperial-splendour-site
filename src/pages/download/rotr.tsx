@@ -27,13 +27,15 @@ const DownloadRotR = () => (
   >
     <section className="download-confirm">
       <h2>{downloadRotR.linkInfo}</h2>
-      <div className="filehosts">
+      <ul className="filehosts">
         {hosts.map(({ platform, link, imgSrc }) => (
-          <ImageLink key={platform} to={link} title={downloadRotR.imageLinkAlt({ platform })}>
-            <img src={imgSrc} alt={platform} />
-          </ImageLink>
+          <li key={platform}>
+            <ImageLink to={link} title={downloadRotR.imageLinkAlt({ platform })}>
+              <img src={imgSrc} alt={platform} />
+            </ImageLink>
+          </li>
         ))}
-      </div>
+      </ul>
       <p>
         {`${downloadRotR.helpPre} `}
         <Link to={downloadLinks.tutorial}>{downloadRotR.helpLink}</Link>
