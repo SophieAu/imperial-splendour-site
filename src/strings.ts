@@ -149,7 +149,7 @@ export const post = {
   commentForm: 'Post a Comment',
   namePlaceholder: 'Name',
   commentPlaceholder: 'Your comment here',
-  tosPre: 'I have read and sgree to the',
+  tosPre: 'I have read and agree to the',
   tosLink: 'Terms of Service and Privacy Policy',
   commentButtonTitle: 'Submit',
   comments: 'Comments',
