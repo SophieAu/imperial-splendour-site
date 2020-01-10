@@ -88,6 +88,7 @@ const CommentForm = () => (
       <input name="options[slug]" type="hidden" value="{{ $slug }}" />
       <input name="fields[slug]" type="hidden" value="{{ $slug }}" />
       <input
+        aria-label={post.namePlaceholder}
         className="meta"
         name="fields[name]"
         type="text"
@@ -95,14 +96,21 @@ const CommentForm = () => (
         required
       />
       <textarea
+        aria-label={post.commentPlaceholder}
         className="text"
         name="fields[comment]"
         placeholder={post.commentPlaceholder}
         required
       ></textarea>
       <div className="tos">
-        <input type="checkbox" required />
-        <p>
+        <input
+          type="checkbox"
+          required
+          id="checkbox"
+          name="checkbox"
+          aria-labelledby="checkbox-text"
+        />
+        <p id="checkbox-text">
           {`${post.tosPre} `}
           <Link to={paths.termsOfService}>{post.tosLink}</Link>
         </p>

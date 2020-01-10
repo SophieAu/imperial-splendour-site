@@ -12,7 +12,13 @@ const MailChimpForm = () => (
       target="_blank"
       noValidate
     >
-      <input type="email" name="EMAIL" placeholder={strings.emailPlaceholder} required />
+      <input
+        type="email"
+        name="EMAIL"
+        placeholder={strings.emailPlaceholder}
+        required
+        aria-label="Email"
+      />
       <div id="newsletter-input" aria-hidden="true">
         <input type="text" name="b_d68145bb4360d40f488bd3c5e_263c850834" tabIndex={-1} />
       </div>
