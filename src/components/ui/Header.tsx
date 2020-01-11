@@ -10,12 +10,13 @@ import Link from '../Link';
 
 const Header = () => (
   <header className="site-header">
-    <nav className="header-menu">
+    <ImageLink to={paths.home} title={header.home} className="header-logo">
+      <img src={logo} alt={header.logoAlt} />
+    </ImageLink>
+    <nav id="header-menu">
       <ul>
-        <li className="header-logo">
-          <ImageLink to={paths.home} title={header.home}>
-            <img src={logo} alt={header.logoAlt} />
-          </ImageLink>
+        <li id="home-link">
+          <Link to={paths.home}>{header.home}</Link>
         </li>
         <li>
           <Link to={paths.downloadIndex}>{header.download}</Link>

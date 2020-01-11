@@ -1,4 +1,4 @@
-@import '../../styles/mixins';
+@import '../../styles/mixins', '../../styles/variables';
 
 .site-header {
   @include header-footer;
@@ -11,18 +11,31 @@
   top: 0;
   height: var(--header-height);
 
+  font: var(--headline-font);
+  font-size: 2.5rem;
+
   a {
     text-decoration: none;
   }
 
-  .header-menu {
+  .header-logo {
+    flex: 1 1 auto;
+    img {
+      flex: 1;
+      line-height: 0;
+      height: var(--logo-height);
+      margin-top: calc((var(--header-height) - var(--logo-height)) / 2);
+    }
+  }
+
+  #header-menu {
     width: 100%;
 
     > ul {
       margin: 0;
       padding: 0;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: flex-end;
 
       list-style-type: none;
 
@@ -32,24 +45,9 @@
         margin: 0;
       }
 
-      .header-logo {
-        flex: 1;
-        line-height: 0;
-
-        img {
-          flex: 1;
-          line-height: 0;
-          height: var(--logo-height);
-          margin-top: calc((var(--header-height) - var(--logo-height)) / 2);
-        }
-      }
-
       > *:not(:last-child) {
         padding-right: 4rem;
       }
     }
   }
-
-  font: var(--headline-font);
-  font-size: 2.5rem;
 }
