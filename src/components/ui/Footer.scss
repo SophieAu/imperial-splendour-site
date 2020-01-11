@@ -40,7 +40,7 @@ footer {
   }
 }
 
-@media (max-width: $tablet-breakpoint - 1) {
+@media (max-width: $tablet-breakpoint) {
   footer {
     flex-direction: column;
     height: auto;

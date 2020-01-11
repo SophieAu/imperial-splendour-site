@@ -31,7 +31,7 @@
   }
 }
 
-@media (max-width: $tablet-breakpoint - 1) {
+@media (max-width: $tablet-breakpoint) {
   .filehosts {
     flex-direction: column;
     padding: 1rem 0;
