@@ -17,6 +17,7 @@
   .info-boxes {
     display: flex;
     flex-direction: column;
+    width: calc(100% - 3rem);
     padding: 5rem 3rem 3rem;
 
     .info-text,
