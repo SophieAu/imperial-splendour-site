@@ -2,7 +2,7 @@ import './Header.scss';
 
 import React from 'react';
 
-import logo from '../../assets/logo_header.png';
+import logo from '../../../assets/img/header_logo.png';
 import { paths } from '../../config';
 import { header } from '../../strings';
 import ImageLink from '../ImageLink';

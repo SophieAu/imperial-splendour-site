@@ -2,8 +2,8 @@ import './rotr.scss';
 
 import React from 'react';
 
-import gDrive from '../../assets/download_googledrive.svg';
-import mediaFire from '../../assets/download_mediafire.svg';
+import gDrive from '../../../assets/img/download/logo_googledrive.svg';
+import mediaFire from '../../../assets/img/download/logo_mediafire.svg';
 import ImageLink from '../../components/ImageLink';
 import Layout from '../../components/Layout';
 import Link from '../../components/Link';
