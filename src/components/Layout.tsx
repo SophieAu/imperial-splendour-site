@@ -17,8 +17,14 @@ interface Props {
 const Layout: React.FC<Props> = ({ title, description, slug, children, additionalHead }) => (
   <>
     <SEO title={title} description={description} slug={slug}>
-      <link href="https://fonts.googleapis.com/css?family=IM+Fell+English" rel="stylesheet" />
-      <link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC" rel="stylesheet" />
+      <link
+        href="https://fonts.googleapis.com/css?family=IM+Fell+English&display=swap"
+        rel="stylesheet"
+      />
+      <link
+        href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC&display=swap"
+        rel="stylesheet"
+      />
       {additionalHead}
     </SEO>
     <Header />
