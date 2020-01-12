@@ -3,6 +3,7 @@
 .site-header {
   @include header-footer;
   --logo-height: 3.5rem;
+  --button-padding: calc((4.5rem - 1.25rem) / 2);
 
   padding: 0 2.5rem 0 1rem;
   width: calc(100vw - 1rem - 2.5rem);
@@ -28,26 +29,81 @@
     }
   }
 
+  #header-menu > ul {
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+
+    list-style-type: none;
+
+    > li {
+      line-height: var(--header-height);
+      display: block;
+      margin: 0;
+    }
+  }
+
+  #exit-button,
+  #hamburger-button {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+  }
+}
+
+@media (min-width: $tablet-breakpoint + 1) {
+  #hamburger-button,
+  #exit-button,
+  #home-link {
+    display: none;
+  }
+  #menu {
+    display: flex;
+  }
+
   #header-menu {
     width: 100%;
+    flex-direction: column;
+    align-items: flex-end;
 
+    > ul > li:not(:last-child) {
+      padding-right: 4rem;
+    }
+  }
+}
+
+@media (max-width: $tablet-breakpoint) {
+  #header-menu {
+    padding: var(--button-padding) 3rem 3rem;
     > ul {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: flex-end;
-
-      list-style-type: none;
-
-      li {
-        line-height: var(--header-height);
-        display: block;
-        margin: 0;
-      }
-
-      > *:not(:last-child) {
-        padding-right: 4rem;
+      flex-direction: column;
+      > li {
+        padding: 0;
       }
     }
+  }
+  #exit-button,
+  #menu {
+    display: none;
+  }
+
+  #header-menu {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    height: calc(100vh - 3rem - var(--button-padding));
+    width: calc(100vw - 3rem - var(--button-padding));
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    align-items: flex-start;
+    justify-content: space-between;
+    background: var(--main-bg) url(/texture_bg.jpg);
+    z-index: 99;
+  }
+  #header-menu.hidden {
+    background: transparent;
+    justify-content: flex-end;
   }
 }

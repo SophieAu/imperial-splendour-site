@@ -23,6 +23,8 @@ export const header = {
   download: 'Download',
   about: 'About',
   blog: 'Blog',
+  hamburgerA11yLabel: 'Toggle Menu',
+  exitA11yLabel: 'Toggle Menu',
 };
 
 export const footer = {
