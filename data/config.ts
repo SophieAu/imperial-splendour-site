@@ -1,5 +1,7 @@
 export const BASE_URL = 'https://imperialsplendour.com/';
 export const TWITTER_HANDLE = '@SplendourTeam';
+const MAILCHIMP_USER = 'd68145bb4360d40f488bd3c5e';
+const MAILCHIMP_ID = '263c850834';
 
 export const slugs = {
   home: '',
@@ -39,4 +41,19 @@ export const downloadLinks = {
   tutorial: 'https://imperialsplendour.com/blog/2019-03-03-anniversary-beta-installation-tutorial/',
   launcherOnly:
     'https://github.com/imperial-splendour/imperial-splendour/releases/download/v1.0-beta.2/IS_Launcher.exe',
+};
+
+export const modDBButton = {
+  popularity: 'https://button.moddb.com/popularity/medium/mods/20800.png',
+  download: 'https://button.moddb.com/download/medium/169793.png',
+};
+
+export const mailchimpForm = {
+  action: `https://imperialsplendour.us19.list-manage.com/subscribe/post?u=${MAILCHIMP_USER}&amp;id=${MAILCHIMP_ID}`,
+  inputName: `b_${MAILCHIMP_USER}_${MAILCHIMP_ID}`,
+};
+
+export const staticman = {
+  action:
+    'https://impsplen-staticman.herokuapp.com/v2/entry/SophieAu/imperial-splendour-website/master/',
 };
