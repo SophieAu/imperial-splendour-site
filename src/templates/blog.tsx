@@ -13,7 +13,7 @@ import { BlogListContext, GraphQLResponse } from '../types';
 export const query = graphql`
   query($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/data/posts/" } }
+      filter: { fileAbsolutePath: { regex: "/data/content/posts/" } }
       sort: { fields: [frontmatter___date], order: DESC }
       limit: $limit
       skip: $skip

@@ -2,7 +2,7 @@ import './index.scss';
 
 import React from 'react';
 
-import heroLogo from '../../assets/img/index/hero_logo.png';
+import heroLogo from '../../data/img/index/hero_logo.png';
 import Layout from '../components/Layout';
 import DownloadButton from '../components/ui/DownloadButton';
 import { paths, slugs } from '../config';
