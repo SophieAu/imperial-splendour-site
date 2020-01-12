@@ -11,14 +11,14 @@ const About = () => (
     <p className="about-text">{about.text}</p>
     <section className="contributors">
       <h2>{about.contributorTitle}</h2>
-      <div className="avatars">
+      <ul className="avatars">
         {about.contributors.map((cont, i) => (
-          <div key={i} className="contributor">
+          <li key={i} className="contributor">
             <img src={about.avatarPath(cont.avatar)} alt={about.avatarAlt({ name: cont.name })} />
             <p>{cont.name}</p>
-          </div>
+          </li>
         ))}
-      </div>
+      </ul>
     </section>
   </Layout>
 );
