@@ -73,15 +73,6 @@
 }
 
 @media (max-width: $tablet-breakpoint) {
-  #header-menu {
-    padding: var(--button-padding) 3rem 3rem;
-    > ul {
-      flex-direction: column;
-      > li {
-        padding: 0;
-      }
-    }
-  }
   #exit-button,
   #menu {
     display: none;
@@ -89,18 +80,28 @@
 
   #header-menu {
     position: absolute;
-    display: flex;
-    flex-direction: row;
+    padding: var(--button-padding) 3rem 3rem;
     height: calc(100vh - 3rem - var(--button-padding));
     width: calc(100vw - 3rem - var(--button-padding));
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: 99;
+
+    display: flex;
+    flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
+
     background: var(--main-bg) url(/texture_bg.jpg);
-    z-index: 99;
+
+    > ul {
+      flex-direction: column;
+      > li {
+        padding: 0;
+      }
+    }
   }
   #header-menu.hidden {
     background: transparent;
