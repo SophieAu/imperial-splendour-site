@@ -8,7 +8,7 @@ public_folder: static
 collections:
   - name: "blog"
     label: "Blog"
-    folder: "content/blog"
+    folder: "data/content/blog"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     extension: "md"
@@ -17,6 +17,6 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Author", name: "date", widget: "string" }
-      - { label: "Excerpt", name: "description", widget: "string" }
+      - { label: "Author", name: "author", widget: "string" }
+      - { label: "Excerpt", name: "excerpt", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
