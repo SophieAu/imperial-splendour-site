@@ -1,5 +1,5 @@
+import { InfoBox } from '../src/types';
 import { paths } from './config';
-import { InfoBox } from './types';
 
 const SITE_TITLE = 'Imperial Splendour';
 const buildPageTitle = (title: string) => `${title} | ${SITE_TITLE}`;

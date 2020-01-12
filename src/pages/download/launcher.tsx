@@ -2,11 +2,11 @@ import './rotr.scss';
 
 import React from 'react';
 
+import { downloadLinks, slugs } from '../../../data/config';
+import { downloadLauncher } from '../../../data/strings';
 import Layout from '../../components/Layout';
 import Link from '../../components/Link';
 import NewsletterSignup from '../../components/ui/NewsletterSignup';
-import { downloadLinks, slugs } from '../../config';
-import { downloadLauncher } from '../../strings';
 
 const DownloadRotR = () => (
   <Layout

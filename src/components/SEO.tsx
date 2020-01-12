@@ -1,7 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 
-import { BASE_URL, TWITTER_HANDLE } from '../config';
+import { BASE_URL, TWITTER_HANDLE } from '../../data/config';
 
 interface Props {
   title: string;

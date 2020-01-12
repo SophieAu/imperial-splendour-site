@@ -3,11 +3,11 @@ import './blog.scss';
 import { graphql } from 'gatsby';
 import React from 'react';
 
+import { paths, slugs } from '../../data/config';
+import { blog } from '../../data/strings';
 import Layout from '../components/Layout';
 import Link from '../components/Link';
 import PostHeader from '../components/ui/PostHeader';
-import { paths, slugs } from '../config';
-import { blog } from '../strings';
 import { BlogListContext, GraphQLResponse } from '../types';
 
 export const query = graphql`

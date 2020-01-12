@@ -2,9 +2,9 @@ import './about.scss';
 
 import React from 'react';
 
+import { slugs } from '../../data/config';
+import { about } from '../../data/strings';
 import Layout from '../components/Layout';
-import { slugs } from '../config';
-import { about } from '../strings';
 
 const About = () => (
   <Layout title={about.pageTitle} description={about.pageDescription} slug={slugs.about}>

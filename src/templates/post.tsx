@@ -3,11 +3,11 @@ import './post.scss';
 import { graphql } from 'gatsby';
 import React from 'react';
 
+import { paths } from '../../data/config';
+import { post } from '../../data/strings';
 import Layout from '../components/Layout';
 import Link from '../components/Link';
 import PostHeader from '../components/ui/PostHeader';
-import { paths } from '../config';
-import { post } from '../strings';
 import { Comment, SingleGraphQLResponse } from '../types';
 
 export const query = graphql`

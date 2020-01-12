@@ -2,8 +2,8 @@ import './Footer.scss';
 
 import React from 'react';
 
-import { contributors, socialMedia } from '../../config';
-import { footer } from '../../strings';
+import { contributors, socialMedia } from '../../../data/config';
+import { footer } from '../../../data/strings';
 import ImageLink from '../ImageLink';
 import Link from '../Link';
 

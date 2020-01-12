@@ -3,9 +3,9 @@ import './terms-of-service.scss';
 import { graphql } from 'gatsby';
 import React from 'react';
 
+import { slugs } from '../../data/config';
+import { post } from '../../data/strings';
 import Layout from '../components/Layout';
-import { slugs } from '../config';
-import { post } from '../strings';
 import { ToSGraphQLResponse } from '../types';
 
 const TermsOfService: React.FC<ToSGraphQLResponse> = ({ data: { markdownRemark: tos } }) => (
