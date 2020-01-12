@@ -25,13 +25,7 @@ export const query = graphql`
     markdownRemark(id: { eq: $id }) {
       id
       html
-      frontmatter {
-        title
-        date(formatString: "YYYY-MM-DD")
-        formattedDate: date(formatString: "MMMM DD, YYYY")
-        author
-        excerpt
-      }
+      ...PostFrontmatter
     }
   }
 `;

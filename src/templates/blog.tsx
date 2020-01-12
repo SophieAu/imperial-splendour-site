@@ -22,13 +22,7 @@ export const query = graphql`
       edges {
         node {
           id
-          frontmatter {
-            title
-            author
-            date(formatString: "YYYY-MM-DD")
-            formattedDate: date(formatString: "MMMM DD, YYYY")
-            excerpt
-          }
+          ...PostFrontmatter
         }
       }
     }
