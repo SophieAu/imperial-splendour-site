@@ -1,5 +1,7 @@
+import { FluidObject } from 'gatsby-image';
+
 export type InfoBox = {
-  image: string;
+  image: FluidObject;
   imageAlt: string;
   text: string;
 };
