@@ -5,7 +5,6 @@ import Img from 'gatsby-image';
 import React from 'react';
 
 import { paths, slugs } from '../../data/config';
-import heroLogo from '../../data/img/index/hero_logo.png';
 import { home } from '../../data/strings';
 import Layout from '../components/Layout';
 import DownloadButton from '../components/ui/DownloadButton';
@@ -23,6 +22,13 @@ export const squareImage = graphql`
 
 export const query = graphql`
   query {
+    heroImg: file(relativePath: { eq: "index/hero_logo.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1360) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
     blackwatch: file(relativePath: { eq: "index/info_blackwatch.jpg" }) {
       ...squareImage
     }
@@ -59,7 +65,11 @@ const Home: React.FC<any> = ({ data }) => {
     <Layout title={home.pageTitle} description={home.pageDescription} slug={slugs.home}>
       <section className="hero">
         <div className="hero-body">
-          <img className="hero-logo" src={heroLogo} alt={home.heroLogoAlt} />
+          <Img
+            className="hero-logo"
+            fluid={data.heroImg.childImageSharp.fluid}
+            alt={home.heroLogoAlt}
+          />
           <p className="hero-text">{home.heroText}</p>
         </div>
         <DownloadButton linkTo={paths.downloadIndex} className="hero-btn" />

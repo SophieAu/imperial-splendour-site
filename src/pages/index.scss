@@ -24,6 +24,7 @@
 
     .hero-logo {
       width: 50vw;
+      max-width: var(--max-body-width);
     }
 
     .hero-text {
