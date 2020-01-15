@@ -1,5 +1,5 @@
+import { InfoBox } from '../src/types';
 import { paths } from './config';
-import { InfoBox } from './types';
 
 const SITE_TITLE = 'Imperial Splendour';
 const buildPageTitle = (title: string) => `${title} | ${SITE_TITLE}`;
@@ -44,17 +44,17 @@ export const postHeader = {
 
 const infoBoxes: InfoBox[] = [
   {
-    image: '/img/info_blackwatch.jpg',
+    image: require('../data/img/index/info_blackwatch.jpg'),
     imageAlt: 'The British/Scottish Blackwatch in battle formation',
     text: `Fight in the Revolutionary Wars. Command your armies to destroy the old order or preserve it. Rewrite history. The world is at your feet. To give you an authentic feeling for the battles of this period we created armies with historically accurate uniforms.`,
   },
   {
-    image: '/img/info_portraits.jpg',
+    image: require('../data/img/index/info_portraits.jpg'),
     imageAlt: 'Collage of hundreds of historical portraits that appear in the mod',
     text: `But historical accuracy does not end with new fancy uniforms. There are many historical characters in the game that you already know or whose portrait you might have seen in a museum. More than 230 portraits have been added to the game to replace the vanilla portrait sets of ETW and give you an 18th century feeling.`,
   },
   {
-    image: '/img/info_gameplay.jpg',
+    image: require('../data/img/index/info_gameplay.jpg'),
     imageAlt: 'Screenshot of the HUD a user sees in the game',
     text:
       'Additionally, RotR gives a more authentic feeling on the campaign map. Several factions have a new UI and all have their historical flags. You might also recognize some of the cities and buildings as 3D recreations of their actual historical counterparts.',
@@ -134,7 +134,7 @@ export const about = {
     { name: 'mad orc', avatar: 'mad_orc' },
     { name: 'myfate', avatar: 'myfate' },
   ],
-  avatarPath: (avatar: string) => require(`./assets/contributors/${avatar}_portrait.png`),
+  avatarPath: (avatar: string) => require(`../data/img/about/${avatar}_portrait.png`),
   avatarAlt: ({ name }: { name: string }) => `Avatar of ${name}`,
 };
 

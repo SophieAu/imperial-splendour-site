@@ -2,8 +2,8 @@ import './Footer.scss';
 
 import React from 'react';
 
-import { contributors, socialMedia } from '../../config';
-import { footer } from '../../strings';
+import { contributors, modDBButton, socialMedia } from '../../../data/config';
+import { footer } from '../../../data/strings';
 import ImageLink from '../ImageLink';
 import Link from '../Link';
 
@@ -31,7 +31,7 @@ const Footer = () => (
 
 const ModDB = () => (
   <ImageLink to={socialMedia.modDB} title={footer.socialImgAlt({ platform: 'ModDB' })}>
-    <img src="https://button.moddb.com/popularity/medium/mods/20800.png" alt="moddb" />
+    <img src={modDBButton.popularity} alt="moddb" />
   </ImageLink>
 );
 

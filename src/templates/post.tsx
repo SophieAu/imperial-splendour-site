@@ -3,11 +3,11 @@ import './post.scss';
 import { graphql } from 'gatsby';
 import React from 'react';
 
+import { paths, staticman } from '../../data/config';
+import { post } from '../../data/strings';
 import Layout from '../components/Layout';
 import Link from '../components/Link';
 import PostHeader from '../components/ui/PostHeader';
-import { paths } from '../config';
-import { post } from '../strings';
 import { Comment, SingleGraphQLResponse } from '../types';
 
 export const query = graphql`
@@ -25,13 +25,7 @@ export const query = graphql`
     markdownRemark(id: { eq: $id }) {
       id
       html
-      frontmatter {
-        title
-        date(formatString: "YYYY-MM-DD")
-        formattedDate: date(formatString: "MMMM DD, YYYY")
-        author
-        excerpt
-      }
+      ...PostFrontmatter
     }
   }
 `;
@@ -79,11 +73,7 @@ const Comments: React.FC<{ comments: Comment[] }> = ({ comments }) => (
 const CommentForm = () => (
   <section className="comment-form">
     <h2>{post.commentForm}</h2>
-    <form
-      method="POST"
-      className="comment-form"
-      action="https://impsplen-staticman.herokuapp.com/v2/entry/SophieAu/imperial-splendour-website/master/"
-    >
+    <form method="POST" className="comment-form" action={staticman.action}>
       <input name="options[redirect]" type="hidden" value="{{ .Permalink }}" />
       <input name="options[slug]" type="hidden" value="{{ $slug }}" />
       <input name="fields[slug]" type="hidden" value="{{ $slug }}" />

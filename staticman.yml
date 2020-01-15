@@ -1,7 +1,7 @@
 allowedFields     : ["name", "email", "website", "comment", "slug"]
 branch            : "master"
 commitMessage     : "New comment to {options.slug}"
-path              : "data/comments/"
+path              : "data/content/comments/"
 filename          : "{options.slug}-{@timestamp}"
 format            : "yaml"
 moderation        : true

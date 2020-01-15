@@ -2,11 +2,11 @@ import './index.scss';
 
 import React from 'react';
 
+import { paths, slugs } from '../../../data/config';
+import { download } from '../../../data/strings';
 import Layout from '../../components/Layout';
 import Link from '../../components/Link';
 import DownloadButton from '../../components/ui/DownloadButton';
-import { paths, slugs } from '../../config';
-import { download } from '../../strings';
 
 const DownloadIndex = () => (
   <Layout

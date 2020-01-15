@@ -2,8 +2,8 @@ import './PostHeader.scss';
 
 import React from 'react';
 
-import { slugs } from '../../config';
-import { postHeader } from '../../strings';
+import { slugs } from '../../../data/config';
+import { postHeader } from '../../../data/strings';
 import { PostFrontmatter } from '../../types';
 import Link from '../Link';
 

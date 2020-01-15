@@ -36,7 +36,7 @@ const gatsbyPluginFeedOptions = {
       {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] },
-          filter: {fileAbsolutePath: {regex: "/data\/posts/"}}
+          filter: {fileAbsolutePath: {regex: "/data\/content\/posts/"}}
         ) {
           edges {
             node {
@@ -67,6 +67,7 @@ module.exports = {
     siteUrl: `https://imperialsplendour.com`,
   },
   plugins: [
+    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-sitemap`,
@@ -82,21 +83,21 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'comments',
-        path: `${__dirname}/data/comments/`,
+        path: `${__dirname}/data/content/comments/`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `blog-posts`,
-        path: `${__dirname}/data/posts/`,
+        path: `${__dirname}/data/content/posts/`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `terms-of-service`,
-        path: `${__dirname}/data/terms-of-service.md`,
+        path: `${__dirname}/data/content/terms-of-service.md`,
       },
     },
     {

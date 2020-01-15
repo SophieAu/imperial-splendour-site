@@ -2,19 +2,17 @@ import './rotr.scss';
 
 import React from 'react';
 
-import gDrive from '../../assets/download_googledrive.svg';
-import mediaFire from '../../assets/download_mediafire.svg';
+import { downloadLinks, modDBButton, slugs } from '../../../data/config';
+import gDrive from '../../../data/img/download/logo_googledrive.svg';
+import mediaFire from '../../../data/img/download/logo_mediafire.svg';
+import { downloadRotR } from '../../../data/strings';
 import ImageLink from '../../components/ImageLink';
 import Layout from '../../components/Layout';
 import Link from '../../components/Link';
 import NewsletterSignup from '../../components/ui/NewsletterSignup';
-import { downloadLinks, slugs } from '../../config';
-import { downloadRotR } from '../../strings';
-
-const modDB = 'https://button.moddb.com/download/medium/169793.png';
 
 const hosts = [
-  { platform: 'Mod DB', link: downloadLinks.modDB, imgSrc: modDB },
+  { platform: 'Mod DB', link: downloadLinks.modDB, imgSrc: modDBButton.download },
   { platform: 'Mediafire', link: downloadLinks.mediaFire, imgSrc: mediaFire },
   { platform: 'Google Drive', link: downloadLinks.googleDrive, imgSrc: gDrive },
 ];

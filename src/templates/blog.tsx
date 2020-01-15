@@ -3,17 +3,17 @@ import './blog.scss';
 import { graphql } from 'gatsby';
 import React from 'react';
 
+import { paths, slugs } from '../../data/config';
+import { blog } from '../../data/strings';
 import Layout from '../components/Layout';
 import Link from '../components/Link';
 import PostHeader from '../components/ui/PostHeader';
-import { paths, slugs } from '../config';
-import { blog } from '../strings';
 import { BlogListContext, GraphQLResponse } from '../types';
 
 export const query = graphql`
   query($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/data/posts/" } }
+      filter: { fileAbsolutePath: { regex: "/data/content/posts/" } }
       sort: { fields: [frontmatter___date], order: DESC }
       limit: $limit
       skip: $skip
@@ -22,13 +22,7 @@ export const query = graphql`
       edges {
         node {
           id
-          frontmatter {
-            title
-            author
-            date(formatString: "YYYY-MM-DD")
-            formattedDate: date(formatString: "MMMM DD, YYYY")
-            excerpt
-          }
+          ...PostFrontmatter
         }
       }
     }

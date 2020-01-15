@@ -2,11 +2,11 @@ import './index.scss';
 
 import React from 'react';
 
-import heroLogo from '../../static/img/hero_logo.png';
+import { paths, slugs } from '../../data/config';
+import heroLogo from '../../data/img/index/hero_logo.png';
+import { home } from '../../data/strings';
 import Layout from '../components/Layout';
 import DownloadButton from '../components/ui/DownloadButton';
-import { paths, slugs } from '../config';
-import { home } from '../strings';
 import { InfoBox as InfoBoxType } from '../types';
 
 const Home = () => (

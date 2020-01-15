@@ -6,7 +6,7 @@ const POSTS_PER_PAGE = 6;
 
 const POST_QUERY = `
   {
-    posts: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/data\/posts/"}}) {
+    posts: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/data\/content\/posts/"}}) {
       edges {
         node {
           id
@@ -17,7 +17,7 @@ const POST_QUERY = `
         }
       }
     }
-  tos: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/data\/terms-of-service/"}}) {
+  tos: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/data\/content\/terms-of-service/"}}) {
     edges {
       node {
         id
