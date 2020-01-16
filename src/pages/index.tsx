@@ -14,7 +14,7 @@ export const squareImage = graphql`
   fragment squareImage on File {
     childImageSharp {
       fluid(maxWidth: 805) {
-        ...GatsbyImageSharpFluid
+        ...GatsbyImageSharpFluid_withWebp
       }
     }
   }
@@ -25,7 +25,7 @@ export const query = graphql`
     heroImg: file(relativePath: { eq: "index/hero_logo.png" }) {
       childImageSharp {
         fluid(maxWidth: 1360) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
