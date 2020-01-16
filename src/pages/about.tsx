@@ -12,7 +12,7 @@ import { ImageQuery } from '../types';
 export const squareImage = graphql`
   fragment avatarImage on File {
     childImageSharp {
-      fixed(width: 805) {
+      fixed(width: 66, height: 88) {
         ...GatsbyImageSharpFixed_withWebp
       }
     }

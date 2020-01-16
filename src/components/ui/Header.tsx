@@ -13,8 +13,8 @@ const query = graphql`
   query {
     heroImg: file(relativePath: { eq: "header_logo.png" }) {
       childImageSharp {
-        fluid(maxWidth: 1360) {
-          ...GatsbyImageSharpFluid_withWebp
+        fixed(height: 56, width: 183) {
+          ...GatsbyImageSharpFixed_withWebp
         }
       }
     }
@@ -29,8 +29,9 @@ const Header = () => {
       <ImageLink to={paths.home} title={header.home} className="header-logo">
         <Img
           className="header-img"
-          fluid={data.heroImg.childImageSharp.fluid}
+          fixed={data.heroImg.childImageSharp.fixed}
           alt={header.logoAlt}
+          placeholderStyle={{ display: 'none' }}
         />
       </ImageLink>
       <nav id="header-menu" className="hidden">
