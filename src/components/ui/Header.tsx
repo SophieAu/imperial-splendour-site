@@ -1,38 +1,59 @@
 import './Header.scss';
 
+import { graphql, useStaticQuery } from 'gatsby';
+import Img from 'gatsby-image';
 import React from 'react';
 
 import { paths } from '../../../data/config';
-import logo from '../../../data/img/header_logo.png';
 import { header } from '../../../data/strings';
 import ImageLink from '../ImageLink';
 import Link from '../Link';
 
-const Header = () => (
-  <header className="site-header">
-    <ImageLink to={paths.home} title={header.home} className="header-logo">
-      <img src={logo} alt={header.logoAlt} />
-    </ImageLink>
-    <nav id="header-menu" className="hidden">
-      <ul id="menu">
-        <li id="home-link">
-          <Link to={paths.home}>{header.home}</Link>
-        </li>
-        <li>
-          <Link to={paths.downloadIndex}>{header.download}</Link>
-        </li>
-        <li>
-          <Link to={paths.blog}>{header.blog}</Link>
-        </li>
-        <li>
-          <Link to={paths.about}>{header.about}</Link>
-        </li>
-      </ul>
-      <HamburgerButton />
-      <ExitButton />
-    </nav>
-  </header>
-);
+const query = graphql`
+  query {
+    heroImg: file(relativePath: { eq: "header_logo.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1360) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+  }
+`;
+
+const Header = () => {
+  const data = useStaticQuery(query);
+
+  return (
+    <header className="site-header">
+      <ImageLink to={paths.home} title={header.home} className="header-logo">
+        <Img
+          className="header-img"
+          fluid={data.heroImg.childImageSharp.fluid}
+          alt={header.logoAlt}
+        />
+      </ImageLink>
+      <nav id="header-menu" className="hidden">
+        <ul id="menu">
+          <li id="home-link">
+            <Link to={paths.home}>{header.home}</Link>
+          </li>
+          <li>
+            <Link to={paths.downloadIndex}>{header.download}</Link>
+          </li>
+          <li>
+            <Link to={paths.blog}>{header.blog}</Link>
+          </li>
+          <li>
+            <Link to={paths.about}>{header.about}</Link>
+          </li>
+        </ul>
+        <HamburgerButton />
+        <ExitButton />
+      </nav>
+    </header>
+  );
+};
 
 const getById = (id: string) => document.getElementById(id);
 

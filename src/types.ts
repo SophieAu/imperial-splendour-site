@@ -1,10 +1,11 @@
-import { FluidObject } from 'gatsby-image';
-
 export type InfoBox = {
-  image: FluidObject;
+  imageKey: string;
   imageAlt: string;
   text: string;
 };
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export type ImageQuery = any;
 
 // ---
 // Post GraphQL Response

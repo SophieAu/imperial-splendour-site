@@ -8,10 +8,10 @@ import { paths, slugs } from '../../data/config';
 import { home } from '../../data/strings';
 import Layout from '../components/Layout';
 import DownloadButton from '../components/ui/DownloadButton';
-import { InfoBox as InfoBoxType } from '../types';
+import { ImageQuery, InfoBox as InfoBoxType } from '../types';
 
 export const squareImage = graphql`
-  fragment squareImage on File {
+  fragment infoBoxImage on File {
     childImageSharp {
       fluid(maxWidth: 805) {
         ...GatsbyImageSharpFluid_withWebp
@@ -25,42 +25,23 @@ export const query = graphql`
     heroImg: file(relativePath: { eq: "index/hero_logo.png" }) {
       childImageSharp {
         fluid(maxWidth: 1360) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     blackwatch: file(relativePath: { eq: "index/info_blackwatch.jpg" }) {
-      ...squareImage
+      ...infoBoxImage
     }
     portraits: file(relativePath: { eq: "index/info_portraits.jpg" }) {
-      ...squareImage
+      ...infoBoxImage
     }
     gameplay: file(relativePath: { eq: "index/info_gameplay.jpg" }) {
-      ...squareImage
+      ...infoBoxImage
     }
   }
 `;
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const Home: React.FC<any> = ({ data }) => {
-  const infoBoxes: InfoBoxType[] = [
-    {
-      image: data.blackwatch.childImageSharp.fluid,
-      imageAlt: home.infoBoxes[0].imageAlt,
-      text: home.infoBoxes[0].text,
-    },
-    {
-      image: data.portraits.childImageSharp.fluid,
-      imageAlt: home.infoBoxes[1].imageAlt,
-      text: home.infoBoxes[1].text,
-    },
-    {
-      image: data.gameplay.childImageSharp.fluid,
-      imageAlt: home.infoBoxes[2].imageAlt,
-      text: home.infoBoxes[2].text,
-    },
-  ];
-
+const Home: React.FC<{ data: ImageQuery }> = ({ data }) => {
   return (
     <Layout title={home.pageTitle} description={home.pageDescription} slug={slugs.home}>
       <section className="hero">
@@ -75,17 +56,26 @@ const Home: React.FC<any> = ({ data }) => {
         <DownloadButton linkTo={paths.downloadIndex} className="hero-btn" />
       </section>
       <section className="info-boxes">
-        {infoBoxes.map((box, i) => (
-          <InfoBox key={i} box={box} i={i} />
+        {home.infoBoxes.map((box, i) => (
+          <InfoBox key={i} box={box} i={i} data={data} />
         ))}
       </section>
     </Layout>
   );
 };
 
-const InfoBox: React.FC<{ box: InfoBoxType; i: number }> = ({ box, i }) => (
+interface InfoBoxProps {
+  box: InfoBoxType;
+  i: number;
+  data: ImageQuery;
+}
+
+const InfoBox: React.FC<InfoBoxProps> = ({ box, data, i }) => (
   <>
-    <Img className={`info-image-${i % 2 ? 'even' : 'odd'}`} fluid={box.image} />
+    <Img
+      className={`info-image-${i % 2 ? 'even' : 'odd'}`}
+      fluid={data[box.imageKey].childImageSharp.fluid}
+    />
     <p className="info-text">{box.text}</p>
   </>
 );
