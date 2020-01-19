@@ -13,7 +13,7 @@ import { ImageQuery, InfoBox as InfoBoxType } from '../types';
 export const squareImage = graphql`
   fragment infoBoxImage on File {
     childImageSharp {
-      fluid(maxWidth: 805) {
+      fluid(maxWidth: 805, quality: 90) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
