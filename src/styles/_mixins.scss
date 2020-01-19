@@ -1,6 +1,6 @@
 @mixin header-footer {
   background-color: var(--header-footer-bg);
-  background-image: url(/texture_headfoot.jpg);
+  background-image: url(../../../data/img/texture_headfoot.jpg); // relative to where the mixin is used...
   box-shadow: 0 0 1.25rem 1rem rgba(142, 142, 142, 0.4);
   box-shadow: 0 0 1.25rem 0.75rem rgba(0, 0, 0, 0.5);
   z-index: 2;

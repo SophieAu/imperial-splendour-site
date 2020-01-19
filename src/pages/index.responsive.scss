@@ -30,7 +30,7 @@
 
 @media (min-width: $tablet-breakpoint + 1) {
   .hero-body {
-    background: no-repeat bottom/100% url(/hero_bg.jpg);
+    background: no-repeat bottom/100% url(../../data/img/hero_bg.jpg);
 
     .hero-text {
       color: var(--white);
