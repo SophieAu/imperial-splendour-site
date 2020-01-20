@@ -51,9 +51,15 @@
 
   .info-image-even {
     grid-column: 1/4;
+    margin: 1rem;
+    width: 100%;
+    height: auto;
   }
   .info-image-odd {
     grid-column: 3/6;
+    margin: 1rem;
+    width: 100%;
+    height: auto;
   }
 
   .info-text {
