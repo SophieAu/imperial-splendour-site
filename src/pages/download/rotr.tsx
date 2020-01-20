@@ -3,8 +3,8 @@ import './rotr.scss';
 import React from 'react';
 
 import { downloadLinks, modDBButton, slugs } from '../../../data/config';
-import gDrive from '../../../data/img/download/logo_googledrive.svg';
-import mediaFire from '../../../data/img/download/logo_mediafire.svg';
+import gDrive from '../../../data/images/download/logo_googledrive.svg';
+import mediaFire from '../../../data/images/download/logo_mediafire.svg';
 import { downloadRotR } from '../../../data/strings';
 import ImageLink from '../../components/ImageLink';
 import Layout from '../../components/Layout';
