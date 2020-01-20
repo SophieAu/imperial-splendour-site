@@ -2,6 +2,8 @@
 /* eslint-disable @typescript-eslint/camelcase */
 const { createSlug } = require('./gatsby-helper');
 
+const hiddenPages = ['/download/*'];
+
 const gatsbyPluginFeedOptions = {
   query: `
   {
@@ -129,6 +131,18 @@ module.exports = {
         theme_color: `#B19776`,
         display: `minimal-ui`,
         icon: `favicon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        policy: [{ userAgent: '*', disallow: hiddenPages, noindex: hiddenPages }],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        exclude: hiddenPages,
       },
     },
     {
