@@ -24,12 +24,14 @@
     img[class^='info-image-'] {
       padding: 1rem;
       object-fit: contain;
+      text-align: center;
     }
   }
 }
 
 @media (min-width: $tablet-breakpoint + 1) {
   .hero-body {
+    max-height: calc(var(--max-site-width) * 1080 / 1920);
     background: no-repeat bottom/100% url(../../data/images/hero_bg.jpg);
 
     .hero-text {
@@ -49,5 +51,10 @@
       margin-top: 1.5rem;
       color: black;
     }
+  }
+
+  .info-boxes {
+    width: 100%;
+    padding: 5rem 0 3rem;
   }
 }
