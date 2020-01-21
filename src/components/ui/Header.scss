@@ -20,7 +20,6 @@
   }
 
   .header-logo {
-    flex: 1 1 auto;
     .header-img {
       flex: 1;
       line-height: 0;
@@ -30,6 +29,7 @@
   }
 
   #header-menu > ul {
+    display: flex;
     margin: 0;
     padding: 0;
     justify-content: flex-end;
@@ -61,11 +61,8 @@
 @media (min-width: $tablet-breakpoint + 1) {
   #hamburger-button,
   #exit-button,
-  #home-link {
+  .home-link {
     display: none;
-  }
-  #menu {
-    display: flex;
   }
 
   #header-menu {
@@ -80,23 +77,18 @@
 }
 
 @media (max-width: $tablet-breakpoint) {
-  #exit-button,
-  #menu {
-    display: none;
-  }
-
   #header-menu {
     position: absolute;
     padding: var(--button-padding) 3rem 3rem;
     height: calc(100vh - 3rem - var(--button-padding));
-    width: calc(100vw - 3rem - var(--button-padding));
+    width: calc(100vw - 6rem);
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: 99;
 
-    display: flex;
+    display: none;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
@@ -109,9 +101,5 @@
         padding: 0;
       }
     }
-  }
-  #header-menu.hidden {
-    background: transparent;
-    justify-content: flex-end;
   }
 }

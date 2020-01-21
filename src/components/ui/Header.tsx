@@ -9,6 +9,28 @@ import { header } from '../../../data/strings';
 import ImageLink from '../ImageLink';
 import Link from '../Link';
 
+const getById = (id: string) => document.getElementById(id);
+
+const toggleMenu = () => {
+  const hamburgerButton = getById('hamburger-button');
+  const exitButton = getById('exit-button');
+  const wrapper = getById('header-menu');
+  const body = document.getElementsByTagName('body')[0];
+  if (!hamburgerButton || !exitButton || !wrapper || !body) return;
+
+  if (wrapper.style.display === 'none' || !wrapper.style.display) {
+    exitButton.style.display = 'block';
+    hamburgerButton.style.display = 'none';
+    body.style.overflow = 'hidden';
+    wrapper.style.display = 'flex';
+  } else {
+    exitButton.style.display = 'none';
+    hamburgerButton.style.display = 'block';
+    body.style.overflow = 'auto';
+    wrapper.style.display = 'none';
+  }
+};
+
 const query = graphql`
   query {
     heroImg: file(relativePath: { eq: "header_logo.png" }) {
@@ -34,51 +56,34 @@ const Header = () => {
           placeholderStyle={{ display: 'none' }}
         />
       </ImageLink>
-      <nav id="header-menu" className="hidden">
-        <ul id="menu">
-          <li id="home-link">
-            <Link to={paths.home}>{header.home}</Link>
+      <nav id="header-menu">
+        <ul>
+          <li className="home-link">
+            <Link to={paths.home} handleClick={toggleMenu}>
+              {header.home}
+            </Link>
           </li>
           <li>
-            <Link to={paths.downloadIndex}>{header.download}</Link>
+            <Link handleClick={toggleMenu} to={paths.downloadIndex}>
+              {header.download}
+            </Link>
           </li>
           <li>
-            <Link to={paths.blog}>{header.blog}</Link>
+            <Link handleClick={toggleMenu} to={paths.blog}>
+              {header.blog}
+            </Link>
           </li>
           <li>
-            <Link to={paths.about}>{header.about}</Link>
+            <Link handleClick={toggleMenu} to={paths.about}>
+              {header.about}
+            </Link>
           </li>
         </ul>
-        <HamburgerButton />
         <ExitButton />
       </nav>
+      <HamburgerButton />
     </header>
   );
-};
-
-const getById = (id: string) => document.getElementById(id);
-
-const toggleMenu = () => {
-  const hamburgerButton = getById('hamburger-button');
-  const exitButton = getById('exit-button');
-  const wrapper = getById('header-menu');
-  const menu = getById('menu');
-  const body = document.getElementsByTagName('body')[0];
-  if (!hamburgerButton || !exitButton || !wrapper || !menu || !body) return;
-
-  if (menu.style.display === 'none' || !menu.style.display) {
-    exitButton.style.display = 'block';
-    hamburgerButton.style.display = 'none';
-    menu.style.display = 'flex';
-    body.style.overflow = 'hidden';
-    wrapper.className = '';
-  } else {
-    exitButton.style.display = 'none';
-    hamburgerButton.style.display = 'block';
-    menu.style.display = 'none';
-    body.style.overflow = 'auto';
-    wrapper.className = 'hidden';
-  }
 };
 
 const HamburgerButton = () => (

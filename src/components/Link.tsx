@@ -7,9 +7,10 @@ interface Props {
   className?: string;
   style?: React.CSSProperties;
   ariaLabel?: string;
+  handleClick?: () => void;
 }
 
-const Link: React.FC<Props> = ({ to, className, children, style, rel, ariaLabel }) =>
+const Link: React.FC<Props> = ({ to, className, children, style, rel, ariaLabel, handleClick }) =>
   /^http/.test(to) ? (
     <a
       className={className}
@@ -18,11 +19,19 @@ const Link: React.FC<Props> = ({ to, className, children, style, rel, ariaLabel 
       rel="noopener noreferrer"
       style={style}
       aria-label={ariaLabel}
+      onClick={handleClick}
     >
       {children}
     </a>
   ) : (
-    <GatsbyLink className={className} to={to} style={style} rel={rel} aria-label={ariaLabel}>
+    <GatsbyLink
+      className={className}
+      to={to}
+      style={style}
+      rel={rel}
+      onClick={handleClick}
+      aria-label={ariaLabel}
+    >
       {children}
     </GatsbyLink>
   );
