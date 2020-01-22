@@ -79,9 +79,9 @@
 @media (max-width: $tablet-breakpoint) {
   #header-menu {
     position: absolute;
-    padding: var(--button-padding) 3rem 3rem;
+    padding: var(--button-padding) 2.5rem 3rem 3rem;
     height: calc(100vh - 3rem - var(--button-padding));
-    width: calc(100vw - 6rem);
+    width: calc(100vw - 5.5rem);
     top: 0;
     left: 0;
     right: 0;
