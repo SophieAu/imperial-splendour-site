@@ -57,34 +57,38 @@ const Header = () => {
         />
       </ImageLink>
       <nav id="header-menu">
-        <ul>
-          <li className="home-link">
-            <Link to={paths.home} handleClick={toggleMenu}>
-              {header.home}
-            </Link>
-          </li>
-          <li>
-            <Link handleClick={toggleMenu} to={paths.downloadIndex}>
-              {header.download}
-            </Link>
-          </li>
-          <li>
-            <Link handleClick={toggleMenu} to={paths.blog}>
-              {header.blog}
-            </Link>
-          </li>
-          <li>
-            <Link handleClick={toggleMenu} to={paths.about}>
-              {header.about}
-            </Link>
-          </li>
-        </ul>
+        <NavLinks />
         <ExitButton />
       </nav>
       <HamburgerButton />
     </header>
   );
 };
+
+const NavLinks = () => (
+  <ul>
+    <li className="home-link">
+      <Link to={paths.home} handleClick={toggleMenu}>
+        {header.home}
+      </Link>
+    </li>
+    <li>
+      <Link handleClick={toggleMenu} to={paths.downloadIndex}>
+        {header.download}
+      </Link>
+    </li>
+    <li>
+      <Link handleClick={toggleMenu} to={paths.blog}>
+        {header.blog}
+      </Link>
+    </li>
+    <li>
+      <Link handleClick={toggleMenu} to={paths.about}>
+        {header.about}
+      </Link>
+    </li>
+  </ul>
+);
 
 const HamburgerButton = () => (
   <button
