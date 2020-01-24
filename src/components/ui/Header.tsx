@@ -47,7 +47,7 @@ const Header = () => {
   const data = useStaticQuery(query);
 
   return (
-    <header className="site-header">
+    <header className="site-header head-foot">
       <ImageLink to={paths.home} title={header.home} className="header-logo">
         <Img
           className="header-img"

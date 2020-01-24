@@ -1,7 +1,6 @@
-@import '../../styles/variables', '../../styles/mixins';
+@import '../../styles/variables';
 
 footer {
-  @include header-footer;
   height: var(--footer-height);
 
   .footer-credits {

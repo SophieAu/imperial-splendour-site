@@ -10,6 +10,10 @@ body {
   font: var(--body-font);
 }
 
+.webp body {
+  background: var(--main-bg) url(../../data/img/texture_bg.webp);
+}
+
 #___gatsby > * {
   min-height: 100vh;
   display: flex;
@@ -56,4 +60,20 @@ a {
 
 #gatsby-announcer {
   display: none;
+}
+
+.head-foot {
+  background-color: var(--header-footer-bg);
+  background-image: url(../../data/img/texture_headfoot.jpg);
+  box-shadow: 0 0 1.25rem 1rem rgba(142, 142, 142, 0.4);
+  box-shadow: 0 0 1.25rem 0.75rem rgba(0, 0, 0, 0.5);
+  z-index: 2;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.webp .head-foot {
+  background-image: url(../../data/img/texture_headfoot.webp);
 }

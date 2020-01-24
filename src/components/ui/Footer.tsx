@@ -8,7 +8,7 @@ import ImageLink from '../ImageLink';
 import Link from '../Link';
 
 const Footer = () => (
-  <footer className="footer">
+  <footer className="footer head-foot">
     <p className="footer-credits">
       {`${footer.creditsCopyright({ year: new Date().getFullYear() })} `}
       <Link to={contributors.sophie}>{footer.creditsSophie}</Link>
