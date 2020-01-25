@@ -4,7 +4,21 @@ const { createSlug } = require('./gatsby-helper');
 
 const hiddenPages = ['/download/*'];
 
-const gatsbyPluginFeedOptions = {
+const cspOptions = {
+  disableOnDev: true,
+  mergeStyleHashes: false,
+  directives: {
+    'default-src': "'self'",
+    'img-src': "'self' data: https://*",
+    'worker-src': "'none'",
+    'frame-src': "'self' https://sketchfab.com/models/ https://www.youtube-nocookie.com/embed/",
+    'script-src': "'self' https://static.sketchfab.com/static/",
+    'style-src': "'self' 'unsafe-inline' https://fonts.googleapis.com/",
+    'font-src': "'self' https://fonts.gstatic.com/s/",
+  },
+};
+
+const feedOptions = {
   query: `
   {
     site {
@@ -61,6 +75,26 @@ const gatsbyPluginFeedOptions = {
   ],
 };
 
+const manifestOptions = {
+  name: `imperial-splendour-site`,
+  short_name: `imp-splen`,
+  start_url: `/`,
+  background_color: `#B19776`,
+  theme_color: `#B19776`,
+  display: `minimal-ui`,
+  icon: `favicon.png`, // This path is relative to the root of the site.
+};
+
+const transformerRemarkOptions = {
+  plugins: [
+    `gatsby-remark-prismjs`,
+    {
+      resolve: 'gatsby-remark-images',
+      options: { maxWidth: 970, quality: 90, withWebp: true },
+    },
+  ],
+};
+
 module.exports = {
   siteMetadata: {
     title: `Imperial Splendour`,
@@ -78,89 +112,44 @@ module.exports = {
     `gatsby-transformer-sharp`,
     'gatsby-transformer-yaml',
     {
+      resolve: `gatsby-plugin-csp`,
+      options: cspOptions,
+    },
+    {
       resolve: `gatsby-plugin-feed`,
-      options: gatsbyPluginFeedOptions,
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'comments',
-        path: `${__dirname}/data/content/comments/`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `blog-posts`,
-        path: `${__dirname}/data/content/posts/`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `terms-of-service`,
-        path: `${__dirname}/data/content/terms-of-service.md`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/data/img/`,
-      },
-    },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          `gatsby-remark-prismjs`,
-          {
-            resolve: 'gatsby-remark-images',
-            options: { maxWidth: 970, quality: 90, withWebp: true },
-          },
-        ],
-      },
+      options: feedOptions,
     },
     {
       resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `imperial-splendour-site`,
-        short_name: `imp-splen`,
-        start_url: `/`,
-        background_color: `#B19776`,
-        theme_color: `#B19776`,
-        display: `minimal-ui`,
-        icon: `favicon.png`, // This path is relative to the root of the site.
-      },
+      options: manifestOptions,
     },
     {
       resolve: 'gatsby-plugin-robots-txt',
-      options: {
-        policy: [{ userAgent: '*', disallow: hiddenPages, noindex: hiddenPages }],
-      },
+      options: { policy: [{ userAgent: '*', disallow: hiddenPages, noindex: hiddenPages }] },
     },
     {
       resolve: `gatsby-plugin-sitemap`,
-      options: {
-        exclude: hiddenPages,
-      },
+      options: { exclude: hiddenPages },
     },
     {
-      resolve: `gatsby-plugin-csp`,
-      options: {
-        disableOnDev: true,
-        mergeStyleHashes: false,
-        directives: {
-          'default-src': "'self'",
-          'img-src': "'self' data: https://*",
-          'worker-src': "'none'",
-          'frame-src':
-            "'self' https://sketchfab.com/models/ https://www.youtube-nocookie.com/embed/",
-          'script-src': "'self' https://static.sketchfab.com/static/",
-          'style-src': "'self' 'unsafe-inline' https://fonts.googleapis.com/",
-          'font-src': "'self' https://fonts.gstatic.com/s/",
-        },
-      },
+      resolve: 'gatsby-source-filesystem',
+      options: { name: 'comments', path: `${__dirname}/data/content/comments/` },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: { name: `blog-posts`, path: `${__dirname}/data/content/posts/` },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: { name: `terms-of-service`, path: `${__dirname}/data/content/terms-of-service.md` },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: { name: `images`, path: `${__dirname}/data/img/` },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: transformerRemarkOptions,
     },
   ],
 };
