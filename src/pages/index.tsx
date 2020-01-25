@@ -10,16 +10,6 @@ import Layout from '../components/Layout';
 import DownloadButton from '../components/ui/DownloadButton';
 import { ImageQuery, InfoBox as InfoBoxType } from '../types';
 
-export const squareImage = graphql`
-  fragment infoBoxImage on File {
-    childImageSharp {
-      fluid(maxWidth: 805, quality: 90) {
-        ...GatsbyImageSharpFluid_withWebp
-      }
-    }
-  }
-`;
-
 export const query = graphql`
   query {
     heroImg: file(relativePath: { eq: "index/hero_logo.png" }) {

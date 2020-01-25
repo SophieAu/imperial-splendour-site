@@ -9,6 +9,18 @@ import { header } from '../../../data/strings';
 import ImageLink from '../ImageLink';
 import Link from '../Link';
 
+const query = graphql`
+  query {
+    headerLogo: file(relativePath: { eq: "header_logo.png" }) {
+      childImageSharp {
+        fixed(height: 56, width: 183) {
+          ...GatsbyImageSharpFixed_withWebp
+        }
+      }
+    }
+  }
+`;
+
 const getById = (id: string) => document.getElementById(id);
 
 const toggleMenu = () => {
@@ -33,40 +45,24 @@ const toggleMenu = () => {
   }
 };
 
-const query = graphql`
-  query {
-    heroImg: file(relativePath: { eq: "header_logo.png" }) {
-      childImageSharp {
-        fixed(height: 56, width: 183) {
-          ...GatsbyImageSharpFixed_withWebp
-        }
-      }
-    }
-  }
-`;
-
-const Header = () => {
-  const data = useStaticQuery(query);
-
-  return (
-    <header className="site-header head-foot">
-      <ImageLink to={paths.home} title={header.home} className="header-logo">
-        <Img
-          className="header-img"
-          fixed={data.heroImg.childImageSharp.fixed}
-          alt={header.logoAlt}
-          fadeIn={false}
-          placeholderStyle={{ display: 'none' }}
-        />
-      </ImageLink>
-      <nav id="header-menu">
-        <NavLinks />
-        <ExitButton />
-      </nav>
-      <HamburgerButton />
-    </header>
-  );
-};
+const Header = () => (
+  <header className="site-header head-foot">
+    <ImageLink to={paths.home} title={header.home} className="header-logo">
+      <Img
+        className="header-img"
+        fixed={useStaticQuery(query).headerLogo.childImageSharp.fixed}
+        alt={header.logoAlt}
+        fadeIn={false}
+        placeholderStyle={{ display: 'none' }}
+      />
+    </ImageLink>
+    <nav id="header-menu">
+      <NavLinks />
+      <ExitButton />
+    </nav>
+    <HamburgerButton />
+  </header>
+);
 
 const NavLinks = () => (
   <ul>

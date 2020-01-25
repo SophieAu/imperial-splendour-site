@@ -9,16 +9,6 @@ import { about } from '../../data/strings';
 import Layout from '../components/Layout';
 import { ImageQuery } from '../types';
 
-export const squareImage = graphql`
-  fragment avatarImage on File {
-    childImageSharp {
-      fixed(width: 66, height: 88, quality: 90) {
-        ...GatsbyImageSharpFixed_withWebp
-      }
-    }
-  }
-`;
-
 export const query = graphql`
   query {
     pike: file(relativePath: { eq: "about/pike_portrait.png" }) {
