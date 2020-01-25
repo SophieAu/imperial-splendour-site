@@ -1,5 +1,5 @@
 import { InfoBox } from '../src/types';
-import { paths } from './config';
+import { contributors, downloadLinks, paths } from './config';
 
 const SITE_TITLE = 'Imperial Splendour';
 const buildPageTitle = (title: string) => `${title} | ${SITE_TITLE}`;
@@ -28,10 +28,8 @@ export const header = {
 };
 
 export const footer = {
-  creditsCopyright: ({ year }: { year: number }) => `© ${year},`,
-  creditsSophie: 'Sophie Au',
-  creditsAnd: 'and',
-  creditsMalte: 'Malte Lippmann',
+  creditsCopyright: ({ year }: { year: number }) =>
+    `© ${year}, [Sophie Au](${contributors.sophie}) and [Malte Lippmann](${contributors.malte})`,
   socialImgAlt: ({ platform }: { platform: string }) => `Imperial Splendour on ${platform}`,
 };
 
@@ -103,9 +101,7 @@ export const downloadRotR = {
     'Download and play Imperial Splendour to have the best Empire: Total War experience possible.',
   linkInfo: 'You can download the files via the following file hosts:',
   imageLinkAlt: ({ platform }: { platform: string }) => `"Download RotR 1.1.9b on ${platform}`,
-  helpPre: ' If you need help, check out the',
-  helpLink: 'installation tutorial',
-  helpPost: '.',
+  help: `If you need help, check out the [installation tutorial](${downloadLinks.tutorial}).`,
 };
 
 export const downloadLauncher = {

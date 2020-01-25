@@ -8,7 +8,7 @@ import mediaFire from '../../../data/img/download/logo_mediafire.svg';
 import { downloadRotR } from '../../../data/strings';
 import ImageLink from '../../components/ImageLink';
 import Layout from '../../components/Layout';
-import Link from '../../components/Link';
+import MarkdownWithLink from '../../components/MarkdownWithLink';
 import NewsletterSignup from '../../components/ui/NewsletterSignup';
 
 const hosts = [
@@ -35,9 +35,7 @@ const DownloadRotR = () => (
         ))}
       </ul>
       <p>
-        {`${downloadRotR.helpPre} `}
-        <Link to={downloadLinks.tutorial}>{downloadRotR.helpLink}</Link>
-        {downloadRotR.helpPost}
+        <MarkdownWithLink markdownText={downloadRotR.help} />
       </p>
     </section>
     <NewsletterSignup />

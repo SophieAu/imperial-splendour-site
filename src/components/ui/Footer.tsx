@@ -2,18 +2,17 @@ import './Footer.scss';
 
 import React from 'react';
 
-import { contributors, modDBButton, socialMedia } from '../../../data/config';
+import { modDBButton, socialMedia } from '../../../data/config';
 import { footer } from '../../../data/strings';
 import ImageLink from '../ImageLink';
-import Link from '../Link';
+import MarkdownWithLink from '../MarkdownWithLink';
 
 const Footer = () => (
   <footer className="footer head-foot">
     <p className="footer-credits">
-      {`${footer.creditsCopyright({ year: new Date().getFullYear() })} `}
-      <Link to={contributors.sophie}>{footer.creditsSophie}</Link>
-      {` ${footer.creditsAnd} `}
-      <Link to={contributors.malte}>{footer.creditsMalte}</Link>
+      <MarkdownWithLink
+        markdownText={footer.creditsCopyright({ year: new Date().getFullYear() })}
+      />
     </p>
     <ul className="footer-social-media-links">
       <li>
