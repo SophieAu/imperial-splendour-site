@@ -9,11 +9,10 @@ import MarkdownWithLink from '../MarkdownWithLink';
 
 const Footer = () => (
   <footer className="footer head-foot">
-    <p className="footer-credits">
-      <MarkdownWithLink
-        markdownText={footer.creditsCopyright({ year: new Date().getFullYear() })}
-      />
-    </p>
+    <MarkdownWithLink
+      className="footer-credits"
+      markdownText={footer.creditsCopyright({ year: new Date().getFullYear() })}
+    />
     <ul className="footer-social-media-links">
       <li>
         <ModDB />

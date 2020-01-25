@@ -34,9 +34,7 @@ const DownloadRotR = () => (
           </li>
         ))}
       </ul>
-      <p>
-        <MarkdownWithLink markdownText={downloadRotR.help} />
-      </p>
+      <MarkdownWithLink markdownText={downloadRotR.help} />
     </section>
     <NewsletterSignup />
   </Layout>
