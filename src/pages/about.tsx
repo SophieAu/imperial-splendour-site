@@ -59,6 +59,7 @@ const About: React.FC<{ data: ImageQuery }> = ({ data }) => (
             <Img
               fixed={data[cont.avatar].childImageSharp.fixed}
               alt={about.avatarAlt({ name: cont.name })}
+              fadeIn={false}
             />
             <p>{cont.name}</p>
           </li>

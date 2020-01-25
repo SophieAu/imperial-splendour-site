@@ -75,6 +75,7 @@ const InfoBox: React.FC<InfoBoxProps> = ({ box, data, i }) => (
     <Img
       className={`info-image-${i % 2 ? 'even' : 'odd'}`}
       fluid={data[box.imageKey].childImageSharp.fluid}
+      fadeIn={false}
     />
     <p className="info-text">{box.text}</p>
   </>

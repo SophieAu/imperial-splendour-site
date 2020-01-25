@@ -55,6 +55,7 @@ const Header = () => {
           className="header-img"
           fixed={data.heroImg.childImageSharp.fixed}
           alt={header.logoAlt}
+          fadeIn={false}
           placeholderStyle={{ display: 'none' }}
         />
       </ImageLink>
