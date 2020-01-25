@@ -8,7 +8,7 @@ const MARKDOWN_LINK_REGEX = /(\[[^\]]+\]\([^\)]+\))/;
 const MarkdownWithLink: React.FC<{ markdownText: string }> = ({ markdownText }) => (
   <>
     {markdownText.split(MARKDOWN_LINK_REGEX).map((subString, i) => {
-      if (/^[^\[]/.test(subString)) return subString;
+      if (!/^[\[]/.test(subString)) return subString;
 
       const [_, text, link] = subString.split(/\[([^\]]+)\]\(([^\)]+)\)/);
       return (
