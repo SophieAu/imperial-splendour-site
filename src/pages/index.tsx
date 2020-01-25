@@ -41,28 +41,26 @@ export const query = graphql`
   }
 `;
 
-const Home: React.FC<{ data: ImageQuery }> = ({ data }) => {
-  return (
-    <Layout title={home.pageTitle} description={home.pageDescription} slug={slugs.home}>
-      <section className="hero">
-        <div className="hero-body">
-          <Img
-            className="hero-logo"
-            fluid={data.heroImg.childImageSharp.fluid}
-            alt={home.heroLogoAlt}
-          />
-          <p className="hero-text">{home.heroText}</p>
-        </div>
-        <DownloadButton linkTo={paths.downloadIndex} className="hero-btn" />
-      </section>
-      <section className="info-boxes">
-        {home.infoBoxes.map((box, i) => (
-          <InfoBox key={i} box={box} i={i} data={data} />
-        ))}
-      </section>
-    </Layout>
-  );
-};
+const Home: React.FC<{ data: ImageQuery }> = ({ data }) => (
+  <Layout title={home.pageTitle} description={home.pageDescription} slug={slugs.home}>
+    <section className="hero">
+      <div className="hero-body">
+        <Img
+          className="hero-logo"
+          fluid={data.heroImg.childImageSharp.fluid}
+          alt={home.heroLogoAlt}
+        />
+        <p className="hero-text">{home.heroText}</p>
+      </div>
+      <DownloadButton linkTo={paths.downloadIndex} className="hero-btn" />
+    </section>
+    <section className="info-boxes">
+      {home.infoBoxes.map((box, i) => (
+        <InfoBox key={i} box={box} i={i} data={data} />
+      ))}
+    </section>
+  </Layout>
+);
 
 interface InfoBoxProps {
   box: InfoBoxType;
