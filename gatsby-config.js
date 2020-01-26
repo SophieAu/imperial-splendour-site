@@ -141,6 +141,10 @@ module.exports = {
     },
     {
       resolve: `gatsby-source-filesystem`,
+      options: { name: `factions`, path: `${__dirname}/data/content/factions/` },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
       options: { name: `terms-of-service`, path: `${__dirname}/data/content/terms-of-service.md` },
     },
     {

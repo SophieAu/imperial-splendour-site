@@ -4,7 +4,7 @@ const { createSlug } = require('./gatsby-helper');
 
 const POSTS_PER_PAGE = 6;
 
-const POST_QUERY = `
+const PAGES_QUERY = `
   {
     posts: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/data\/content\/posts/"}}) {
       edges {
@@ -13,6 +13,17 @@ const POST_QUERY = `
           frontmatter {
             title
             date(formatString: "YYYY-MM-DD")
+          }
+        }
+      }
+    }
+    factions: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/data\/content\/factions/"}}) {
+      edges {
+        node {
+          id
+          frontmatter {
+            slug
+            title
           }
         }
       }
@@ -30,6 +41,19 @@ const POST_QUERY = `
   }
 }
 `;
+
+const buildFactionPages = (nodes, createPage) => {
+  const post = resolve(`./src/templates/factions.tsx`);
+
+  nodes.forEach(({ node }) => {
+    createPage({
+      path: `factions/${node.frontmatter.slug}`,
+      component: post,
+      context: { slug: node.frontmatter.slug, id: node.id },
+    });
+    console.log(node.frontmatter.slug);
+  });
+};
 
 const buildBlogPosts = (nodes, createPage) => {
   const post = resolve(`./src/templates/post.tsx`);
@@ -78,7 +102,7 @@ const buildBlogListPagination = (nodes, createPage) => {
 };
 
 exports.createPages = async ({ graphql, actions }) => {
-  const result = await graphql(POST_QUERY);
+  const result = await graphql(PAGES_QUERY);
   if (result.errors) {
     reporter.panicOnBuild(`Error while running GraphQL query.`);
     return;
@@ -92,6 +116,9 @@ exports.createPages = async ({ graphql, actions }) => {
 
   console.log('\nPaginating Blog Posts List...');
   buildBlogListPagination(result.data.posts.edges, actions.createPage);
+
+  console.log('\nCreating Faction Pages...');
+  buildFactionPages(result.data.factions.edges, actions.createPage);
 
   console.log();
 };

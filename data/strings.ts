@@ -154,6 +154,6 @@ export const post = {
 };
 
 export const factions = {
-  pageTitle: 'Factions',
+  pageTitle: ({ title }: { title: string }) => buildPageTitle(title),
   pageDescription: 'Explore the factions you can lead',
 };
