@@ -152,3 +152,8 @@ export const post = {
   comments: 'Comments',
   emptyComments: 'Nothing yet.',
 };
+
+export const factions = {
+  pageTitle: 'Factions',
+  pageDescription: 'Explore the factions you can lead',
+};

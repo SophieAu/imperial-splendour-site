@@ -11,6 +11,7 @@ export const slugs = {
   blog: 'blog',
   about: 'about',
   termsOfService: 'terms-of-service',
+  factions: 'factions',
 };
 
 export const paths = {
@@ -21,6 +22,7 @@ export const paths = {
   about: `/${slugs.about}`,
   downloadLauncher: `/${slugs.downloadLauncher}`,
   termsOfService: `/${slugs.termsOfService}`,
+  factions: `/${slugs.factions}`,
 };
 
 export const socialMedia = {
