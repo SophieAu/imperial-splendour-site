@@ -43,7 +43,7 @@ const PAGES_QUERY = `
 `;
 
 const buildFactionPages = (nodes, createPage) => {
-  const post = resolve(`./src/templates/factions.tsx`);
+  const post = resolve(`./src/templates/faction.tsx`);
 
   nodes.forEach(({ node }) => {
     createPage({
