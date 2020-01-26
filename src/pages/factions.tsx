@@ -20,8 +20,8 @@ export const query = graphql`
             slug
             flag {
               childImageSharp {
-                fixed {
-                  ...GatsbyImageSharpFixed
+                fixed(height: 66, quality: 90) {
+                  ...GatsbyImageSharpFixed_withWebp
                 }
               }
             }
@@ -66,7 +66,7 @@ const Factions: React.FC<Props> = ({ data }) => (
             <Link to={`/factions/${faction.node.frontmatter.slug}`}>
               <h2>{faction.node.frontmatter.title}</h2>
             </Link>
-            <Img fixed={faction.node.frontmatter.flag.childImageSharp.fixed} />
+            <Img fixed={faction.node.frontmatter.flag.childImageSharp.fixed} fadeIn={false} />
           </li>
         ))}
       </ul>
