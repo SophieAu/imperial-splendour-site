@@ -8,6 +8,7 @@ import { slugs } from '../../data/config';
 import { factions } from '../../data/strings';
 import Layout from '../components/Layout';
 import Link from '../components/Link';
+import Carousel from '../components/ui/Carousel';
 
 export const query = graphql`
   query {
@@ -60,6 +61,7 @@ const Factions: React.FC<Props> = ({ data }) => (
     slug={slugs.factions}
   >
     <section className="factions">
+      <Carousel />
       <ul>
         {data.allMarkdownRemark.edges.map(faction => (
           <li key={faction.node.id}>
