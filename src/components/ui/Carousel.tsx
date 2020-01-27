@@ -3,6 +3,7 @@ import './Carousel.scss';
 import React from 'react';
 
 import denmark from '../../../data/content/factions/img/flag_denmark.png';
+import russia from '../../../data/content/factions/img/flag_russia.png';
 
 type Direction = 'prev' | 'next';
 
@@ -47,25 +48,25 @@ const Carousel: React.FC<{}> = () => (
   <>
     <div id="carousel">
       <div className="hideLeft">
-        <img src={denmark} alt="" />
+        <img src={russia} alt="" />
       </div>
       <div className="prevLeftSecond">
         <img src={denmark} alt="" />
       </div>
       <div className="prev">
-        <img src={denmark} alt="" />
+        <img src={russia} alt="" />
       </div>
       <div className="selected">
         <img src={denmark} alt="" />
       </div>
       <div className="next">
-        <img src={denmark} alt="" />
+        <img src={russia} alt="" />
       </div>
       <div className="nextRightSecond">
         <img src={denmark} alt="" />
       </div>
       <div className="hideRight">
-        <img src={denmark} alt="" />
+        <img src={russia} alt="" />
       </div>
     </div>
     <div className="buttons">
