@@ -45,39 +45,35 @@ const moveToSelected = (direction: Direction) => {
 };
 
 const Carousel: React.FC<{}> = () => (
-  <>
-    <div id="carousel">
-      <div className="hideLeft">
-        <img src={russia} alt="" />
-      </div>
-      <div className="prevLeftSecond">
-        <img src={denmark} alt="" />
-      </div>
-      <div className="prev">
-        <img src={russia} alt="" />
-      </div>
-      <div className="selected">
-        <img src={denmark} alt="" />
-      </div>
-      <div className="next">
-        <img src={russia} alt="" />
-      </div>
-      <div className="nextRightSecond">
-        <img src={denmark} alt="" />
-      </div>
-      <div className="hideRight">
-        <img src={russia} alt="" />
-      </div>
+  <div id="carousel">
+    <div className="hideLeft">
+      <img src={russia} alt="" />
     </div>
-    <div className="buttons">
-      <button id="prev" onClick={() => moveToSelected('prev')}>
-        Prev
-      </button>
-      <button id="next" onClick={() => moveToSelected('next')}>
-        Next
-      </button>
+    <div className="prevLeftSecond">
+      <img src={denmark} alt="" />
     </div>
-  </>
+    <div className="prev">
+      <img src={russia} alt="" />
+    </div>
+    <button id="prev" onClick={() => moveToSelected('prev')}>
+      Prev
+    </button>
+    <div className="selected">
+      <img src={denmark} alt="" />
+    </div>
+    <button id="next" onClick={() => moveToSelected('next')}>
+      Next
+    </button>
+    <div className="next">
+      <img src={russia} alt="" />
+    </div>
+    <div className="nextRightSecond">
+      <img src={denmark} alt="" />
+    </div>
+    <div className="hideRight">
+      <img src={russia} alt="" />
+    </div>
+  </div>
 );
 
 export default Carousel;
