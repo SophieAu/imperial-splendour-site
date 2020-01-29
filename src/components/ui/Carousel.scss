@@ -2,16 +2,21 @@
   position: relative;
   height: 100px;
   overflow: hidden;
+  padding-top: 2rem;
 
   div {
     position: absolute;
     opacity: 1;
 
-    &.hideLeft,
-    &.hideRight {
-      display: none;
-    }
+    &.hideLeft {
+      z-index: 3;
+      left: 12%;
 
+      img {
+        height: 48px;
+        padding-top: 9px;
+      }
+    }
     &.prevLeftSecond {
       z-index: 4;
       left: 22%;
@@ -56,12 +61,21 @@
         padding-top: 6px;
       }
     }
+    &.hideRight {
+      z-index: 3;
+      left: 88%;
+
+      img {
+        height: 48px;
+        padding-top: 9px;
+      }
+    }
   }
 
   button {
     position: absolute;
     opacity: 1;
-    top: 25%;
+    top: 45%;
 
     &#prev {
       left: 45%;
