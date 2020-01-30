@@ -61,7 +61,11 @@ const Factions: React.FC<Props> = ({ data }) => (
     slug={slugs.factions}
   >
     <section className="factions">
-      <Carousel />
+      <Carousel
+        img={data.allMarkdownRemark.edges.map(
+          faction => faction.node.frontmatter.flag.childImageSharp.fixed
+        )}
+      />
       <ul>
         {data.allMarkdownRemark.edges.map(faction => (
           <li key={faction.node.id}>
