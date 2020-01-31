@@ -2,10 +2,10 @@ import './factions.scss';
 
 import { graphql } from 'gatsby';
 import Img, { FixedObject } from 'gatsby-image';
-import React from 'react';
+import React, { useState } from 'react';
 
 import { slugs } from '../../data/config';
-import { factions } from '../../data/strings';
+import { factions as factionStrings } from '../../data/strings';
 import Layout from '../components/Layout';
 import Link from '../components/Link';
 import Carousel from '../components/ui/Carousel';
@@ -27,6 +27,7 @@ export const query = graphql`
               }
             }
           }
+          html
         }
       }
     }
@@ -48,36 +49,34 @@ interface Props {
               };
             };
           };
+          html: string;
         };
       }[];
     };
   };
 }
 
-const Factions: React.FC<Props> = ({ data }) => (
-  <Layout
-    title={factions.pageTitle({ title: 'Factions' })}
-    description={factions.pageDescription}
-    slug={slugs.factions}
-  >
-    <section className="factions">
-      <Carousel
-        img={data.allMarkdownRemark.edges.map(
-          faction => faction.node.frontmatter.flag.childImageSharp.fixed
-        )}
-      />
-      <ul>
-        {data.allMarkdownRemark.edges.map(faction => (
-          <li key={faction.node.id}>
-            <Link to={`/factions/${faction.node.frontmatter.slug}`}>
-              <h2>{faction.node.frontmatter.title}</h2>
-            </Link>
-            <Img fixed={faction.node.frontmatter.flag.childImageSharp.fixed} fadeIn={false} />
-          </li>
-        ))}
-      </ul>
-    </section>
-  </Layout>
-);
+const Factions: React.FC<Props> = ({ data }) => {
+  const [counter, setCounter] = useState(0);
+  const factions = data.allMarkdownRemark.edges;
+
+  return (
+    <Layout
+      title={factionStrings.pageTitle({ title: 'Factions' })}
+      description={factionStrings.pageDescription}
+      slug={slugs.factions}
+    >
+      <section className="factions">
+        <Carousel
+          img={factions.map(faction => faction.node.frontmatter.flag.childImageSharp.fixed)}
+          selected={counter}
+          onPress={(counter: number) => setCounter(counter)}
+        />
+        <h1>{factions[counter].node.frontmatter.title}</h1>
+        <div className="text" dangerouslySetInnerHTML={{ __html: factions[counter].node.html }} />
+      </section>
+    </Layout>
+  );
+};
 
 export default Factions;
