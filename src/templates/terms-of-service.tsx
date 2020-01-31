@@ -6,9 +6,9 @@ import React from 'react';
 import { slugs } from '../../data/config';
 import { post } from '../../data/strings';
 import Layout from '../components/Layout';
-import { ToSGraphQLResponse } from '../types';
+import { ToSResponse } from '../types';
 
-const TermsOfService: React.FC<ToSGraphQLResponse> = ({ data: { markdownRemark: tos } }) => (
+const TermsOfService: React.FC<ToSResponse> = ({ data: { markdownRemark: tos } }) => (
   <Layout
     title={post.pageTitle({ title: tos.frontmatter.title })}
     description={tos.frontmatter.description}

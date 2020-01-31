@@ -8,7 +8,7 @@ import { post } from '../../data/strings';
 import Layout from '../components/Layout';
 import Link from '../components/Link';
 import PostHeader from '../components/ui/PostHeader';
-import { Comment, SingleGraphQLResponse } from '../types';
+import { Comment, PostResponse } from '../types';
 
 export const query = graphql`
   query($id: String!, $slug: String!) {
@@ -30,7 +30,7 @@ export const query = graphql`
   }
 `;
 
-interface Props extends SingleGraphQLResponse {
+interface Props extends PostResponse {
   pageContext: {
     slug: string;
   };

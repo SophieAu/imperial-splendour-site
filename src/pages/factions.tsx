@@ -74,6 +74,18 @@ const Factions: React.FC<Props> = ({ data }) => {
         />
         <h1>{factions[counter].node.frontmatter.title}</h1>
         <div className="text" dangerouslySetInnerHTML={{ __html: factions[counter].node.html }} />
+        <noscript>
+          <ul>
+            {factions.map(faction => (
+              <li key={faction.node.id}>
+                <Link to={`/factions/${faction.node.frontmatter.slug}`}>
+                  <h2>{faction.node.frontmatter.title}</h2>
+                </Link>
+                <Img fixed={faction.node.frontmatter.flag.childImageSharp.fixed} fadeIn={false} />
+              </li>
+            ))}
+          </ul>
+        </noscript>
       </section>
     </Layout>
   );

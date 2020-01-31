@@ -8,7 +8,7 @@ import { paths, slugs } from '../../data/config';
 import { home } from '../../data/strings';
 import Layout from '../components/Layout';
 import DownloadButton from '../components/ui/DownloadButton';
-import { ImageQuery, InfoBox as InfoBoxType } from '../types';
+import { IndexImage, InfoBox as InfoBoxType } from '../types';
 
 export const query = graphql`
   query {
@@ -31,7 +31,7 @@ export const query = graphql`
   }
 `;
 
-const Home: React.FC<{ data: ImageQuery }> = ({ data }) => (
+const Home: React.FC<{ data: IndexImage }> = ({ data }) => (
   <Layout title={home.pageTitle} description={home.pageDescription} slug={slugs.home}>
     <section className="hero">
       <div className="hero-body">
@@ -55,7 +55,7 @@ const Home: React.FC<{ data: ImageQuery }> = ({ data }) => (
 interface InfoBoxProps {
   box: InfoBoxType;
   i: number;
-  data: ImageQuery;
+  data: IndexImage;
 }
 
 const InfoBox: React.FC<InfoBoxProps> = ({ box, data, i }) => (

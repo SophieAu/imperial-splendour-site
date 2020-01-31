@@ -1,31 +1,59 @@
+import { FixedObject, FluidObject } from 'gatsby-image';
+
+type FluidImage = {
+  childImageSharp: {
+    fluid: FluidObject;
+  };
+};
+
+type FixedImage = {
+  childImageSharp: {
+    fixed: FixedObject;
+  };
+};
+
+export type IndexImage = {
+  heroImg: FluidImage;
+  blackwatch: FluidImage;
+  portraits: FluidImage;
+  gameplay: FluidImage;
+};
+
+export type AboutImage = {
+  pike: FixedImage;
+  QHH: FixedImage;
+  oleg2242: FixedImage;
+  cro: FixedImage;
+  tsanada: FixedImage;
+  HD: FixedImage;
+  mad_orc: FixedImage;
+  myfate: FixedImage;
+};
+
 export type InfoBox = {
-  imageKey: string;
+  imageKey: keyof IndexImage;
   imageAlt: string;
   text: string;
 };
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export type ImageQuery = any;
-
 // ---
 // Post GraphQL Response
-
-export type Post = {
-  node: {
-    id: number;
-    frontmatter: PostFrontmatter;
-  };
-};
 
 export type GraphQLResponse = {
   data: {
     allMarkdownRemark: {
-      edges: Post[];
+      edges: {
+        node: {
+          id: number;
+          frontmatter: PostFrontmatter;
+          html: string;
+        };
+      }[];
     };
   };
 };
 
-export type SingleGraphQLResponse = {
+export type PostResponse = {
   data: {
     markdownRemark: {
       frontmatter: PostFrontmatter;
@@ -37,7 +65,7 @@ export type SingleGraphQLResponse = {
   };
 };
 
-export type ToSGraphQLResponse = {
+export type ToSResponse = {
   data: {
     markdownRemark: {
       frontmatter: {

@@ -7,7 +7,7 @@ import React from 'react';
 import { slugs } from '../../data/config';
 import { about } from '../../data/strings';
 import Layout from '../components/Layout';
-import { ImageQuery } from '../types';
+import { AboutImage } from '../types';
 
 export const query = graphql`
   query {
@@ -38,7 +38,7 @@ export const query = graphql`
   }
 `;
 
-const About: React.FC<{ data: ImageQuery }> = ({ data }) => (
+const About: React.FC<{ data: AboutImage }> = ({ data }) => (
   <Layout title={about.pageTitle} description={about.pageDescription} slug={slugs.about}>
     <p className="about-text">{about.text}</p>
     <section className="contributors">
@@ -47,7 +47,7 @@ const About: React.FC<{ data: ImageQuery }> = ({ data }) => (
         {about.contributors.map((cont, i) => (
           <li key={i} className="contributor">
             <Img
-              fixed={data[cont.avatar].childImageSharp.fixed}
+              fixed={data[cont.avatar as keyof AboutImage].childImageSharp.fixed}
               alt={about.avatarAlt({ name: cont.name })}
               fadeIn={false}
             />
