@@ -1,8 +1,8 @@
 import './factions.scss';
 
-import { graphql } from 'gatsby';
+import { graphql, navigate } from 'gatsby';
 import Img, { FixedObject } from 'gatsby-image';
-import React, { useState } from 'react';
+import React, { useLayoutEffect, useState } from 'react';
 
 import { slugs } from '../../data/config';
 import { factions as factionStrings } from '../../data/strings';
@@ -60,6 +60,9 @@ const Factions: React.FC<Props> = ({ data }) => {
   const [counter, setCounter] = useState(0);
   const factions = data.allMarkdownRemark.edges;
 
+  useLayoutEffect(() => {
+    navigate(`/factions/${factions[0].node.frontmatter.slug}`);
+  });
   return (
     <Layout
       title={factionStrings.pageTitle({ title: 'Factions' })}
@@ -74,18 +77,16 @@ const Factions: React.FC<Props> = ({ data }) => {
         />
         <h1>{factions[counter].node.frontmatter.title}</h1>
         <div className="text" dangerouslySetInnerHTML={{ __html: factions[counter].node.html }} />
-        <noscript>
-          <ul>
-            {factions.map(faction => (
-              <li key={faction.node.id}>
-                <Link to={`/factions/${faction.node.frontmatter.slug}`}>
-                  <h2>{faction.node.frontmatter.title}</h2>
-                </Link>
-                <Img fixed={faction.node.frontmatter.flag.childImageSharp.fixed} fadeIn={false} />
-              </li>
-            ))}
-          </ul>
-        </noscript>
+        {/* <ul>
+          {factions.map(faction => (
+            <li key={faction.node.id}>
+              <Link to={`/factions/${faction.node.frontmatter.slug}`}>
+                <h2>{faction.node.frontmatter.title}</h2>
+              </Link>
+              <Img fixed={faction.node.frontmatter.flag.childImageSharp.fixed} fadeIn={false} />
+            </li>
+          ))}
+        </ul> */}
       </section>
     </Layout>
   );

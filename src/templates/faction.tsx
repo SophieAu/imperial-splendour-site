@@ -1,6 +1,6 @@
 import './post.scss';
 
-import { graphql } from 'gatsby';
+import { graphql, navigate } from 'gatsby';
 import { FixedObject } from 'gatsby-image';
 import React, { useEffect, useState } from 'react';
 
@@ -83,7 +83,7 @@ const Faction: React.FC<Props> = ({ data: { allMarkdownRemark, markdownRemark },
 
   useEffect(() => {
     if (factions[counter].node.frontmatter.slug !== pageContext.slug) {
-      location.assign(`/factions/${factions[counter].node.frontmatter.slug}`);
+      navigate(`/factions/${factions[counter].node.frontmatter.slug}`);
     }
   }, [counter]);
 
