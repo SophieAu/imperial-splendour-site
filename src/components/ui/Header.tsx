@@ -72,6 +72,11 @@ const NavLinks = () => (
       </Link>
     </li>
     <li>
+      <Link handleClick={toggleMenu} to={paths.factions}>
+        {header.factions}
+      </Link>
+    </li>
+    <li>
       <Link handleClick={toggleMenu} to={paths.downloadIndex}>
         {header.download}
       </Link>

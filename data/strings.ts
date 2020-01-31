@@ -21,6 +21,7 @@ export const header = {
   home: 'Homepage',
   logoAlt: 'Imperial Splendour Logo',
   download: 'Download',
+  factions: 'Factions',
   about: 'About',
   blog: 'Blog',
   hamburgerA11yLabel: 'Toggle Menu',
