@@ -1,8 +1,8 @@
 import './post.scss';
 
-import { graphql, navigate } from 'gatsby';
+import { graphql } from 'gatsby';
 import { FixedObject } from 'gatsby-image';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 import { factions as factionStrings } from '../../data/strings';
 import Layout from '../components/Layout';
@@ -79,13 +79,7 @@ const Faction: React.FC<Props> = ({ data: { allMarkdownRemark, markdownRemark },
   const index = factions.indexOf(current);
   if (index === -1) return null;
 
-  const [counter, setCounter] = useState(index);
-
-  useEffect(() => {
-    if (factions[counter].node.frontmatter.slug !== pageContext.slug) {
-      navigate(`/factions/${factions[counter].node.frontmatter.slug}`);
-    }
-  }, [counter]);
+  const willPress = (number: number) => `/factions/${factions[number].node.frontmatter.slug}`;
 
   return (
     <Layout
@@ -95,8 +89,8 @@ const Faction: React.FC<Props> = ({ data: { allMarkdownRemark, markdownRemark },
     >
       <Carousel
         img={factions.map(faction => faction.node.frontmatter.flag.childImageSharp.fixed)}
-        selected={counter}
-        onPress={(counter: number) => setCounter(counter)}
+        selected={index}
+        onPress={willPress}
       />
       <article className="blog-post">
         <h1>{frontmatter.title}</h1>

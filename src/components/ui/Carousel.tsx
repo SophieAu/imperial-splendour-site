@@ -3,12 +3,14 @@ import './Carousel.scss';
 import Img, { FixedObject } from 'gatsby-image';
 import React from 'react';
 
+import Link from '../Link';
+
 const getBetterModulo = (base: number) => (value: number) =>
   value < 0 ? base + value : value % base;
 
 interface Props {
   img: FixedObject[];
-  onPress: (counter: number) => void;
+  onPress: (counter: number) => string;
   selected: number;
 }
 
@@ -41,9 +43,9 @@ const Carousel: React.FC<Props> = ({ img, onPress, selected }) => {
           placeholderStyle={{ display: 'none' }}
         />
       </div>
-      <button id="prev" onClick={() => onPress(getModulo(selected - 1))}>
+      <Link className="prev" to={onPress(getModulo(selected - 1))}>
         Prev
-      </button>
+      </Link>
       <div className="selected">
         <Img
           fixed={img[getModulo(selected)]}
@@ -52,9 +54,9 @@ const Carousel: React.FC<Props> = ({ img, onPress, selected }) => {
           placeholderStyle={{ display: 'none' }}
         />
       </div>
-      <button id="next" onClick={() => onPress(getModulo(selected + 1))}>
+      <Link className="next" to={onPress(getModulo(selected + 1))}>
         Next
-      </button>
+      </Link>
       <div className="next">
         <Img
           fixed={img[getModulo(selected + 1)]}
