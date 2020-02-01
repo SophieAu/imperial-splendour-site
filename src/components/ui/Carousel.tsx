@@ -43,7 +43,7 @@ const Carousel: React.FC<Props> = ({ img, onPress, selected }) => {
           placeholderStyle={{ display: 'none' }}
         />
       </div>
-      <Link className="prev" to={onPress(getModulo(selected - 1))}>
+      <Link className="link prev" to={onPress(getModulo(selected - 1))}>
         Prev
       </Link>
       <div className="selected">
@@ -54,7 +54,7 @@ const Carousel: React.FC<Props> = ({ img, onPress, selected }) => {
           placeholderStyle={{ display: 'none' }}
         />
       </div>
-      <Link className="next" to={onPress(getModulo(selected + 1))}>
+      <Link className="link next" to={onPress(getModulo(selected + 1))}>
         Next
       </Link>
       <div className="next">

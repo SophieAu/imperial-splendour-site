@@ -72,15 +72,15 @@
     }
   }
 
-  button {
+  .link {
     position: absolute;
     opacity: 1;
     top: 45%;
 
-    &#prev {
+    &.prev {
       left: 45%;
     }
-    &#next {
+    &.next {
       left: 64%;
     }
   }
