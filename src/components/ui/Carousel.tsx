@@ -29,6 +29,10 @@ interface Props {
   factions: Faction[];
 }
 
+const preSelected = [4, 3, 2, 1];
+
+const postSelected = [1, 2, 3, 4];
+
 const Carousel: React.FC<Props> = ({ factions, selected }) => {
   const getModulo = getBetterModulo(factions.length);
 
@@ -36,26 +40,15 @@ const Carousel: React.FC<Props> = ({ factions, selected }) => {
 
   return (
     <div id="carousel">
-      <Image
-        src={factions[getModulo(selected - 4)].node.frontmatter.flag.childImageSharp.fixed}
-        title={factions[getModulo(selected - 4)].node.frontmatter.title}
-        offset={-4}
-      />
-      <Image
-        src={factions[getModulo(selected - 3)].node.frontmatter.flag.childImageSharp.fixed}
-        title={factions[getModulo(selected - 3)].node.frontmatter.title}
-        offset={-3}
-      />
-      <Image
-        src={factions[getModulo(selected - 2)].node.frontmatter.flag.childImageSharp.fixed}
-        title={factions[getModulo(selected - 2)].node.frontmatter.title}
-        offset={-2}
-      />
-      <Image
-        src={factions[getModulo(selected - 1)].node.frontmatter.flag.childImageSharp.fixed}
-        title={factions[getModulo(selected - 1)].node.frontmatter.title}
-        offset={-1}
-      />
+      {preSelected.map(index => (
+        <Image
+          key={factions[getModulo(selected - index)].node.frontmatter.slug}
+          src={factions[getModulo(selected - index)].node.frontmatter.flag.childImageSharp.fixed}
+          title={factions[getModulo(selected - index)].node.frontmatter.title}
+          offset={-index}
+          side="left"
+        />
+      ))}
       <Link className="link prev" to={onPress(getModulo(selected - 1))}>
         Prev
       </Link>
@@ -67,45 +60,43 @@ const Carousel: React.FC<Props> = ({ factions, selected }) => {
       <Link className="link next" to={onPress(getModulo(selected + 1))}>
         Next
       </Link>
-      <Image
-        src={factions[getModulo(selected + 1)].node.frontmatter.flag.childImageSharp.fixed}
-        title={factions[getModulo(selected + 1)].node.frontmatter.title}
-        offset={1}
-      />
-      <Image
-        src={factions[getModulo(selected + 2)].node.frontmatter.flag.childImageSharp.fixed}
-        title={factions[getModulo(selected + 2)].node.frontmatter.title}
-        offset={2}
-      />
-      <Image
-        src={factions[getModulo(selected + 3)].node.frontmatter.flag.childImageSharp.fixed}
-        title={factions[getModulo(selected + 3)].node.frontmatter.title}
-        offset={3}
-      />
-      <Image
-        src={factions[getModulo(selected + 4)].node.frontmatter.flag.childImageSharp.fixed}
-        offset={4}
-        title={factions[getModulo(selected + 4)].node.frontmatter.title}
-      />
+      {postSelected.map(index => (
+        <Image
+          key={factions[getModulo(selected + index)].node.frontmatter.slug}
+          src={factions[getModulo(selected + index)].node.frontmatter.flag.childImageSharp.fixed}
+          title={factions[getModulo(selected + index)].node.frontmatter.title}
+          offset={index}
+          side="right"
+        />
+      ))}
     </div>
   );
 };
 
-const Image: React.FC<{ src: FixedObject; offset: number; title: string }> = ({
-  src,
-  offset,
-  title,
-}) => (
+const Image: React.FC<{
+  src: FixedObject;
+  offset: number;
+  title: string;
+  side?: 'right' | 'left';
+}> = ({ src, offset, title, side }) => (
   <Img
     fixed={src}
     style={{
       height: `${(66 * (100 - offset * offset)) / 100}px`,
       width: `${132 / Math.abs(offset || 1)}px`,
+      zIndex: -Math.abs(offset),
+      overflow: 'unset',
     }}
     fadeIn={false}
-    placeholderStyle={{ display: 'none' }}
+    placeholderStyle={{ display: 'none', overflow: 'auto' }}
     alt={title}
-    imgStyle={{ objectFit: 'cover', objectPosition: `${offset > 0 ? 'right' : 'left'} center` }}
+    imgStyle={{
+      objectFit: 'cover',
+      objectPosition: `${side || 'center'} center`,
+      width: '132px',
+      right: `${side === 'left' ? 132 / Math.abs(offset || 1) - 132 : 0}px`,
+      left: `${side === 'right' ? 132 / Math.abs(offset || 1) - 132 : 0}px`,
+    }}
   />
 );
 
