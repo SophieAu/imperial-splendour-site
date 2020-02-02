@@ -145,7 +145,7 @@ module.exports = {
     },
     {
       resolve: `gatsby-source-filesystem`,
-      options: { name: `terms-of-service`, path: `${__dirname}/data/content/terms-of-service.md` },
+      options: { name: `terms-of-service`, path: `${__dirname}/data/content/terms-of-service/` },
     },
     {
       resolve: `gatsby-source-filesystem`,
