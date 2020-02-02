@@ -100,7 +100,7 @@
   }
 }
 
-@media (max-width: $desktop-breakpoint) {
+@media (max-width: $desktop-breakpoint - 1) {
   .post-comments {
     .comment-form {
       .text,

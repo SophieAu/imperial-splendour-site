@@ -24,7 +24,7 @@ const query = graphql`
 const getById = (id: string) => document.getElementById(id);
 
 const toggleMenu = () => {
-  if (window.innerWidth > 992) return;
+  if (window.innerWidth >= 992) return;
 
   const hamburgerButton = getById('hamburger-button');
   const exitButton = getById('exit-button');

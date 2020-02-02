@@ -1,6 +1,6 @@
 @import '../styles/variables';
 
-@media (min-width: $desktop-breakpoint + 1) {
+@media (min-width: $desktop-breakpoint) {
   .hero-text {
     margin: 0;
   }
@@ -9,7 +9,7 @@
   }
 }
 
-@media (max-width: $desktop-breakpoint) {
+@media (max-width: $desktop-breakpoint - 1) {
   .hero-text {
     margin: 0 1rem;
   }
@@ -29,7 +29,7 @@
   }
 }
 
-@media (min-width: $tablet-breakpoint + 1) {
+@media (min-width: $tablet-breakpoint) {
   .hero {
     max-height: calc(var(--max-site-width) * 1080 / 1920);
   }
@@ -48,7 +48,7 @@
   }
 }
 
-@media (max-width: $tablet-breakpoint) {
+@media (max-width: $tablet-breakpoint - 1) {
   .hero {
     height: auto;
   }

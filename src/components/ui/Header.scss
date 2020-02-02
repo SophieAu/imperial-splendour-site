@@ -57,7 +57,7 @@
   }
 }
 
-@media (min-width: $tablet-breakpoint + 1) {
+@media (min-width: $tablet-breakpoint) {
   #hamburger-button,
   #exit-button,
   .home-link {
@@ -75,7 +75,7 @@
   }
 }
 
-@media (max-width: $tablet-breakpoint) {
+@media (max-width: $tablet-breakpoint - 1) {
   .webp #header-menu {
     background: var(--main-bg) url(../../../data/img/texture_bg.webp);
   }

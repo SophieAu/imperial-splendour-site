@@ -36,7 +36,7 @@
   margin: 2rem 0;
 }
 
-@media (min-width: $tablet-breakpoint +1) {
+@media (min-width: $tablet-breakpoint) {
   .container {
     margin: 2rem 0;
     justify-content: space-between;
@@ -44,7 +44,7 @@
   }
 }
 
-@media (max-width: $tablet-breakpoint) {
+@media (max-width: $tablet-breakpoint - 1) {
   .container {
     flex-direction: column-reverse;
 
