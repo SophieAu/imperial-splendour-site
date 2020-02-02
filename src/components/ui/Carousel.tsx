@@ -50,7 +50,7 @@ const Carousel: React.FC<Props> = ({ factions, selected }) => {
         />
       ))}
       <Link className="link prev" to={onPress(getModulo(selected - 1))}>
-        Prev
+        {`<`}
       </Link>
       <Image
         src={factions[getModulo(selected)].node.frontmatter.flag.childImageSharp.fixed}
@@ -58,7 +58,7 @@ const Carousel: React.FC<Props> = ({ factions, selected }) => {
         offset={0}
       />
       <Link className="link next" to={onPress(getModulo(selected + 1))}>
-        Next
+        {`>`}
       </Link>
       {postSelected.map(index => (
         <Image
