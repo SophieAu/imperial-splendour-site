@@ -3,7 +3,7 @@ import './FlagCarousel.scss';
 import React, { useEffect, useState } from 'react';
 
 import { paths } from '../../../data/config';
-import { FactionsFrontmatter } from '../../types';
+import { SingleFaction } from '../../types';
 import Link from '../Link';
 import CarouselImage from './CarouselImage';
 
@@ -16,13 +16,7 @@ const mobileIndices = [0];
 
 interface Props {
   selected: number;
-  factions: {
-    node: {
-      id: number;
-      frontmatter: FactionsFrontmatter;
-      html: string;
-    };
-  }[];
+  factions: SingleFaction[];
 }
 const FlagCarousel: React.FC<Props> = ({ factions, selected }) => {
   const [indices, setIndices] = useState(mobileIndices);

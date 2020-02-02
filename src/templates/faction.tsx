@@ -7,7 +7,7 @@ import { slugs } from '../../data/config';
 import { factions as factionStrings } from '../../data/strings';
 import Layout from '../components/Layout';
 import FlagCarousel from '../components/ui/FlagCarousel';
-import { FactionsResponse } from '../types';
+import { FactionsResponse, SlugContext } from '../types';
 
 export const query = graphql`
   query($id: String!) {
@@ -40,11 +40,7 @@ export const query = graphql`
   }
 `;
 
-interface Props extends FactionsResponse {
-  pageContext: {
-    slug: string;
-  };
-}
+interface Props extends FactionsResponse, SlugContext {}
 
 const Faction: React.FC<Props> = ({ data, pageContext: { slug } }) => {
   const factions = data.allMarkdownRemark.edges;

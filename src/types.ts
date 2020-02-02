@@ -45,14 +45,16 @@ export type InfoBox = {
 type ListResponse<T> = {
   data: {
     allMarkdownRemark: {
-      edges: {
-        node: {
-          id: number;
-          frontmatter: T;
-          html: string;
-        };
-      }[];
+      edges: Edge<T>[];
     };
+  };
+};
+
+type Edge<T> = {
+  node: {
+    id: number;
+    frontmatter: T;
+    html: string;
   };
 };
 
@@ -100,15 +102,14 @@ export type ToSResponse = SingleResponse<ToSFrontmatter>;
 
 export type PostResponse = SingleResponse<PostFrontmatter> & CommentResponse;
 
+export type SingleFaction = Edge<FactionsFrontmatter>;
+
 export type Comment = {
   node: {
     id: number;
     date: string;
     name: string;
     comment: string;
-    email?: string;
-    website?: string;
-    slug: string;
   };
 };
 
@@ -119,5 +120,11 @@ export type BlogListContext = {
   pageContext: {
     numberOfPages: number;
     currentPage: number;
+  };
+};
+
+export type SlugContext = {
+  pageContext: {
+    slug: string;
   };
 };

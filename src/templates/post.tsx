@@ -8,7 +8,7 @@ import { post } from '../../data/strings';
 import Layout from '../components/Layout';
 import Link from '../components/Link';
 import PostHeader from '../components/ui/PostHeader';
-import { Comment, PostResponse } from '../types';
+import { Comment, PostResponse, SlugContext } from '../types';
 
 export const query = graphql`
   query($id: String!, $slug: String!) {
@@ -30,24 +30,17 @@ export const query = graphql`
   }
 `;
 
-interface Props extends PostResponse {
-  pageContext: {
-    slug: string;
-  };
-}
+interface Props extends PostResponse, SlugContext {}
 
-const Post: React.FC<Props> = ({
-  data: { markdownRemark: postData, allCommentsYaml },
-  pageContext,
-}) => (
+const Post: React.FC<Props> = ({ data: { markdownRemark, allCommentsYaml }, pageContext }) => (
   <Layout
-    title={post.pageTitle({ title: postData.frontmatter.title })}
-    description={postData.frontmatter.excerpt}
+    title={post.pageTitle({ title: markdownRemark.frontmatter.title })}
+    description={markdownRemark.frontmatter.excerpt}
     slug={pageContext.slug}
   >
     <article className="blog-post">
-      <PostHeader {...postData.frontmatter} isHeaderClickable={false} />
-      <div className="text" dangerouslySetInnerHTML={{ __html: postData.html }} />
+      <PostHeader {...markdownRemark.frontmatter} isHeaderClickable={false} />
+      <div className="text" dangerouslySetInnerHTML={{ __html: markdownRemark.html }} />
     </article>
     <Comments comments={allCommentsYaml?.edges} />
     <CommentForm />
