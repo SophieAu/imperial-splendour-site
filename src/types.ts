@@ -1,5 +1,8 @@
 import { FixedObject, FluidObject } from 'gatsby-image';
 
+// ---
+// Image Types
+
 type FluidImage = {
   childImageSharp: {
     fluid: FluidObject;
@@ -37,15 +40,15 @@ export type InfoBox = {
 };
 
 // ---
-// Post GraphQL Response
+// GraphQL Responses
 
-export type GraphQLResponse = {
+type ListResponse<T> = {
   data: {
     allMarkdownRemark: {
       edges: {
         node: {
           id: number;
-          frontmatter: PostFrontmatter;
+          frontmatter: T;
           html: string;
         };
       }[];
@@ -53,28 +56,32 @@ export type GraphQLResponse = {
   };
 };
 
-export type PostResponse = {
+type SingleResponse<T> = {
   data: {
     markdownRemark: {
-      frontmatter: PostFrontmatter;
+      frontmatter: T;
       html: string;
     };
+  };
+};
+
+type CommentResponse = {
+  data: {
     allCommentsYaml: {
       edges: Comment[];
     };
   };
 };
 
-export type ToSResponse = {
-  data: {
-    markdownRemark: {
-      frontmatter: {
-        title: string;
-        description: string;
-      };
-      html: string;
-    };
-  };
+type ToSFrontmatter = {
+  title: string;
+  description: string;
+};
+
+type FactionsFrontmatter = {
+  title: string;
+  slug: string;
+  flag: FixedImage;
 };
 
 export type PostFrontmatter = {
@@ -84,6 +91,14 @@ export type PostFrontmatter = {
   formattedDate: string;
   excerpt: string;
 };
+
+export type PostsResponse = ListResponse<PostFrontmatter>;
+
+export type FactionsResponse = ListResponse<FactionsFrontmatter>;
+
+export type ToSResponse = SingleResponse<ToSFrontmatter>;
+
+export type PostResponse = SingleResponse<PostFrontmatter> & CommentResponse;
 
 export type Comment = {
   node: {
@@ -96,6 +111,9 @@ export type Comment = {
     slug: string;
   };
 };
+
+// ---
+// Page Contexts
 
 export type BlogListContext = {
   pageContext: {

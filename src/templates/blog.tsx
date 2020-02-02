@@ -8,7 +8,7 @@ import { blog } from '../../data/strings';
 import Layout from '../components/Layout';
 import Link from '../components/Link';
 import PostHeader from '../components/ui/PostHeader';
-import { BlogListContext, GraphQLResponse } from '../types';
+import { BlogListContext, PostsResponse } from '../types';
 
 export const query = graphql`
   query($skip: Int!, $limit: Int!) {
@@ -39,7 +39,7 @@ const createSlug = (rawTitle: string, date: string) => {
   return `${date}-${title}`;
 };
 
-interface Props extends GraphQLResponse, BlogListContext {}
+interface Props extends PostsResponse, BlogListContext {}
 
 const Blog: React.FC<Props> = ({ data, pageContext }) => (
   <Layout title={blog.pageTitle} description={blog.pageDescription} slug={slugs.blog}>

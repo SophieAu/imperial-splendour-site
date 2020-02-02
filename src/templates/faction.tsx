@@ -1,12 +1,12 @@
 import './post.scss';
 
 import { graphql } from 'gatsby';
-import { FixedObject } from 'gatsby-image';
 import React from 'react';
 
 import { factions as factionStrings } from '../../data/strings';
 import Layout from '../components/Layout';
 import Carousel from '../components/ui/Carousel';
+import { FactionsResponse } from '../types';
 
 export const query = graphql`
   query($id: String!) {
@@ -39,28 +39,9 @@ export const query = graphql`
   }
 `;
 
-interface Props {
+interface Props extends FactionsResponse {
   pageContext: {
     slug: string;
-  };
-  data: {
-    allMarkdownRemark: {
-      edges: {
-        node: {
-          id: number;
-          frontmatter: {
-            title: string;
-            slug: string;
-            flag: {
-              childImageSharp: {
-                fixed: FixedObject;
-              };
-            };
-          };
-          html: string;
-        };
-      }[];
-    };
   };
 }
 
