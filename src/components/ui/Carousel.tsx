@@ -1,7 +1,7 @@
 import './Carousel.scss';
 
 import Img, { FixedObject } from 'gatsby-image';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { FactionsFrontmatter } from '../../types';
 import Link from '../Link';
@@ -31,13 +31,23 @@ const mobileIndices = [0];
 
 const Carousel: React.FC<Props> = ({ factions, selected }) => {
   const modulo = circularModulo(factions.length);
+  const [indices, setIndices] = useState(mobileIndices);
 
-  const indices =
-    window.innerWidth >= 992
-      ? desktopIndices
-      : window.innerWidth >= 768
-      ? tabletIndices
-      : mobileIndices;
+  useEffect(() => {
+    const updateIndices = () =>
+      setIndices(
+        window.innerWidth >= 992
+          ? desktopIndices
+          : window.innerWidth >= 768
+          ? tabletIndices
+          : mobileIndices
+      );
+
+    updateIndices();
+    window.addEventListener('resize', updateIndices);
+
+    return () => window.removeEventListener('resize', updateIndices);
+  }, []);
 
   const onPress = (number: number) =>
     `/factions/${factions[modulo(selected + number)].node.frontmatter.slug}`;
