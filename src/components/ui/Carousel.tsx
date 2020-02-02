@@ -3,6 +3,7 @@ import './Carousel.scss';
 import Img, { FixedObject } from 'gatsby-image';
 import React, { useEffect, useState } from 'react';
 
+import { paths } from '../../../data/config';
 import { FactionsFrontmatter } from '../../types';
 import Link from '../Link';
 
@@ -50,7 +51,7 @@ const Carousel: React.FC<Props> = ({ factions, selected }) => {
   }, []);
 
   const onPress = (number: number) =>
-    `/factions/${factions[modulo(selected + number)].node.frontmatter.slug}`;
+    `${paths.factions}/${factions[modulo(selected + number)].node.frontmatter.slug}`;
 
   const imageProps = (index: number) => ({
     src: factions[modulo(selected + index)].node.frontmatter.flag.childImageSharp.fixed,

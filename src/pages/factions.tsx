@@ -3,7 +3,7 @@ import './factions.scss';
 import { graphql, navigate } from 'gatsby';
 import React, { useLayoutEffect } from 'react';
 
-import { slugs } from '../../data/config';
+import { paths, slugs } from '../../data/config';
 import { factions as factionStrings } from '../../data/strings';
 import Layout from '../components/Layout';
 import Carousel from '../components/ui/Carousel';
@@ -39,7 +39,7 @@ const Factions: React.FC<FactionsResponse> = ({ data }) => {
   const initalFaction = factions[initialIndex].node;
 
   useLayoutEffect(() => {
-    navigate(`/factions/`);
+    navigate(`${paths.factions}/${initalFaction.frontmatter.slug}`);
   });
 
   return (
@@ -51,7 +51,7 @@ const Factions: React.FC<FactionsResponse> = ({ data }) => {
         <noscript>
           {`<meta
             httpEquiv="refresh"
-            content="0;URL='/factions/${initalFaction.frontmatter.slug}'"
+            content="0;URL='${paths.factions}/${initalFaction.frontmatter.slug}'"
           />`}
         </noscript>
       }
