@@ -1,4 +1,4 @@
-import './Carousel.scss';
+import './FlagCarousel.scss';
 
 import React, { useEffect, useState } from 'react';
 
@@ -24,7 +24,7 @@ interface Props {
     };
   }[];
 }
-const Carousel: React.FC<Props> = ({ factions, selected }) => {
+const FlagCarousel: React.FC<Props> = ({ factions, selected }) => {
   const [indices, setIndices] = useState(mobileIndices);
   const modulo = circularModulo(factions.length);
 
@@ -80,4 +80,4 @@ const Carousel: React.FC<Props> = ({ factions, selected }) => {
   );
 };
 
-export default Carousel;
+export default FlagCarousel;

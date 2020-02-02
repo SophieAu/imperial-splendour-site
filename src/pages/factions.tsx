@@ -6,7 +6,7 @@ import React, { useLayoutEffect } from 'react';
 import { paths, slugs } from '../../data/config';
 import { factions as factionStrings } from '../../data/strings';
 import Layout from '../components/Layout';
-import Carousel from '../components/ui/Carousel';
+import FlagCarousel from '../components/ui/FlagCarousel';
 import { FactionsResponse } from '../types';
 
 export const query = graphql`
@@ -57,7 +57,7 @@ const Factions: React.FC<FactionsResponse> = ({ data }) => {
       }
     >
       <section className="factions">
-        <Carousel selected={initialIndex} factions={factions} />
+        <FlagCarousel selected={initialIndex} factions={factions} />
         <h1>{initalFaction.frontmatter.title}</h1>
         <div className="text" dangerouslySetInnerHTML={{ __html: initalFaction.html }} />
       </section>

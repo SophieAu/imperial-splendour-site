@@ -6,7 +6,7 @@ import React from 'react';
 import { slugs } from '../../data/config';
 import { factions as factionStrings } from '../../data/strings';
 import Layout from '../components/Layout';
-import Carousel from '../components/ui/Carousel';
+import FlagCarousel from '../components/ui/FlagCarousel';
 import { FactionsResponse } from '../types';
 
 export const query = graphql`
@@ -60,7 +60,7 @@ const Faction: React.FC<Props> = ({ data, pageContext: { slug } }) => {
       description={frontmatter.title}
       slug={`${slugs.factions}/${slug}`}
     >
-      <Carousel selected={index} factions={factions} />
+      <FlagCarousel selected={index} factions={factions} />
       <article className="blog-post">
         <h1>{frontmatter.title}</h1>
         <div className="text" dangerouslySetInnerHTML={{ __html: html }} />
