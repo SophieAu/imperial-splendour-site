@@ -53,39 +53,47 @@ const Carousel: React.FC<Props> = ({ factions, selected }) => {
   const onPress = (number: number) =>
     `${paths.factions}/${factions[modulo(selected + number)].node.frontmatter.slug}`;
 
-  const imageProps = (index: number) => ({
-    src: factions[modulo(selected + index)].node.frontmatter.flag.childImageSharp.fixed,
-    title: factions[modulo(selected + index)].node.frontmatter.title,
-    offset: index,
-  });
-
   return (
     <div id="carousel">
-      {indices.map(index =>
-        index === 0 ? (
+      {indices.map(index => {
+        const faction = factions[modulo(selected + index)].node.frontmatter;
+
+        return index === 0 ? (
           <>
             <Link className="link" to={onPress(-1)}>
               {`<`}
             </Link>
-            <Image {...imageProps(0)} side="center" />
+            <Image
+              src={faction.flag.childImageSharp.fixed}
+              title={faction.title}
+              offset={index}
+              side="center"
+            />
             <Link className="link" to={onPress(1)}>
               {`>`}
             </Link>
           </>
         ) : (
-          <Image {...imageProps(index)} side={index > 0 ? 'right' : 'left'} />
-        )
-      )}
+          <Image
+            src={faction.flag.childImageSharp.fixed}
+            title={faction.title}
+            offset={index}
+            side={index > 0 ? 'right' : 'left'}
+          />
+        );
+      })}
     </div>
   );
 };
 
-const Image: React.FC<{
+interface ImageProps {
   src: FixedObject;
   offset: number;
   title: string;
   side: 'right' | 'left' | 'center';
-}> = ({ src, offset, title, side }) => (
+}
+
+const Image: React.FC<ImageProps> = ({ src, offset, title, side }) => (
   <Img
     fixed={src}
     style={{
