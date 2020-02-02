@@ -5,42 +5,62 @@ import React from 'react';
 
 import Link from '../Link';
 
+type Faction = {
+  node: {
+    id: number;
+    frontmatter: {
+      title: string;
+      slug: string;
+      flag: {
+        childImageSharp: {
+          fixed: FixedObject;
+        };
+      };
+    };
+    html: string;
+  };
+};
+
 const getBetterModulo = (base: number) => (value: number) =>
   value < 0 ? base + value : value % base;
 
 interface Props {
-  img: FixedObject[];
-  onPress: (counter: number) => string;
   selected: number;
+  factions: Faction[];
 }
 
-const Carousel: React.FC<Props> = ({ img, onPress, selected }) => {
-  const getModulo = getBetterModulo(img.length);
+const Carousel: React.FC<Props> = ({ factions, selected }) => {
+  const getModulo = getBetterModulo(factions.length);
+
+  const onPress = (number: number) => `/factions/${factions[number].node.frontmatter.slug}`;
 
   return (
     <div id="carousel">
       <div className="hideLeft">
         <Img
-          fixed={img[getModulo(selected - 3)]}
+          fixed={factions[getModulo(selected - 3)].node.frontmatter.flag.childImageSharp.fixed}
           className="img"
           fadeIn={false}
           placeholderStyle={{ display: 'none' }}
+          alt={factions[getModulo(selected - 3)].node.frontmatter.title}
         />
       </div>
       <div className="prevLeftSecond">
         <Img
-          fixed={img[getModulo(selected - 2)]}
+          fixed={factions[getModulo(selected - 2)].node.frontmatter.flag.childImageSharp.fixed}
           className="img"
           fadeIn={false}
           placeholderStyle={{ display: 'none' }}
+          alt={factions[getModulo(selected - 2)].node.frontmatter.title}
         />
       </div>
       <div className="prev">
         <Img
-          fixed={img[getModulo(selected - 1)]}
+          fixed={factions[getModulo(selected - 1)].node.frontmatter.flag.childImageSharp.fixed}
           className="img"
           fadeIn={false}
           placeholderStyle={{ display: 'none' }}
+          alt={factions[getModulo(selected - 1)].node.frontmatter.title}
         />
       </div>
       <Link className="link prev" to={onPress(getModulo(selected - 1))}>
@@ -48,10 +68,11 @@ const Carousel: React.FC<Props> = ({ img, onPress, selected }) => {
       </Link>
       <div className="selected">
         <Img
-          fixed={img[getModulo(selected)]}
+          fixed={factions[getModulo(selected)].node.frontmatter.flag.childImageSharp.fixed}
           className="img"
           fadeIn={false}
           placeholderStyle={{ display: 'none' }}
+          alt={factions[getModulo(selected)].node.frontmatter.title}
         />
       </div>
       <Link className="link next" to={onPress(getModulo(selected + 1))}>
@@ -59,26 +80,29 @@ const Carousel: React.FC<Props> = ({ img, onPress, selected }) => {
       </Link>
       <div className="next">
         <Img
-          fixed={img[getModulo(selected + 1)]}
+          fixed={factions[getModulo(selected + 1)].node.frontmatter.flag.childImageSharp.fixed}
           className="img"
           fadeIn={false}
           placeholderStyle={{ display: 'none' }}
+          alt={factions[getModulo(selected + 1)].node.frontmatter.title}
         />
       </div>
       <div className="nextRightSecond">
         <Img
-          fixed={img[getModulo(selected + 2)]}
+          fixed={factions[getModulo(selected + 2)].node.frontmatter.flag.childImageSharp.fixed}
           className="img"
           fadeIn={false}
           placeholderStyle={{ display: 'none' }}
+          alt={factions[getModulo(selected + 2)].node.frontmatter.title}
         />
       </div>
       <div className="hideRight">
         <Img
-          fixed={img[getModulo(selected + 3)]}
+          fixed={factions[getModulo(selected + 3)].node.frontmatter.flag.childImageSharp.fixed}
           className="img"
           fadeIn={false}
           placeholderStyle={{ display: 'none' }}
+          alt={factions[getModulo(selected + 3)].node.frontmatter.title}
         />
       </div>
     </div>

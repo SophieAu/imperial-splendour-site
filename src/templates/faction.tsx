@@ -44,12 +44,6 @@ interface Props {
     slug: string;
   };
   data: {
-    markdownRemark: {
-      frontmatter: {
-        title: string;
-      };
-      html: string;
-    };
     allMarkdownRemark: {
       edges: {
         node: {
@@ -70,28 +64,21 @@ interface Props {
   };
 }
 
-const Faction: React.FC<Props> = ({ data: { allMarkdownRemark, markdownRemark }, pageContext }) => {
-  const factions = allMarkdownRemark.edges;
-  const { html, frontmatter } = markdownRemark;
+const Faction: React.FC<Props> = ({ data, pageContext: { slug } }) => {
+  const factions = data.allMarkdownRemark.edges;
 
-  const current = factions.find(faction => faction.node.frontmatter.slug === pageContext.slug);
-  if (!current) return null;
-  const index = factions.indexOf(current);
+  const index = factions.findIndex(faction => faction.node.frontmatter.slug === slug);
   if (index === -1) return null;
 
-  const willPress = (number: number) => `/factions/${factions[number].node.frontmatter.slug}`;
+  const { frontmatter, html } = factions[index].node;
 
   return (
     <Layout
       title={factionStrings.pageTitle({ title: frontmatter.title })}
       description={frontmatter.title}
-      slug={pageContext.slug}
+      slug={slug}
     >
-      <Carousel
-        img={factions.map(faction => faction.node.frontmatter.flag.childImageSharp.fixed)}
-        selected={index}
-        onPress={willPress}
-      />
+      <Carousel selected={index} factions={factions} />
       <article className="blog-post">
         <h1>{frontmatter.title}</h1>
         <div className="text" dangerouslySetInnerHTML={{ __html: html }} />
