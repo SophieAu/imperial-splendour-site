@@ -25,10 +25,19 @@ interface Props {
   }[];
 }
 
-const indices = [-4, -3, -2, -1, 0, 1, 2, 3, 4];
+const desktopIndices = [-4, -3, -2, -1, 0, 1, 2, 3, 4];
+const tabletIndices = [-2, -1, 0, 1, 2];
+const mobileIndices = [0];
 
 const Carousel: React.FC<Props> = ({ factions, selected }) => {
   const modulo = circularModulo(factions.length);
+
+  const indices =
+    window.innerWidth >= 992
+      ? desktopIndices
+      : window.innerWidth >= 768
+      ? tabletIndices
+      : mobileIndices;
 
   const onPress = (number: number) =>
     `/factions/${factions[modulo(selected + number)].node.frontmatter.slug}`;
