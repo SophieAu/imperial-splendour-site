@@ -3,30 +3,21 @@ import './Carousel.scss';
 import Img, { FixedObject } from 'gatsby-image';
 import React from 'react';
 
+import { FactionsFrontmatter } from '../../types';
 import Link from '../Link';
-
-type Faction = {
-  node: {
-    id: number;
-    frontmatter: {
-      title: string;
-      slug: string;
-      flag: {
-        childImageSharp: {
-          fixed: FixedObject;
-        };
-      };
-    };
-    html: string;
-  };
-};
 
 const getBetterModulo = (base: number) => (value: number) =>
   value < 0 ? base + value : value % base;
 
 interface Props {
   selected: number;
-  factions: Faction[];
+  factions: {
+    node: {
+      id: number;
+      frontmatter: FactionsFrontmatter;
+      html: string;
+    };
+  }[];
 }
 
 const preSelected = [4, 3, 2, 1];
@@ -42,7 +33,7 @@ const Carousel: React.FC<Props> = ({ factions, selected }) => {
     <div id="carousel">
       {preSelected.map(index => (
         <Image
-          key={factions[getModulo(selected - index)].node.frontmatter.slug}
+          key={factions[getModulo(selected - index)].node.id}
           src={factions[getModulo(selected - index)].node.frontmatter.flag.childImageSharp.fixed}
           title={factions[getModulo(selected - index)].node.frontmatter.title}
           offset={-index}
@@ -62,7 +53,7 @@ const Carousel: React.FC<Props> = ({ factions, selected }) => {
       </Link>
       {postSelected.map(index => (
         <Image
-          key={factions[getModulo(selected + index)].node.frontmatter.slug}
+          key={factions[getModulo(selected + index)].node.id}
           src={factions[getModulo(selected + index)].node.frontmatter.flag.childImageSharp.fixed}
           title={factions[getModulo(selected + index)].node.frontmatter.title}
           offset={index}

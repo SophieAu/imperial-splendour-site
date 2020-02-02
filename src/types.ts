@@ -78,7 +78,7 @@ type ToSFrontmatter = {
   description: string;
 };
 
-type FactionsFrontmatter = {
+export type FactionsFrontmatter = {
   title: string;
   slug: string;
   flag: FixedImage;
