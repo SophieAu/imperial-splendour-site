@@ -20,3 +20,28 @@ collections:
       - { label: "Author", name: "author", widget: "string" }
       - { label: "Excerpt", name: "excerpt", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "terms-of-service"
+    label: "Terms of Service"
+    folder: "data/content/terms-of-service"
+    create: true
+    slug: terms-of-service"
+    extension: "md"
+    editor:
+     preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "factions"
+    label: "Factions"
+    folder: "data/content/factions"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    editor:
+     preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string" }
+      - { label: "ImagePath", name: "flag", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
