@@ -3,10 +3,10 @@ import './CarouselImage.scss';
 import Img, { FixedObject } from 'gatsby-image';
 import React from 'react';
 
-const FLAG_WIDTH = 132;
-const FLAG_HEIGHT = 66;
-const calcWidth = (offset: number) => FLAG_WIDTH / Math.abs(offset || 1);
-const calcHeight = (offset: number) => FLAG_HEIGHT * (1 - (offset * offset) / 100);
+const IMAGE_WIDTH = 132;
+const IMAGE_HEIGHT = 66;
+const calcWidth = (offset: number) => IMAGE_WIDTH / Math.abs(offset || 1);
+const calcHeight = (offset: number) => IMAGE_HEIGHT * (1 - (offset * offset) / 100);
 
 interface ImageProps {
   src: FixedObject;
@@ -30,9 +30,9 @@ const CarouselImage: React.FC<ImageProps> = ({ src, offset, title, side }) => (
     imgStyle={{
       objectFit: 'cover',
       objectPosition: `${side} center`,
-      width: `${FLAG_WIDTH}px`,
-      right: `${side === 'left' ? calcWidth(offset) - FLAG_WIDTH : 0}px`,
-      left: `${side === 'right' ? calcWidth(offset) - FLAG_WIDTH : 0}px`,
+      width: `${IMAGE_WIDTH}px`,
+      right: `${side === 'left' ? calcWidth(offset) - IMAGE_WIDTH : 0}px`,
+      left: `${side === 'right' ? calcWidth(offset) - IMAGE_WIDTH : 0}px`,
     }}
   />
 );
