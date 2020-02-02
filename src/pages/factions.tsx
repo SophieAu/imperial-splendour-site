@@ -41,6 +41,7 @@ const Factions: React.FC<FactionsResponse> = ({ data }) => {
   useLayoutEffect(() => {
     navigate(`/factions/${initalFaction.frontmatter.slug}`);
   });
+
   return (
     <Layout
       title={factionStrings.pageTitle({ title: 'Factions' })}
@@ -51,16 +52,6 @@ const Factions: React.FC<FactionsResponse> = ({ data }) => {
         <Carousel selected={initialIndex} factions={factions} />
         <h1>{initalFaction.frontmatter.title}</h1>
         <div className="text" dangerouslySetInnerHTML={{ __html: initalFaction.html }} />
-        {/* <ul>
-          {factions.map(faction => (
-            <li key={faction.node.id}>
-              <Link to={`/factions/${faction.node.frontmatter.slug}`}>
-                <h2>{faction.node.frontmatter.title}</h2>
-              </Link>
-              <Img fixed={faction.node.frontmatter.flag.childImageSharp.fixed} fadeIn={false} />
-            </li>
-          ))}
-        </ul> */}
       </section>
     </Layout>
   );
