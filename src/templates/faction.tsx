@@ -3,6 +3,7 @@ import './post.scss';
 import { graphql } from 'gatsby';
 import React from 'react';
 
+import { slugs } from '../../data/config';
 import { factions as factionStrings } from '../../data/strings';
 import Layout from '../components/Layout';
 import Carousel from '../components/ui/Carousel';
@@ -57,7 +58,7 @@ const Faction: React.FC<Props> = ({ data, pageContext: { slug } }) => {
     <Layout
       title={factionStrings.pageTitle({ title: frontmatter.title })}
       description={frontmatter.title}
-      slug={slug}
+      slug={`${slugs.factions}/${slug}`}
     >
       <Carousel selected={index} factions={factions} />
       <article className="blog-post">

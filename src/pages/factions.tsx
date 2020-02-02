@@ -39,7 +39,7 @@ const Factions: React.FC<FactionsResponse> = ({ data }) => {
   const initalFaction = factions[initialIndex].node;
 
   useLayoutEffect(() => {
-    navigate(`/factions/${initalFaction.frontmatter.slug}`);
+    navigate(`/factions/`);
   });
 
   return (
@@ -47,6 +47,14 @@ const Factions: React.FC<FactionsResponse> = ({ data }) => {
       title={factionStrings.pageTitle({ title: 'Factions' })}
       description={factionStrings.pageDescription}
       slug={slugs.factions}
+      additionalHead={
+        <noscript>
+          {`<meta
+            httpEquiv="refresh"
+            content="0;URL='/factions/${initalFaction.frontmatter.slug}'"
+          />`}
+        </noscript>
+      }
     >
       <section className="factions">
         <Carousel selected={initialIndex} factions={factions} />
