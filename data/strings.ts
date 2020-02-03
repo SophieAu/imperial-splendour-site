@@ -157,4 +157,6 @@ export const post = {
 export const factions = {
   pageTitle: ({ title }: { title: string }) => buildPageTitle(title),
   pageDescription: 'Explore the factions you can lead',
+  previousButton: "'Go to previous Faction",
+  nextButton: "'Go to next Faction",
 };

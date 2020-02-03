@@ -1,11 +1,33 @@
 import './FlagCarousel.scss';
 
+import { graphql, useStaticQuery } from 'gatsby';
+import Img from 'gatsby-image';
 import React, { useEffect, useState } from 'react';
 
 import { paths } from '../../../data/config';
+import { factions as factionStrings } from '../../../data/strings';
 import { SingleFaction } from '../../types';
-import Link from '../Link';
+import ImageLink from '../ImageLink';
 import CarouselImage from './CarouselImage';
+
+const query = graphql`
+  query {
+    buttonLeft: file(relativePath: { eq: "factions/button_left.png" }) {
+      childImageSharp {
+        fixed(width: 24, quality: 90) {
+          ...GatsbyImageSharpFixed_withWebp
+        }
+      }
+    }
+    buttonRight: file(relativePath: { eq: "factions/button_right.png" }) {
+      childImageSharp {
+        fixed(width: 24, quality: 90) {
+          ...GatsbyImageSharpFixed_withWebp
+        }
+      }
+    }
+  }
+`;
 
 const circularModulo = (base: number) => (value: number) =>
   value < 0 ? base + value : value % base;
@@ -21,6 +43,8 @@ interface Props {
 const FlagCarousel: React.FC<Props> = ({ factions, selected }) => {
   const [indices, setIndices] = useState(mobileIndices);
   const modulo = circularModulo(factions.length);
+
+  const buttons = useStaticQuery(query);
 
   useEffect(() => {
     const updateIndices = () =>
@@ -48,18 +72,18 @@ const FlagCarousel: React.FC<Props> = ({ factions, selected }) => {
 
         return index === 0 ? (
           <>
-            <Link className="link" to={onPress(-1)}>
-              {`<`}
-            </Link>
+            <ImageLink className="link" to={onPress(-1)} title={factionStrings.previousButton}>
+              <Img fixed={buttons.buttonLeft.childImageSharp.fixed} />
+            </ImageLink>
             <CarouselImage
               src={faction.flag.childImageSharp.fixed}
               title={faction.title}
               offset={index}
               side="center"
             />
-            <Link className="link" to={onPress(1)}>
-              {`>`}
-            </Link>
+            <ImageLink className="link" to={onPress(1)} title={factionStrings.nextButton}>
+              <Img fixed={buttons.buttonRight.childImageSharp.fixed} />
+            </ImageLink>
           </>
         ) : (
           <CarouselImage
