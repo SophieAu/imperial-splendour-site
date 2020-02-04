@@ -77,7 +77,7 @@
 
 @media (max-width: $tablet-breakpoint - 1) {
   .webp #header-menu {
-    background: var(--main-bg) url(../../../data/img/texture_bg.webp);
+    background: var(--main-bg) url(../../data/img/texture_bg.webp);
   }
 
   #header-menu {
@@ -96,7 +96,7 @@
     align-items: flex-start;
     justify-content: space-between;
 
-    background: var(--main-bg) url(../../../data/img/texture_bg.jpg);
+    background: var(--main-bg) url(../../data/img/texture_bg.jpg);
 
     > ul {
       flex-direction: column;
