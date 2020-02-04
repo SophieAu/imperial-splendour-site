@@ -40,6 +40,7 @@ interface Props {
   selected: number;
   factions: SingleFaction[];
 }
+
 const FlagCarousel: React.FC<Props> = ({ factions, selected }) => {
   const [indices, setIndices] = useState(mobileIndices);
   const modulo = circularModulo(factions.length);
