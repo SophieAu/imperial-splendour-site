@@ -42,8 +42,10 @@ const Factions: React.FC<FactionsResponse> = ({ data }) => {
     >
       <section className="factions">
         <FlagCarousel selected={initialIndex} factions={factions} />
-        <h1>{initalFaction.frontmatter.title}</h1>
-        <div className="text" dangerouslySetInnerHTML={{ __html: initalFaction.html }} />
+        <article className="faction">
+          <h1>{initalFaction.frontmatter.title}</h1>
+          <div dangerouslySetInnerHTML={{ __html: initalFaction.html }} />
+        </article>
       </section>
     </Layout>
   );

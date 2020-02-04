@@ -1,4 +1,4 @@
-import './post.scss';
+import '../pages/factions.scss';
 
 import { graphql } from 'gatsby';
 import React from 'react';
@@ -36,11 +36,13 @@ const Faction: React.FC<Props> = ({ data, pageContext: { slug } }) => {
       description={frontmatter.title}
       slug={`${slugs.factions}/${slug}`}
     >
-      <FlagCarousel selected={index} factions={factions} />
-      <article className="blog-post">
-        <h1>{frontmatter.title}</h1>
-        <div className="text" dangerouslySetInnerHTML={{ __html: html }} />
-      </article>
+      <section className="factions">
+        <FlagCarousel selected={index} factions={factions} />
+        <article className="faction">
+          <h1>{frontmatter.title}</h1>
+          <div dangerouslySetInnerHTML={{ __html: html }} />
+        </article>
+      </section>
     </Layout>
   );
 };

@@ -1,10 +1,15 @@
-.factions {
-  h1 {
-    padding-top: 2.5rem;
+@import '../variables';
+
+.factions > .faction {
+  margin: 2.5rem 0 5.5rem;
+
+  > h1 {
+    font: var(--headline-font);
+    margin: 0 0 1.5rem;
+    text-decoration: none;
   }
 
-  .text {
-    margin-top: 3rem;
-    margin-bottom: 5.5rem;
+  img {
+    max-width: 100%;
   }
 }
