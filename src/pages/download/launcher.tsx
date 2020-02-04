@@ -6,7 +6,7 @@ import { downloadLinks, slugs } from '../../../data/config';
 import { downloadLauncher } from '../../../data/strings';
 import Layout from '../../components/Layout';
 import MarkdownWithLink from '../../components/MarkdownWithLink';
-import NewsletterSignup from '../../components/ui/NewsletterSignup';
+import NewsletterSignup from '../../components/NewsletterSignup';
 
 const DownloadRotR = () => (
   <Layout

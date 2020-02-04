@@ -7,7 +7,7 @@ import { paths, slugs } from '../../data/config';
 import { blog } from '../../data/strings';
 import Layout from '../components/Layout';
 import Link from '../components/Link';
-import PostHeader from '../components/ui/PostHeader';
+import PostHeader from '../components/PostHeader';
 import { BlogListContext, PostsResponse } from '../types';
 
 export const query = graphql`

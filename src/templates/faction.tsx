@@ -5,8 +5,8 @@ import React from 'react';
 
 import { slugs } from '../../data/config';
 import { factions as factionStrings } from '../../data/strings';
+import FlagCarousel from '../components/FlagCarousel';
 import Layout from '../components/Layout';
-import FlagCarousel from '../components/ui/FlagCarousel';
 import { FactionsResponse, SlugContext } from '../types';
 
 export const query = graphql`

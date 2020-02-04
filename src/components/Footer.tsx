@@ -2,10 +2,10 @@ import './Footer.scss';
 
 import React from 'react';
 
-import { modDBButton, socialMedia } from '../../../data/config';
-import { footer } from '../../../data/strings';
-import ImageLink from '../ImageLink';
-import MarkdownWithLink from '../MarkdownWithLink';
+import { modDBButton, socialMedia } from '../../data/config';
+import { footer } from '../../data/strings';
+import ImageLink from './ImageLink';
+import MarkdownWithLink from './MarkdownWithLink';
 
 const Footer = () => (
   <footer className="footer head-foot">

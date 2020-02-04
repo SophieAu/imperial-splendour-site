@@ -7,7 +7,7 @@ import { staticman } from '../../data/config';
 import { post } from '../../data/strings';
 import Layout from '../components/Layout';
 import MarkdownWithLink from '../components/MarkdownWithLink';
-import PostHeader from '../components/ui/PostHeader';
+import PostHeader from '../components/PostHeader';
 import { Comment, PostResponse, SlugContext } from '../types';
 
 export const query = graphql`

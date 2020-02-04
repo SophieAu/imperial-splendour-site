@@ -9,7 +9,7 @@ import { downloadRotR } from '../../../data/strings';
 import ImageLink from '../../components/ImageLink';
 import Layout from '../../components/Layout';
 import MarkdownWithLink from '../../components/MarkdownWithLink';
-import NewsletterSignup from '../../components/ui/NewsletterSignup';
+import NewsletterSignup from '../../components/NewsletterSignup';
 
 const hosts = [
   { platform: 'Mod DB', link: downloadLinks.modDB, imgSrc: modDBButton.download },

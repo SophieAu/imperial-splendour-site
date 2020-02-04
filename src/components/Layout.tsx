@@ -2,9 +2,9 @@ import './Layout.scss';
 
 import React from 'react';
 
+import Footer from './Footer';
+import Header from './Header';
 import SEO from './SEO';
-import Footer from './ui/Footer';
-import Header from './ui/Header';
 
 interface Props {
   title: string;

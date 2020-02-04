@@ -6,8 +6,8 @@ import React from 'react';
 
 import { paths, slugs } from '../../data/config';
 import { home } from '../../data/strings';
+import DownloadButton from '../components/DownloadButton';
 import Layout from '../components/Layout';
-import DownloadButton from '../components/ui/DownloadButton';
 import { IndexImage, InfoBox as InfoBoxType } from '../types';
 
 export const query = graphql`

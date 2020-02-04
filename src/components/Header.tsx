@@ -4,10 +4,10 @@ import { graphql, useStaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
 import React from 'react';
 
-import { paths } from '../../../data/config';
-import { header } from '../../../data/strings';
-import ImageLink from '../ImageLink';
-import Link from '../Link';
+import { paths } from '../../data/config';
+import { header } from '../../data/strings';
+import ImageLink from './ImageLink';
+import Link from './Link';
 
 const query = graphql`
   query {

@@ -2,8 +2,8 @@ import './NewsletterSignup.scss';
 
 import React from 'react';
 
-import { mailchimpForm } from '../../../data/config';
-import { newsletterSignup as strings } from '../../../data/strings';
+import { mailchimpForm } from '../../data/config';
+import { newsletterSignup as strings } from '../../data/strings';
 
 const MailChimpForm = () => (
   <div id="mc_embed_signup">

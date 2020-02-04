@@ -4,11 +4,11 @@ import { graphql, useStaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
 import React, { useEffect, useState } from 'react';
 
-import { paths } from '../../../data/config';
-import { factions as factionStrings } from '../../../data/strings';
-import { SingleFaction } from '../../types';
-import ImageLink from '../ImageLink';
+import { paths } from '../../data/config';
+import { factions as factionStrings } from '../../data/strings';
+import { SingleFaction } from '../types';
 import CarouselImage from './CarouselImage';
+import ImageLink from './ImageLink';
 
 const query = graphql`
   query {

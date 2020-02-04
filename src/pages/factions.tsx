@@ -5,8 +5,8 @@ import React, { useLayoutEffect } from 'react';
 
 import { paths, slugs } from '../../data/config';
 import { factions as factionStrings } from '../../data/strings';
+import FlagCarousel from '../components/FlagCarousel';
 import Layout from '../components/Layout';
-import FlagCarousel from '../components/ui/FlagCarousel';
 import { FactionsResponse } from '../types';
 
 export const query = graphql`

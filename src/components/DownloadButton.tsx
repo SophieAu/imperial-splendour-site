@@ -2,9 +2,9 @@ import './DownloadButton.scss';
 
 import React from 'react';
 
-import { downloadButton } from '../../../data/strings';
-import { cn } from '../../helpers';
-import Link from '../Link';
+import { downloadButton } from '../../data/strings';
+import { cn } from '../helpers';
+import Link from './Link';
 
 interface Props {
   linkTo: string;
