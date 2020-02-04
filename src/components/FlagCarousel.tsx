@@ -7,6 +7,7 @@ import React, { useEffect, useState } from 'react';
 import { paths } from '../../data/config';
 import { factions as factionStrings } from '../../data/strings';
 import { SingleFaction } from '../types';
+import { circularModulo } from '../util';
 import ImageLink from './ImageLink';
 
 const query = graphql`
@@ -19,9 +20,6 @@ const query = graphql`
     }
   }
 `;
-
-const circularModulo = (base: number) => (value: number) =>
-  value < 0 ? base + value : value % base;
 
 const desktop = [-4, -3, -2, -1, 0, 1, 2, 3, 4];
 const tablet = [-2, -1, 0, 1, 2];
@@ -36,8 +34,6 @@ const FlagCarousel: React.FC<Props> = ({ factions, selected }) => {
   const [indices, setIndices] = useState(mobile);
   const buttons = useStaticQuery(query);
 
-  const modulo = circularModulo(factions.length);
-
   useEffect(() => {
     const updateIndices = () =>
       setIndices(window.innerWidth >= 992 ? desktop : window.innerWidth >= 768 ? tablet : mobile);
@@ -48,8 +44,9 @@ const FlagCarousel: React.FC<Props> = ({ factions, selected }) => {
     return () => window.removeEventListener('resize', updateIndices);
   }, []);
 
-  const onPress = (number: number) =>
-    `${paths.factions}/${factions[modulo(selected + number)].node.frontmatter.slug}`;
+  const modulo = circularModulo(factions.length);
+  const frontmatter = (number: number) => factions[modulo(selected + number)].node.frontmatter;
+  const onPress = (number: number) => `${paths.factions}/${frontmatter(number).slug}`;
 
   const wrapper = (index: number) => (children: React.ReactNode) =>
     index === 0 ? (
@@ -68,18 +65,16 @@ const FlagCarousel: React.FC<Props> = ({ factions, selected }) => {
 
   return (
     <div id="carousel">
-      {indices.map(index => {
-        const faction = factions[modulo(selected + index)].node.frontmatter;
-
-        return wrapper(index)(
+      {indices.map(index =>
+        wrapper(index)(
           <CarouselImage
-            src={faction.flag.childImageSharp.fixed}
-            title={faction.title}
+            src={frontmatter(index).flag.childImageSharp.fixed}
+            title={frontmatter(index).title}
             offset={index}
             side={index > 0 ? 'right' : 'left'}
           />
-        );
-      })}
+        )
+      )}
     </div>
   );
 };
