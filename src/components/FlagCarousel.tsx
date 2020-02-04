@@ -50,7 +50,7 @@ const FlagCarousel: React.FC<Props> = ({ factions, selected }) => {
 
   const wrapper = (index: number) => (children: React.ReactNode) =>
     index === 0 ? (
-      <>
+      <React.Fragment key={index}>
         <ImageLink className="link" to={onPress(-1)} title={factionStrings.previousButton}>
           <Img fixed={buttons.buttonLeft.childImageSharp.fixed} />
         </ImageLink>
@@ -58,9 +58,9 @@ const FlagCarousel: React.FC<Props> = ({ factions, selected }) => {
         <ImageLink className="link" to={onPress(1)} title={factionStrings.nextButton}>
           <Img fixed={buttons.buttonRight.childImageSharp.fixed} />
         </ImageLink>
-      </>
+      </React.Fragment>
     ) : (
-      { children }
+      <React.Fragment key={index}>{children}</React.Fragment>
     );
 
   return (
