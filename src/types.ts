@@ -42,26 +42,26 @@ export type InfoBox = {
 // ---
 // GraphQL Responses
 
-type ListResponse<T> = {
+type ListResponse<Frontmatter> = {
   data: {
     allMarkdownRemark: {
-      edges: Edge<T>[];
+      edges: Edge<Frontmatter>[];
     };
   };
 };
 
-type Edge<T> = {
+type Edge<Frontmatter> = {
   node: {
     id: number;
-    frontmatter: T;
+    frontmatter: Frontmatter;
     html: string;
   };
 };
 
-type SingleResponse<T> = {
+type SingleResponse<Frontmatter> = {
   data: {
     markdownRemark: {
-      frontmatter: T;
+      frontmatter: Frontmatter;
       html: string;
     };
   };
