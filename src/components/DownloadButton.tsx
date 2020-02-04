@@ -3,7 +3,7 @@ import './DownloadButton.scss';
 import React from 'react';
 
 import { downloadButton } from '../../data/strings';
-import { cn } from '../helpers';
+import { cn } from '../util';
 import Link from './Link';
 
 interface Props {
