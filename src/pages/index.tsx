@@ -30,6 +30,7 @@ export const query = graphql`
 const Home: React.FC<{ data: IndexImage }> = ({ data }) => (
   <Layout title={home.pageTitle} description={home.pageDescription} slug={slugs.home}>
     <section className="hero">
+      <h1 style={{ display: 'none' }}>{home.heroTitle}</h1>
       <div className="hero-body">
         <Img
           className="hero-logo"

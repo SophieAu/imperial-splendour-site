@@ -45,6 +45,7 @@ export const home = {
   pageTitle: SITE_TITLE,
   pageDescription:
     'Imperial Splendour attempts to create the best Empire: Total War experience possible without destroying the essence of the game.',
+  heroTitle: SITE_TITLE,
   heroText: `It is the year 1783. The American Revolution has shown the world that the order of a monarch can be disputed by his own subjects. Colonies can claim independence in the name of Liberty. Events like this could topple the absolute monarchies that ruled Europe for nearly a thousand years.`,
   heroLogoAlt: 'The Imperial Splendour logo',
   infoBoxes: [
