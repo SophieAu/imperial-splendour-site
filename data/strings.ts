@@ -41,32 +41,30 @@ export const postHeader = {
 // ---
 // Pages
 
-const infoBoxes: InfoBox[] = [
-  {
-    imageKey: 'blackwatch',
-    imageAlt: 'The British/Scottish Blackwatch in battle formation',
-    text: `Fight in the Revolutionary Wars. Command your armies to destroy the old order or preserve it. Rewrite history. The world is at your feet. To give you an authentic feeling for the battles of this period we created armies with historically accurate uniforms.`,
-  },
-  {
-    imageKey: 'portraits',
-    imageAlt: 'Collage of hundreds of historical portraits that appear in the mod',
-    text: `But historical accuracy does not end with new fancy uniforms. There are many historical characters in the game that you already know or whose portrait you might have seen in a museum. More than 230 portraits have been added to the game to replace the vanilla portrait sets of ETW and give you an 18th century feeling.`,
-  },
-  {
-    imageKey: 'gameplay',
-    imageAlt: 'Screenshot of the HUD a user sees in the game',
-    text:
-      'Additionally, RotR gives a more authentic feeling on the campaign map. Several factions have a new UI and all have their historical flags. You might also recognize some of the cities and buildings as 3D recreations of their actual historical counterparts.',
-  },
-];
-
 export const home = {
   pageTitle: SITE_TITLE,
   pageDescription:
     'Imperial Splendour attempts to create the best Empire: Total War experience possible without destroying the essence of the game.',
   heroText: `It is the year 1783. The American Revolution has shown the world that the order of a monarch can be disputed by his own subjects. Colonies can claim independence in the name of Liberty. Events like this could topple the absolute monarchies that ruled Europe for nearly a thousand years.`,
   heroLogoAlt: 'The Imperial Splendour logo',
-  infoBoxes,
+  infoBoxes: [
+    {
+      imageKey: 'blackwatch',
+      imageAlt: 'The British/Scottish Blackwatch in battle formation',
+      text: `Fight in the Revolutionary Wars. Command your armies to destroy the old order or preserve it. Rewrite history. The world is at your feet. To give you an authentic feeling for the battles of this period we created armies with historically accurate uniforms.`,
+    },
+    {
+      imageKey: 'portraits',
+      imageAlt: 'Collage of hundreds of historical portraits that appear in the mod',
+      text: `But historical accuracy does not end with new fancy uniforms. There are many historical characters in the game that you already know or whose portrait you might have seen in a museum. More than 230 portraits have been added to the game to replace the vanilla portrait sets of ETW and give you an 18th century feeling.`,
+    },
+    {
+      imageKey: 'gameplay',
+      imageAlt: 'Screenshot of the HUD a user sees in the game',
+      text:
+        'Additionally, RotR gives a more authentic feeling on the campaign map. Several factions have a new UI and all have their historical flags. You might also recognize some of the cities and buildings as 3D recreations of their actual historical counterparts.',
+    },
+  ] as InfoBox[],
 };
 
 export const download = {
@@ -81,18 +79,11 @@ export const download = {
       'To use the launcher: at least Windows 7',
     ],
   },
-  main: {
-    info:
-      "Imperial Splendour - Rise of the Republic v1.1.9.9 Empire: Total War's 10th anniversary beta",
-  },
+  main:
+    "Imperial Splendour - Rise of the Republic v1.1.9.9 Empire: Total War's 10th anniversary beta",
   other: {
     title: 'Other Downloads',
-    list: [
-      {
-        link: paths.downloadLauncher,
-        description: 'Launcher only',
-      },
-    ],
+    list: [{ link: paths.downloadLauncher, description: 'Launcher only' }],
   },
 };
 
@@ -109,9 +100,8 @@ export const downloadLauncher = {
   pageTitle: buildPageTitle('Download the Rise of the Republic Launcher'),
   pageDescription:
     'Download and play Imperial Splendour to have the best Empire: Total War experience possible.',
-  confirmPreOne: 'Your download should be starting in a second.',
-  confirmPreTwo: "If it doesn't,",
-  confirmLink: 'download manually',
+  confirmLineOne: 'Your download should be starting in a second.',
+  confirmLineTwo: `If it doesn't, [download manually](${downloadLinks.launcherOnly})`,
 };
 
 export const about = {
@@ -137,7 +127,7 @@ export const about = {
 export const blog = {
   pageTitle: buildPageTitle('Blog'),
   pageDescription:
-    'Imperial Splendour attempts to create the best Empire: Total War experience possible without destroying the essence of the game.',
+    'Follow the Imperial Splendour team and get a deep insight into the development process.',
   previousPage: '< Newer',
   nextPage: 'Older >',
 };
@@ -147,8 +137,7 @@ export const post = {
   commentForm: 'Post a Comment',
   namePlaceholder: 'Name',
   commentPlaceholder: 'Your comment here',
-  tosPre: 'I have read and agree to the',
-  tosLink: 'Terms of Service and Privacy Policy',
+  tos: `I have read and agree to the [Terms of Service and Privacy Policy](${paths.termsOfService})`,
   commentButtonTitle: 'Submit',
   comments: 'Comments',
   emptyComments: 'Nothing yet.',

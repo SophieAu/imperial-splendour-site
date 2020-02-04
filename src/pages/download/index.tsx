@@ -31,7 +31,7 @@ const MainDownload = () => (
     </div>
     <div className="download">
       <DownloadButton linkTo={paths.downloadRotR} />
-      <p>{download.main.info}</p>
+      <p>{download.main}</p>
     </div>
   </section>
 );

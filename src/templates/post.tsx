@@ -3,10 +3,10 @@ import './post.scss';
 import { graphql } from 'gatsby';
 import React from 'react';
 
-import { paths, staticman } from '../../data/config';
+import { staticman } from '../../data/config';
 import { post } from '../../data/strings';
 import Layout from '../components/Layout';
-import Link from '../components/Link';
+import MarkdownWithLink from '../components/MarkdownWithLink';
 import PostHeader from '../components/ui/PostHeader';
 import { Comment, PostResponse, SlugContext } from '../types';
 
@@ -94,8 +94,7 @@ const CommentForm = () => (
           aria-labelledby="checkbox-text"
         />
         <p id="checkbox-text">
-          {`${post.tosPre} `}
-          <Link to={paths.termsOfService}>{post.tosLink}</Link>
+          <MarkdownWithLink markdownText={post.tos} />
         </p>
       </div>
       <button className="btn-download" type="submit">

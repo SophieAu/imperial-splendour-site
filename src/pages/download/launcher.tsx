@@ -5,7 +5,7 @@ import React from 'react';
 import { downloadLinks, slugs } from '../../../data/config';
 import { downloadLauncher } from '../../../data/strings';
 import Layout from '../../components/Layout';
-import Link from '../../components/Link';
+import MarkdownWithLink from '../../components/MarkdownWithLink';
 import NewsletterSignup from '../../components/ui/NewsletterSignup';
 
 const DownloadRotR = () => (
@@ -16,10 +16,9 @@ const DownloadRotR = () => (
     additionalHead={<meta httpEquiv="refresh" content={`0;URL='${downloadLinks.launcherOnly}'`} />}
   >
     <h2 className="download-confirm">
-      {downloadLauncher.confirmPreOne}
+      {downloadLauncher.confirmLineOne}
       <br />
-      {`${downloadLauncher.confirmPreTwo} `}
-      <Link to={downloadLinks.launcherOnly}>{downloadLauncher.confirmLink}</Link>
+      <MarkdownWithLink markdownText={downloadLauncher.confirmLineTwo} />
     </h2>
     <NewsletterSignup />
   </Layout>
