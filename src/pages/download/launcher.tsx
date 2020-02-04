@@ -18,7 +18,7 @@ const DownloadRotR = () => (
     <h2 className="download-confirm">
       {downloadLauncher.confirmLineOne}
       <br />
-      <MarkdownWithLink markdownText={downloadLauncher.confirmLineTwo} />
+      <MarkdownWithLink>{downloadLauncher.confirmLineTwo}</MarkdownWithLink>
     </h2>
     <NewsletterSignup />
   </Layout>

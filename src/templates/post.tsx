@@ -85,7 +85,7 @@ const CommentForm = () => (
           aria-labelledby="checkbox-text"
         />
         <p id="checkbox-text">
-          <MarkdownWithLink markdownText={post.tos} />
+          <MarkdownWithLink>{post.tos}</MarkdownWithLink>
         </p>
       </div>
       <button className="btn-download" type="submit">
