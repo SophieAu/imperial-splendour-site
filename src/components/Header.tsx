@@ -12,11 +12,7 @@ import Link from './Link';
 const query = graphql`
   query {
     headerLogo: file(relativePath: { eq: "header_logo.png" }) {
-      childImageSharp {
-        fixed(height: 56, width: 183) {
-          ...GatsbyImageSharpFixed_withWebp
-        }
-      }
+      ...headerLogo
     }
   }
 `;

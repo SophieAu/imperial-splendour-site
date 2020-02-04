@@ -13,19 +13,10 @@ import { Comment, PostResponse, SlugContext } from '../types';
 export const query = graphql`
   query($id: String!, $slug: String!) {
     allCommentsYaml(filter: { slug: { eq: $slug } }, sort: { fields: [date], order: ASC }) {
-      edges {
-        node {
-          id
-          name
-          comment
-          date(formatString: "MMMM DD, YYYY")
-        }
-      }
+      ...comments
     }
     markdownRemark(id: { eq: $id }) {
-      id
-      html
-      ...postFrontmatter
+      ...blogPost
     }
   }
 `;

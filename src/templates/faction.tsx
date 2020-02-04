@@ -12,30 +12,10 @@ import { FactionsResponse, SlugContext } from '../types';
 export const query = graphql`
   query($id: String!) {
     markdownRemark(id: { eq: $id }) {
-      id
-      html
-      frontmatter {
-        title
-      }
+      ...faction
     }
     allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/data/content/factions/" } }) {
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-            slug
-            flag {
-              childImageSharp {
-                fixed(height: 66, quality: 90) {
-                  ...GatsbyImageSharpFixed_withWebp
-                }
-              }
-            }
-          }
-          html
-        }
-      }
+      ...factions
     }
   }
 `;

@@ -12,23 +12,7 @@ import { FactionsResponse } from '../types';
 export const query = graphql`
   query {
     allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/data/content/factions/" } }) {
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-            slug
-            flag {
-              childImageSharp {
-                fixed(height: 66, quality: 90) {
-                  ...GatsbyImageSharpFixed_withWebp
-                }
-              }
-            }
-          }
-          html
-        }
-      }
+      ...factions
     }
   }
 `;

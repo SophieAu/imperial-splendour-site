@@ -13,11 +13,7 @@ import { IndexImage, InfoBox as InfoBoxType } from '../types';
 export const query = graphql`
   query {
     heroImg: file(relativePath: { eq: "index/hero_logo.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 1360) {
-          ...GatsbyImageSharpFluid_withWebp_tracedSVG
-        }
-      }
+      ...heroImage
     }
     blackwatch: file(relativePath: { eq: "index/info_blackwatch.jpg" }) {
       ...infoBoxImage

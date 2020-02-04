@@ -13,18 +13,10 @@ import ImageLink from './ImageLink';
 const query = graphql`
   query {
     buttonLeft: file(relativePath: { eq: "factions/button_left.png" }) {
-      childImageSharp {
-        fixed(width: 24, quality: 90) {
-          ...GatsbyImageSharpFixed_withWebp
-        }
-      }
+      ...carouselButtonImage
     }
     buttonRight: file(relativePath: { eq: "factions/button_right.png" }) {
-      childImageSharp {
-        fixed(width: 24, quality: 90) {
-          ...GatsbyImageSharpFixed_withWebp
-        }
-      }
+      ...carouselButtonImage
     }
   }
 `;

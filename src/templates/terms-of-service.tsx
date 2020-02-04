@@ -21,11 +21,7 @@ const TermsOfService: React.FC<ToSResponse> = ({ data: { markdownRemark: tos } }
 export const query = graphql`
   query($id: String!) {
     markdownRemark(id: { eq: $id }) {
-      html
-      frontmatter {
-        description
-        title
-      }
+      ...termsOfService
     }
   }
 `;
