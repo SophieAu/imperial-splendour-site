@@ -1,5 +1,3 @@
-import './CarouselImage.scss';
-
 import Img, { FixedObject } from 'gatsby-image';
 import React from 'react';
 
