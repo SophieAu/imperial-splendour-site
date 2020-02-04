@@ -1,5 +1,22 @@
 @import 'variables';
-@import 'reset';
+
+// --- RESET
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+// ---
 
 :root {
   font-size: 16px;
@@ -56,10 +73,6 @@ a {
 #newsletter-input {
   position: absolute;
   left: -5000px;
-}
-
-#gatsby-announcer {
-  display: none;
 }
 
 .head-foot {
