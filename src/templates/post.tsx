@@ -88,7 +88,7 @@ const CommentForm = () => (
           <MarkdownWithLink>{post.tos}</MarkdownWithLink>
         </p>
       </div>
-      <button className="btn-download" type="submit">
+      <button className="button" type="submit">
         {post.commentButtonTitle}
       </button>
     </form>

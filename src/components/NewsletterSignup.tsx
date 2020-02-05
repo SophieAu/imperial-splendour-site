@@ -18,7 +18,7 @@ const MailChimpForm = () => (
       <div id="newsletter-input" aria-hidden="true">
         <input type="text" name={mailchimpForm.inputName} tabIndex={-1} />
       </div>
-      <input className="btn-download" type="submit" value="Subscribe" name="subscribe" />
+      <input className="button" type="submit" value="Subscribe" name="subscribe" />
     </form>
   </div>
 );

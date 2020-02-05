@@ -3,8 +3,7 @@ import './index.scss';
 import React from 'react';
 
 import { paths, slugs } from '../../../data/config';
-import { download } from '../../../data/strings';
-import DownloadButton from '../../components/DownloadButton';
+import { download, downloadButton } from '../../../data/strings';
 import Layout from '../../components/Layout';
 import Link from '../../components/Link';
 
@@ -30,7 +29,9 @@ const MainDownload = () => (
       </ul>
     </div>
     <div className="download">
-      <DownloadButton linkTo={paths.downloadRotR} />
+      <Link to={paths.downloadRotR} className={'button'}>
+        {downloadButton.buttonText}
+      </Link>
       <p>{download.main}</p>
     </div>
   </section>

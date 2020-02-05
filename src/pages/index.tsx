@@ -5,9 +5,9 @@ import Img from 'gatsby-image';
 import React from 'react';
 
 import { paths, slugs } from '../../data/config';
-import { home } from '../../data/strings';
-import DownloadButton from '../components/DownloadButton';
+import { downloadButton, home } from '../../data/strings';
 import Layout from '../components/Layout';
+import Link from '../components/Link';
 import { IndexImage, InfoBox as InfoBoxType } from '../types';
 
 export const query = graphql`
@@ -39,7 +39,9 @@ const Home: React.FC<{ data: IndexImage }> = ({ data }) => (
         />
         <p className="hero-text">{home.heroText}</p>
       </div>
-      <DownloadButton linkTo={paths.downloadIndex} className="hero-btn" />
+      <Link to={paths.downloadIndex} className="button hero-btn">
+        {downloadButton.buttonText}
+      </Link>
     </section>
     <section className="info-boxes">
       {home.infoBoxes.map((box, i) => (
