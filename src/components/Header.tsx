@@ -6,6 +6,7 @@ import React from 'react';
 
 import { paths } from '../../data/config';
 import { header } from '../../data/strings';
+import { cn } from '../util';
 import ImageLink from './ImageLink';
 import Link from './Link';
 
@@ -62,31 +63,13 @@ const Header = () => (
 
 const NavLinks = () => (
   <ul>
-    <li className="home-link">
-      <Link to={paths.home} handleClick={toggleMenu}>
-        {header.home}
-      </Link>
-    </li>
-    <li>
-      <Link handleClick={toggleMenu} to={paths.factions}>
-        {header.factions}
-      </Link>
-    </li>
-    <li>
-      <Link handleClick={toggleMenu} to={paths.downloadIndex}>
-        {header.download}
-      </Link>
-    </li>
-    <li>
-      <Link handleClick={toggleMenu} to={paths.blog}>
-        {header.blog}
-      </Link>
-    </li>
-    <li>
-      <Link handleClick={toggleMenu} to={paths.about}>
-        {header.about}
-      </Link>
-    </li>
+    {header.menuItems.map(item => (
+      <li key={item.title} className={cn(item.title === 'Homepage' && 'home-link')}>
+        <Link to={item.path} handleClick={toggleMenu}>
+          {item.title}
+        </Link>
+      </li>
+    ))}
   </ul>
 );
 

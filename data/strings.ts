@@ -26,6 +26,13 @@ export const header = {
   blog: 'Blog',
   hamburgerA11yLabel: 'Toggle Menu',
   exitA11yLabel: 'Toggle Menu',
+  menuItems: [
+    { title: 'Homepage', path: paths.home },
+    { title: 'Download', path: paths.downloadIndex },
+    { title: 'Factions', path: paths.factions },
+    { title: 'Blog', path: paths.blog },
+    { title: 'About', path: paths.about },
+  ],
 };
 
 export const footer = {
