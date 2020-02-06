@@ -1,6 +1,7 @@
 ---
 slug: usa
 title: United States of America
+description: ""
 flag: ../_img/flag_usa.png
 ---
 US Army:

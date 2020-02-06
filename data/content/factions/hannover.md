@@ -1,6 +1,7 @@
 ---
 slug: hannover
 title: Hannover
+description: ""
 flag: ../_img/flag_hannover.png
 ---
 

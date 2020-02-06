@@ -1,6 +1,7 @@
 ---
 slug: prussia
 title: Prussia
+description: ""
 flag: ../_img/flag_prussia.png
 ---
 

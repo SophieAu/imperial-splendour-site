@@ -1,6 +1,7 @@
 ---
 slug: great-britain
 title: Great Britain
+description: ""
 flag: ../_img/flag_great-britain.png
 ---
 

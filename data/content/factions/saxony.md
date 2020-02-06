@@ -1,6 +1,7 @@
 ---
 slug: saxony
 title: Saxony
+description: ""
 flag: ../_img/flag_saxony.png
 ---
 

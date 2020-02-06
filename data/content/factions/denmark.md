@@ -1,6 +1,7 @@
 ---
 slug: denmark
 title: Denmark
+description: ""
 flag: ../_img/flag_denmark.png
 ---
 

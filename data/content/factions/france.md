@@ -1,6 +1,7 @@
 ---
 slug: france
 title: France
+description: ""
 flag: ../_img/flag_france.png
 ---
 

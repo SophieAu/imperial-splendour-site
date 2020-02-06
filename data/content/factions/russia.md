@@ -1,6 +1,7 @@
 ---
 slug: russia
 title: Russia
+description: ""
 flag: ../_img/flag_russia.png
 ---
 

@@ -1,6 +1,7 @@
 ---
 slug: sweden
 title: Sweden
+description: ""
 flag: ../_img/flag_sweden.png
 ---
 
