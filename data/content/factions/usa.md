@@ -1,7 +1,7 @@
 ---
 slug: usa
 title: United States of America
-flag: "./img/flag_usa.png"
+flag: ../_img/flag_usa.png
 ---
 US Army:
 <br><img src="https://steamuserimages-a.akamaihd.net/ugc/960857170314538872/79DB5A3FD7B249F7624C5C41DB8108AA19877B4E/" width="1000" height="562" title="USA late era units"/>

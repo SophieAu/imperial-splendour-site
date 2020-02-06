@@ -1,7 +1,7 @@
 ---
 slug: great-britain
 title: Great Britain
-flag: "./img/flag_great-britain.png"
+flag: ../_img/flag_great-britain.png
 ---
 
 Your economy is only based on your trade roads, from the colonies or other factions, Britain has to maintain a good relationship with others or has to build a solid colonial Imperialism in danger since the American Revolution. 

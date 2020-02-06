@@ -1,7 +1,7 @@
 ---
 slug: hannover
 title: Hannover
-flag: "./img/flag_hannover.png"
+flag: ../_img/flag_hannover.png
 ---
 
 The elector George III has not visited the homeland of his father prince Frederic and grandfather George II. In fact Hannover is ruled by London and its privy council at home. Because of that split the ruling noble families dominate the politics in Hannover.

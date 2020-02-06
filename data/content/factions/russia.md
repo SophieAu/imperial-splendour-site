@@ -1,7 +1,7 @@
 ---
 slug: russia
 title: Russia
-flag: "./img/flag_russia.png"
+flag: ../_img/flag_russia.png
 ---
 
 Catherine II's meddling in Sweden's internal affairs and the support to the political opposition have not gone unnoticed by Gustav III and have made war in the north inevitable. Do not expect much from the Danes as a new pro-British political current will soon replace the old pro-Russian one. The joint attack on Sweden is impossible due to their tactical and desirable alliance with France. Any attack on Sweden would automatically involve Russia in a war with France and would worsen relations with other nations and cause sanctions.

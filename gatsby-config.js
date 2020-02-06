@@ -149,6 +149,10 @@ module.exports = {
     },
     {
       resolve: `gatsby-source-filesystem`,
+      options: { name: `contentImages`, path: `${__dirname}/data/content/_img/` },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
       options: { name: `images`, path: `${__dirname}/data/img/` },
     },
     {

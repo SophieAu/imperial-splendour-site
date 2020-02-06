@@ -1,7 +1,7 @@
 ---
 slug: prussia
 title: Prussia
-flag: "./img/flag_prussia.png"
+flag: ../_img/flag_prussia.png
 ---
 
 King Frederick the Great is old and dying and so is the Prussian army. An army said to possess a state is in need of reform. Will Prussia live on its past glory and watch as the Habsburgs take a firmer grip on the Holy Roman Empire and expand to the west, or will it, perhaps, gamble for supremacy and unite the small German states under its leadership? You already have the support of some of them, such as Saxony, Hesse-Kassel and Hanover. The recent War of the Bavarian Succession was just a taste of Joseph II's ambitious plans.

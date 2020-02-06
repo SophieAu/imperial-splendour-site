@@ -1,7 +1,7 @@
 ---
 slug: france
 title: France
-flag: "./img/flag_france.png"
+flag: ../_img/flag_france.png
 ---
 
 As France lost most of its colonies during the Seven Year war, your economy is essentially due to your own money production (taxes and Industry) and your commercial relations with other countries, however the Enlightenment had an impact on the low classes, they want to share the same destiny as USA, so if you want to stay under a French Monarchy the thing will be difficult cause if you decrease taxes, your economy will become a bottomless pit, so try to balance your economy and the happiness of your lower classes. 

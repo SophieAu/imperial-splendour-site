@@ -1,7 +1,7 @@
 ---
 slug: sweden
 title: Sweden
-flag: "./img/flag_sweden.png"
+flag: ../_img/flag_sweden.png
 ---
 
 Since the glorious coup d'état in 1772, Gustav III has been struggling to bring back the monarchy to its proper place as the leading body of state. His confrontations with the Riksdag have been closely observed by neighbouring monarchs, who grow fearful and agitated by the events, especially his cousin, Catherine of Russia, who through bribery and corruption greatly influences the decision making in Sweden to prevent it from escaping Russia's hold on it. With idols from Sweden's history, Gustav III is determined to follow the steps of past great Swedish kings.

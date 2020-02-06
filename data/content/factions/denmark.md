@@ -1,7 +1,7 @@
 ---
 slug: denmark
 title: Denmark
-flag: "./img/flag_denmark.png"
+flag: ../_img/flag_denmark.png
 ---
 
 The signing of the preliminary treaties in Paris marked the end of the golden age of trade, and the Kingdom is faced with new problems, both internal and external. Christian VII's insanity made him incapable of bringing any decisions and with the state in crisis, the future of the Kingdom is unclear. The old ministries since the fall of Struensee have proved inefficient and with the crown prince's coming of age a new coup d'état is nearing. Denmark should not get entangled in Russia's diplomatic affairs that easily and should, when the time is right, discuss other options, but for now Sweden is a major threat and Russian assistance a necessity.

@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: master
 
-media_folder: data/content/posts/img
+media_folder: data/content/_img
 public_folder: static
 
 collections:
@@ -43,5 +43,5 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Slug", name: "slug", widget: "string" }
-      - { label: "ImagePath", name: "flag", widget: "string" }
+      - { label: "Flag", name: "flag", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
