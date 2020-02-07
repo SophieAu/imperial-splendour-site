@@ -43,7 +43,7 @@ const toggleMenu = () => {
 };
 
 const Header = () => (
-  <header className="site-header head-foot">
+  <header className="site-header head-foot noscript">
     <ImageLink to={paths.home} title={header.home} className="header-logo">
       <Img
         className="header-img"

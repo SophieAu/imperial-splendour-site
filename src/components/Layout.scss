@@ -50,6 +50,12 @@ main {
   }
 }
 
+@media (max-width: $tablet-breakpoint - 1) {
+  main.noscript {
+    padding-top: 0;
+  }
+}
+
 img {
   object-fit: contain;
 }

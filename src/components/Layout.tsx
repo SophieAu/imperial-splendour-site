@@ -28,7 +28,7 @@ const Layout: React.FC<Props> = ({ title, description, slug, children, additiona
       {additionalHead}
     </SEO>
     <Header />
-    <main>{children}</main>
+    <main className="noscript">{children}</main>
     <Footer />
   </>
 );

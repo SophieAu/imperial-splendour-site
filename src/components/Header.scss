@@ -80,7 +80,7 @@
     background: var(--main-bg) url(../../data/img/texture_bg.webp);
   }
 
-  #header-menu {
+  .site-header:not(.noscript) #header-menu {
     position: absolute;
     padding: var(--button-padding) 2.5rem 3rem 3rem;
     height: calc(100vh - 3rem - var(--button-padding));
@@ -103,6 +103,28 @@
       > li {
         padding: 0;
       }
+    }
+  }
+
+  .site-header.noscript {
+    align-items: stretch;
+    height: auto;
+    position: relative;
+    flex-direction: column;
+    padding: 1rem;
+    width: auto;
+
+    #header-menu {
+      background: none;
+      > ul {
+        flex-direction: column;
+        text-align: right;
+      }
+    }
+
+    #hamburger-button,
+    #exit-button {
+      display: none;
     }
   }
 }
