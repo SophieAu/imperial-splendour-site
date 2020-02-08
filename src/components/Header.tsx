@@ -5,6 +5,8 @@ import Img from 'gatsby-image';
 import React from 'react';
 
 import { paths } from '../../data/config';
+import exitButton from '../../data/img/header_exit_button';
+import hamburgerButton from '../../data/img/header_hamburger_button';
 import { header } from '../../data/strings';
 import { cn } from '../util';
 import ImageLink from './ImageLink';
@@ -81,12 +83,7 @@ const HamburgerButton = () => (
     aria-expanded="false"
     aria-controls="menu"
   >
-    <svg width="26" height="20" viewBox="0 0 26 20" xmlns="http://www.w3.org/2000/svg" role="img">
-      <title>{header.hamburgerA11yLabel}</title>
-      <rect width="26" height="2" />
-      <rect y="9" width="26" height="2" />
-      <rect y="18" width="26" height="2" />
-    </svg>
+    {hamburgerButton}
   </button>
 );
 
@@ -98,11 +95,7 @@ const ExitButton = () => (
     aria-expanded="true"
     aria-controls="menu"
   >
-    <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" role="img">
-      <title>{header.exitA11yLabel}</title>
-      <rect x="1.5" y="0" width="26" height="2" transform="rotate(45 1.5 0)" />
-      <rect x="0" y="18.5" width="26" height="2" transform="rotate(-45 0 18.5)" />
-    </svg>
+    {exitButton}
   </button>
 );
 

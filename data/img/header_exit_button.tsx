@@ -1,0 +1,9 @@
+import React from 'react';
+
+export default (
+  <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" role="img">
+    <title>Exit Button</title>
+    <rect x="1.5" y="0" width="26" height="2" transform="rotate(45 1.5 0)" />
+    <rect x="0" y="18.5" width="26" height="2" transform="rotate(-45 0 18.5)" />
+  </svg>
+);
