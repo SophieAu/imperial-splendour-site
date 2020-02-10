@@ -2,6 +2,7 @@ import './Layout.scss';
 
 import React from 'react';
 
+import { detectNoScript, detectWebpSupport } from '../util';
 import Footer from './Footer';
 import Header from './Header';
 import SEO from './SEO';
@@ -25,6 +26,8 @@ const Layout: React.FC<Props> = ({ title, description, slug, children, additiona
         href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC&display=swap"
         rel="stylesheet"
       />
+      <script>{detectWebpSupport}</script>
+      <script>{detectNoScript}</script>
       {additionalHead}
     </SEO>
     <Header />
