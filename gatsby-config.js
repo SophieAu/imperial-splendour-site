@@ -133,23 +133,7 @@ module.exports = {
     },
     {
       resolve: 'gatsby-source-filesystem',
-      options: { name: 'comments', path: `${__dirname}/data/content/comments/` },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: { name: `blog-posts`, path: `${__dirname}/data/content/posts/` },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: { name: `factions`, path: `${__dirname}/data/content/factions/` },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: { name: `terms-of-service`, path: `${__dirname}/data/content/terms-of-service/` },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: { name: `contentImages`, path: `${__dirname}/data/content/_img/` },
+      options: { name: 'content', path: `${__dirname}/data/content/` },
     },
     {
       resolve: `gatsby-source-filesystem`,
