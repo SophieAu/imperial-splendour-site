@@ -80,7 +80,7 @@
     background: var(--main-bg) url(../../data/img/texture_bg.webp);
   }
 
-  .site-header:not(.noscript) #header-menu {
+  html.yesscript .site-header #header-menu {
     position: absolute;
     padding: var(--button-padding) 2.5rem 3rem 3rem;
     height: calc(100vh - 3rem - var(--button-padding));
@@ -91,7 +91,7 @@
     bottom: 0;
     z-index: 99;
 
-    display: none;
+    display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
@@ -106,7 +106,7 @@
     }
   }
 
-  .site-header.noscript {
+  html:not(.yesscript) .site-header {
     align-items: stretch;
     height: auto;
     position: relative;

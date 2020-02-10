@@ -51,7 +51,7 @@ main {
 }
 
 @media (max-width: $tablet-breakpoint - 1) {
-  main.noscript {
+  html:not(.yesscript) main {
     padding-top: 0;
   }
 }

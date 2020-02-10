@@ -15,25 +15,27 @@ interface Props {
   additionalHead?: React.ReactNode;
 }
 
-const Layout: React.FC<Props> = ({ title, description, slug, children, additionalHead }) => (
-  <>
-    <SEO title={title} description={description} slug={slug}>
-      <link
-        href="https://fonts.googleapis.com/css?family=IM+Fell+English&display=swap"
-        rel="stylesheet"
-      />
-      <link
-        href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC&display=swap"
-        rel="stylesheet"
-      />
-      <script>{detectWebpSupport}</script>
-      <script>{detectNoScript}</script>
-      {additionalHead}
-    </SEO>
-    <Header />
-    <main className="noscript">{children}</main>
-    <Footer />
-  </>
-);
+const Layout: React.FC<Props> = ({ title, description, slug, children, additionalHead }) => {
+  return (
+    <>
+      <SEO title={title} description={description} slug={slug}>
+        <link
+          href="https://fonts.googleapis.com/css?family=IM+Fell+English&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC&display=swap"
+          rel="stylesheet"
+        />
+        <script>{detectWebpSupport}</script>
+        <script>{detectNoScript}</script>
+        {additionalHead}
+      </SEO>
+      <Header />
+      <main>{children}</main>
+      <Footer />
+    </>
+  );
+};
 
 export default Layout;
