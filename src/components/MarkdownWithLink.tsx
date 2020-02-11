@@ -10,10 +10,11 @@ const EXTRACT_LINK = /\[([^\]]+)\]\(([^\)]+)\)/;
 interface Props {
   children: string;
   className?: string;
+  id?: string;
 }
 
-const MarkdownWithLink: React.FC<Props> = ({ children, className }) => (
-  <p className={className}>
+const MarkdownWithLink: React.FC<Props> = ({ children, className, id }) => (
+  <p className={className} id={id}>
     {children.split(SPLIT_PER_LINK).map((subString, i) => {
       if (!CONTAINS_LINK.test(subString)) return subString;
 

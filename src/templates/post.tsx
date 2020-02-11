@@ -84,9 +84,7 @@ const CommentForm = () => (
           name="checkbox"
           aria-labelledby="checkbox-text"
         />
-        <p id="checkbox-text">
-          <MarkdownWithLink>{post.tos}</MarkdownWithLink>
-        </p>
+        <MarkdownWithLink id="checkbox-text">{post.tos}</MarkdownWithLink>
       </div>
       <button className="button" type="submit">
         {post.commentButtonTitle}
