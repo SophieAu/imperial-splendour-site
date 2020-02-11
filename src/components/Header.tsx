@@ -24,13 +24,8 @@ const Header = () => {
   const [showMenu, setMenu] = useState(true);
   const [supportsJS, setJSSupport] = useState(false);
 
-  const resetMenu = (isDesktop: boolean) => {
-    setMenu(isDesktop);
-    document.body.style.overflow = '';
-  };
-
   const toggleMenu = () => {
-    if (window.innerWidth >= 992 || !supportsJS) return resetMenu(true);
+    if (window.innerWidth >= 992 || !supportsJS) return;
 
     document.body.style.overflow = showMenu ? '' : 'hidden';
     setMenu(!showMenu);
@@ -38,7 +33,8 @@ const Header = () => {
 
   useEffect(() => {
     const updateLayout = () => {
-      resetMenu(window.innerWidth >= 992);
+      setMenu(window.innerWidth >= 992);
+      document.body.style.overflow = '';
       setJSSupport(/yesscript/.test(document.documentElement.className));
     };
 
