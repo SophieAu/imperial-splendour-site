@@ -1,6 +1,11 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const { resolve } = require(`path`);
 const { createSlug } = require('./gatsby-helper');
+const path = require('path');
+const puppeteer = require('puppeteer');
+const fs = require(`fs-extra`);
+const { createFileNode } = require(`gatsby-source-filesystem/create-file-node`);
+const { postToImage } = require('./src/twitter-cardd');
 
 const POSTS_PER_PAGE = 6;
 
@@ -9,6 +14,9 @@ const PAGES_QUERY = `
     posts: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/data\/content\/posts/"}}) {
       edges {
         node {
+          internal {
+            type
+          }
           id
           frontmatter {
             title
@@ -63,7 +71,7 @@ const buildBlogPosts = (nodes, createPage) => {
     createPage({
       path: `blog/${slug}`,
       component: post,
-      context: { slug, id: node.id },
+      context: { slug, id: node.id, title: node.frontmatter.title },
     });
     console.log(slug);
   });
@@ -101,6 +109,16 @@ const buildBlogListPagination = (nodes, createPage) => {
   });
 };
 
+let browser = null;
+
+exports.onPreInit = async () => {
+  browser = await puppeteer.launch({ headless: true });
+};
+
+exports.onPostBuild = async () => {
+  await browser.close();
+};
+
 exports.createPages = async ({ graphql, actions }) => {
   const result = await graphql(PAGES_QUERY);
   if (result.errors) {
@@ -121,4 +139,27 @@ exports.createPages = async ({ graphql, actions }) => {
   buildFactionPages(result.data.factions.edges, actions.createPage);
 
   console.log();
+};
+
+exports.onCreateNode = async ({ node: parentNode, actions, createNodeId, store }) => {
+  const CACHE_DIR = path.resolve(`${store.getState().program.directory}/.cache/social/`);
+  await fs.ensureDir(CACHE_DIR);
+
+  // only generate for md files
+  if (parentNode.component !== '/Users/sophie/dev/imp-splen/site/src/templates/post.tsx') return;
+
+  try {
+    const ogImagePath = await postToImage(CACHE_DIR, browser, parentNode);
+    const imageFileNode = await createFileNode(ogImagePath, createNodeId);
+    imageFileNode.parent = parentNode.id;
+    actions.createNode(imageFileNode, { name: `gatsby-source-filesystem` });
+
+    actions.createNodeField({
+      name: 'socialImage___NODE',
+      node: parentNode,
+      value: imageFileNode.id,
+    });
+  } catch (e) {
+    console.warn(e);
+  }
 };
