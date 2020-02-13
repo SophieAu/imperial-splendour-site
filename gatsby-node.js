@@ -145,8 +145,10 @@ exports.onCreateNode = async ({ node: parentNode, actions, createNodeId, store }
   const CACHE_DIR = path.resolve(`${store.getState().program.directory}/.cache/social/`);
   await fs.ensureDir(CACHE_DIR);
 
+  if (parentNode.internal.type !== 'MarkdownRemark') return;
+
   // only generate for md files
-  if (parentNode.component !== '/Users/sophie/dev/imp-splen/site/src/templates/post.tsx') return;
+  // if (parentNode.component !== '/Users/sophie/dev/imp-splen/site/src/templates/post.tsx') return;
 
   try {
     const ogImagePath = await postToImage(CACHE_DIR, browser, parentNode);
@@ -155,8 +157,8 @@ exports.onCreateNode = async ({ node: parentNode, actions, createNodeId, store }
     actions.createNode(imageFileNode, { name: `gatsby-source-filesystem` });
 
     actions.createNodeField({
-      name: 'socialImage___NODE',
       node: parentNode,
+      name: 'socialImage___NODE',
       value: imageFileNode.id,
     });
   } catch (e) {

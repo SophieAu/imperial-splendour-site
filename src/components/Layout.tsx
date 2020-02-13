@@ -13,12 +13,20 @@ interface Props {
   slug: string;
   children?: React.ReactNode;
   additionalHead?: React.ReactNode;
+  ogImage?: string;
 }
 
-const Layout: React.FC<Props> = ({ title, description, slug, children, additionalHead }) => {
+const Layout: React.FC<Props> = ({
+  title,
+  description,
+  slug,
+  children,
+  additionalHead,
+  ogImage,
+}) => {
   return (
     <>
-      <SEO title={title} description={description} slug={slug}>
+      <SEO title={title} description={description} slug={slug} ogImagePath={ogImage}>
         <link
           href="https://fonts.googleapis.com/css?family=IM+Fell+English&display=swap"
           rel="stylesheet"

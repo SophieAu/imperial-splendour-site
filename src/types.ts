@@ -67,6 +67,22 @@ type SingleResponse<Frontmatter> = {
   };
 };
 
+type SocialImageResponse = {
+  data: {
+    markdownRemark: {
+      fields: {
+        socialImage: {
+          childImageSharp: {
+            original: {
+              src: string;
+            };
+          };
+        };
+      };
+    };
+  };
+};
+
 type CommentResponse = {
   data: {
     allCommentsYaml: {
@@ -101,7 +117,7 @@ export type FactionsResponse = ListResponse<FactionsFrontmatter>;
 
 export type ToSResponse = SingleResponse<ToSFrontmatter>;
 
-export type PostResponse = SingleResponse<PostFrontmatter> & CommentResponse;
+export type PostResponse = SingleResponse<PostFrontmatter> & CommentResponse & SocialImageResponse;
 
 export type SingleFaction = Edge<FactionsFrontmatter>;
 

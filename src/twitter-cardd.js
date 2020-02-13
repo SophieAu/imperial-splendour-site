@@ -41,7 +41,7 @@ async function screenshotHTMLCard(CACHE_DIR, browser, title, html) {
  * saves a screenshot, then returns the path to the saved image.
  */
 exports.postToImage = async (CACHE_DIR, browser, post) => {
-  const title = post.context.title;
+  const title = post.frontmatter.title;
   const html = renderCard(title);
   return screenshotHTMLCard(CACHE_DIR, browser, title, html);
 };

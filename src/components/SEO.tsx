@@ -8,9 +8,10 @@ interface Props {
   description: string;
   slug: string;
   children?: React.ReactNode;
+  ogImagePath?: string;
 }
 
-const SEO: React.FC<Props> = ({ title, description, slug, children }) => (
+const SEO: React.FC<Props> = ({ title, description, slug, children, ogImagePath }) => (
   <Helmet
     htmlAttributes={{
       lang: 'en',
@@ -33,6 +34,10 @@ const SEO: React.FC<Props> = ({ title, description, slug, children }) => (
       {
         property: `og:type`,
         content: `website`,
+      },
+      {
+        property: `og:image`,
+        content: `${BASE_URL}${ogImagePath}`,
       },
       {
         property: `og:url`,

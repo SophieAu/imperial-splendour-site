@@ -17,6 +17,17 @@ export const query = graphql`
     }
     markdownRemark(id: { eq: $id }) {
       ...blogPost
+      fields {
+        socialImage {
+          childImageSharp {
+            original {
+              width
+              height
+              src
+            }
+          }
+        }
+      }
     }
   }
 `;
@@ -31,6 +42,7 @@ const Post: React.FC<Props> = ({ data, pageContext }) => {
       title={post.pageTitle({ title: markdownRemark.frontmatter.title })}
       description={markdownRemark.frontmatter.excerpt}
       slug={pageContext.slug}
+      ogImage={data.markdownRemark.fields.socialImage.childImageSharp.original.src}
     >
       <article className="blog-post">
         <PostHeader {...markdownRemark.frontmatter} isHeaderClickable={false} />
