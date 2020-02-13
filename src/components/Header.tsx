@@ -31,13 +31,13 @@ const Header = () => {
     setMenu(!showMenu);
   };
 
-  useEffect(() => {
-    const updateLayout = () => {
-      setMenu(window.innerWidth >= 992);
-      document.body.style.overflow = '';
-      setJSSupport(/yesscript/.test(document.documentElement.className));
-    };
+  const updateLayout = () => {
+    setMenu(window.innerWidth >= 992);
+    document.body.style.overflow = '';
+    setJSSupport(/yesscript/.test(document.documentElement.className));
+  };
 
+  useEffect(() => {
     updateLayout();
     window.addEventListener('resize', updateLayout);
     return () => window.removeEventListener('resize', updateLayout);
