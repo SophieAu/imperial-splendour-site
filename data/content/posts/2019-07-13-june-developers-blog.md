@@ -1,7 +1,9 @@
 ---
 title: June Developers Blog
 date: 2019-07-13T19:24:55.400Z
-author: Quintus Hortensius Hortalus and oleg2242
+author: 
+  - QHH
+  - oleg2242
 excerpt: We have won the TWC 2018 Modding Awards and have a new video for you!
 ---
 <center><img src="https://media.moddb.com/images/members/3/2784/2783391/profile/1.1.png" alt="" /><br />As the 2018 Modding Awards are over now, we can proudly say the Rise of the Republic won the Awards in the ETW, NTW and Shogun 2 section!<br />Thanks to you all who voted for us!<br />In addition PikeStance and I were awarded as 3rd and 4th place favourite modders of this section! Again we would like to thank you for voting for us.<br /> <br />

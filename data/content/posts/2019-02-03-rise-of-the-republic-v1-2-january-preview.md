@@ -1,7 +1,8 @@
 ---
 title: Imperial Splendour - Rise of the Republic v1.2 - January Preview
 date: 2019-02-03T12:04:54.362Z
-author: Quintus Hortensius Hortalus
+author:
+  - QHH
 excerpt: >-
   Here is the next preview on our way to version 1.2. This time the painting of
   warships and the development of the Danish infantry is in the focus of the

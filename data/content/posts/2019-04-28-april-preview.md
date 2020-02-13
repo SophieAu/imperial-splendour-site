@@ -1,7 +1,9 @@
 ---
 title: April Preview
 date: 2019-04-28T11:09:51.839Z
-author: oleg2242 and Quintus Hortensius Hortalus
+author: 
+  - QHH
+  - oleg2242
 excerpt: >-
   As the development progresses towards it's time to present our newest work.
   This article focuses on the newest development of Russia and the Danish army.

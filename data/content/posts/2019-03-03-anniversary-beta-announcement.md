@@ -1,7 +1,8 @@
 ---
 title: anniversary beta announcement
 date: 2019-03-03T07:03:27.458Z
-author: Quintus Hortensius Hortalus
+author:
+  - QHH
 excerpt: >-
   As Empire: Total War has its 10th anniversary we decided to release a new beta
   for 1.2 - the anniversary beta, with new ships, 130 new historical characters

@@ -1,8 +1,21 @@
-import { InfoBox } from '../src/types';
-import { contributors, downloadLinks, paths } from './config';
+import { Contributors, InfoBox } from '../src/types';
+import { downloadLinks, paths, siteBuilders } from './config';
 
 const SITE_TITLE = 'Imperial Splendour';
 const buildPageTitle = (title: string) => `${title} | ${SITE_TITLE}`;
+
+export const contributors: Contributors = {
+  pike: 'PikeStance',
+  QHH: 'Quintus Hortensius Hortalus',
+  oleg2242: 'oleg2242',
+  cro: 'Cro_Hunger999',
+  tsanada: 'TSanada',
+  HD: 'Herr Doctor',
+  madOrc: 'mad orc',
+  myfate: 'myfate',
+};
+
+const getFullName = (name: keyof Contributors) => contributors[name];
 
 // ---
 // Components
@@ -37,12 +50,20 @@ export const header = {
 
 export const footer = {
   creditsCopyright: ({ year }: { year: number }) =>
-    `© ${year}, [Sophie Au](${contributors.sophie}) and [Malte Lippmann](${contributors.malte})`,
+    `© ${year}, [Sophie Au](${siteBuilders.sophie}) and [Malte Lippmann](${siteBuilders.malte})`,
   socialImgAlt: ({ platform }: { platform: string }) => `Imperial Splendour on ${platform}`,
 };
 
+const buildWordList = (list: string[]) =>
+  list.reduce((ac, word, i) => {
+    if (i === 0) return word;
+    if (i === list.length - 1) return `${ac} and ${word}`;
+    return `${ac}, ${word}`;
+  });
+
 export const postHeader = {
-  author: ({ author }: { author: string }) => `By ${author}`,
+  author: ({ author }: { author: (keyof Contributors)[] }) =>
+    `By ${buildWordList(author.map(auth => contributors[auth]))}`,
 };
 
 // ---

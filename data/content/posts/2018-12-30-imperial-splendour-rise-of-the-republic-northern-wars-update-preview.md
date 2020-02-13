@@ -1,7 +1,8 @@
 ---
 title: Imperial Splendour - Rise of the Republic - Northern Wars Update Preview
 date: 2018-12-30T09:03:29.493Z
-author: Quintus Hortensius Hortalus
+author:
+  - QHH
 excerpt: "As a late Christmas gift we have a preview for the next version of the Rise of
   the Republic for you! As the title suggests we have and will focus our work on
   the northern factions: Russia, Sweden and Denmark."

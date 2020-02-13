@@ -31,7 +31,7 @@ export const socialMedia = {
   modDB: 'https://www.moddb.com/mods/imperial-splendour',
 };
 
-export const contributors = {
+export const siteBuilders = {
   sophie: 'https://sophieau.com',
   malte: 'https://github.com/QuintusHortensiusHortalus',
 };

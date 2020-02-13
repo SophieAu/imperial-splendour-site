@@ -29,8 +29,19 @@ export type AboutImage = {
   cro: FixedImage;
   tsanada: FixedImage;
   HD: FixedImage;
-  mad_orc: FixedImage;
+  madOrc: FixedImage;
   myfate: FixedImage;
+};
+
+export type Contributors = {
+  pike: string;
+  QHH: string;
+  oleg2242: string;
+  cro: string;
+  tsanada: string;
+  HD: string;
+  madOrc: string;
+  myfate: string;
 };
 
 export type InfoBox = {
@@ -105,7 +116,7 @@ export type FactionsFrontmatter = {
 
 export type PostFrontmatter = {
   title: string;
-  author: string;
+  author: (keyof Contributors)[];
   date: string;
   formattedDate: string;
   excerpt: string;

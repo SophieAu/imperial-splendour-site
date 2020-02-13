@@ -1,7 +1,8 @@
 ---
 title: 3D Building / City Models in RotR
 date: 2018-08-21T08:14:27+00:00
-author: Quintus Hortensius Hortalus
+author:
+  - QHH
 excerpt: This is to show you some of the 3D Models of buildings and cities I made for and incorporated into RotR.
 ---
 

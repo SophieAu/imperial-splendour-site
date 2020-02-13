@@ -1,7 +1,8 @@
 ---
 title: anniversary beta installation tutorial
 date: 2019-03-03T06:42:02.036Z
-author: Quintus Hortensius Hortalus
+author:
+  - QHH
 excerpt: This little tutorial shows how to install the anniversary beta.
 ---
 <p>Installation tutorial made by The Super Jew:</p>

@@ -5,9 +5,9 @@ import Img from 'gatsby-image';
 import React from 'react';
 
 import { slugs } from '../../data/config';
-import { about } from '../../data/strings';
+import { about, contributors } from '../../data/strings';
 import Layout from '../components/Layout';
-import { AboutImage } from '../types';
+import { AboutImage, Contributors } from '../types';
 
 export const query = graphql`
   query {
@@ -29,7 +29,7 @@ export const query = graphql`
     HD: file(relativePath: { eq: "about/HD_portrait.png" }) {
       ...avatarImage
     }
-    mad_orc: file(relativePath: { eq: "about/mad_orc_portrait.png" }) {
+    madOrc: file(relativePath: { eq: "about/madOrc_portrait.png" }) {
       ...avatarImage
     }
     myfate: file(relativePath: { eq: "about/myfate_portrait.png" }) {
@@ -43,20 +43,28 @@ const About: React.FC<{ data: AboutImage }> = ({ data }) => (
     <p className="about-text">{about.text}</p>
     <section className="contributors">
       <h2>{about.contributorTitle}</h2>
-      <ul className="avatars">
-        {about.contributors.map((cont, i) => (
-          <li key={i} className="contributor">
-            <Img
-              fixed={data[cont.avatar as keyof AboutImage].childImageSharp.fixed}
-              alt={about.avatarAlt({ name: cont.name })}
-              fadeIn={false}
-            />
-            <p>{cont.name}</p>
-          </li>
-        ))}
-      </ul>
+      <Avatars data={data} />
     </section>
   </Layout>
+);
+
+const Avatars: React.FC<{ data: AboutImage }> = ({ data }) => (
+  <ul className="avatars">
+    {Object.keys(contributors).map(id => {
+      const key = id as keyof Contributors;
+
+      return (
+        <li key={id} className="contributor">
+          <Img
+            fixed={data[key].childImageSharp.fixed}
+            alt={about.avatarAlt({ name: contributors[key] })}
+            fadeIn={false}
+          />
+          <p>{contributors[key]}</p>
+        </li>
+      );
+    })}
+  </ul>
 );
 
 export default About;
