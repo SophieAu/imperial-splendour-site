@@ -145,10 +145,8 @@ exports.onCreateNode = async ({ node: parentNode, actions, createNodeId, store }
   const CACHE_DIR = path.resolve(`${store.getState().program.directory}/.cache/social/`);
   await fs.ensureDir(CACHE_DIR);
 
-  if (parentNode.internal.type !== 'MarkdownRemark') return;
-
-  // only generate for md files
-  // if (parentNode.component !== '/Users/sophie/dev/imp-splen/site/src/templates/post.tsx') return;
+  // only generate for blog posts
+  if (parentNode.component !== '/Users/sophie/dev/imp-splen/site/src/templates/post.tsx') return;
 
   try {
     const ogImagePath = await postToImage(CACHE_DIR, browser, parentNode);
