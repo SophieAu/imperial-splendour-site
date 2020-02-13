@@ -36,7 +36,7 @@ interface Props extends PostResponse, SlugContext {}
 
 const Post: React.FC<Props> = ({ data, pageContext }) => {
   const { markdownRemark, allCommentsYaml } = data;
-  console.warn(data);
+
   return (
     <Layout
       title={post.pageTitle({ title: markdownRemark.frontmatter.title })}
