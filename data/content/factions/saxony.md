@@ -1,7 +1,7 @@
 ---
 slug: saxony
 title: Saxony
-description: ""
+description: "Torn apart between Prussia and Austria, can you lead Saxony back to its former glory?"
 flag: ../_img/flag_saxony.png
 ---
 
