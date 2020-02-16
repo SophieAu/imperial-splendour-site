@@ -1,7 +1,7 @@
 ---
 slug: prussia
 title: Prussia
-description: ""
+description: "Frederick the Great is an old man now, can you follow his path and lead Prussia to glory?"
 flag: ../_img/flag_prussia.png
 ---
 
