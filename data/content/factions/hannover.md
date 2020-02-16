@@ -1,7 +1,7 @@
 ---
 slug: hannover
 title: Hannover
-description: ""
+description: "Visit the homeland of the British royal family, the 9th and newest electorate in the Holy Roman Empire."
 flag: ../_img/flag_hannover.png
 ---
 
