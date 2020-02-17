@@ -3,6 +3,8 @@ export const TWITTER_HANDLE = '@SplendourTeam';
 const MAILCHIMP_USER = 'd68145bb4360d40f488bd3c5e';
 const MAILCHIMP_ID = '263c850834';
 
+export const FALLBACK_IMAGE = '/static/socialImage.png';
+
 export const slugs = {
   home: '',
   downloadIndex: 'download',
