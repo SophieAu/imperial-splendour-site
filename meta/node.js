@@ -1,7 +1,6 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const { resolve } = require(`path`);
 const { createSlug } = require('./util');
-const path = require('path');
 const fs = require(`fs-extra`);
 const { createFileNode } = require(`gatsby-source-filesystem/create-file-node`);
 const { postToImage } = require('./social-image');
@@ -111,7 +110,7 @@ exports.buildBlogListPagination = (nodes, createPage) => {
 exports.createSocialCardImage = async (parentNode, browser, store, actions) => {
   const { createNode, createNodeField, createNodeId } = actions;
 
-  const CACHE_DIR = path.resolve(`${store.getState().program.directory}/.cache/social/`);
+  const CACHE_DIR = resolve(`${store.getState().program.directory}/.cache/social/`);
   await fs.ensureDir(CACHE_DIR);
 
   const ogImagePath = await postToImage(CACHE_DIR, browser, parentNode);
