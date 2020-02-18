@@ -12,7 +12,8 @@ interface Props {
 }
 
 const SEO: React.FC<Props> = ({ title, description, slug, children, ogImagePath }) => {
-  const ogImage = ogImagePath ? `${BASE_URL}${ogImagePath}` : `${BASE_URL}${FALLBACK_IMAGE}`;
+  const ogImage = `${BASE_URL}${ogImagePath || FALLBACK_IMAGE}`;
+  const url = `${BASE_URL}/${slug}`;
 
   return (
     <Helmet
@@ -24,9 +25,9 @@ const SEO: React.FC<Props> = ({ title, description, slug, children, ogImagePath 
         { property: `og:description`, content: description },
         { property: `og:type`, content: `website` },
         { property: `og:image`, content: ogImage },
-        { property: `og:url`, content: `${BASE_URL}/${slug}` },
+        { property: `og:url`, content: url },
         { name: `twitter:card`, content: `summary` },
-        { name: `twitter:url`, content: `${BASE_URL}/${slug}` },
+        { name: `twitter:url`, content: url },
         { name: `twitter:title`, content: title },
         { name: `twitter:image`, content: ogImage },
         { name: `twitter:description`, content: description },
