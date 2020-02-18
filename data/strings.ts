@@ -15,8 +15,6 @@ export const contributors: Contributors = {
   myfate: 'myfate',
 };
 
-const getFullName = (name: keyof Contributors) => contributors[name];
-
 // ---
 // Components
 
