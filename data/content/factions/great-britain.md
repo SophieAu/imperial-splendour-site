@@ -1,7 +1,7 @@
 ---
 slug: great-britain
 title: Great Britain
-description: ""Rule, Britannia! Britannia rule the waves! Britons never will be slaves." What more there is to say?"
+description: "'Rule, Britannia! Britannia rule the waves! Britons never will be slaves.' What more there is to say?"
 flag: ../_img/flag_great-britain.png
 ---
 
