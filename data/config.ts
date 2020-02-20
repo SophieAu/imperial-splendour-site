@@ -59,5 +59,5 @@ export const mailchimpForm = {
 
 export const staticman = {
   action:
-    'https://impsplen-staticman.herokuapp.com/v2/entry/SophieAu/imperial-splendour-website/master/',
+    'https://impsplen-staticman.herokuapp.com/v2/entry/SophieAu/imperial-splendour-site/master/',
 };
