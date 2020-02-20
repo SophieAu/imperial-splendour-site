@@ -56,8 +56,3 @@ export const mailchimpForm = {
   action: `https://imperialsplendour.us19.list-manage.com/subscribe/post?u=${MAILCHIMP_USER}&amp;id=${MAILCHIMP_ID}`,
   inputName: `b_${MAILCHIMP_USER}_${MAILCHIMP_ID}`,
 };
-
-export const staticman = {
-  action:
-    'https://impsplen-staticman.herokuapp.com/v2/entry/SophieAu/imperial-splendour-site/master/',
-};
