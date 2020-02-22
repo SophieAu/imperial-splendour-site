@@ -39,9 +39,9 @@ export const siteBuilders = {
 };
 
 export const downloadLinks = {
-  googleDrive: 'https://drive.google.com/file/d/1hGwMR9gK2Fw_WJBTMV5vlB0rayqP3SPO/view?usp=sharing',
-  mediaFire: 'https://www.mediafire.com/file/a3acl0132aig3dk/RotR_1.1.9b_full.zip/file',
-  modDB: 'https://www.moddb.com/mods/imperial-splendour/downloads/reupload-rotr-119b-full',
+  googleDrive: 'https://drive.google.com/open?id=13eCLdH4ZHPUrYEB1-P1j4jI-LsxBqnrl',
+  mediaFire: 'https://www.mediafire.com/file/1fgqofaystt9vhp/RotR_1.1.9.9_anniversary_beta.zip/file',
+  modDB: 'https://www.moddb.com/mods/imperial-splendour/downloads/empire-total-wars-10th-anniversary-beta',
   tutorial: '/blog/2019-03-03-anniversary-beta-installation-tutorial/',
   launcherOnly:
     'https://github.com/imperial-splendour/imperial-splendour/releases/download/v1.0-beta.2/IS_Launcher.exe',
@@ -49,7 +49,7 @@ export const downloadLinks = {
 
 export const modDBButton = {
   popularity: 'https://button.moddb.com/popularity/medium/mods/20800.png',
-  download: 'https://button.moddb.com/download/medium/169793.png',
+  download: 'https://button.moddb.com/download/medium/175422.png',
 };
 
 export const mailchimpForm = {
