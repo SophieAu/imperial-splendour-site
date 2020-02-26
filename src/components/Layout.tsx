@@ -35,8 +35,8 @@ const Layout: React.FC<Props> = ({
           href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC&display=swap"
           rel="stylesheet"
         />
-        <script>{detectWebpSupport}</script>
-        <script>{detectNoScript}</script>
+        <script type="text/javascript">{detectWebpSupport}</script>
+        <script type="text/javascript">{detectNoScript}</script>
         {additionalHead}
       </SEO>
       <Header />
