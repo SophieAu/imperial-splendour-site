@@ -30,8 +30,7 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "terms-of-service"
     label: "Terms of Service"
-    folder: "data/content/terms-of-service"
-    create: true
+    file: "data/content/terms-of-service.md"
     slug: terms-of-service"
     extension: "md"
     editor:
