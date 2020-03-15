@@ -21,10 +21,7 @@ exports.onPostBuild = async () => {
 
 exports.createPages = async ({ graphql, actions }) => {
   const result = await graphql(PAGES_QUERY);
-  if (result.errors) {
-    reporter.panicOnBuild(`Error while running GraphQL query.`);
-    return;
-  }
+  if (result.errors) return;
 
   console.log('\nCreating Blog Posts...');
   buildBlogPosts(result.data.posts.edges, actions.createPage);
