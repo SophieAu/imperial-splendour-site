@@ -17,13 +17,13 @@
   .info-boxes {
     display: flex;
     flex-direction: column;
-    width: calc(100% - 3rem);
     padding: 5rem 3rem 3rem;
+    width: calc(100% - 3rem);
 
     .info-text,
     img[class^='info-image-'] {
-      padding: 1rem;
       object-fit: contain;
+      padding: 1rem;
       text-align: center;
     }
   }
@@ -55,13 +55,13 @@
     background: none;
 
     .hero-text {
-      margin-top: 1.5rem;
       color: black;
+      margin-top: 1.5rem;
     }
   }
 
   .info-boxes {
-    width: 100%;
     padding: 5rem 0 3rem;
+    width: 100%;
   }
 }

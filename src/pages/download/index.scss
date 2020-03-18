@@ -9,8 +9,8 @@
   }
 
   ul {
-    list-style: disc;
     line-height: 2rem;
+    list-style: disc;
   }
 }
 
@@ -19,15 +19,15 @@
   padding-top: 0.5rem;
 
   .download {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
 
     p {
       font-size: 1.25rem;
       margin: 0.5rem 0 0;
-      text-align: center;
       max-width: calc(var(--download-button-width) + 6rem);
+      text-align: center;
     }
   }
 }
@@ -38,9 +38,9 @@
 
 @media (min-width: $tablet-breakpoint) {
   .container {
-    margin: 2rem 0;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0;
   }
 }
 

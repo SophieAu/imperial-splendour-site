@@ -4,15 +4,13 @@
   --logo-height: 3.5rem;
   --button-padding: calc((4.5rem - 1.25rem) / 2);
 
-  padding: 0 2.5rem 0 1rem;
-  width: calc(100vw - 1rem - 2.5rem);
-
-  position: fixed;
-  top: 0;
-  height: var(--header-height);
-
   font: var(--headline-font);
   font-size: 2.5rem;
+  height: var(--header-height);
+  padding: 0 2.5rem 0 1rem;
+  position: fixed;
+  top: 0;
+  width: calc(100vw - 1rem - 2.5rem);
 
   a {
     text-decoration: none;
@@ -21,19 +19,18 @@
   .header-logo {
     .header-img {
       flex: 1;
-      line-height: 0;
       height: var(--logo-height);
+      line-height: 0;
       width: calc(var(--logo-height) * 300 / 92);
     }
   }
 
   #header-menu > ul {
     display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    justify-content: flex-end;
-
-    list-style-type: none;
 
     > li {
       line-height: var(--header-height);
@@ -43,9 +40,9 @@
 
   #exit-button,
   #hamburger-button {
+    line-height: 0;
     margin: 0;
     padding: 0;
-    line-height: 0;
   }
 
   #hamburger-button {
@@ -65,9 +62,9 @@
   }
 
   #header-menu {
-    width: 100%;
-    flex-direction: column;
     align-items: flex-end;
+    flex-direction: column;
+    width: 100%;
 
     > ul > li:not(:last-child) {
       padding-right: 4rem;
@@ -81,22 +78,20 @@
   }
 
   html.yesscript .site-header #header-menu {
-    position: absolute;
-    padding: var(--button-padding) 2.5rem 3rem 3rem;
-    height: calc(100vh - 3rem - var(--button-padding));
-    width: calc(100vw - 5.5rem);
-    top: 0;
-    left: 0;
-    right: 0;
+    align-items: flex-start;
+    background: var(--main-bg) url(../../data/img/texture_bg.jpg);
     bottom: 0;
-    z-index: 99;
-
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    height: calc(100vh - 3rem - var(--button-padding));
     justify-content: space-between;
-
-    background: var(--main-bg) url(../../data/img/texture_bg.jpg);
+    left: 0;
+    padding: var(--button-padding) 2.5rem 3rem 3rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: calc(100vw - 5.5rem);
+    z-index: 99;
 
     > ul {
       flex-direction: column;
@@ -108,10 +103,10 @@
 
   html:not(.yesscript) .site-header {
     align-items: stretch;
-    height: auto;
-    position: relative;
     flex-direction: column;
+    height: auto;
     padding: 1rem;
+    position: relative;
     width: auto;
 
     #header-menu {

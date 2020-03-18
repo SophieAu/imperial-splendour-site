@@ -2,8 +2,8 @@
 
 .post-header {
   display: grid;
-  grid-template-columns: repeat(2, auto);
   grid-gap: 1rem 1.5rem;
+  grid-template-columns: repeat(2, auto);
 
   h1,
   a {
@@ -14,15 +14,15 @@
 
   .date,
   .author {
-    font: var(--blog-meta-font);
     color: var(--blog-meta);
-    padding: 0;
+    font: var(--blog-meta-font);
     margin: 0;
+    padding: 0;
   }
 
   .date {
-    text-align: right;
     padding-top: 0.5rem;
+    text-align: right;
   }
 }
 

@@ -1,16 +1,16 @@
 @import '../variables';
 
 .post-list {
-  padding: 1.5rem 0;
   list-style-type: none;
+  padding: 1.5rem 0;
 }
 
 .post {
   padding: 3rem 0;
 
   .excerpt {
-    padding: 1rem 0 0;
     margin: 0;
+    padding: 1rem 0 0;
   }
 }
 

@@ -17,10 +17,10 @@ footer {
   }
 
   .footer-social-media-links {
-    padding-right: 2rem;
     display: flex;
     list-style-type: none;
     margin: 0;
+    padding-right: 2rem;
 
     > *,
     > * > a {
@@ -33,8 +33,8 @@ footer {
 
     svg,
     img {
-      height: 2.5rem;
       fill: var(--main-bg);
+      height: 2.5rem;
     }
   }
 }
