@@ -84,6 +84,13 @@ const IMAGE_HEIGHT = 66;
 const calcWidth = (offset: number) => IMAGE_WIDTH / Math.abs(offset || 1);
 const calcHeight = (offset: number) => IMAGE_HEIGHT * (1 - (offset * offset) / 100);
 
+const carouselImageStyle = (offset: number) => ({
+  height: `${calcHeight(offset)}px`,
+  width: `${calcWidth(offset)}px`,
+  zIndex: -Math.abs(offset),
+  overflow: 'unset',
+});
+
 interface ImageProps {
   src: FixedObject;
   offset: number;
@@ -94,12 +101,7 @@ interface ImageProps {
 const CarouselImage: React.FC<ImageProps> = ({ src, offset, title, side }) => (
   <Img
     fixed={src}
-    style={{
-      height: `${calcHeight(offset)}px`,
-      width: `${calcWidth(offset)}px`,
-      zIndex: -Math.abs(offset),
-      overflow: 'unset',
-    }}
+    style={carouselImageStyle(offset)}
     fadeIn={false}
     placeholderStyle={{ display: 'none', overflow: 'auto' }}
     alt={title}
