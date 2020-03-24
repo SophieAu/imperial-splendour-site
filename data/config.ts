@@ -40,11 +40,11 @@ export const siteBuilders = {
 
 export const downloadLinks = {
   googleDrive: 'https://drive.google.com/open?id=13eCLdH4ZHPUrYEB1-P1j4jI-LsxBqnrl',
-  mediaFire: 'https://www.mediafire.com/file/1fgqofaystt9vhp/RotR_1.1.9.9_anniversary_beta.zip/file',
-  modDB: 'https://www.moddb.com/mods/imperial-splendour/downloads/empire-total-wars-10th-anniversary-beta',
+  mediaFire:
+    'https://www.mediafire.com/file/1fgqofaystt9vhp/RotR_1.1.9.9_anniversary_beta.zip/file',
+  modDB:
+    'https://www.moddb.com/mods/imperial-splendour/downloads/empire-total-wars-10th-anniversary-beta',
   tutorial: '/blog/2019-03-03-anniversary-beta-installation-tutorial/',
-  launcherOnly:
-    'https://github.com/imperial-splendour/imperial-splendour/releases/download/v1.0-beta.2/IS_Launcher.exe',
 };
 
 export const modDBButton = {
