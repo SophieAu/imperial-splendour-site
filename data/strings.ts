@@ -108,10 +108,6 @@ export const download = {
   },
   main:
     "Imperial Splendour - Rise of the Republic v1.1.9.9 Empire: Total War's 10th anniversary beta",
-  other: {
-    title: 'Other Downloads',
-    list: [{ link: paths.downloadLauncher, description: 'Launcher only' }],
-  },
 };
 
 export const downloadRotR = {
@@ -121,14 +117,6 @@ export const downloadRotR = {
   linkInfo: 'You can download the files via the following file hosts:',
   imageLinkAlt: ({ platform }: { platform: string }) => `"Download RotR 1.1.9b on ${platform}`,
   help: `If you need help, check out the [installation tutorial](${downloadLinks.tutorial}).`,
-};
-
-export const downloadLauncher = {
-  pageTitle: buildPageTitle('Download the Rise of the Republic Launcher'),
-  pageDescription:
-    'Download and play Imperial Splendour to have the best Empire: Total War experience possible.',
-  confirmLineOne: 'Your download should be starting in a second.',
-  confirmLineTwo: `If it doesn't, [download manually](${downloadLinks.launcherOnly})`,
 };
 
 export const about = {

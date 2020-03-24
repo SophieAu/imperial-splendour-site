@@ -8,7 +8,6 @@ export const FALLBACK_IMAGE = '/socialImage.png';
 export const slugs = {
   home: '',
   downloadIndex: 'download',
-  downloadLauncher: 'download/launcher',
   downloadRotR: 'download/rotr',
   blog: 'blog',
   about: 'about',
@@ -22,7 +21,6 @@ export const paths = {
   downloadRotR: `/${slugs.downloadRotR}`,
   blog: `/${slugs.blog}`,
   about: `/${slugs.about}`,
-  downloadLauncher: `/${slugs.downloadLauncher}`,
   termsOfService: `/${slugs.termsOfService}`,
   factions: `/${slugs.factions}`,
 };
