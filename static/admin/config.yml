@@ -28,14 +28,13 @@ collections:
             { label: "myfate", value: "myfate" }]}}
       - { label: "Excerpt", name: "excerpt", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
-  - name: "terms-of-service"
-    label: "Terms of Service"
-    file: "data/content/terms-of-service.md"
-    slug: terms-of-service"
-    extension: "md"
-    editor:
-     preview: false
-    fields:
+  - label: "Terms of Service"
+    name: "terms-of-service"
+    files:
+    - name: "terms-of-service"
+      label: "Terms of Service"
+      file: "data/content/terms-of-service/terms-of-service.md"
+      fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
