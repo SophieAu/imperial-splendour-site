@@ -39,14 +39,20 @@ This is the in-game Empire Total War model:
 
 The palace was situated near Wolfenbüttel in today lower saxony. In it a large art colledtion from the dukes of Brunswick was located which is today in the Herzog Anton Ulrich-Museum. The palace was build in Half-timbering construction on a wet meadow which let the palace literally rot. The maintenance costs were high so that the palace was dismantled in 1813 but parts of it can still be seen in the town of Salzdahlum.
 
-<table><th><div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/f5e45b33d4db497583e580b8adcaee04/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<table>
 
-<p>
-<a href="https://sketchfab.com/models/f5e45b33d4db497583e580b8adcaee04?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" >Hannover Neue Residenz</a> by <a href="https://sketchfab.com/QuintusHortensiusHortalus?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">QuintusHortensiusHortalus</a> on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Sketchfab</a>
+<th>
 
-</p>
+<div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/f5e45b33d4db497583e580b8adcaee04/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-</div></th><th><img title="Residenzschloss Facade" widht="500" height="196" src="https://steamuserimages-a.akamaihd.net/ugc/965347739084330338/70E38351B6D94EE2D173756E59A03DBA39718423/"><img title="Residenzschloss Grundriß bel Etage" widht="600" height="349" src="https://steamuserimages-a.akamaihd.net/ugc/965347739084338961/8273E74C72B3E90B4175AA375C4630E96793B36D/"></th></table>
+<a href="https://sketchfab.com/models/f5e45b33d4db497583e580b8adcaee04?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" >Hannover Neue Residenz</a> by <a href="https://sketchfab.com/QuintusHortensiusHortalus?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">QuintusHortensiusHortalus</a> on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Sketchfab</a></div>
+
+</th><th><img title="Residenzschloss Facade" widht="500" height="196" src="https://steamuserimages-a.akamaihd.net/ugc/965347739084330338/70E38351B6D94EE2D173756E59A03DBA39718423/"><img title="Residenzschloss Grundriß bel Etage" widht="600" height="349" src="https://steamuserimages-a.akamaihd.net/ugc/965347739084338961/8273E74C72B3E90B4175AA375C4630E96793B36D/">
+
+</th>
+
+</table>
+
 This is a draft by Georg Ludwig Laves the most important Hanoverian architect in the 1st half of the 19th century. He planned to build a huge palace north of Hanover on what is now called the “Königsworther Platz”. This palace was supposed to represent the new status of the monarchs of Hanover who were made Kings of Hannover after the Napoleonic Wars.
 
 <br><br><br><br><table><th><div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/17fff635238848e59239313963eb1c34/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
