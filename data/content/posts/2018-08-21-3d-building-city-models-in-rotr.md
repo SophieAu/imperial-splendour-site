@@ -7,7 +7,6 @@ excerpt: >-
   This is to show you some of the 3D Models of buildings and cities I made for
   and incorporated into RotR.
 ---
-
 Here are some of my building and city models for RotR:
 
 <table>
@@ -16,18 +15,15 @@ Here are some of my building and city models for RotR:
 
 <div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/9212073514a74215abe129e06be1bb83/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-<a href="https://sketchfab.com/models/9212073514a74215abe129e06be1bb83?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Schloss Salzdahlum</a>
-    by <a href="https://sketchfab.com/QuintusHortensiusHortalus?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">QuintusHortensiusHortalus</a>
-    on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Sketchfab</a>
+<a href="https://sketchfab.com/models/9212073514a74215abe129e06be1bb83?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Schloss Salzdahlum</a>     by <a href="https://sketchfab.com/QuintusHortensiusHortalus?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">QuintusHortensiusHortalus</a>     on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Sketchfab</a>
+
 </div>
 
 </th>
 
 <th>
 
-This is the main building of the palace of Salzdahlum:
-<img title="Plan of the palace of Salzdahlum" widht="521" height="438" src="https://upload.wikimedia.org/wikipedia/commons/0/07/Salzdahlum_Plan_Schloss.png">
-(between the “N“‘s, right next to the fountain and the front-view in the middle)
+This is the main building of the palace of Salzdahlum: <img title="Plan of the palace of Salzdahlum" widht="521" height="438" src="https://upload.wikimedia.org/wikipedia/commons/0/07/Salzdahlum_Plan_Schloss.png"> (between the “N“‘s, right next to the fountain and the front-view in the middle)
 
 This is the in-game Empire Total War model:
 
@@ -48,7 +44,9 @@ The palace was situated near Wolfenbüttel in today lower saxony. In it a large 
 <a href="https://sketchfab.com/models/f5e45b33d4db497583e580b8adcaee04?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" >Hannover Neue Residenz</a> by <a href="https://sketchfab.com/QuintusHortensiusHortalus?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">QuintusHortensiusHortalus</a> on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Sketchfab</a></div>
 
 </th><th>
-![](https://steamuserimages-a.akamaihd.net/ugc/965347739084330338/70E38351B6D94EE2D173756E59A03DBA39718423/)
+
+
+![](static/1535198418_residenzschloss-facade.png)
 
 ![](https://steamuserimages-a.akamaihd.net/ugc/965347739084338961/8273E74C72B3E90B4175AA375C4630E96793B36D/)
 
@@ -94,8 +92,7 @@ on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campai
 <th><img title="Harling’sches Haus" widht="600" height="284" src="https://steamuserimages-a.akamaihd.net/ugc/965347739084356122/5AEB8A9B714387104165CE8BD0041436D3CA429C/">
 <br><small>And in-game (the building on the bottom):<img title="Harling’sches Haus in-game" src="https://steamuserimages-a.akamaihd.net/ugc/965347739085696460/1C5C9552BE76100F2A28A46ACBF7A8AA209093FF/"></small></th></table>
 
-This is the Harling’sche Haus which was located in the Calenberger Str. 29/30 in Hannover. The central part of the building was built from 1679-1682 by the Oberstallmeister Christian Friedrich von Harling. The 2 wings were added by the Hofkramer Schmahle who bought the house from the heiress of von Harling in 1721. Finally it was demolished in 1874.
-<br><br>The model represents the mid 18th century state after the 2 wings were added.
+This is the Harling’sche Haus which was located in the Calenberger Str. 29/30 in Hannover. The central part of the building was built from 1679-1682 by the Oberstallmeister Christian Friedrich von Harling. The 2 wings were added by the Hofkramer Schmahle who bought the house from the heiress of von Harling in 1721. Finally it was demolished in 1874. <br><br>The model represents the mid 18th century state after the 2 wings were added.
 
 <br><table><th><div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/733080a5630a4ee2b765aeb22b8b5233/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
@@ -109,8 +106,7 @@ on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campai
 <img title="Collegium Carolinum" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Collegium_Carolinum_um_1800.jpg/529px-Collegium_Carolinum_um_1800.jpg" width="400">
 This is how it looks in-game:
 
-![](/img/braunschweig collegium carolinum.png)</th></table>
-This is a model of the historical building of the Collegium Carolinum in Brunswick. Note that this is only the main building.
+!\[](/img/braunschweig collegium carolinum.png)</th></table> This is a model of the historical building of the Collegium Carolinum in Brunswick. Note that this is only the main building.
 
 <br><br><table><th><div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/4281b23f49c44c93a4c3e4b22800bc1c/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
