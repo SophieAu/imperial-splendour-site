@@ -66,6 +66,7 @@ on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campai
 </div>
 </th>
 <th>The in-game model:
+
 ![](https://steamuserimages-a.akamaihd.net/ugc/965347739086096140/57A38BFF776E7C60002F197574CA57874056B36E/)</th>
 
 </table>
