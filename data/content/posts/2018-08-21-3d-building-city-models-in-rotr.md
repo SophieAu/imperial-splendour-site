@@ -56,17 +56,22 @@ The palace was situated near Wolfenbüttel in today lower saxony. In it a large 
 
 This is a draft by Georg Ludwig Laves the most important Hanoverian architect in the 1st half of the 19th century. He planned to build a huge palace north of Hanover on what is now called the “Königsworther Platz”. This palace was supposed to represent the new status of the monarchs of Hanover who were made Kings of Hannover after the Napoleonic Wars.
 
-<br><br><br><br><table><th><div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/17fff635238848e59239313963eb1c34/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<table>
 
-<p>
+<th><div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/17fff635238848e59239313963eb1c34/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
 <a href="https://sketchfab.com/models/17fff635238848e59239313963eb1c34?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">City Model London</a>
 by <a href="https://sketchfab.com/QuintusHortensiusHortalus?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">QuintusHortensiusHortalus</a>
 on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Sketchfab</a>
-</p>
-</div></th>
-<th>The in-game model:<img title="London City Model" src="https://steamuserimages-a.akamaihd.net/ugc/965347739086096140/57A38BFF776E7C60002F197574CA57874056B36E/"></th></table>
+</div>
+</th>
+<th>The in-game model:
+![](https://steamuserimages-a.akamaihd.net/ugc/965347739086096140/57A38BFF776E7C60002F197574CA57874056B36E/)</th>
+
+</table>
+
 This is a city model for London I made for the ETW mod Imperial Splendour. Most buildings are historical ones. Just some houses that show their backside towards the ETW direction of view are not.
-<br>You can see St Paul's, Handel House, Banqueting House, Buckingham House and many more.
+You can see St Paul's, Handel House, Banqueting House, Buckingham House and many more.
 
 <br><br><br><br><table><th><div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/c9c365fe37ff425fa31dec79bc3b8a67/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
