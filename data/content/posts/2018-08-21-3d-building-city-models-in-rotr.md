@@ -47,7 +47,9 @@ The palace was situated near Wolfenbüttel in today lower saxony. In it a large 
 
 <a href="https://sketchfab.com/models/f5e45b33d4db497583e580b8adcaee04?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" >Hannover Neue Residenz</a> by <a href="https://sketchfab.com/QuintusHortensiusHortalus?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">QuintusHortensiusHortalus</a> on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Sketchfab</a></div>
 
-</th><th><img title="Residenzschloss Facade" widht="500" height="196" src="https://steamuserimages-a.akamaihd.net/ugc/965347739084330338/70E38351B6D94EE2D173756E59A03DBA39718423/"><img title="Residenzschloss Grundriß bel Etage" widht="600" height="349" src="https://steamuserimages-a.akamaihd.net/ugc/965347739084338961/8273E74C72B3E90B4175AA375C4630E96793B36D/">
+</th><th>![](https://steamuserimages-a.akamaihd.net/ugc/965347739084330338/70E38351B6D94EE2D173756E59A03DBA39718423/)
+
+![](https://steamuserimages-a.akamaihd.net/ugc/965347739084338961/8273E74C72B3E90B4175AA375C4630E96793B36D/)
 
 </th>
 
