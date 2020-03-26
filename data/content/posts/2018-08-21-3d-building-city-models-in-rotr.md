@@ -25,11 +25,12 @@ Here are some of my building and city models for RotR:
 
 <th>
 
-This is the main building of the palace of Salzdahlum. 
+This is the main building of the palace of Salzdahlum:
 <img title="Plan of the palace of Salzdahlum" widht="521" height="438" src="https://upload.wikimedia.org/wikipedia/commons/0/07/Salzdahlum_Plan_Schloss.png">
 (between the “N“‘s, right next to the fountain and the front-view in the middle)
 
 This is the in-game Empire Total War model:
+
 ![](https://steamuserimages-a.akamaihd.net/ugc/960855227712472133/A60CF09FCC379D227660CAFF352BA4109ABE2227/)
 
 </th>
