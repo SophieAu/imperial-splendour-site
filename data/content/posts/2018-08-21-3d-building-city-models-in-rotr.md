@@ -46,7 +46,7 @@ The palace was situated near Wolfenbüttel in today lower saxony. In it a large 
 </th><th>
 
 
-![](static/1535198418_residenzschloss-facade.png)
+![]https://steamuserimages-a.akamaihd.net/ugc/965347739084330338/70E38351B6D94EE2D173756E59A03DBA39718423/)
 
 ![](https://steamuserimages-a.akamaihd.net/ugc/965347739084338961/8273E74C72B3E90B4175AA375C4630E96793B36D/)
 
