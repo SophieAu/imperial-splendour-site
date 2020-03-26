@@ -74,33 +74,48 @@ on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campai
 This is a city model for London I made for the ETW mod Imperial Splendour. Most buildings are historical ones. Just some houses that show their backside towards the ETW direction of view are not.
 You can see St Paul's, Handel House, Banqueting House, Buckingham House and many more.
 
-<br><br><br><br><table><th><div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/c9c365fe37ff425fa31dec79bc3b8a67/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<table>
+
+<th><div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/c9c365fe37ff425fa31dec79bc3b8a67/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 <p>
 <a href="https://sketchfab.com/models/c9c365fe37ff425fa31dec79bc3b8a67?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">City Model Hannover</a>
 by <a href="https://sketchfab.com/QuintusHortensiusHortalus?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">QuintusHortensiusHortalus</a>
 on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Sketchfab</a>
 </p>
-</div></th><th><small>This is how it looks in-game:</small>
-<img title="Hannover City Model" src="https://steamuserimages-a.akamaihd.net/ugc/965347739088556940/B1444DEB28F51426D6F11FDBC58F42AAE9CB939D/">
-</th></table>
-The model was made for the ETW mod Imperial Splendour. It serves as a city model for the town of Hannover. In the model itself there are many historical buildings that were once located in Hannover (and are demolished today) as well as several drafts which were never built.
-<br>I tried to represent the division between the old town, coming from the middle ages on the right with timber-frame and Renaissance houses and the new town (“Calenberger Neustadt”) on the left which was built in the 17th century and where the townhouses of the nobility stood.
-<br>Most prominent on the right is the Marktkirche (Market Church). Outside the actual town you can see the Nikolaikapelle (Nikolai chapel) with its graveyard. Today the Nikolaikapelle is a ruin.
+</div></th><th>This is how it looks in-game:
 
-<br><br><br><br><table><th><div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/fd1f6f79eb5e492b900068139aae1a88/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+![](https://steamuserimages-a.akamaihd.net/ugc/965347739088556940/B1444DEB28F51426D6F11FDBC58F42AAE9CB939D/)
+</th>
+
+</table>
+
+The model was made for the ETW mod Imperial Splendour. It serves as a city model for the town of Hannover. In the model itself there are many historical buildings that were once located in Hannover (and are demolished today) as well as several drafts which were never built.
+I tried to represent the division between the old town, coming from the middle ages on the right with timber-frame and Renaissance houses and the new town (“Calenberger Neustadt”) on the left which was built in the 17th century and where the townhouses of the nobility stood.
+Most prominent on the right is the Marktkirche (Market Church). Outside the actual town you can see the Nikolaikapelle (Nikolai chapel) with its graveyard. Today the Nikolaikapelle is a ruin.
+
+<table>
+
+<th><div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/fd1f6f79eb5e492b900068139aae1a88/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 <p>
 <a href="https://sketchfab.com/models/fd1f6f79eb5e492b900068139aae1a88?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Harling'sches Haus</a>
 by <a href="https://sketchfab.com/QuintusHortensiusHortalus?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">QuintusHortensiusHortalus</a>
 on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Sketchfab</a>
 </p></div></th>
-<th><img title="Harling’sches Haus" widht="600" height="284" src="https://steamuserimages-a.akamaihd.net/ugc/965347739084356122/5AEB8A9B714387104165CE8BD0041436D3CA429C/">
-<br><small>And in-game (the building on the bottom):<img title="Harling’sches Haus in-game" src="https://steamuserimages-a.akamaihd.net/ugc/965347739085696460/1C5C9552BE76100F2A28A46ACBF7A8AA209093FF/"></small></th></table>
+<th>![](https://steamuserimages-a.akamaihd.net/ugc/965347739084356122/5AEB8A9B714387104165CE8BD0041436D3CA429C/)
+
+And in-game (the building on the bottom):
+
+![](https://steamuserimages-a.akamaihd.net/ugc/965347739085696460/1C5C9552BE76100F2A28A46ACBF7A8AA209093FF/)</th>
+
+</table>
 
 This is the Harling’sche Haus which was located in the Calenberger Str. 29/30 in Hannover. The central part of the building was built from 1679-1682 by the Oberstallmeister Christian Friedrich von Harling. The 2 wings were added by the Hofkramer Schmahle who bought the house from the heiress of von Harling in 1721. Finally it was demolished in 1874. <br><br>The model represents the mid 18th century state after the 2 wings were added.
 
-<br><table><th><div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/733080a5630a4ee2b765aeb22b8b5233/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<table>
+
+<th><div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/733080a5630a4ee2b765aeb22b8b5233/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 <p>
 <a href="https://sketchfab.com/models/733080a5630a4ee2b765aeb22b8b5233?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Collegium Carolinum in Braunschweig</a>
@@ -109,17 +124,29 @@ on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campai
 </p>
 
 </div></th><th>
-<img title="Collegium Carolinum" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Collegium_Carolinum_um_1800.jpg/529px-Collegium_Carolinum_um_1800.jpg" width="400">
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Collegium_Carolinum_um_1800.jpg/529px-Collegium_Carolinum_um_1800.jpg)
+
 This is how it looks in-game:
 
-!\[](/img/braunschweig collegium carolinum.png)</th></table> This is a model of the historical building of the Collegium Carolinum in Brunswick. Note that this is only the main building.
+!\[](/img/braunschweig collegium carolinum.png)</th>
 
-<br><br><table><th><div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/4281b23f49c44c93a4c3e4b22800bc1c/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</table> 
+
+This is a model of the historical building of the Collegium Carolinum in Brunswick. Note that this is only the main building.
+
+<table>
+
+<th><div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/4281b23f49c44c93a4c3e4b22800bc1c/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 <p>
 <a href="https://sketchfab.com/models/4281b23f49c44c93a4c3e4b22800bc1c?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">St Stephen's Chapel</a>
 by <a href="https://sketchfab.com/QuintusHortensiusHortalus?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">QuintusHortensiusHortalus</a>
 on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Sketchfab</a>
 </p>
-</div></th><th>And implemented into ETW:<img title="St Stephen's Chapel" src="https://steamuserimages-a.akamaihd.net/ugc/965347739085841748/BC1AA9EA0787F2553EEDF8F259E18BA24E8712A3/"></th></table>
+</div></th><th>And implemented into ETW:
+
+![](https://steamuserimages-a.akamaihd.net/ugc/965347739085841748/BC1AA9EA0787F2553EEDF8F259E18BA24E8712A3/)
+
+</table>
+
 St Stephen's Chapel was a chapel in the old Palace of Westminster. It became the Chamber of the House of Commons.
