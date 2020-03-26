@@ -10,14 +10,14 @@ excerpt: >-
 
 Here are some of my building and city models for RotR:
 
-<table><th>
+<table>
+
+<th>
 <div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/9212073514a74215abe129e06be1bb83/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-<p>
-    <a href="https://sketchfab.com/models/9212073514a74215abe129e06be1bb83?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Schloss Salzdahlum</a>
+<a href="https://sketchfab.com/models/9212073514a74215abe129e06be1bb83?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Schloss Salzdahlum</a>
     by <a href="https://sketchfab.com/QuintusHortensiusHortalus?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">QuintusHortensiusHortalus</a>
     on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Sketchfab</a>
-</p>
 </div>
 </th>
 
