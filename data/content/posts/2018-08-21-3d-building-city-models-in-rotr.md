@@ -130,7 +130,7 @@ on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campai
 
 This is how it looks in-game:
 
-!\[](/img/braunschweig collegium carolinum.png)</th>
+!\[](/data/img/braunschweig collegium carolinum.png)</th>
 
 </table> 
 
@@ -145,7 +145,8 @@ This is a model of the historical building of the Collegium Carolinum in Brunswi
 by <a href="https://sketchfab.com/QuintusHortensiusHortalus?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">QuintusHortensiusHortalus</a>
 on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Sketchfab</a>
 </p>
-</div></th><th>And implemented into ETW:
+</div></th><th>
+And implemented into ETW:
 
 ![](https://steamuserimages-a.akamaihd.net/ugc/965347739085841748/BC1AA9EA0787F2553EEDF8F259E18BA24E8712A3/)
 
