@@ -103,6 +103,7 @@ Most prominent on the right is the Marktkirche (Market Church). Outside the actu
 by <a href="https://sketchfab.com/QuintusHortensiusHortalus?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">QuintusHortensiusHortalus</a>
 on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Sketchfab</a>
 </p></div></th>
+
 <th>![](https://steamuserimages-a.akamaihd.net/ugc/965347739084356122/5AEB8A9B714387104165CE8BD0041436D3CA429C/)
 
 And in-game (the building on the bottom):
@@ -124,6 +125,7 @@ on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campai
 </p>
 
 </div></th><th>
+
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Collegium_Carolinum_um_1800.jpg/529px-Collegium_Carolinum_um_1800.jpg)
 
 This is how it looks in-game:
