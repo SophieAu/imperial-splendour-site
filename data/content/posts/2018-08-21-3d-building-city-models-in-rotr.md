@@ -13,21 +13,27 @@ Here are some of my building and city models for RotR:
 <table>
 
 <th>
+
 <div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/9212073514a74215abe129e06be1bb83/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 <a href="https://sketchfab.com/models/9212073514a74215abe129e06be1bb83?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Schloss Salzdahlum</a>
     by <a href="https://sketchfab.com/QuintusHortensiusHortalus?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">QuintusHortensiusHortalus</a>
     on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Sketchfab</a>
 </div>
+
 </th>
 
-<th>This is the main building of the palace of Salzdahlum. 
+<th>
+
+This is the main building of the palace of Salzdahlum. 
 <img title="Plan of the palace of Salzdahlum" widht="521" height="438" src="https://upload.wikimedia.org/wikipedia/commons/0/07/Salzdahlum_Plan_Schloss.png">
 (between the “N“‘s, right next to the fountain and the front-view in the middle)
 
 This is the in-game Empire Total War model:
 ![](https://steamuserimages-a.akamaihd.net/ugc/960855227712472133/A60CF09FCC379D227660CAFF352BA4109ABE2227/)
+
 </th>
+
 </table>
 
 The palace was situated near Wolfenbüttel in today lower saxony. In it a large art colledtion from the dukes of Brunswick was located which is today in the Herzog Anton Ulrich-Museum. The palace was build in Half-timbering construction on a wet meadow which let the palace literally rot. The maintenance costs were high so that the palace was dismantled in 1813 but parts of it can still be seen in the town of Salzdahlum.
