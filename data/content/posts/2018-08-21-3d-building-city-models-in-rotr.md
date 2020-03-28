@@ -10,26 +10,21 @@ excerpt: >-
 Here are some of my building and city models for RotR:
 
 <table>
+<td>
+<iframe width="640" height="480" src="https://sketchfab.com/models/9212073514a74215abe129e06be1bb83/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-<th>
+[Schloss Salzdahlum](https://sketchfab.com/models/9212073514a74215abe129e06be1bb83) by [QuintusHortensiusHortalus](https://sketchfab.com/QuintusHortensiusHortalus) on [Sketchfab](https://sketchfab.com)
+</td>
 
-<div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/9212073514a74215abe129e06be1bb83/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<td>
 
-<a href="https://sketchfab.com/models/9212073514a74215abe129e06be1bb83?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Schloss Salzdahlum</a>     by <a href="https://sketchfab.com/QuintusHortensiusHortalus?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">QuintusHortensiusHortalus</a>     on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Sketchfab</a>
-
-</div>
-
-</th>
-
-<th>
-
-This is the main building of the palace of Salzdahlum: <img title="Plan of the palace of Salzdahlum" widht="521" height="438" src="https://upload.wikimedia.org/wikipedia/commons/0/07/Salzdahlum_Plan_Schloss.png"> (between the “N“‘s, right next to the fountain and the front-view in the middle)
+This is the main building of the palace of Salzdahlum: ![Plan of the palace of Salzdahlum](https://upload.wikimedia.org/wikipedia/commons/0/07/Salzdahlum_Plan_Schloss.png) (between the “N“‘s, right next to the fountain and the front-view in the middle)
 
 This is the in-game Empire Total War model:
 
 ![](https://steamuserimages-a.akamaihd.net/ugc/960855227712472133/A60CF09FCC379D227660CAFF352BA4109ABE2227/)
 
-</th>
+</td>
 
 </table>
 
@@ -37,20 +32,19 @@ The palace was situated near Wolfenbüttel in today lower saxony. In it a large 
 
 <table>
 
-<th>
+<td>
+<iframe width="640" height="480" src="https://sketchfab.com/models/f5e45b33d4db497583e580b8adcaee04/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-<div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/f5e45b33d4db497583e580b8adcaee04/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+[Hannover Neue Residenz](https://sketchfab.com/models/f5e45b33d4db497583e580b8adcaee04) by [QuintusHortensiusHortalus](https://sketchfab.com/QuintusHortensiusHortalus) on [Sketchfab](https://sketchfab.com)
 
-<a href="https://sketchfab.com/models/f5e45b33d4db497583e580b8adcaee04?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" >Hannover Neue Residenz</a> by <a href="https://sketchfab.com/QuintusHortensiusHortalus?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">QuintusHortensiusHortalus</a> on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Sketchfab</a></div>
-
-</th><th>
+</td><td>
 
 
 ![](https://steamuserimages-a.akamaihd.net/ugc/965347739084330338/70E38351B6D94EE2D173756E59A03DBA39718423/)
 
 ![](https://steamuserimages-a.akamaihd.net/ugc/965347739084338961/8273E74C72B3E90B4175AA375C4630E96793B36D/)
 
-</th>
+</td>
 
 </table>
 
@@ -58,16 +52,15 @@ This is a draft by Georg Ludwig Laves the most important Hanoverian architect in
 
 <table>
 
-<th><div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/17fff635238848e59239313963eb1c34/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<td><iframe width="640" height="480" src="https://sketchfab.com/models/17fff635238848e59239313963eb1c34/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-<a href="https://sketchfab.com/models/17fff635238848e59239313963eb1c34?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">City Model London</a>
-by <a href="https://sketchfab.com/QuintusHortensiusHortalus?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">QuintusHortensiusHortalus</a>
-on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Sketchfab</a>
-</div>
-</th>
-<th>The in-game model:
+[City Model London](https://sketchfab.com/models/17fff635238848e59239313963eb1c34)
+by [QuintusHortensiusHortalus](https://sketchfab.com/QuintusHortensiusHortalus)
+on [Sketchfab](https://sketchfab.com)
+</td>
+<td>The in-game model:
 
-![](https://steamuserimages-a.akamaihd.net/ugc/965347739086096140/57A38BFF776E7C60002F197574CA57874056B36E/)</th>
+![](https://steamuserimages-a.akamaihd.net/ugc/965347739086096140/57A38BFF776E7C60002F197574CA57874056B36E/)</td>
 
 </table>
 
@@ -76,17 +69,17 @@ You can see St Paul's, Handel House, Banqueting House, Buckingham House and many
 
 <table>
 
-<th><div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/c9c365fe37ff425fa31dec79bc3b8a67/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<td><iframe width="640" height="480" src="https://sketchfab.com/models/c9c365fe37ff425fa31dec79bc3b8a67/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-<p>
-<a href="https://sketchfab.com/models/c9c365fe37ff425fa31dec79bc3b8a67?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">City Model Hannover</a>
-by <a href="https://sketchfab.com/QuintusHortensiusHortalus?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">QuintusHortensiusHortalus</a>
-on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Sketchfab</a>
-</p>
-</div></th><th>This is how it looks in-game:
+
+[City Model Hannover](https://sketchfab.com/models/c9c365fe37ff425fa31dec79bc3b8a67)
+by [QuintusHortensiusHortalus](https://sketchfab.com/QuintusHortensiusHortalus)
+on [Sketchfab](https://sketchfab.com)
+
+</td><td>This is how it looks in-game:
 
 ![](https://steamuserimages-a.akamaihd.net/ugc/965347739088556940/B1444DEB28F51426D6F11FDBC58F42AAE9CB939D/)
-</th>
+</td>
 
 </table>
 
@@ -96,41 +89,43 @@ Most prominent on the right is the Marktkirche (Market Church). Outside the actu
 
 <table>
 
-<th><div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/fd1f6f79eb5e492b900068139aae1a88/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<td><iframe width="640" height="480" src="https://sketchfab.com/models/fd1f6f79eb5e492b900068139aae1a88/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-<p>
-<a href="https://sketchfab.com/models/fd1f6f79eb5e492b900068139aae1a88?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Harling'sches Haus</a>
-by <a href="https://sketchfab.com/QuintusHortensiusHortalus?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">QuintusHortensiusHortalus</a>
-on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Sketchfab</a>
-</p></div></th>
 
-<th>![](https://steamuserimages-a.akamaihd.net/ugc/965347739084356122/5AEB8A9B714387104165CE8BD0041436D3CA429C/)
+[Harling'sches Haus](https://sketchfab.com/models/fd1f6f79eb5e492b900068139aae1a88) by [QuintusHortensiusHortalus](https://sketchfab.com/QuintusHortensiusHortalus) on [Sketchfab](https://sketchfab.com)
+</td>
+
+<td>
+
+![](https://steamuserimages-a.akamaihd.net/ugc/965347739084356122/5AEB8A9B714387104165CE8BD0041436D3CA429C/)
 
 And in-game (the building on the bottom):
 
-![](https://steamuserimages-a.akamaihd.net/ugc/965347739085696460/1C5C9552BE76100F2A28A46ACBF7A8AA209093FF/)</th>
+![](https://steamuserimages-a.akamaihd.net/ugc/965347739085696460/1C5C9552BE76100F2A28A46ACBF7A8AA209093FF/)</td>
 
 </table>
 
-This is the Harling’sche Haus which was located in the Calenberger Str. 29/30 in Hannover. The central part of the building was built from 1679-1682 by the Oberstallmeister Christian Friedrich von Harling. The 2 wings were added by the Hofkramer Schmahle who bought the house from the heiress of von Harling in 1721. Finally it was demolished in 1874. <br><br>The model represents the mid 18th century state after the 2 wings were added.
+This is the Harling’sche Haus which was located in the Calenberger Str. 29/30 in Hannover. The central part of the building was built from 1679-1682 by the Oberstallmeister Christian Friedrich von Harling. The 2 wings were added by the Hofkramer Schmahle who bought the house from the heiress of von Harling in 1721. Finally it was demolished in 1874. 
+
+The model represents the mid 18th century state after the 2 wings were added.
 
 <table>
 
-<th><div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/733080a5630a4ee2b765aeb22b8b5233/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<td><iframe width="640" height="480" src="https://sketchfab.com/models/733080a5630a4ee2b765aeb22b8b5233/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-<p>
-<a href="https://sketchfab.com/models/733080a5630a4ee2b765aeb22b8b5233?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Collegium Carolinum in Braunschweig</a>
-by <a href="https://sketchfab.com/QuintusHortensiusHortalus?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">QuintusHortensiusHortalus</a>
-on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Sketchfab</a>
-</p>
 
-</div></th><th>
+[Collegium Carolinum in Braunschweig](https://sketchfab.com/models/733080a5630a4ee2b765aeb22b8b5233) by [QuintusHortensiusHortalus](https://sketchfab.com/QuintusHortensiusHortalus) on [Sketchfab](https://sketchfab.com)
+
+
+</td><td>
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Collegium_Carolinum_um_1800.jpg/529px-Collegium_Carolinum_um_1800.jpg)
 
 This is how it looks in-game:
 
-!\[](/data/img/braunschweig collegium carolinum.png)</th>
+![](../_img/2018-08-21-3dModels_collegium-carolinum.png)
+
+</td>
 
 </table> 
 
@@ -138,14 +133,11 @@ This is a model of the historical building of the Collegium Carolinum in Brunswi
 
 <table>
 
-<th><div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/4281b23f49c44c93a4c3e4b22800bc1c/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<td><iframe width="640" height="480" src="https://sketchfab.com/models/4281b23f49c44c93a4c3e4b22800bc1c/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-<p>
-<a href="https://sketchfab.com/models/4281b23f49c44c93a4c3e4b22800bc1c?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">St Stephen's Chapel</a>
-by <a href="https://sketchfab.com/QuintusHortensiusHortalus?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">QuintusHortensiusHortalus</a>
-on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Sketchfab</a>
-</p>
-</div></th><th>
+[St Stephen's Chapel](https://sketchfab.com/models/4281b23f49c44c93a4c3e4b22800bc1c) by [QuintusHortensiusHortalus](https://sketchfab.com/QuintusHortensiusHortalus) on [Sketchfab](https://sketchfab.com)
+
+</td><td>
 And implemented into ETW:
 
 ![](https://steamuserimages-a.akamaihd.net/ugc/965347739085841748/BC1AA9EA0787F2553EEDF8F259E18BA24E8712A3/)
