@@ -46,7 +46,7 @@ const Post: React.FC<Props> = ({ data, pageContext }) => {
         <PostHeader {...markdownRemark.frontmatter} isHeaderClickable={false} />
         <div className="text" dangerouslySetInnerHTML={{ __html: markdownRemark.html }} />
       </article>
-      <Comments comments={allCommentsYaml?.edges} />
+      {!!allCommentsYaml?.edges.length && <Comments comments={allCommentsYaml?.edges} />}
     </Layout>
   );
 };
