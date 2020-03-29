@@ -13,49 +13,49 @@ The Electorate's power does not lie in size and military strength but in diploma
 
 Do not forget to pay attention to the risings in France, it is hard to tell what will come out of it but one thing is for certain: Europe is not ready for changes and any revolution coming from France will immediately be opposed by all other European monarchies and will bring them in a closeness never seen before.
 
-##Historical Characters:
+## Historical Characters:
 
-###Government:
+### Government
 ![](https://steamuserimages-a.akamaihd.net/ugc/970993917491782388/781FF971387DC572121917DD8901E5F593E63BD5/)
 
-1. Churfürst: <a href="https://en.wikipedia.org/wiki/Frederick_Augustus_I_of_Saxony" target="_blank" rel="noopener">Friedrich August III</a>
-2. Kabinettsminister: <a href="https://de.wikipedia.org/wiki/Heinrich_Gottlieb_von_Stutterheim" target="_blank" rel="noopener">Heinrich Gottlieb von Stutterheim</a>
+1. Churfürst: [Friedrich August III](https://en.wikipedia.org/wiki/Frederick_Augustus_I_of_Saxony)
+2. Kabinettsminister: [Heinrich Gottlieb von Stutterheim](https://de.wikipedia.org/wiki/Heinrich_Gottlieb_von_Stutterheim)
 3. Kabinettsminister: Johann Adolf vom Loß (generic portrait)
 4. Kabinettsminister: Carl-Abraham Graf von Fritsch (generic portrait)
 5. Kabinettsminister: Karl August von Gersdorff
 6. Kabinettsminister: Adolf Heinrich Graf von Schönberg
-7. <a href="https://de.wikipedia.org/wiki/Christian_Gotthelf_von_Gutschmid" target="_blank" rel="noopener">Christian Gotthelf von Gutschmid</a>
-8. <a href="https://de.wikipedia.org/wiki/Otto_Ferdinand_von_Loeben" target="_blank" rel="noopener">Otto Friedrich von Loeben</a>
+7. [Christian Gotthelf von Gutschmid](https://de.wikipedia.org/wiki/Christian_Gotthelf_von_Gutschmid)
+8. [Otto Friedrich von Loeben](https://de.wikipedia.org/wiki/Otto_Ferdinand_von_Loeben)
 9. Friedrich Ludwig von Wurmb
-10. <a href="https://de.wikipedia.org/wiki/Johann_Georg_Friedrich_von_Einsiedel" target="_blank" rel="noopener">Johann Georg Graf von Einsiedel</a>
-11. <a href="https://de.wikipedia.org/wiki/Detlev_Carl_von_Einsiedel" target="_blank" rel="noopener">Detlef Karl Graf von Einsiedel</a></p>
+10. [Johann Georg Graf von Einsiedel](https://de.wikipedia.org/wiki/Johann_Georg_Friedrich_von_Einsiedel)
+11. [Detlef Karl Graf von Einsiedel](https://de.wikipedia.org/wiki/Detlev_Carl_von_Einsiedel)
 
-###Generals:
-![](https://steamuserimages-a.akamaihd.net/ugc/970993917492692438/958D5B7E62B01791DD22969DBC68BB92048D76E9/)
+### Generals
+![](https://steamuserimages-a.akamaihd.net/ugc/970993917492692438/958D5B7E62B01791DD22969DBC68BB92048D76E9/)<br /> 
 
-1. <a href="https://de.wikipedia.org/wiki/Ludwig_Ernst_von_Benkendorf" target="_blank" rel="noopener">Ludwig Ernst von Benckendorf</a> (starting general)
-2. <a href="https://en.wikipedia.org/wiki/Prince_Frederick_Ferdinand_Constantin_of_Saxe-Weimar-Eisenach" target="_blank" rel="noopener">Prinz Friedrich Ferdinand Constantin von Sachsen-Weimar</a> (recruit before 1793)
-3. <a href="https://de.wikipedia.org/wiki/Friedrich_Ludwig_Aster" target="_blank" rel="noopener">Friedrich Ludwig Aster</a> (no recruitment limitations)
-4. <a href="https://de.wikipedia.org/wiki/Heinrich_Wilhelm_von_Zeschau" target="_blank" rel="noopener">Heinrich Wilhelm von Zeschau</a> (no recruitment limitations)
-5. <a href="https://de.wikipedia.org/wiki/Karl_Wilhelm_Ferdinand_von_Funck" target="_blank" rel="noopener">Karl Wilhelm Ferdinand von Funck</a> (no recruitment limitations)
-6. <a href="https://de.wikipedia.org/wiki/Heinrich_Adolph_von_Gablenz" target="_blank" rel="noopener">Heinrich Adolph von Gablenz</a> (no recruitment limitations)
-7. <a href="https://en.wikipedia.org/wiki/Johann_von_Thielmann" target="_blank" rel="noopener">Johann von Thielmann</a> (recruitable from 1785 onwards)
-8. <a href="https://en.wikipedia.org/wiki/Karl_Christian_Erdmann_von_Le_Coq" target="_blank" rel="noopener">Karl Christian Erdmann von Le Coq</a> (recruitable from 1787 onwards)
+1. [Ludwig Ernst von Benckendorf](https://de.wikipedia.org/wiki/Ludwig_Ernst_von_Benkendorf) (starting general)
+2. [Prinz Friedrich Ferdinand Constantin von Sachsen-Weimar](https://en.wikipedia.org/wiki/Prince_Frederick_Ferdinand_Constantin_of_Saxe-Weimar-Eisenach) (recruit before 1793) **NEW**
+3. [Friedrich Ludwig Aster](https://de.wikipedia.org/wiki/Friedrich_Ludwig_Aster) (no recruitment limitations) **NEW**
+4. [Heinrich Wilhelm von Zeschau](https://de.wikipedia.org/wiki/Heinrich_Wilhelm_von_Zeschau) (no recruitment limitations) **NEW**
+5. [Karl Wilhelm Ferdinand von Funck](https://de.wikipedia.org/wiki/Karl_Wilhelm_Ferdinand_von_Funck) (no recruitment limitations) **NEW**
+6. [Heinrich Adolph von Gablenz](https://de.wikipedia.org/wiki/Heinrich_Adolph_von_Gablenz) (no recruitment limitations) **NEW**
+7. [Johann von Thielmann](https://en.wikipedia.org/wiki/Johann_von_Thielmann) (recruitable from 1785 onwards) **NEW**
+8. [Karl Christian Erdmann von Le Coq](https://en.wikipedia.org/wiki/Karl_Christian_Erdmann_von_Le_Coq) (recruitable from 1787 onwards) **NEW**
 
-###Scholars:
+### Scholars
 ![](https://steamuserimages-a.akamaihd.net/ugc/970993917488522002/A560E5C2116090EFF4696804311F138F7DFFE398/)
 
-1. <a href="https://en.wikipedia.org/wiki/Johann_Wolfgang_von_Goethe" target="_blank" rel="noopener">Johann Wolfgang von Goethe</a> (starting gentleman)
-2. <a href="https://en.wikipedia.org/wiki/Johann_Gottlieb_Tielke" target="_blank" rel="noopener">Johann Gottlieb Tielke</a>
-3. <a href="https://en.wikipedia.org/wiki/Johann_Gottfried_Herder" target="_blank" rel="noopener">Johann Gottfried Herder</a>
-4. <a href="https://en.wikipedia.org/wiki/Abraham_Gottlob_Werner" target="_blank" rel="noopener">Abraham Gottlob Werner</a>
-5. <a href="https://en.wikipedia.org/wiki/Friedrich_Schiller" target="_blank" rel="noopener">Friedrich Schiller</a>
-6. <a href="https://en.wikipedia.org/wiki/Christoph_Martin_Wieland" target="_blank" rel="noopener">Christoph Martin Wieland</a>
-7. <a href="https://en.wikipedia.org/wiki/Johann_Gottlieb_Fichte" target="_blank" rel="noopener">Johann Gottlieb Fichte</a>
+1. [Johann Wolfgang von Goethe](https://en.wikipedia.org/wiki/Johann_Wolfgang_von_Goethe) (starting gentleman)
+2. [Johann Gottlieb Tielke](https://en.wikipedia.org/wiki/Johann_Gottlieb_Tielke) **NEW**
+3. [Johann Gottfried Herder](https://en.wikipedia.org/wiki/Johann_Gottfried_Herder) **NEW**
+4. [Abraham Gottlob Werner](https://en.wikipedia.org/wiki/Abraham_Gottlob_Werner) **NEW**
+5. [Friedrich Schiller](https://en.wikipedia.org/wiki/Friedrich_Schiller) **NEW**
+6. [Christoph Martin Wieland](https://en.wikipedia.org/wiki/Christoph_Martin_Wieland) **NEW**
+7. [Johann Gottlieb Fichte](https://en.wikipedia.org/wiki/Johann_Gottlieb_Fichte) **NEW**
 
-###Envoys:
+### Envoys
 ![](https://steamuserimages-a.akamaihd.net/ugc/970993917491766156/E3AEBD667F2DD31CC1E985981F303BC131765EF5/)
 
-1. <a href="https://de.wikipedia.org/wiki/Andreas_von_Riaucour" target="_blank" rel="noopener">Andreas Graf von Riaucour</a> (starting envoy)
-2. <a href="https://de.wikipedia.org/wiki/Friedrich_August_von_Zinzendorf" target="_blank" rel="noopener">Friedrich August Graf von Zinzendorf und Pottendorf</a>
-3. <a href="https://en.wikipedia.org/wiki/Hans_Moritz_von_Br%C3%BChl" target="_blank" rel="noopener">Hans Moritz Graf von Brühl</a>
+1. [Andreas Graf von Riaucour](https://de.wikipedia.org/wiki/Andreas_von_Riaucour) (starting envoy)
+2. [Friedrich August Graf von Zinzendorf und Pottendorf](https://de.wikipedia.org/wiki/Friedrich_August_von_Zinzendorf) **NEW**
+3. [Hans Moritz Graf von Brühl](https://en.wikipedia.org/wiki/Hans_Moritz_von_Br%C3%BChl) **NEW**
