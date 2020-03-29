@@ -5,6 +5,7 @@ _non_code/
 
 # gatsby files
 .cache/
+.linaria-cache/
 public
 node_modules/
 yarn.lock
