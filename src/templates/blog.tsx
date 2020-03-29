@@ -1,5 +1,3 @@
-import './blog.scss';
-
 import { graphql } from 'gatsby';
 import React from 'react';
 
@@ -9,6 +7,7 @@ import Layout from '../components/Layout';
 import Link from '../components/Link';
 import PostHeader from '../components/PostHeader';
 import { BlogListContext, PostsResponse } from '../types';
+import * as styles from './blog.styles';
 
 export const query = graphql`
   query($skip: Int!, $limit: Int!) {
@@ -37,15 +36,15 @@ interface Props extends PostsResponse, BlogListContext {}
 
 const Blog: React.FC<Props> = ({ data, pageContext }) => (
   <Layout title={blog.pageTitle} description={blog.pageDescription} slug={slugs.blog}>
-    <ul className="post-list">
+    <ul className={styles.postList}>
       {data.allMarkdownRemark.edges.map(post => (
-        <li key={post.node.id} className="post">
+        <li key={post.node.id} className={styles.post}>
           <PostHeader
             slug={createSlug(post.node.frontmatter.title, post.node.frontmatter.date)}
             {...post.node.frontmatter}
             isHeaderClickable={true}
           />
-          <p className="excerpt">{post.node.frontmatter.excerpt}</p>
+          <p className={styles.excerpt}>{post.node.frontmatter.excerpt}</p>
         </li>
       ))}
     </ul>
@@ -54,16 +53,16 @@ const Blog: React.FC<Props> = ({ data, pageContext }) => (
 );
 
 const Paginator: React.FC<{ current: number; total: number }> = ({ current, total }) => (
-  <section className="pagination">
+  <section className={styles.pagination}>
     <ul>
-      <li className={'newer'}>
+      <li>
         {current !== 1 && (
           <Link to={`${paths.blog}${current - 1 === 1 ? '' : `/${current - 1}`}`} rel="prev">
             {blog.previousPage}
           </Link>
         )}
       </li>
-      <li className={'older'}>
+      <li>
         {current !== total && (
           <Link to={`${paths.blog}/${current + 1}`} rel="next">
             {blog.nextPage}

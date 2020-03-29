@@ -1,7 +1,5 @@
-import './Header.scss';
-
 import { graphql, useStaticQuery } from 'gatsby';
-import Img from 'gatsby-image';
+import { cx } from 'linaria';
 import React, { useEffect, useState } from 'react';
 
 import { paths } from '../../data/config';
@@ -9,6 +7,7 @@ import exitButton from '../../data/img/header_exit_button';
 import hamburgerButton from '../../data/img/header_hamburger_button';
 import { header } from '../../data/strings';
 import { cn } from '../util';
+import Img from './GatsbyImage';
 import ImageLink from './ImageLink';
 import Link from './Link';
 
@@ -44,7 +43,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="site-header head-foot">
+    <header className={cx(styles.root, 'head-foot')}>
       <ImageLink to={paths.home} title={header.home} className="header-logo">
         <Img
           className="header-img"

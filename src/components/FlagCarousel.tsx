@@ -1,13 +1,13 @@
-import './FlagCarousel.scss';
-
 import { graphql, useStaticQuery } from 'gatsby';
-import Img, { FixedObject } from 'gatsby-image';
 import React, { useEffect, useState } from 'react';
 
 import { paths } from '../../data/config';
 import { factions as factionStrings } from '../../data/strings';
 import { SingleFaction } from '../types';
 import { circularModulo } from '../util';
+import CarouselImage from './CarouselImage';
+import * as styles from './FlagCarousel.styles';
+import Img from './GatsbyImage';
 import ImageLink from './ImageLink';
 
 const query = graphql`
@@ -51,11 +51,11 @@ const FlagCarousel: React.FC<Props> = ({ factions, selected }) => {
   const wrapper = (index: number) => (children: React.ReactNode) =>
     index === 0 ? (
       <React.Fragment key={index}>
-        <ImageLink className="link" to={onPress(-1)} title={factionStrings.previousButton}>
+        <ImageLink className={styles.link} to={onPress(-1)} title={factionStrings.previousButton}>
           <Img fixed={buttons.buttonLeft.childImageSharp.fixed} />
         </ImageLink>
         {children}
-        <ImageLink className="link" to={onPress(1)} title={factionStrings.nextButton}>
+        <ImageLink className={styles.link} to={onPress(1)} title={factionStrings.nextButton}>
           <Img fixed={buttons.buttonRight.childImageSharp.fixed} />
         </ImageLink>
       </React.Fragment>
@@ -64,7 +64,7 @@ const FlagCarousel: React.FC<Props> = ({ factions, selected }) => {
     );
 
   return (
-    <div id="carousel">
+    <div className={styles.carousel}>
       {indices.map(index =>
         wrapper(index)(
           <CarouselImage
@@ -78,41 +78,5 @@ const FlagCarousel: React.FC<Props> = ({ factions, selected }) => {
     </div>
   );
 };
-
-const IMAGE_WIDTH = 132;
-const IMAGE_HEIGHT = 66;
-const calcWidth = (offset: number) => IMAGE_WIDTH / Math.abs(offset || 1);
-const calcHeight = (offset: number) => IMAGE_HEIGHT * (1 - (offset * offset) / 100);
-
-const carouselImageStyle = (offset: number) => ({
-  height: `${calcHeight(offset)}px`,
-  width: `${calcWidth(offset)}px`,
-  zIndex: -Math.abs(offset),
-  overflow: 'unset',
-});
-
-interface ImageProps {
-  src: FixedObject;
-  offset: number;
-  title: string;
-  side: 'right' | 'left' | 'center';
-}
-
-const CarouselImage: React.FC<ImageProps> = ({ src, offset, title, side }) => (
-  <Img
-    fixed={src}
-    style={carouselImageStyle(offset)}
-    fadeIn={false}
-    placeholderStyle={{ display: 'none', overflow: 'auto' }}
-    alt={title}
-    imgStyle={{
-      objectFit: 'cover',
-      objectPosition: `${side} center`,
-      width: `${IMAGE_WIDTH}px`,
-      right: `${side === 'left' ? calcWidth(offset) - IMAGE_WIDTH : 0}px`,
-      left: `${side === 'right' ? calcWidth(offset) - IMAGE_WIDTH : 0}px`,
-    }}
-  />
-);
 
 export default FlagCarousel;

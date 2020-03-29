@@ -1,11 +1,10 @@
-import './index.scss';
-
 import React from 'react';
 
 import { paths, slugs } from '../../../data/config';
 import { download, downloadButton } from '../../../data/strings';
 import Layout from '../../components/Layout';
 import Link from '../../components/Link';
+import * as styles from './index.styles';
 
 const DownloadIndex = () => (
   <Layout
@@ -13,7 +12,7 @@ const DownloadIndex = () => (
     description={download.pageDescription}
     title={download.pageTitle}
   >
-    <section className="container">
+    <section className={styles.container}>
       <div className="requirements">
         <h2>{download.requirements.title}</h2>
         <ul>
@@ -22,7 +21,7 @@ const DownloadIndex = () => (
           ))}
         </ul>
       </div>
-      <div className="download">
+      <div className={styles.download}>
         <Link to={paths.downloadRotR} className={'button'}>
           {downloadButton.buttonText}
         </Link>

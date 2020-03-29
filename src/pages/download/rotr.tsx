@@ -1,5 +1,3 @@
-import './rotr.scss';
-
 import React from 'react';
 
 import { downloadLinks, modDBButton, slugs } from '../../../data/config';
@@ -10,6 +8,7 @@ import ImageLink from '../../components/ImageLink';
 import Layout from '../../components/Layout';
 import MarkdownWithLink from '../../components/MarkdownWithLink';
 import NewsletterSignup from '../../components/NewsletterSignup';
+import * as styles from './rotr.styles';
 
 const hosts = [
   { platform: 'Mod DB', link: downloadLinks.modDB, imgSrc: modDBButton.download },
@@ -23,9 +22,9 @@ const DownloadRotR = () => (
     description={downloadRotR.pageDescription}
     slug={slugs.downloadRotR}
   >
-    <section className="download-confirm">
+    <section className={styles.downloadConfirm}>
       <h2>{downloadRotR.linkInfo}</h2>
-      <ul className="filehosts">
+      <ul className={styles.filehosts}>
         {hosts.map(({ platform, link, imgSrc }) => (
           <li key={platform}>
             <ImageLink to={link} title={downloadRotR.imageLinkAlt({ platform })}>

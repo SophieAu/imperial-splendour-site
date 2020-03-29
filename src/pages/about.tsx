@@ -1,13 +1,12 @@
-import './about.scss';
-
 import { graphql } from 'gatsby';
-import Img from 'gatsby-image';
 import React from 'react';
 
 import { slugs } from '../../data/config';
 import { about, contributors } from '../../data/strings';
+import Img from '../components/GatsbyImage';
 import Layout from '../components/Layout';
 import { AboutImage, Contributors } from '../types';
+import * as styles from './about.styles';
 
 export const query = graphql`
   query {
@@ -40,8 +39,8 @@ export const query = graphql`
 
 const About: React.FC<{ data: AboutImage }> = ({ data }) => (
   <Layout title={about.pageTitle} description={about.pageDescription} slug={slugs.about}>
-    <p className="about-text">{about.text}</p>
-    <section className="contributors">
+    <p className={styles.aboutText}>{about.text}</p>
+    <section className={styles.contributors}>
       <h2>{about.contributorTitle}</h2>
       <Avatars data={data} />
     </section>
@@ -49,12 +48,12 @@ const About: React.FC<{ data: AboutImage }> = ({ data }) => (
 );
 
 const Avatars: React.FC<{ data: AboutImage }> = ({ data }) => (
-  <ul className="avatars">
+  <ul className={styles.avatars}>
     {Object.keys(contributors).map(id => {
       const key = id as keyof Contributors;
 
       return (
-        <li key={id} className="contributor">
+        <li key={id} className={styles.contributor}>
           <Img
             fixed={data[key].childImageSharp.fixed}
             alt={about.avatarAlt({ name: contributors[key] })}

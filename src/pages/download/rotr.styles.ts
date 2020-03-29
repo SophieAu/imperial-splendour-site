@@ -1,12 +1,14 @@
-@import '../../variables';
+import { css } from 'linaria';
 
-.download-confirm {
+import { screenSize } from '../../_variables.styles';
+
+export const downloadConfirm = css`
   margin: 1rem;
   padding: 4rem 0;
   text-align: center;
-}
+`;
 
-.filehosts {
+export const filehosts = css`
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -28,14 +30,12 @@
     max-height: 3.125rem;
     max-width: 16.25rem;
   }
-}
 
-@media (max-width: $tablet-breakpoint) {
-  .filehosts {
+  @media all ${screenSize.MOBILE} {
     flex-direction: column;
     padding: 1rem 0;
     > * {
       padding: 1rem 0;
     }
   }
-}
+`;

@@ -1,5 +1,3 @@
-import './factions.scss';
-
 import { graphql, navigate } from 'gatsby';
 import React, { useLayoutEffect } from 'react';
 
@@ -8,6 +6,7 @@ import { factions as factionStrings } from '../../data/strings';
 import FlagCarousel from '../components/FlagCarousel';
 import Layout from '../components/Layout';
 import { FactionsResponse } from '../types';
+import * as styles from './factions.styles';
 
 export const query = graphql`
   query {
@@ -42,7 +41,7 @@ const Factions: React.FC<FactionsResponse> = ({ data }) => {
     >
       <section className="factions">
         <FlagCarousel selected={initialIndex} factions={factions} />
-        <article className="faction">
+        <article className={styles.faction}>
           <h1>{initalFaction.frontmatter.title}</h1>
           <div dangerouslySetInnerHTML={{ __html: initalFaction.html }} />
         </article>

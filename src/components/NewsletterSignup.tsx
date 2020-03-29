@@ -4,6 +4,7 @@ import React from 'react';
 
 import { mailchimpForm } from '../../data/config';
 import { newsletterSignup as strings } from '../../data/strings';
+import * as styles from './NewsletterSignup.styles';
 
 const MailChimpForm = () => (
   <div id="mc_embed_signup">
@@ -18,13 +19,13 @@ const MailChimpForm = () => (
       <div id="newsletter-input" aria-hidden="true">
         <input type="text" name={mailchimpForm.inputName} tabIndex={-1} />
       </div>
-      <input className="button" type="submit" value="Subscribe" name="subscribe" />
+      <input className={styles.button} type="submit" value="Subscribe" name="subscribe" />
     </form>
   </div>
 );
 
 const NewsletterSignup = () => (
-  <section className="newsletter">
+  <section className={styles.root}>
     <p>{strings.textQuestion}</p>
     <p>{strings.textCTA}</p>
     <MailChimpForm />

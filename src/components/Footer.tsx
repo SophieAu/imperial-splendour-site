@@ -1,11 +1,11 @@
-import './Footer.scss';
-
+import { cx } from 'linaria';
 import React from 'react';
 
 import { modDBButton, socialMedia } from '../../data/config';
 import facebook from '../../data/img/footer_facebook.svg';
 import twitter from '../../data/img/footer_twitter.svg';
 import { footer } from '../../data/strings';
+import * as styles from './Footer.styles';
 import ImageLink from './ImageLink';
 import MarkdownWithLink from './MarkdownWithLink';
 
@@ -16,11 +16,11 @@ const socialMediaLinks = [
 ];
 
 const Footer = () => (
-  <footer className="footer head-foot">
-    <MarkdownWithLink className="footer-credits">
+  <footer className={cx(styles.footer, 'head-foot')}>
+    <MarkdownWithLink className={styles.credits}>
       {footer.creditsCopyright({ year: new Date().getFullYear() })}
     </MarkdownWithLink>
-    <ul className="footer-social-media-links">
+    <ul className={styles.socialMedia}>
       {socialMediaLinks.map(platform => (
         <li key={platform.link}>
           <ImageLink to={platform.link} title={footer.socialImgAlt({ platform: platform.name })}>

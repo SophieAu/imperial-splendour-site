@@ -1,11 +1,10 @@
-import './PostHeader.scss';
-
 import React from 'react';
 
 import { slugs } from '../../data/config';
 import { postHeader } from '../../data/strings';
 import { PostFrontmatter } from '../types';
 import Link from './Link';
+import * as styles from './PostHeader.styles';
 
 interface Props extends PostFrontmatter {
   slug?: string;
@@ -13,7 +12,7 @@ interface Props extends PostFrontmatter {
 }
 
 const PostHeader: React.FC<Props> = props => (
-  <header className="post-header">
+  <header className={styles.root}>
     <h1>
       {props.isHeaderClickable && props.slug ? (
         <Link to={`${slugs.blog}/${props.slug}`}>{props.title}</Link>
@@ -21,8 +20,8 @@ const PostHeader: React.FC<Props> = props => (
         <>{props.title}</>
       )}
     </h1>
-    <p className="date">{props.formattedDate}</p>
-    <p className="author">{postHeader.author({ author: props.author })}</p>
+    <p className={styles.date}>{props.formattedDate}</p>
+    <p className={styles.author}>{postHeader.author({ author: props.author })}</p>
   </header>
 );
 

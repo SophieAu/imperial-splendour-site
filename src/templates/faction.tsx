@@ -1,5 +1,3 @@
-import '../pages/factions.scss';
-
 import { graphql } from 'gatsby';
 import React from 'react';
 
@@ -7,6 +5,7 @@ import { slugs } from '../../data/config';
 import { factions as factionStrings } from '../../data/strings';
 import FlagCarousel from '../components/FlagCarousel';
 import Layout from '../components/Layout';
+import * as styles from '../pages/factions.styles';
 import { FactionsResponse, SlugContext } from '../types';
 
 export const query = graphql`
@@ -38,7 +37,7 @@ const Faction: React.FC<Props> = ({ data, pageContext: { slug } }) => {
     >
       <section className="factions">
         <FlagCarousel selected={index} factions={factions} />
-        <article className="faction">
+        <article className={styles.faction}>
           <h1>{frontmatter.title}</h1>
           <div dangerouslySetInnerHTML={{ __html: html }} />
         </article>
