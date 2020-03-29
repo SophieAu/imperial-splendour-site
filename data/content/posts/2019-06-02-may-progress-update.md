@@ -9,9 +9,9 @@ As you may have noticed we aimed to release the Nothern Wars Update in April or 
  
 But we didn't do nothing, here are 3 new tech-trees which will be in the next update:
 
-## Sachsen army tech-tree:
+## Sachsen Army Tech Tree:
 
-<img src="https://media.moddb.com/images/members/3/2784/2783391/profile/Saxony_Army_Techtree.png" alt="Saxony Army Techtree" width="200" />
+![Saxony Army Tech Tree](https://media.moddb.com/images/members/3/2784/2783391/profile/Saxony_Army_Techtree.png)
 
 1.1 Exerzierreglement der Infanterie (infantry drill-book)  
 1.2 Kadettenkorps (cadet-corps)  
@@ -33,9 +33,9 @@ But we didn't do nothing, here are 3 new tech-trees which will be in the next up
 5.7 Light Infantry Tactics  
 6.7 Scharfschützen (sharpshooters, light infantry units)
  
-## Denmark army tech-tree:
+## Denmark Army Tech Tree:
 
-<img src="https://media.moddb.com/images/members/3/2784/2783391/profile/Denmark_Army_Techtree.png" alt="Denmark Army Techtree" width="200" />
+![Denmark Army Tech Tree](https://media.moddb.com/images/members/3/2784/2783391/profile/Denmark_Army_Techtree.png)
 
 1.1 Great Northern War Army  
 1.3 Flintlock  
@@ -55,9 +55,9 @@ But we didn't do nothing, here are 3 new tech-trees which will be in the next up
 6.5 Landev&aelig;rn (militia)  
 6.7 Skarpskytter ("sharpshooters", light infantry companies)  
  
-## Denmark philosophy tech-tree:
+## Denmark Philosophy Tech Tree:
 
-<img src="https://media.moddb.com/images/members/3/2784/2783391/profile/Denmark_Philo_Techtree.png" alt="Denmark Philo Techtree" width="200" />
+![Denmark Philosophy Tech Tree](https://media.moddb.com/images/members/3/2784/2783391/profile/Denmark_Philo_Techtree.png)
 
 1.2 Social Contract  
 1.3 [Kongeloven](https://da.wikipedia.org/wiki/Kongeloven) ("king's law", Danish absolutism)  

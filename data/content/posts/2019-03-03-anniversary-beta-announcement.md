@@ -139,7 +139,6 @@ Following the culture support **130** (recruitable) historical characters have b
 
 ### Saxony:
 
-
 #### Government
 ![](https://steamuserimages-a.akamaihd.net/ugc/970993917491782388/781FF971387DC572121917DD8901E5F593E63BD5/)
 
@@ -156,7 +155,7 @@ Following the culture support **130** (recruitable) historical characters have b
 11. [Detlef Karl Graf von Einsiedel](https://de.wikipedia.org/wiki/Detlev_Carl_von_Einsiedel)
 
 #### Generals
-![](https://steamuserimages-a.akamaihd.net/ugc/970993917492692438/958D5B7E62B01791DD22969DBC68BB92048D76E9/)<br /> 
+![](https://steamuserimages-a.akamaihd.net/ugc/970993917492692438/958D5B7E62B01791DD22969DBC68BB92048D76E9/)
 
 1. [Ludwig Ernst von Benckendorf](https://de.wikipedia.org/wiki/Ludwig_Ernst_von_Benkendorf) (starting general)
 2. [Prinz Friedrich Ferdinand Constantin von Sachsen-Weimar](https://en.wikipedia.org/wiki/Prince_Frederick_Ferdinand_Constantin_of_Saxe-Weimar-Eisenach) (recruit before 1793) **NEW**
@@ -330,7 +329,7 @@ Following the culture support **130** (recruitable) historical characters have b
 ### Sweden:
 
 #### Government
-![](https://steamuserimages-a.akamaihd.net/ugc/957482315964664065/B73CA252FF6274653ACE8F02CFC7EAB769C4A6C1/)<br />
+![](https://steamuserimages-a.akamaihd.net/ugc/957482315964664065/B73CA252FF6274653ACE8F02CFC7EAB769C4A6C1/)
 
 1. Kung: [Gustav III](https://en.wikipedia.org/wiki/Gustav_III_of_Sweden)
 2. Kanslipresident: [Ulrik Scheffer](https://sv.wikipedia.org/wiki/Ulrik_Scheffer)
