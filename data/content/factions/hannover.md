@@ -14,71 +14,71 @@ But do not underestimate the strength of the Hanoverian army. At the end of the 
 Today, the cavalry rides well bred horses and has a high level of training as well as the artillery and infantry. The training is even provided by the officers and not the NCO’s as in other factions.
 How well the Hanoverian can fight they have shown recently in Gibraltar under Elliott and in India. In addition brilliant young officers such as Scharnhorst or Charles von Alten are the future of the Hanoverian army if you are willing to replace the old officer corps.
 
-So you have to decide: shall you take the risk and leading Hannover to independence from Great Britain or will you stay loyal and may be dragged into the next war for Britain’s glory while staying under Britannia's protection?<br/>
+So you have to decide: shall you take the risk and leading Hannover to independence from Great Britain or will you stay loyal and may be dragged into the next war for Britain’s glory while staying under Britannia's protection?
 
-##Historical characters:
-###Government: 
+## Historical characters:
+### Government
 ![](https://steamuserimages-a.akamaihd.net/ugc/957481546474614277/0CC705B7950F74FCC96DF1A3ED9BB4A4F703EA03/)
 
-1. Churfürst: [George III](https://en.wikipedia.org/wiki/George_III_of_the_United_Kingdom)
-2. Geheimer Rat: [Carl Rud. Aug. Graf von Kielmannsegge](https://de.wikipedia.org/wiki/Carl_Rudolph_August_von_Kielmannsegge)
-3. Geheimer Rat und Kammerpräsident: [Detlev Alexander von Wenckstern](https://de.wikipedia.org/wiki/Detlev_Alexander_von_Wenckstern)
-4. Geheimer Rat: [Ludwig Friedrich von Beulwitz](https://de.wikipedia.org/wiki/Ludwig_Friedrich_von_Beulwitz)
-5. Geheimer Rat: [Johann Friedrich Karl von Alvensleben](https://de.wikipedia.org/wiki/Johann_Friedrich_Karl_von_Alvensleben)
-6. Geheimer Rat: [Christian Ludwig August von Arnswaldt](https://de.wikipedia.org/wiki/Christian_Ludwig_August_von_Arnswaldt)
-7. <a href="https://de.wikipedia.org/wiki/Wilhelm_August_Rudloff" target="_blank" rel="noopener">Wilhelm August Rudloff</a>
-8. <a href="https://de.wikipedia.org/wiki/Friedrich_Ludwig_von_Berlepsch" target="_blank" rel="noopener">Friedrich Ludwig von Berlepsch</a>
-9. <a href="https://de.wikipedia.org/wiki/Klaus_von_der_Decken_(Minister)" target="_blank" rel="noopener">Claus von der Decken</a>
-10. <a href="https://plato.stanford.edu/entries/august-rehberg/" target="_blank" rel="noopener"> August Wilhelm Rehberg</a>
-11. <a href="https://de.wikipedia.org/wiki/Georg_Friedrich_Brandes" target="_blank" rel="noopener">Georg Friedrich Brandes</a>
+1. Churfürst [George III](https://en.wikipedia.org/wiki/George_III_of_the_United_Kingdom)
+2. Geheimer Rat [Carl Rud. Aug. Graf von Kielmannsegge](https://de.wikipedia.org/wiki/Carl_Rudolph_August_von_Kielmannsegge)
+3. Geheimer Rat und Kammerpräsident [Detlev Alexander von Wenckstern](https://de.wikipedia.org/wiki/Detlev_Alexander_von_Wenckstern)
+4. Geheimer Rat [Ludwig Friedrich von Beulwitz](https://de.wikipedia.org/wiki/Ludwig_Friedrich_von_Beulwitz)
+5. Geheimer Rat [Johann Friedrich Karl von Alvensleben](https://de.wikipedia.org/wiki/Johann_Friedrich_Karl_von_Alvensleben)
+6. Geheimer Rat [Christian Ludwig August von Arnswaldt](https://de.wikipedia.org/wiki/Christian_Ludwig_August_von_Arnswaldt)
+7. [Wilhelm August Rudloff](https://de.wikipedia.org/wiki/Wilhelm_August_Rudloff)
+8. [Friedrich Ludwig von Berlepsch](https://de.wikipedia.org/wiki/Friedrich_Ludwig_von_Berlepsch)
+9. [Claus von der Decken](https://de.wikipedia.org/wiki/Klaus_von_der_Decken_(Minister)) **NEW**
+10. [August Wilhelm Rehberg](https://plato.stanford.edu/entries/august-rehberg/)
+11. [Georg Friedrich Brandes](https://de.wikipedia.org/wiki/Georg_Friedrich_Brandes)
 
-###Generals:
+### Generals
 ![](https://steamuserimages-a.akamaihd.net/ugc/957481546473282678/64AF02C7075849838A08F19B4A6F5A4ABB1C9373/)
 
-1. <a href="https://en.wikipedia.org/wiki/Wilhelm_von_Freytag" target="_blank" rel="noopener">Heinrich Wilhelm von Freytag</a> (starting general)
-2. <a href="https://en.wikipedia.org/wiki/August_de_la_Motte" target="_blank" rel="noopener">August de la Motte</a> (recruit before 1788)
-3. <a href="https://en.wikipedia.org/wiki/Johann_Ludwig,_Reichsgraf_von_Wallmoden-Gimborn" target="_blank" rel="noopener">Johann Ludwig, Graf von Wallmoden-Gimborn</a> (no recruitment limitations)
-4. <a href="https://de.wikipedia.org/wiki/Rudolf_von_Hammerstein" target="_blank" rel="noopener">Rudolf von Hammerstein</a> (no recruitment limitations)
-5. <a href="https://en.wikipedia.org/wiki/Duke_Ernest_Gottlob_of_Mecklenburg" target="_blank" rel="noopener">Ernst, Herzog zu Mecklenburg</a> (do not recruit before 1787)
-6. <a href="https://en.wikipedia.org/wiki/Christoph_August_von_Wangenheim" target="_blank" rel="noopener">Christoph August von Wangenheim</a> (do not recruit before 1786)
-7. <a href="https://en.wikipedia.org/wiki/Gerhard_von_Scharnhorst" target="_blank" rel="noopener">Gerhard Scharnhorst</a> (recruit before 1800)
-8. <a href="https://en.wikipedia.org/wiki/Charles,_Count_Alten" target="_blank" rel="noopener">Carl von Alten</a> (recruitable from 1784 onwards)
-9. <a href="https://en.wikipedia.org/wiki/Ernest_Augustus,_King_of_Hanover" target="_blank" rel="noopener">Ernst August von Großbrittannien</a> (recruitable from 1791 onwards)
-10. <a href="https://de.wikipedia.org/wiki/Peter_Joseph_du_Plat_%28Offizier%29" target="_blank" rel="noopener">Peter Joseph du Plat</a> (no recruitment limitations)
-11. <a href="https://de.wikipedia.org/wiki/Rudolph_Albrecht_Bodecker" target="_blank" rel="noopener">Rudolph von Bodecker</a> (no recruitment limitations)
-12. <a href="https://de.wikipedia.org/wiki/Christian_Friedrich_Wilhelm_von_Ompteda" target="_blank" rel="noopener">Christian von Ompteda</a> (recruitable from 1785 onwards)
+1. [Heinrich Wilhelm von Freytag](https://en.wikipedia.org/wiki/Wilhelm_von_Freytag) (starting general)
+2. [August de la Motte](https://en.wikipedia.org/wiki/August_de_la_Motte) (recruit before 1788)
+3. [Johann Ludwig, Graf von Wallmoden-Gimborn](https://en.wikipedia.org/wiki/Johann_Ludwig,_Reichsgraf_von_Wallmoden-Gimborn) (no recruitment limitations)
+4. [Rudolf von Hammerstein](https://de.wikipedia.org/wiki/Rudolf_von_Hammerstein) (no recruitment limitations)
+5. [Ernst, Herzog zu Mecklenburg](https://en.wikipedia.org/wiki/Duke_Ernest_Gottlob_of_Mecklenburg) (do not recruit before 1787)
+6. [Christoph August von Wangenheim](https://en.wikipedia.org/wiki/Christoph_August_von_Wangenheim) (do not recruit before 1786)
+7. [Gerhard Scharnhorst](https://en.wikipedia.org/wiki/Gerhard_von_Scharnhorst) (recruit before 1800)
+8. [Carl von Alten](https://en.wikipedia.org/wiki/Charles,_Count_Alten) (recruitable from 1784 onwards)
+9. [Ernst August von Großbrittannien](https://en.wikipedia.org/wiki/Ernest_Augustus,_King_of_Hanover) (recruitable from 1791 onwards)
+10. [Peter Joseph du Plat](https://de.wikipedia.org/wiki/Peter_Joseph_du_Plat_%28Offizier%29) (no recruitment limitations)
+11. [Rudolph von Bodecker](https://de.wikipedia.org/wiki/Rudolph_Albrecht_Bodecker) (no recruitment limitations)
+12. [Christian von Ompteda](https://de.wikipedia.org/wiki/Christian_Friedrich_Wilhelm_von_Ompteda) (recruitable from 1785 onwards)
 
-###Admirals:
+#### Admirals
 ![](https://steamuserimages-a.akamaihd.net/ugc/957481546479949883/3B7B042286C3156302E39047B1D36047495C1C14/)
 
-1. <a href="https://de.wikipedia.org/wiki/Christian_Gottlieb_Daniel_M%C3%BCller" target="_blank" rel="noopener">Christian Gottlieb Daniel Müller</a> (starting admiral)
-2. <a href="https://de.wikipedia.org/wiki/Elbzollfregatte#K%C3%B6nigreich_Hannover" target="_blank" rel="noopener">Joachim Deetjen</a> (no recruitment limitations)
+1. [Christian Gottlieb Daniel Müller](https://de.wikipedia.org/wiki/Christian_Gottlieb_Daniel_M%C3%BCller) (starting admiral)
+2. [Joachim Deetjen](https://de.wikipedia.org/wiki/Elbzollfregatte#K%C3%B6nigreich_Hannover) (no recruitment limitations) **NEW**
 
-###Scholars: 
+#### Scholars
 ![](https://steamuserimages-a.akamaihd.net/ugc/970993441120077445/F6F80866C951737A69B620114DB93148E0248136/)
 
-1. <a href="https://en.wikipedia.org/wiki/Georg_Christoph_Lichtenberg" target="_blank" rel="noopener">Georg Christoph Lichternberg</a> (starting gentleman)
-2. <a href="https://en.wikipedia.org/wiki/Christian_Gottlob_Heyne" target="_blank" rel="noopener">Christian Gottlob Heyne</a> (starting gentleman)
-3. <a href="https://en.wikipedia.org/wiki/Adolph_Freiherr_Knigge" target="_blank" rel="noopener">Adolph Freyherr Knigge</a>
-4. <a href="https://en.wikipedia.org/wiki/Johann_Friedrich_Blumenbach" target="_blank" rel="noopener">Johann Friedrich Blumenbach</a>
-5. <a href="https://de.wikipedia.org/wiki/Georg_Ludwig_B%C3%B6hmer" target="_blank" rel="noopener">Georg Ludwig Böhmer</a>
-6. <a href="https://en.wikipedia.org/wiki/Abraham_Gotthelf_K%C3%A4stner" target="_blank" rel="noopener">Abraham Gotthelf Kästner</a>
-7. <a href="https://en.wikipedia.org/wiki/Johann_Stephan_P%C3%BCtter" target="_blank" rel="noopener">Johann Stephan Pütter</a>
-8. <a href="https://en.wikipedia.org/wiki/August_Ludwig_von_Schl%C3%B6zer" target="_blank" rel="noopener">August Ludwig Schlözer</a>
-9. <a href="https://en.wikipedia.org/wiki/Johann_Georg_Heinrich_Feder" target="_blank" rel="noopener">Johann Georg Heinrich Feder</a>
-10. <a href="https://en.wikipedia.org/wiki/Friedrich_Benjamin_Osiander" target="_blank" rel="noopener">Friedrich Benjamin Osiander</a>
-11. <a href="https://en.wikipedia.org/wiki/Therese_Huber" target="_blank" rel="noopener">Therese Huber</a>
-12. <a href="https://en.wikipedia.org/wiki/Dorothea_von_Rodde-Schl%C3%B6zer" target="_blank" rel="noopener">Dorothea Schlözer</a>
-13. <a href="https://en.wikipedia.org/wiki/Johann_Friedrich_Gmelin" target="_blank" rel="noopener">Johann Friedrich Gmelin</a>
-14. <a href="https://en.wikipedia.org/wiki/Gustav_Hugo" target="_blank" rel="noopener">Gustav Hugo</a>
-15. <a href="https://en.wikipedia.org/wiki/Arnold_Hermann_Ludwig_Heeren" target="_blank" rel="noopener">Arnold Hermann Ludwig Heeren</a>
-16. <a href="https://de.wikipedia.org/wiki/Theodor_Hagemann" target="_blank" rel="noopener">Theodor Hagemann</a>
-17. <a href="https://de.wikipedia.org/wiki/Philippine_von_Reden" target="_blank" rel="noopener">Philippine von Reden</a>
+1. [Georg Christoph Lichternberg](https://en.wikipedia.org/wiki/Georg_Christoph_Lichtenberg) (starting gentleman)
+2. [Christian Gottlob Heyne](https://en.wikipedia.org/wiki/Christian_Gottlob_Heyne) (starting gentleman)
+3. [Adolph Freyherr Knigge](https://en.wikipedia.org/wiki/Adolph_Freiherr_Knigge) **NEW**
+4. [Johann Friedrich Blumenbach](https://en.wikipedia.org/wiki/Johann_Friedrich_Blumenbach)
+5. [Georg Ludwig Böhmer](https://de.wikipedia.org/wiki/Georg_Ludwig_B%C3%B6hmer)
+6. [Abraham Gotthelf Kästner](https://en.wikipedia.org/wiki/Abraham_Gotthelf_K%C3%A4stner)
+7. [Johann Stephan Pütter](https://en.wikipedia.org/wiki/Johann_Stephan_P%C3%BCtter)
+8. [August Ludwig Schlözer](https://en.wikipedia.org/wiki/August_Ludwig_von_Schl%C3%B6zer)
+9. [Johann Georg Heinrich Feder](https://en.wikipedia.org/wiki/Johann_Georg_Heinrich_Feder)
+10. [Friedrich Benjamin Osiander](https://en.wikipedia.org/wiki/Friedrich_Benjamin_Osiander) **NEW**
+11. [Therese Huber](https://en.wikipedia.org/wiki/Therese_Huber) **NEW**
+12. [Dorothea Schlözer](https://en.wikipedia.org/wiki/Dorothea_von_Rodde-Schl%C3%B6zer)
+13. [Johann Friedrich Gmelin](https://en.wikipedia.org/wiki/Johann_Friedrich_Gmelin) **NEW**
+14. [Gustav Hugo](https://en.wikipedia.org/wiki/Gustav_Hugo) **NEW**
+15. [Arnold Hermann Ludwig Heeren](https://en.wikipedia.org/wiki/Arnold_Hermann_Ludwig_Heeren) **NEW**
+16. [Theodor Hagemann](https://de.wikipedia.org/wiki/Theodor_Hagemann) **NEW**
+17. [Philippine von Reden](https://de.wikipedia.org/wiki/Philippine_von_Reden) **NEW**
 
-###Envoys:
-![](https://steamuserimages-a.akamaihd.net/ugc/957481546479365170/8E1F2F7651FC48BD37E32E1019867F2112852726/)
+#### Envoys
+![](https://steamuserimages-a.akamaihd.net/ugc/957481546479365170/8E1F2F7651FC48BD37E32E1019867F2112852726/) 
 
-1. <a href="https://en.wikipedia.org/wiki/Dietrich_Heinrich_Ludwig_von_Ompteda" target="_blank" rel="noopener">D.(ietrich) H.(einrich) L.(udwig) Freyherr von Ompteda</a>
-2. <a href="https://en.wikipedia.org/wiki/Basilius_von_Ramdohr" target="_blank" rel="noopener">Basilius von Ramdohr</a>
-3. <a href="https://en.wikipedia.org/wiki/Ernst_zu_M%C3%BCnster" target="_blank" rel="noopener">Ernst Graf zu Münster</a>
-4. <a href="https://de.wikipedia.org/wiki/Joachim_von_Schwarzkopf" target="_blank" rel="noopener">Joachim von Schwarzkopf</a>
+1. [D.(ietrich) H.(einrich) L.(udwi)g Freyherr von Ompteda](https://en.wikipedia.org/wiki/Dietrich_Heinrich_Ludwig_von_Ompteda) **NEW**
+2. [Basilius von Ramdohr](https://en.wikipedia.org/wiki/Basilius_von_Ramdohr) **NEW**
+3. [Ernst Graf zu Münster](https://en.wikipedia.org/wiki/Ernst_zu_M%C3%BCnster) **NEW**
+4. [Joachim von Schwarzkopf](https://de.wikipedia.org/wiki/Joachim_von_Schwarzkopf) **NEW**
