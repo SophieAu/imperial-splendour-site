@@ -5,8 +5,100 @@ author:
   - QHH
 excerpt: A little update on the progress on the Northern Wars Update.
 ---
-<p>As you may have noticed we aimed to release the Nothern Wars Update in April or May. You might have also noticed that this didn't happen. We are sorry but RL got in between our plans. In addition creating the tech-trees takes longer than expected because none of us can speak Danish or Swedish (although German can be helpful in understanding Danish if you speak our the words aloud.<br /> <br />But we didn't do nothing, here are 3 new tech-trees which will be in the next update:<br /> <br /><strong>Sachsen army tech-tree:</strong><br /> <br /> <img src="https://media.moddb.com/images/members/3/2784/2783391/profile/Saxony_Army_Techtree.png" alt="Saxony Army Techtree" width="200" height="456" /><br /> <br />1.1 Exerzierreglement der Infanterie (infantry drill-book)<br />1.2 Kadettenkorps (cadet-corps)<br />1.3 Flintlock<br />1.4 Exerzierreglement der Cavallerie (cavalry drill-book)<br />1.6 Conscription<br />1.7 Cartridge<br />2.1 August des Starken Exerzierreglement der Infanterie (infantry drill-book)<br />2.3 Steel Ramrod<br />2.4 August des Starken Exerzierreglement der Cavallerie (cavalry drill-book)<br />2.5 Kleiderverordnung (clothing regulations)<br />2.6 Military Exercises<br />2.7 Standardized Firearms<br />3.1 Grenadierkompanien (grenadier companies)<br />3.7 Freicorps<br />4.5 Prinz Xaver&lsquo;s Exerzierreglement der Infanterie (infantry drill-book)<br />4.8 Prinz Xaver&lsquo;s Exerzierreglement der Cavalerie (cavalry drill-book)<br />5.5 Improved armament<br />5.7 Light Infantry Tactics<br />6.7 Scharfsch&uuml;tzen (sharpshooters, light infantry units)<br /> <br /><strong>Denmark army tech-tree:</strong><br /> <br /> <img src="https://media.moddb.com/images/members/3/2784/2783391/profile/Denmark_Army_Techtree.png" alt="Denmark Army Techtree" width="200" height="456" /><br /> <br />1.1 Great Northern War Army<br />1.3 Flintlock<br />1.5 Cadet-Corps<br />1.6 Cartridge<br />2.3 Steel Ramrod<br />2.5 Christian VI&lsquo; Infantry Reform<br />2.7 Standardized Firearms<br />2.8 Christian VI&lsquo; Cavalry Reform<br />3.7 Frey=Corps<br />4.5 Saint-Germain&rsquo;s Infantry Reform<br />4.8 Saint-Germain&rsquo;s Cavalry Reform<br />5.3 Light Infantry Tactics<br />5.7 J&aelig;ger (Riflemen recruitment)<br />6.3 Batailloner lette Infanterier (light infantry battalions)<br />6.4 lette Kavallerier (light cavalry)<br />6.5 Landev&aelig;rn (militia)<br />6.7 Skarpskytter ("sharpshooters", light infantry companies)<br /> <br /><strong>Denmark philosophy tech-tree:</strong><br /> <br /> <img src="https://media.moddb.com/images/members/3/2784/2783391/profile/Denmark_Philo_Techtree.png" alt="Denmark Philo Techtree" width="200" height="380" /><br /> <br />1.2 Social Contract<br />1.3 <a href="https://da.wikipedia.org/wiki/Kongeloven" target="_blank" rel="noopener">Kongeloven</a> ("king's law", Danish absolutism)<br />1.4 Mercantilism<br />1.5 Enlightenment<br />1.7 Abolition of the Vornedskab (Abolition of a Danish form of serfdom)<br />2.2 Separation of Powers<br />2.5 Encyklop&aelig;di<br />2.6 Sentimentalism<br />2.7 <a href="https://en.wikipedia.org/wiki/Stavnsb%C3%A5nd" target="_blank" rel="noopener">Stavnsb&aring;nd</a> (Introduction of a new kind of serfdom to provide enough farm workers and soldiers who were recruited from the peasantry)<br />2.8 <a href="https://en.wikipedia.org/wiki/Danish_Asia_Company" target="_blank" rel="noopener">Asiatisk Kompagni</a> (Danish Asia Company)<br />3.1 Naturhistorie (Natural History)<br />3.2 <a href="https://en.wikipedia.org/wiki/Royal_Danish_Academy_of_Fine_Arts" target="_blank" rel="noopener">Det Kongelige Danske Skildre-, Billedhugger- og Bygnings-Academie i Ki&oslash;benhavn</a> (Royal Danish Academy of Arts)<br />3.3 Naturret (Natural Law)<br />3.5 Kongelige Videnskabernes Selskab (Royal Academy of Sciences)<br />3.8 <a href="https://en.wikipedia.org/wiki/Royal_Copenhagen" target="_blank" rel="noopener">Porcelain</a> <br/> 4.3 <a href="https://en.wikipedia.org/wiki/Johann_Friedrich_Struensee#In_control_of_the_government" target="_blank" rel="noopener">Struensee&lsquo;s Reforms</a><br />4.4 National Debt<br />4.5 Scientific Method<br />4.7 <a href="https://en.wikipedia.org/wiki/Ove_H%C3%B8egh-Guldberg" target="_blank" rel="noopener">Revocation of the Struensee&lsquo;s Reforms</a><br />4.8 Free Trade Doctrine<br />5.3 Abolition of the Stavnsb&aring;nd<br />5.4 Classical Economy<br />5.6 <a href="https://en.wikipedia.org/wiki/Danish_Golden_Age" target="_blank" rel="noopener">Danish Golden Age</a></p>
-<hr />
-<p><br />Furthermore myfate<a href="https://www.twcenter.net/forums/reputation.php?do=addreputation&amp;p=15718965" target="_blank" rel="noopener"><img src="https://i.imgur.com/gPHOpAy.jpg" alt="" /></a> is also busy doing a lot of bug fixing! Thanks again for all those reports, without them fixing the bugs wouldn't be possible. At last PikeStance<a href="https://www.twcenter.net/forums/reputation.php?do=addreputation&amp;p=13762448" target="_blank" rel="noopener"><img src="https://i.imgur.com/gPHOpAy.jpg" alt="" /></a> is working on the new AI.<br /> <br />Thank you for you patience!<br /> <br />Visit us</p>
-<div style="text-align: center;">on <a href="http://www.twcenter.net/forums/forumdisplay.php?1138-Imperial-Splendour" target="blank" rel="noopener">TWCenter</a>, <a href="https://www.facebook.com/imperialsplendour/" target="_blank" rel="noopener">facebook</a>, <a href="https://twitter.com/SplendourTeam" target="_blank" rel="noopener">twitter</a></div> and <a href="https://www.moddb.com/mods/imperial-splendour" title="View Imperial Splendour on Mod DB"><img src="https://button.moddb.com/popularity/medium/mods/20800.png" alt="Imperial Splendour"></a>
-<p><br />PS: Yesterday was the <a href="https://en.wikipedia.org/wiki/Glorious_First_of_June" target="_blank" rel="noopener">Glorious First of June!</a></p>
+As you may have noticed we aimed to release the Nothern Wars Update in April or May. You might have also noticed that this didn't happen. We are sorry but RL got in between our plans. In addition creating the tech-trees takes longer than expected because none of us can speak Danish or Swedish (although German can be helpful in understanding Danish if you speak our the words aloud.
+ 
+But we didn't do nothing, here are 3 new tech-trees which will be in the next update:
+
+## Sachsen army tech-tree:
+
+<img src="https://media.moddb.com/images/members/3/2784/2783391/profile/Saxony_Army_Techtree.png" alt="Saxony Army Techtree" width="200" />
+
+1.1 Exerzierreglement der Infanterie (infantry drill-book)  
+1.2 Kadettenkorps (cadet-corps)  
+1.3 Flintlock  
+1.4 Exerzierreglement der Cavallerie (cavalry drill-book)  
+1.6 Conscription  
+1.7 Cartridge  
+2.1 August des Starken Exerzierreglement der Infanterie (infantry drill-book)  
+2.3 Steel Ramrod  
+2.4 August des Starken Exerzierreglement der Cavallerie (cavalry drill-book)  
+2.5 Kleiderverordnung (clothing regulations)  
+2.6 Military Exercises  
+2.7 Standardized Firearms  
+3.1 Grenadierkompanien (grenadier companies)  
+3.7 Freicorps  
+4.5 Prinz Xaver's Exerzierreglement der Infanterie (infantry drill-book)  
+4.8 Prinz Xaver's Exerzierreglement der Cavalerie (cavalry drill-book)  
+5.5 Improved armament  
+5.7 Light Infantry Tactics  
+6.7 Scharfschützen (sharpshooters, light infantry units)
+ 
+## Denmark army tech-tree:
+
+<img src="https://media.moddb.com/images/members/3/2784/2783391/profile/Denmark_Army_Techtree.png" alt="Denmark Army Techtree" width="200" />
+
+1.1 Great Northern War Army  
+1.3 Flintlock  
+1.5 Cadet-Corps  
+1.6 Cartridge  
+2.3 Steel Ramrod  
+2.5 Christian VI' Infantry Reform  
+2.7 Standardized Firearms  
+2.8 Christian VI' Cavalry Reform  
+3.7 Frey=Corps  
+4.5 Saint-Germain's Infantry Reform  
+4.8 Saint-Germain's Cavalry Reform  
+5.3 Light Infantry Tactics  
+5.7 J&aelig;ger (Riflemen recruitment)  
+6.3 Batailloner lette Infanterier (light infantry battalions)  
+6.4 lette Kavallerier (light cavalry)  
+6.5 Landev&aelig;rn (militia)  
+6.7 Skarpskytter ("sharpshooters", light infantry companies)  
+ 
+## Denmark philosophy tech-tree:
+
+<img src="https://media.moddb.com/images/members/3/2784/2783391/profile/Denmark_Philo_Techtree.png" alt="Denmark Philo Techtree" width="200" />
+
+1.2 Social Contract  
+1.3 [Kongeloven](https://da.wikipedia.org/wiki/Kongeloven) ("king's law", Danish absolutism)  
+1.4 Mercantilism  
+1.5 Enlightenment  
+1.7 Abolition of the Vornedskab (Abolition of a Danish form of serfdom)  
+2.2 Separation of Powers  
+2.5 Encyklop&aelig;di  
+2.6 Sentimentalism  
+2.7 [Stavnsb&aring;nd](https://en.wikipedia.org/wiki/Stavnsb%C3%A5nd) (Introduction of a new kind of serfdom to provide enough farm workers and soldiers who were recruited from the peasantry)  
+2.8 [Asiatisk Kompagni](https://en.wikipedia.org/wiki/Danish_Asia_Company) (Danish Asia Company)  
+3.1 Naturhistorie (Natural History)  
+3.2 [Det Kongelige Danske Skildre-, Billedhugger- og Bygnings-Academie i Ki&oslash;benhavn](https://en.wikipedia.org/wiki/Royal_Danish_Academy_of_Fine_Arts) (Royal Danish Academy of Arts)  
+3.3 Naturret (Natural Law)  
+3.5 Kongelige Videnskabernes Selskab (Royal Academy of Sciences)  
+3.8 [Porcelain](https://en.wikipedia.org/wiki/Royal_Copenhagen)  
+4.3 [Struensee's Reforms](https://en.wikipedia.org/wiki/Johann_Friedrich_Struensee#In_control_of_the_government)  
+4.4 National Debt  
+4.5 Scientific Method  
+4.7 [Revocation of the Struensee's Reforms](https://en.wikipedia.org/wiki/Ove_H%C3%B8egh-Guldberg)  
+4.8 Free Trade Doctrine  
+5.3 Abolition of the Stavnsb&aring;nd  
+5.4 Classical Economy  
+5.6 [Danish Golden Age](https://en.wikipedia.org/wiki/Danish_Golden_Age)
+
+---
+
+Furthermore myfate [![](https://i.imgur.com/gPHOpAy.jpg)](https://www.twcenter.net/forums/reputation.php?do=addreputation&amp;p=15718965) is also busy doing a lot of bug fixing! Thanks again for all those reports, without them fixing the bugs wouldn't be possible. At last PikeStance[![](https://i.imgur.com/gPHOpAy.jpg)](https://www.twcenter.net/forums/reputation.php?do=addreputation&amp;p=13762448) is working on the new AI.
+
+### &nbsp;
+
+Thank you for you patience!
+ 
+Visit us on 
+
+<center>
+
+[TWCenter](http://www.twcenter.net/forums/forumdisplay.php?1138-Imperial-Splendour), [Facebook](https://www.facebook.com/imperialsplendour/), [Twitter](https://twitter.com/SplendourTeam) and [![View Imperial Splendour on Mod DB](https://button.moddb.com/popularity/medium/mods/20800.png)](https://www.moddb.com/mods/imperial-splendour)
+
+</center>
+
+### &nbsp;
+
+PS: Yesterday was the [](https://en.wikipedia.org/wiki/Glorious_First_of_June)Glorious First of June!</a></p>
