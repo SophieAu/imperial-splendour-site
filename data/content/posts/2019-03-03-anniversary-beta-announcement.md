@@ -250,7 +250,7 @@ Following the culture support **130** (recruitable) historical characters have b
 #### Envoys
 ![](https://steamuserimages-a.akamaihd.net/ugc/957481546479365170/8E1F2F7651FC48BD37E32E1019867F2112852726/) 
 
-1. [Dietrich Heinrich Ludwig Freyherr von Ompteda](https://en.wikipedia.org/wiki/Dietrich_Heinrich_Ludwig_von_Ompteda) **NEW**
+1. [D.(ietrich) H.(einrich) L.(udwi)g Freyherr von Ompteda](https://en.wikipedia.org/wiki/Dietrich_Heinrich_Ludwig_von_Ompteda) **NEW**
 2. [Basilius von Ramdohr](https://en.wikipedia.org/wiki/Basilius_von_Ramdohr) **NEW**
 3. [Ernst Graf zu Münster](https://en.wikipedia.org/wiki/Ernst_zu_M%C3%BCnster) **NEW**
 4. [Joachim von Schwarzkopf](https://de.wikipedia.org/wiki/Joachim_von_Schwarzkopf) **NEW**
