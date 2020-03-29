@@ -1,5 +1,4 @@
-import './NewsletterSignup.scss';
-
+import { cx } from 'linaria';
 import React from 'react';
 
 import { mailchimpForm } from '../../data/config';
@@ -19,7 +18,12 @@ const MailChimpForm = () => (
       <div id="newsletter-input" aria-hidden="true">
         <input type="text" name={mailchimpForm.inputName} tabIndex={-1} />
       </div>
-      <input className={styles.button} type="submit" value="Subscribe" name="subscribe" />
+      <input
+        className={cx(styles.button, 'button')}
+        type="submit"
+        value="Subscribe"
+        name="subscribe"
+      />
     </form>
   </div>
 );
