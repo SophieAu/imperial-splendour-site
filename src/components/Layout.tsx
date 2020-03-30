@@ -16,34 +16,35 @@ interface Props {
   ogImage?: string;
 }
 
-const Layout: React.FC<Props> = ({
-  title,
-  description,
-  slug,
-  children,
-  additionalHead,
-  ogImage,
-}) => {
+const Layout: React.FC<Props> = props => {
+  const { title, description, slug, children, additionalHead, ogImage } = props;
+
   return (
     <>
-      <SEO title={title} description={description} slug={slug} ogImagePath={ogImage}>
-        <link
-          href="https://fonts.googleapis.com/css?family=IM+Fell+English&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC&display=swap"
-          rel="stylesheet"
-        />
-        <script type="text/javascript">{detectWebpSupport}</script>
-        <script type="text/javascript">{detectNoScript}</script>
+      <Head title={title} description={description} slug={slug} ogImage={ogImage}>
         {additionalHead}
-      </SEO>
+      </Head>
       <Header />
       <main>{children}</main>
       <Footer />
     </>
   );
 };
+
+const Head: React.FC<Props> = ({ title, description, slug, additionalHead, ogImage }) => (
+  <SEO title={title} description={description} slug={slug} ogImagePath={ogImage}>
+    <link
+      href="https://fonts.googleapis.com/css?family=IM+Fell+English&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC&display=swap"
+      rel="stylesheet"
+    />
+    <script type="text/javascript">{detectWebpSupport}</script>
+    <script type="text/javascript">{detectNoScript}</script>
+    {additionalHead}
+  </SEO>
+);
 
 export default Layout;
