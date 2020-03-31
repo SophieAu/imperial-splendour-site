@@ -1,10 +1,9 @@
-import './Layout.scss';
-
 import React from 'react';
 
 import { detectNoScript, detectWebpSupport } from '../util';
 import Footer from './Footer';
 import Header from './Header';
+import * as styles from './Layout.styles';
 import SEO from './SEO';
 
 interface Props {
@@ -25,7 +24,7 @@ const Layout: React.FC<Props> = props => {
         {additionalHead}
       </Head>
       <Header />
-      <main>{children}</main>
+      <main className={styles.main}>{children}</main>
       <Footer />
     </>
   );
