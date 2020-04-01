@@ -1,42 +1,15 @@
 import './Header.scss';
 
-import { graphql, useStaticQuery } from 'gatsby';
-import { cx } from 'linaria';
 import React, { useEffect, useState } from 'react';
 
-import { paths } from '../../data/config';
-import exitButton from '../../data/img/header_exit_button';
-import hamburgerButton from '../../data/img/header_hamburger_button';
-import { header } from '../../data/strings';
-import { cn } from '../util';
-import Img from './GatsbyImage';
-import * as styles from './Header.styles';
-import ImageLink from './ImageLink';
-import Link from './Link';
-
-const query = graphql`
-  query {
-    headerLogo: file(relativePath: { eq: "header_logo.png" }) {
-      ...headerLogo
-    }
-  }
-`;
+import HeaderDesktop from './HeaderDesktop';
+import HeaderMobile from './HeaderMobile';
 
 const Header = () => {
-  const [showMenu, setMenu] = useState(true);
-  const [supportsJS, setJSSupport] = useState(false);
-
-  const toggleMenu = () => {
-    if (window.innerWidth >= 992 || !supportsJS) return;
-
-    document.body.style.overflow = showMenu ? '' : 'hidden';
-    setMenu(!showMenu);
-  };
+  const [isMobile, setMobile] = useState(true);
 
   const updateLayout = () => {
-    setMenu(window.innerWidth >= 992);
-    document.body.style.overflow = '';
-    setJSSupport(/yesscript/.test(document.documentElement.className));
+    setMobile(window.innerWidth <= 1024);
   };
 
   useEffect(() => {
@@ -45,62 +18,7 @@ const Header = () => {
     return () => window.removeEventListener('resize', updateLayout);
   }, []);
 
-  return (
-    <header className={cx(styles.root, 'head-foot', 'site-header')}>
-      <ImageLink to={paths.home} title={header.home} className="header-logo">
-        <Img
-          className="header-img"
-          fixed={useStaticQuery(query).headerLogo.childImageSharp.fixed}
-          alt={header.logoAlt}
-          fadeIn={false}
-          placeholderStyle={{ display: 'none' }}
-        />
-      </ImageLink>
-      {showMenu && (
-        <nav id="header-menu">
-          <NavLinks onClick={toggleMenu} />
-          <ExitButton onClick={toggleMenu} />
-        </nav>
-      )}
-      {!showMenu && <HamburgerButton onClick={toggleMenu} />}
-    </header>
-  );
+  return isMobile ? <HeaderMobile /> : <HeaderDesktop />;
 };
-
-const NavLinks = ({ onClick }: { onClick: () => void }) => (
-  <ul>
-    {header.menuItems.map(item => (
-      <li key={item.title} className={cn(item.title === 'Homepage' && 'home-link')}>
-        <Link to={item.path} handleClick={onClick}>
-          {item.title}
-        </Link>
-      </li>
-    ))}
-  </ul>
-);
-
-const HamburgerButton = ({ onClick }: { onClick: () => void }) => (
-  <button
-    id="hamburger-button"
-    onClick={onClick}
-    aria-label={header.hamburgerA11yLabel}
-    aria-expanded="false"
-    aria-controls="menu"
-  >
-    {hamburgerButton}
-  </button>
-);
-
-const ExitButton = ({ onClick }: { onClick: () => void }) => (
-  <button
-    id="exit-button"
-    onClick={onClick}
-    aria-label={header.exitA11yLabel}
-    aria-expanded="true"
-    aria-controls="menu"
-  >
-    {exitButton}
-  </button>
-);
 
 export default Header;
