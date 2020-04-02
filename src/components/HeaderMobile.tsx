@@ -1,5 +1,3 @@
-import './Header.scss';
-
 import { graphql, useStaticQuery } from 'gatsby';
 import { cx } from 'linaria';
 import React, { useEffect, useState } from 'react';
@@ -10,7 +8,7 @@ import hamburgerButton from '../../data/img/header_hamburger_button';
 import { header } from '../../data/strings';
 import { cn } from '../util';
 import Img from './GatsbyImage';
-import * as styles from './Header.styles';
+import * as styles from './HeaderMobile.styles';
 import ImageLink from './ImageLink';
 import Link from './Link';
 
@@ -36,10 +34,10 @@ const HeaderMobile = () => {
   }, []);
 
   return (
-    <header className={cx(styles.root, 'head-foot', 'site-header')}>
-      <ImageLink to={paths.home} title={header.home} className="header-logo">
+    <header className={cx(styles.root, 'head-foot')}>
+      <ImageLink to={paths.home} title={header.home}>
         <Img
-          className="header-img"
+          className={styles.homeLogo}
           fixed={useStaticQuery(query).headerLogo.childImageSharp.fixed}
           alt={header.logoAlt}
           fadeIn={false}
@@ -47,7 +45,7 @@ const HeaderMobile = () => {
         />
       </ImageLink>
       {showMenu && (
-        <nav id="header-menu">
+        <nav className={styles.menu}>
           <NavLinks onClick={toggleMenu} />
           <ExitButton onClick={toggleMenu} />
         </nav>
@@ -71,7 +69,7 @@ const NavLinks = ({ onClick }: { onClick: () => void }) => (
 
 const HamburgerButton = ({ onClick }: { onClick: () => void }) => (
   <button
-    id="hamburger-button"
+    className={cx(styles.button, styles.hamburger)}
     onClick={onClick}
     aria-label={header.hamburgerA11yLabel}
     aria-expanded="false"
@@ -83,6 +81,7 @@ const HamburgerButton = ({ onClick }: { onClick: () => void }) => (
 
 const ExitButton = ({ onClick }: { onClick: () => void }) => (
   <button
+    className={cx(styles.button, styles.exit)}
     id="exit-button"
     onClick={onClick}
     aria-label={header.exitA11yLabel}
