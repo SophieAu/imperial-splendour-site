@@ -18,7 +18,6 @@ module.exports = {
     `gatsby-plugin-linaria`,
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sass`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,

@@ -94,6 +94,30 @@ export const globals = css`
     .webp .button {
       background: no-repeat center/100% url(../../data/img/texture_btn.webp);
     }
+
+    :root {
+      --header-footer-bg: #b19776;
+      --link-hover: #5c4e3c;
+      --blog-meta: #444;
+      --main-bg: #f9eeda;
+      --white: #fff;
+      --body-font-family: 'IM FELL English', georgia, times, serif;
+      --headline-font-family: 'IM FELL English SC', georgia, serif;
+      --headline-font: normal 3rem var(--headline-font-family);
+      --body-font: normal 1.5rem var(--body-font-family);
+      --button-font: normal 2.5rem / var(--download-button-height) var(--headline-font-family);
+      --hero-font: normal 2.15rem var(--body-font-family);
+      --info-font: normal 1.75rem var(--body-font-family);
+      --blog-meta-font: italic 1.25rem var(--body-font-family);
+      --max-content-width: 65rem;
+      --max-body-width: 85rem;
+      --max-site-width: 100rem;
+      --header-height: 4.5rem;
+      --footer-height: 4.5rem;
+      --footer-mobile-height: 6.5rem;
+      --download-button-height: 6.25rem;
+      --download-button-width: 18.125rem;
+    }
   }
 `;
 

@@ -1,5 +1,3 @@
-import './Header.scss';
-
 import React, { useEffect, useState } from 'react';
 
 import HeaderDesktop from './HeaderDesktop';
