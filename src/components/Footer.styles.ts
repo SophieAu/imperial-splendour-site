@@ -8,6 +8,7 @@ export const footer = css`
   @media all ${screenSize.MOBILE} {
     flex-direction: column;
     height: auto;
+    min-height: var(--footer-height);
   }
 `;
 
