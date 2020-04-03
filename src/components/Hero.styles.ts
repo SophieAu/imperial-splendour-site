@@ -9,8 +9,9 @@ export const root = css`
   display: flex;
   flex-direction: column;
   margin-bottom: calc(-1 * var(--download-button-height) / 2);
-  max-width: 100vw;
-  width: 100vw;
+
+  max-width: 100vw !important;
+  width: 100vw !important;
 
   @media all ${screenSize.TABLET_MIN} {
     height: 62.5vw;
@@ -42,7 +43,7 @@ export const body = css`
   width: 100%;
 
   @media all ${screenSize.TABLET_MIN} {
-    :not(.webp) & {
+    html:not(.webp) & {
       background: no-repeat bottom/100% url(${heroJpg});
     }
 

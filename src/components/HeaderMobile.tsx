@@ -1,24 +1,12 @@
-import { graphql, useStaticQuery } from 'gatsby';
 import { cx } from 'linaria';
 import React, { useEffect, useState } from 'react';
 
-import { paths } from '../../data/config';
 import exitButton from '../../data/img/header_exit_button';
 import hamburgerButton from '../../data/img/header_hamburger_button';
 import { header } from '../../data/strings';
-import { cn } from '../util';
-import Img from './GatsbyImage';
 import * as styles from './HeaderMobile.styles';
-import ImageLink from './ImageLink';
+import HeaderWrapper from './HeaderWrapper';
 import Link from './Link';
-
-const query = graphql`
-  query {
-    headerLogo: file(relativePath: { eq: "header_logo.png" }) {
-      ...headerLogo
-    }
-  }
-`;
 
 const HeaderMobile = () => {
   const [showMenu, setMenu] = useState(false);
@@ -34,31 +22,20 @@ const HeaderMobile = () => {
   }, []);
 
   return (
-    <header className={cx(styles.root, 'head-foot')}>
-      <ImageLink to={paths.home} title={header.home}>
-        <Img
-          className={styles.homeLogo}
-          fixed={useStaticQuery(query).headerLogo.childImageSharp.fixed}
-          alt={header.logoAlt}
-          fadeIn={false}
-          placeholderStyle={{ display: 'none' }}
-        />
-      </ImageLink>
-      {showMenu && (
-        <nav className={styles.menu}>
-          <NavLinks onClick={toggleMenu} />
-          <ExitButton onClick={toggleMenu} />
-        </nav>
-      )}
-      {!showMenu && <HamburgerButton onClick={toggleMenu} />}
-    </header>
+    <HeaderWrapper className={styles.root}>
+      <HamburgerButton className={showMenu && styles.hide} onClick={toggleMenu} />
+      <nav className={cx(styles.menu, !showMenu && styles.hide)}>
+        <NavLinks onClick={toggleMenu} />
+        <ExitButton onClick={toggleMenu} />
+      </nav>
+    </HeaderWrapper>
   );
 };
 
 const NavLinks = ({ onClick }: { onClick: () => void }) => (
   <ul>
     {header.menuItems.map(item => (
-      <li key={item.title} className={cn(item.title === 'Homepage' && 'home-link')}>
+      <li key={item.title} className={cx(item.title === 'Homepage' && 'home-link')}>
         <Link to={item.path} handleClick={onClick}>
           {item.title}
         </Link>
@@ -67,9 +44,14 @@ const NavLinks = ({ onClick }: { onClick: () => void }) => (
   </ul>
 );
 
-const HamburgerButton = ({ onClick }: { onClick: () => void }) => (
+interface ButtonProps {
+  onClick: () => void;
+  className?: string | false;
+}
+
+const HamburgerButton: React.FC<ButtonProps> = ({ onClick, className }) => (
   <button
-    className={cx(styles.button, styles.hamburger)}
+    className={cx(styles.button, styles.hamburger, className)}
     onClick={onClick}
     aria-label={header.hamburgerA11yLabel}
     aria-expanded="false"
@@ -79,7 +61,7 @@ const HamburgerButton = ({ onClick }: { onClick: () => void }) => (
   </button>
 );
 
-const ExitButton = ({ onClick }: { onClick: () => void }) => (
+const ExitButton: React.FC<ButtonProps> = ({ onClick }) => (
   <button
     className={cx(styles.button, styles.exit)}
     id="exit-button"

@@ -2,7 +2,8 @@ import React from 'react';
 
 import { detectNoScript, detectWebpSupport } from '../util';
 import Footer from './Footer';
-import Header from './Header';
+import HeaderDesktop from './HeaderDesktop';
+import HeaderMobile from './HeaderMobile';
 import * as styles from './Layout.styles';
 import SEO from './SEO';
 
@@ -23,7 +24,8 @@ const Layout: React.FC<Props> = props => {
       <Head title={title} description={description} slug={slug} ogImage={ogImage}>
         {additionalHead}
       </Head>
-      <Header />
+      <HeaderDesktop />
+      <HeaderMobile />
       <main className={styles.main}>{children}</main>
       <Footer />
     </>
