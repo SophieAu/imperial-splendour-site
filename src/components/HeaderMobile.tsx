@@ -1,5 +1,5 @@
 import { cx } from 'linaria';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useReducer } from 'react';
 
 import exitButton from '../../data/img/header_exit_button';
 import hamburgerButton from '../../data/img/header_hamburger_button';
@@ -8,17 +8,17 @@ import * as styles from './HeaderMobile.styles';
 import HeaderWrapper from './HeaderWrapper';
 import Link from './Link';
 
+const menuToggleReducer = (oldStatus: boolean) => {
+  const shouldShowMenu = !oldStatus;
+
+  document.body.style.overflow = shouldShowMenu ? 'hidden' : '';
+  return shouldShowMenu;
+};
+
 const HeaderMobile = () => {
-  const [showMenu, setMenu] = useState(false);
-
-  const toggleMenu = () => {
-    document.body.style.overflow = showMenu ? '' : 'hidden';
-    setMenu(!showMenu);
-  };
-
+  const [showMenu, toggleMenu] = useReducer(menuToggleReducer, false);
   useEffect(() => {
-    setMenu(false);
-    document.body.style.overflow = '';
+    showMenu && toggleMenu();
   }, []);
 
   return (
