@@ -2,7 +2,7 @@
 /* eslint-disable @typescript-eslint/camelcase */
 const { createSlug } = require('./util');
 
-const hiddenPages = ['/download/*'];
+const hiddenPages = ['/download/*', '/404'];
 
 exports.siteMetadata = {
   title: `Imperial Splendour`,

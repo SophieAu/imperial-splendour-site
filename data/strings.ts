@@ -164,3 +164,11 @@ export const factions = {
   previousButton: "'Go to previous Faction",
   nextButton: "'Go to next Faction",
 };
+
+export const notFound = {
+  pageTitle: buildPageTitle('404'),
+  pageDescription:
+    'FImperial Splendour attempts to create the best Empire: Total War experience possible without destroying the essence of the game.',
+  title: 'Defeat!',
+  body: "You seem to have stumbled upon a page that doesn't exist...",
+};

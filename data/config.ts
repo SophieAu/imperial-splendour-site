@@ -13,6 +13,7 @@ export const slugs = {
   about: 'about',
   termsOfService: 'terms-of-service',
   factions: 'factions',
+  notFound: '404',
 };
 
 export const paths = {
@@ -23,6 +24,7 @@ export const paths = {
   about: `/${slugs.about}`,
   termsOfService: `/${slugs.termsOfService}`,
   factions: `/${slugs.factions}`,
+  notFound: `/${slugs.notFound}`,
 };
 
 export const socialMedia = {
