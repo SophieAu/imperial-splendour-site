@@ -2,10 +2,38 @@ import { css } from 'linaria';
 
 import { screenSize } from '../_variables.styles';
 import bgTextureJpeg from '../../data/img/texture_bg.jpg';
-import bgTextureWwebP from '../../data/img/texture_bg.webp';
+import bgTextureWebP from '../../data/img/texture_bg.webp';
+import textureHeadFootJpeg from '../../data/img/texture_headfoot.jpg';
+import textureHeadFootWebP from '../../data/img/texture_headfoot.webp';
 
 export const globalResets = css`
   :global() {
+    :root {
+      --header-footer-bg: #b19776;
+      --link-hover: #5c4e3c;
+      --blog-meta: #444;
+      --main-bg: #f9eeda;
+      --white: #fff;
+      --body-font-family: 'IM FELL English', georgia, times, serif;
+      --headline-font-family: 'IM FELL English SC', georgia, serif;
+      --headline-font: normal 3rem var(--headline-font-family);
+      --body-font: normal 1.5rem var(--body-font-family);
+      --button-font: normal 2.5rem / var(--download-button-height) var(--headline-font-family);
+      --hero-font: normal 2.15rem var(--body-font-family);
+      --info-font: normal 1.75rem var(--body-font-family);
+      --blog-meta-font: italic 1.25rem var(--body-font-family);
+      --max-content-width: 65rem;
+      --max-body-width: 85rem;
+      --max-site-width: 100rem;
+      --header-height: 4.5rem;
+      --footer-height: 4.5rem;
+      --footer-mobile-height: 6.5rem;
+      --download-button-height: 6.25rem;
+      --download-button-width: 18.125rem;
+
+      font-size: 16px;
+    }
+
     html,
     body {
       border: 0;
@@ -46,58 +74,24 @@ export const globalResets = css`
     }
 
     .webp body {
-      background: var(--main-bg) url(${bgTextureWwebP}));
+      background: var(--main-bg) url(${bgTextureWebP}));
     }
   }
 `;
 
-export const globals = css`
-  :global() {
-    :root {
-      font-size: 16px;
+export const headFoot = css`
+  align-items: center;
+  background-color: var(--header-footer-bg);
+  background-image: url(${textureHeadFootJpeg});
+  box-shadow: 0 0 1.25rem 1rem rgba(142, 142, 142, 0.4);
+  box-shadow: 0 0 1.25rem 0.75rem rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 99;
 
-      --header-footer-bg: #b19776;
-      --link-hover: #5c4e3c;
-      --blog-meta: #444;
-      --main-bg: #f9eeda;
-      --white: #fff;
-      --body-font-family: 'IM FELL English', georgia, times, serif;
-      --headline-font-family: 'IM FELL English SC', georgia, serif;
-      --headline-font: normal 3rem var(--headline-font-family);
-      --body-font: normal 1.5rem var(--body-font-family);
-      --button-font: normal 2.5rem / var(--download-button-height) var(--headline-font-family);
-      --hero-font: normal 2.15rem var(--body-font-family);
-      --info-font: normal 1.75rem var(--body-font-family);
-      --blog-meta-font: italic 1.25rem var(--body-font-family);
-      --max-content-width: 65rem;
-      --max-body-width: 85rem;
-      --max-site-width: 100rem;
-      --header-height: 4.5rem;
-      --footer-height: 4.5rem;
-      --footer-mobile-height: 6.5rem;
-      --download-button-height: 6.25rem;
-      --download-button-width: 18.125rem;
-    }
-
-    #newsletter-input {
-      left: -5000px;
-      position: absolute;
-    }
-
-    .head-foot {
-      align-items: center;
-      background-color: var(--header-footer-bg);
-      background-image: url(../../data/img/texture_headfoot.jpg);
-      box-shadow: 0 0 1.25rem 1rem rgba(142, 142, 142, 0.4);
-      box-shadow: 0 0 1.25rem 0.75rem rgba(0, 0, 0, 0.5);
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      z-index: 99;
-    }
-    .webp .head-foot {
-      background-image: url(../../data/img/texture_headfoot.webp);
-    }
+  .webp & {
+    background-image: url(${textureHeadFootWebP});
   }
 `;
 

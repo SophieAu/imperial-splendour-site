@@ -24,10 +24,10 @@ const Layout: React.FC<Props> = props => {
       <Head title={title} description={description} slug={slug} ogImage={ogImage}>
         {additionalHead}
       </Head>
-      <HeaderDesktop />
-      <HeaderMobile />
+      <HeaderDesktop className={styles.headFoot} />
+      <HeaderMobile className={styles.headFoot} />
       <main className={styles.main}>{children}</main>
-      <Footer />
+      <Footer className={styles.headFoot} />
     </>
   );
 };

@@ -15,8 +15,8 @@ const socialMediaLinks = [
   { name: 'Twitter', link: socialMedia.twitter, src: twitter },
 ];
 
-const Footer = () => (
-  <footer className={cx(styles.footer, 'head-foot')}>
+const Footer = ({ className }: { className: string }) => (
+  <footer className={cx(className, styles.root)}>
     <MarkdownWithLink className={styles.credits}>
       {footer.creditsCopyright({ year: new Date().getFullYear() })}
     </MarkdownWithLink>

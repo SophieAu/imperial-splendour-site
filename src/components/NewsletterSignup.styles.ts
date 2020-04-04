@@ -31,6 +31,11 @@ export const root = css`
       background-color: rgba(0, 0, 0, 0);
       border: none;
     }
+
+    #newsletter-input {
+      left: -5000px;
+      position: absolute;
+    }
   }
 `;
 

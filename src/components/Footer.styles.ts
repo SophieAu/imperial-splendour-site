@@ -2,7 +2,7 @@ import { css } from 'linaria';
 
 import { screenSize } from '../_variables.styles';
 
-export const footer = css`
+export const root = css`
   height: var(--footer-height);
 
   @media all ${screenSize.MOBILE} {

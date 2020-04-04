@@ -1,3 +1,4 @@
+import { cx } from 'linaria';
 import React from 'react';
 
 import { header } from '../../data/strings';
@@ -6,8 +7,8 @@ import * as styles from './HeaderDesktop.styles';
 import HeaderWrapper from './HeaderWrapper';
 import { Link } from './Link';
 
-const HeaderDesktop = () => (
-  <HeaderWrapper className={styles.toggle}>
+const HeaderDesktop = ({ className }: { className: string }) => (
+  <HeaderWrapper className={cx(className, styles.toggle)}>
     <nav className={styles.root}>
       <ul>
         {header.menuItems.map(item => (

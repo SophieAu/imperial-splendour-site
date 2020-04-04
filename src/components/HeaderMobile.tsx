@@ -15,14 +15,14 @@ const menuToggleReducer = (oldStatus: boolean) => {
   return shouldShowMenu;
 };
 
-const HeaderMobile = () => {
+const HeaderMobile = ({ className }: { className: string }) => {
   const [showMenu, toggleMenu] = useReducer(menuToggleReducer, false);
   useEffect(() => {
     showMenu && toggleMenu();
   }, []);
 
   return (
-    <HeaderWrapper className={styles.root}>
+    <HeaderWrapper className={cx(className, styles.root)}>
       <HamburgerButton className={showMenu && styles.hide} onClick={toggleMenu} />
       <nav className={cx(styles.menu, !showMenu && styles.hide)}>
         <NavLinks onClick={toggleMenu} />

@@ -17,7 +17,7 @@ const query = graphql`
 `;
 
 const HeaderWrapper: React.FC<{ className?: string }> = ({ className, children }) => (
-  <header className={cx(styles.root, className, 'head-foot')}>
+  <header className={cx(styles.root, className)}>
     <ImageLink to={paths.home} title={header.home}>
       <Img
         className={styles.homeLogo}
