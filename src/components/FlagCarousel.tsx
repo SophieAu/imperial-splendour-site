@@ -8,7 +8,7 @@ import { circularModulo } from '../util';
 import CarouselImage from './CarouselImage';
 import * as styles from './FlagCarousel.styles';
 import Img from './GatsbyImage';
-import ImageLink from './ImageLink';
+import { ImageLink } from './Link';
 
 const query = graphql`
   query {

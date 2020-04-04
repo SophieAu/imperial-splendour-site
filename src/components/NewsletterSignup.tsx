@@ -3,6 +3,7 @@ import React from 'react';
 
 import { mailchimpForm } from '../../data/config';
 import { newsletterSignup as strings } from '../../data/strings';
+import * as linkStyles from './Link.styles';
 import * as styles from './NewsletterSignup.styles';
 
 const MailChimpForm = () => (
@@ -19,7 +20,7 @@ const MailChimpForm = () => (
         <input type="text" name={mailchimpForm.inputName} tabIndex={-1} />
       </div>
       <input
-        className={cx(styles.button, 'button')}
+        className={cx(styles.button, linkStyles.button)}
         type="submit"
         value="Subscribe"
         name="subscribe"

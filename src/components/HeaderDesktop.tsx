@@ -4,7 +4,7 @@ import { header } from '../../data/strings';
 import { cn } from '../util';
 import * as styles from './HeaderDesktop.styles';
 import HeaderWrapper from './HeaderWrapper';
-import Link from './Link';
+import { Link } from './Link';
 
 const HeaderDesktop = () => (
   <HeaderWrapper className={styles.toggle}>

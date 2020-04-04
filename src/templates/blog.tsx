@@ -4,7 +4,7 @@ import React from 'react';
 import { paths, slugs } from '../../data/config';
 import { blog } from '../../data/strings';
 import Layout from '../components/Layout';
-import Link from '../components/Link';
+import { Link } from '../components/Link';
 import PostHeader from '../components/PostHeader';
 import { BlogListContext, PostsResponse } from '../types';
 import * as styles from './blog.styles';

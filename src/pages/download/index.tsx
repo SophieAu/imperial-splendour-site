@@ -3,7 +3,7 @@ import React from 'react';
 import { paths, slugs } from '../../../data/config';
 import { download, downloadButton } from '../../../data/strings';
 import Layout from '../../components/Layout';
-import Link from '../../components/Link';
+import { LinkButton } from '../../components/Link';
 import * as styles from './index.styles';
 
 const DownloadIndex = () => (
@@ -22,9 +22,7 @@ const DownloadIndex = () => (
         </ul>
       </div>
       <div className={styles.download}>
-        <Link to={paths.downloadRotR} className={'button'}>
-          {downloadButton.buttonText}
-        </Link>
+        <LinkButton to={paths.downloadRotR}>{downloadButton.buttonText}</LinkButton>
         <p>{download.main}</p>
       </div>
     </section>

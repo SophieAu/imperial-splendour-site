@@ -6,7 +6,7 @@ import hamburgerButton from '../../data/img/header_hamburger_button';
 import { header } from '../../data/strings';
 import * as styles from './HeaderMobile.styles';
 import HeaderWrapper from './HeaderWrapper';
-import Link from './Link';
+import { Link } from './Link';
 
 const menuToggleReducer = (oldStatus: boolean) => {
   const shouldShowMenu = !oldStatus;

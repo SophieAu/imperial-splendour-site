@@ -1,10 +1,9 @@
 import { graphql, useStaticQuery } from 'gatsby';
-import { cx } from 'linaria';
 import React from 'react';
 
 import { paths } from '../../data/config';
 import { downloadButton, home } from '../../data/strings';
-import Link from '../components/Link';
+import { LinkButton } from '../components/Link';
 import Img from './GatsbyImage';
 import * as styles from './Hero.styles';
 
@@ -27,9 +26,9 @@ const Hero: React.FC<{}> = () => (
       />
       <p className={styles.text}>{home.heroText}</p>
     </div>
-    <Link to={paths.downloadIndex} className={cx('button', styles.button)}>
+    <LinkButton to={paths.downloadIndex} className={styles.button}>
       {downloadButton.buttonText}
-    </Link>
+    </LinkButton>
   </section>
 );
 

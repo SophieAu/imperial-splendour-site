@@ -6,7 +6,7 @@ import { paths } from '../../data/config';
 import { header } from '../../data/strings';
 import Img from './GatsbyImage';
 import * as styles from './HeaderWrapper.styles';
-import ImageLink from './ImageLink';
+import { ImageLink } from './Link';
 
 const query = graphql`
   query {

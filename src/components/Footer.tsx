@@ -6,7 +6,7 @@ import facebook from '../../data/img/footer_facebook.svg';
 import twitter from '../../data/img/footer_twitter.svg';
 import { footer } from '../../data/strings';
 import * as styles from './Footer.styles';
-import ImageLink from './ImageLink';
+import { ImageLink } from './Link';
 import MarkdownWithLink from './MarkdownWithLink';
 
 const socialMediaLinks = [
