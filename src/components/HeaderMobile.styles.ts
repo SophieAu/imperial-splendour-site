@@ -73,6 +73,8 @@ export const menu = css`
 `;
 
 export const button = css`
+  background-color: transparent;
+  border: none;
   line-height: 0;
   margin: 0;
   padding: 0;
