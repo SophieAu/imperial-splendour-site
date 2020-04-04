@@ -9,9 +9,9 @@
     "clean": "gatsby clean",
     "checks": "tsc && npm run lint",
     "format": "prettier --write '{src,data}/**/*.{tsx,ts}'",
-    "lint": "eslint 'src/**/*.{tsx,ts,js,jsx}' --ignore-pattern '*.d.ts' --ignore-pattern 'src/assets/*' && stylelint 'src/**/*.{css,scss}' --rd --risd",
+    "lint": "eslint 'src/**/*.{tsx,ts,js,jsx}' --ignore-pattern '*.d.ts' --ignore-pattern 'src/assets/*' && stylelint 'src/**/*.styles.ts' --rd --risd",
     "stylelint": "stylelint '.' --rd --risd",
-    "lint:fix": "eslint 'src/**/*.{tsx,ts,js,jsx}' --ignore-pattern '*.d.ts'  --ignore-pattern 'src/assets/*' --fix && stylelint 'src/**/*.{css,scss}' --rd --risd --fix"
+    "lint:fix": "eslint 'src/**/*.{tsx,ts,js,jsx}' --ignore-pattern '*.d.ts'  --ignore-pattern 'src/assets/*' --fix && stylelint 'src/**/*.styles.ts' --rd --risd --fix"
   },
   "author": "Sophie Au <sophie@sophieau.com>",
   "license": "MIT",

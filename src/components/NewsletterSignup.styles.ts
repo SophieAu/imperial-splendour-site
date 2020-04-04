@@ -1,7 +1,5 @@
 import { css } from 'linaria';
 
-import { screenSize } from '../_variables.styles';
-
 export const root = css`
   line-height: 2rem;
   margin-bottom: 5rem;
