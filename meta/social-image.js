@@ -18,9 +18,7 @@ const renderCard = (title, authors = []) => {
 };
 
 async function writeCachedFile(CACHE_DIR, key, contents, extension) {
-  const hash = createHash('md5')
-    .update(key)
-    .digest('hex');
+  const hash = createHash('md5').update(key).digest('hex');
 
   const absolutePath = resolve(CACHE_DIR, `${hash}.${extension}`);
   await writeFileAsync(absolutePath, contents);
