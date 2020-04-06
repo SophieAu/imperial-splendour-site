@@ -1,6 +1,6 @@
 import { css } from 'linaria';
 
-import { screenSize } from '../_variables.styles';
+import { color, font, HEADER_HEIGHT, MAX_CONTENT_WIDTH, screenSize } from '../_variables.styles';
 import bgTextureJpeg from '../../data/img/texture_bg.jpg';
 import bgTextureWebP from '../../data/img/texture_bg.webp';
 import textureHeadFootJpeg from '../../data/img/texture_headfoot.jpg';
@@ -9,28 +9,6 @@ import textureHeadFootWebP from '../../data/img/texture_headfoot.webp';
 export const globalResets = css`
   :global() {
     :root {
-      --header-footer-bg: #b19776;
-      --link-hover: #5c4e3c;
-      --blog-meta: #444;
-      --main-bg: #f9eeda;
-      --white: #fff;
-      --body-font-family: 'IM FELL English', georgia, times, serif;
-      --headline-font-family: 'IM FELL English SC', georgia, serif;
-      --headline-font: normal 3rem var(--headline-font-family);
-      --body-font: normal 1.5rem var(--body-font-family);
-      --button-font: normal 2.5rem / var(--download-button-height) var(--headline-font-family);
-      --hero-font: normal 2.15rem var(--body-font-family);
-      --info-font: normal 1.75rem var(--body-font-family);
-      --blog-meta-font: italic 1.25rem var(--body-font-family);
-      --max-content-width: 65rem;
-      --max-body-width: 85rem;
-      --max-site-width: 100rem;
-      --header-height: 4.5rem;
-      --footer-height: 4.5rem;
-      --footer-mobile-height: 6.5rem;
-      --download-button-height: 6.25rem;
-      --download-button-width: 18.125rem;
-
       font-size: 16px;
     }
 
@@ -46,7 +24,7 @@ export const globalResets = css`
     }
 
     h2 {
-      font: var(--headline-font);
+      font: ${font.headline};
     }
 
     a {
@@ -54,10 +32,10 @@ export const globalResets = css`
       text-decoration: underline;
     }
     a:hover {
-      color: var(--link-hover);
+      color: ${color.linkHover};
 
       > * {
-        fill: var(--link-hover);
+        fill: ${color.linkHover};
         opacity: 0.5;
       }
     }
@@ -69,19 +47,19 @@ export const globalResets = css`
     }
 
     body {
-      background: var(--main-bg) url(${bgTextureJpeg});
-      font: var(--body-font);
+      background: ${color.mainBg} url(${bgTextureJpeg});
+      font: ${font.body};
     }
 
     .webp body {
-      background: var(--main-bg) url(${bgTextureWebP}));
+      background: ${color.mainBg} url(${bgTextureWebP}));
     }
   }
 `;
 
 export const headFoot = css`
   align-items: center;
-  background-color: var(--header-footer-bg);
+  background-color: ${color.headerFooterBg};
   background-image: url(${textureHeadFootJpeg});
   box-shadow: 0 0 1.25rem 1rem rgba(142, 142, 142, 0.4);
   box-shadow: 0 0 1.25rem 0.75rem rgba(0, 0, 0, 0.5);
@@ -100,10 +78,10 @@ export const main = css`
   display: flex;
   flex: 1;
   flex-direction: column;
-  padding: var(--header-height) 1.5rem 0;
+  padding: ${HEADER_HEIGHT} 1.5rem 0;
 
   > * {
-    max-width: var(--max-content-width);
+    max-width: ${MAX_CONTENT_WIDTH};
     width: 100%;
   }
 

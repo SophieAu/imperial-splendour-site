@@ -1,14 +1,14 @@
 import { css } from 'linaria';
 
-import { screenSize } from '../_variables.styles';
+import { color, FOOTER_HEIGHT, screenSize } from '../_variables.styles';
 
 export const root = css`
-  height: var(--footer-height);
+  height: ${FOOTER_HEIGHT};
 
   @media all ${screenSize.MOBILE} {
     flex-direction: column;
     height: auto;
-    min-height: var(--footer-height);
+    min-height: ${FOOTER_HEIGHT};
   }
 `;
 
@@ -47,7 +47,7 @@ export const socialMedia = css`
 
   svg,
   img {
-    fill: var(--main-bg);
+    fill: ${color.mainBg};
     height: 2.5rem;
   }
 

@@ -1,6 +1,6 @@
 import { css } from 'linaria';
 
-import { screenSize } from '../../_variables.styles';
+import { DOWNLOAD_BUTTON_WIDTH, screenSize } from '../../_variables.styles';
 
 export const container = css`
   h2,
@@ -40,7 +40,7 @@ export const download = css`
   p {
     font-size: 1.25rem;
     margin: 0.5rem 0 0;
-    max-width: calc(var(--download-button-width) + 6rem);
+    max-width: calc(${DOWNLOAD_BUTTON_WIDTH} + 6rem);
     text-align: center;
   }
 `;

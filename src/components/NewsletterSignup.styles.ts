@@ -1,5 +1,7 @@
 import { css } from 'linaria';
 
+import { font } from '../_variables.styles';
+
 export const root = css`
   line-height: 2rem;
   margin-bottom: 5rem;
@@ -20,7 +22,7 @@ export const root = css`
       box-shadow: inset 0 0 1.25rem 0.625rem rgba(142, 142, 142, 0.5);
       box-shadow: inset 0 0 0.5rem 0.25rem rgba(142, 142, 142, 0.8);
       box-sizing: border-box;
-      font: 1rem var(--body-font-family);
+      font: ${font.input};
       height: 5rem;
       max-width: calc(100vw - 2rem);
       padding-left: 1.75rem;

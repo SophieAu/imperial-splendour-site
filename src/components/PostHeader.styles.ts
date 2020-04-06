@@ -1,6 +1,6 @@
 import { css } from 'linaria';
 
-import { screenSize } from '../_variables.styles';
+import { color, font, screenSize } from '../_variables.styles';
 
 export const root = css`
   display: grid;
@@ -9,7 +9,7 @@ export const root = css`
 
   h1,
   a {
-    font: var(--headline-font);
+    font: ${font.headline};
     margin: 0;
     text-decoration: none;
   }
@@ -23,8 +23,8 @@ export const root = css`
 `;
 
 export const date = css`
-  color: var(--blog-meta);
-  font: var(--blog-meta-font);
+  color: ${color.blogMeta};
+  font: ${font.blogMeta};
   margin: 0;
   padding: 0.5rem 0 0;
   text-align: right;
@@ -36,8 +36,8 @@ export const date = css`
 `;
 
 export const author = css`
-  color: var(--blog-meta);
-  font: var(--blog-meta-font);
+  color: ${color.blogMeta};
+  font: ${font.blogMeta};
   margin: 0;
   padding: 0;
 

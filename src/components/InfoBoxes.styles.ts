@@ -1,6 +1,6 @@
 import { css } from 'linaria';
 
-import { screenSize } from '../_variables.styles';
+import { font, MAX_BODY_WIDTH, screenSize } from '../_variables.styles';
 
 export const root = css`
   align-items: center;
@@ -8,7 +8,7 @@ export const root = css`
   grid: auto-flow dense / repeat(5, 1fr);
   grid-column-gap: 2rem;
   grid-row-gap: 4rem;
-  max-width: var(--max-body-width);
+  max-width: ${MAX_BODY_WIDTH};
 
   @media all ${screenSize.DESKTOP} {
     margin: 6rem 0;
@@ -28,7 +28,7 @@ export const root = css`
 `;
 
 export const text = css`
-  font: var(--info-font);
+  font: ${font.info};
   grid-column: span 2;
   margin: 0;
 

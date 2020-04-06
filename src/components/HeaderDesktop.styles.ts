@@ -1,6 +1,6 @@
 import { css } from 'linaria';
 
-import { screenSize } from '../_variables.styles';
+import { HEADER_HEIGHT, screenSize } from '../_variables.styles';
 
 export const link = css`
   display: none;
@@ -19,7 +19,7 @@ export const root = css`
     padding: 0;
 
     > li {
-      line-height: var(--header-height);
+      line-height: ${HEADER_HEIGHT};
       margin: 0;
     }
 

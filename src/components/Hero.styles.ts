@@ -1,6 +1,14 @@
 import { css } from 'linaria';
 
-import { screenSize } from '../_variables.styles';
+import {
+  color,
+  DOWNLOAD_BUTTON_HEIGHT,
+  font,
+  MAX_BODY_WIDTH,
+  MAX_CONTENT_WIDTH,
+  MAX_SITE_WIDTH,
+  screenSize,
+} from '../_variables.styles';
 import heroJpg from '../../data/img/hero_bg.jpg';
 import heroWebP from '../../data/img/hero_bg.webp';
 
@@ -8,14 +16,14 @@ export const root = css`
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin-bottom: calc(-1 * var(--download-button-height) / 2);
+  margin-bottom: calc(-1 * ${DOWNLOAD_BUTTON_HEIGHT} / 2);
 
   max-width: 100vw !important;
   width: 100vw !important;
 
   @media all ${screenSize.TABLET_MIN} {
     height: 62.5vw;
-    max-height: calc(var(--max-site-width) * 1080 / 1920);
+    max-height: calc(${MAX_SITE_WIDTH} * 1080 / 1920);
   }
 
   @media all ${screenSize.MOBILE} {
@@ -24,11 +32,11 @@ export const root = css`
 `;
 
 export const button = css`
-  margin-top: calc(-1 * var(--download-button-height) / 2);
+  margin-top: calc(-1 * ${DOWNLOAD_BUTTON_HEIGHT} / 2);
 `;
 
 export const logo = css`
-  max-width: var(--max-body-width);
+  max-width: ${MAX_BODY_WIDTH};
   width: 50vw;
 `;
 
@@ -54,17 +62,17 @@ export const body = css`
 `;
 
 export const text = css`
-  font: var(--hero-font);
-  max-width: var(--max-content-width);
+  font: ${font.hero};
+  max-width: ${MAX_CONTENT_WIDTH};
   padding-bottom: 5rem;
 
   @media all ${screenSize.DESKTOP} {
-    color: var(--white);
+    color: ${color.white};
     margin: 0;
   }
 
   @media all ${screenSize.TABLET} {
-    color: var(--white);
+    color: ${color.white};
     margin: 0 1rem;
   }
 

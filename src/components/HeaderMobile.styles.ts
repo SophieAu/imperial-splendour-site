@@ -1,6 +1,6 @@
 import { css } from 'linaria';
 
-import { screenSize } from '../_variables.styles';
+import { color, HEADER_HEIGHT, screenSize } from '../_variables.styles';
 import textureJpeg from '../../data/img/texture_bg.jpg';
 import textureWebp from '../../data/img/texture_bg.webp';
 
@@ -25,7 +25,7 @@ export const hide = css`
 
 export const menu = css`
   .webp & {
-    background: var(--main-bg) url(${textureWebp});
+    background: ${color.mainBg} url(${textureWebp});
   }
 
   ul {
@@ -37,14 +37,14 @@ export const menu = css`
     flex-direction: column;
 
     li {
-      line-height: var(--header-height);
+      line-height: ${HEADER_HEIGHT};
       margin: 0;
     }
   }
 
   html.yesscript & {
     align-items: flex-start;
-    background: var(--main-bg) url(${textureJpeg});
+    background: ${color.mainBg} url(${textureJpeg});
     bottom: 0;
     display: flex;
     flex-direction: row;
@@ -85,9 +85,9 @@ export const button = css`
 `;
 
 export const hamburger = css`
-  fill: var(--main-bg);
+  fill: ${color.mainBg};
 `;
 
 export const exit = css`
-  fill: var(--header-footer-bg);
+  fill: ${color.headerFooterBg};
 `;
