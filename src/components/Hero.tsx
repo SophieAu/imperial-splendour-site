@@ -15,7 +15,7 @@ const query = graphql`
   }
 `;
 
-const Hero: React.FC<{}> = () => (
+const Hero: React.FC = () => (
   <section className={styles.root}>
     <h1 style={{ display: 'none' }}>{home.heroTitle}</h1>
     <div className={styles.body}>

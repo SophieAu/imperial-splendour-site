@@ -19,7 +19,7 @@ const query = graphql`
   }
 `;
 
-const InfoBoxes: React.FC<{}> = () => (
+const InfoBoxes: React.FC = () => (
   <section className={styles.root}>
     {home.infoBoxes.map((box, i) => (
       <React.Fragment key={i}>

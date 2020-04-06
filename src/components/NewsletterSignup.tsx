@@ -6,7 +6,7 @@ import { newsletterSignup as strings } from '../../data/strings';
 import * as linkStyles from './Link.styles';
 import * as styles from './NewsletterSignup.styles';
 
-const MailChimpForm = () => (
+const MailChimpForm: React.FC = () => (
   <div id="mc_embed_signup">
     <form action={mailchimpForm.action} method="post" target="_blank" noValidate>
       <input
@@ -29,7 +29,7 @@ const MailChimpForm = () => (
   </div>
 );
 
-const NewsletterSignup = () => (
+const NewsletterSignup: React.FC = () => (
   <section className={styles.root}>
     <p>{strings.textQuestion}</p>
     <p>{strings.textCTA}</p>

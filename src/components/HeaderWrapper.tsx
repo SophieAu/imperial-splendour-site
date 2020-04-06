@@ -4,6 +4,7 @@ import React from 'react';
 
 import { paths } from '../../data/config';
 import { header } from '../../data/strings';
+import { ClassNameProp } from '../types';
 import Img from './GatsbyImage';
 import * as styles from './HeaderWrapper.styles';
 import { ImageLink } from './Link';
@@ -16,7 +17,7 @@ const query = graphql`
   }
 `;
 
-const HeaderWrapper: React.FC<{ className?: string }> = ({ className, children }) => (
+const HeaderWrapper: React.FC<ClassNameProp> = ({ className, children }) => (
   <header className={cx(styles.root, className)}>
     <ImageLink to={paths.home} title={header.home}>
       <Img

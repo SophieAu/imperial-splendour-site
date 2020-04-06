@@ -4,6 +4,7 @@ import React, { useEffect, useReducer } from 'react';
 import exitButton from '../../data/img/header_exit_button';
 import hamburgerButton from '../../data/img/header_hamburger_button';
 import { header } from '../../data/strings';
+import { ClassNameProp } from '../types';
 import * as styles from './HeaderMobile.styles';
 import HeaderWrapper from './HeaderWrapper';
 import { Link } from './Link';
@@ -15,8 +16,9 @@ const menuToggleReducer = (oldStatus: boolean) => {
   return shouldShowMenu;
 };
 
-const HeaderMobile = ({ className }: { className: string }) => {
+const HeaderMobile: React.FC<ClassNameProp> = ({ className }) => {
   const [showMenu, toggleMenu] = useReducer(menuToggleReducer, false);
+
   useEffect(() => {
     showMenu && toggleMenu();
   }, []);

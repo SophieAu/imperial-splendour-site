@@ -156,3 +156,10 @@ export type SlugContext = {
     slug: string;
   };
 };
+
+// ---
+// Prop Types
+
+export interface ClassNameProp {
+  className: string;
+}

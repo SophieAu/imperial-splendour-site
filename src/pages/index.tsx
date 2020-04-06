@@ -6,7 +6,7 @@ import Hero from '../components/Hero';
 import InfoBoxes from '../components/InfoBoxes';
 import Layout from '../components/Layout';
 
-const Home: React.FC<{}> = () => (
+const Home: React.FC = () => (
   <Layout title={home.pageTitle} description={home.pageDescription} slug={slugs.home}>
     <Hero />
     <InfoBoxes />
