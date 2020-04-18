@@ -26,7 +26,6 @@ const CarouselImage: React.FC<Props> = ({ src, offset, title, side }) => (
   <Img
     fixed={src}
     style={carouselImageStyle(offset)}
-    fadeIn={false}
     placeholderStyle={{ display: 'none', overflow: 'auto' }}
     alt={title}
     imgStyle={{

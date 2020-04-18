@@ -20,9 +20,9 @@ const GatsbyImage: React.FC<Props> = props => {
       alt={alt}
       className={className}
       style={style}
-      fluid={fluid ? fluid : undefined}
-      fixed={fixed ? fixed : undefined}
-      fadeIn={fadeIn ?? false}
+      fluid={fluid}
+      fixed={fixed}
+      fadeIn={!!fadeIn}
       placeholderStyle={placeholderStyle}
       imgStyle={{ objectFit: 'contain', ...imgStyle }}
     />
