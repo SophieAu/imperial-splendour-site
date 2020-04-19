@@ -9,8 +9,8 @@ import {
   MAX_SITE_WIDTH,
   screenSize,
 } from '../_variables.styles';
-import heroJpg from '../../data/img/hero_bg.jpg';
-import heroWebP from '../../data/img/hero_bg.webp';
+import heroJpg from '../../data/img/index/hero_bg.jpg';
+import heroWebP from '../../data/img/index/hero_bg.webp';
 
 export const root = css`
   align-items: center;
