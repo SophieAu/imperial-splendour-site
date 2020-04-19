@@ -1,8 +1,8 @@
 import { cx } from 'linaria';
 import React, { useEffect, useReducer } from 'react';
 
-import exitButton from '../../data/img/header_exit_button';
-import hamburgerButton from '../../data/img/header_hamburger_button';
+import ExitButtonSvg from '../../data/img/header_exit_button.inline.svg';
+import HamburgerButtonSvg from '../../data/img/header_hamburger_button.inline.svg';
 import { header } from '../../data/strings';
 import { ClassNameProp } from '../types';
 import * as styles from './HeaderMobile.styles';
@@ -59,7 +59,7 @@ const HamburgerButton: React.FC<ButtonProps> = ({ onClick, className }) => (
     aria-expanded="false"
     aria-controls="menu"
   >
-    {hamburgerButton}
+    <HamburgerButtonSvg />
   </button>
 );
 
@@ -72,7 +72,7 @@ const ExitButton: React.FC<ButtonProps> = ({ onClick }) => (
     aria-expanded="true"
     aria-controls="menu"
   >
-    {exitButton}
+    <ExitButtonSvg />
   </button>
 );
 

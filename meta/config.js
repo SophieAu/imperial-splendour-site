@@ -102,6 +102,8 @@ exports.transformerRemarkOptions = {
   ],
 };
 
+exports.reactSVGOptions = { rule: { include: /\.inline\.svg$/ } };
+
 exports.robotsTxtOptions = {
   policy: [{ userAgent: '*', disallow: hiddenPages, noindex: hiddenPages }],
 };
