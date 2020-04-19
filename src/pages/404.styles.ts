@@ -1,5 +1,7 @@
 import { css } from 'linaria';
 
+import { MAX_CONTENT_WIDTH, screenSize } from '../_variables.styles';
+
 export const root = css`
   display: grid;
   place-items: center;
@@ -31,5 +33,22 @@ export const contributor = css`
 
   p {
     margin: 0.5rem 0;
+  }
+`;
+
+export const image = css`
+  width: min(80vw, ${MAX_CONTENT_WIDTH});
+  height: 100%;
+
+  margin-top: 1rem;
+
+  @media all ${screenSize.MOBILE} {
+    display: none;
+  }
+`;
+
+export const title = css`
+  @media all ${screenSize.TABLET_MIN} {
+    display: none;
   }
 `;

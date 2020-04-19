@@ -136,3 +136,13 @@ export const headerLogo = graphql`
     }
   }
 `;
+
+export const notFoundImage = graphql`
+  fragment notFoundImage on File {
+    childImageSharp {
+      fluid(maxWidth: 1040) {
+        ...GatsbyImageSharpFluid_withWebp_tracedSVG
+      }
+    }
+  }
+`;

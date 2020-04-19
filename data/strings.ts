@@ -171,4 +171,5 @@ export const notFound = {
     'FImperial Splendour attempts to create the best Empire: Total War experience possible without destroying the essence of the game.',
   title: 'Defeat!',
   body: "You seem to have stumbled upon a page that doesn't exist...",
+  imageAlt: 'Narrow defeat',
 };
