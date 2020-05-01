@@ -38,7 +38,7 @@
     "gatsby-transformer-sharp": "^2.4.3",
     "gatsby-transformer-yaml": "^2.3.1",
     "linaria": "^2.0.0-alpha.2",
-    "netlify-cms-app": "^2.12.3",
+    "netlify-cms-app": "^2.12.11",
     "prismjs": "^1.19.0",
     "puppeteer": "^2.1.1",
     "react": "^16.13.1",
