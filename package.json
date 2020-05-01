@@ -42,7 +42,7 @@
     "prismjs": "^1.19.0",
     "puppeteer": "^2.1.1",
     "react": "^16.13.1",
-    "react-dom": "^16.13.0",
+    "react-dom": "^16.13.1",
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
