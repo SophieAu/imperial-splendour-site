@@ -32,7 +32,7 @@ The ground floor were only changed in the early 20th century and a balcony was a
 <td>
 <iframe width="640" height="480" src="https://sketchfab.com/models/9e23ff7bb7234c25920a5b1cd7e3a149/embed?preload=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-[Altes Braunschweiger Schloss](https://sketchfab.com/3d-models/rathaus-coburg-b65305da47c947f2893b160f70d114ce?utm_medium=embed&utm_source=website&utm_campaign=share-popup) by [QuintusHortensiusHortalus](https://sketchfab.com/QuintusHortensiusHortalus) on [Sketchfab](https://sketchfab.com)
+[Altes Braunschweiger Schloss](https://sketchfab.com/3d-models/altes-braunschweiger-schloss-9e23ff7bb7234c25920a5b1cd7e3a149) by [QuintusHortensiusHortalus](https://sketchfab.com/QuintusHortensiusHortalus) on [Sketchfab](https://sketchfab.com)
 </td>
 
 <td>
@@ -54,7 +54,7 @@ This is another buliding model for Imperial Splendour so the backside was ignore
 <iframe width="640" height="480" src="https://sketchfab.com/models/9ebcaaca6ba8451eabd6344230272c0f/embed?preload=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1"
 frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-[St James's Palace](https://sketchfab.com/3d-models/rathaus-coburg-b65305da47c947f2893b160f70d114ce?utm_medium=embed&utm_source=website&utm_campaign=share-popup) by [QuintusHortensiusHortalus](https://sketchfab.com/QuintusHortensiusHortalus) on [Sketchfab](https://sketchfab.com)
+[St James's Palace](https://sketchfab.com/3d-models/st-jamess-palace-9ebcaaca6ba8451eabd6344230272c0f) by [QuintusHortensiusHortalus](https://sketchfab.com/QuintusHortensiusHortalus) on [Sketchfab](https://sketchfab.com)
 </td>
 
 <td>
@@ -66,7 +66,7 @@ This is the in-game Empire Total War model:
 
 </table>
 
-
+This model represents St James’s Palace in the Empire Total War mod Imperial Splendour.
 
 <table>
 <td>
