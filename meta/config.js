@@ -94,7 +94,6 @@ exports.manifestOptions = {
 
 exports.transformerRemarkOptions = {
   plugins: [
-    `gatsby-remark-prismjs`,
     {
       resolve: 'gatsby-remark-images',
       options: { maxWidth: 970, quality: 90, withWebp: true },
