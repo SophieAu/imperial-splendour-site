@@ -20,7 +20,8 @@ exports.cspOptions = {
     'worker-src': "'none'",
     'frame-src': "'self' https://sketchfab.com/models/ https://www.youtube-nocookie.com/embed/",
     'script-src': "'self' https://static.sketchfab.com/static/",
-    'style-src': "'self' 'unsafe-inline' https://fonts.googleapis.com/",
+    'style-src':
+      "'self' 'unsafe-inline' https://fonts.googleapis.com/  https://d33wubrfki0l68.cloudfront.net/'",
     'font-src': "'self' https://fonts.gstatic.com/s/",
   },
 };
