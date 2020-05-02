@@ -30,6 +30,46 @@ The ground floor were only changed in the early 20th century and a balcony was a
 
 <table>
 <td>
+<iframe width="640" height="480" src="https://sketchfab.com/models/9e23ff7bb7234c25920a5b1cd7e3a149/embed?preload=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+[Altes Braunschweiger Schloss](https://sketchfab.com/3d-models/rathaus-coburg-b65305da47c947f2893b160f70d114ce?utm_medium=embed&utm_source=website&utm_campaign=share-popup) by [QuintusHortensiusHortalus](https://sketchfab.com/QuintusHortensiusHortalus) on [Sketchfab](https://sketchfab.com)
+</td>
+
+<td>
+
+I made the building without any plans the only things I had were variants of an engraving (so the outer sides of the wings with their decorations were created by me) and for the colours wikipedia stated that the mid-wing was build in sandstone and I had this painting (almost identical perspective of the engravings) from the 1830 fire: 
+![](../_img/2018-08-21-braunschweig palace burning.jpg)
+
+This is the in-game Empire Total War model:
+![](../_img/2018-08-21-braunschweig palace ingame.png)
+
+</td>
+
+</table>
+
+This is another buliding model for Imperial Splendour so the backside was ignored as you can’t see it in-game. The “Altes Braunschweiger Schloss” (old Brunswick Palace) which was build almost the entire 18th century was the official residence of the Dukes of Brunswick-Wolfenbüttel. 
+
+<table>
+<td>
+<iframe width="640" height="480" src="https://sketchfab.com/models/9ebcaaca6ba8451eabd6344230272c0f/embed?preload=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1"
+frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+[St James's Palace](https://sketchfab.com/3d-models/rathaus-coburg-b65305da47c947f2893b160f70d114ce?utm_medium=embed&utm_source=website&utm_campaign=share-popup) by [QuintusHortensiusHortalus](https://sketchfab.com/QuintusHortensiusHortalus) on [Sketchfab](https://sketchfab.com)
+</td>
+
+<td>
+
+This is the in-game Empire Total War model:
+![](../_img/2018-08-21-st james palace ingame.png)
+
+</td>
+
+</table>
+
+
+
+<table>
+<td>
 <iframe width="640" height="480" src="https://sketchfab.com/models/9212073514a74215abe129e06be1bb83/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 [Schloss Salzdahlum](https://sketchfab.com/models/9212073514a74215abe129e06be1bb83) by [QuintusHortensiusHortalus](https://sketchfab.com/QuintusHortensiusHortalus) on [Sketchfab](https://sketchfab.com)
