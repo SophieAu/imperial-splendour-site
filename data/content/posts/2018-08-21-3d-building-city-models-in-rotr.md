@@ -11,6 +11,25 @@ Here are some of my building and city models for RotR:
 
 <table>
 <td>
+<iframe width="640" height="480" src="https://sketchfab.com/models/b65305da47c947f2893b160f70d114ce/embed?preload=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+[Rathaus Coburg](https://sketchfab.com/3d-models/rathaus-coburg-b65305da47c947f2893b160f70d114ce?utm_medium=embed&utm_source=website&utm_campaign=share-popup) by [QuintusHortensiusHortalus](https://sketchfab.com/QuintusHortensiusHortalus) on [Sketchfab](https://sketchfab.com)
+</td>
+
+<td>
+
+This is the in-game Empire Total War model:
+![](../_img/2018-08-21-coburg rathaus ingame.png)
+
+</td>
+
+</table>
+
+This is the townhall of Coburg. The model is actually different from the townhall as it is today because some alteritions were done in the early 20th century. As I’m using this model in the 18th century mod Imperial Splendour I tried to represent the state of the townhall in that era. The mayor differences are that the ground floor still looked like several buildings in the 18th century because this is, what the townhall was. Several buildings were merged together to create the townhall. When this was done the ground floor was left as it was.
+The ground floor were only changed in the early 20th century and a balcony was added in the middle of the first floor.
+
+<table>
+<td>
 <iframe width="640" height="480" src="https://sketchfab.com/models/9212073514a74215abe129e06be1bb83/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 [Schloss Salzdahlum](https://sketchfab.com/models/9212073514a74215abe129e06be1bb83) by [QuintusHortensiusHortalus](https://sketchfab.com/QuintusHortensiusHortalus) on [Sketchfab](https://sketchfab.com)
