@@ -31,9 +31,9 @@ And this is the final model of the special Brunswick building chain:
 
 Also, many descriptions were added and the website received a complete overhaul. Many bugs you reported were fixed and we try to improve the overhaul quality of the mod. 
 
-And many things will be new in the next version and mod's like iporto's [Train your Generals at Schools! -&- Fixed Trait and Ancillary Triggers](https://www.twcenter.net/forums/showthread.php?798721-SUBMOD-Train-your-Generals-at-Schools!-amp-Fixed-Trait-and-Ancillary-Triggers) will be incorporated in 1.2.
+And many things will be new in the next version and mods like iporto9393's [Train your Generals at Schools! -&- Fixed Trait and Ancillary Triggers](https://www.twcenter.net/forums/showthread.php?798721-SUBMOD-Train-your-Generals-at-Schools!-amp-Fixed-Trait-and-Ancillary-Triggers) will be incorporated in 1.2.
 
-In addition those guys will be part of RotR 1.2 as a little anticipation of RotR 1.3:
+In addition, those guys will be part of RotR 1.2 as a little anticipation of RotR 1.3:
 
 ![](../_img/austria-regiment-kaiser.jpg)
 
