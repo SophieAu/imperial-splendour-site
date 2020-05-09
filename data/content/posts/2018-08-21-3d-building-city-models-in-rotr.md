@@ -83,7 +83,7 @@ frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webki
 
 This is the in-game Empire Total War model: 
 
-![](static/2018-08-21-st james palace ingame.png)
+![](../_img/2018-08-21-st james palace ingame.png)
 
 </td>
 
