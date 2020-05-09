@@ -7,7 +7,7 @@ excerpt: Here we would like to present you our latest work.
 ---
 <center>
 
-![](static/preview-may-20-blog.png)
+![](../_img/preview-may-20-blog.png)
 
 </center>
 
