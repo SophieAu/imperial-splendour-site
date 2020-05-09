@@ -24,7 +24,9 @@ Here are some of my building and city models for RotR:
 
 <td>
 
-This is the in-game Empire Total War model: !\[](../_img/2018-08-21-coburg rathaus ingame.png)
+This is the in-game Empire Total War model: 
+
+![](static/2018-08-21-coburg rathaus ingame.png)
 
 </td>
 
@@ -48,9 +50,13 @@ This is the townhall of Coburg. The model is actually different from the townhal
 
 <td>
 
-I made the building without any plans the only things I had were variants of an engraving (so the outer sides of the wings with their decorations were created by me) and for the colours wikipedia stated that the mid-wing was build in sandstone and I had this painting (almost identical perspective of the engravings) from the 1830 fire:  !\[](../_img/2018-08-21-braunschweig palace burning.jpg)
+I made the building without any plans the only things I had were variants of an engraving (so the outer sides of the wings with their decorations were created by me) and for the colours wikipedia stated that the mid-wing was build in sandstone and I had this painting (almost identical perspective of the engravings) from the 1830 fire:  
 
-This is the in-game Empire Total War model: !\[](../_img/2018-08-21-braunschweig palace ingame.png)
+![](static/2018-08-21-braunschweig palace burning.jpg)
+
+This is the in-game Empire Total War model: 
+
+![](static/2018-08-21-braunschweig palace ingame.png)
 
 </td>
 
@@ -75,7 +81,9 @@ frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webki
 
 <td>
 
-This is the in-game Empire Total War model: !\[](../_img/2018-08-21-st james palace ingame.png)
+This is the in-game Empire Total War model: 
+
+![](static/2018-08-21-st james palace ingame.png)
 
 </td>
 
