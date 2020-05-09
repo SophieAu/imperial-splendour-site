@@ -47,7 +47,10 @@ This is the in-game Empire Total War model:
 
 </table>
 
-This is another buliding model for Imperial Splendour so the backside was ignored as you can’t see it in-game. The “Altes Braunschweiger Schloss” (old Brunswick Palace) which was build almost the entire 18th century was the official residence of the Dukes of Brunswick-Wolfenbüttel. 
+The "Altes Braunschweiger Schloss" (old Brunswick Palace) was the official residence of the Dukes of Brunswick-Wolfenbüttel.  The building of that palace lasted almost the entire 18th century.
+In the early 18th century the architect Hermann Korb was charged with developing plans for a palace in Brunswick. He chose to create a building with 3 wings in French Baroque style with the for Korb typical arcades. Building started in 1718.
+The inner wings were the first parts to be completed in 1724. From the side wings, the outer northern side-wing was the last to be completed in 1754. But the central wing was at that time far from being done. Despite that the palace was made official residence in 1753 and the Dukes moved to the “Braunschweiger Schloss”. Finally, the central wing was completed from 1783 to 1791 in the Classical style.
+Just 40 years later in 1830 the palace was burned down by Revolutionaries. After the fire another palace was built on the same spot.
 
 <table>
 <td>
