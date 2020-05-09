@@ -8,8 +8,8 @@ excerpt: This is to show you some of the 3D Models of buildings and cities I
 ---
 Here are some of my building and city models for RotR:
 
-<center>
-## Rathaus Coburg
+## <center>
+Rathaus Coburg
 </center>
 
 <table>
@@ -52,8 +52,7 @@ This is the in-game Empire Total War model: !\[](../_img/2018-08-21-braunschweig
 
 </table>
 
-The "Altes Braunschweiger Schloss" (old Brunswick Palace) was the official residence of the Dukes of Brunswick-Wolfenbüttel.  The building of that palace lasted almost the entire 18th century. In the early 18th century the architect Hermann Korb was charged with developing plans for a palace in Brunswick. He chose to create a building with 3 wings in French Baroque style with the for Korb typical arcades. Building started in 1718.
-The inner wings were the first parts to be completed in 1724. From the side wings, the outer northern side-wing was the last to be completed in 1754. But the central wing was at that time far from being done. Despite that the palace was made official residence in 1753 and the Dukes moved to the “Braunschweiger Schloss”. Finally, the central wing was completed from 1783 to 1791 in the Classical style.
+The "Altes Braunschweiger Schloss" (old Brunswick Palace) was the official residence of the Dukes of Brunswick-Wolfenbüttel.  The building of that palace lasted almost the entire 18th century. In the early 18th century the architect Hermann Korb was charged with developing plans for a palace in Brunswick. He chose to create a building with 3 wings in French Baroque style with the for Korb typical arcades. Building started in 1718. The inner wings were the first parts to be completed in 1724. From the side wings, the outer northern side-wing was the last to be completed in 1754. But the central wing was at that time far from being done. Despite that the palace was made official residence in 1753 and the Dukes moved to the “Braunschweiger Schloss”. Finally, the central wing was completed from 1783 to 1791 in the Classical style.
 Just 40 years later in 1830 the palace was burned down by Revolutionaries. After the fire another palace was built on the same spot.
 
 <center>
@@ -165,8 +164,7 @@ This is a city model for London I made for the ETW mod Imperial Splendour. Most 
 
 </table>
 
-The model was made for the ETW mod Imperial Splendour. It serves as a city model for the town of Hannover. In the model itself there are many historical buildings that were once located in Hannover (and are demolished today) as well as several drafts which were never built. I tried to represent the division between the old town, coming from the middle ages on the right with timber-frame and Renaissance houses and the new town (“Calenberger Neustadt”) on the left which was built in the 17th century and where the townhouses of the nobility stood.
-Most prominent on the right is the Marktkirche (Market Church). Outside the actual town you can see the Nikolaikapelle (Nikolai chapel) with its graveyard. Today the Nikolaikapelle is a ruin.
+The model was made for the ETW mod Imperial Splendour. It serves as a city model for the town of Hannover. In the model itself there are many historical buildings that were once located in Hannover (and are demolished today) as well as several drafts which were never built. I tried to represent the division between the old town, coming from the middle ages on the right with timber-frame and Renaissance houses and the new town (“Calenberger Neustadt”) on the left which was built in the 17th century and where the townhouses of the nobility stood. Most prominent on the right is the Marktkirche (Market Church). Outside the actual town you can see the Nikolaikapelle (Nikolai chapel) with its graveyard. Today the Nikolaikapelle is a ruin.
 
 <center>
 ## Harling'sches Haus
