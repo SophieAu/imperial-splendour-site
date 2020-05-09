@@ -26,7 +26,7 @@ Here are some of my building and city models for RotR:
 
 This is the in-game Empire Total War model: 
 
-![](static/2018-08-21-coburg rathaus ingame.png)
+![](../_img/2018-08-21-coburg rathaus ingame.png)
 
 </td>
 
@@ -52,11 +52,11 @@ This is the townhall of Coburg. The model is actually different from the townhal
 
 I made the building without any plans the only things I had were variants of an engraving (so the outer sides of the wings with their decorations were created by me) and for the colours wikipedia stated that the mid-wing was build in sandstone and I had this painting (almost identical perspective of the engravings) from the 1830 fire:  
 
-![](static/2018-08-21-braunschweig palace burning.jpg)
+![](../_img/2018-08-21-braunschweig palace burning.jpg)
 
 This is the in-game Empire Total War model: 
 
-![](static/2018-08-21-braunschweig palace ingame.png)
+![](../_img/2018-08-21-braunschweig palace ingame.png)
 
 </td>
 
