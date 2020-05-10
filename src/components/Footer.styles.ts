@@ -6,7 +6,7 @@ export const root = css`
   height: ${FOOTER_HEIGHT};
 
   @media all ${screenSize.MOBILE} {
-    flex-direction: column;
+    flex-direction: column !important;
     height: auto;
     min-height: ${FOOTER_HEIGHT};
   }
@@ -53,5 +53,12 @@ export const socialMedia = css`
 
   @media all ${screenSize.MOBILE} {
     padding: 0.5rem;
+
+    place-items: center;
+    flex-direction: column;
+
+    > *:not(:last-child) {
+      padding-right: 0;
+    }
   }
 `;
