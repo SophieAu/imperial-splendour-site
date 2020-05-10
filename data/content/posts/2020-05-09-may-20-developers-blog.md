@@ -19,15 +19,23 @@ But many things have been made in the background. In order the give the AI the a
 
 This model of the town hall of Coburg will serve as a generic town hall:
 
+<center>
+
 <iframe width="640" height="480" src="https://sketchfab.com/models/b65305da47c947f2893b160f70d114ce/embed?preload=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 [Rathaus Coburg](https://sketchfab.com/3d-models/rathaus-coburg-b65305da47c947f2893b160f70d114ce?utm_medium=embed&utm_source=website&utm_campaign=share-popup) by [QuintusHortensiusHortalus](https://sketchfab.com/QuintusHortensiusHortalus) on [Sketchfab](https://sketchfab.com)
 
+</center>
+
 And this is the final model of the special Brunswick building chain:
+
+<center>
 
 <iframe width="640" height="480" src="https://sketchfab.com/models/9e23ff7bb7234c25920a5b1cd7e3a149/embed?preload=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 [Altes Braunschweiger Schloss](https://sketchfab.com/3d-models/altes-braunschweiger-schloss-9e23ff7bb7234c25920a5b1cd7e3a149) by [QuintusHortensiusHortalus](https://sketchfab.com/QuintusHortensiusHortalus) on [Sketchfab](https://sketchfab.com)
+
+</center>
 
 Also, many descriptions were added and the website received a complete overhaul. Many bugs you reported were fixed and we try to improve the overhaul quality of the mod. 
 
@@ -49,7 +57,7 @@ The basic model was made by Flikitos long ago with some slight adaptions made by
 
 Furthermore, the Total War Center 2019 Modding Awards are now live. Check it out by clicking on the picture or the link below.
 
-[![Modding Awards Banner](../_img/ma-2019-banner.png')](https://www.twcenter.net/forums/showthread.php?804369-2019-MODDING-AWARDS-VOTING-POLLS-ARE-UP-(links-inside!))
+[![Modding Awards Banner](../_img/ma-2019-banner.png)](https://www.twcenter.net/forums/showthread.php?804369-2019-MODDING-AWARDS-VOTING-POLLS-ARE-UP-(links-inside!))
 
 https://www.twcenter.net/forums/showthread.php?804369-2019-MODDING-AWARDS-VOTING-POLLS-ARE-UP-(links-inside!)
 
