@@ -47,11 +47,11 @@ In addition, those guys will be part of RotR 1.2 as a little anticipation of Rot
 
 The basic model was made by Flikitos long ago with some slight adaptions made by me. 
 
-Furthermore the Total War Center 2019 Modding Awards are now live.
+Furthermore the Total War Center 2019 Modding Awards are now live. Check it out by clickiung on the picture or the link below.
 
-![Modding Awards Banner](../_img/ma-2019-banner.png "2019 Modding Awards")
+[![Modding Awards Banner](../_img/ma-2019-banner.png "2019 Modding Awards")]https://www.twcenter.net/forums/showthread.php?804369-2019-MODDING-AWARDS-VOTING-POLLS-ARE-UP-(links-inside!)
 
-Follow this link to the voting threads: https://www.twcenter.net/forums/showthread.php?804369-2019-MODDING-AWARDS-VOTING-POLLS-ARE-UP-(links-inside!)
+https://www.twcenter.net/forums/showthread.php?804369-2019-MODDING-AWARDS-VOTING-POLLS-ARE-UP-(links-inside!)
 
 <center>
 
