@@ -49,7 +49,7 @@ The basic model was made by Flikitos long ago with some slight adaptions made by
 
 Furthermore, the Total War Center 2019 Modding Awards are now live. Check it out by clicking on the picture or the link below.
 
-[![Modding Awards Banner](../_img/ma-2019-banner.png "2019 Modding Awards")]https://www.twcenter.net/forums/showthread.php?804369-2019-MODDING-AWARDS-VOTING-POLLS-ARE-UP-(links-inside!)
+[![Modding Awards Banner](../_img/ma-2019-banner.png')](https://www.twcenter.net/forums/showthread.php?804369-2019-MODDING-AWARDS-VOTING-POLLS-ARE-UP-(links-inside!))
 
 https://www.twcenter.net/forums/showthread.php?804369-2019-MODDING-AWARDS-VOTING-POLLS-ARE-UP-(links-inside!)
 
