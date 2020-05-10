@@ -3,7 +3,7 @@ title: May '20 Developers Blog
 date: 2020-05-09T19:02:56.255Z
 author:
   - QHH
-excerpt: Here we would like to present you our latest work.
+excerpt: Here we would like to present our latest work on the route to the 1.2 Northern Wars update.
 ---
 <center>
 
@@ -47,7 +47,7 @@ In addition, those guys will be part of RotR 1.2 as a little anticipation of Rot
 
 The basic model was made by Flikitos long ago with some slight adaptions made by me. 
 
-Furthermore the Total War Center 2019 Modding Awards are now live. Check it out by clickiung on the picture or the link below.
+Furthermore, the Total War Center 2019 Modding Awards are now live. Check it out by clicking on the picture or the link below.
 
 [![Modding Awards Banner](../_img/ma-2019-banner.png "2019 Modding Awards")]https://www.twcenter.net/forums/showthread.php?804369-2019-MODDING-AWARDS-VOTING-POLLS-ARE-UP-(links-inside!)
 
@@ -55,7 +55,7 @@ https://www.twcenter.net/forums/showthread.php?804369-2019-MODDING-AWARDS-VOTING
 
 <center>
 
-### Thank you for you patience!
+### Thank you for your patience!
 
 Visit us on 
 
