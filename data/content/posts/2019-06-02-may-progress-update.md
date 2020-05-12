@@ -101,4 +101,4 @@ Visit us on
 
 ### &nbsp;
 
-PS: Yesterday was the [](https://en.wikipedia.org/wiki/Glorious_First_of_June)Glorious First of June!</a></p>
+PS: Yesterday was the [Glorious First of June](https://en.wikipedia.org/wiki/Glorious_First_of_June)!</a></p>
