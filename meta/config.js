@@ -11,21 +11,6 @@ exports.siteMetadata = {
   siteUrl: `https://imperialsplendour.com`,
 };
 
-exports.cspOptions = {
-  disableOnDev: true,
-  mergeStyleHashes: false,
-  directives: {
-    'default-src': "'self'",
-    'img-src': "'self' data: https://*",
-    'worker-src': "'none'",
-    'frame-src': "'self' https://sketchfab.com/models/ https://www.youtube-nocookie.com/embed/",
-    'script-src':
-      "'self' https://static.sketchfab.com/static/ https://d33wubrfki0l68.cloudfront.net/",
-    'style-src': "'self' 'unsafe-inline' https://fonts.googleapis.com/",
-    'font-src': "'self' https://fonts.gstatic.com/s/",
-  },
-};
-
 exports.feedOptions = {
   query: `
   {

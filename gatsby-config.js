@@ -25,7 +25,6 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     'gatsby-transformer-yaml',
-    { resolve: `gatsby-plugin-csp`, options: cspOptions },
     { resolve: `gatsby-plugin-feed`, options: feedOptions },
     { resolve: `gatsby-plugin-manifest`, options: manifestOptions },
     { resolve: `gatsby-plugin-page-creator`, options: pageCreatorOptions },
