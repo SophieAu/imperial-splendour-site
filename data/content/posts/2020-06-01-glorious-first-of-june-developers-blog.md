@@ -3,7 +3,7 @@ title: Glorious First of June Developers Blog
 date: 2020-06-01T10:27:06.554Z
 author:
   - QHH
-excerpt: Today is the 224th aniversary of the Glorious First of June. Is there
+excerpt: Today is the 224th anniversary of the Glorious First of June. Is there
   any better day to present the British Naval officers?
 ---
 Here they are, long-awaited British Naval officers in the 1787 uniform regulation uniforms:
