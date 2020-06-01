@@ -1,9 +1,6 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const { resolve } = require(`path`);
 const { createSlug } = require('./util');
-const fs = require(`fs-extra`);
-const { createFileNode } = require(`gatsby-source-filesystem/create-file-node`);
-const { postToImage } = require('./social-image');
 
 const POSTS_PER_PAGE = 6;
 
@@ -104,23 +101,5 @@ exports.buildBlogListPagination = (nodes, createPage) => {
       },
     });
     console.log(path);
-  });
-};
-
-exports.createSocialCardImage = async (parentNode, browser, store, actions) => {
-  const { createNode, createNodeField, createNodeId } = actions;
-
-  const CACHE_DIR = resolve(`${store.getState().program.directory}/.cache/social/`);
-  await fs.ensureDir(CACHE_DIR);
-
-  const ogImagePath = await postToImage(CACHE_DIR, browser, parentNode);
-  const imageFileNode = await createFileNode(ogImagePath, createNodeId);
-  imageFileNode.parent = parentNode.id;
-  createNode(imageFileNode, { name: `gatsby-source-filesystem` });
-
-  createNodeField({
-    node: parentNode,
-    name: 'socialImage___NODE',
-    value: imageFileNode.id,
   });
 };

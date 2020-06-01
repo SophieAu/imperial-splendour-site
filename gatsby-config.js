@@ -1,7 +1,6 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const {
   siteMetadata,
-  cspOptions,
   feedOptions,
   manifestOptions,
   reactSVGOptions,
@@ -10,6 +9,7 @@ const {
   filesystemContentOptions,
   filesystemImageOptions,
   transformerRemarkOptions,
+  socialImageOptions,
 } = require('./meta/config');
 
 const pageCreatorOptions = { path: `${__dirname}/src/pages`, ignore: [`**/*.styles.ts`] };
@@ -34,5 +34,6 @@ module.exports = {
     { resolve: 'gatsby-source-filesystem', options: filesystemContentOptions },
     { resolve: 'gatsby-source-filesystem', options: filesystemImageOptions },
     { resolve: `gatsby-transformer-remark`, options: transformerRemarkOptions },
+    { resolve: `gatsby-remark-social-image`, options: socialImageOptions },
   ],
 };

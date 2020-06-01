@@ -6,7 +6,6 @@ const {
   buildBlogPosts,
   buildFactionPages,
   buildTermsOfService,
-  createSocialCardImage,
 } = require('./meta/node');
 
 let browser = null;
@@ -36,14 +35,4 @@ exports.createPages = async ({ graphql, actions }) => {
   buildFactionPages(result.data.factions.edges, actions.createPage);
 
   console.log();
-};
-
-exports.onCreateNode = async ({ node, actions, createNodeId, store }) => {
-  if (node.internal.type !== 'MarkdownRemark') return;
-
-  try {
-    await createSocialCardImage(node, browser, store, { ...actions, createNodeId });
-  } catch (e) {
-    console.warn(e);
-  }
 };
