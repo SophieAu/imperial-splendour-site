@@ -2,20 +2,18 @@
   "name": "imp-splen-site",
   "version": "1.0.0",
   "description": "Imperial Splendour Site",
+  "author": "Sophie Au <sophie@sophieau.com>",
   "private": true,
   "scripts": {
     "start": "gatsby develop",
     "build": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
     "prod": "gatsby build && gatsby serve",
-    "clean": "gatsby clean",
     "checks": "tsc && npm run lint",
     "format": "prettier --write '{src,data}/**/*.{tsx,ts}'",
     "lint": "eslint 'src/**/*.{tsx,ts,js,jsx}' --ignore-pattern '*.d.ts' --ignore-pattern 'src/assets/*' && stylelint 'src/**/*.styles.ts' --rd --risd",
     "stylelint": "stylelint '.' --rd --risd",
     "lint:fix": "eslint 'src/**/*.{tsx,ts,js,jsx}' --ignore-pattern '*.d.ts'  --ignore-pattern 'src/assets/*' --fix && stylelint 'src/**/*.styles.ts' --rd --risd --fix"
   },
-  "author": "Sophie Au <sophie@sophieau.com>",
-  "license": "MIT",
   "dependencies": {
     "core-js": "^3.6.5",
     "fs-extra": "^9.0.0",
