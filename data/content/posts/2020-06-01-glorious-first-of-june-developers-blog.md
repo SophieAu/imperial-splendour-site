@@ -6,7 +6,7 @@ author:
 excerpt: Today is the 224th aniversary of the Glorious First of June. Is there
   any better day to present the British Naval officers?
 ---
-Here they are, long awaited in the 1787 uniform regulation uniforms:
+Here they are, long-awaited British Naval officers in the 1787 uniform regulation uniforms:
 
 ![British Naval Officers](../_img/gb-see-officers.png "British Naval Officers")
 
@@ -20,7 +20,7 @@ These are the officers in-game:
 
 ![in-game captain](../_img/glorious-1st-june-captain-ingame.jpg "in-game captain")
 
-That's not all news for Great Britain. We will also look into the British units in the Americas in order to avoid that Great Britain can spawn huge amounts of well trained units. During making this, new British colonial units will be provided as the West India Regiments:
+That's not all news for Great Britain. We will also look into the British units in the Americas in order to avoid that Great Britain can spawn huge amounts of well-trained units. During making this, new British colonial units will be provided as the West India Regiments:
 
 ![West India Regiment idle](../_img/glorious-first-june-west-india-regiment-idle.jpg "West India Regiment idle")
 
@@ -28,7 +28,7 @@ And here they are in action:
 
 ![West India Regiment in action](../_img/glorious-first-june-west-india-regiment-in-action.jpg "West India Regiment in action")
 
-The recruitment of those units recruited from the black slave on the plantations is restricted to the West Indies and on every island you can recruit a few. According to 18th century society the regiments are commanded by white officers.
+The recruitment of those units recruited from the black slave on the plantations is restricted to the West Indies and on every island, you can recruit a few. According to 18th century society, the regiments are commanded by white officers.
 
 Furthermore here are all new generic European building models which are currently completed in will be in the next update:
 
@@ -40,11 +40,13 @@ Furthermore here are all new generic European building models which are currentl
 
 </center>
 
-Finally I have some news about the followers, each will get it's own little icon. Here you can see some:
+Finally, I have some news about the followers, each will get its little icon. Here you can see some:
 
 ![Followers 1](static/glorious-1st-june-1st-followers.jpg "Followers 1")
 
 ![Followers 2](static/glorious-1st-june-2nd-followers.jpg.jpg "Followers 2")
+
+Some are caricatures (especially by Thomas Rowlandson and William Hogarth) and some are paintings or sketches, we hope you like them.
 
 <center>
 
