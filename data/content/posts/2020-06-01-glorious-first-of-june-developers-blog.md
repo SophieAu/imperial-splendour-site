@@ -48,7 +48,7 @@ Finally, I have some news about the followers, each will get its little icon. He
 
 Some are caricatures (especially by Thomas Rowlandson and William Hogarth) and some are paintings or sketches, we hope you like them.
 
-And Imperial Splendour - Rise of the Republic has won the 2019 Modding Awards at Total War Center (and I was awarded the 3rd place as Favourite modder)!
+And Imperial Splendour - Rise of the Republic has won the 2019 Modding Awards at Total War Center (furthermore I was awarded the 3rd place as Favourite modder)!
 
 <center>
 
