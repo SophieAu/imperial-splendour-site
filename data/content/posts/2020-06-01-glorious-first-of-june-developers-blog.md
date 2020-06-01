@@ -3,9 +3,11 @@ title: Glorious First of June Developers Blog
 date: 2020-06-01T10:27:06.554Z
 author:
   - QHH
-excerpt: Today is the 224th anniversary of the Glorious First of June. Is there
+excerpt: Today is the 226th anniversary of the Glorious First of June. Is there
   any better day to present the British Naval officers?
 ---
+Today is the **226th anniversary of the Glorious First of June**. Is there any better day to present the British Naval officers?
+
 Here they are, long-awaited British Naval officers in the 1787 uniform regulation uniforms:
 
 ![British Naval Officers](../_img/gb-see-officers.png "British Naval Officers")
@@ -42,9 +44,9 @@ Furthermore here are all new generic European building models which are currentl
 
 Finally, I have some news about the followers, each will get its little icon. Here you can see some:
 
-![Followers 1](static/glorious-1st-june-1st-followers.jpg "Followers 1")
+![Followers 1](../_img/glorious-1st-june-1st-followers.jpg "Followers 1")
 
-![Followers 2](static/glorious-1st-june-2nd-followers.jpg.jpg "Followers 2")
+![Followers 2](../_img/glorious-1st-june-2nd-followers.jpg.jpg "Followers 2")
 
 Some are caricatures (especially by Thomas Rowlandson and William Hogarth) and some are paintings or sketches, we hope you like them.
 
