@@ -52,7 +52,7 @@ And Imperial Splendour - Rise of the Republic has won the 2019 Modding Awards at
 
 <center>
 
-![](static/2019-ma-musket-large.png)
+![](../_img/2019-ma-musket-large.png)
 
 ### Thank you for your patience and voting for us (and me)!
 
