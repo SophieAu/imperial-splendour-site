@@ -20,7 +20,7 @@ const Layout: React.FC<Props> = props => {
   const { title, description, slug, children, additionalHead, ogImage } = props;
 
   return (
-    <>
+    <React.StrictMode>
       <Head title={title} description={description} slug={slug} ogImage={ogImage}>
         {additionalHead}
       </Head>
@@ -28,7 +28,7 @@ const Layout: React.FC<Props> = props => {
       <HeaderMobile className={styles.headFoot} />
       <main className={styles.main}>{children}</main>
       <Footer className={styles.headFoot} />
-    </>
+    </React.StrictMode>
   );
 };
 
