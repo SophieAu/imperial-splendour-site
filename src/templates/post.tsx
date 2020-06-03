@@ -16,15 +16,7 @@ export const query = graphql`
     markdownRemark(id: { eq: $id }) {
       ...blogPost
       fields {
-        socialImage {
-          childImageSharp {
-            original {
-              width
-              height
-              src
-            }
-          }
-        }
+        ...socialImage
       }
     }
   }

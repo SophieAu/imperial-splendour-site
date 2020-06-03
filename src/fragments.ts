@@ -20,6 +20,20 @@ export const blogPost = graphql`
   }
 `;
 
+export const socialImage = graphql`
+  fragment socialImage on MarkdownRemarkFields {
+    socialImage {
+      childImageSharp {
+        original {
+          width
+          height
+          src
+        }
+      }
+    }
+  }
+`;
+
 export const postFrontmatter = graphql`
   fragment postFrontmatter on MarkdownRemark {
     frontmatter {
