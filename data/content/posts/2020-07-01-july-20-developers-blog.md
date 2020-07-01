@@ -85,7 +85,7 @@ The 42nd Regiment of Foot, the Black Watch, received an update on their uniforms
 
 - - -
 
-As already announced iporto9393's [Train your Generals at Schools! -&- Fixed Trait and Ancillary Triggers](https://www.twcenter.net/forums/showthread.php?798721-SUBMOD-Train-your-Generals-at-Schools!-amp-Fixed-Trait-and-Ancillary-Triggers) mod will be added in the next update. Among other things ,it adds new followers. Some followers are created also only for RotR. Here are all new followers:
+As already announced iporto9393's [Train your Generals at Schools! -&- Fixed Trait and Ancillary Triggers](https://www.twcenter.net/forums/showthread.php?798721-SUBMOD-Train-your-Generals-at-Schools!-amp-Fixed-Trait-and-Ancillary-Triggers) mod will be added in the next update. Among other things, it adds new followers. Some followers are created also only for RotR. Here are all new followers:
 
 #### For Admirals:
 
