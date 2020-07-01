@@ -108,7 +108,25 @@ Note the each admiral can have only one follower out of the first three.
 
 #### For scholars:
 
-1. Female doctoral candidate
-2. Interested wife
+![Scholar Followers](static/july-update-scholar-followers.png "Scholar Followers")
 
+1. Female Doctoral Candidate
+2. Interested Wife
 
+Especially the last to followers based on Historical people, especially [Dorothea Schlözer](https://en.wikipedia.org/wiki/Dorothea_von_Rodde-Schl%C3%B6zer) and [Marie-Anne Paulze Lavoisier](https://en.wikipedia.org/wiki/Marie-Anne_Paulze_Lavoisier). Both followers are very rare but they both give a bonus on the research speed and the Female Doctoral Candidate gives an additional bonus on the ability to research techs from the Philosophy tech-tree.
+
+- - -
+
+Also Pike's AI is also in the next update (thanks to myfate!) but there is a little issue we have to fix. This also answers when the next release is - not before we could fix the issue.
+
+We will keep you posted on our progress!
+
+<center>
+
+### Thank you for your patience!
+
+Visit us on 
+
+[TWCenter](http://www.twcenter.net/forums/forumdisplay.php?1138-Imperial-Splendour), [Facebook](https://www.facebook.com/imperialsplendour/), [Twitter](https://twitter.com/SplendourTeam) and [![View Imperial Splendour on Mod DB](https://button.moddb.com/popularity/medium/mods/20800.png)](https://www.moddb.com/mods/imperial-splendour)
+
+</center>
