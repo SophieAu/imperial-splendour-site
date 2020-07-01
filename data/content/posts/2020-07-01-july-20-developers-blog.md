@@ -119,7 +119,7 @@ Especially the last to followers based on Historical people, especially [Dorothe
 
 - - -
 
-Also Pike's AI is also in the next update (thanks to myfate!) but there is a little issue we have to fix. This also answers when the next release is - not before we can fix the issue.
+Also, Pike's AI is also in the next update (thanks to myfate!) but there is a little issue we have to fix. This also answers when the next release is - not before we can fix the issue.
 
 We will keep you posted on our progress!
 
