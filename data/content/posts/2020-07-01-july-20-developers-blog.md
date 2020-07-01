@@ -12,13 +12,15 @@ excerpt: Today we present you our latest work on the West Indies colonial units
 
 </center>
 
-## Today we present you the latest work from June, featuring mostly colonial units in the West Indies.
+#### Today we present you the latest work from June, featuring mostly colonial units in the West Indies.
 
 As the West India Regiment was already in the June blog let's start with the British units!
 
 The first units are the Black light infantry in 2 variants: Loyal Black Rangers, recruitable in the original British colonies and Black Chasseurs, recruitable in the other colonies. Both units have a bonus in fighting in the West Indies:
 
-#### <center>Loyal Black Rangers:
+<center>
+
+#### Loyal Black Rangers:
 
 ![GB Loyal Black Rangers](../_img/gb-loyal-black-rangers.jpg "GB Loyal Black Rangers")
 
@@ -26,7 +28,7 @@ The first units are the Black light infantry in 2 variants: Loyal Black Rangers,
 
 ![GB Black Chasseurs](../_img/gb-black-chasseurs.jpg "GB Black Chasseurs")
 
-#### </center>
+</center>
 
 Also the British can recruit a cavalry unit in Hispaniola and Cuba, the Uhlans Britannique. Historically they were recruited for service in Hispaniola in Europe as an auxiliary unit for the British campaign in Hispaniola. Due to the climate in the West Indies and the yellow fever many men died. Therefore the unit has only 60 men.
 
