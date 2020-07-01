@@ -38,7 +38,7 @@ Also the British can recruit a cavalry unit in Hispaniola and Cuba, the Uhlans B
 
 </center>
 
-Also, all factions will have access to some generic colonial units in the West Indies, here are the first to:
+Also, all factions will have access to some generic colonial units in the West Indies, here are the first 2:
 
 <center>
 
