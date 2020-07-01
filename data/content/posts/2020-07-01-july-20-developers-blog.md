@@ -28,11 +28,11 @@ The first units are the Black light infantry in 2 variants: Loyal Black Rangers,
 
 #### </center>
 
-Also the British can recruit a cavalry unit in Hispaniola and Cuba, the Ulhans Britannique. Historically they were recruited for service in Hispaniola in Europe as an auxiliary unit for the British campaign in Hispaniola. Due to the climate in the West Indies and the yellow fever many men died. Therefore the unit has only 60 men.
+Also the British can recruit a cavalry unit in Hispaniola and Cuba, the Uhlans Britannique. Historically they were recruited for service in Hispaniola in Europe as an auxiliary unit for the British campaign in Hispaniola. Due to the climate in the West Indies and the yellow fever many men died. Therefore the unit has only 60 men.
 
-#### <center>Ulhans Britannique:
+#### <center>Uhlans Britannique:
 
-![GB Ulhans Britannique](../_img/gb-ulhans-britannique.jpg "GB Ulhans Britannique")
+![GB Uhlans Britannique](../_img/gb-ulhans-britannique.jpg "GB Uhlans Britannique")
 
 </center>
 
@@ -106,7 +106,7 @@ Note that each admiral can have only one follower out of the first three.
 4. Trumpeter - A trumpeter signals a cavalry unit how to move. Also, the sound encourages the men.
 5. Matador (only available for Spanish and Portuguese generals)
 
-#### For scholars:
+#### For Scholars:
 
 ![Scholar Followers](../_img/july-update-scholar-followers.png "Scholar Followers")
 
