@@ -6,7 +6,7 @@ author:
 excerpt: Today we present you our latest work on the West Indies colonial units
   and some new followers.
 ---
- <center>
+<center>
 
 ![Preview Pic](../_img/preview-july-20-blog.png "Preview Pic")
 
@@ -16,7 +16,7 @@ excerpt: Today we present you our latest work on the West Indies colonial units
 
 As the West India Regiment was already in the June blog let's start with the British units!
 
-The first units are the Black light infantry in 2 variants: Loyal Black Rangers, recruitable in the orginally British colonies and Black Chasseurs, recruitable in the other colonies. Both units have a bonus in fighting in the West Indies:
+The first units are the Black light infantry in 2 variants: Loyal Black Rangers, recruitable in the original British colonies and Black Chasseurs, recruitable in the other colonies. Both units have a bonus in fighting in the West Indies:
 
 #### <center>Loyal Black Rangers:
 
@@ -28,7 +28,7 @@ The first units are the Black light infantry in 2 variants: Loyal Black Rangers,
 
 #### </center>
 
-Also the British can recruit a cavalry unit in Hispaniola and Cuba, the Ulhans Britannique. Historically they were recruited for service in Hispaniola in Europe as an auxillary unit for the British campaign in Hispaniola. Due to the climate in the West Indies and the yellow fewer many men died. Therefore the unit have only 60 men.
+Also the British can recruit a cavalry unit in Hispaniola and Cuba, the Ulhans Britannique. Historically they were recruited for service in Hispaniola in Europe as an auxiliary unit for the British campaign in Hispaniola. Due to the climate in the West Indies and the yellow fever many men died. Therefore the unit has only 60 men.
 
 #### <center>Ulhans Britannique:
 
@@ -36,7 +36,7 @@ Also the British can recruit a cavalry unit in Hispaniola and Cuba, the Ulhans B
 
 </center>
 
-Also all factions will have access to some generic colonial units in the West Indies, here are the first to:
+Also, all factions will have access to some generic colonial units in the West Indies, here are the first to:
 
 <center>
 
@@ -50,17 +50,17 @@ Also all factions will have access to some generic colonial units in the West In
 
 </center>
 
-As you can see, we also created a generic white officers for all West India units.
+As you can see, we also created a generic white officer for all West India units.
 
-But that's not all. Finally the British Highlander Light Infantry is done!
+But that's not all. Finally, the British Highlander Light Infantry is done!
 
 ![Highlander Light Infantry](../_img/gb-light-highlanders.jpg "Highlander Light Infantry")
 
-Also the Guards have now a light infantry unit replacing the light infantry of the Marines:
+Also, the Guards have now a light infantry unit replacing the light infantry of the Marines:
 
 ![GB Guards Light Infantry](../_img/gb-guards-light-infantry.jpg "GB Guards Light Infantry")
 
-In addition the 42nd Regiment of Foot, the Black Watch, received an update on their uniforms. They have no the correct lace around their buttonholes.
+The 42nd Regiment of Foot, the Black Watch, received an update on their uniforms. They have now the correct lace around their buttonholes.
 
 ![Black Watch](../_img/gb-black-watch.jpg "Black Watch")
 
@@ -72,33 +72,33 @@ In addition the 42nd Regiment of Foot, the Black Watch, received an update on th
 2. West India Regiment
 3. Black Chasseurs
 4. Loyal Black Rangers
-5. Ulhans Britannique
+5. Uhlans Britannique
 6. 42nd Regiment of Foot 'Black Watch'
 7. Highlanders Light Infantry
 
-![Generic West India units](static/july-update-generic-west-indian-units-icons.png "Generic West India units")
+![Generic West India units](../_img/july-update-generic-west-indian-units-icons.png "Generic West India units")
 
-1. Black Chassuers
+1. Black Chasseurs
 2. White Planters Militia
 
 - - -
 
-As already announced iporto9393's [Train your Generals at Schools! -&- Fixed Trait and Ancillary Triggers](https://www.twcenter.net/forums/showthread.php?798721-SUBMOD-Train-your-Generals-at-Schools!-amp-Fixed-Trait-and-Ancillary-Triggers) mod will be added in the next update. Among other things it adds new followers. Some followers are create also only for RotR. Here are all new followers:
+As already announced iporto9393's [Train your Generals at Schools! -&- Fixed Trait and Ancillary Triggers](https://www.twcenter.net/forums/showthread.php?798721-SUBMOD-Train-your-Generals-at-Schools!-amp-Fixed-Trait-and-Ancillary-Triggers) mod will be added in the next update. Among other things ,it adds new followers. Some followers are created also only for RotR. Here are all new followers:
 
 #### For Admirals:
 
-![Admirals Followers](static/july-update-admirals-followers.png "Admirals Followers")
+![Admirals Followers](../_img/july-update-admirals-followers.png "Admirals Followers")
 
 1. Steward - A Steward cares for the needs of his master.
 2. Ship's cat - A cat is on a ship to control the population of rats and therefore prevent the provisions from being eaten.
 3. Coxwain - A coxswain is the man who steers a ship. But a loyal coxswain is much more. He commands the personal barge crew of his captain or admiral, follows him from ship to ship and can even act as his bodyguard.
 4. Boatswain - The boatswain had responsibility for rigging, cables, anchors, sails and boats. They were not eligible to command ships but could stand watches. They were less educated than the more senior warrant officers, although they needed to keep accounts. But access to the ship's stores comes to a price...
 
-Note the each admiral can have only one follower out of the first three.
+Note that each admiral can have only one follower out of the first three.
 
 #### For Generals:
 
-![general followers](static/july-update-general-followers.png "general followers")
+![general followers](../_img/july-update-general-followers.png "general followers")
 
 1. Influential Cousin - This man has influential relatives. In the world of the 18th century where kinship is a mayor factor in promotion having influential relatives is important. This secures future advancement even when having no talents at all. The cousin also attracts persons without a patron seeking patronage.
 2. Drummer - A drummer is needed to let the soldiers march in cadence. He gives provides the speed of the march. But he acts as a battlefield medic too.
@@ -108,7 +108,7 @@ Note the each admiral can have only one follower out of the first three.
 
 #### For scholars:
 
-![Scholar Followers](static/july-update-scholar-followers.png "Scholar Followers")
+![Scholar Followers](../_img/july-update-scholar-followers.png "Scholar Followers")
 
 1. Female Doctoral Candidate
 2. Interested Wife
@@ -117,7 +117,7 @@ Especially the last to followers based on Historical people, especially [Dorothe
 
 - - -
 
-Also Pike's AI is also in the next update (thanks to myfate!) but there is a little issue we have to fix. This also answers when the next release is - not before we could fix the issue.
+Also Pike's AI is also in the next update (thanks to myfate!) but there is a little issue we have to fix. This also answers when the next release is - not before we can fix the issue.
 
 We will keep you posted on our progress!
 
