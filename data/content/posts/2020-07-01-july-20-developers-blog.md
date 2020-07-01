@@ -6,9 +6,9 @@ author:
 excerpt: Today we present you our latest work on the West Indies colonial units
   and some new followers.
 ---
-<center>
+ <center>
 
-![Preview Pic](static/preview-july-20-blog.png "Preview Pic")
+![Preview Pic](../_img/preview-july-20-blog.png "Preview Pic")
 
 </center>
 
@@ -20,15 +20,11 @@ The first units are the Black light infantry in 2 variants: Loyal Black Rangers,
 
 #### <center>Loyal Black Rangers:
 
-
-
-![GB Loyal Black Rangers](static/gb-loyal-black-rangers.jpg "GB Loyal Black Rangers")
+![GB Loyal Black Rangers](../_img/gb-loyal-black-rangers.jpg "GB Loyal Black Rangers")
 
 #### Black Chasseurs:
 
-
-
-![GB Black Chasseurs](static/gb-black-chasseurs.jpg "GB Black Chasseurs")
+![GB Black Chasseurs](../_img/gb-black-chasseurs.jpg "GB Black Chasseurs")
 
 #### </center>
 
@@ -36,9 +32,7 @@ Also the British can recruit a cavalry unit in Hispaniola and Cuba, the Ulhans B
 
 #### <center>Ulhans Britannique:
 
-
-
-![GB Ulhans Britannique](static/gb-ulhans-britannique.jpg "GB Ulhans Britannique")
+![GB Ulhans Britannique](../_img/gb-ulhans-britannique.jpg "GB Ulhans Britannique")
 
 </center>
 
@@ -48,11 +42,11 @@ Also all factions will have access to some generic colonial units in the West In
 
 #### Generic Black Chasseurs:
 
-![Generic Black Chasseurs](static/generic-black-chasseurs.jpg "Generic Black Chasseurs")
+![Generic Black Chasseurs](../_img/generic-black-chasseurs.jpg "Generic Black Chasseurs")
 
 #### Generic White Planter Militia:
 
-![Generic White Planters Militia](static/generic-white-planters-militia.jpg "Generic White Planters Militia")
+![Generic White Planters Militia](../_img/generic-white-planters-militia.jpg "Generic White Planters Militia")
 
 </center>
 
@@ -60,10 +54,61 @@ As you can see, we also created a generic white officers for all West India unit
 
 But that's not all. Finally the British Highlander Light Infantry is done!
 
-![Highlander Light Infantry](static/gb-light-highlanders.jpg "Highlander Light Infantry")
+![Highlander Light Infantry](../_img/gb-light-highlanders.jpg "Highlander Light Infantry")
+
+Also the Guards have now a light infantry unit replacing the light infantry of the Marines:
+
+![GB Guards Light Infantry](../_img/gb-guards-light-infantry.jpg "GB Guards Light Infantry")
 
 In addition the 42nd Regiment of Foot, the Black Watch, received an update on their uniforms. They have no the correct lace around their buttonholes.
 
-![Black Watch](static/gb-black-watch.jpg "Black Watch")
+![Black Watch](../_img/gb-black-watch.jpg "Black Watch")
+
+#### Here are the unit icons:
+
+![British Icons](../_img/july-update-britain-units-icons.png "British Icons")
+
+1. Guards Light Infantry 
+2. West India Regiment
+3. Black Chasseurs
+4. Loyal Black Rangers
+5. Ulhans Britannique
+6. 42nd Regiment of Foot 'Black Watch'
+7. Highlanders Light Infantry
+
+![Generic West India units](static/july-update-generic-west-indian-units-icons.png "Generic West India units")
+
+1. Black Chassuers
+2. White Planters Militia
+
+- - -
 
 As already announced iporto9393's [Train your Generals at Schools! -&- Fixed Trait and Ancillary Triggers](https://www.twcenter.net/forums/showthread.php?798721-SUBMOD-Train-your-Generals-at-Schools!-amp-Fixed-Trait-and-Ancillary-Triggers) mod will be added in the next update. Among other things it adds new followers. Some followers are create also only for RotR. Here are all new followers:
+
+#### For Admirals:
+
+![Admirals Followers](static/july-update-admirals-followers.png "Admirals Followers")
+
+1. Steward - A Steward cares for the needs of his master.
+2. Ship's cat - A cat is on a ship to control the population of rats and therefore prevent the provisions from being eaten.
+3. Coxwain - A coxswain is the man who steers a ship. But a loyal coxswain is much more. He commands the personal barge crew of his captain or admiral, follows him from ship to ship and can even act as his bodyguard.
+4. Boatswain - The boatswain had responsibility for rigging, cables, anchors, sails and boats. They were not eligible to command ships but could stand watches. They were less educated than the more senior warrant officers, although they needed to keep accounts. But access to the ship's stores comes to a price...
+
+Note the each admiral can have only one follower out of the first three.
+
+#### For Generals:
+
+![general followers](static/july-update-general-followers.png "general followers")
+
+1. Influential Cousin - This man has influential relatives. In the world of the 18th century where kinship is a mayor factor in promotion having influential relatives is important. This secures future advancement even when having no talents at all. The cousin also attracts persons without a patron seeking patronage.
+2. Drummer - A drummer is needed to let the soldiers march in cadence. He gives provides the speed of the march. But he acts as a battlefield medic too.
+3. Fifer - A fifer is needed to cheer up the men with his tunes. But he acts as a battlefield medic too.
+4. Trumpeter - A trumpeter signals a cavalry unit how to move. Also, the sound encourages the men.
+5. Matador (only available for Spanish and Portuguese generals)
+
+#### For scholars:
+
+1. Female doctoral candidate
+2. Interested wife
+
+
