@@ -54,6 +54,11 @@ export const globalResets = css`
     .webp body {
       background: ${color.mainBg} url(${bgTextureWebP}));
     }
+
+
+    .gatsby-resp-image-image {
+      box-shadow: none !important;
+    }
   }
 `;
 
