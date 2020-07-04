@@ -48,7 +48,7 @@ Also, all factions will have access to some generic colonial units in the West I
 
 #### Generic White Planter Militia:
 
-![Generic White Planters Militia](../_img/generic-white-planters-militia.jpg)
+![Generic White Planter Militia](static/generic-white-militia-2.jpg "Generic White Planter Militia")
 
 </center>
 
