@@ -102,7 +102,7 @@ Note that each admiral can have only one follower out of the first three.
 
 ![general followers](../_img/july-update-general-followers.png)
 
-1. Influential Cousin - This man has influential relatives. In the world of the 18th century where kinship is a mayor factor in promotion having influential relatives is important. This secures future advancement even when having no talents at all. The cousin also attracts persons without a patron seeking patronage.
+1. Influential Cousin - This man has influential relatives. In the world of the 18th century where kinship is a major factor in promotion having influential relatives is important. This secures future advancement even when having no talents at all. The cousin also attracts persons without a patron seeking patronage.
 2. Drummer - A drummer is needed to let the soldiers march in cadence. He gives provides the speed of the march. But he acts as a battlefield medic too.
 3. Fifer - A fifer is needed to cheer up the men with his tunes. But he acts as a battlefield medic too.
 4. Trumpeter - A trumpeter signals a cavalry unit how to move. Also, the sound encourages the men.
