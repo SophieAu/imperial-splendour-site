@@ -31,7 +31,7 @@
     "gatsby-remark-images": "^3.3.32",
     "gatsby-remark-social-image": "^1.1.0",
     "gatsby-source-filesystem": "^2.3.32",
-    "gatsby-transformer-remark": "^2.8.27",
+    "gatsby-transformer-remark": "^2.8.37",
     "gatsby-transformer-sharp": "^2.5.12",
     "gatsby-transformer-yaml": "^2.4.10",
     "linaria": "^2.0.0-rc.1",
