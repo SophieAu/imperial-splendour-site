@@ -50,7 +50,7 @@ The building serves as generic Governors palace in the Empire Total War mod Impe
 
 <center>
 
-![Generic Govenor Palace](../_img/Generic Governors Palace.png "Generic Govenor Palace")
+![Generic Governors Palace](../_img/Generic Governors Palace.png "Generic Governors Palace")
 
 ## Rathaus Coburg
 
