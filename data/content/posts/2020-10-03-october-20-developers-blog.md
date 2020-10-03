@@ -7,7 +7,7 @@ excerpt: After a summer break here is our newest content.
 ---
 <center>
 
-![Preview pic](static/preview-october-20-blog.png "Preview pic")
+![Preview pic](../_img/preview-october-20-blog.png "Preview pic")
 
 </center>
 
