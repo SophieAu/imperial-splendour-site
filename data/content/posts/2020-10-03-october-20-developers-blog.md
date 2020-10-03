@@ -5,6 +5,12 @@ author:
   - QHH
 excerpt: After a summer break here is our newest content.
 ---
+<center>
+
+![Preview pic](static/preview-october-20-blog.png "Preview pic")
+
+</center>
+
 The last British and generic units for the West Indies are done! 
 
 At first the British:
@@ -21,7 +27,7 @@ The 20th (Jamaica) Regiment of (Light) Dragoons was raised in 1792 for service i
 
 </center>
 
-The other - and last - British unit is the West Indies Militia artillery. This means in the West Indies you can only recruit some 6 pounder guns with inferior stats. Proper artillery was to be shiped from Europe!
+The other - and last - British unit is the West Indies Militia artillery. This means in the West Indies you can only recruit some 6 pounder guns with inferior stats. Proper artillery has to be shipped from Europe!
 
 ![GB West Indies Militia artillery](../_img/GB West Indies Militia Artillery.jpg "GB West Indies Militia artillery")
 
@@ -45,7 +51,7 @@ And here are the final generic West Indies units:
 
 </center>
 
-#### Furthermore I have 2 new buildings for you:
+#### Furthermore, I have 2 new buildings for you:
 
 <center>
 <div class="sketchfab-embed-wrapper">
