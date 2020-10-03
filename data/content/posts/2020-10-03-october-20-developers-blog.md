@@ -80,7 +80,7 @@ It'll serve as the highest level farm building.  This is the in-game Empire Tota
 
 This draft of a palace was made by the architect [Peter Joseph Krahe](https://en.wikipedia.org/wiki/Peter_Joseph_Krahe) in 1792. I modelled the building after this front plan:
 
-![Front Plan](static/front plan.jpg "Front Plan")
+![Front Plan](../_img/front plan.jpg "Front Plan")
 
 from the Städtisches Museum Braunschweig (all credits go to them for the picture, the original can be found [here](https://kulturerbe.niedersachsen.de/objekt/record_kuniweb_414322/1/LOG_0000/#record_kuniweb_414322) ).
 
@@ -90,7 +90,7 @@ The building serves as generic Governors palace in the Empire Total War mod Impe
 
 <center>
 
-![Generic Govenor Palace](static/Generic Governors Palace.png "Generic Govenor Palace")
+![Generic Governors Palace](../_img/Generic Governors Palace.png "Generic Governor Palace")
 
 ### We will keep you posted on our progress!
 
