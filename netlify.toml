@@ -1,7 +1,7 @@
 [build]
   publish = "public/"
 
-  ignore = "/bin/false"
+  ignore = "sh ignore.sh"
 
 
 [[plugins]]
