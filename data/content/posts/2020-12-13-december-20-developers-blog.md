@@ -3,7 +3,7 @@ title: December '20 Developer's Blog
 date: 2020-12-13T14:43:27.648Z
 author:
   - QHH
-excerpt: Today everything is about unit and a little surprise!
+excerpt: Today everything is about units and a little surprise!
 ---
 It's time for a little blog on the 3rd Advent. This time it's mostly about units and another little gift. 
 
