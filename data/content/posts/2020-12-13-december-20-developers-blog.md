@@ -1,6 +1,6 @@
 ---
 title: December '20 Developer's Blog
-date: 2020-12-13T08:27:22.870Z
+date: 2020-12-13T14:43:27.648Z
 author:
   - QHH
 excerpt: Today everything is about unit and a little surprise!
@@ -13,33 +13,33 @@ It's time for a little blog on the 3rd Advent. This time it's mostly about units
 
 </center>
 
-![Tiroler Windbüchse Schützen](static/20201018151507_1.jpg "Tiroler Windbüchse Schützen")
+![Tiroler Windbüchse Schützen](../_img/20201018151507_1.jpg "Tiroler Windbüchse Schützen")
 
-![Cheveauxlegers 'Kaiser'](static/20201031153150_1.jpg "Cheveauxlegers 'Kaiser'")
+![Cheveauxlegers 'Kaiser'](../_img/20201031153150_1.jpg "Cheveauxlegers 'Kaiser'")
 
-![Cheveauxlegers](static/20201031153212_1.jpg "Cheveauxlegers")
+![Cheveauxlegers](../_img/20201031153212_1.jpg "Cheveauxlegers")
 
-![Dragoner](static/20201101201655_1.jpg "Dragoner")
+![Dragoner](../_img/20201101201655_1.jpg "Dragoner")
 
-![Cuirassiers](static/20201103211827_1.jpg "Cuirassiers")
+![Cuirassiers](../_img/20201103211827_1.jpg "Cuirassiers")
 
-![Carabiniers 'Kaiser'](static/20201103211836_1.jpg "Carabiniers 'Kaiser'")
+![Carabiniers 'Kaiser'](../_img/20201103211836_1.jpg "Carabiniers 'Kaiser'")
 
-![Deutsche Grenadiers](static/20201122203928_1.jpg "Deutsche Grenadiers")
+![Deutsche Grenadiers](../_img/20201122203928_1.jpg "Deutsche Grenadiers")
 
-![Hungarian Grenadiers](static/20201122203941_1.jpg "Hungarian Grenadiers")
+![Hungarian Grenadiers](../_img/20201122203941_1.jpg "Hungarian Grenadiers")
 
 <center>
 
 ### And here are the Icons:
 
-![Unit Icons](static/austria-unit-icons.png "Unit Icons")
+![Unit Icons](../_img/austria-unit-icons.png "Unit Icons")
 
 ### Furthermore, I have a new building for you:
 
 #### The level 5 generic Parliament Building:
 
-![lvl 5 Parliament](static/gov-lvl-5-parliament.png "lvl 5 Parliament")
+![lvl 5 Parliament](../_img/gov-lvl-5-parliament.png "lvl 5 Parliament")
 
 ### But now to the promised surprise:
 
