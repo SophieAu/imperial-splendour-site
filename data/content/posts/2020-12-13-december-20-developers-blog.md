@@ -1,5 +1,5 @@
 ---
-title: December '20 Developer's Blog
+title: December '20 Developers Blog
 date: 2020-12-13T14:43:27.648Z
 author:
   - QHH
