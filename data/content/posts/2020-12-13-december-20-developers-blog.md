@@ -5,6 +5,12 @@ author:
   - QHH
 excerpt: Today everything is about units and a little surprise!
 ---
+<center>
+
+![Preview Pic](static/preview-december-20-blog.png "Preview Pic")
+
+</center>
+
 It's time for a little blog on the 3rd Advent. This time it's mostly about units and another little gift. 
 
 <center>
