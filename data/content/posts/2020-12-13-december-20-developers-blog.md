@@ -7,7 +7,7 @@ excerpt: Today everything is about units and we have a little surprise!
 ---
 <center>
 
-![Preview Pic](../_img/preview-december-20-blog2.png "Preview Pic")
+![](../_img/preview-december-20-blog3.png)
 
 </center>
 
