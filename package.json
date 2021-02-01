@@ -27,7 +27,7 @@
     "gatsby-plugin-robots-txt": "^1.5.5",
     "gatsby-plugin-sharp": "^2.11.2",
     "gatsby-plugin-sitemap": "^2.9.0",
-    "gatsby-plugin-typescript": "^2.9.0",
+    "gatsby-plugin-typescript": "^2.11.0",
     "gatsby-remark-images": "^3.10.0",
     "gatsby-remark-social-image": "^1.1.0",
     "gatsby-source-filesystem": "^2.10.0",
