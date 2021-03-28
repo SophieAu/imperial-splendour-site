@@ -6,6 +6,8 @@ author:
 excerpt: This is the last blog before the next update. Take a look at our latest
   progress.
 ---
+### This is the last blog before the next update. Take a look at our latest progress.
+
 During the past months, many minor things were fixed. But also some final larger changes were incorporated. 
 
 Now all units from already done factions are balanced. So each nation has now units representing the quality of their armed forces in the late 18th century. This means as an example that the French monarchy has a rather good cavalry and a weaker infantry. On the contrary, the British cavalry is very weak but the British infantry has good shooting skills.
@@ -14,7 +16,7 @@ Also, a large amount of new descriptions have been added by The Shark. He also c
 
 Sir John Barlow and myfate worked on the naval side. Thanks to Sir John Barlow we will be able to present maybe the most magnificent navies you have ever seen.
 
-![In this picture, the AI made a 180 degree "S" turn around the wind making use of 3 groups](../_img/naval1.jpg "In this picture, the AI made a 180 degree "S" turn around the wind making use of 3 groups")
+![In this picture, the AI made a 180 degree "S" turn around the wind making use of 3 groups](../_img/naval1.jpg "In this picture, the AI made a 180 degree \"S\" turn around the wind making use of 3 groups")
 
 Here Sir John Barlow tested some of his work: 
 
