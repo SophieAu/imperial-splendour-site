@@ -16,7 +16,7 @@ Also, a large amount of new descriptions have been added by The Shark. He also c
 
 Sir John Barlow and myfate worked on the naval side. Thanks to Sir John Barlow we will be able to present maybe the most magnificent navies you have ever seen.
 
-![In this picture, the AI made a 180 degree "S" turn around the wind making use of 3 groups](../_img/naval1.jpg "In this picture, the AI made a 180 degree \"S\" turn around the wind making use of 3 groups")
+![In this picture, the AI made a 180 degree "S" turn around the wind making use of 3 groups](../_img/naval1.jpg "In this picture, the AI made a 180 degree \\"S\\" turn around the wind making use of 3 groups")
 
 Here Sir John Barlow tested some of his work: 
 
@@ -86,7 +86,9 @@ Some new tech info pics and eventpics will also be part of the next update:
 12. British Cavalry
 13. France late absolutism
 
-Finally, many the generic government building chain and the Brunswick building chain got all new building models:
+Finally, the generic government building chain and the Brunswick building chain got all new building models:
+
+<center>
 
 <iframe width="640" height="480" title="Generic Building Models 2" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="fullscreen; autoplay; vr" src="https://sketchfab.com/models/b41e6d2ca5924d64a1b45a786f8c8d5b/embed">
 </iframe>
@@ -103,8 +105,6 @@ on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_
 by <a href="https://sketchfab.com/QuintusHortensiusHortalus?utm_medium=embed&utm_campaign=share-popup&utm_content=21c7abef0980434e82e61e307299301f" target="_blank"">QuintusHortensiusHortalus</a>
 on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=21c7abef0980434e82e61e307299301f" target="_blank">Sketchfab</a>
 </p>
-
-<center>
 
 ### We will keep you posted on our progress!
 
