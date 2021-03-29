@@ -16,12 +16,6 @@ Also, a large amount of new descriptions have been added by The Shark. He also c
 
 Sir John Barlow and myfate worked on the naval side. Thanks to Sir John Barlow we will be able to present maybe the most magnificent navies you have ever seen.
 
-![In this picture, the AI made a 180 degree "S" turn around the wind making use of 3 groups](../_img/naval1.jpg "In this picture, the AI made a 180 degree 'S' turn around the wind making use of 3 groups")
-
-Here Sir John Barlow tested some of his work: 
-
-"The AI responds pretty well against player's formations if the wind is followed. In this picture, the AI made a 180 degree "S" turn around the wind making use of 3 groups (which can be seen nearest to the camera). While I opted for a straight attack between their vanguard and middle squadrons (which didn't end well as my two columns were too close to make the 90-degree turn needed in order to form a competent line of battle)."
-
 ![HMS Victory 1765; Barfleur Class 2nd Rate (98 guns); Triumph Class Heavy 3rd Rate (74 guns)](../_img/naval2.jpg "HMS Victory 1765; Barfleur Class 2nd Rate (98 guns); Triumph Class Heavy 3rd Rate (74 guns)")
 
 Some of the new textures for early British ships. From left to right: HMS Victory 1765; Barfleur Class 2nd Rate (98 guns); Triumph Class Heavy 3rd Rate (74 guns).
