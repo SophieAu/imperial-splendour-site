@@ -16,7 +16,7 @@ Also, a large amount of new descriptions have been added by The Shark. He also c
 
 Sir John Barlow and myfate worked on the naval side. Thanks to Sir John Barlow we will be able to present maybe the most magnificent navies you have ever seen.
 
-![In this picture, the AI made a 180 degree "S" turn around the wind making use of 3 groups](../_img/naval1.jpg "In this picture, the AI made a 180 degree \\"S\\" turn around the wind making use of 3 groups")
+![In this picture, the AI made a 180 degree "S" turn around the wind making use of 3 groups](../_img/naval1.jpg "In this picture, the AI made a 180 degree 'S' turn around the wind making use of 3 groups")
 
 Here Sir John Barlow tested some of his work: 
 
