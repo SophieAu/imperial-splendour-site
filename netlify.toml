@@ -1,8 +1,13 @@
 [build]
   publish = "public/"
+  functions = "functions"
 
   ignore = "sh ignore.sh"
 
-
 [[plugins]]
   package = "netlify-plugin-gatsby-cache"
+
+[[redirects]]
+  from = "/version"
+  to = "/.netlify/functions/version"
+  status = 200
