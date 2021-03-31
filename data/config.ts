@@ -30,6 +30,7 @@ export const paths = {
 export const socialMedia = {
   twitter: 'https://twitter.com/splendourteam',
   facebook: 'https://www.facebook.com/imperialsplendour/',
+  discord: 'https://discord.gg/sY7CCbcH',
   modDB: 'https://www.moddb.com/mods/imperial-splendour',
 };
 

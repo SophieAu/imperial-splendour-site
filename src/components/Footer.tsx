@@ -2,6 +2,7 @@ import { cx } from 'linaria';
 import React from 'react';
 
 import { modDBButton, socialMedia } from '../../data/config';
+import discord from '../../data/img/footer_discord.svg';
 import facebook from '../../data/img/footer_facebook.svg';
 import twitter from '../../data/img/footer_twitter.svg';
 import { footer } from '../../data/strings';
@@ -14,6 +15,7 @@ const socialMediaLinks = [
   { name: 'ModDB', link: socialMedia.modDB, src: modDBButton.popularity },
   { name: 'Facebook', link: socialMedia.facebook, src: facebook },
   { name: 'Twitter', link: socialMedia.twitter, src: twitter },
+  { name: 'Discord', link: socialMedia.discord, src: discord },
 ];
 
 const Footer: React.FC<ClassNameProp> = ({ className }) => (
