@@ -27,11 +27,12 @@ const SEO: React.FC<Props> = ({ title, description, slug, children, ogImagePath 
         { property: `og:image`, content: ogImage },
         { property: `og:url`, content: url },
         { name: `twitter:card`, content: `summary_large_image` },
-        { name: `twitter:url`, content: url },
-        { name: `twitter:title`, content: title },
-        { name: `twitter:image`, content: ogImage },
-        { name: `twitter:description`, content: description },
         { name: `twitter:site`, content: TWITTER_HANDLE },
+        { name: `twitter:creator`, content: TWITTER_HANDLE },
+        { name: `twitter:title`, content: title },
+        { name: `twitter:description`, content: description },
+        { name: `twitter:image`, content: ogImage },
+        { name: `twitter:url`, content: url },
       ]}
     >
       {children}
