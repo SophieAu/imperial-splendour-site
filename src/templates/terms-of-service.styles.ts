@@ -6,4 +6,8 @@ export const termsOfService = css`
   h1 {
     word-wrap: break-word;
   }
+
+  li > p {
+    margin-bottom: 0;
+  }
 `;
