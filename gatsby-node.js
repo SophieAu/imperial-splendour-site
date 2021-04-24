@@ -26,7 +26,7 @@ exports.createPages = async ({ graphql, actions }) => {
   buildBlogPosts(result.data.posts.edges, actions.createPage);
 
   console.log('\nCreating Terms of Service...');
-  buildTermsOfService(result.data.tos.edges, actions.createPage);
+  buildTermsOfService(result.data.pages.edges, actions.createPage);
 
   console.log('\nPaginating Blog Posts List...');
   buildBlogListPagination(result.data.posts.edges, actions.createPage);

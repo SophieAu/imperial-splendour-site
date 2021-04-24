@@ -26,7 +26,7 @@ collections:
     files:
     - name: "terms-of-service"
       label: "Terms of Service"
-      file: "data/content/terms-of-service/terms-of-service.md"
+      file: "data/content/pages/terms-of-service.md"
       fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }

@@ -31,9 +31,10 @@ exports.PAGES_QUERY = `
         }
       }
     }
-  tos: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/data\/content\/terms-of-service/"}}) {
+  pages: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/data\/content\/pages/"}}) {
     edges {
       node {
+        fileAbsolutePath
         id
         frontmatter {
           title
@@ -73,14 +74,10 @@ exports.buildBlogPosts = (nodes, createPage) => {
 };
 
 exports.buildTermsOfService = (nodes, createPage) => {
-  const termsOfService = resolve(`./src/templates/terms-of-service.tsx`);
-
-  nodes.forEach(({ node }) => {
-    createPage({
-      path: `terms-of-service`,
-      component: termsOfService,
-      context: { id: node.id },
-    });
+  nodes.forEach(({ node: { fileAbsolutePath: filePath, id } }) => {
+    const tos = 'terms-of-service';
+    filePath.endsWith(`${tos}.md`) &&
+      createPage({ path: tos, component: resolve(`./src/templates/${tos}.tsx`), context: { id } });
   });
 };
 
