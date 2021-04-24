@@ -3,12 +3,12 @@ import { css } from 'linaria';
 import { font, MAX_BODY_WIDTH, screenSize } from '../_variables.styles';
 
 export const root = css`
+  box-sizing: border-box;
   align-items: center;
   display: grid;
   grid: auto-flow dense / repeat(5, 1fr);
-  grid-column-gap: 2rem;
-  grid-row-gap: 4rem;
-  max-width: ${MAX_BODY_WIDTH};
+  grid-gap: 4rem 2rem;
+  width: min(100%, ${MAX_BODY_WIDTH});
 
   @media all ${screenSize.DESKTOP} {
     margin: 6rem 0;
@@ -18,12 +18,11 @@ export const root = css`
     display: flex;
     flex-direction: column;
     padding: 5rem 3rem 3rem;
-    width: calc(100% - 3rem);
+    grid-gap: 0;
   }
 
   @media all ${screenSize.MOBILE} {
     padding: 5rem 0 3rem;
-    width: 100%;
   }
 `;
 
@@ -33,14 +32,12 @@ export const text = css`
   margin: 0;
 
   @media all ${screenSize.TABLET_MAX} {
-    object-fit: contain;
-    padding: 1rem;
+    margin: 0 1rem 3rem;
     text-align: center;
   }
 `;
 
 export const image = css`
-  height: auto;
   margin: 1rem;
 
   &.even {
@@ -49,13 +46,5 @@ export const image = css`
 
   &.odd {
     grid-column: 3/6;
-  }
-
-  & > img {
-    object-fit: contain !important;
-  }
-
-  @media all ${screenSize.TABLET_MAX} {
-    width: calc(100% - 2rem);
   }
 `;

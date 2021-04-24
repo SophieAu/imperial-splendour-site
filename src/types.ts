@@ -9,6 +9,14 @@ type FluidImage = {
   };
 };
 
+export type Image = {
+  src: string;
+  srcSet: string;
+  srcWebp: string;
+  srcSetWebp: string;
+  sizes: string;
+};
+
 type FixedImage = {
   childImageSharp: {
     fixed: FixedObject;

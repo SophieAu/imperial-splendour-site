@@ -2,7 +2,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 
 import { home } from '../../data/strings';
-import Img from './GatsbyImage';
+import Image from './Image';
 import * as styles from './InfoBoxes.styles';
 
 const query = graphql`
@@ -23,9 +23,10 @@ const InfoBoxes: React.FC = () => (
   <section className={styles.root}>
     {home.infoBoxes.map((box, i) => (
       <React.Fragment key={i}>
-        <Img
+        <Image
+          {...useStaticQuery(query)[box.imageKey].childImageSharp.fluid}
           className={`${styles.image} ${i % 2 ? 'even' : 'odd'}`}
-          fluid={useStaticQuery(query)[box.imageKey].childImageSharp.fluid}
+          alt={box.imageAlt}
         />
         <p className={styles.text}>{box.text}</p>
       </React.Fragment>

@@ -1,10 +1,10 @@
 import { css } from 'linaria';
 
-import { color, font, HEADER_HEIGHT, MAX_CONTENT_WIDTH, screenSize } from '../_variables.styles';
 import bgTextureJpeg from '../../data/img/texture_bg.jpg';
 import bgTextureWebP from '../../data/img/texture_bg.webp';
 import textureHeadFootJpeg from '../../data/img/texture_headfoot.jpg';
 import textureHeadFootWebP from '../../data/img/texture_headfoot.webp';
+import { color, font, HEADER_HEIGHT, MAX_CONTENT_WIDTH, screenSize } from '../_variables.styles';
 
 export const globalResets = css`
   :global() {
@@ -21,6 +21,7 @@ export const globalResets = css`
 
     img {
       object-fit: contain;
+      width: 100%;
     }
 
     h2 {
