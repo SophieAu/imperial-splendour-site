@@ -26,7 +26,7 @@ const SEO: React.FC<Props> = ({ title, description, slug, children, ogImagePath 
         { property: `og:type`, content: `website` },
         { property: `og:image`, content: ogImage },
         { property: `og:url`, content: url },
-        { name: `twitter:card`, content: `summary` },
+        { name: `twitter:card`, content: `summary_large_image` },
         { name: `twitter:url`, content: url },
         { name: `twitter:title`, content: title },
         { name: `twitter:image`, content: ogImage },
