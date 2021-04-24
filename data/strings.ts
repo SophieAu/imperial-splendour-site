@@ -59,11 +59,6 @@ const buildWordList = (list: string[]) =>
     return `${ac}, ${word}`;
   });
 
-export const postHeader = {
-  author: ({ author }: { author: (keyof Contributors)[] }) =>
-    `By ${buildWordList(author.map(auth => contributors[auth]))}`,
-};
-
 // ---
 // Pages
 
