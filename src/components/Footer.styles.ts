@@ -45,7 +45,13 @@ export const socialMedia = css`
     padding-right: 2rem;
   }
 
-  svg,
+  > *:not(:first-child) {
+    width: 2.5rem;
+  }
+  > *:first-child {
+    width: 208px;
+  }
+
   img {
     fill: ${color.mainBg};
     height: 2.5rem;
