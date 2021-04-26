@@ -69,34 +69,36 @@ export const comments = graphql`
   }
 `;
 
-export const factions = graphql`
-  fragment factions on MarkdownRemarkConnection {
-    edges {
-      node {
-        id
-        frontmatter {
-          title
-          slug
-          flag {
-            childImageSharp {
-              fixed(height: 66, quality: 90) {
-                ...GatsbyImageSharpFixed_withWebp
-              }
-            }
-          }
-        }
-        html
-      }
-    }
-  }
-`;
-
 export const faction = graphql`
   fragment faction on MarkdownRemark {
     id
     html
     frontmatter {
       title
+      slug
+      flag {
+        ...fixedImage
+      }
+    }
+  }
+`;
+
+export const fixedImage = graphql`
+  fragment fixedImage on File {
+    childImageSharp {
+      fixed(width: $width, height: $height, quality: 90) {
+        ...GatsbyImageSharpFixed_withWebp
+      }
+    }
+  }
+`;
+
+export const fluidImage = graphql`
+  fragment fluidImage on File {
+    childImageSharp {
+      fluid(maxWidth: $maxWidth, quality: 90) {
+        ...GatsbyImageSharpFixed_withWebp
+      }
     }
   }
 `;

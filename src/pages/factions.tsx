@@ -9,17 +9,19 @@ import { FactionsResponse } from '../types';
 import * as styles from './factions.styles';
 
 export const query = graphql`
-  query {
+  query($height: Int = 66, $width: Int) {
     allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/data/content/factions/" } }) {
-      ...factions
+      nodes {
+        ...faction
+      }
     }
   }
 `;
 
 const Factions: React.FC<FactionsResponse> = ({ data }) => {
-  const factions = data.allMarkdownRemark.edges;
+  const factions = data.allMarkdownRemark.nodes;
   const initialIndex = 0;
-  const initalFaction = factions[initialIndex].node;
+  const initalFaction = factions[initialIndex];
 
   useLayoutEffect(() => {
     navigate(`${paths.factions}/${initalFaction.frontmatter.slug}`);

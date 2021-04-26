@@ -9,12 +9,14 @@ import * as styles from '../pages/factions.styles';
 import { FactionsResponse, SlugContext } from '../types';
 
 export const query = graphql`
-  query($id: String!) {
+  query($id: String!, $height: Int = 66, $width: Int) {
     markdownRemark(id: { eq: $id }) {
       ...faction
     }
     allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/data/content/factions/" } }) {
-      ...factions
+      nodes {
+        ...faction
+      }
     }
   }
 `;
@@ -22,12 +24,12 @@ export const query = graphql`
 interface Props extends FactionsResponse, SlugContext {}
 
 const Faction: React.FC<Props> = ({ data, pageContext: { slug } }) => {
-  const factions = data.allMarkdownRemark.edges;
+  const factions = data.allMarkdownRemark.nodes;
 
-  const index = factions.findIndex(faction => faction.node.frontmatter.slug === slug);
+  const index = factions.findIndex(faction => faction.frontmatter.slug === slug);
   if (index === -1) return null;
 
-  const { frontmatter, html } = factions[index].node;
+  const { frontmatter, html } = factions[index];
 
   return (
     <Layout

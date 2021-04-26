@@ -45,7 +45,7 @@ const FlagCarousel: React.FC<Props> = ({ factions, selected }) => {
   }, []);
 
   const modulo = circularModulo(factions.length);
-  const frontmatter = (number: number) => factions[modulo(selected + number)].node.frontmatter;
+  const frontmatter = (number: number) => factions[modulo(selected + number)].frontmatter;
   const onPress = (number: number) => `${paths.factions}/${frontmatter(number).slug}`;
 
   const wrapper = (index: number) => (children: React.ReactNode) =>

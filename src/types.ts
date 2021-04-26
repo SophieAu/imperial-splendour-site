@@ -61,6 +61,20 @@ export type InfoBox = {
 // ---
 // GraphQL Responses
 
+type NewListResponse<Frontmatter> = {
+  data: {
+    allMarkdownRemark: {
+      nodes: Node<Frontmatter>[];
+    };
+  };
+};
+
+type Node<Frontmatter> = {
+  id: number;
+  frontmatter: Frontmatter;
+  html: string;
+};
+
 type ListResponse<Frontmatter> = {
   data: {
     allMarkdownRemark: {
@@ -132,13 +146,13 @@ export type PostFrontmatter = {
 
 export type PostsResponse = ListResponse<PostFrontmatter>;
 
-export type FactionsResponse = ListResponse<FactionsFrontmatter>;
+export type FactionsResponse = NewListResponse<FactionsFrontmatter>;
 
 export type ToSResponse = SingleResponse<ToSFrontmatter>;
 
 export type PostResponse = SingleResponse<PostFrontmatter> & CommentResponse & SocialImageResponse;
 
-export type SingleFaction = Edge<FactionsFrontmatter>;
+export type SingleFaction = Node<FactionsFrontmatter>;
 
 export type Comment = {
   node: {
