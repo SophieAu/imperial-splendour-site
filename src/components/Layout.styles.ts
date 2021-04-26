@@ -24,6 +24,10 @@ export const globalResets = css`
       width: 100%;
     }
 
+    picture {
+      line-height: 0;
+    }
+
     h2 {
       font: ${font.headline};
     }
