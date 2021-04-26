@@ -47,17 +47,10 @@ export const header = {
 };
 
 export const footer = {
-  creditsCopyright: ({ year }: { year: number }) =>
+  creditsCopyright: (year: number) =>
     `© ${year}, [Sophie Au](${siteBuilders.sophie}) and [Malte Lippmann](${siteBuilders.malte})`,
-  socialImgAlt: ({ platform }: { platform: string }) => `Imperial Splendour on ${platform}`,
+  socialImgAlt: (platform: string) => `Imperial Splendour on ${platform}`,
 };
-
-const buildWordList = (list: string[]) =>
-  list.reduce((ac, word, i) => {
-    if (i === 0) return word;
-    if (i === list.length - 1) return `${ac} and ${word}`;
-    return `${ac}, ${word}`;
-  });
 
 // ---
 // Pages
@@ -110,7 +103,7 @@ export const downloadRotR = {
   pageDescription:
     'Download and play Imperial Splendour to have the best Empire: Total War experience possible.',
   linkInfo: 'You can download the files via the following file hosts:',
-  imageLinkAlt: ({ platform }: { platform: string }) => `"Download RotR 1.1.9b on ${platform}`,
+  imageLinkAlt: (platform: string) => `"Download RotR 1.1.9b on ${platform}`,
   help: `If you need help, check out the [installation tutorial](${downloadLinks.tutorial}).`,
 };
 
@@ -143,7 +136,7 @@ export const blog = {
 };
 
 export const post = {
-  pageTitle: ({ title }: { title: string }) => buildPageTitle(title),
+  pageTitle: (title: string) => buildPageTitle(title),
   commentForm: 'Post a Comment',
   namePlaceholder: 'Name',
   commentPlaceholder: 'Your comment here',
@@ -154,7 +147,7 @@ export const post = {
 };
 
 export const factions = {
-  pageTitle: ({ title }: { title: string }) => buildPageTitle(title),
+  pageTitle: (title: string) => buildPageTitle(title),
   pageDescription: 'Explore the factions you can lead',
   previousButton: "'Go to previous Faction",
   nextButton: "'Go to next Faction",

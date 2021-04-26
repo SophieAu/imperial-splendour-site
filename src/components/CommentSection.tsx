@@ -8,12 +8,12 @@ const CommentSection: React.FC<{ comments: Comment[] }> = ({ comments }) => (
   <section className={styles.root}>
     <h2>{post.comments}</h2>
     {comments.map(comment => (
-      <article key={comment.node.id}>
+      <article key={comment.id}>
         <header className={styles.header}>
-          <p className={styles.author}>{comment.node.name}</p>
-          <p className={styles.date}>{comment.node.date}</p>
+          <p className={styles.author}>{comment.name}</p>
+          <p className={styles.date}>{comment.date}</p>
         </header>
-        <p className={styles.body}>{comment.node.comment}</p>
+        <p className={styles.body}>{comment.comment}</p>
       </article>
     ))}
   </section>

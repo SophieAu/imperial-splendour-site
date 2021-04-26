@@ -44,13 +44,11 @@ export const termsOfService = graphql`
 
 export const comments = graphql`
   fragment comments on CommentsYamlConnection {
-    edges {
-      node {
-        id
-        name
-        comment
-        date(formatString: "MMMM DD, YYYY")
-      }
+    nodes {
+      id
+      name
+      comment
+      date(formatString: "MMMM DD, YYYY")
     }
   }
 `;
@@ -72,7 +70,7 @@ export const faction = graphql`
 export const fixedImage = graphql`
   fragment fixedImage on File {
     childImageSharp {
-      fixed(width: $width, height: $height, quality: 90) {
+      fixed(width: $width, height: $height) {
         ...GatsbyImageSharpFixed_withWebp
       }
     }
@@ -82,7 +80,7 @@ export const fixedImage = graphql`
 export const fluidImage = graphql`
   fragment fluidImage on File {
     childImageSharp {
-      fluid(maxWidth: $maxWidth, quality: 90) {
+      fluid(maxWidth: $maxWidth) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }

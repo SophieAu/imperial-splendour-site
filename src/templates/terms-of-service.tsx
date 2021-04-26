@@ -17,7 +17,7 @@ export const query = graphql`
 
 const TermsOfService: React.FC<ToSResponse> = ({ data: { markdownRemark: tos } }) => (
   <Layout
-    title={post.pageTitle({ title: tos.frontmatter.title })}
+    title={post.pageTitle(tos.frontmatter.title)}
     description={tos.frontmatter.description}
     slug={slugs.termsOfService}
   >

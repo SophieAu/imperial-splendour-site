@@ -21,12 +21,12 @@ const socialMediaLinks = [
 const Footer: React.FC<ClassNameProp> = ({ className }) => (
   <footer className={cx(className, styles.root)}>
     <MarkdownWithLink className={styles.credits}>
-      {footer.creditsCopyright({ year: new Date().getFullYear() })}
+      {footer.creditsCopyright(new Date().getFullYear())}
     </MarkdownWithLink>
     <ul className={styles.socialMedia}>
       {socialMediaLinks.map(platform => (
         <li key={platform.link}>
-          <ImageLink to={platform.link} title={footer.socialImgAlt({ platform: platform.name })}>
+          <ImageLink to={platform.link} title={footer.socialImgAlt(platform.name)}>
             <img src={platform.src} alt={platform.name} />
           </ImageLink>
         </li>

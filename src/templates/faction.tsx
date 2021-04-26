@@ -33,7 +33,7 @@ const Faction: React.FC<Props> = ({ data, pageContext: { slug } }) => {
 
   return (
     <Layout
-      title={factionStrings.pageTitle({ title: frontmatter.title })}
+      title={factionStrings.pageTitle(frontmatter.title)}
       description={frontmatter.description || frontmatter.title}
       slug={`${slugs.factions}/${slug}`}
     >

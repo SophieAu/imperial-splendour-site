@@ -29,7 +29,7 @@ const Factions: React.FC<FactionsResponse> = ({ data }) => {
 
   return (
     <Layout
-      title={factionStrings.pageTitle({ title: 'Factions' })}
+      title={factionStrings.pageTitle('Factions')}
       description={initalFaction.frontmatter.description || factionStrings.pageDescription}
       slug={slugs.factions}
       additionalHead={

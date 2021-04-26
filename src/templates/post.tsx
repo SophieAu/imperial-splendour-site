@@ -29,7 +29,7 @@ const Post: React.FC<Props> = ({ data, pageContext }) => {
 
   return (
     <Layout
-      title={post.pageTitle({ title: markdownRemark.frontmatter.title })}
+      title={post.pageTitle(markdownRemark.frontmatter.title)}
       description={markdownRemark.frontmatter.excerpt}
       slug={pageContext.slug}
       ogImage={data.markdownRemark.fields.socialImage.childImageSharp.original.src}
@@ -38,7 +38,7 @@ const Post: React.FC<Props> = ({ data, pageContext }) => {
         <PostHeader {...markdownRemark.frontmatter} isHeaderClickable={false} />
         <div className={styles.text} dangerouslySetInnerHTML={{ __html: markdownRemark.html }} />
       </article>
-      {!!allCommentsYaml?.edges.length && <CommentSection comments={allCommentsYaml?.edges} />}
+      {!!allCommentsYaml?.nodes.length && <CommentSection comments={allCommentsYaml.nodes} />}
     </Layout>
   );
 };

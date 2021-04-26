@@ -103,7 +103,7 @@ type SocialImageResponse = {
 type CommentResponse = {
   data: {
     allCommentsYaml: {
-      edges: Comment[];
+      nodes: Comment[];
     };
   };
 };
@@ -139,12 +139,10 @@ export type PostResponse = SingleResponse<PostFrontmatter> & CommentResponse & S
 export type SingleFaction = Node<FactionsFrontmatter>;
 
 export type Comment = {
-  node: {
-    id: number;
-    date: string;
-    name: string;
-    comment: string;
-  };
+  id: number;
+  date: string;
+  name: string;
+  comment: string;
 };
 
 // ---
