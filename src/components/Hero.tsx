@@ -8,9 +8,9 @@ import Img from './GatsbyImage';
 import * as styles from './Hero.styles';
 
 const query = graphql`
-  query {
+  query($maxWidth: Int = 1360) {
     file(relativePath: { eq: "index/hero_logo.png" }) {
-      ...heroImage
+      ...fluidImage
     }
   }
 `;

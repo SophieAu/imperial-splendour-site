@@ -11,12 +11,12 @@ import Img from './GatsbyImage';
 import { ImageLink } from './Link';
 
 const query = graphql`
-  query {
+  query($width: Int = 24, $height: Int) {
     buttonLeft: file(relativePath: { eq: "factions/button_left.png" }) {
-      ...carouselButtonImage
+      ...fixedImage
     }
     buttonRight: file(relativePath: { eq: "factions/button_right.png" }) {
-      ...carouselButtonImage
+      ...fixedImage
     }
   }
 `;

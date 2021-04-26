@@ -6,15 +6,15 @@ import Image from './Image';
 import * as styles from './InfoBoxes.styles';
 
 const query = graphql`
-  query {
+  query($maxWidth: Int = 805) {
     blackwatch: file(relativePath: { eq: "index/info_blackwatch.jpg" }) {
-      ...infoBoxImage
+      ...fluidImage
     }
     portraits: file(relativePath: { eq: "index/info_portraits.jpg" }) {
-      ...infoBoxImage
+      ...fluidImage
     }
     gameplay: file(relativePath: { eq: "index/info_gameplay.jpg" }) {
-      ...infoBoxImage
+      ...fluidImage
     }
   }
 `;

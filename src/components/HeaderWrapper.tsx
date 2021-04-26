@@ -10,9 +10,9 @@ import * as styles from './HeaderWrapper.styles';
 import { ImageLink } from './Link';
 
 const query = graphql`
-  query {
+  query($width: Int = 183, $height: Int = 56) {
     headerLogo: file(relativePath: { eq: "header_logo.png" }) {
-      ...headerLogo
+      ...fixedImage
     }
   }
 `;

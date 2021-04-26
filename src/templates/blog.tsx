@@ -17,7 +17,10 @@ export const query = graphql`
       limit: $limit
       skip: $skip
     ) {
-      ...blogPosts
+      totalCount
+      nodes {
+        ...blogPost
+      }
     }
   }
 `;
@@ -37,14 +40,14 @@ interface Props extends PostsResponse, BlogListContext {}
 const Blog: React.FC<Props> = ({ data, pageContext }) => (
   <Layout title={blog.pageTitle} description={blog.pageDescription} slug={slugs.blog}>
     <ul className={styles.postList}>
-      {data.allMarkdownRemark.edges.map(post => (
-        <li key={post.node.id} className={styles.post}>
+      {data.allMarkdownRemark.nodes.map(post => (
+        <li key={post.id} className={styles.post}>
           <PostHeader
-            slug={createSlug(post.node.frontmatter.title, post.node.frontmatter.date)}
-            {...post.node.frontmatter}
+            slug={createSlug(post.frontmatter.title, post.frontmatter.date)}
+            {...post.frontmatter}
             isHeaderClickable={true}
           />
-          <p className={styles.excerpt}>{post.node.frontmatter.excerpt}</p>
+          <p className={styles.excerpt}>{post.frontmatter.excerpt}</p>
         </li>
       ))}
     </ul>

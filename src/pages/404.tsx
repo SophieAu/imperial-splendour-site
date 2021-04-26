@@ -8,9 +8,9 @@ import Layout from '../components/Layout';
 import * as styles from './404.styles';
 
 const query = graphql`
-  query {
+  query($maxWidth: Int = 1040) {
     file(relativePath: { eq: "notFound/hero.jpg" }) {
-      ...notFoundImage
+      ...fluidImage
     }
   }
 `;

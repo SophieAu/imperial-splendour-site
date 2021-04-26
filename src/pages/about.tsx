@@ -9,30 +9,30 @@ import { AboutImage, Contributors } from '../types';
 import * as styles from './about.styles';
 
 export const query = graphql`
-  query {
+  query($width: Int = 66, $height: Int = 88) {
     pike: file(relativePath: { eq: "about/pike_portrait.png" }) {
-      ...avatarImage
+      ...fixedImage
     }
     QHH: file(relativePath: { eq: "about/QHH_portrait.png" }) {
-      ...avatarImage
+      ...fixedImage
     }
     oleg2242: file(relativePath: { eq: "about/oleg2242_portrait.png" }) {
-      ...avatarImage
+      ...fixedImage
     }
     cro: file(relativePath: { eq: "about/cro_portrait.png" }) {
-      ...avatarImage
+      ...fixedImage
     }
     tsanada: file(relativePath: { eq: "about/tsanada_portrait.png" }) {
-      ...avatarImage
+      ...fixedImage
     }
     HD: file(relativePath: { eq: "about/HD_portrait.png" }) {
-      ...avatarImage
+      ...fixedImage
     }
     madOrc: file(relativePath: { eq: "about/madOrc_portrait.png" }) {
-      ...avatarImage
+      ...fixedImage
     }
     myfate: file(relativePath: { eq: "about/myfate_portrait.png" }) {
-      ...avatarImage
+      ...fixedImage
     }
   }
 `;
