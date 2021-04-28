@@ -35,6 +35,13 @@ type SingleResponse<Frontmatter> = {
   data: {
     markdownRemark: {
       frontmatter: Frontmatter;
+    };
+  };
+};
+
+type ExtendedSingleResponse<Frontmatter> = SingleResponse<Frontmatter> & {
+  data: {
+    markdownRemark: {
       html: string;
     };
   };
@@ -49,12 +56,13 @@ export type AboutFrontmater = {
   contributorsTitle: string;
   contributors: { avatar: FixedImage; name: string }[];
 };
-export type AboutResponse = SingleResponse<AboutFrontmater>;
+export type AboutResponse = ExtendedSingleResponse<AboutFrontmater>;
 
 type IndexFrontmatter = {
   description: string;
   heroImage: FixedImage;
   heroLogo: FixedImage;
+  heroText: FixedImage;
   infoBoxes: {
     text: string;
     image: FluidImage;

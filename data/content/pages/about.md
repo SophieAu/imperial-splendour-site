@@ -2,6 +2,7 @@
 title: About
 description: "Imperial Splendour attempts to create the best Empire: Total War
   experience possible without destroying the essence of the game."
+contributorsTitle: Contributors
 contributors:
   - avatar: static/qhh_portrait.png
     name: Quintus Hortensius Hortalus

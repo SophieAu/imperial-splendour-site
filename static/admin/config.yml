@@ -23,7 +23,7 @@ collections:
         widget: "list"
         summary: '{{fields.image}} - {{fields.text}}'
         fields:
-          - { label: "Info Text", name: "text", widget: "string" }
+          - { label: "Info Text", name: "text", widget: "markdown" }
           - { label: "Image", name: "image", widget: "image" }
           - { label: "Image Alt Text", name: "imgAlt", widget: "string" }
     - name: "about"

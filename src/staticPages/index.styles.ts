@@ -36,8 +36,7 @@ export const button = css`
 `;
 
 export const logo = css`
-  max-width: ${MAX_BODY_WIDTH};
-  width: 50vw;
+  width: min(50vw, 85rem);
 `;
 
 export const body = css`
@@ -62,23 +61,13 @@ export const body = css`
 `;
 
 export const text = css`
-  font: ${font.hero};
-  max-width: ${MAX_CONTENT_WIDTH};
+  max-width: calc(${MAX_CONTENT_WIDTH} + 2rem);
   padding-bottom: 5rem;
 
-  @media all ${screenSize.DESKTOP} {
-    color: ${color.white};
-    p {
-      margin: 0;
-    }
-  }
-
-  @media all ${screenSize.TABLET} {
-    color: ${color.white};
-
-    p {
-      margin: 0 1rem;
-    }
+  font: ${font.hero};
+  color: ${color.white};
+  > * {
+    margin: 0 1rem;
   }
 
   @media all ${screenSize.MOBILE} {
@@ -95,7 +84,6 @@ export const infoBoxRoot = css`
   display: grid;
   grid: auto-flow dense / repeat(5, 1fr);
   grid-gap: 4rem 2rem;
-  width: min(100%, ${MAX_BODY_WIDTH});
 
   @media all ${screenSize.DESKTOP} {
     margin: 6rem 0;
@@ -105,11 +93,20 @@ export const infoBoxRoot = css`
     display: flex;
     flex-direction: column;
     padding: 5rem 3rem 3rem;
+    width: calc(100% - 3rem);
     grid-gap: 0;
   }
 
   @media all ${screenSize.MOBILE} {
     padding: 5rem 0 3rem;
+  }
+
+  > *:not(p):nth-child(even) {
+    grid-column: 1/4;
+  }
+
+  > *:not(p):nth-child(odd) {
+    grid-column: 3/6;
   }
 `;
 
@@ -126,12 +123,4 @@ export const infoText = css`
 
 export const image = css`
   margin: 1rem;
-
-  &[data-pos='0'] {
-    grid-column: 1/4;
-  }
-
-  &[data-pos='1'] {
-    grid-column: 3/6;
-  }
 `;

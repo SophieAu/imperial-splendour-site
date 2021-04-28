@@ -13,20 +13,22 @@ import * as styles from './Index.styles';
 export const query = graphql`
   query($id: String!, $maxWidth: Int = 1360, $width: Int, $height: Int) {
     markdownRemark(id: { eq: $id }) {
-      description
-      heroImage {
-        ...fixedImage
-      }
-      heroLogo {
-        ...fluidImage
-      }
-      heroText
-      infoBoxes {
-        text
-        image {
+      frontmatter {
+        description
+        heroImage {
+          ...fixedImage
+        }
+        heroLogo {
           ...fluidImage
         }
-        imgAlt
+        heroText
+        infoBoxes {
+          text
+          image {
+            ...fluidImage
+          }
+          imgAlt
+        }
       }
     }
   }
@@ -39,8 +41,7 @@ export const query = graphql`
 */
 
 const Home: React.FC<IndexResponse> = ({ data: { markdownRemark } }) => {
-  const { description, infoBoxes, heroImage, heroLogo } = markdownRemark.frontmatter;
-  const { html } = markdownRemark;
+  const { description, heroImage, heroLogo, heroText, infoBoxes } = markdownRemark.frontmatter;
 
   return (
     <Layout title={home.pageTitle} description={description} slug={slugs.home}>
@@ -48,7 +49,7 @@ const Home: React.FC<IndexResponse> = ({ data: { markdownRemark } }) => {
         <h1 style={{ display: 'none' }}>{home.heroTitle}</h1>
         <div className={styles.body}>
           <Image className={styles.logo} {...strippedImg(heroLogo)} alt={home.heroLogoAlt} />
-          <p className={styles.text}>{html}</p>
+          <p className={styles.text}>{heroText}</p>
         </div>
         <LinkButton to={paths.downloadIndex} className={styles.button}>
           {downloadButton.buttonText}
