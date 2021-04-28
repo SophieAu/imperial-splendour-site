@@ -1,49 +1,69 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 
-import { slugs } from '../../data/config';
-import { home } from '../../data/strings';
-import Hero from '../components/Hero';
-import InfoBoxes from '../components/InfoBoxes';
+import { paths, slugs } from '../../data/config';
+import { downloadButton, home } from '../../data/strings';
+import Image from '../components/Image';
 import Layout from '../components/Layout';
+import { LinkButton } from '../components/Link';
+import { IndexResponse } from '../types';
+import { strippedImg } from '../util';
+import * as styles from './Index.styles';
 
 export const query = graphql`
-  query($id: String!) {
-    markdownRemark {
+  query($id: String!, $maxWidth: Int = 1360, $width: Int, $height: Int) {
+    markdownRemark(id: { eq: $id }) {
       description
       heroImage {
-        ...imageAsset
+        ...fixedImage
       }
       heroLogo {
-        ...imageAsset
+        ...fluidImage
       }
       heroText
       infoBoxes {
         text
         image {
-          ...imageAsset
+          ...fluidImage
         }
-        imageAlt
+        imgAlt
       }
-    }
-    global: sanityGlobals {
-      siteTitle
     }
   }
 `;
 
-interface Props {
-  data: {
-    home: SanityHome;
-    global: SanityGlobals;
-  };
-}
+/*
+    global: sanityGlobals {
+      siteTitle
+    }
+*/
 
-const Home: React.FC = () => (
-  <Layout title={home.pageTitle} description={home.pageDescription} slug={slugs.home}>
-    <Hero />
-    <InfoBoxes />
-  </Layout>
-);
+const Home: React.FC<IndexResponse> = ({ data: { markdownRemark } }) => {
+  const { description, infoBoxes, heroImage, heroLogo } = markdownRemark.frontmatter;
+  const { html } = markdownRemark;
+
+  return (
+    <Layout title={home.pageTitle} description={description} slug={slugs.home}>
+      <section className={styles.heroRoot}>
+        <h1 style={{ display: 'none' }}>{home.heroTitle}</h1>
+        <div className={styles.body}>
+          <Image className={styles.logo} {...strippedImg(heroLogo)} alt={home.heroLogoAlt} />
+          <p className={styles.text}>{html}</p>
+        </div>
+        <LinkButton to={paths.downloadIndex} className={styles.button}>
+          {downloadButton.buttonText}
+        </LinkButton>
+      </section>
+      <section className={styles.infoBoxRoot}>
+        {infoBoxes.map(({ text, image, imgAlt }, i) => (
+          <React.Fragment key={i}>
+            <Image {...strippedImg(image)} data-pos={i % 2} className={styles.image} alt={imgAlt} />
+            <p className={styles.infoText}>{text}</p>
+          </React.Fragment>
+        ))}
+      </section>
+    </Layout>
+  );
+};
 
 export default Home;

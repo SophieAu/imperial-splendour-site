@@ -1,5 +1,7 @@
 import { css } from 'linaria';
 
+import heroJpg from '../../data/img/index/hero_bg.jpg';
+import heroWebP from '../../data/img/index/hero_bg.webp';
 import {
   color,
   DOWNLOAD_BUTTON_HEIGHT,
@@ -9,10 +11,8 @@ import {
   MAX_SITE_WIDTH,
   screenSize,
 } from '../_variables.styles';
-import heroJpg from '../../data/img/index/hero_bg.jpg';
-import heroWebP from '../../data/img/index/hero_bg.webp';
 
-export const root = css`
+export const heroRoot = css`
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -68,16 +68,70 @@ export const text = css`
 
   @media all ${screenSize.DESKTOP} {
     color: ${color.white};
-    margin: 0;
+    p {
+      margin: 0;
+    }
   }
 
   @media all ${screenSize.TABLET} {
     color: ${color.white};
-    margin: 0 1rem;
+
+    p {
+      margin: 0 1rem;
+    }
   }
 
   @media all ${screenSize.MOBILE} {
     color: black;
-    margin: 1.5rem 1rem 0;
+    p {
+      margin: 1.5rem 1rem 0;
+    }
+  }
+`;
+
+export const infoBoxRoot = css`
+  box-sizing: border-box;
+  align-items: center;
+  display: grid;
+  grid: auto-flow dense / repeat(5, 1fr);
+  grid-gap: 4rem 2rem;
+  width: min(100%, ${MAX_BODY_WIDTH});
+
+  @media all ${screenSize.DESKTOP} {
+    margin: 6rem 0;
+  }
+
+  @media all ${screenSize.TABLET_MAX} {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 3rem 3rem;
+    grid-gap: 0;
+  }
+
+  @media all ${screenSize.MOBILE} {
+    padding: 5rem 0 3rem;
+  }
+`;
+
+export const infoText = css`
+  font: ${font.info};
+  grid-column: span 2;
+  margin: 0;
+
+  @media all ${screenSize.TABLET_MAX} {
+    margin: 0 1rem 3rem;
+    text-align: center;
+  }
+`;
+
+export const image = css`
+  margin: 1rem;
+
+  &[data-pos='0'] {
+    grid-column: 1/4;
+  }
+
+  &[data-pos='1'] {
+    grid-column: 3/6;
   }
 `;

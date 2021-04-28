@@ -1,22 +1,7 @@
 import { FixedObject, FluidObject } from 'gatsby-image';
 
-export type AboutFrontmater = {
-  title: string;
-  description: string;
-  contributorsTitle: string;
-  contributors: { avatar: { childImageSharp: { fixed: Image } }; name: string }[];
-};
-
-export type AboutResponse = SingleResponse<AboutFrontmater>;
-
 // ---
-// Image Types
-
-type FluidImage = {
-  childImageSharp: {
-    fluid: FluidObject;
-  };
-};
+/// Image Types
 
 export type Image = {
   src: string;
@@ -26,21 +11,11 @@ export type Image = {
   sizes?: string;
 };
 
-type FixedImage = {
-  childImageSharp: {
-    fixed: FixedObject;
-  };
-};
-
-export type IndexImage = {
-  heroImg: FluidImage;
-  blackwatch: FluidImage;
-  portraits: FluidImage;
-  gameplay: FluidImage;
-};
+export type FixedImage = { childImageSharp: { fixed: Image } };
+export type FluidImage = { childImageSharp: { fluid: Image } };
 
 // ---
-// GraphQL Responses
+// GraphQL Response Bricks
 
 type ListResponse<Frontmatter> = {
   data: {
@@ -64,6 +39,58 @@ type SingleResponse<Frontmatter> = {
     };
   };
 };
+
+// ---
+// Responses
+
+export type AboutFrontmater = {
+  title: string;
+  description: string;
+  contributorsTitle: string;
+  contributors: { avatar: FixedImage; name: string }[];
+};
+export type AboutResponse = SingleResponse<AboutFrontmater>;
+
+type IndexFrontmatter = {
+  description: string;
+  heroImage: FixedImage;
+  heroLogo: FixedImage;
+  infoBoxes: {
+    text: string;
+    image: FluidImage;
+    imgAlt: string;
+  }[];
+};
+export type IndexResponse = SingleResponse<IndexFrontmatter>;
+
+// ---
+// ---
+// OLD SHIT
+// ---
+// ---
+// Image Types
+
+type FluidImageOld = {
+  childImageSharp: {
+    fluid: FluidObject;
+  };
+};
+
+type FixedImageOld = {
+  childImageSharp: {
+    fixed: FixedObject;
+  };
+};
+
+export type IndexImage = {
+  heroImg: FluidImageOld;
+  blackwatch: FluidImageOld;
+  portraits: FluidImageOld;
+  gameplay: FluidImageOld;
+};
+
+// ---
+// GraphQL Responses
 
 type SocialImageResponse = {
   data: {
@@ -98,7 +125,7 @@ export type FactionsFrontmatter = {
   title: string;
   slug: string;
   description: string;
-  flag: FixedImage;
+  flag: FixedImageOld;
 };
 
 export type PostFrontmatter = {
