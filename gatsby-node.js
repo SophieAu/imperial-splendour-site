@@ -5,7 +5,7 @@ const {
   buildBlogListPagination,
   buildBlogPosts,
   buildFactionPages,
-  buildTermsOfService,
+  buildPages,
 } = require('./meta/node');
 
 let browser = null;
@@ -22,11 +22,11 @@ exports.createPages = async ({ graphql, actions }) => {
   const result = await graphql(PAGES_QUERY);
   if (result.errors) return;
 
+  console.log('\nCreating Pages...');
+  buildPages(result.data.pages.edges, actions.createPage);
+
   console.log('\nCreating Blog Posts...');
   buildBlogPosts(result.data.posts.edges, actions.createPage);
-
-  console.log('\nCreating Terms of Service...');
-  buildTermsOfService(result.data.pages.edges, actions.createPage);
 
   console.log('\nPaginating Blog Posts List...');
   buildBlogListPagination(result.data.posts.edges, actions.createPage);

@@ -27,7 +27,7 @@ const DownloadRotR = () => (
       <ul className={styles.filehosts}>
         {hosts.map(({ platform, link, imgSrc }) => (
           <li key={platform}>
-            <ImageLink to={link} title={downloadRotR.imageLinkAlt({ platform })}>
+            <ImageLink to={link} title={downloadRotR.imageLinkAlt(platform)}>
               <img src={imgSrc} alt={platform} />
             </ImageLink>
           </li>

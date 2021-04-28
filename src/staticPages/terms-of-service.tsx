@@ -15,14 +15,17 @@ export const query = graphql`
   }
 `;
 
-const TermsOfService: React.FC<ToSResponse> = ({ data: { markdownRemark: tos } }) => (
-  <Layout
-    title={post.pageTitle(tos.frontmatter.title)}
-    description={tos.frontmatter.description}
-    slug={slugs.termsOfService}
-  >
-    <article className={styles.termsOfService} dangerouslySetInnerHTML={{ __html: tos.html }} />
-  </Layout>
-);
+const TermsOfService: React.FC<ToSResponse> = ({ data }) => {
+  const tos = data.markdownRemark;
+  return (
+    <Layout
+      title={post.pageTitle(tos.frontmatter.title)}
+      description={tos.frontmatter.description}
+      slug={slugs.termsOfService}
+    >
+      <article className={styles.termsOfService} dangerouslySetInnerHTML={{ __html: tos.html }} />
+    </Layout>
+  );
+};
 
 export default TermsOfService;

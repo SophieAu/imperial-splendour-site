@@ -47,7 +47,7 @@ exports.PAGES_QUERY = `
 `;
 
 exports.buildFactionPages = (nodes, createPage) => {
-  const post = resolve(`./src/templates/faction.tsx`);
+  const post = resolve(`./src/dynamicPages/faction.tsx`);
 
   nodes.forEach(({ node }) => {
     createPage({
@@ -60,7 +60,7 @@ exports.buildFactionPages = (nodes, createPage) => {
 };
 
 exports.buildBlogPosts = (nodes, createPage) => {
-  const post = resolve(`./src/templates/post.tsx`);
+  const post = resolve(`./src/dynamicPages/post.tsx`);
 
   nodes.forEach(({ node }) => {
     const slug = createSlug(node.frontmatter.title, node.frontmatter.date);
@@ -73,16 +73,27 @@ exports.buildBlogPosts = (nodes, createPage) => {
   });
 };
 
-exports.buildTermsOfService = (nodes, createPage) => {
+exports.buildPages = (nodes, createPage) => {
+  const component = name => resolve(`./src/staticPages/${name}.tsx`);
+
   nodes.forEach(({ node: { fileAbsolutePath: filePath, id } }) => {
     const tos = 'terms-of-service';
+    const about = 'about';
+    const index = 'index';
+
     filePath.endsWith(`${tos}.md`) &&
-      createPage({ path: tos, component: resolve(`./src/templates/${tos}.tsx`), context: { id } });
+      createPage({ path: tos, component: component(tos), context: { id } });
+
+    filePath.endsWith(`${about}.md`) &&
+      createPage({ path: about, component: component(about), context: { id } });
+
+    filePath.endsWith(`${index}.md`) &&
+      createPage({ path: '/', component: component(index), context: { id } });
   });
 };
 
 exports.buildBlogListPagination = (nodes, createPage) => {
-  const blogList = resolve('./src/templates/blog.tsx');
+  const blogList = resolve('./src/dynamicPages/blog.tsx');
 
   const numberOfPages = Math.ceil(nodes.length / POSTS_PER_PAGE);
   Array.from({ length: numberOfPages }).forEach((_, i) => {

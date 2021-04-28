@@ -12,8 +12,6 @@ const {
   socialImageOptions,
 } = require('./meta/config');
 
-const pageCreatorOptions = { path: `${__dirname}/src/pages`, ignore: [`**/*.styles.ts`] };
-
 module.exports = {
   siteMetadata,
   plugins: [
@@ -27,7 +25,6 @@ module.exports = {
     'gatsby-transformer-yaml',
     { resolve: `gatsby-plugin-feed`, options: feedOptions },
     { resolve: `gatsby-plugin-manifest`, options: manifestOptions },
-    { resolve: `gatsby-plugin-page-creator`, options: pageCreatorOptions },
     { resolve: `gatsby-plugin-react-svg`, options: reactSVGOptions },
     { resolve: 'gatsby-plugin-robots-txt', options: robotsTxtOptions },
     { resolve: `gatsby-plugin-sitemap`, options: sitemapOptions },

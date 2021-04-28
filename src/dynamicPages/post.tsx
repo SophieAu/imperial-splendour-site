@@ -24,23 +24,19 @@ export const query = graphql`
 
 interface Props extends PostResponse, SlugContext {}
 
-const Post: React.FC<Props> = ({ data, pageContext }) => {
-  const { markdownRemark, allCommentsYaml } = data;
-
-  return (
-    <Layout
-      title={post.pageTitle(markdownRemark.frontmatter.title)}
-      description={markdownRemark.frontmatter.excerpt}
-      slug={pageContext.slug}
-      ogImage={data.markdownRemark.fields.socialImage.childImageSharp.original.src}
-    >
-      <article className={styles.blogPost}>
-        <PostHeader {...markdownRemark.frontmatter} isHeaderClickable={false} />
-        <div className={styles.text} dangerouslySetInnerHTML={{ __html: markdownRemark.html }} />
-      </article>
-      {!!allCommentsYaml?.nodes.length && <CommentSection comments={allCommentsYaml.nodes} />}
-    </Layout>
-  );
-};
+const Post: React.FC<Props> = ({ data: { markdownRemark, allCommentsYaml }, pageContext }) => (
+  <Layout
+    title={post.pageTitle(markdownRemark.frontmatter.title)}
+    description={markdownRemark.frontmatter.excerpt}
+    slug={pageContext.slug}
+    ogImage={markdownRemark.fields.socialImage.childImageSharp.original.src}
+  >
+    <article className={styles.blogPost}>
+      <PostHeader {...markdownRemark.frontmatter} isHeaderClickable={false} />
+      <div className={styles.text} dangerouslySetInnerHTML={{ __html: markdownRemark.html }} />
+    </article>
+    {!!allCommentsYaml?.nodes.length && <CommentSection comments={allCommentsYaml.nodes} />}
+  </Layout>
+);
 
 export default Post;

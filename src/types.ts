@@ -1,5 +1,14 @@
 import { FixedObject, FluidObject } from 'gatsby-image';
 
+export type AboutFrontmater = {
+  title: string;
+  description: string;
+  contributorsTitle: string;
+  contributors: { avatar: { childImageSharp: { fixed: Image } }; name: string }[];
+};
+
+export type AboutResponse = SingleResponse<AboutFrontmater>;
+
 // ---
 // Image Types
 
@@ -14,7 +23,7 @@ export type Image = {
   srcSet: string;
   srcWebp: string;
   srcSetWebp: string;
-  sizes: string;
+  sizes?: string;
 };
 
 type FixedImage = {
@@ -28,34 +37,6 @@ export type IndexImage = {
   blackwatch: FluidImage;
   portraits: FluidImage;
   gameplay: FluidImage;
-};
-
-export type AboutImage = {
-  pike: FixedImage;
-  QHH: FixedImage;
-  oleg2242: FixedImage;
-  cro: FixedImage;
-  tsanada: FixedImage;
-  HD: FixedImage;
-  madOrc: FixedImage;
-  myfate: FixedImage;
-};
-
-export type Contributors = {
-  pike: string;
-  QHH: string;
-  oleg2242: string;
-  cro: string;
-  tsanada: string;
-  HD: string;
-  madOrc: string;
-  myfate: string;
-};
-
-export type InfoBox = {
-  imageKey: keyof IndexImage;
-  imageAlt: string;
-  text: string;
 };
 
 // ---
@@ -122,7 +103,6 @@ export type FactionsFrontmatter = {
 
 export type PostFrontmatter = {
   title: string;
-  author: (keyof Contributors)[];
   date: string;
   formattedDate: string;
   excerpt: string;

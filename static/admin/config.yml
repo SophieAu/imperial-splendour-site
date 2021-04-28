@@ -2,12 +2,52 @@ backend:
   name: git-gateway
   branch: master
 
-publish_mode: editorial_workflow
-
 media_folder: data/content/_img
 public_folder: static
+logo_url: https://imperialsplendour.com/static/48e018bbf305f6ff3be8092e37bd2c9d/31987/hero_logo.png
 
 collections:
+  - label: "Pages"
+    name: "pages"
+    files:
+    - name: "index"
+      label: "Home Page"
+      file: "data/content/pages/index.md"
+      fields:
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Hero Image", name: "heroImage", widget: "image" }
+      - { label: "Hero Logo", name: "heroLogo", widget: "image" }
+      - { label: "Hero Text", name: "heroText", widget: "markdown" }
+      - label: "Info Boxes"
+        name: "infoBoxes"
+        widget: "list"
+        summary: '{{fields.image}} - {{fields.text}}'
+        fields:
+          - { label: "Info Text", name: "text", widget: "string" }
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Image Alt Text", name: "imgAlt", widget: "string" }
+    - name: "about"
+      label: "About"
+      file: "data/content/pages/about.md"
+      fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Contributors Title", name: "contributorsTitle", widget: "string" }
+      - label: "Contributors"
+        name: "contributors"
+        widget: "list"
+        summary: '{{fields.image}} - {{fields.author.name}}'
+        fields:
+          - { label: "Avatar", name: "avatar", widget: "image" }
+          - { label: "Name", name: "name", widget: "string" }
+    - name: "terms-of-service"
+      label: "Terms of Service"
+      file: "data/content/pages/terms-of-service.md"
+      fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
   - name: "blog"
     label: "Blog"
     folder: "data/content/posts"
@@ -20,16 +60,6 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Excerpt", name: "excerpt", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
-  - label: "Terms of Service"
-    name: "terms-of-service"
-    files:
-    - name: "terms-of-service"
-      label: "Terms of Service"
-      file: "data/content/pages/terms-of-service.md"
-      fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "factions"
     label: "Factions"

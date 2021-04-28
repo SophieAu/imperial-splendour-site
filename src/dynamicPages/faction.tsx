@@ -5,7 +5,7 @@ import { slugs } from '../../data/config';
 import { factions as factionStrings } from '../../data/strings';
 import FlagCarousel from '../components/FlagCarousel';
 import Layout from '../components/Layout';
-import * as styles from '../pages/factions.styles';
+import * as styles from '../staticPages/factions.styles';
 import { FactionsResponse, SlugContext } from '../types';
 
 export const query = graphql`

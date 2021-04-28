@@ -29,4 +29,8 @@ export const contributor = css`
   p {
     margin: 0.5rem 0;
   }
+
+  img {
+    width: 66px;
+  }
 `;

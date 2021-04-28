@@ -84,6 +84,12 @@ exports.manifestOptions = {
 exports.transformerRemarkOptions = {
   plugins: [
     { resolve: 'gatsby-remark-images', options: { maxWidth: 970, quality: 90, withWebp: true } },
+    {
+      resolve: `gatsby-plugin-netlify-cms-paths`,
+      options: {
+        cmsConfig: `/static/admin/config.yml`,
+      },
+    },
   ],
 };
 
