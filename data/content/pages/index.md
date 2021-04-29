@@ -12,7 +12,7 @@ infoBoxes:
       order or preserve it. Rewrite history. The world is at your feet. To give
       you an authentic feeling for the battles of this period we created armies
       with historically accurate uniforms.
-    image: static/info_.jpg
+    image: static/info_blackwatch.jpg
     imgAlt: The British/Scottish Blackwatch in battle formation
 
   - text: But historical accuracy does not end with new fancy uniforms. There are many historical characters in the game that you already know or whose portrait you might have seen in a museum. More than 230 portraits have been added to the game to replace the vanilla portrait sets of ETW and give you an 18th century feeling.
