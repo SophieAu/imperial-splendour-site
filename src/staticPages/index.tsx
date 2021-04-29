@@ -1,5 +1,8 @@
+/** @jsx jsx */
+import { jsx } from '@emotion/react';
 import { graphql } from 'gatsby';
 import React from 'react';
+import ReactMarkdown from 'react-markdown';
 
 import { paths, slugs } from '../../data/config';
 import { downloadButton, home } from '../../data/strings';
@@ -11,12 +14,12 @@ import { strippedImg } from '../util';
 import * as styles from './Index.styles';
 
 export const query = graphql`
-  query($id: String!, $maxWidth: Int = 1360, $width: Int, $height: Int) {
+  query($id: String!, $maxWidth: Int = 1360) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         description
         heroImage {
-          ...fixedImage
+          ...fluidImage
         }
         heroLogo {
           ...fluidImage
@@ -42,24 +45,30 @@ export const query = graphql`
 
 const Home: React.FC<IndexResponse> = ({ data: { markdownRemark } }) => {
   const { description, heroImage, heroLogo, heroText, infoBoxes } = markdownRemark.frontmatter;
+  const { src: jpg, srcWebp: webp } = strippedImg(heroImage);
+  console.log(heroImage);
 
   return (
     <Layout title={home.pageTitle} description={description} slug={slugs.home}>
-      <section className={styles.heroRoot}>
+      <section css={styles.heroRoot}>
         <h1 style={{ display: 'none' }}>{home.heroTitle}</h1>
-        <div className={styles.body}>
-          <Image className={styles.logo} {...strippedImg(heroLogo)} alt={home.heroLogoAlt} />
-          <p className={styles.text}>{heroText}</p>
+        <div css={styles.body({ jpg, webp })}>
+          <Image css={styles.logo} {...strippedImg(heroLogo)} alt={home.heroLogoAlt} />
+          <div css={styles.text}>
+            <ReactMarkdown>{heroText}</ReactMarkdown>
+          </div>
         </div>
-        <LinkButton to={paths.downloadIndex} className={styles.button}>
+        <LinkButton to={paths.downloadIndex} css={styles.button}>
           {downloadButton.buttonText}
         </LinkButton>
       </section>
-      <section className={styles.infoBoxRoot}>
+      <section css={styles.infoBoxRoot}>
         {infoBoxes.map(({ text, image, imgAlt }, i) => (
           <React.Fragment key={i}>
-            <Image {...strippedImg(image)} data-pos={i % 2} className={styles.image} alt={imgAlt} />
-            <p className={styles.infoText}>{text}</p>
+            <Image {...strippedImg(image)} data-pos={i % 2} css={styles.image} alt={imgAlt} />
+            <div css={styles.infoText}>
+              <ReactMarkdown>{text}</ReactMarkdown>
+            </div>
           </React.Fragment>
         ))}
       </section>

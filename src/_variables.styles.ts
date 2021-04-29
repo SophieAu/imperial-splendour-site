@@ -7,7 +7,6 @@ export const screenSize = {
 };
 
 export const MAX_CONTENT_WIDTH = '65rem';
-export const MAX_BODY_WIDTH = '85rem';
 export const MAX_SITE_WIDTH = '100rem';
 export const HEADER_HEIGHT = '4.5rem';
 export const FOOTER_HEIGHT = '4.5rem';

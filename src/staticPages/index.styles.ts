@@ -1,12 +1,9 @@
-import { css } from 'linaria';
+import { css } from '@emotion/react';
 
-import heroJpg from '../../data/img/index/hero_bg.jpg';
-import heroWebP from '../../data/img/index/hero_bg.webp';
 import {
   color,
   DOWNLOAD_BUTTON_HEIGHT,
   font,
-  MAX_BODY_WIDTH,
   MAX_CONTENT_WIDTH,
   MAX_SITE_WIDTH,
   screenSize,
@@ -39,7 +36,7 @@ export const logo = css`
   width: min(50vw, 85rem);
 `;
 
-export const body = css`
+export const body = (heroImg: { webp: string; jpg: string }) => css`
   align-items: center;
   display: flex;
   flex: 1;
@@ -51,11 +48,11 @@ export const body = css`
 
   @media all ${screenSize.TABLET_MIN} {
     html:not(.webp) & {
-      background: no-repeat bottom/100% url(${heroJpg});
+      background: no-repeat bottom/100% url(${heroImg.jpg});
     }
 
     .webp & {
-      background: no-repeat bottom/100% url(${heroWebP});
+      background: no-repeat bottom/100% url(${heroImg.webp});
     }
   }
 `;
@@ -101,11 +98,11 @@ export const infoBoxRoot = css`
     padding: 5rem 0 3rem;
   }
 
-  > *:not(p):nth-child(even) {
+  > *:not(div):nth-child(even) {
     grid-column: 1/4;
   }
 
-  > *:not(p):nth-child(odd) {
+  > *:not(div):nth-child(odd) {
     grid-column: 3/6;
   }
 `;
@@ -113,11 +110,14 @@ export const infoBoxRoot = css`
 export const infoText = css`
   font: ${font.info};
   grid-column: span 2;
-  margin: 0;
 
-  @media all ${screenSize.TABLET_MAX} {
-    margin: 0 1rem 3rem;
-    text-align: center;
+  > * {
+    margin: 0;
+
+    @media all ${screenSize.TABLET_MAX} {
+      margin: 0 1rem 3rem;
+      text-align: center;
+    }
   }
 `;
 

@@ -1,5 +1,7 @@
 import { FixedObject, FluidObject } from 'gatsby-image';
 
+type Markdown = string;
+
 // ---
 /// Image Types
 
@@ -62,9 +64,9 @@ type IndexFrontmatter = {
   description: string;
   heroImage: FixedImage;
   heroLogo: FixedImage;
-  heroText: FixedImage;
+  heroText: Markdown;
   infoBoxes: {
-    text: string;
+    text: Markdown;
     image: FluidImage;
     imgAlt: string;
   }[];
