@@ -98,12 +98,12 @@ export const infoBoxRoot = css`
     padding: 5rem 0 3rem;
   }
 
-  > *:not(div):nth-child(even) {
-    grid-column: 1/4;
+  > *:not(div):nth-child(4n + 1) {
+    grid-column: 3/6;
   }
 
-  > *:not(div):nth-child(odd) {
-    grid-column: 3/6;
+  > *:not(div):nth-child(4n + 3) {
+    grid-column: 1/4;
   }
 `;
 
