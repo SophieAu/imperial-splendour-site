@@ -7,8 +7,7 @@ const POSTS_PER_PAGE = 6;
 exports.PAGES_QUERY = `
   {
     posts: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/data\/content\/posts/"}}) {
-      edges {
-        node {
+      nodes {
           internal {
             type
           }
@@ -19,10 +18,8 @@ exports.PAGES_QUERY = `
           }
         }
       }
-    }
     factions: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/data\/content\/factions/"}}) {
-      edges {
-        node {
+      nodes {
           id
           frontmatter {
             slug
@@ -30,17 +27,10 @@ exports.PAGES_QUERY = `
           }
         }
       }
-    }
   pages: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/data\/content\/pages/"}}) {
-    edges {
-      node {
+    nodes {
         fileAbsolutePath
         id
-        frontmatter {
-          title
-          description
-        }
-      }
     }
   }
 }
@@ -49,7 +39,7 @@ exports.PAGES_QUERY = `
 exports.buildFactionPages = (nodes, createPage) => {
   const post = resolve(`./src/dynamicPages/faction.tsx`);
 
-  nodes.forEach(({ node }) => {
+  nodes.forEach(node => {
     createPage({
       path: `factions/${node.frontmatter.slug}`,
       component: post,
@@ -62,7 +52,7 @@ exports.buildFactionPages = (nodes, createPage) => {
 exports.buildBlogPosts = (nodes, createPage) => {
   const post = resolve(`./src/dynamicPages/post.tsx`);
 
-  nodes.forEach(({ node }) => {
+  nodes.forEach(node => {
     const slug = createSlug(node.frontmatter.title, node.frontmatter.date);
     createPage({
       path: `blog/${slug}`,
@@ -76,7 +66,7 @@ exports.buildBlogPosts = (nodes, createPage) => {
 exports.buildPages = (nodes, createPage) => {
   const component = name => resolve(`./src/staticPages/${name}.tsx`);
 
-  nodes.forEach(({ node: { fileAbsolutePath: filePath, id } }) => {
+  nodes.forEach(({ fileAbsolutePath: filePath, id }) => {
     const tos = 'terms-of-service';
     const about = 'about';
     const index = 'index';

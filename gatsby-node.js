@@ -23,16 +23,16 @@ exports.createPages = async ({ graphql, actions }) => {
   if (result.errors) return;
 
   console.log('\nCreating Pages...');
-  buildPages(result.data.pages.edges, actions.createPage);
+  buildPages(result.data.pages.nodes, actions.createPage);
 
   console.log('\nCreating Blog Posts...');
-  buildBlogPosts(result.data.posts.edges, actions.createPage);
+  buildBlogPosts(result.data.posts.nodes, actions.createPage);
 
   console.log('\nPaginating Blog Posts List...');
-  buildBlogListPagination(result.data.posts.edges, actions.createPage);
+  buildBlogListPagination(result.data.posts.nodes, actions.createPage);
 
   console.log('\nCreating Faction Pages...');
-  buildFactionPages(result.data.factions.edges, actions.createPage);
+  buildFactionPages(result.data.factions.nodes, actions.createPage);
 
   console.log();
 };
