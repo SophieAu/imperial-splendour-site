@@ -37,7 +37,7 @@ collections:
       - label: "Contributors"
         name: "contributors"
         widget: "list"
-        summary: '{{fields.image}} - {{fields.author.name}}'
+        summary: '{{fields.avatar}} - {{fields.name}}'
         fields:
           - { label: "Avatar", name: "avatar", widget: "image" }
           - { label: "Name", name: "name", widget: "string" }

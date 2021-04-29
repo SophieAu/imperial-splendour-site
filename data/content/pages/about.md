@@ -6,7 +6,7 @@ contributorsTitle: Contributors
 contributors:
   - avatar: static/pike_portrait.png
     name: PikeStance
-  - avatar: static/QHH_portrait.png
+  - avatar: static/quintus_portrait.png
     name: Quintus Hortensius Hortalus
   - avatar: static/oleg2242_portrait.png
     name: oleg2242
