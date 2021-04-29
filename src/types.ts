@@ -61,9 +61,11 @@ export type AboutFrontmater = {
 export type AboutResponse = ExtendedSingleResponse<AboutFrontmater>;
 
 type IndexFrontmatter = {
+  title: string;
   description: string;
   heroImage: FixedImage;
   heroLogo: FixedImage;
+  heroLogoAlt: string;
   heroText: Markdown;
   infoBoxes: {
     text: Markdown;

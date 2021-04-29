@@ -5,7 +5,7 @@ import React from 'react';
 import ReactMarkdown from 'react-markdown';
 
 import { paths, slugs } from '../../data/config';
-import { downloadButton, home } from '../../data/strings';
+import { buildPageTitle, downloadButton } from '../../data/strings';
 import Image from '../components/Image';
 import Layout from '../components/Layout';
 import { LinkButton } from '../components/Link';
@@ -17,6 +17,7 @@ export const query = graphql`
   query($id: String!, $maxWidth: Int = 1360) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
+        title
         description
         heroImage {
           ...fluidImage
@@ -24,6 +25,7 @@ export const query = graphql`
         heroLogo {
           ...fluidImage
         }
+        heroLogoAlt
         heroText
         infoBoxes {
           text
@@ -44,16 +46,17 @@ export const query = graphql`
 */
 
 const Home: React.FC<IndexResponse> = ({ data: { markdownRemark } }) => {
-  const { description, heroImage, heroLogo, heroText, infoBoxes } = markdownRemark.frontmatter;
+  const { title, description, infoBoxes } = markdownRemark.frontmatter;
+  const { heroImage, heroLogo, heroLogoAlt, heroText } = markdownRemark.frontmatter;
   const { src: jpg, srcWebp: webp } = strippedImg(heroImage);
   console.log(heroImage);
 
   return (
-    <Layout title={home.pageTitle} description={description} slug={slugs.home}>
+    <Layout title={buildPageTitle(title)} description={description} slug={slugs.home}>
       <section css={styles.heroRoot}>
-        <h1 style={{ display: 'none' }}>{home.heroTitle}</h1>
+        <h1 style={{ display: 'none' }}>{title}</h1>
         <div css={styles.body({ jpg, webp })}>
-          <Image css={styles.logo} {...strippedImg(heroLogo)} alt={home.heroLogoAlt} />
+          <Image css={styles.logo} {...strippedImg(heroLogo)} alt={heroLogoAlt} />
           <div css={styles.text}>
             <ReactMarkdown>{heroText}</ReactMarkdown>
           </div>
