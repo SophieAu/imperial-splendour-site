@@ -63,8 +63,8 @@ export type AboutResponse = ExtendedSingleResponse<AboutFrontmater>;
 type IndexFrontmatter = {
   title: string;
   description: string;
-  heroImage: FixedImage;
-  heroLogo: FixedImage;
+  heroImage: FluidImage;
+  heroLogo: FluidImage;
   heroLogoAlt: string;
   heroText: Markdown;
   infoBoxes: {
@@ -74,6 +74,15 @@ type IndexFrontmatter = {
   }[];
 };
 export type IndexResponse = SingleResponse<IndexFrontmatter>;
+
+type NotFoundFrontmatter = {
+  title: string;
+  description: string;
+  messageTitle: string;
+  image: FluidImage;
+  imageAlt: string;
+};
+export type NotFoundResponse = ExtendedSingleResponse<NotFoundFrontmatter>;
 
 // ---
 // ---

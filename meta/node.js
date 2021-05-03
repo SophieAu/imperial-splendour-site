@@ -8,29 +8,29 @@ exports.PAGES_QUERY = `
   {
     posts: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/data\/content\/posts/"}}) {
       nodes {
-          internal {
-            type
-          }
-          id
-          frontmatter {
-            title
-            date(formatString: "YYYY-MM-DD")
-          }
+        internal {
+          type
+        }
+        id
+        frontmatter {
+          title
+          date(formatString: "YYYY-MM-DD")
         }
       }
+    }
     factions: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/data\/content\/factions/"}}) {
       nodes {
-          id
-          frontmatter {
-            slug
-            title
-          }
+        id
+        frontmatter {
+          slug
+          title
         }
       }
+    }
   pages: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/data\/content\/pages/"}}) {
     nodes {
-        fileAbsolutePath
-        id
+      fileAbsolutePath
+      id
     }
   }
 }
@@ -70,6 +70,7 @@ exports.buildPages = (nodes, createPage) => {
     const tos = 'terms-of-service';
     const about = 'about';
     const index = 'index';
+    const notFound = '404';
 
     filePath.endsWith(`${tos}.md`) &&
       createPage({ path: tos, component: component(tos), context: { id } });
@@ -79,6 +80,9 @@ exports.buildPages = (nodes, createPage) => {
 
     filePath.endsWith(`${index}.md`) &&
       createPage({ path: '/', component: component(index), context: { id } });
+
+    filePath.endsWith(`${notFound}.md`) &&
+      createPage({ path: notFound, component: component(notFound), context: { id } });
   });
 };
 
