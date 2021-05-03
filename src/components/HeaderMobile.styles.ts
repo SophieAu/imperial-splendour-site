@@ -1,8 +1,8 @@
 import { css } from 'linaria';
 
-import { color, HEADER_HEIGHT, screenSize } from '../_variables.styles';
 import textureJpeg from '../../data/img/texture_bg.jpg';
 import textureWebp from '../../data/img/texture_bg.webp';
+import { color, HEADER_HEIGHT, screenSize } from '../_variables.styles';
 
 export const root = css`
   html:not(.yesscript) & {

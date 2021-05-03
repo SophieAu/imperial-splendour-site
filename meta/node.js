@@ -6,7 +6,7 @@ const POSTS_PER_PAGE = 6;
 
 exports.PAGES_QUERY = `
   {
-    posts: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/data\/content\/posts/"}}) {
+    posts: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/data/content/posts/" } }) {
       nodes {
         internal {
           type
@@ -18,7 +18,9 @@ exports.PAGES_QUERY = `
         }
       }
     }
-    factions: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/data\/content\/factions/"}}) {
+    factions: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/data/content/factions/" } }
+    ) {
       nodes {
         id
         frontmatter {
@@ -27,13 +29,16 @@ exports.PAGES_QUERY = `
         }
       }
     }
-  pages: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/data\/content\/pages/"}}) {
-    nodes {
-      fileAbsolutePath
-      id
+    pages: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/data/content/pages/" } }) {
+      nodes {
+        fileAbsolutePath
+        id
+        frontmatter {
+          title
+        }
+      }
     }
   }
-}
 `;
 
 exports.buildFactionPages = (nodes, createPage) => {
@@ -71,6 +76,7 @@ exports.buildPages = (nodes, createPage) => {
     const about = 'about';
     const index = 'index';
     const notFound = '404';
+    const download = 'download';
 
     filePath.endsWith(`${tos}.md`) &&
       createPage({ path: tos, component: component(tos), context: { id } });
@@ -83,7 +89,13 @@ exports.buildPages = (nodes, createPage) => {
 
     filePath.endsWith(`${notFound}.md`) &&
       createPage({ path: notFound, component: component(notFound), context: { id } });
+
+    filePath.endsWith(`${download}.md`) &&
+      createPage({ path: download, component: component(download), context: { id } });
   });
+
+  const factions = 'factions';
+  createPage({ path: factions, component: component(factions) });
 };
 
 exports.buildBlogListPagination = (nodes, createPage) => {

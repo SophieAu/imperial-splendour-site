@@ -4,7 +4,13 @@ export const blogPost = graphql`
   fragment blogPost on MarkdownRemark {
     id
     html
-    ...postFrontmatter
+    frontmatter {
+      title
+      author
+      date(formatString: "YYYY-MM-DD")
+      formattedDate: date(formatString: "MMMM DD, YYYY")
+      excerpt
+    }
   }
 `;
 
@@ -16,28 +22,6 @@ export const socialImage = graphql`
           src
         }
       }
-    }
-  }
-`;
-
-export const postFrontmatter = graphql`
-  fragment postFrontmatter on MarkdownRemark {
-    frontmatter {
-      title
-      author
-      date(formatString: "YYYY-MM-DD")
-      formattedDate: date(formatString: "MMMM DD, YYYY")
-      excerpt
-    }
-  }
-`;
-
-export const termsOfService = graphql`
-  fragment termsOfService on MarkdownRemark {
-    html
-    frontmatter {
-      description
-      title
     }
   }
 `;

@@ -1,5 +1,3 @@
-import { FixedObject, FluidObject } from 'gatsby-image';
-
 type Markdown = string;
 
 // ---
@@ -84,31 +82,26 @@ type NotFoundFrontmatter = {
 };
 export type NotFoundResponse = ExtendedSingleResponse<NotFoundFrontmatter>;
 
-// ---
-// ---
-// OLD SHIT
-// ---
-// ---
-// Image Types
-
-type FluidImageOld = {
-  childImageSharp: {
-    fluid: FluidObject;
-  };
+type DownloadFrontmatter = {
+  title: string;
+  description: string;
+  version: string;
 };
+export type DownloadResponse = ExtendedSingleResponse<DownloadFrontmatter>;
 
-type FixedImageOld = {
-  childImageSharp: {
-    fixed: FixedObject;
-  };
+type ToSFrontmatter = {
+  title: string;
+  description: string;
 };
+export type ToSResponse = ExtendedSingleResponse<ToSFrontmatter>;
 
-export type IndexImage = {
-  heroImg: FluidImageOld;
-  blackwatch: FluidImageOld;
-  portraits: FluidImageOld;
-  gameplay: FluidImageOld;
+export type FactionFrontmatter = {
+  title: string;
+  slug: string;
+  description: string;
+  flag: FixedImage;
 };
+export type FactionResponse = ExtendedSingleResponse<FactionFrontmatter>;
 
 // ---
 // GraphQL Responses
@@ -129,6 +122,12 @@ type SocialImageResponse = {
   };
 };
 
+export type Comment = {
+  id: number;
+  date: string;
+  name: string;
+  comment: string;
+};
 type CommentResponse = {
   data: {
     allCommentsYaml: {
@@ -137,16 +136,10 @@ type CommentResponse = {
   };
 };
 
-type ToSFrontmatter = {
-  title: string;
-  description: string;
-};
-
-export type FactionsFrontmatter = {
-  title: string;
-  slug: string;
-  description: string;
-  flag: FixedImageOld;
+export type FactionsResponse = {
+  allMarkdownRemark: {
+    nodes: Node<FactionFrontmatter>[];
+  };
 };
 
 export type PostFrontmatter = {
@@ -155,23 +148,11 @@ export type PostFrontmatter = {
   formattedDate: string;
   excerpt: string;
 };
-
 export type PostsResponse = ListResponse<PostFrontmatter>;
 
-export type FactionsResponse = ListResponse<FactionsFrontmatter>;
-
-export type ToSResponse = SingleResponse<ToSFrontmatter>;
-
-export type PostResponse = SingleResponse<PostFrontmatter> & CommentResponse & SocialImageResponse;
-
-export type SingleFaction = Node<FactionsFrontmatter>;
-
-export type Comment = {
-  id: number;
-  date: string;
-  name: string;
-  comment: string;
-};
+export type PostResponse = ExtendedSingleResponse<PostFrontmatter> &
+  CommentResponse &
+  SocialImageResponse;
 
 // ---
 // Page Contexts

@@ -10,7 +10,11 @@ import * as styles from './terms-of-service.styles';
 export const query = graphql`
   query($id: String!) {
     markdownRemark(id: { eq: $id }) {
-      ...termsOfService
+      html
+      frontmatter {
+        description
+        title
+      }
     }
   }
 `;

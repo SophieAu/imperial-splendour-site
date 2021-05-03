@@ -18,6 +18,7 @@ export const query = graphql`
       fields {
         ...socialImage
       }
+      html
     }
   }
 `;

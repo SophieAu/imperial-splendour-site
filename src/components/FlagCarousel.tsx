@@ -1,38 +1,40 @@
+/** @jsx jsx */
+import { jsx } from '@emotion/react';
 import { graphql, useStaticQuery } from 'gatsby';
 import React, { useEffect, useState } from 'react';
 
 import { paths } from '../../data/config';
-import { factions as factionStrings } from '../../data/strings';
-import { SingleFaction } from '../types';
-import { circularModulo } from '../util';
-import CarouselImage from './CarouselImage';
+import { factions as strings } from '../../data/strings';
+import { FactionsResponse } from '../types';
+import { circularModulo, strippedImg } from '../util';
+import ButtonLeft from './ButtonLeft';
+import ButtonRight from './ButtonRight';
 import * as styles from './FlagCarousel.styles';
-import Img from './GatsbyImage';
-import { ImageLink } from './Link';
-
-const query = graphql`
-  query($width: Int = 24, $height: Int) {
-    buttonLeft: file(relativePath: { eq: "factions/button_left.png" }) {
-      ...fixedImage
-    }
-    buttonRight: file(relativePath: { eq: "factions/button_right.png" }) {
-      ...fixedImage
-    }
-  }
-`;
+import Image from './Image';
 
 const desktop = [-4, -3, -2, -1, 0, 1, 2, 3, 4];
 const tablet = [-2, -1, 0, 1, 2];
 const mobile = [0];
 
+const query = graphql`
+  query($height: Int, $width: Int) {
+    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/data/content/factions/" } }) {
+      nodes {
+        ...faction
+      }
+    }
+  }
+`;
+
 interface Props {
-  selected: number;
-  factions: SingleFaction[];
+  selected: string;
 }
 
-const FlagCarousel: React.FC<Props> = ({ factions, selected }) => {
+const FlagCarousel: React.FC<Props> = ({ selected }) => {
   const [indices, setIndices] = useState(mobile);
-  const buttons = useStaticQuery(query);
+
+  const factions = useStaticQuery<FactionsResponse>(query).allMarkdownRemark.nodes;
+  const selectedIndex = factions.findIndex(faction => faction.frontmatter.slug === selected);
 
   useEffect(() => {
     const updateIndices = () =>
@@ -45,33 +47,28 @@ const FlagCarousel: React.FC<Props> = ({ factions, selected }) => {
   }, []);
 
   const modulo = circularModulo(factions.length);
-  const frontmatter = (number: number) => factions[modulo(selected + number)].frontmatter;
-  const onPress = (number: number) => `${paths.factions}/${frontmatter(number).slug}`;
+  const frontmatter = (offset: number) => factions[modulo(selectedIndex + offset)].frontmatter;
+  const onPress = (offset: number) => `${paths.factions}/${frontmatter(offset).slug}`;
 
   const wrapper = (index: number) => (children: React.ReactNode) =>
     index === 0 ? (
       <React.Fragment key={index}>
-        <ImageLink className={styles.link} to={onPress(-1)} title={factionStrings.previousButton}>
-          <Img fixed={buttons.buttonLeft.childImageSharp.fixed} />
-        </ImageLink>
+        <ButtonLeft css={styles.link} target={onPress(-1)} title={strings.previousButton} />
         {children}
-        <ImageLink className={styles.link} to={onPress(1)} title={factionStrings.nextButton}>
-          <Img fixed={buttons.buttonRight.childImageSharp.fixed} />
-        </ImageLink>
+        <ButtonRight css={styles.link} target={onPress(1)} title={strings.nextButton} />
       </React.Fragment>
     ) : (
       <React.Fragment key={index}>{children}</React.Fragment>
     );
 
   return (
-    <div className={styles.carousel}>
+    <div css={styles.carousel}>
       {indices.map(index =>
         wrapper(index)(
-          <CarouselImage
-            src={frontmatter(index).flag.childImageSharp.fixed}
-            title={frontmatter(index).title}
-            offset={index}
-            side={index > 0 ? 'right' : 'left'}
+          <Image
+            {...strippedImg(frontmatter(index).flag)}
+            alt={frontmatter(index).title}
+            css={styles.flag(index == 0 ? 'center' : index > 0 ? 'right' : 'left', index)}
           />
         )
       )}

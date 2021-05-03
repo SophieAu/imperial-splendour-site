@@ -13,5 +13,6 @@ export const faction = css`
 
   img {
     max-width: 100%;
+    width: max-content;
   }
 `;

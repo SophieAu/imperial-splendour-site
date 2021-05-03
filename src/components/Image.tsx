@@ -4,7 +4,7 @@ import { Image as ImageType } from '../types';
 
 interface Props extends ImageType {
   alt: string;
-  className: string;
+  className?: string;
 }
 
 const Image: React.FC<Props> = props => (

@@ -49,7 +49,6 @@ const Home: React.FC<IndexResponse> = ({ data: { markdownRemark } }) => {
   const { title, description, infoBoxes } = markdownRemark.frontmatter;
   const { heroImage, heroLogo, heroLogoAlt, heroText } = markdownRemark.frontmatter;
   const { src: jpg, srcWebp: webp } = strippedImg(heroImage);
-  console.log(heroImage);
 
   return (
     <Layout title={buildPageTitle(title)} description={description} slug={slugs.home}>

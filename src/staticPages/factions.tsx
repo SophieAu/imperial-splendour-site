@@ -9,7 +9,7 @@ import { FactionsResponse } from '../types';
 import * as styles from './factions.styles';
 
 export const query = graphql`
-  query($height: Int = 66, $width: Int) {
+  query($height: Int, $width: Int) {
     allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/data/content/factions/" } }) {
       nodes {
         ...faction
@@ -18,34 +18,32 @@ export const query = graphql`
   }
 `;
 
-const Factions: React.FC<FactionsResponse> = ({ data }) => {
-  const factions = data.allMarkdownRemark.nodes;
-  const initialIndex = 0;
-  const initalFaction = factions[initialIndex];
+const Factions: React.FC<{ data: FactionsResponse }> = ({ data }) => {
+  const { frontmatter, html } = data.allMarkdownRemark.nodes[0];
 
   useLayoutEffect(() => {
-    navigate(`${paths.factions}/${initalFaction.frontmatter.slug}`);
+    navigate(`${paths.factions}/${frontmatter.slug}`);
   });
 
   return (
     <Layout
       title={factionStrings.pageTitle('Factions')}
-      description={initalFaction.frontmatter.description || factionStrings.pageDescription}
+      description={frontmatter.description || factionStrings.pageDescription}
       slug={slugs.factions}
       additionalHead={
         <noscript>
           {`<meta
             httpEquiv="refresh"
-            content="0;URL='${paths.factions}/${initalFaction.frontmatter.slug}'"
+            content="0;URL='${paths.factions}/${frontmatter.slug}'"
           />`}
         </noscript>
       }
     >
       <section className="factions">
-        <FlagCarousel selected={initialIndex} factions={factions} />
+        <FlagCarousel selected={frontmatter.slug} />
         <article className={styles.faction}>
-          <h1>{initalFaction.frontmatter.title}</h1>
-          <div dangerouslySetInnerHTML={{ __html: initalFaction.html }} />
+          <h1>{frontmatter.title}</h1>
+          <div dangerouslySetInnerHTML={{ __html: html }} />
         </article>
       </section>
     </Layout>
