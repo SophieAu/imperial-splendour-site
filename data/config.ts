@@ -1,5 +1,5 @@
-import gDrive from '../data/img/download/logo_googledrive.svg';
-import mediaFire from '../data/img/download/logo_mediafire.svg';
+import gDrive from '../data/img/logo_googledrive.svg';
+import mediaFire from '../data/img/logo_mediafire.svg';
 
 export const BASE_URL = 'https://imperialsplendour.com';
 export const TWITTER_HANDLE = '@SplendourTeam';
