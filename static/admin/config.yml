@@ -65,7 +65,7 @@ collections:
     files:
     - name: "download"
       label: "Download"
-      file: "data/content/pages/download.md"
+      file: "data/content/download/download.md"
       fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }

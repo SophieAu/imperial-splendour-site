@@ -25,6 +25,9 @@ exports.createPages = async ({ graphql, actions }) => {
   console.log('\nCreating Pages...');
   buildPages(result.data.pages.nodes, actions.createPage);
 
+  console.log('\nCreating Downloads...');
+  buildPages(result.data.download.nodes, actions.createPage);
+
   console.log('\nCreating Blog Posts...');
   buildBlogPosts(result.data.posts.nodes, actions.createPage);
 
