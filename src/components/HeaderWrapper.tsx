@@ -1,32 +1,21 @@
-import { graphql, useStaticQuery } from 'gatsby';
 import { cx } from 'linaria';
 import React from 'react';
 
 import { paths } from '../../data/config';
+import logoPng from '../../data/img/header_logo.png';
+import logoWebP from '../../data/img/header_logo.webp';
 import { header } from '../../data/strings';
 import { ClassNameProp } from '../types';
-import Img from './GatsbyImage';
 import * as styles from './HeaderWrapper.styles';
 import { ImageLink } from './Link';
-
-// const query = graphql`
-//   query($width: Int = 183, $height: Int = 56) {
-//     headerLogo: file(relativePath: { eq: "header_logo.png" }) {
-//       ...fixedImage
-//     }
-//   }
-// `;
 
 const HeaderWrapper: React.FC<ClassNameProp> = ({ className, children }) => (
   <header className={cx(styles.root, className)}>
     <ImageLink to={paths.home} title={header.home}>
-      {/* <Img
-        className={styles.homeLogo}
-        fixed={useStaticQuery(query).headerLogo.childImageSharp.fixed}
-        alt={header.logoAlt}
-        fadeIn={false}
-        placeholderStyle={{ display: 'none' }}
-      /> */}
+      <picture>
+        <source src={logoWebP} type="image/webp" />
+        <img src={logoPng} alt={header.logoAlt} className={styles.homeLogo} />
+      </picture>
     </ImageLink>
     {children}
   </header>
