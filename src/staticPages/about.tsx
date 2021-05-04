@@ -1,8 +1,8 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 
-import { slugs } from '../../data/config';
-import { buildPageTitle, keep } from '../../data/strings';
+import { imgAlt, slugs } from '../../data/config';
+import { buildPageTitle } from '../../data/strings';
 import Image from '../components/Image';
 import Layout from '../components/Layout';
 import { AboutResponse } from '../types';
@@ -39,7 +39,7 @@ const About: React.FC<AboutResponse> = ({ data: { markdownRemark } }) => (
       <ul className={styles.avatars}>
         {markdownRemark.frontmatter.contributors.map(({ avatar, name }) => (
           <li key={name} className={styles.contributor}>
-            <Image alt={keep.avatarAlt(name)} {...avatar.childImageSharp.fixed} />
+            <Image alt={imgAlt.avatar(name)} {...avatar.childImageSharp.fixed} />
             <p>{name}</p>
           </li>
         ))}

@@ -65,11 +65,7 @@ type IndexFrontmatter = {
   heroLogo: FluidImage;
   heroLogoAlt: string;
   heroText: Markdown;
-  infoBoxes: {
-    text: Markdown;
-    image: FluidImage;
-    imgAlt: string;
-  }[];
+  infoBoxes: { text: Markdown; image: FluidImage; imgAlt: string }[];
 };
 export type IndexResponse = SingleResponse<IndexFrontmatter>;
 
@@ -86,6 +82,8 @@ type DownloadFrontmatter = {
   title: string;
   description: string;
   version: string;
+  downloadTitle: string;
+  downloadLinks: { host: string; link: string }[];
 };
 export type DownloadResponse = ExtendedSingleResponse<DownloadFrontmatter>;
 

@@ -1,4 +1,4 @@
-import { downloadLinks, paths, siteBuilders } from './config';
+import { paths, siteBuilders } from './config';
 
 const SITE_TITLE = 'Imperial Splendour';
 export const buildPageTitle = (title: string) => `${title} | ${SITE_TITLE}`;
@@ -42,35 +42,6 @@ export const footer = {
 
 // ---
 // Pages
-
-export const download = {
-  pageTitle: buildPageTitle('Download'),
-  pageDescription:
-    'Download and play Imperial Splendour to have the best Empire: Total War experience possible.',
-  requirements: {
-    title: 'Requirements',
-    list: [
-      'Empire: Total War',
-      'At least 10GB hard drive space',
-      'To use the launcher: at least Windows 7',
-    ],
-  },
-  main:
-    "Imperial Splendour - Rise of the Republic v1.1.9.9 Empire: Total War's 10th anniversary beta",
-};
-
-export const downloadRotR = {
-  pageTitle: buildPageTitle('Download Rise of the Republic'),
-  pageDescription:
-    'Download and play Imperial Splendour to have the best Empire: Total War experience possible.',
-  linkInfo: 'You can download the files via the following file hosts:',
-  imageLinkAlt: (platform: string) => `"Download RotR 1.1.9b on ${platform}`,
-  help: `If you need help, check out the [installation tutorial](${downloadLinks.tutorial}).`,
-};
-
-export const keep = {
-  avatarAlt: (name: string) => `Avatar of ${name}`,
-};
 
 export const blog = {
   pageTitle: buildPageTitle('Blog'),

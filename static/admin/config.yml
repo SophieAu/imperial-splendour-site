@@ -60,6 +60,25 @@ collections:
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Image Alt Text", name: "imageAlt", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "downloads"
+    label: "Downloads"
+    files:
+    - name: "download"
+      label: "Download"
+      file: "data/content/pages/download.md"
+      fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Version", name: "version", widget: "string" }
+      - { label: "DownloadTitle", name: "downloadTitle", widget: "string" }
+      - label: "Download Links"
+        name: "downloadLinks"
+        widget: "list"
+        summary: '{{fields.host}} - {{fields.link}}'
+        fields:
+          - { label: "Host", name: "host", widget: "select", options: ["Google Drive", "MediaFire", "ModDB"]}
+          - { label: "Link", name: "link", widget: "string" }
+      - { label: "Instruction Text", name: "body", widget: "markdown" }
   - name: "blog"
     label: "Blog"
     folder: "data/content/posts"
