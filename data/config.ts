@@ -1,5 +1,10 @@
+import discord from '../data/img/footer_discord.svg';
+import facebook from '../data/img/footer_facebook.svg';
+import twitter from '../data/img/footer_twitter.svg';
 import gDrive from '../data/img/logo_googledrive.svg';
 import mediaFire from '../data/img/logo_mediafire.svg';
+import { NameLinkTuple } from '../src/types';
+import { currentYear, formatStringList } from '../src/util';
 
 export const BASE_URL = 'https://imperialsplendour.com';
 export const TWITTER_HANDLE = '@SplendourTeam';
@@ -51,13 +56,26 @@ export const mailchimpForm = {
   inputName: `b_${MAILCHIMP_USER}_${MAILCHIMP_ID}`,
 };
 
+export const hardCodedStrings = {
+  creditsCopyright: (builders: NameLinkTuple[]) =>
+    `© ${currentYear()}, ${formatStringList(builders.map(b => `[${b.name}](${b.link})`))}`,
+};
+
 export const imgAlt = {
   avatar: (name: string) => `Avatar of ${name}`,
   filehost: (platform: string) => `"Download RotR 1.1.9b on ${platform}`,
+  socialMedia: (platform: string) => `Imperial Splendour on ${platform}`,
 };
 
 export const hostImages = [
   { host: 'ModDB', image: 'https://button.moddb.com/download/medium/175422.png' },
   { host: 'MediaFire', image: mediaFire },
   { host: 'Google Drive', image: gDrive },
+];
+
+export const socialMediaImages = [
+  { platform: 'ModDB', image: 'https://button.moddb.com/popularity/medium/mods/20800.png' },
+  { platform: 'Facebook', image: facebook },
+  { platform: 'Twitter', image: twitter },
+  { platform: 'Discord', image: discord },
 ];

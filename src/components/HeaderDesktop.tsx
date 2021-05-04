@@ -3,7 +3,6 @@ import React from 'react';
 
 import { header } from '../../data/strings';
 import { ClassNameProp } from '../types';
-import { cn } from '../util';
 import * as styles from './HeaderDesktop.styles';
 import HeaderWrapper from './HeaderWrapper';
 import { Link } from './Link';
@@ -13,7 +12,7 @@ const HeaderDesktop: React.FC<ClassNameProp> = ({ className }) => (
     <nav className={styles.root}>
       <ul>
         {header.menuItems.map(item => (
-          <li key={item.title} className={cn(item.title === 'Homepage' && styles.link)}>
+          <li key={item.title} className={cx(item.title === 'Homepage' && styles.link)}>
             <Link to={item.path}>{item.title}</Link>
           </li>
         ))}

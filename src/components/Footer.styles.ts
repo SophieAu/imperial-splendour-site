@@ -4,23 +4,23 @@ import { color, FOOTER_HEIGHT, screenSize } from '../_variables.styles';
 
 export const root = css`
   height: ${FOOTER_HEIGHT};
+  padding: 0 2rem;
 
   @media all ${screenSize.MOBILE} {
     flex-direction: column !important;
     height: auto;
     min-height: ${FOOTER_HEIGHT};
+    padding: 0 1rem;
   }
 `;
 
 export const credits = css`
   margin: 0;
-  padding-left: 2rem;
   text-align: center;
 
   a {
     text-decoration: none;
   }
-
   a:hover {
     text-decoration: underline;
   }
@@ -32,39 +32,28 @@ export const credits = css`
 
 export const socialMedia = css`
   display: flex;
+  justify-content: flex-end;
+  grid-gap: 2rem;
+  flex-wrap: wrap;
+
   list-style-type: none;
+
   margin: 0;
-  padding-right: 2rem;
 
-  > *,
-  > * > a {
-    display: block;
-  }
-
-  > *:not(:last-child) {
-    padding-right: 2rem;
-  }
-
-  > *:not(:first-child) {
-    width: 2.5rem;
-  }
-  > *:first-child {
-    width: 208px;
+  li {
+    display: flex;
+    align-items: center;
   }
 
   img {
     fill: ${color.mainBg};
     height: 2.5rem;
+    object-fit: contain;
+    width: auto;
   }
 
   @media all ${screenSize.MOBILE} {
-    padding: 0.5rem;
-
-    place-items: center;
-    flex-direction: column;
-
-    > *:not(:last-child) {
-      padding-right: 0;
-    }
+    justify-content: center;
+    padding: 2rem 0;
   }
 `;

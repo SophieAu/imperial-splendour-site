@@ -1,38 +1,54 @@
+import { graphql, useStaticQuery } from 'gatsby';
 import { cx } from 'linaria';
 import React from 'react';
 
-import { modDBButton, socialMedia } from '../../data/config';
-import discord from '../../data/img/footer_discord.svg';
-import facebook from '../../data/img/footer_facebook.svg';
-import twitter from '../../data/img/footer_twitter.svg';
-import { footer } from '../../data/strings';
-import { ClassNameProp } from '../types';
+import { hardCodedStrings, imgAlt, socialMediaImages } from '../../data/config';
+import { ClassNameProp, FooterResponse } from '../types';
 import * as styles from './Footer.styles';
 import { ImageLink } from './Link';
 import MarkdownWithLink from './MarkdownWithLink';
 
-const socialMediaLinks = [
-  { name: 'ModDB', link: socialMedia.modDB, src: modDBButton.popularity },
-  { name: 'Facebook', link: socialMedia.facebook, src: facebook },
-  { name: 'Twitter', link: socialMedia.twitter, src: twitter },
-  { name: 'Discord', link: socialMedia.discord, src: discord },
-];
+const query = graphql`
+  query {
+    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/data/content/general/footer.md/" } }) {
+      nodes {
+        frontmatter {
+          siteBuilders {
+            name
+            link
+          }
+          socialMedia {
+            platform
+            link
+          }
+        }
+      }
+    }
+  }
+`;
 
-const Footer: React.FC<ClassNameProp> = ({ className }) => (
-  <footer className={cx(className, styles.root)}>
-    <MarkdownWithLink className={styles.credits}>
-      {footer.creditsCopyright(new Date().getFullYear())}
-    </MarkdownWithLink>
-    <ul className={styles.socialMedia}>
-      {socialMediaLinks.map(platform => (
-        <li key={platform.link}>
-          <ImageLink to={platform.link} title={footer.socialImgAlt(platform.name)}>
-            <img src={platform.src} alt={platform.name} />
-          </ImageLink>
-        </li>
-      ))}
-    </ul>
-  </footer>
-);
+const Footer: React.FC<ClassNameProp> = ({ className }) => {
+  const data = useStaticQuery<FooterResponse>(query).allMarkdownRemark.nodes[0].frontmatter;
+
+  return (
+    <footer className={cx(className, styles.root)}>
+      <MarkdownWithLink className={styles.credits}>
+        {hardCodedStrings.creditsCopyright(data.siteBuilders)}
+      </MarkdownWithLink>
+      <ul className={styles.socialMedia}>
+        {data.socialMedia.map(({ platform, link }) => (
+          <li key={link}>
+            <ImageLink to={link} title={imgAlt.socialMedia(platform)}>
+              <img
+                src={socialMediaImages.find(({ platform: p }) => p === platform)?.image}
+                alt={imgAlt.socialMedia(platform)}
+              />
+            </ImageLink>
+          </li>
+        ))}
+      </ul>
+    </footer>
+  );
+};
 
 export default Footer;

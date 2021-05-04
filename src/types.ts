@@ -1,5 +1,7 @@
 type Markdown = string;
 
+export type NameLinkTuple = { name: string; link: string };
+
 // ---
 /// Image Types
 
@@ -20,15 +22,13 @@ export type FluidImage = { childImageSharp: { fluid: Image } };
 type ListResponse<Frontmatter> = {
   data: {
     allMarkdownRemark: {
-      nodes: Node<Frontmatter>[];
+      nodes: {
+        id: number;
+        frontmatter: Frontmatter;
+        html: string;
+      }[];
     };
   };
-};
-
-type Node<Frontmatter> = {
-  id: number;
-  frontmatter: Frontmatter;
-  html: string;
 };
 
 type SingleResponse<Frontmatter> = {
@@ -39,9 +39,10 @@ type SingleResponse<Frontmatter> = {
   };
 };
 
-type ExtendedSingleResponse<Frontmatter> = SingleResponse<Frontmatter> & {
+type ExtendedSingleResponse<Frontmatter> = {
   data: {
     markdownRemark: {
+      frontmatter: Frontmatter;
       html: string;
     };
   };
@@ -102,6 +103,57 @@ export type FactionFrontmatter = {
 export type FactionResponse = ExtendedSingleResponse<FactionFrontmatter>;
 
 // ---
+// Component Responses
+
+export type ComponentListResponse<Frontmatter> = {
+  allMarkdownRemark: {
+    nodes: {
+      frontmatter: Frontmatter;
+    }[];
+  };
+};
+
+export type ExtendedComponentListResponse<Frontmatter> = {
+  allMarkdownRemark: {
+    nodes: {
+      frontmatter: Frontmatter;
+      html: Markdown;
+    }[];
+  };
+};
+
+export type FactionsResponse = ExtendedComponentListResponse<FactionFrontmatter>;
+
+type FooterFrontmatter = {
+  siteBuilders: NameLinkTuple[];
+  socialMedia: { platform: string; link: string }[];
+};
+export type FooterResponse = ComponentListResponse<FooterFrontmatter>;
+
+// ---
+// Page Contexts
+
+export type BlogListContext = {
+  pageContext: {
+    numberOfPages: number;
+    currentPage: number;
+  };
+};
+
+export type SlugContext = {
+  pageContext: {
+    slug: string;
+  };
+};
+
+// ---
+// Prop Types
+
+export interface ClassNameProp {
+  className: string;
+}
+
+// ---
 // GraphQL Responses
 
 type SocialImageResponse = {
@@ -134,12 +186,6 @@ type CommentResponse = {
   };
 };
 
-export type FactionsResponse = {
-  allMarkdownRemark: {
-    nodes: Node<FactionFrontmatter>[];
-  };
-};
-
 export type PostFrontmatter = {
   title: string;
   date: string;
@@ -151,26 +197,3 @@ export type PostsResponse = ListResponse<PostFrontmatter>;
 export type PostResponse = ExtendedSingleResponse<PostFrontmatter> &
   CommentResponse &
   SocialImageResponse;
-
-// ---
-// Page Contexts
-
-export type BlogListContext = {
-  pageContext: {
-    numberOfPages: number;
-    currentPage: number;
-  };
-};
-
-export type SlugContext = {
-  pageContext: {
-    slug: string;
-  };
-};
-
-// ---
-// Prop Types
-
-export interface ClassNameProp {
-  className: string;
-}

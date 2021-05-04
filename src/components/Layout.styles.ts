@@ -59,11 +59,6 @@ export const globalResets = css`
     .webp body {
       background: ${color.mainBg} url(${bgTextureWebP}));
     }
-
-    /* Fixed pngs with transparent background getting a white bg instead */ 
-    .gatsby-resp-image-image {
-      box-shadow: none !important;
-    }
   }
 `;
 

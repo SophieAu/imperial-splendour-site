@@ -1,6 +1,6 @@
-import { paths, siteBuilders } from './config';
+import { paths } from './config';
 
-const SITE_TITLE = 'Imperial Splendour';
+export const SITE_TITLE = 'Imperial Splendour';
 export const buildPageTitle = (title: string) => `${title} | ${SITE_TITLE}`;
 
 // ---
@@ -32,12 +32,6 @@ export const header = {
     { title: 'Blog', path: paths.blog },
     { title: 'About', path: paths.about },
   ],
-};
-
-export const footer = {
-  creditsCopyright: (year: number) =>
-    `© ${year}, [Sophie Au](${siteBuilders.sophie}) and [Malte Lippmann](${siteBuilders.malte})`,
-  socialImgAlt: (platform: string) => `Imperial Splendour on ${platform}`,
 };
 
 // ---
