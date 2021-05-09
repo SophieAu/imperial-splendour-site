@@ -11,7 +11,7 @@ import Layout from '../components/Layout';
 import { LinkButton } from '../components/Link';
 import { IndexResponse } from '../types';
 import { strippedImg } from '../util';
-import * as styles from './Index.styles';
+import * as styles from './index.styles';
 
 export const query = graphql`
   query($id: String!, $maxWidth: Int = 1360) {
