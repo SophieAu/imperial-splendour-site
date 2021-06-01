@@ -15,7 +15,7 @@
     "lint:fix": "eslint 'src/**/*.{tsx,ts,js,jsx}' --ignore-pattern '*.d.ts'  --ignore-pattern 'src/assets/*' --fix && stylelint 'src/**/*.styles.ts' --rd --risd --fix"
   },
   "dependencies": {
-    "@emotion/react": "^11.1.5",
+    "@emotion/react": "^11.4.0",
     "@emotion/styled": "^11.3.0",
     "core-js": "^3.11.1",
     "gatsby": "^2.32.10",
