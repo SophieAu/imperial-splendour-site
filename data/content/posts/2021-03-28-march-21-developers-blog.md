@@ -106,6 +106,6 @@ on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_
 
 Visit us on 
 
-[TWCenter](http://www.twcenter.net/forums/forumdisplay.php?1138-Imperial-Splendour), [discord](https://discord.gg/sY7CCbcH), [Facebook](https://www.facebook.com/imperialsplendour/), [Twitter](https://twitter.com/SplendourTeam) and [![View Imperial Splendour on Mod DB](https://button.moddb.com/popularity/medium/mods/20800.png)](https://www.moddb.com/mods/imperial-splendour)
+[TWCenter](http://www.twcenter.net/forums/forumdisplay.php?1138-Imperial-Splendour), [discord](https://discord.com/invite/eN2WKbQvXs), [Facebook](https://www.facebook.com/imperialsplendour/), [Twitter](https://twitter.com/SplendourTeam) and [![View Imperial Splendour on Mod DB](https://button.moddb.com/popularity/medium/mods/20800.png)](https://www.moddb.com/mods/imperial-splendour)
 
 </center>

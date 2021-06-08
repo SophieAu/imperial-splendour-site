@@ -53,7 +53,7 @@ It's time for a little blog on the 3rd Advent. This time it's mostly about units
 
 As most things are done, we decided to assemble a **closed beta**. So if you want to hunt some bugs or simply test the new version you can contact us via [Message on TWC](https://www.twcenter.net/forums/private.php?do=newpm&u=120089), [Message on ModDB](https://www.moddb.com/messages/compose?to=QuintusHortensius), our facebook and twitter pages or E-Mail (info@imperialsplendour.com). What we want you to do is simply report all bugs you find and give us some feedback on the gameplay.
 
-In addition, we now have a Discord-Server [here](https://discord.gg/eN2WKbQvXs).
+In addition, we now have a Discord-Server [here](https://discord.com/invite/eN2WKbQvXs).
 
 That's all for today, have a nice 3rd Advent!
 

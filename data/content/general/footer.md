@@ -12,5 +12,5 @@ socialMedia:
   - platform: Facebook
     link: https://www.facebook.com/imperialsplendour/
   - platform: Discord
-    link: https://discord.gg/sY7CCbcH
+    link: https://discord.com/invite/eN2WKbQvXs
 ---
