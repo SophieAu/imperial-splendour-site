@@ -21,5 +21,6 @@ module.exports = {
     'simple-import-sort/imports': 2,
     '@typescript-eslint/explicit-function-return-type': 0,
     'react/jsx-no-literals': 2,
+    '@typescript-eslint/no-use-before-define': 'off',
   },
 };
