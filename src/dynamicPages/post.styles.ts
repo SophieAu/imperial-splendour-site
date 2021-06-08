@@ -8,6 +8,7 @@ export const text = css`
   margin: 3rem 0;
 
   img {
+    width: auto;
     max-width: 100%;
   }
 
