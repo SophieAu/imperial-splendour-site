@@ -80,6 +80,7 @@ exports.buildPages = (nodes, createPage) => {
     const about = 'about';
     const index = 'index';
     const notFound = '404';
+    const download = 'download';
 
     filePath.endsWith(`${tos}.md`) &&
       createPage({ path: tos, component: component(tos), context: { id } });
@@ -92,6 +93,9 @@ exports.buildPages = (nodes, createPage) => {
 
     filePath.endsWith(`${notFound}.md`) &&
       createPage({ path: notFound, component: component(notFound), context: { id } });
+
+    filePath.endsWith(`${download}.md`) &&
+      createPage({ path: download, component: component(download), context: { id } });
   });
 
   const factions = 'factions';
