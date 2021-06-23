@@ -65,25 +65,27 @@ const Download: React.FC<DownloadPageResponse & DownloadResponse> = ({ data }) =
         <div className={styles.versionInfo}>{mainDownload?.title}</div>
       </section>
 
-      <section className={styles.otherContainer}>
-        <h2 className={styles.dlHeading}>{download.otherDownloadsSectionTitle}</h2>
-        <table className={styles.mirrorTable}>
-          <tbody>
-            {otherDownloads.map(({ title, links }) => (
-              <tr key={title}>
-                <td>{title}</td>
-                <td>
-                  {links.map(({ host, link }) => (
-                    <p key={host}>
-                      <Link to={link}>{host}</Link>
-                    </p>
-                  ))}
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </section>
+      {!!otherDownloads.length && (
+        <section className={styles.otherContainer}>
+          <h2 className={styles.dlHeading}>{download.otherDownloadsSectionTitle}</h2>
+          <table className={styles.mirrorTable}>
+            <tbody>
+              {otherDownloads.map(({ title, links }) => (
+                <tr key={title}>
+                  <td>{title}</td>
+                  <td>
+                    {links.map(({ host, link }) => (
+                      <p key={host}>
+                        <Link to={link}>{host}</Link>
+                      </p>
+                    ))}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </section>
+      )}
     </Layout>
   );
 };
