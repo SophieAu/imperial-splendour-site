@@ -99,7 +99,7 @@ exports.robotsTxtOptions = {
   policy: [{ userAgent: '*', disallow: hiddenPages, noindex: hiddenPages }],
 };
 
-exports.sitemapOptions = { exclude: hiddenPages };
+exports.sitemapOptions = { excludes: hiddenPages };
 
 exports.filesystemContentOptions = { name: 'content', path: `${__dirname}/../data/content/` };
 exports.filesystemImageOptions = { name: 'img', path: `${__dirname}/../data/img/` };
