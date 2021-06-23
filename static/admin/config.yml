@@ -60,8 +60,8 @@ collections:
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Image Alt Text", name: "imageAlt", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
-  - name: "downloads"
-    label: "Downloads"
+  - name: "download"
+    label: "Download"
     files:
     - name: "download"
       label: "Download"
@@ -69,29 +69,31 @@ collections:
       fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
-      - { label: "Version", name: "version", widget: "string" }
-      - { label: "DownloadTitle", name: "downloadTitle", widget: "string" }
-      - label: "Download Links"
-        name: "downloadLinks"
+      - { label: "Instruction Text", name: "body", widget: "markdown" }
+      - label: "Main Download"
+        name: "mainDownload"
+        widget: "relation"
+        collection: "downloads"
+        search_fields: ["title"]
+        value_field: "title"
+        display_fields: ["title"]
+  - name: "downloads"
+    label: "Downloads"
+    folder: "data/content/downloads"
+    create: true
+    slug: "{{title}}"
+    extension: "md"
+    editor:
+     preview: true
+    fields:
+      - { label: "Version/Title", name: "title", widget: "string" }
+      - label: "Links"
+        name: "links"
         widget: "list"
         summary: '{{fields.host}} - {{fields.link}}'
         fields:
           - { label: "Host", name: "host", widget: "select", options: ["Google Drive", "MediaFire", "ModDB"]}
           - { label: "Link", name: "link", widget: "string" }
-      - { label: "Instruction Text", name: "body", widget: "markdown" }
-  - name: "blog"
-    label: "Blog"
-    folder: "data/content/posts"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    extension: "md"
-    editor:
-     preview: true
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Excerpt", name: "excerpt", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
   - name: "factions"
     label: "Factions"
     folder: "data/content/factions"

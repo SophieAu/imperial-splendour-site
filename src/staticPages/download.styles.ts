@@ -73,3 +73,34 @@ export const versionInfo = css`
   text-align: center;
   max-width: 24rem;
 `;
+
+export const otherContainer = css`
+  margin: 2.5rem 0 5.5rem;
+`;
+
+export const mirrorTable = css`
+  border-collapse: collapse;
+  width: 100%;
+  margin: auto;
+
+  td {
+    padding: 1rem;
+    border: solid 1px;
+    font-size: 1.25rem;
+  }
+
+  td:first-child {
+    vertical-align: top;
+  }
+
+  td:nth-child(2) {
+    white-space: nowrap;
+    p {
+      margin: 0;
+    }
+
+    p:not(:last-child) {
+      margin: 0 0 0.25rem;
+    }
+  }
+`;

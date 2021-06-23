@@ -78,14 +78,18 @@ type NotFoundFrontmatter = {
 };
 export type NotFoundResponse = ExtendedSingleResponse<NotFoundFrontmatter>;
 
-type DownloadFrontmatter = {
+type DownloadPageFrontmatter = {
   title: string;
   description: string;
-  version: string;
-  downloadTitle: string;
-  downloadLinks: { host: string; link: string }[];
+  mainDownload: string;
 };
-export type DownloadResponse = ExtendedSingleResponse<DownloadFrontmatter>;
+export type DownloadPageResponse = ExtendedSingleResponse<DownloadPageFrontmatter>;
+
+type DownloadFrontmatter = {
+  title: string;
+  links: { host: string; link: string }[];
+};
+export type DownloadResponse = ListResponse<DownloadFrontmatter>;
 
 type ToSFrontmatter = {
   title: string;

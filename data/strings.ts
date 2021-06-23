@@ -64,3 +64,8 @@ export const factions = {
   previousButton: "'Go to previous Faction",
   nextButton: "'Go to next Faction",
 };
+
+export const download = {
+  linkSectionTitle: 'Downloads',
+  otherDownloadsSectionTitle: 'Other Downloads',
+};
