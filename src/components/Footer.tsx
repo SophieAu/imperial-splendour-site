@@ -36,16 +36,18 @@ const Footer: React.FC<ClassNameProp> = ({ className }) => {
         {hardCodedStrings.creditsCopyright(data.siteBuilders)}
       </MarkdownWithLink>
       <ul className={styles.socialMedia}>
-        {data.socialMedia.map(({ platform, link }) => (
-          <li key={link}>
-            <ImageLink to={link} title={imgAlt.socialMedia(platform)}>
-              <img
-                src={socialMediaImages.find(({ platform: p }) => p === platform)?.image}
-                alt={imgAlt.socialMedia(platform)}
-              />
-            </ImageLink>
-          </li>
-        ))}
+        {data.socialMedia
+          .filter(({ platform }) => platform != 'TWCenter')
+          .map(({ platform, link }) => (
+            <li key={link}>
+              <ImageLink to={link} title={imgAlt.socialMedia(platform)}>
+                <img
+                  src={socialMediaImages.find(({ platform: p }) => p === platform)?.image}
+                  alt={imgAlt.socialMedia(platform)}
+                />
+              </ImageLink>
+            </li>
+          ))}
       </ul>
     </footer>
   );

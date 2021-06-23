@@ -5,6 +5,8 @@ siteBuilders:
   - name: Malte Lippmann
     link: https://github.com/QuintusHortensiusHortalus
 socialMedia:
+  - platform: TWcenter
+    link: http://www.twcenter.net/forums/forumdisplay.php?1138-Imperial-Splendour
   - platform: ModDB
     link: https://www.moddb.com/mods/imperial-splendour
   - platform: Twitter

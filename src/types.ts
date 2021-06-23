@@ -23,7 +23,6 @@ type ListResponse<Frontmatter> = {
   data: {
     allMarkdownRemark: {
       nodes: {
-        id: number;
         frontmatter: Frontmatter;
         html: string;
       }[];
@@ -196,4 +195,5 @@ export type PostsResponse = ListResponse<PostFrontmatter>;
 
 export type PostResponse = ExtendedSingleResponse<PostFrontmatter> &
   CommentResponse &
-  SocialImageResponse;
+  SocialImageResponse &
+  ListResponse<FooterFrontmatter>;

@@ -16,3 +16,18 @@ export const text = css`
     padding: 0.2rem 0;
   }
 `;
+
+export const postFooter = css`
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  p:not(:nth-child(3)) {
+    margin: 0.5rem 0;
+  }
+
+  p:nth-child(3) {
+    margin: 0.5rem 0 -0.25rem;
+  }
+`;

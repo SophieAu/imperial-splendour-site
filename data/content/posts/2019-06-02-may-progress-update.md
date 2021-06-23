@@ -91,14 +91,6 @@ Furthermore myfate [![](https://i.imgur.com/gPHOpAy.jpg)](https://www.twcenter.n
 
 Thank you for you patience!
 
-Visit us on 
-
-<center>
-
-[TWCenter](http://www.twcenter.net/forums/forumdisplay.php?1138-Imperial-Splendour), [Facebook](https://www.facebook.com/imperialsplendour/), [Twitter](https://twitter.com/SplendourTeam) and [![View Imperial Splendour on Mod DB](https://button.moddb.com/popularity/medium/mods/20800.png)](https://www.moddb.com/mods/imperial-splendour)
-
-</center>
-
 ### &nbsp;
 
 PS: Yesterday was the [Glorious First of June](https://en.wikipedia.org/wiki/Glorious_First_of_June)!</a></p>

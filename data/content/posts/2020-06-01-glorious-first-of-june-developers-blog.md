@@ -50,16 +50,12 @@ Finally, I have some news about the followers, each will get its little icon. He
 
 Some are caricatures (especially by Thomas Rowlandson and William Hogarth) and some are paintings or sketches, we hope you like them.
 
-And Imperial Splendour - Rise of the Republic has won the 2019 Modding Awards at Total War Center (furthermore I was awarded the 3rd place as Favourite modder)!
+And Imperial Splendour - Rise of the Republic has won the 2019 Modding Awards at Total War Center (furthermore I (Quintus Hortensius Hortalus) was awarded the 3rd place as Favourite modder)!
 
 <center>
 
 ![](../_img/2019-ma-musket-large.png)
 
 ### Thank you for your patience and voting for us (and me)!
-
-Visit us on 
-
-[TWCenter](http://www.twcenter.net/forums/forumdisplay.php?1138-Imperial-Splendour), [Facebook](https://www.facebook.com/imperialsplendour/), [Twitter](https://twitter.com/SplendourTeam) and [![View Imperial Splendour on Mod DB](https://button.moddb.com/popularity/medium/mods/20800.png)](https://www.moddb.com/mods/imperial-splendour)
 
 </center>

@@ -54,6 +54,8 @@ export const post = {
   commentButtonTitle: 'Submit',
   comments: 'Comments',
   emptyComments: 'Nothing yet.',
+  socialMediaCallout: 'Visit us on',
+  newsletterCallout: 'and subscribe to our newsletter to stay up to date:',
 };
 
 export const factions = {

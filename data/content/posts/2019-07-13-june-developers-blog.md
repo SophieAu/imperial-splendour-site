@@ -189,11 +189,3 @@ Thanks for your patience and enjoy the music.
 The Imperial Splendour Team
 
 </center>
-
-Visit us on 
-
-<center>
-
-[TWCenter](http://www.twcenter.net/forums/forumdisplay.php?1138-Imperial-Splendour), [Facebook](https://www.facebook.com/imperialsplendour/), [Twitter](https://twitter.com/SplendourTeam) and [![View Imperial Splendour on Mod DB](https://button.moddb.com/popularity/medium/mods/20800.png)](https://www.moddb.com/mods/imperial-splendour)
-
-</center>

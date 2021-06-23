@@ -96,8 +96,4 @@ The building serves as generic Governors palace in the Empire Total War mod Impe
 
 ### Thank you for your patience!
 
-Visit us on 
-
-[TWCenter](http://www.twcenter.net/forums/forumdisplay.php?1138-Imperial-Splendour), [Facebook](https://www.facebook.com/imperialsplendour/), [Twitter](https://twitter.com/SplendourTeam) and [![View Imperial Splendour on Mod DB](https://button.moddb.com/popularity/medium/mods/20800.png)](https://www.moddb.com/mods/imperial-splendour)
-
 </center>
