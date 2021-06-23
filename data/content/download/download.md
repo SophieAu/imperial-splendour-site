@@ -12,7 +12,7 @@ downloadLinks:
     link: https://www.mediafire.com/file/1fgqofaystt9vhp/RotR_1.1.9.9_anniversary_beta.zip/file
   - host: Google Drive
     link: https://drive.google.com/open?id=13eCLdH4ZHPUrYEB1-P1j4jI-LsxBqnrl
-mainDownload: merp
+mainDownload: This is a long ass title
 ---
 
 ## Requirements
