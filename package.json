@@ -36,7 +36,7 @@
     "gatsby-remark-social-image": "^1.1.0",
     "gatsby-source-filesystem": "^3.8.0",
     "gatsby-transformer-remark": "^4.5.0",
-    "gatsby-transformer-sharp": "^3.8.0",
+    "gatsby-transformer-sharp": "^3.14.0",
     "gatsby-transformer-yaml": "^3.8.0",
     "isomorphic-fetch": "^3.0.0",
     "linaria": "^2.1.0",
