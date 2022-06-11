@@ -1,10 +1,9 @@
 ---
-slug: sweden
 title: Sweden
-description: ""
+slug: sweden
 flag: ../_img/flag_sweden.png
+description: "This is an overview for Sweden:"
 ---
-
 Since the glorious coup d'état in 1772, Gustav III has been struggling to bring back the monarchy to its proper place as the leading body of state. His confrontations with the Riksdag have been closely observed by neighbouring monarchs, who grow fearful and agitated by the events, especially his cousin, Catherine of Russia, who through bribery and corruption greatly influences the decision making in Sweden to prevent it from escaping Russia's hold on it. With idols from Sweden's history, Gustav III is determined to follow the steps of past great Swedish kings.
 
 Breaking the Russo-Danish alliance was of no success so Gustav will have to consider other options. For years he has been examining war preparations with his councillors and searching for new allies that may assist him in his conquest against the anti-Swedish alliance.
@@ -16,6 +15,7 @@ Europe's equilibrium is greatly disrupted and a time for new powers has come. Wi
 ## Historical Characters:
 
 ### Government
+
 ![](https://steamuserimages-a.akamaihd.net/ugc/957482315964664065/B73CA252FF6274653ACE8F02CFC7EAB769C4A6C1/)
 
 1. Kung: [Gustav III](https://en.wikipedia.org/wiki/Gustav_III_of_Sweden)
@@ -31,6 +31,7 @@ Europe's equilibrium is greatly disrupted and a time for new powers has come. Wi
 11. [Carl Lagerbring](https://sv.wikipedia.org/wiki/Carl_Lagerbring) (candidate)
 
 ### Generals
+
 ![](https://steamuserimages-a.akamaihd.net/ugc/957482315964761259/49ED40FB4312C208B783DC0EFE139F74514EF41D/)
 
 1. [Johan August Meijerfeldt](https://sv.wikipedia.org/wiki/Johan_August_Meijerfeldt_den_yngre) (starting general)
@@ -43,7 +44,10 @@ Europe's equilibrium is greatly disrupted and a time for new powers has come. Wi
 8. [Johan August Sandels](https://en.wikipedia.org/wiki/Johan_August_Sandels) (recruitable from 1784 onwards)
 
 ### Admirals
-![](https://steamuserimages-a.akamaihd.net/ugc/957482315964867023/C56BD5E9FEF7450349D1A3423ECC3BD6D641D748/)
+
+![](https://steamuserimages-a.akamaihd.net/ugc/957482315964867023/C56BD5E9FEF7450349D1A3423ECC3BD6D641D748/)![](https://steamuserimages-a.akamaihd.net/ugc/957482315964867023/C56BD5E9FEF7450349D1A3423ECC3BD6D641D748/)
+
+![Dorothea Maria Lösch](static/009.png "Dorothea Maria Lösch")
 
 1. [Karl hertig av Södermanland](https://en.wikipedia.org/wiki/Charles_XIII_of_Sweden) (starting admiral)
 2. [Carl Vilhelm Modée](https://sv.wikipedia.org/wiki/Carl_Vilhelm_Mod%C3%A9e) (recruit before 1798)
@@ -51,8 +55,10 @@ Europe's equilibrium is greatly disrupted and a time for new powers has come. Wi
 4. [Eric af Klint](https://sv.wikipedia.org/wiki/Eric_af_Klint_(1732%E2%80%931812)) (no recruitment limitations)
 5. [Carl Olof Cronstedt](https://en.wikipedia.org/wiki/Carl_Olof_Cronstedt) (recruit before 1801)
 6. [Salomon von Rajalin](https://en.wikipedia.org/wiki/Salomon_von_Rajalin) (recruit before 1802)
+7. [Dorothea Maria Lösch](https://en.wikipedia.org/wiki/Dorothea_Maria_L%C3%B6sch) (no recruitment limitations)
 
 ### Scholars
+
 ![](https://steamuserimages-a.akamaihd.net/ugc/957481739283807803/8B438C85E886760A320CBFD4A04235E215A484FD/)
 
 1. [Fredrik Henrik af Chapman](https://en.wikipedia.org/wiki/Fredrik_Henrik_af_Chapman) (starting gentleman) 
@@ -64,6 +70,7 @@ Europe's equilibrium is greatly disrupted and a time for new powers has come. Wi
 7. [Gustaf Fredrik Gyllenborg](https://en.wikipedia.org/wiki/Gustaf_Fredrik_Gyllenborg)
 
 ### Envoys
+
 ![](https://steamuserimages-a.akamaihd.net/ugc/957482315964562671/4D78FA91C8924717BFB914AE314BAE45962E9685/)
 
 1. [Hans Axel von Fersen](https://en.wikipedia.org/wiki/Axel_von_Fersen_the_Younger) (starting envoy)
