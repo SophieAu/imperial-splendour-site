@@ -45,9 +45,7 @@ Europe's equilibrium is greatly disrupted and a time for new powers has come. Wi
 
 ### Admirals
 
-![](https://steamuserimages-a.akamaihd.net/ugc/957482315964867023/C56BD5E9FEF7450349D1A3423ECC3BD6D641D748/)![](https://steamuserimages-a.akamaihd.net/ugc/957482315964867023/C56BD5E9FEF7450349D1A3423ECC3BD6D641D748/)
-
-![Dorothea Maria Lösch](../_img/009.png "Dorothea Maria Lösch")
+![](https://steamuserimages-a.akamaihd.net/ugc/957482315964867023/C56BD5E9FEF7450349D1A3423ECC3BD6D641D748/)![Dorothea Maria Lösch](../_img/009.png "Dorothea Maria Lösch")
 
 1. [Karl hertig av Södermanland](https://en.wikipedia.org/wiki/Charles_XIII_of_Sweden) (starting admiral)
 2. [Carl Vilhelm Modée](https://sv.wikipedia.org/wiki/Carl_Vilhelm_Mod%C3%A9e) (recruit before 1798)
