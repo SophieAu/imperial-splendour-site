@@ -49,7 +49,7 @@ Europe's equilibrium is greatly disrupted and a time for new powers has come. Wi
 ![Dorothea Maria Lösch](https://steamuserimages-a.akamaihd.net/ugc/1839171655875032655/3CEBE0F5F39F6AC756614C09903F30C91D3B517E/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false "Dorothea Maria Lösch")
 
 1. [Karl hertig av Södermanland](https://en.wikipedia.org/wiki/Charles_XIII_of_Sweden) (starting admiral)
-2. [Carl Vilhelm Modée](https://sv.wikipedia.org/wiki/Carl_Vilhelm_Mod%C3%A9e) (recruit before 1798)
+2. [Carl Vilhelm Modée](https://sv.wikipedia.org/wiki/Carl_Vilhelm_Mod%C3%A9e) (recruit before 1798) 
 3. [Johan af Puke](https://sv.wikipedia.org/wiki/Johan_af_Puke) (recruit before 1796)
 4. [Eric af Klint](https://sv.wikipedia.org/wiki/Eric_af_Klint_(1732%E2%80%931812)) (no recruitment limitations)
 5. [Carl Olof Cronstedt](https://en.wikipedia.org/wiki/Carl_Olof_Cronstedt) (recruit before 1801)
