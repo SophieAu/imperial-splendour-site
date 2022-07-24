@@ -94,16 +94,39 @@ collections:
         fields:
           - { label: "Host", name: "host", widget: "select", options: ["Google Drive", "MediaFire", "ModDB"]}
           - { label: "Link", name: "link", widget: "string" }
-  - name: "Blogs"
-    label: "Blogs"
+  - name: "blog"
+    label: "Blog"
     folder: "data/content/posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    extension: "md"
+    editor:
+     preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Authors", name: "author", widget: "list", field: {label: "Author", name: "name", widget: "select", options: [
+            { label: "PikeStance", value: "pike" },
+            { label: "Quintus Hortensius Hortalus", value: "QHH" },
+            { label: "oleg2242", value: "oleg2242" },
+            { label: "Cro_Hunger999", value: "cro" },
+            { label: "TSanada", value: "tsanada" },
+            { label: "Herr Doctor", value: "HD" },
+            { label: "mad orc", value: "madOrc" },
+            { label: "myfate", value: "myfate" }]}}
+      - { label: "Excerpt", name: "excerpt", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "factions"
+    label: "Factions"
+    folder: "data/content/factions"
     create: true
     slug: "{{slug}}"
     extension: "md"
     editor:
-     preview: true
+     preview: false
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Slug", name: "slug", widget: "string" }
+      - { label: "Flag", name: "flag", widget: "image" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
