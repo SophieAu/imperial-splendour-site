@@ -94,9 +94,9 @@ collections:
         fields:
           - { label: "Host", name: "host", widget: "select", options: ["Google Drive", "MediaFire", "ModDB"]}
           - { label: "Link", name: "link", widget: "string" }
-  - name: "factions"
-    label: "Factions"
-    folder: "data/content/factions"
+  - name: "Blogs"
+    label: "Blogs"
+    folder: "data/content/posts"
     create: true
     slug: "{{slug}}"
     extension: "md"
@@ -105,6 +105,5 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Slug", name: "slug", widget: "string" }
-      - { label: "Flag", name: "flag", widget: "image" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
