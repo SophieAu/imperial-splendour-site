@@ -22,5 +22,7 @@ contributors:
     avatar: static/sir_john_barlow.png
   - name: Cardinal Ruffo
     avatar: static/cardinal_ruffo.png
+  - name: arch
+    avatar: static/arch.png
 ---
 Play Empire: Total War the way it should have been. The historically accurate visuals and a soundtrack of contemporary composers transport you into the time of the revolutionary wars. Trade with the historical factions, go to war with historical generals, command armies in historically accurate uniforms. But don't forget: A reworked Campaign and Battle AI make the Great Campaign more challenging. It will not be easy for you to impose onto the world your Imperial Splendour.
