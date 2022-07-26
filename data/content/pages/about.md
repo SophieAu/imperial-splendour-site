@@ -6,7 +6,7 @@ contributorsTitle: Contributors
 contributors:
   - avatar: static/pike_portrait.png
     name: PikeStance
-  - avatar: static/quintus_portrait.png
+  - avatar: static/qhh.png
     name: Quintus Hortensius Hortalus
   - avatar: static/oleg2242_portrait.png
     name: oleg2242
@@ -16,10 +16,11 @@ contributors:
     name: TSanada
   - avatar: static/HD_portrait.png
     name: Herr Doctor
-  - avatar: static/madOrc_portrait.png
-    name: mad orc
   - avatar: static/myfate_portrait.png
     name: myfate
-
+  - name: Sir John Barlow
+    avatar: static/sir_john_barlow.png
+  - name: Cardinal Ruffo
+    avatar: static/cardinal_ruffo.png
 ---
 Play Empire: Total War the way it should have been. The historically accurate visuals and a soundtrack of contemporary composers transport you into the time of the revolutionary wars. Trade with the historical factions, go to war with historical generals, command armies in historically accurate uniforms. But don't forget: A reworked Campaign and Battle AI make the Great Campaign more challenging. It will not be easy for you to impose onto the world your Imperial Splendour.
