@@ -40,7 +40,7 @@ It'll serve as the highest level farm building.  This is the in-game Empire Tota
 
 This draft of a palace was made by the architect [Peter Joseph Krahe](https://en.wikipedia.org/wiki/Peter_Joseph_Krahe) in 1792. I modelled the building after this front plan:
 
-![Front Plan](../_img/front plan.jpg "Front Plan")
+![Front Plan](../_img/front_plan.jpg "Front Plan")
 
 from the Städtisches Museum Braunschweig (all credits go to them for the picture, the original can be found [here](https://kulturerbe.niedersachsen.de/objekt/record_kuniweb_414322/1/LOG_0000/#record_kuniweb_414322) ).
 
@@ -50,7 +50,7 @@ The building serves as generic Governors palace in the Empire Total War mod Impe
 
 <center>
 
-![Generic Governors Palace](../_img/Generic Governors Palace.png "Generic Governors Palace")
+![Generic Governors Palace](../_img/Generic_Governors_Palace.png "Generic Governors Palace")
 
 ## Rathaus Coburg
 
@@ -68,7 +68,7 @@ The building serves as generic Governors palace in the Empire Total War mod Impe
 
 This is the in-game Empire Total War model: 
 
-![](../_img/2018-08-21-coburg rathaus ingame.png)
+![](../_img/2018-08-21-coburg_rathaus_ingame.png)
 
 </td>
 
@@ -94,11 +94,11 @@ This is the townhall of Coburg. The model is actually different from the townhal
 
 I made the building without any plans the only things I had were variants of an engraving (so the outer sides of the wings with their decorations were created by me) and for the colours wikipedia stated that the mid-wing was build in sandstone and I had this painting (almost identical perspective of the engravings) from the 1830 fire:  
 
-![](../_img/2018-08-21-braunschweig palace burning.jpg)
+![](../_img/2018-08-21-braunschweig_palace_burning.jpg)
 
 This is the in-game Empire Total War model: 
 
-![](../_img/2018-08-21-braunschweig palace ingame.png)
+![](../_img/2018-08-21-braunschweig_palace_ingame.png)
 
 </td>
 
@@ -125,7 +125,7 @@ frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webki
 
 This is the in-game Empire Total War model: 
 
-![](../_img/2018-08-21-st james palace ingame.png)
+![](../_img/2018-08-21-st_james_palace_ingame.png)
 
 </td>
 
