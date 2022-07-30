@@ -7,7 +7,7 @@ excerpt: This tells you how to install and uninstall RotR 1.2
 ---
 ## This is the official RotR installation tutorial.
 
-### If you use any other Anti-Virus-Program than Windows Defender, the files can be flagged as Viruses. THEY ARE NOT! They are just new to the world and as most Anti-Virus-Programs work on a 'Better-save-than-sorry' philosophy the files are flagged as potential harmful even when they are not. So if you use any other Anti-Virus-Program than Windows Defender you should choose the manual download.
+### If you use any other Anti-Virus-Program than Windows Defender, the files can be flagged as Viruses. **THEY ARE NOT!** They are just new to the world and as most Anti-Virus-Programs work on a 'Better-save-than-sorry' philosophy the files are flagged as potential harmful even when they are not. **So if you use any other Anti-Virus-Program than Windows Defender you should choose the manual download.**
 
 1. Remove / deactivate every previous install of RotR, Imperial Splendour or any other mod.
 2. Download the new version and save all 3 files in the same folder.
