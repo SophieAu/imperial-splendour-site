@@ -13,3 +13,11 @@ Catherine the Great's influence in the HRE is considerable so flattering the Rus
 The Electorate's power does not lie in size and military strength but in diplomacy. With the advantage of being an intermediary, you will have the opportunity to build your economy. Maintaining trade with other German states and picking the right ministers will bring prosperity. You still have resources collected after the Treaty of Teschen which ended the War of the Bavarian Succession, and how you invest those funds will determine Saxony's status.
 
 Do not forget to pay attention to the risings in France, it is hard to tell what will come out of it but one thing is for certain: Europe is not ready for changes and any revolution coming from France will immediately be opposed by all other European monarchies and will bring them in a closeness never seen before.
+
+Here is the Austrian army:
+
+<center>
+
+![Austrian army unit icons](../_img/austria_units_1.2.png "Austrian army unit icons")
+
+</center>
