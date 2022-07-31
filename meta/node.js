@@ -6,7 +6,7 @@ const POSTS_PER_PAGE = 6;
 
 exports.PAGES_QUERY = `
   {
-    posts: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/data/content/posts/"}, frontmatter: {published: {eq: true}}}) {
+    posts: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/data/content/posts/"}}) {
       nodes {
         internal {
           type
@@ -15,6 +15,7 @@ exports.PAGES_QUERY = `
         frontmatter {
           title
           date(formatString: "YYYY-MM-DD")
+          published
         }
       }
     }
@@ -115,7 +116,8 @@ exports.buildDownloads = (nodes, createPage) => {
 
 exports.buildBlogListPagination = (nodes, createPage) => {
   const component = resolve('./src/dynamicPages/blog.tsx');
-  const numberOfPages = Math.ceil(nodes.length / POSTS_PER_PAGE);
+  const publishableNodes = nodes.filter(({ frontmatter }) => frontmatter.published);
+  const numberOfPages = Math.ceil(publishableNodes.length / POSTS_PER_PAGE);
 
   Array.from({ length: numberOfPages }).forEach((_, i) => {
     const path = '/blog' + (i === 0 ? '' : `/${i + 1}`);

@@ -115,7 +115,7 @@ collections:
             { label: "mad orc", value: "madOrc" },
             { label: "myfate", value: "myfate" },
             { label: "Sir John Barlow", value: "SirJohn" }]}}
-      - { label: "Published", name: "published", widget: "boolean" }
+      - { label: "Published", name: "published", widget: "boolean", default: false }
       - { label: "Excerpt", name: "excerpt", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "factions"
