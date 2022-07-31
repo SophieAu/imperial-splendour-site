@@ -4,6 +4,7 @@ date: 2022-08-01T19:51:59.005Z
 author:
   - QHH
 excerpt: This tells you how to install and uninstall RotR 1.2
+published: false
 ---
 ## This is the official RotR installation tutorial.
 

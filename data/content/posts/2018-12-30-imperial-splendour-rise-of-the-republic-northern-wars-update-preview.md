@@ -6,6 +6,7 @@ author:
 excerpt: "As a late Christmas gift we have a preview for the next version of the Rise of
   the Republic for you! As the title suggests we have and will focus our work on
   the northern factions: Russia, Sweden and Denmark."
+published: true
 ---
 ![Preview pic](https://steamuserimages-a.akamaihd.net/ugc/960854969911751893/AC90EDDDA5EF41ABC2AB515FAADD518A6E09053C/)
 

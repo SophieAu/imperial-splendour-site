@@ -5,6 +5,7 @@ author:
   - QHH
 excerpt: Today is the 226th anniversary of the Glorious First of June. Is there
   any better day to present the British Naval officers?
+published: true
 ---
 Today is the **226th anniversary of the Glorious First of June**. Is there any better day to present the British Naval officers?
 

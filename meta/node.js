@@ -6,7 +6,7 @@ const POSTS_PER_PAGE = 6;
 
 exports.PAGES_QUERY = `
   {
-    posts: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/data/content/posts/" } }) {
+    posts: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/data/content/posts/"}, frontmatter: {published: {eq: true}}}) {
       nodes {
         internal {
           type

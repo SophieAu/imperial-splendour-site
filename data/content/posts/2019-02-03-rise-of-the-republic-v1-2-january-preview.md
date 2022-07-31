@@ -7,6 +7,7 @@ excerpt: >-
   Here is the next preview on our way to version 1.2. This time the painting of
   warships and the development of the Danish infantry is in the focus of the
   preview.
+published: true
 ---
 
 ![Preview Pic](https://steamuserimages-a.akamaihd.net/ugc/957481092835720312/EF544FEF53BBA26E7139267365748165707B0412/)

@@ -4,6 +4,7 @@ date: 2019-06-02T08:17:46.333Z
 author:
   - QHH
 excerpt: A little update on the progress on the Northern Wars Update.
+published: true
 ---
 As you may have noticed we aimed to release the Nothern Wars Update in April or May. You might have also noticed that this didn't happen. We are sorry but RL got in between our plans. In addition creating the tech-trees takes longer than expected because none of us can speak Danish or Swedish (although German can be helpful in understanding Danish if you speak our the words aloud.
  

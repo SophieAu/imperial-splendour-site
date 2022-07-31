@@ -7,6 +7,7 @@ excerpt: >-
   As Empire: Total War has its 10th anniversary we decided to release a new beta
   for 1.2 - the anniversary beta, with new ships, 130 new historical characters
   and Danish units.
+published: true
 ---
 <center>
 

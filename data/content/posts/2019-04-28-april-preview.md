@@ -7,6 +7,7 @@ author:
 excerpt: >-
  As the development progresses towards it's time to present our newest work.
  This article focuses on the newest development of Russia and the Danish army.
+published: true
 ---
 <center>
 

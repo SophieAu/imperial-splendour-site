@@ -5,6 +5,7 @@ author:
   - QHH
 excerpt: This is to show you some of the 3D Models of buildings and cities I
   made for and incorporated into RotR.
+published: true
 ---
 Here are some of my building and city models for RotR:
 

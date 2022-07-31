@@ -5,6 +5,7 @@ author:
   - QHH
   - oleg2242
 excerpt: We have won the TWC 2018 Modding Awards and have a new video for you!
+published: true
 ---
 <center>
 

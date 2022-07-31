@@ -5,6 +5,7 @@ author:
   - QHH
 excerpt: This is the last blog before the next update. Take a look at our latest
   progress.
+published: true
 ---
 ### This is the last blog before the next update. Take a look at our latest progress.
 

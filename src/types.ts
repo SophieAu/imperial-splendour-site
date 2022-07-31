@@ -23,6 +23,7 @@ type ListResponse<Frontmatter> = {
   data: {
     allMarkdownRemark: {
       nodes: {
+        id: string;
         frontmatter: Frontmatter;
         html: string;
       }[];

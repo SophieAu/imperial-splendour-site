@@ -4,6 +4,7 @@ date: 2019-03-03T06:42:02.036Z
 author:
   - QHH
 excerpt: This little tutorial shows how to install the anniversary beta.
+published: true
 ---
 Installation tutorial made by The Super Jew:
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/rqn1TfGH0qU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

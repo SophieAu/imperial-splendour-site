@@ -5,6 +5,7 @@ author:
   - QHH
 excerpt: Today we present you our latest work on the West Indies colonial units
   and some new followers.
+published: true
 ---
 <center>
 

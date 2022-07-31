@@ -10,9 +10,12 @@ import { BlogListContext, PostsResponse } from '../types';
 import * as styles from './blog.styles';
 
 export const query = graphql`
-  query($skip: Int!, $limit: Int!) {
+  query ($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/data/content/posts/" } }
+      filter: {
+        fileAbsolutePath: { regex: "/data/content/posts/" }
+        frontmatter: { published: { eq: true } }
+      }
       sort: { fields: [frontmatter___date], order: DESC }
       limit: $limit
       skip: $skip
