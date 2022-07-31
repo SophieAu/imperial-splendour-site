@@ -5,7 +5,7 @@ const { createSlug } = require('./util');
 const hiddenPages = ['/download/*', '/404'];
 
 const renderCard = ({ title }) =>
-  `<head><link href="https://fonts.googleapis.com/css?family=IM+Fell+English&display=swap" rel="stylesheet" /><link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC&display=swap" rel="stylesheet" /></head><body style="margin:0"><div style="background-image: url(../../data/img/texture_bg.webp);width:1080px;height:510px;padding:60px;display: flex;flex-direction: column;justify-content: space-between;"><div style="display: flex;flex-direction: row;justify-content: space-between;"><img src="../../data/img/index/hero_logo.png" style="width:540px;"/></div><p style="font-family: IM Fell English;font-size: 64px;height: 245px;margin:0;">${title}</p></div></body>`;
+  `<head><link href="https://fonts.googleapis.com/css?family=IM+Fell+English&display=swap" rel="stylesheet" /><link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC&display=swap" rel="stylesheet" /></head><body style="margin:0"><div style="background-image: url(../../data/img/texture_bg.webp);width:1080px;height:510px;padding:60px;display: flex;flex-direction: column;justify-content: space-between;"><div style="display: flex;flex-direction: row;justify-content: space-between;"><img src="../../data/content/_img/hero_logo.png" style="width:540px;"/></div><p style="font-family: IM Fell English;font-size: 64px;height: 245px;margin:0;">${title}</p></div></body>`;
 
 exports.siteMetadata = {
   title: `Imperial Splendour`,
