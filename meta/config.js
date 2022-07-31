@@ -48,7 +48,8 @@ exports.feedOptions = {
       {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] },
-          filter: {fileAbsolutePath: {regex: "/data\/content\/posts/"}}
+          filter: {fileAbsolutePath: {regex: "/data\/content\/posts/"} frontmatter: {published: { eq: true}}
+          }
         ) {
           edges {
             node {
