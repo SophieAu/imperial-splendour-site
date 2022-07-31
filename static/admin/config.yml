@@ -88,8 +88,8 @@ collections:
      preview: true
     fields:
       - { label: "Version/Title", name: "title", widget: "string" }
-      - { label: "Release Blog", name: "releaseBlog", widget: "string" }
-      - { label: "Installation Tutorial", name: "installationTutorial", widget: "string" }
+      - { label: "Release Blog", name: "releaseBlog", widget: "string", required: false }
+      - { label: "Installation Tutorial", name: "installationTutorial", widget: "string", required: false }
       - label: "Links"
         name: "links"
         widget: "list"
