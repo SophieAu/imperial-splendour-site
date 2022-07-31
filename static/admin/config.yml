@@ -3,8 +3,9 @@ backend:
   branch: master
 
 media_folder: data/content/_img
-public_folder: static
+public_folder: ../_img/
 logo_url: https://imperialsplendour.com/static/48e018bbf305f6ff3be8092e37bd2c9d/31987/hero_logo.png
+site_url: https://imperialsplendour.com
 
 collections:
   - label: "Pages"
