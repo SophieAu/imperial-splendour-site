@@ -30,7 +30,7 @@ excerpt: This tells you how to install and uninstall RotR 1.2
 7. If you want, you can now select a different for the Start Menu folder, if you don't, click on 'Next'.
 
    ![Tuto Pic 7](../_img/tuto7.png "Tuto Pic 7")
-8. You can now choose if you want a desktop shortcut. When you have decided, click on 'Next.
+8. You can now choose if you want a desktop shortcut. When you have decided, click on 'Next'.
 
    ![Tuto Pic 8](../_img/tuto8.png "Tuto Pic 8")
 9. Now check if your settings for the installation are as you wish. If yes, click on 'Install' otherwise change your settings.
