@@ -113,7 +113,8 @@ collections:
             { label: "TSanada", value: "tsanada" },
             { label: "Herr Doctor", value: "HD" },
             { label: "mad orc", value: "madOrc" },
-            { label: "myfate", value: "myfate" }]}}
+            { label: "myfate", value: "myfate" }
+            { label: "Sir John Barlow", value: "SirJohn" }]}}
       - { label: "Excerpt", name: "excerpt", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "factions"
