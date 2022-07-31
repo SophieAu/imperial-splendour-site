@@ -88,6 +88,8 @@ export type DownloadPageResponse = ExtendedSingleResponse<DownloadPageFrontmatte
 
 type DownloadFrontmatter = {
   title: string;
+  releaseBlog: string;
+  installationTutorial: string;
   links: { host: string; link: string }[];
 };
 export type DownloadResponse = ListResponse<DownloadFrontmatter>;

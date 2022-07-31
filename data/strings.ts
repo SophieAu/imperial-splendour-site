@@ -67,5 +67,5 @@ export const factions = {
 
 export const download = {
   linkSectionTitle: 'Downloads',
-  otherDownloadsSectionTitle: 'Other Downloads',
+  otherDownloadsSectionTitle: 'Other Downloads / Submods',
 };

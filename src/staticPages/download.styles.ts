@@ -91,6 +91,9 @@ export const mirrorTable = css`
 
   td:first-child {
     vertical-align: top;
+    p {
+      margin: 0;
+    }
   }
 
   td:nth-child(2) {

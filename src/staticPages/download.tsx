@@ -22,6 +22,8 @@ export const query = graphql`
       nodes {
         frontmatter {
           title
+          releaseBlog
+          installationTutorial
           links {
             host
             link
@@ -50,6 +52,7 @@ const Download: React.FC<DownloadPageResponse & DownloadResponse> = ({ data }) =
         <div className={styles.info} dangerouslySetInnerHTML={{ __html: html }} />
 
         <h2 className={styles.dlHeading}>{download.linkSectionTitle}</h2>
+        <div className={styles.versionInfo}>{mainDownload?.title}</div>
         <ul className={styles.filehosts}>
           {mainDownload?.links.map(({ host, link }) => (
             <li key={host}>
@@ -62,7 +65,6 @@ const Download: React.FC<DownloadPageResponse & DownloadResponse> = ({ data }) =
             </li>
           ))}
         </ul>
-        <div className={styles.versionInfo}>{mainDownload?.title}</div>
       </section>
 
       {!!otherDownloads.length && (
@@ -70,9 +72,21 @@ const Download: React.FC<DownloadPageResponse & DownloadResponse> = ({ data }) =
           <h2 className={styles.dlHeading}>{download.otherDownloadsSectionTitle}</h2>
           <table className={styles.mirrorTable}>
             <tbody>
-              {otherDownloads.map(({ title, links }) => (
+              {otherDownloads.map(({ title, releaseBlog, installationTutorial, links }) => (
                 <tr key={title}>
-                  <td>{title}</td>
+                  <td>
+                    <p>{title}</p>
+                    {!!releaseBlog && (
+                      <p>
+                        <Link to={releaseBlog}>Release Blog</Link>
+                      </p>
+                    )}
+                    {!!installationTutorial && (
+                      <p>
+                        <Link to={installationTutorial}>Installation Tutorial</Link>
+                      </p>
+                    )}
+                  </td>
                   <td>
                     {links.map(({ host, link }) => (
                       <p key={host}>
