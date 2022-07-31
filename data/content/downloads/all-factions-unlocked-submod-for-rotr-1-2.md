@@ -4,5 +4,5 @@ links:
   - host: Google Drive
     link: " "
   - host: ModDB
-    link: https://imperialsplendour.com
+    link: " "
 ---
