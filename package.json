@@ -44,7 +44,7 @@
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-helmet": "^6.1.0",
-    "react-markdown": "^6.0.3"
+    "react-markdown": "^8.0.3"
   },
   "devDependencies": {
     "@types/react-helmet": "^6.1.5",
