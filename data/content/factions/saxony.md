@@ -34,28 +34,28 @@ Do not forget to pay attention to the risings in France, it is hard to tell what
 ![](https://steamuserimages-a.akamaihd.net/ugc/970993917492692438/958D5B7E62B01791DD22969DBC68BB92048D76E9/)<br /> 
 
 1. [Ludwig Ernst von Benckendorf](https://de.wikipedia.org/wiki/Ludwig_Ernst_von_Benkendorf) (starting general)
-2. [Prinz Friedrich Ferdinand Constantin von Sachsen-Weimar](https://en.wikipedia.org/wiki/Prince_Frederick_Ferdinand_Constantin_of_Saxe-Weimar-Eisenach) (recruit before 1793) **NEW**
-3. [Friedrich Ludwig Aster](https://de.wikipedia.org/wiki/Friedrich_Ludwig_Aster) (no recruitment limitations) **NEW**
-4. [Heinrich Wilhelm von Zeschau](https://de.wikipedia.org/wiki/Heinrich_Wilhelm_von_Zeschau) (no recruitment limitations) **NEW**
-5. [Karl Wilhelm Ferdinand von Funck](https://de.wikipedia.org/wiki/Karl_Wilhelm_Ferdinand_von_Funck) (no recruitment limitations) **NEW**
-6. [Heinrich Adolph von Gablenz](https://de.wikipedia.org/wiki/Heinrich_Adolph_von_Gablenz) (no recruitment limitations) **NEW**
-7. [Johann von Thielmann](https://en.wikipedia.org/wiki/Johann_von_Thielmann) (recruitable from 1785 onwards) **NEW**
-8. [Karl Christian Erdmann von Le Coq](https://en.wikipedia.org/wiki/Karl_Christian_Erdmann_von_Le_Coq) (recruitable from 1787 onwards) **NEW**
+2. [Prinz Friedrich Ferdinand Constantin von Sachsen-Weimar](https://en.wikipedia.org/wiki/Prince_Frederick_Ferdinand_Constantin_of_Saxe-Weimar-Eisenach) (recruit before 1793)
+3. [Friedrich Ludwig Aster](https://de.wikipedia.org/wiki/Friedrich_Ludwig_Aster) (no recruitment limitations)
+4. [Heinrich Wilhelm von Zeschau](https://de.wikipedia.org/wiki/Heinrich_Wilhelm_von_Zeschau) (no recruitment limitations) 
+5. [Karl Wilhelm Ferdinand von Funck](https://de.wikipedia.org/wiki/Karl_Wilhelm_Ferdinand_von_Funck) (no recruitment limitations)
+6. [Heinrich Adolph von Gablenz](https://de.wikipedia.org/wiki/Heinrich_Adolph_von_Gablenz) (no recruitment limitations) 
+7. [Johann von Thielmann](https://en.wikipedia.org/wiki/Johann_von_Thielmann) (recruitable from 1785 onwards)
+8. [Karl Christian Erdmann von Le Coq](https://en.wikipedia.org/wiki/Karl_Christian_Erdmann_von_Le_Coq) (recruitable from 1787 onwards)
 
 ### Scholars
 ![](https://steamuserimages-a.akamaihd.net/ugc/970993917488522002/A560E5C2116090EFF4696804311F138F7DFFE398/)
 
 1. [Johann Wolfgang von Goethe](https://en.wikipedia.org/wiki/Johann_Wolfgang_von_Goethe) (starting gentleman)
-2. [Johann Gottlieb Tielke](https://en.wikipedia.org/wiki/Johann_Gottlieb_Tielke) **NEW**
-3. [Johann Gottfried Herder](https://en.wikipedia.org/wiki/Johann_Gottfried_Herder) **NEW**
-4. [Abraham Gottlob Werner](https://en.wikipedia.org/wiki/Abraham_Gottlob_Werner) **NEW**
-5. [Friedrich Schiller](https://en.wikipedia.org/wiki/Friedrich_Schiller) **NEW**
-6. [Christoph Martin Wieland](https://en.wikipedia.org/wiki/Christoph_Martin_Wieland) **NEW**
-7. [Johann Gottlieb Fichte](https://en.wikipedia.org/wiki/Johann_Gottlieb_Fichte) **NEW**
+2. [Johann Gottlieb Tielke](https://en.wikipedia.org/wiki/Johann_Gottlieb_Tielke) 
+3. [Johann Gottfried Herder](https://en.wikipedia.org/wiki/Johann_Gottfried_Herder) 
+4. [Abraham Gottlob Werner](https://en.wikipedia.org/wiki/Abraham_Gottlob_Werner) 
+5. [Friedrich Schiller](https://en.wikipedia.org/wiki/Friedrich_Schiller) 
+6. [Christoph Martin Wieland](https://en.wikipedia.org/wiki/Christoph_Martin_Wieland) 
+7. [Johann Gottlieb Fichte](https://en.wikipedia.org/wiki/Johann_Gottlieb_Fichte)
 
 ### Envoys
 ![](https://steamuserimages-a.akamaihd.net/ugc/970993917491766156/E3AEBD667F2DD31CC1E985981F303BC131765EF5/)
 
 1. [Andreas Graf von Riaucour](https://de.wikipedia.org/wiki/Andreas_von_Riaucour) (starting envoy)
-2. [Friedrich August Graf von Zinzendorf und Pottendorf](https://de.wikipedia.org/wiki/Friedrich_August_von_Zinzendorf) **NEW**
-3. [Hans Moritz Graf von Brühl](https://en.wikipedia.org/wiki/Hans_Moritz_von_Br%C3%BChl) **NEW**
+2. [Friedrich August Graf von Zinzendorf und Pottendorf](https://de.wikipedia.org/wiki/Friedrich_August_von_Zinzendorf) 
+3. [Hans Moritz Graf von Brühl](https://en.wikipedia.org/wiki/Hans_Moritz_von_Br%C3%BChl) 

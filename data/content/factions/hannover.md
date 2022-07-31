@@ -28,7 +28,7 @@ So you have to decide: shall you take the risk and leading Hannover to independe
 6. Geheimer Rat [Christian Ludwig August von Arnswaldt](https://de.wikipedia.org/wiki/Christian_Ludwig_August_von_Arnswaldt)
 7. [Wilhelm August Rudloff](https://de.wikipedia.org/wiki/Wilhelm_August_Rudloff)
 8. [Friedrich Ludwig von Berlepsch](https://de.wikipedia.org/wiki/Friedrich_Ludwig_von_Berlepsch)
-9. [Claus von der Decken](https://de.wikipedia.org/wiki/Klaus_von_der_Decken_(Minister)) **NEW**
+9. [Claus von der Decken](https://de.wikipedia.org/wiki/Klaus_von_der_Decken_(Minister)) 
 10. [August Wilhelm Rehberg](https://plato.stanford.edu/entries/august-rehberg/)
 11. [Georg Friedrich Brandes](https://de.wikipedia.org/wiki/Georg_Friedrich_Brandes)
 
@@ -52,33 +52,33 @@ So you have to decide: shall you take the risk and leading Hannover to independe
 ![](https://steamuserimages-a.akamaihd.net/ugc/957481546479949883/3B7B042286C3156302E39047B1D36047495C1C14/)
 
 1. [Christian Gottlieb Daniel Müller](https://de.wikipedia.org/wiki/Christian_Gottlieb_Daniel_M%C3%BCller) (starting admiral)
-2. [Joachim Deetjen](https://de.wikipedia.org/wiki/Elbzollfregatte#K%C3%B6nigreich_Hannover) (no recruitment limitations) **NEW**
+2. [Joachim Deetjen](https://de.wikipedia.org/wiki/Elbzollfregatte#K%C3%B6nigreich_Hannover) (no recruitment limitations) 
 
 #### Scholars
 ![](https://steamuserimages-a.akamaihd.net/ugc/970993441120077445/F6F80866C951737A69B620114DB93148E0248136/)
 
 1. [Georg Christoph Lichternberg](https://en.wikipedia.org/wiki/Georg_Christoph_Lichtenberg) (starting gentleman)
 2. [Christian Gottlob Heyne](https://en.wikipedia.org/wiki/Christian_Gottlob_Heyne) (starting gentleman)
-3. [Adolph Freyherr Knigge](https://en.wikipedia.org/wiki/Adolph_Freiherr_Knigge) **NEW**
+3. [Adolph Freyherr Knigge](https://en.wikipedia.org/wiki/Adolph_Freiherr_Knigge)
 4. [Johann Friedrich Blumenbach](https://en.wikipedia.org/wiki/Johann_Friedrich_Blumenbach)
 5. [Georg Ludwig Böhmer](https://de.wikipedia.org/wiki/Georg_Ludwig_B%C3%B6hmer)
 6. [Abraham Gotthelf Kästner](https://en.wikipedia.org/wiki/Abraham_Gotthelf_K%C3%A4stner)
 7. [Johann Stephan Pütter](https://en.wikipedia.org/wiki/Johann_Stephan_P%C3%BCtter)
 8. [August Ludwig Schlözer](https://en.wikipedia.org/wiki/August_Ludwig_von_Schl%C3%B6zer)
 9. [Johann Georg Heinrich Feder](https://en.wikipedia.org/wiki/Johann_Georg_Heinrich_Feder)
-10. [Friedrich Benjamin Osiander](https://en.wikipedia.org/wiki/Friedrich_Benjamin_Osiander) **NEW**
-11. [Therese Huber](https://en.wikipedia.org/wiki/Therese_Huber) **NEW**
+10. [Friedrich Benjamin Osiander](https://en.wikipedia.org/wiki/Friedrich_Benjamin_Osiander)
+11. [Therese Huber](https://en.wikipedia.org/wiki/Therese_Huber) 
 12. [Dorothea Schlözer](https://en.wikipedia.org/wiki/Dorothea_von_Rodde-Schl%C3%B6zer)
-13. [Johann Friedrich Gmelin](https://en.wikipedia.org/wiki/Johann_Friedrich_Gmelin) **NEW**
-14. [Gustav Hugo](https://en.wikipedia.org/wiki/Gustav_Hugo) **NEW**
-15. [Arnold Hermann Ludwig Heeren](https://en.wikipedia.org/wiki/Arnold_Hermann_Ludwig_Heeren) **NEW**
-16. [Theodor Hagemann](https://de.wikipedia.org/wiki/Theodor_Hagemann) **NEW**
-17. [Philippine von Reden](https://de.wikipedia.org/wiki/Philippine_von_Reden) **NEW**
+13. [Johann Friedrich Gmelin](https://en.wikipedia.org/wiki/Johann_Friedrich_Gmelin) 
+14. [Gustav Hugo](https://en.wikipedia.org/wiki/Gustav_Hugo)
+15. [Arnold Hermann Ludwig Heeren](https://en.wikipedia.org/wiki/Arnold_Hermann_Ludwig_Heeren) 
+16. [Theodor Hagemann](https://de.wikipedia.org/wiki/Theodor_Hagemann) 
+17. [Philippine von Reden](https://de.wikipedia.org/wiki/Philippine_von_Reden)
 
 #### Envoys
 ![](https://steamuserimages-a.akamaihd.net/ugc/957481546479365170/8E1F2F7651FC48BD37E32E1019867F2112852726/) 
 
-1. [D.(ietrich) H.(einrich) L.(udwi)g Freyherr von Ompteda](https://en.wikipedia.org/wiki/Dietrich_Heinrich_Ludwig_von_Ompteda) **NEW**
-2. [Basilius von Ramdohr](https://en.wikipedia.org/wiki/Basilius_von_Ramdohr) **NEW**
-3. [Ernst Graf zu Münster](https://en.wikipedia.org/wiki/Ernst_zu_M%C3%BCnster) **NEW**
-4. [Joachim von Schwarzkopf](https://de.wikipedia.org/wiki/Joachim_von_Schwarzkopf) **NEW**
+1. [D.(ietrich) H.(einrich) L.(udwi)g Freyherr von Ompteda](https://en.wikipedia.org/wiki/Dietrich_Heinrich_Ludwig_von_Ompteda)
+2. [Basilius von Ramdohr](https://en.wikipedia.org/wiki/Basilius_von_Ramdohr)
+3. [Ernst Graf zu Münster](https://en.wikipedia.org/wiki/Ernst_zu_M%C3%BCnster)
+4. [Joachim von Schwarzkopf](https://de.wikipedia.org/wiki/Joachim_von_Schwarzkopf)
