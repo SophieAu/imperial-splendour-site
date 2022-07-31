@@ -10,7 +10,7 @@ published: false
 
 ### If you use any other Anti-Virus-Program than Windows Defender, the files can be flagged as Viruses. **THEY ARE NOT!** They are just new to the world and as most Anti-Virus-Programs work on a 'Better-save-than-sorry' philosophy the files are flagged as potential harmful even when they are not. **So if you use any other Anti-Virus-Program than Windows Defender you should choose the manual download.**
 
-1. Remove / deactivate every previous install of RotR, Imperial Splendour or any other mod.
+1. Uninstall / deactivate every previous install of RotR, Imperial Splendour (**if you use the launcher, uninstall through the launcher!**) or any other mod.
 2. Download the new version and save all 3 files in the same folder.
 
    ![Tuto pic 1](../_img/tuto1.png "Tuto pic 1")
