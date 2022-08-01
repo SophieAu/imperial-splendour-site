@@ -1,6 +1,6 @@
 ---
 title: "Imperial Splendour - Rise of the Republic v1.1.9.9 Empire: Total War's
-  10th anniversary beta"
+  10th anniversary beta "
 releaseBlog: https://imperialsplendour.com/blog/2019-03-03-anniversary-beta-announcement
 installationTutorial: https://imperialsplendour.com/blog/2019-03-03-anniversary-beta-installation-tutorial
 links:
