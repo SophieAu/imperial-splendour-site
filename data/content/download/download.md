@@ -12,7 +12,7 @@ mainDownload: "Imperial Splendour - Rise of the Republic v1.2 Northern Wars Upda
 
 If you need help, check out the [installation tutorial](/blog/2022-08-01-rotr-12-installation-tutorial/).
 
-**More download options are below. Please read the following informations!**
+**More download options are below, just scroll down. Please read the following informations!**
 
 **Uninstall / deactivate every previous install of RotR, Imperial Splendour (**if you use the launcher, uninstall through the launcher!**) or any other mod. Please let the first turn of a campaign just pass without doing anything. That's important as the game grooves itself in!**
 
