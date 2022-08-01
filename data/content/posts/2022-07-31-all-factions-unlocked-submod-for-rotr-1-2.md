@@ -3,13 +3,13 @@ title: All Factions Unlocked Submod for RotR 1.2
 date: 2022-08-01T15:59:00.000Z
 author:
   - QHH
-published: false
+published: true
 excerpt: This little submod for RotR 1.2 (and only RotR 1.2) allows you to play
   with all factions with are present at the startup on the campaign.
 ---
 This little submod for RotR 1.2 (and only RotR 1.2) allows you to play with all factions with are present at the startup on the campaign.
 
-## [All Factions Unlocked Submod for RotR 1.2](https://imperialsplendour.com/download)
+## [Download the All Factions Unlocked Submod for RotR 1.2 here](https://imperialsplendour.com/download)
 
 To install this little submod follow the instructions below:
 
