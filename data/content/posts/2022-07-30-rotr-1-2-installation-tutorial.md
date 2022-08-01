@@ -4,18 +4,18 @@ date: 2022-08-01T19:51:59.005Z
 author:
   - QHH
 excerpt: This tells you how to install and uninstall RotR 1.2
-published: false
+published: true
 ---
 ## This is the official RotR installation tutorial.
 
 ### If you use any other Anti-Virus-Program than Windows Defender, the files can be flagged as Viruses. **THEY ARE NOT!** They are just new to the world and as most Anti-Virus-Programs work on a 'Better-save-than-sorry' philosophy the files are flagged as potential harmful even when they are not. **So if you use any other Anti-Virus-Program than Windows Defender you should choose the manual download.**
 
-1. Uninstall / deactivate every previous install of RotR, Imperial Splendour (**if you use the launcher, uninstall through the launcher!**) or any other mod.
-2. Download the new version and save all 3 files in the same folder.
+1. Uninstall / deactivate every previous install of RotR, Imperial Splendour (**if you use the old launcher, uninstall through the launcher!**) or any other mod.
+2. Download the new version and save / extract all 3 files in the same folder.
 
    ![Tuto pic 1](../_img/tuto1.png "Tuto pic 1")
 3. Click twice on the 'ImperialSplendourSetup.exe' and allow it to be executed.
-4. Now click on 'Next' after you've checked that any other mods (including previous versions of this mod) are disabled or uninstalled.
+4. Now click on 'Next' after you've checked that any other mods (including previous versions of this mod) are disabled or uninstalled (if you use the old launcher, uninstall through the launcher!).
 
    ![Tuto pic 2](../_img/tuto2.png "Tuto pic 2")
 5. The installer now searches for the standard path to your Empire Total War installation. If you've installed Empire Total War on a custom path like me, the following window pops up.
@@ -62,6 +62,6 @@ published: false
 
 1. Download the manual install (you need to have 7zip https://www.7-zip.org/ installed).
 
-2. Open the '.7z' file and extract the 'data'-folder into your 'Empire Total War' folder (for the path take a look at No. 6 above.
+2. Open the '.7z' file and extract the 'data'-folder into your 'Empire Total War' folder (for the path take a look at No. 6 above).
 
 3. Move the "user.empire_script.txt" file to the following folder: \`C:\document and setting\Users\"yourname"\AppData\Roaming\The Creative Assembly\Empire\script.\` If you can't find the folder, it's in a hidden folder. You have to enable "show hidden folders" in your OS.

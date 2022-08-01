@@ -5,9 +5,9 @@ releaseBlog: https://imperialsplendour.com/blog/2022-08-01-rise-of-the-republic-
 installationTutorial: https://imperialsplendour.com/blog/2022-08-01-rotr-12-installation-tutorial
 links:
   - host: Google Drive
-    link: " "
+    link: "https://drive.google.com/file/d/1-fkJgiYWkyuOU__py_IlcSmUxBY52mOj/view?usp=sharing"
   - host: MediaFire
-    link: " "
-  - link: " "
+    link: "https://www.mediafire.com/file/tjhkfrn4uan4rol/RotR_1.2.7z/file"
+  - link: "https://www.moddb.com/mods/imperial-splendour/downloads/imperial-splendour-rise-of-the-republic-12-manual-install"
     host: ModDB
 ---
