@@ -68,7 +68,7 @@ export const imgAlt = {
 };
 
 export const hostImages = [
-  { host: 'ModDB', image: 'https://button.moddb.com/download/medium/175422.png' },
+  { host: 'ModDB', image: 'https://button.moddb.com/download/medium/236128.png' },
   { host: 'MediaFire', image: mediaFire },
   { host: 'Google Drive', image: gDrive },
 ];
