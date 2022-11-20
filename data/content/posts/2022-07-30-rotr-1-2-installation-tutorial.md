@@ -12,7 +12,9 @@ excerpt: This tells you how to install and uninstall RotR 1.2
 
 Here is a short video tutorial:
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BFiJdG5XLu0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BFiJdG5XLu0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+</iframe>
 
 1. Uninstall / deactivate every previous install of RotR, Imperial Splendour (**if you use the old launcher, uninstall through the launcher!**) or any other mod.
 2. Download the new version and save / extract all 3 files in the same folder.
