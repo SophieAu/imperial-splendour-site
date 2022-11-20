@@ -10,7 +10,7 @@ excerpt: This tells you how to install and uninstall RotR 1.2
 
 ### If you use any other Anti-Virus-Program than Windows Defender, the files can be flagged as Viruses. **THEY ARE NOT!** They are just new to the world and as most Anti-Virus-Programs work on a 'Better-save-than-sorry' philosophy the files are flagged as potentially harmful even when they are not. **So if you use any other Anti-Virus-Program than Windows Defender you should choose the manual download.**
 
-**Here is a short video tutorial:**
+Here is a short video tutorial:
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BFiJdG5XLu0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
