@@ -66,8 +66,8 @@ Here is a short video tutorial:
 
 ## If you want to install RotR 1.2 manually:
 
-1. Download the manual install (you need to have 7zip https://www.7-zip.org/ installed).
+1. Download the manual install (you need to have [7zip](https://www.7-zip.org/) installed).
 
 2. Open the '.7z' file and extract the 'data'-folder into your 'Empire Total War' folder (for the path take a look at No. 6 above).
 
-3. Move the "user.empire_script.txt" file to the following folder: \`C:\document and setting\Users\"yourname"\AppData\Roaming\The Creative Assembly\Empire\script.\` If you can't find the folder, it's in a hidden folder. You have to enable "show hidden folders" in your OS.
+3. Move the "`user.empire_script.txt`" file to the following folder: `C:\documents and setting\Users\<yourname>\AppData\Roaming\The Creative Assembly\Empire\script`. If you can't find the folder, it's in a hidden folder. You have to enable "show hidden folders" in your OS.
