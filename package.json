@@ -47,7 +47,7 @@
     "react-markdown": "^6.0.3"
   },
   "devDependencies": {
-    "@types/react-helmet": "^6.1.5",
+    "@types/react-helmet": "^6.1.6",
     "@typescript-eslint/eslint-plugin": "^4.33.0",
     "@typescript-eslint/parser": "^4.33.0",
     "eslint": "^7.32.0",
