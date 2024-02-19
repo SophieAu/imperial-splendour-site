@@ -20,15 +20,27 @@ As you may have noticed, last weekend we didn't publish any news. We didn't stop
 
 Kingdom of Sardinia - Guard Grenadier and Fusilier:
 
+<center>
+
 ![Kingdom of Sardinia - Guard Grenadier](https://cdn.discordapp.com/attachments/996114120363487262/1209141022521557043/KS_-_Guard_Gren.png?ex=65e5d754&is=65d36254&hm=cdd4a098d2b30a6f1085c4a608b5234c4686d88fa91526933b21bd3b2cbdc83a& "Kingdom of Sardinia - Guard Grenadier") ![Kingdom of Sardinia - Guard Fusilier](https://cdn.discordapp.com/attachments/996114120363487262/1209141022999711764/KS_-_Guard_Reg.png?ex=65e5d754&is=65d36254&hm=c058d7f77337abcf12fd04e099d7d49689605f99924d54c62cc19db68b4c5114& "Kingdom of Sardinia - Guard Fusilier")
+
+</center>
 
 Kingdom of Sardinia - Marine and Line Infantry Fusiliers:
 
+<center>
+
 ![Kingdom of Sardinia - Marine Fusilier](https://cdn.discordapp.com/attachments/996114120363487262/1209141151186296914/KS_-_Marine_Inf.png?ex=65e5d773&is=65d36273&hm=585368b8a6d83a86c41134b925b2029061738586dbde4dabc718faa711444157& "Kingdom of Sardinia - Marine Fusilier") ![Kingdom of Sardinia - Line Infantry Fusiliers](https://cdn.discordapp.com/attachments/996114120363487262/1209141151530098759/KS_-_Line_Inf.png?ex=65e5d773&is=65d36273&hm=110d5d1aa24ad924d0bca00f37a3f290015e9ada0a5d90d8573c768a7f5f361d& "Kingdom of Sardinia - Line Infantry Fusiliers")
+
+</center>
 
 Knights of Saint John - Line Infantry Grenadier and Fusilier:
 
+<center>
+
 ![Knights of Saint John - Line Infantry Grenadier](https://cdn.discordapp.com/attachments/996114120363487262/1209141295617155093/KSJ_-_Line_Gren.png?ex=65e5d795&is=65d36295&hm=9a4ba3f519c4db8eac30856c3499a06001344845d67029a3f13face8064e6a53& "Knights of Saint John - Line Infantry Grenadier") ![Knights of Saint John - Line Infantry Fusilier](https://cdn.discordapp.com/attachments/996114120363487262/1209141296044707871/KSJ_-_Line_Inf.png?ex=65e5d795&is=65d36295&hm=111c1f68ebb7e3901c99298e792b4663073e65133f140659c3f7471447c43edd& "Knights of Saint John - Line Infantry Fusilier")
+
+</center>
 
 Duchy of Tuscany - Cavallegeri (Medium Cavalry) and Guard Infantry:
 
