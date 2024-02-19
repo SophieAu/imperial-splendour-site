@@ -32,7 +32,11 @@ Knights of Saint John - Line Infantry Grenadier and Fusilier:
 
 Duchy of Tuscany - Cavallegeri (Medium Cavalry) and Guard Infantry:
 
+<center>
+
 ![Duchy of Tuscany - Cavallegeri - Medium Cavalry](https://cdn.discordapp.com/attachments/996114120363487262/1209142844682670080/DT_-_Cav_S.A.R.png?ex=65e5d906&is=65d36406&hm=57dff05155f9e4876a9f219968d570ca11585fa53825f052c224351ae5d2f7d1& "Duchy of Tuscany - Cavallegeri - Medium Cavalry") ![Duchy of Tuscany - Guard Infantry](https://cdn.discordapp.com/attachments/996114120363487262/1209142844997238784/DT_-_Guard_Inf.png?ex=65e5d907&is=65d36407&hm=be0cde5af88df2aafaad70251e77e3720ce7a130803eb6166d20878767aed079& "Duchy of Tuscany - Guard Infantry")
+
+</center>
 
 #### New custom music (instruments):
 
@@ -42,9 +46,15 @@ Hannover will get a new custom drum and a buglehorn for the light infantry. The 
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/XGAssGV70KA?si=haFzKoQ70CHaN3el" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 
+</iframe>
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/TEYM187ApBU?si=3Zu6qCLI-jxcrDsE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 
+</iframe>
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/rHQZyq0DYEs?si=uOzWfpmiNrvbaR0t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+</iframe>
 
 You can take a look at the new Hanoverian bulgehorn on sketchfab too:
 
