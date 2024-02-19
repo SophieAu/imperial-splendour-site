@@ -38,6 +38,8 @@ Duchy of Tuscany - Cavallegeri (Medium Cavalry) and Guard Infantry:
 
 Hannover will get a new custom drum and a buglehorn for the light infantry. The Brunswick units will also get a new drum. Furthermore, we added a lot of new sounds created by Tonnes from the ETW II - team. Listen to the new drumrolls and bugle calls with the new drum and the buglehorn in the videos below:
 
+<center>
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/XGAssGV70KA?si=haFzKoQ70CHaN3el" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/TEYM187ApBU?si=3Zu6qCLI-jxcrDsE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
@@ -51,3 +53,5 @@ You can take a look at the new Hanoverian bulgehorn on sketchfab too:
 </div>
 
 [Hanoverian buglehorn](https://sketchfab.com/3d-models/hanoverian-buglehorn-d4ee27d055414ccb8e87db2cbb433c58) by [QuintusHortensiusHortalus](https://sketchfab.com/QuintusHortensiusHortalus) on [Sketchfab](https://sketchfab.com)
+
+</center>
