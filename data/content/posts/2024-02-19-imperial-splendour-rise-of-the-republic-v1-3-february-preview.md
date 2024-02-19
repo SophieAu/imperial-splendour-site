@@ -20,7 +20,7 @@ As you may have noticed, last weekend we didn't publish any news. We didn't stop
 
 Kingdom of Sardinia - Guard Grenadier:
 
-![Kingdom of Sardinia - Guard Grenadier](https://cdn.discordapp.com/attachments/996114120363487262/1209141022521557043/KS_-_Guard_Gren.png?ex=65e5d754&is=65d36254&hm=cdd4a098d2b30a6f1085c4a608b5234c4686d88fa91526933b21bd3b2cbdc83a& "Kingdom of Sardinia - Guard Grenadier")
+![Kingdom of Sardinia - Guard Grenadier](https://cdn.discordapp.com/attachments/996114120363487262/1209141022521557043/KS_-_Guard_Gren.png?ex=65e5d754&is=65d36254&hm=cdd4a098d2b30a6f1085c4a608b5234c4686d88fa91526933b21bd3b2cbdc83a& "Kingdom of Sardinia - Guard Grenadier") ![Kingdom of Sardinia - Guard Fusilier](https://cdn.discordapp.com/attachments/996114120363487262/1209141022999711764/KS_-_Guard_Reg.png?ex=65e5d754&is=65d36254&hm=c058d7f77337abcf12fd04e099d7d49689605f99924d54c62cc19db68b4c5114& "Kingdom of Sardinia - Guard Fusilier")
 
 Kingdom of Sardinia - Guard Fusilier:
 
