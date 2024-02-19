@@ -8,7 +8,7 @@ excerpt: This is our newest blog on the road to the v1.3 release.
 ---
 As you may have noticed, last weekend we didn't publish any news. We didn't stop modding, we just decided, that this blog post would be better to present our most recent progress.
 
-##### At first, the final Savoyard units are done, the royal and regimental artillery crews:
+#### At first, the final Savoyard units are done, the royal and regimental artillery crews:
 
 ![Savoyard Royal Artillery](../_img/20240218154507_1.jpg "Savoyard Royal Artillery")
 
@@ -34,7 +34,7 @@ Duchy of Tuscany - Cavallegeri (Medium Cavalry) and Guard Infantry:
 
 ![Duchy of Tuscany - Cavallegeri - Medium Cavalry](https://cdn.discordapp.com/attachments/996114120363487262/1209142844682670080/DT_-_Cav_S.A.R.png?ex=65e5d906&is=65d36406&hm=57dff05155f9e4876a9f219968d570ca11585fa53825f052c224351ae5d2f7d1& "Duchy of Tuscany - Cavallegeri - Medium Cavalry") ![Duchy of Tuscany - Guard Infantry](https://cdn.discordapp.com/attachments/996114120363487262/1209142844997238784/DT_-_Guard_Inf.png?ex=65e5d907&is=65d36407&hm=be0cde5af88df2aafaad70251e77e3720ce7a130803eb6166d20878767aed079& "Duchy of Tuscany - Guard Infantry")
 
-##### New custom music (instruments):
+#### New custom music (instruments):
 
 Hannover will get a new custom drum and a buglehorn for the light infantry. The Brunswick units will also get a new drum. Furthermore, we added a lot of new sounds created by Tonnes from the ETW II - team. Listen to the new drumrolls and bugle calls with the new drum and the buglehorn in the videos below:
 
