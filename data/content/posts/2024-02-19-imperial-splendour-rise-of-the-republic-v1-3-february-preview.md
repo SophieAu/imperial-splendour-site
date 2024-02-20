@@ -82,6 +82,6 @@ Furthermore we work on the UI too. The battle selection screen got an update:
 
 ![battle selection screen](../_img/20240218154311_1.jpg "battle selection screen")
 
-And the flag of the United Provinces is now the <https://en.wikipedia.org/wiki/Statenvlag>:
+And the flag of the United Provinces is now the [Statenvlag](https://en.wikipedia.org/wiki/Statenvlag):
 
 ![Statenvlag](../_img/20240212202954_1.jpg "Statenvlag")
