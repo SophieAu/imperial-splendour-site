@@ -78,7 +78,7 @@ You can take a look at the new Hanoverian bulgehorn on sketchfab too:
 
 </center>
 
-Furthermore we work on the UI too. The battle selection screen got an update:
+Furthermore, we work on the UI too. RotR will get a new main menu background. Also the battle selection screen got an update:
 
 ![battle selection screen](../_img/20240218154311_1.jpg "battle selection screen")
 
