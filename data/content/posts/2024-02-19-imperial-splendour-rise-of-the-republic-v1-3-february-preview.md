@@ -1,5 +1,5 @@
 ---
-title: Imperial Splendour - Rise of the Republic v1.3 - February Preview
+title: Imperial Splendour - Rise of the Republic v1.3 - February Developers Blog
 date: 2024-02-19T19:48:31.496Z
 author:
   - QHH
@@ -77,3 +77,11 @@ You can take a look at the new Hanoverian bulgehorn on sketchfab too:
 [Hanoverian buglehorn](https://sketchfab.com/3d-models/hanoverian-buglehorn-d4ee27d055414ccb8e87db2cbb433c58) by [QuintusHortensiusHortalus](https://sketchfab.com/QuintusHortensiusHortalus) on [Sketchfab](https://sketchfab.com)
 
 </center>
+
+Furthermore we work on the UI too. The battle selection screen got an update:
+
+![battle selection screen](../_img/20240218154311_1.jpg "battle selection screen")
+
+And the flag of the United Provinces is now the <https://en.wikipedia.org/wiki/Statenvlag>:
+
+![Statenvlag](../_img/20240212202954_1.jpg "Statenvlag")
