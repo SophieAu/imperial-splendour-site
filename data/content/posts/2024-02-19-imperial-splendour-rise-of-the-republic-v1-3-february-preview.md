@@ -4,7 +4,7 @@ date: 2024-02-19T19:48:31.496Z
 author:
   - QHH
 published: true
-excerpt: This is our newest blog on the road to the v1.3 release.
+excerpt: This is our newest blog on the road to the Rise of the Republic v1.3 release.
 ---
 As you may have noticed, last weekend we didn't publish any news. We didn't stop modding, we just decided, that this blog post would be better to present our most recent progress.
 
@@ -16,7 +16,7 @@ As you may have noticed, last weekend we didn't publish any news. We didn't stop
 
 ![Sardinian Regimental Artillery](../_img/20240218164828_1.jpg "Sardinian Regimental Artillery")
 
-##### Here are some close-ups of some units:
+#### Here are close-ups of some units from the Kingdom of Sardinia, the Knights of Saint John and Duchy of Tuscany:
 
 Kingdom of Sardinia - Guard Grenadier and Fusilier:
 
@@ -42,15 +42,15 @@ Knights of Saint John - Line Infantry Grenadier and Fusilier:
 
 </center>
 
-Duchy of Tuscany - Cavallegeri (Medium Cavalry) and Guard Infantry:
+Duchy of Tuscany - Guardia Nobile a Cavallo, Cavallegeri (Medium Cavalry), Guardia a Piedi di Toscana and Artiglieria Toscana:
 
 <center>
 
-![Duchy of Tuscany - Cavallegeri - Medium Cavalry](https://cdn.discordapp.com/attachments/996114120363487262/1209142844682670080/DT_-_Cav_S.A.R.png?ex=65e5d906&is=65d36406&hm=57dff05155f9e4876a9f219968d570ca11585fa53825f052c224351ae5d2f7d1& "Duchy of Tuscany - Cavallegeri - Medium Cavalry") ![Duchy of Tuscany - Guard Infantry](https://cdn.discordapp.com/attachments/996114120363487262/1209142844997238784/DT_-_Guard_Inf.png?ex=65e5d907&is=65d36407&hm=be0cde5af88df2aafaad70251e77e3720ce7a130803eb6166d20878767aed079& "Duchy of Tuscany - Guard Infantry")
+![Duchy of Tuscany - Guardia Nobile a Cavallo](https://cdn.discordapp.com/attachments/1077231916056596482/1210296879112523866/DT_-_Cav_Guard.png?ex=65ea0bce&is=65d796ce&hm=71396c7963a2f141d0062f00cc8961ab148d662c3dc45c79d41261ab443f3eaa& "Guardia Nobile a Cavallo") ![Duchy of Tuscany - Cavallegeri - Medium Cavalry](https://cdn.discordapp.com/attachments/1077231916056596482/1210294014285189120/DT_-_Cav_S.A.R.png?ex=65ea0923&is=65d79423&hm=45128b897fbeaf365f6546285776d596523a25829aaf9d813e820d17b0c4cbdb& "Duchy of Tuscany - Cavallegeri - Medium Cavalry") ![Duchy of Tuscany - Guard Infantry](https://cdn.discordapp.com/attachments/996114120363487262/1209142844997238784/DT_-_Guard_Inf.png?ex=65e5d907&is=65d36407&hm=be0cde5af88df2aafaad70251e77e3720ce7a130803eb6166d20878767aed079& "Duchy of Tuscany - Guard Infantry")![Duchy of Tuscany - Artiglieria Toscana](https://cdn.discordapp.com/attachments/1077231916056596482/1210298568548810792/DT_-_Art.png?ex=65ea0d61&is=65d79861&hm=fbecd1d4954f6d542608870978904f15130fc8d48089fa4110983c3f070632f5& "Duchy of Tuscany - Artiglieria Toscana")
 
 </center>
 
-#### New custom music (instruments):
+#### New custom music (and instruments):
 
 Hannover will get a new custom drum and a buglehorn for the light infantry. The Brunswick units will also get a new drum. Furthermore, we added a lot of new sounds created by Tonnes from the ETW II - team. Listen to the new drumrolls and bugle calls with the new drum and the buglehorn in the videos below:
 
