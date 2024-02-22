@@ -85,3 +85,5 @@ Furthermore, we work on the UI too. RotR will get a new main menu background. Al
 And the flag of the United Provinces is now the [Statenvlag](https://en.wikipedia.org/wiki/Statenvlag):
 
 ![Statenvlag](../_img/20240212202954_1.jpg "Statenvlag")
+
+In our next blog, we'll present you the current stat e of Poland!
