@@ -86,4 +86,8 @@ And the flag of the United Provinces is now the [Statenvlag](https://en.wikipedi
 
 ![Statenvlag](../_img/20240212202954_1.jpg "Statenvlag")
 
+<center>
+
 In our next blog, we'll present you the current state of Poland!
+
+</center>
