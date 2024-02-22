@@ -50,7 +50,7 @@ Duchy of Tuscany - Guardia Nobile a Cavallo, Cavallegeri (Medium Cavalry), Guard
 
 </center>
 
-#### New custom music (and instruments):
+#### New music (and instruments):
 
 Hannover will get a new custom drum and a buglehorn for the light infantry. The Brunswick units will also get a new drum. Furthermore, we added a lot of new sounds created by Tonnes from the ETW II - team. Listen to the new drumrolls and bugle calls with the new drum and the buglehorn in the videos below:
 
