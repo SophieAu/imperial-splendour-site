@@ -68,7 +68,7 @@ Hannover will get a new custom drum and a buglehorn for the light infantry. The 
 
 </iframe>
 
-You can take a look at the new Hanoverian bulgehorn on sketchfab too:
+You can take a closer look at the new Hanoverian bulgehorn on sketchfab too:
 
 <div class="sketchfab-embed-wrapper">
     <iframe title="Hanoverian buglehorn" width="640" height="480" src="https://sketchfab.com/models/d4ee27d055414ccb8e87db2cbb433c58/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
