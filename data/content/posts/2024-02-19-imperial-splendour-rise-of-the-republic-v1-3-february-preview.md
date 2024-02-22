@@ -16,7 +16,7 @@ As you may have noticed, last weekend we didn't publish any news. We didn't stop
 
 ![Sardinian Regimental Artillery](../_img/20240218164828_1.jpg "Sardinian Regimental Artillery")
 
-#### Here are close-ups of some units from the Kingdom of Sardinia, the Knights of Saint John and Duchy of Tuscany:
+#### Here are close-ups of some units from the Kingdom of Sardinia, the Knights of Saint John and the Duchy of Tuscany:
 
 Kingdom of Sardinia - Guard Grenadier and Fusilier:
 
@@ -46,7 +46,7 @@ Duchy of Tuscany - Guardia Nobile a Cavallo, Cavallegeri (Medium Cavalry), Guard
 
 <center>
 
-![Duchy of Tuscany - Guardia Nobile a Cavallo](https://cdn.discordapp.com/attachments/1077231916056596482/1210296879112523866/DT_-_Cav_Guard.png?ex=65ea0bce&is=65d796ce&hm=71396c7963a2f141d0062f00cc8961ab148d662c3dc45c79d41261ab443f3eaa& "Guardia Nobile a Cavallo") ![Duchy of Tuscany - Cavallegeri - Medium Cavalry](https://cdn.discordapp.com/attachments/1077231916056596482/1210294014285189120/DT_-_Cav_S.A.R.png?ex=65ea0923&is=65d79423&hm=45128b897fbeaf365f6546285776d596523a25829aaf9d813e820d17b0c4cbdb& "Duchy of Tuscany - Cavallegeri - Medium Cavalry") ![Duchy of Tuscany - Guard Infantry](https://cdn.discordapp.com/attachments/996114120363487262/1209142844997238784/DT_-_Guard_Inf.png?ex=65e5d907&is=65d36407&hm=be0cde5af88df2aafaad70251e77e3720ce7a130803eb6166d20878767aed079& "Duchy of Tuscany - Guard Infantry")![Duchy of Tuscany - Artiglieria Toscana](https://cdn.discordapp.com/attachments/1077231916056596482/1210298568548810792/DT_-_Art.png?ex=65ea0d61&is=65d79861&hm=fbecd1d4954f6d542608870978904f15130fc8d48089fa4110983c3f070632f5& "Duchy of Tuscany - Artiglieria Toscana")
+![Guardia Nobile a Cavallo](https://cdn.discordapp.com/attachments/1077231916056596482/1210296879112523866/DT_-_Cav_Guard.png?ex=65ea0bce&is=65d796ce&hm=71396c7963a2f141d0062f00cc8961ab148d662c3dc45c79d41261ab443f3eaa& "Guardia Nobile a Cavallo")<img src="https://cdn.discordapp.com/attachments/1077231916056596482/1210294014285189120/DT_-_Cav_S.A.R.png?ex=65ea0923&is=65d79423&hm=45128b897fbeaf365f6546285776d596523a25829aaf9d813e820d17b0c4cbdb&" alt="Duchy of Tuscany - Cavallegeri - Medium Cavalry" width="450" height="606"> ![Duchy of Tuscany - Guard Infantry](https://cdn.discordapp.com/attachments/1077231916056596482/1210297730308505600/DT_-_Inf_Guard.png?ex=65ea0c99&is=65d79799&hm=02af05a06e14fa89bb37e44eec8aa0d9aa8a294723035d65a51c272fa0b51961& "Duchy of Tuscany - Guard Infantry")![Duchy of Tuscany - Artiglieria Toscana](https://cdn.discordapp.com/attachments/1077231916056596482/1210298568548810792/DT_-_Art.png?ex=65ea0d61&is=65d79861&hm=fbecd1d4954f6d542608870978904f15130fc8d48089fa4110983c3f070632f5& "Duchy of Tuscany - Artiglieria Toscana")
 
 </center>
 
