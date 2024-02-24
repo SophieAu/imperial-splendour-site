@@ -3,7 +3,7 @@ title: Imperial Splendour - Rise of the Republic v1.3 - February Developers Blog
 date: 2024-02-22T20:00:17.907Z
 author:
   - QHH
-published: false
+published: true
 excerpt: This is our newest blog on the road to the Rise of the Republic v1.3 release.
 ---
 As you may have noticed, last weekend we didn't publish any news. We didn't stop modding, we just decided, that this blog post would be better to present our most recent progress.
