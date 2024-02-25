@@ -29,4 +29,6 @@ The Commonwealth will either face complete annihilation or freedom for its peopl
 
 ### So, as you can see, Poland is not yet lost!
 
+#### Our next developer's blog will feature the United Provinces.
+
 </center>
