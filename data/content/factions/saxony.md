@@ -1,11 +1,13 @@
 ---
-slug: saxony
 title: Saxony
-description: "Torn apart between Prussia and Austria, can you lead Saxony back to its former glory?"
+slug: saxony
 flag: ../_img/flag_saxony.png
+description: Torn apart between Prussia and Austria, can you lead Saxony back to
+  its former glory?
 ---
 
-The old and paternalistic Holy Roman Empire is torn by the rivalry between the Habsburgs and the Hohenzollerns, and they will try to unite the German Empire and bring it under their hegemonies. Austria and Prussia are not likely to let another Polish-Saxon union happen and any ties with the Polish kingdom threaten Saxony's sovereignty so keeping a balance is essential. Although you are in an alliance with Prussia, having a decent standing army would prove useful, not to mention the danger of another war with the Habsburgs. Crisis in Europe and France's inability to take any action have only encouraged Joseph II in his ambitions. Try allying yourself with protestant states like Hanover and Hesse-Kassel first, Bavaria is more probable to go in an alliance with Austria. Forming alliances with other German states is indispensable and should be your primary strategy.
+
+The old and paternalistic Holy Roman Empire is torn by the rivalry between the Habsburgs and the Hohenzollerns and they will try to unite the German Empire and bring it under their hegemonies Austria and Prussia are not likely to let another Polish-Saxon union happen and any ties with the Polish kingdom threaten Saxony's sovereignty so keeping a balance is essential Although you are in an alliance with Prussia, having a decent standing army would prove useful not to mention the danger of another war with the Habsburgs Crisis in Europe and France's inability to take any action have only encouraged Joseph II in his ambitions. Try allying yourself with protestant states like Hanover and Hesse-Kassel first, Bavaria is more likely to ally with Austria. Forming alliances with other German states is indispensable and should be your primary strategy.
 
 Catherine the Great's influence in the HRE is considerable so flattering the Russian Tsarina might have its conveniences and help preserve Saxony's independence.
 
