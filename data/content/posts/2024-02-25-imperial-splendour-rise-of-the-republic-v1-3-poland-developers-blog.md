@@ -20,3 +20,9 @@ The anti-Polish views and hatred towards the Polish people will die with Frederi
 Try consolidating your ties with Great Britain, but remember it is not the king who declares war, but rather the parliament and the British are not willing to enter war with depleted funds for some distant eastern state. There is always the option to ally yourself with Russia and hope for protection, however, this would cause serious imbalance and Poland may find itself torn between the west and east and its territories turned into battlefields.
 
 The Commonwealth will either face complete annihilation or freedom for its people. One wrong move and the partition might start sooner than expected. The last partition cost you one-third of your land mass and cut off your foreign trade. It will not be easy doing anything without Russia noticing. Act swiftly and you just might survive.
+
+<center>
+
+### So, as you can see, Poland is not yet lost!
+
+</center>
