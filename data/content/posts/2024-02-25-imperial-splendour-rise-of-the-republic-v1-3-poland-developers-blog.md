@@ -21,6 +21,10 @@ Try consolidating your ties with Great Britain, but remember it is not the king 
 
 The Commonwealth will either face complete annihilation or freedom for its people. One wrong move and the partition might start sooner than expected. The last partition cost you one-third of your land mass and cut off your foreign trade. It will not be easy doing anything without Russia noticing. Act swiftly and you just might survive.
 
+***Army to be added***
+
+***Government to be added***
+
 <center>
 
 ### So, as you can see, Poland is not yet lost!
