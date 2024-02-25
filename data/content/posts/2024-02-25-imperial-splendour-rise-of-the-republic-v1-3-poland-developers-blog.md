@@ -9,7 +9,7 @@ excerpt: Todays blog is all about Poland! So take a look what will be in our
 ---
 <center>
 
-
+![Flag Poland](../_img/flag_poland.png "Flag Poland")
 
 </center>
 
