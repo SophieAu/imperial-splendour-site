@@ -27,6 +27,18 @@ The Commonwealth will either face complete annihilation or freedom for its peopl
 
 <center>
 
+![Poland Ministers](../_img/poland-government.png "Poland Ministers")
+
+</center>
+
+<center>
+
+![Poland Opposition](../_img/poland-opposition.png "Poland Opposition")
+
+</center>
+
+<center>
+
 ### So, as you can see, Poland is not yet lost!
 
 #### Our next developer's blog will feature the United Provinces.
