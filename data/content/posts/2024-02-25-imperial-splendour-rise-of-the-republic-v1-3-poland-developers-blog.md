@@ -27,19 +27,7 @@ The Commonwealth will either face complete annihilation or freedom for its peopl
 
 <center>
 
-![Stanisław II](../_img/poland-king.png "Stanisław II")
-
-</center>
-
-<center>
-
-![Poland Ministers](../_img/poland-government.png "Poland Ministers")
-
-</center>
-
-<center>
-
-![Poland Opposition](../_img/poland-opposition.png "Poland Opposition")
+![Polish Government](../_img/poland-government-full.png "Polish Government")
 
 </center>
 
