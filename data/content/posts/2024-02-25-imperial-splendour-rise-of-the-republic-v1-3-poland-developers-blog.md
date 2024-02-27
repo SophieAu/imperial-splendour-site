@@ -44,10 +44,10 @@ Konsyliarz Departamentu Policji: [Michał Mniszech](https://en.wikipedia.org/wik
 ####Opposition:
 
 [Ignacy Potocki](https://en.wikipedia.org/wiki/Ignacy_Potocki)
-Adam książę Czartoryski
-Stanisław Potocki
-Stanisław Małachowski
-Hugo Kołłątaj
+[Adam książę Czartoryski](https://en.wikipedia.org/wiki/Adam_Kazimierz_Czartoryski)
+[Stanisław Potocki](https://en.wikipedia.org/wiki/Stanis%C5%82aw_Kostka_Potocki)
+[Stanisław Małachowski](https://en.wikipedia.org/wiki/Stanis%C5%82aw_Ma%C5%82achowski)
+[Hugo Kołłątaj](Hugo Kołłątaj)
 
 <center>
 
