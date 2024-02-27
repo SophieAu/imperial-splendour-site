@@ -23,6 +23,8 @@ The Commonwealth will either face complete annihilation or freedom for its peopl
 
 ***Army to be added***
 
+#### **Take a look at the men who lead Poland:**
+
 <center>
 
 ![Polish Government](../_img/poland-government-full.png "Polish Government")
