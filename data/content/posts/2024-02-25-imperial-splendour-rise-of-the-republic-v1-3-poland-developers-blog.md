@@ -31,7 +31,7 @@ The Commonwealth will either face complete annihilation or freedom for its peopl
 
 </center>
 
-King: Stanisław II
+King: [Stanisław II](https://en.wikipedia.org/wiki/Stanis%C5%82aw_August_Poniatowski)
 
 ####Government:
 
