@@ -31,6 +31,24 @@ The Commonwealth will either face complete annihilation or freedom for its peopl
 
 </center>
 
+King: Stanisław II
+
+####Government:
+
+Konsyliarz Departamentu Interesów Cudzoziemskich: [Michał Poniatowski](https://en.wikipedia.org/wiki/Micha%C5%82_Jerzy_Poniatowski)
+Konsyliarz Departamentu Skarbowego: [Stanisław Poniatowski](https://en.wikipedia.org/wiki/Stanis%C5%82aw_Poniatowski_(1754%E2%80%931833))
+Konsyliarz Departamentu Sprawiedliwości: [Jacek Małachowski](https://en.wikipedia.org/wiki/Jacek_Ma%C5%82achowski)
+Konsyliarz Departamentu Wojskowego: [Szczęsny Potocki](https://en.wikipedia.org/wiki/Stanis%C5%82aw_Szcz%C4%99sny_Potocki)
+Konsyliarz Departamentu Policji: [Michał Mniszech](https://en.wikipedia.org/wiki/Micha%C5%82_Jerzy_Mniszech)
+
+####Opposition:
+
+[Ignacy Potocki](https://en.wikipedia.org/wiki/Ignacy_Potocki)
+Adam książę Czartoryski
+Stanisław Potocki
+Stanisław Małachowski
+Hugo Kołłątaj
+
 <center>
 
 ### So, as you can see, Poland is not yet lost!
