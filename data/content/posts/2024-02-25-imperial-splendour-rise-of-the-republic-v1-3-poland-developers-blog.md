@@ -31,23 +31,23 @@ The Commonwealth will either face complete annihilation or freedom for its peopl
 
 </center>
 
-King: [Stanisław II](https://en.wikipedia.org/wiki/Stanis%C5%82aw_August_Poniatowski)
+##### King: [Stanisław II](https://en.wikipedia.org/wiki/Stanis%C5%82aw_August_Poniatowski)
 
-####Government:
+##### Government:
 
-Konsyliarz Departamentu Interesów Cudzoziemskich: [Michał Poniatowski](https://en.wikipedia.org/wiki/Micha%C5%82_Jerzy_Poniatowski)
-Konsyliarz Departamentu Skarbowego: [Stanisław Poniatowski](https://en.wikipedia.org/wiki/Stanis%C5%82aw_Poniatowski_(1754%E2%80%931833))
-Konsyliarz Departamentu Sprawiedliwości: [Jacek Małachowski](https://en.wikipedia.org/wiki/Jacek_Ma%C5%82achowski)
-Konsyliarz Departamentu Wojskowego: [Szczęsny Potocki](https://en.wikipedia.org/wiki/Stanis%C5%82aw_Szcz%C4%99sny_Potocki)
-Konsyliarz Departamentu Policji: [Michał Mniszech](https://en.wikipedia.org/wiki/Micha%C5%82_Jerzy_Mniszech)
+1. Konsyliarz Departamentu Interesów Cudzoziemskich: [Michał Poniatowski](https://en.wikipedia.org/wiki/Micha%C5%82_Jerzy_Poniatowski)
+2. Konsyliarz Departamentu Skarbowego: [Stanisław Poniatowski](https://en.wikipedia.org/wiki/Stanis%C5%82aw_Poniatowski_(1754%E2%80%931833))
+3. Konsyliarz Departamentu Sprawiedliwości: [Jacek Małachowski](https://en.wikipedia.org/wiki/Jacek_Ma%C5%82achowski)
+4. Konsyliarz Departamentu Wojskowego: [Szczęsny Potocki](https://en.wikipedia.org/wiki/Stanis%C5%82aw_Szcz%C4%99sny_Potocki)
+5. Konsyliarz Departamentu Policji: [Michał Mniszech](https://en.wikipedia.org/wiki/Micha%C5%82_Jerzy_Mniszech)
 
-####Opposition:
+##### Opposition:
 
-[Ignacy Potocki](https://en.wikipedia.org/wiki/Ignacy_Potocki)
-[Adam książę Czartoryski](https://en.wikipedia.org/wiki/Adam_Kazimierz_Czartoryski)
-[Stanisław Potocki](https://en.wikipedia.org/wiki/Stanis%C5%82aw_Kostka_Potocki)
-[Stanisław Małachowski](https://en.wikipedia.org/wiki/Stanis%C5%82aw_Ma%C5%82achowski)
-[Hugo Kołłątaj](Hugo Kołłątaj)
+1. [Ignacy Potocki](https://en.wikipedia.org/wiki/Ignacy_Potocki)[](https://en.wikipedia.org/wiki/Adam_Kazimierz_Czartoryski)
+2. [Adam książę Czartoryski](https://en.wikipedia.org/wiki/Adam_Kazimierz_Czartoryski)[](https://en.wikipedia.org/wiki/Stanis%C5%82aw_Kostka_Potocki)
+3. [Stanisław Potocki](https://en.wikipedia.org/wiki/Stanis%C5%82aw_Kostka_Potocki)[](https://en.wikipedia.org/wiki/Stanis%C5%82aw_Ma%C5%82achowski)
+4. [Stanisław Małachowski](https://en.wikipedia.org/wiki/Stanis%C5%82aw_Ma%C5%82achowski)[](https://en.wikipedia.org/wiki/Hugo_Ko%C5%82%C5%82%C4%85taj)
+5. [Hugo Kołłątaj](https://en.wikipedia.org/wiki/Hugo_Ko%C5%82%C5%82%C4%85taj)
 
 <center>
 
