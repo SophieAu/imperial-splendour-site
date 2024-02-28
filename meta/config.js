@@ -106,3 +106,5 @@ exports.filesystemContentOptions = { name: 'content', path: `${__dirname}/../dat
 exports.filesystemImageOptions = { name: 'img', path: `${__dirname}/../data/img/` };
 
 exports.socialImageOptions = { design: renderCard };
+
+exports.remarkImagesOptions = { linkImagesToOriginal: false, backgroundColor: `transparent` };

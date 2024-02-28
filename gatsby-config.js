@@ -10,6 +10,7 @@ const {
   filesystemImageOptions,
   transformerRemarkOptions,
   socialImageOptions,
+  remarkImagesOptions,
 } = require('./meta/config');
 
 module.exports = {
@@ -33,5 +34,6 @@ module.exports = {
     { resolve: 'gatsby-source-filesystem', options: filesystemImageOptions },
     { resolve: `gatsby-transformer-remark`, options: transformerRemarkOptions },
     { resolve: `gatsby-remark-social-image`, options: socialImageOptions },
+    { resolve: `gatsby-remark-images`, options: remarkImagesOptions },
   ],
 };
