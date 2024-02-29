@@ -26,3 +26,5 @@ Thanks for reading this blog and until soon!
 Your,
 
 Imperial Splendour team.
+
+![RotR 1.3 promo pic](../_img/rotr-1.3teaser.png "RotR 1.3 promo pic")
