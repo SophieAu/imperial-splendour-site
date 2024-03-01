@@ -8,7 +8,15 @@ excerpt: We are searching for new Beta-Testers. Apply today!
 ---
 Hello everyone,
 
-today's blog is about beta testing. With 1.3 we want to deliver a version as stable as possible. And that's why we need you. Creating new content and testing doesn't work at the same time. So if you want to help in creating RotR 1.3 you can apply for testing. But before applying we would like you to take a look at the requirements for testing:
+today's blog is about beta testing. With 1.3 we want to deliver a version as stable as possible. And that's why we need you. Creating new content and testing doesn't work at the same time. So if you want to help in creating RotR 1.3 you can apply for testing. Currently, we are planning different stages for testing to get rid of the annoying campaign CTDs. 
+
+In the first stage, the new ancillaries will be disabled. 
+
+In the second phase, the new ships will be disabled. 
+
+At last, you have to try out Large Address Aware.
+
+But before applying we would like you to take a look at the requirements for testing:
 
 What are the requirements you need to fulfil as a beta tester?
 
