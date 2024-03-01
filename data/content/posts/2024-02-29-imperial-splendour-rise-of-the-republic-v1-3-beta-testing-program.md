@@ -32,6 +32,8 @@ So if you (want to) fulfil the requirements you can apply at Discord by followin
 
 https://discord.com/channels/762344127899107339/1213228871965745182
 
+Keep in mind that our testing program is not an early access, depending on the stage we actively disable content to fix bugs.
+
 Thanks for reading this blog and until soon!
 
 Your,
