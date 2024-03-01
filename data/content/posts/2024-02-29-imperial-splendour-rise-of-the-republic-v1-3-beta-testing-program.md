@@ -18,7 +18,7 @@ What are the requirements you need to fulfil as a beta tester?
 4. The CTD reports have to be specific. You shall specify if the CTD did occur during battle or campaign. If it's a campaign CTD we need you to specify when exactly the crash happened (during which factions turn).
 5. You have to try to find a workaround for a campaign crash (did reloading the save help? / Did doing some diplomacy help?).
 6. Furthermore, we need you to take a look at our new ships. Are there any weird textures, does the rigging fit, do the sails work and are no people jumping into the water?
-7. Do not publish any undisclosed work and files.
+7. Do not publish any undisclosed work and files without our explicit approval.
 
 So if you (want to) fulfil the requirements you can apply at Discord by following this link: 
 
