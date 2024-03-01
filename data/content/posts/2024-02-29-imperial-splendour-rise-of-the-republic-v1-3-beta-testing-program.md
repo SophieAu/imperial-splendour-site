@@ -3,7 +3,7 @@ title: Imperial Splendour - Rise of the Republic v1.3 - Beta Testing Program
 date: 2024-03-01T20:09:37.689Z
 author:
   - QHH
-published: false
+published: true
 excerpt: We are searching for new Beta-Testers. Apply today!
 ---
 Hello everyone,
