@@ -22,7 +22,7 @@ What are the requirements you need to fulfil as a beta tester?
 
 So if you (want to) fulfil the requirements you can apply at Discord by following this link: 
 
-*link to discord thread to be added.*
+https://discord.com/channels/762344127899107339/1213228871965745182
 
 Thanks for reading this blog and until soon!
 
