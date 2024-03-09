@@ -21,7 +21,11 @@ Try consolidating your ties with Great Britain, but remember it is not the king 
 
 The Commonwealth will either face complete annihilation or freedom for its people. One wrong move and the partition might start sooner than expected. The last partition cost you one-third of your land mass and cut off your foreign trade. It will not be easy doing anything without Russia noticing. Act swiftly and you just might survive.
 
-***Army to be added***
+#### **Thanks to** Жук **we can include his submod into our mod. So take a look at our ne Polish army:**
+
+![Polish army collage](../_img/army.png "Polish army collage")
+
+But commanding an army will not help you govern the Commonwealth. To be able to govern you need some politicians and administrators who can also pacify your unruly nobility.
 
 #### **Take a look at the men who lead Poland:**
 
