@@ -55,7 +55,7 @@ But commanding an army will not help you govern the Commonwealth. To be able to 
 
 <center>
 
-### So, as you can see, Poland is not yet lost!
+### So, as you can see, with your help, Poland is not yet lost!
 
 #### Our next developer's blog will feature the United Provinces.
 
