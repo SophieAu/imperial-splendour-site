@@ -41,7 +41,7 @@ Regiment Pieszy Koronny Królewicza and Koronna Brygada Kawalerii Narodowej
 
 Pułk Wiernych Kozaków and Koronni Strzelcy Celni
 
-<img src="https://cdn.discordapp.com/attachments/1211358129577664542/1216147733253980341/POL_-_Cav_Light_Cossacks.png?ex=65ff54d6&is=65ecdfd6&hm=a34893066d6d0d6925eaf1bfc30307346e6bdaece939be00636cbfbec6e2fe7e&" alt="Pułk Wiernych Kozaków" width="450" height="603"> <img src="https://cdn.discordapp.com/attachments/1211358129577664542/1216148078969491566/POL_-_Inf_Rifle_Pol.png?ex=65ff5528&is=65ece028&hm=c6de330f727469c8d46a4a4264cb797bcd2f01768d1552577120c3ed31bfd881&" alt="Koronni Strzelcy Celni" width="450" height="600">
+<img src="https://cdn.discordapp.com/attachments/1211358129577664542/1216147733253980341/POL_-_Cav_Light_Cossacks.png?ex=65ff54d6&is=65ecdfd6&hm=a34893066d6d0d6925eaf1bfc30307346e6bdaece939be00636cbfbec6e2fe7e&" alt="Pułk Wiernych Kozaków" width="450" height="603"> <img src="https://cdn.discordapp.com/attachments/1211358129577664542/1216148078969491566/POL_-_Inf_Rifle_Pol.png?ex=65ff5528&is=65ece028&hm=c6de330f727469c8d46a4a4264cb797bcd2f01768d1552577120c3ed31bfd881&" alt="Koronni Strzelcy Celni" width="450" height="598">
 
 But commanding an army will not help you govern the Commonwealth. To be able to govern you need some politicians and administrators who can also pacify your unruly nobility.
 
