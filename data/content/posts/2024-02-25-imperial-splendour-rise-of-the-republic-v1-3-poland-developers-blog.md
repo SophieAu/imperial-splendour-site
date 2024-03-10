@@ -3,8 +3,8 @@ title: Imperial Splendour - Rise of the Republic v1.3 - Poland Developers Blog
 date: 2024-03-10T13:42:19.023Z
 author:
   - QHH
-published: false
-excerpt: Todays blog is all about Poland! So take a look what will be in our
+published: true
+excerpt: Today's blog is all about Poland! So take a look at what will be in our
   next upcoming update.
 ---
 <center>
