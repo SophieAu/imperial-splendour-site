@@ -35,21 +35,17 @@ Regiment Pieszy Koronny Potockiego and Litewska Artyleria:
 
 Regiment Gwardii Konnej Litewskiej and Regiment Gwardii Pieszej Litewskiej
 
-![Regiment Gwardii Konnej Litewskiej](https://cdn.discordapp.com/attachments/1211358129577664542/1216139794887872572/POL_-_Cav_Guard_Lit.png?ex=65ff4d71&is=65ecd871&hm=fe7efe536f7706921488f0008ae43b84ac105181e2f6229629c9520874577211& "Regiment Gwardii Konnej Litewskiej")
+<img src="https://cdn.discordapp.com/attachments/1211358129577664542/1216139794887872572/POL_-_Cav_Guard_Lit.png?ex=65ff4d71&is=65ecd871&hm=fe7efe536f7706921488f0008ae43b84ac105181e2f6229629c9520874577211& "Regiment Gwardii Konnej Litewskiej")
 
-![Regiment Gwardii Pieszej Litewskiej](https://cdn.discordapp.com/attachments/1211358129577664542/1216139864685285406/POL_-_Inf_Guard_Lit.png?ex=65ff4d82&is=65ecd882&hm=1a96e97d11253f30307078100d59177fe73b3eb03855fe3df16dbb88c1b4704b&v "Regiment Gwardii Pieszej Litewskiej")
+<img src="https://cdn.discordapp.com/attachments/1211358129577664542/1216139864685285406/POL_-_Inf_Guard_Lit.png?ex=65ff4d82&is=65ecd882&hm=1a96e97d11253f30307078100d59177fe73b3eb03855fe3df16dbb88c1b4704b&v "Regiment Gwardii Pieszej Litewskiej")
 
 Regiment Pieszy Koronny Królewicza and Koronna Brygada Kawalerii Narodowej
 
-![Regiment Pieszy Koronny Królewicza](https://cdn.discordapp.com/attachments/1211358129577664542/1216146431732350986/POL_-_Inf_Elite_Krolewicza.png?ex=65ff53a0&is=65ecdea0&hm=996edf1f436d611212813b31f31f5568644bfbadf57e9142a02d8d6a7fdc0e1d& "Regiment Pieszy Koronny Królewicza")
-
-![Koronna Brygada Kawalerii Narodowej](https://cdn.discordapp.com/attachments/1211358129577664542/1216146806573109258/POL_-_Cav_Med.png?ex=65ff53f9&is=65ecdef9&hm=980906de587ad7ffcb450b55064180b62a34691cbb06bdf9fc94885d4cce35dc& "Koronna Brygada Kawalerii Narodowej")
+![Regiment Pieszy Koronny Królewicza](https://cdn.discordapp.com/attachments/1211358129577664542/1216146431732350986/POL_-_Inf_Elite_Krolewicza.png?ex=65ff53a0&is=65ecdea0&hm=996edf1f436d611212813b31f31f5568644bfbadf57e9142a02d8d6a7fdc0e1d& "Regiment Pieszy Koronny Królewicza") ![Koronna Brygada Kawalerii Narodowej](https://cdn.discordapp.com/attachments/1211358129577664542/1216146806573109258/POL_-_Cav_Med.png?ex=65ff53f9&is=65ecdef9&hm=980906de587ad7ffcb450b55064180b62a34691cbb06bdf9fc94885d4cce35dc& "Koronna Brygada Kawalerii Narodowej")
 
 Pułk Wiernych Kozaków and Koronni Strzelcy Celni
 
-![Pułk Wiernych Kozaków](https://cdn.discordapp.com/attachments/1211358129577664542/1216147733253980341/POL_-_Cav_Light_Cossacks.png?ex=65ff54d6&is=65ecdfd6&hm=a34893066d6d0d6925eaf1bfc30307346e6bdaece939be00636cbfbec6e2fe7e& "Pułk Wiernych Kozaków")
-
-![Koronni Strzelcy Celni](https://cdn.discordapp.com/attachments/1211358129577664542/1216148078969491566/POL_-_Inf_Rifle_Pol.png?ex=65ff5528&is=65ece028&hm=c6de330f727469c8d46a4a4264cb797bcd2f01768d1552577120c3ed31bfd881& "Koronni Strzelcy Celni")
+![Pułk Wiernych Kozaków](https://cdn.discordapp.com/attachments/1211358129577664542/1216147733253980341/POL_-_Cav_Light_Cossacks.png?ex=65ff54d6&is=65ecdfd6&hm=a34893066d6d0d6925eaf1bfc30307346e6bdaece939be00636cbfbec6e2fe7e& "Pułk Wiernych Kozaków") ![Koronni Strzelcy Celni](https://cdn.discordapp.com/attachments/1211358129577664542/1216148078969491566/POL_-_Inf_Rifle_Pol.png?ex=65ff5528&is=65ece028&hm=c6de330f727469c8d46a4a4264cb797bcd2f01768d1552577120c3ed31bfd881& "Koronni Strzelcy Celni")
 
 But commanding an army will not help you govern the Commonwealth. To be able to govern you need some politicians and administrators who can also pacify your unruly nobility.
 
