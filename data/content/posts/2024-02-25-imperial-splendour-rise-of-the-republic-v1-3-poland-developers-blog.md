@@ -27,9 +27,9 @@ The Commonwealth will either face complete annihilation or freedom for its peopl
 
 Here are some more plates for some of the new units:
 
-Regiment Pieszy Koronny Potockiego and Litewska Artyleria:
+7 Regiment Pieszy Litewski and Litewska Artyleria:
 
-<img src="https://cdn.discordapp.com/attachments/1211358129577664542/1216138691576332408/POL_-_Inf_Sup_Potockiego.png?ex=65ff4c6a&is=65ecd76a&hm=5ee987306f05aa311351a4dd1a6db4c72a4c8033b6192ef9a95266e15374cc53&" alt="Regiment Pieszy Koronny Potockiego" width="450" height="600"> <img src="https://cdn.discordapp.com/attachments/1211358129577664542/1216139721282162819/POL_-_Art_Lit.png?ex=65ff4d60&is=65ecd860&hm=65eb5884a57ec5761744f87a5710b35a539bdc8d0544be081a94be4c999c23b2&" alt="Litewska Artyleria" width="450" height="606">
+<img src="https://cdn.discordapp.com/attachments/1211358129577664542/1216138691576332408/POL_-_Inf_Sup_Potockiego.png?ex=65ff4c6a&is=65ecd76a&hm=5ee987306f05aa311351a4dd1a6db4c72a4c8033b6192ef9a95266e15374cc53&" alt="7 Regiment Pieszy Litewski" width="450" height="600"> <img src="https://cdn.discordapp.com/attachments/1211358129577664542/1216139721282162819/POL_-_Art_Lit.png?ex=65ff4d60&is=65ecd860&hm=65eb5884a57ec5761744f87a5710b35a539bdc8d0544be081a94be4c999c23b2&" alt="Litewska Artyleria" width="450" height="606">
 
 Regiment Gwardii Konnej Litewskiej and Regiment Gwardii Pieszej Litewskiej
 
