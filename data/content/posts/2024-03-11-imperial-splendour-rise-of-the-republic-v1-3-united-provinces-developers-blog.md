@@ -30,4 +30,8 @@ Act decisively, before we turn into a mere pawn in a chess game.
 
 Also, we added updated flags for the campaign and battles. Have a look at how the colonel's colours for the United Provinces were created:
 
+<center>
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/vCs8quP1AFk?si=_6iB37TuvPMhXp3F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+</center>
