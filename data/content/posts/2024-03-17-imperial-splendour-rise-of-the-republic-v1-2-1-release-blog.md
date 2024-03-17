@@ -14,4 +14,17 @@ There was no preview this week because we prepared a bugfix patch for you! Our b
 #### Here is the installation tutorial:
 
 1. If you haven't installed RotR 1.2 yet, [download RotR 1.2](https://imperialsplendour.com/download) and [install it](https://imperialsplendour.com/blog/2022-08-01-rotr-12-installation-tutorial). 
-2.
+2. Download RotR 1.2.1
+3. Open the .zip file.
+
+   \[img]
+4. There are two folders in the .zip file. If you use the **launcher proceed with step *5*** if you have installed RotR 1.2 **manually proceed with step X**.
+5. Open the launcher.
+
+   ![](../_img/launcher-1.png)
+
+
+6. Deactivate RotR.
+
+   ![](../_img/launcher-2.png)
+7.
