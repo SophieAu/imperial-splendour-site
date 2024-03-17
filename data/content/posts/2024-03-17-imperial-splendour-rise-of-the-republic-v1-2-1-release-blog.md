@@ -31,7 +31,7 @@ There was no preview this week because we prepared a bugfix patch for you! Our b
 
    ![](../_img/new-tuto-3.png)
 6. Click on extract and confirm you want to overwrite files.
-7. (**Only if you use the launcher**: Start the launcher again, if you can see the version number "1.2.1" you have successfully installed RotR 1.2.1.
+7. (**Only if you use the launcher**: Start the launcher again, if you can see the version number "1.2.1" in the bottom right corner you have successfully installed RotR 1.2.1.)
 
    ![](../_img/new-launcher-final.png)
 8. You got it, you now have installed RotR 1.2.1.
