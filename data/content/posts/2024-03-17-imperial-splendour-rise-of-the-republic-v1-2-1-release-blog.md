@@ -44,7 +44,7 @@ Please remember that the change does not suit every faction the same and, for a 
 
 #### Changelog:
 
-1. Removed:
+1. Removed:\
    export_triggers.lua because it caused random CTDs during a campaign.
 2. Fixed:\
    The scripting.lua disabling late-era ships.
