@@ -27,7 +27,7 @@ Please remember that the change does not suit every faction the same and, for a 
 
 1. If you haven't installed RotR 1.2 yet, [download RotR 1.2](https://imperialsplendour.com/download) and [install it](https://imperialsplendour.com/blog/2022-08-01-rotr-12-installation-tutorial). 
 2. [Download RotR 1.2.1](https://imperialsplendour.com/download). You can find download links at the bottom of the side.
-3. (**Only if you use the launcher**: Make sure you activated RotR 1.2 through the launcher, that is the case when you can see the RotR logo. Then close the launcher.)
+3. (**Only if you use the launcher**: Make sure you activated RotR 1.2 through the launcher, that is the case when you can see the RotR logo. **Then close the launcher.**)
 
    ![](../_img/launcher-1.png)
 4. Click right on the RotR 1.2.1.zip file and left on Extract All..
