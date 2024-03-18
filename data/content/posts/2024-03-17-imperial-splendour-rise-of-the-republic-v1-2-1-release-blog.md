@@ -11,6 +11,12 @@ excerpt: Today we release a bugfix update for RotR 1.2
 
 There was no preview this week because we prepared a bugfix patch for you! Our beta testing is running well and we already have some results. Most important we could identify the source of random campaign crashes.
 
+So with the Patch, the random campaign crashes will be fixed. Also, some time ago we noticed a critical error in the naval script that disables and then re-enables the late ships throughout the campaign. We corrected this issue some time ago unofficially with a hotfix available on our Discord server, and after some testing now it's here.
+
+This script will disable the "late ships" of your faction on turn 2 (please always pass the first turn with no interactions!) and will re-enable them on the late part of your campaign, around the year 1793. We've moved the date up a bit as we've heard several reports on the time not being enough to fully exploit the early ships, and, with several building upgrades and technologies required too, we understand this. So at turn 50 you should lose your old early ships and gain new, late ones.
+
+Please remember that the change does not suit every faction the same and, for a few factions, it hinders your navy's size and capabilities (as historically depicted). We encourage you to try every nation out and see what fits your game style the best! And if that certain faction you love happens to lose naval capabilities at the end-game, remember that all factions have a unique technology providing with very-late, very-powerful ships, some, in the case of Sweden for example, never placed under construction but which plans remain to this day. Use them wisely.
+
 <center>
 
 ### [Download RotR 1.2.1 here](https://imperialsplendour.com/download) (at the bottom of the page).
@@ -40,4 +46,5 @@ There was no preview this week because we prepared a bugfix patch for you! Our b
 
 1. Removed:
    export_triggers.lua because it caused random CTDs during a campaign.
-2.
+2. Fixed:\
+   The scripting.lua disabling late-era ships.
