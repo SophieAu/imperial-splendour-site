@@ -4,8 +4,8 @@ date: 2024-03-18T19:24:35.351Z
 author:
   - QHH
   - SirJohn
-published: false
-excerpt: Today we release a bugfix for RotR 1.2.
+published: true
+excerpt: Today we released a bugfix for RotR 1.2.
 ---
 ### Greetings everyone!
 
