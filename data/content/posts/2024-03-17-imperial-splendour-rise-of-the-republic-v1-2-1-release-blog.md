@@ -19,7 +19,7 @@ Please remember that the change does not suit every faction the same and, for a 
 
 <center>
 
-### [Download RotR 1.2.1 here](https://imperialsplendour.com/download) (at the bottom of the page).
+### [Download RotR 1.2.1 here](https://imperialsplendour.com/download) (at the bottom of download the page).
 
 </center>
 
