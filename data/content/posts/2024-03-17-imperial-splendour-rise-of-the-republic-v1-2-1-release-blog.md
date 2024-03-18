@@ -5,7 +5,7 @@ author:
   - QHH
   - SirJohn
 published: false
-excerpt: Today we release a bugfix update for RotR 1.2
+excerpt: Today we release a bugfix for RotR 1.2
 ---
 ### Greetings everyone!
 
