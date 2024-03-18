@@ -9,7 +9,7 @@ excerpt: Today we release a bugfix for RotR 1.2
 ---
 ### Greetings everyone!
 
-There was no preview this week because we prepared a bugfix patch for you! Our beta testing is running well and we already have some results. Most important we could identify the source of random campaign crashes.
+There was no preview last week because we prepared a bugfix patch for you! Our beta testing is running well and we already have some results. Most important we could identify the source of random campaign crashes.
 
 So with the Patch, the random campaign crashes will be fixed. Also, some time ago we noticed a critical error in the naval script that disables and then re-enables the late ships throughout the campaign. We corrected this issue some time ago unofficially with a hotfix available on our Discord server, and after some testing now it's here.
 
