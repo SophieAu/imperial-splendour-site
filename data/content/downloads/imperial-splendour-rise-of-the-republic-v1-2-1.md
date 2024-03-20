@@ -7,4 +7,6 @@ links:
     link: https://drive.google.com/open?id=12EbZOg1V_mq8fCZpvIzycqVwS0dUX7kW&usp=drive_fs
   - host: MediaFire
     link: https://www.mediafire.com/file/3v0uiqa0j7jg3ly/RotR_1.2.1.zip/file
+  - link: https://www.moddb.com/mods/imperial-splendour/downloads/imperial-splendour-rise-of-the-republic-v121
+    host: ModDB
 ---
