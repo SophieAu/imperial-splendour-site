@@ -104,6 +104,6 @@ Also, we added updated flags for the campaign and battles. Have a look at how th
 
 </iframe>
 
-</center>
-
 ### Our next developer's blog will feature the final part of the Neapolitan army.
+
+</center>
