@@ -34,6 +34,14 @@ Dragoon of the "Garde Dragonders" and Officer of the "Hollandse Garde":
 
 </center>
 
+Officer of the "Hollandse Cavalerie":
+
+<center>
+
+<img src="https://media.discordapp.net/attachments/1212039250951020625/1249180923061211226/UP_-_Cav_Officer.png?ex=666706a4&is=6665b524&hm=c7a1b29c849573feda8c55cbe1a648a3f21f45c5f4633f0363f6f6f45415eecd&=&format=webp&quality=lossless&width=523&height=701" alt="Officer of the Hollandse Cavalerie" width="450" height="603">
+
+</center>
+
 Fusilier of the Swiss Infantry and Grenadier of the "Waldeck" foreign Infantry: 
 
 <center>
@@ -47,6 +55,14 @@ Grenadier of the "Exercitiegenootschappen" patriotic militia, notable for their 
 <center>
 
 <img src="https://media.discordapp.net/attachments/1212039250951020625/1249183865990549627/UP_-_Poor_Gren.png?ex=66670962&is=6665b7e2&hm=ed9d4d6fb6ac3d6eafb398ba316309b47156e019e599e6e66b7fab55486130d5&=&format=webp&quality=lossless&width=523&height=701" alt="Grenadier of the Exercitiegenootschappen patriotic militia" width="450" height="603"> <img src="https://media.discordapp.net/attachments/1212039250951020625/1249184427091820615/UP_-_Inf_Militia.png?ex=666709e8&is=6665b868&hm=9652ccc3e8692f881b8f6104f1ac11e5b404d7dc631916d811e55eaace99a045&=&format=webp&quality=lossless&width=522&height=700" alt="Fusilier of the Schutterij militia" width="450" height="604">
+
+</center>
+
+Dragoon of the "Javaanse Dragonders", Javanese Dragoons in service of the VOC and French Regiment de Meuron (1795), in service with the VOC: 
+
+<center>
+
+<img src="https://media.discordapp.net/attachments/1212039250951020625/1249180695356506226/UP_-_Col_Dragoons.png?ex=6667066e&is=6665b4ee&hm=381be6bf2341fc9014438c9b72e999462b25a04531372b70dd79e369f26555c4&=&format=webp&quality=lossless&width=525&height=701" alt="Dragoon of the Javaanse Dragonders" width="450" height="600"> <img src="https://media.discordapp.net/attachments/1212039250951020625/1223308848228733028/UP_-_Inf_Line_Colonial.png?ex=666681e5&is=66653065&hm=6161df3cf39f3fe727776f04cc6dd1ed091598e2548bb46add151e89e33854aa&=&format=webp&quality=lossless&width=522&height=701" alt="Regiment de Meuron" width="450" height="604">
 
 </center>
 
