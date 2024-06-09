@@ -42,6 +42,13 @@ Fusilier of the Swiss Infantry and Grenadier of the "Waldeck" foreign Infantry:
 
 </center>
 
+Grenadier of the "Exercitiegenootschappen" patriotic militia, notable for their role in the 1787 Patriottentijd "rebellion" and Fusilier of the "Schutterij" militia, the old (Orangist) militia of the Netherlands: 
+
+<center>
+
+<img src="https://media.discordapp.net/attachments/1212039250951020625/1249183865990549627/UP_-_Poor_Gren.png?ex=66670962&is=6665b7e2&hm=ed9d4d6fb6ac3d6eafb398ba316309b47156e019e599e6e66b7fab55486130d5&=&format=webp&quality=lossless&width=523&height=701" alt="Grenadier of the Exercitiegenootschappen patriotic militia" width="450" height="603"> <img src="https://media.discordapp.net/attachments/1212039250951020625/1249184427091820615/UP_-_Inf_Militia.png?ex=666709e8&is=6665b868&hm=9652ccc3e8692f881b8f6104f1ac11e5b404d7dc631916d811e55eaace99a045&=&format=webp&quality=lossless&width=522&height=700" alt="Fusilier of the Schutterij militia" width="450" height="604">
+
+</center>
 
 ##### **Here are the men who lead your government:**
 
