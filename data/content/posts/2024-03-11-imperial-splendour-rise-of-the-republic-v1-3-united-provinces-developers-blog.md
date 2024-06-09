@@ -96,16 +96,12 @@ Dragoon of the "Javaanse Dragonders", Javanese Dragoons in service of the VOC an
 4. [Adriaan van Zeebergh](https://nl.wikipedia.org/wiki/Adriaan_van_Zeebergh)
 5. [Pieter Paulus](https://nl.wikipedia.org/wiki/Pieter_Paulus)
 
+Also, we added updated flags for the campaign and battles. Have a look at how the colonel's colours for the United Provinces were created:
+
 <center>
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/vCs8quP1AFk?si=_6iB37TuvPMhXp3F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 
 </center>
-
-Also, we added updated flags for the campaign and battles. Have a look at how the colonel's colours for the United Provinces were created:
-
-
-
-inuzgnuzuznfzfunznfiufiuznnfiuz
 
 ### Our next developer's blog will feature the final part of the Neapolitan army.
