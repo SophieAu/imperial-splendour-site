@@ -26,6 +26,8 @@ So, after our position in America and Asia being returned to a form of stability
 
 Act decisively, before we turn into a mere pawn in a chess game.
 
+### **And here is your army which might prevent you from getting a pawn in the game for European supremacy:**
+
 Dragoon of the "Garde Dragonders" and Officer of the "Hollandse Garde": 
 
 <center>
@@ -66,7 +68,7 @@ Dragoon of the "Javaanse Dragonders", Javanese Dragoons in service of the VOC an
 
 </center>
 
-##### **Here are the men who lead your government:**
+### **Here are the men who lead your government:**
 
 <center>
 
@@ -74,9 +76,9 @@ Dragoon of the "Javaanse Dragonders", Javanese Dragoons in service of the VOC an
 
 </center>
 
-##### Stadhouder: [Willem V](https://en.wikipedia.org/wiki/William_V,_Prince_of_Orange)
+#### Stadhouder: [Willem V](https://en.wikipedia.org/wiki/William_V,_Prince_of_Orange)
 
-##### Staten-Generaal:
+#### Staten-Generaal:
 
 1. Raadpensionaris: [Pieter van Bleiswijk](https://en.wikipedia.org/wiki/Pieter_van_Bleiswijk)
 2. Thesaurier Generaal: [Dirk Rudolf Wijckerheld Bisdom](https://nl.wikipedia.org/wiki/Bisdom_(geslacht))
@@ -86,7 +88,7 @@ Dragoon of the "Javaanse Dragonders", Javanese Dragoons in service of the VOC an
 6. Bewindhebber van de W.I.C.: [Jan Bernd Bicker](https://en.wikipedia.org/wiki/Jan_Bernd_Bicker)
 7. Gouverneur Generaal: [Willem Arnold Alting](https://en.wikipedia.org/wiki/Willem_Arnold_Alting)
 
-##### Opposition:
+#### Opposition:
 
 1. [Engelbert François van Berckel](https://en.wikipedia.org/wiki/Engelbert_Fran%C3%A7ois_van_Berckel)
 2. [Carel Wouter Visscher](https://nl.wikipedia.org/wiki/Carel_Wouter_Visscher)
