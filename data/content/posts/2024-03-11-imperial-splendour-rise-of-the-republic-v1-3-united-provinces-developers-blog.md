@@ -26,7 +26,31 @@ So, after our position in America and Asia being returned to a form of stability
 
 Act decisively, before we turn into a mere pawn in a chess game.
 
+Here are the men who lead your government:
 
+<center>
+
+![Polish Government](../_img/poland-government-full.png "Polish Government")
+
+</center>
+
+##### King: [Stanisław II](https://en.wikipedia.org/wiki/Stanis%C5%82aw_August_Poniatowski)
+
+##### Government:
+
+1. Konsyliarz Departamentu Interesów Cudzoziemskich: [Michał Poniatowski](https://en.wikipedia.org/wiki/Micha%C5%82_Jerzy_Poniatowski)
+2. Konsyliarz Departamentu Skarbowego: [Stanisław Poniatowski](https://en.wikipedia.org/wiki/Stanis%C5%82aw_Poniatowski_(1754%E2%80%931833))
+3. Konsyliarz Departamentu Sprawiedliwości: [Jacek Małachowski](https://en.wikipedia.org/wiki/Jacek_Ma%C5%82achowski)
+4. Konsyliarz Departamentu Wojskowego: [Szczęsny Potocki](https://en.wikipedia.org/wiki/Stanis%C5%82aw_Szcz%C4%99sny_Potocki)
+5. Konsyliarz Departamentu Policji: [Michał Mniszech](https://en.wikipedia.org/wiki/Micha%C5%82_Jerzy_Mniszech)
+
+##### Opposition:
+
+1. [Ignacy Potocki](https://en.wikipedia.org/wiki/Ignacy_Potocki)[](https://en.wikipedia.org/wiki/Adam_Kazimierz_Czartoryski)
+2. [Adam książę Czartoryski](https://en.wikipedia.org/wiki/Adam_Kazimierz_Czartoryski)[](https://en.wikipedia.org/wiki/Stanis%C5%82aw_Kostka_Potocki)
+3. [Stanisław Potocki](https://en.wikipedia.org/wiki/Stanis%C5%82aw_Kostka_Potocki)[](https://en.wikipedia.org/wiki/Stanis%C5%82aw_Ma%C5%82achowski)
+4. [Stanisław Małachowski](https://en.wikipedia.org/wiki/Stanis%C5%82aw_Ma%C5%82achowski)[](https://en.wikipedia.org/wiki/Hugo_Ko%C5%82%C5%82%C4%85taj)
+5. [Hugo Kołłątaj](https://en.wikipedia.org/wiki/Hugo_Ko%C5%82%C5%82%C4%85taj)
 
 Also, we added updated flags for the campaign and battles. Have a look at how the colonel's colours for the United Provinces were created:
 
