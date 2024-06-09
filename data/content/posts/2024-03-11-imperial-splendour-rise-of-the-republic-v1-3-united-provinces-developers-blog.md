@@ -26,6 +26,23 @@ So, after our position in America and Asia being returned to a form of stability
 
 Act decisively, before we turn into a mere pawn in a chess game.
 
+Dragoon of the "Garde Dragonders" and Officer of the "Hollandse Garde": 
+
+<center>
+
+<img src="https://media.discordapp.net/attachments/1212039250951020625/1249181082318798898/UP_-_Guard_Dragoons.png?ex=666706ca&is=6665b54a&hm=66fb4b9844c0996ae58446ce20f089725a60040eb93bce1f3d84af27d2fd1bd3&=&format=webp&quality=lossless&width=525&height=700" alt="Dragoon of the Garde Dragonders" width="450" height="600"> <img src="https://media.discordapp.net/attachments/1212039250951020625/1249181272455249941/UP_-_Officer_Guard.png?ex=666706f8&is=6665b578&hm=a1738ce5a01ac0b7bf6a2591f021daee1c0ec1129af584252781e5067ea0b54f&=&format=webp&quality=lossless&width=525&height=701" alt="Officer of the Hollandse Garde" width="450" height="600">
+
+</center>
+
+Fusilier of the Swiss Infantry and Grenadier of the "Waldeck" foreign Infantry: 
+
+<center>
+
+<img src="https://media.discordapp.net/attachments/1212039250951020625/1249181432157573120/UP_-_Inf_Swiss.png?ex=6667071e&is=6665b59e&hm=c54d7650f9fbfb040acb738ab00259484601bfa1c5349af16778746e5ab8473e&=&format=webp&quality=lossless&width=523&height=701" alt="Fusilier of the Swiss Infantry" width="450" height="603"> <img src="https://media.discordapp.net/attachments/1212039250951020625/1249181654669332570/UP_-_Waldeck_Gren.png?ex=66670753&is=6665b5d3&hm=4e23c1f5a1aa7e895c7bf5c4384f1d0c570df873c4f92dad283945902e3b1ab4&=&format=webp&quality=lossless&width=522&height=701" alt="Grenadier of the Waldeck foreign Infantry" width="450" height="604">
+
+</center>
+
+
 ##### **Here are the men who lead your government:**
 
 <center>
