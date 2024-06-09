@@ -60,7 +60,7 @@ Grenadier of the "Exercitiegenootschappen" patriotic militia, notable for their 
 
 </center>
 
-Dragoon of the "Javaanse Dragonders", Javanese Dragoons in service of the VOC and French Regiment de Meuron (1795), in service with the VOC: 
+Dragoon of the "Javaanse Dragonders", Javanese Dragoons in service of the VOC and Swiss Regiment de Meuron (1795), in service with the VOC: 
 
 <center>
 
