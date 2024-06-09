@@ -26,31 +26,33 @@ So, after our position in America and Asia being returned to a form of stability
 
 Act decisively, before we turn into a mere pawn in a chess game.
 
-Here are the men who lead your government:
+##### Here are the men who lead your government:
 
 <center>
 
-![Polish Government](../_img/poland-government-full.png "Polish Government")
+![United Provinces Government](../_img/government.png "United Provinces Government")
 
 </center>
 
-##### King: [Stanisław II](https://en.wikipedia.org/wiki/Stanis%C5%82aw_August_Poniatowski)
+##### Stadhouder: [Willem V](https://en.wikipedia.org/wiki/William_V,_Prince_of_Orange)
 
-##### Government:
+##### Staten-Generaal:
 
-1. Konsyliarz Departamentu Interesów Cudzoziemskich: [Michał Poniatowski](https://en.wikipedia.org/wiki/Micha%C5%82_Jerzy_Poniatowski)
-2. Konsyliarz Departamentu Skarbowego: [Stanisław Poniatowski](https://en.wikipedia.org/wiki/Stanis%C5%82aw_Poniatowski_(1754%E2%80%931833))
-3. Konsyliarz Departamentu Sprawiedliwości: [Jacek Małachowski](https://en.wikipedia.org/wiki/Jacek_Ma%C5%82achowski)
-4. Konsyliarz Departamentu Wojskowego: [Szczęsny Potocki](https://en.wikipedia.org/wiki/Stanis%C5%82aw_Szcz%C4%99sny_Potocki)
-5. Konsyliarz Departamentu Policji: [Michał Mniszech](https://en.wikipedia.org/wiki/Micha%C5%82_Jerzy_Mniszech)
+1. Raadpensionaris: [Pieter van Bleiswijk](https://en.wikipedia.org/wiki/Pieter_van_Bleiswijk)
+2. Thesaurier Generaal: [Dirk Rudolf Wijckerheld Bisdom](https://nl.wikipedia.org/wiki/Bisdom_(geslacht))
+3. Hoofdschout: [Abraham Calkoen](https://nl.wikipedia.org/wiki/Abraham_Calkoen)
+4. Kapitein Generaal: [Lodewijk Ernst van Brunswijk-Wolfenbüttel](https://en.wikipedia.org/wiki/Duke_Louis_Ernest_of_Brunswick-L%C3%BCneburg)
+5. Advocaat Fiscaal: [Joan Cornelis van der Hoop](https://en.wikipedia.org/wiki/Joan_Cornelis_van_der_Hoop)
+6. Bewindhebber van de W.I.C.: [Jan Bernd Bicker](https://en.wikipedia.org/wiki/Jan_Bernd_Bicker)
+7. Gouverneur Generaal: [Willem Arnold Alting](https://en.wikipedia.org/wiki/Willem_Arnold_Alting)
 
 ##### Opposition:
 
-1. [Ignacy Potocki](https://en.wikipedia.org/wiki/Ignacy_Potocki)[](https://en.wikipedia.org/wiki/Adam_Kazimierz_Czartoryski)
-2. [Adam książę Czartoryski](https://en.wikipedia.org/wiki/Adam_Kazimierz_Czartoryski)[](https://en.wikipedia.org/wiki/Stanis%C5%82aw_Kostka_Potocki)
-3. [Stanisław Potocki](https://en.wikipedia.org/wiki/Stanis%C5%82aw_Kostka_Potocki)[](https://en.wikipedia.org/wiki/Stanis%C5%82aw_Ma%C5%82achowski)
-4. [Stanisław Małachowski](https://en.wikipedia.org/wiki/Stanis%C5%82aw_Ma%C5%82achowski)[](https://en.wikipedia.org/wiki/Hugo_Ko%C5%82%C5%82%C4%85taj)
-5. [Hugo Kołłątaj](https://en.wikipedia.org/wiki/Hugo_Ko%C5%82%C5%82%C4%85taj)
+1. [Engelbert François van Berckel](https://en.wikipedia.org/wiki/Engelbert_Fran%C3%A7ois_van_Berckel)
+2. [Carel Wouter Visscher](https://nl.wikipedia.org/wiki/Carel_Wouter_Visscher)
+3. Hendrik Daniёlszoon Hooft
+4. [Adriaan van Zeebergh](https://nl.wikipedia.org/wiki/Adriaan_van_Zeebergh)
+5. [Pieter Paulus](https://nl.wikipedia.org/wiki/Pieter_Paulus)
 
 Also, we added updated flags for the campaign and battles. Have a look at how the colonel's colours for the United Provinces were created:
 
