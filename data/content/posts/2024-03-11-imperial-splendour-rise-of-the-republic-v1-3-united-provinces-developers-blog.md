@@ -88,7 +88,7 @@ Dragoon of the "Javaanse Dragonders", Javanese Dragoons in service of the VOC an
 4. Kapitein Generaal: [Lodewijk Ernst van Brunswijk-Wolfenbüttel](https://en.wikipedia.org/wiki/Duke_Louis_Ernest_of_Brunswick-L%C3%BCneburg)
 5. Advocaat Fiscaal: [Joan Cornelis van der Hoop](https://en.wikipedia.org/wiki/Joan_Cornelis_van_der_Hoop)
 6. Bewindhebber van de W.I.C.: [Jan Bernd Bicker](https://en.wikipedia.org/wiki/Jan_Bernd_Bicker)
-7. Gouverneur Generaal: [Willem Arnold Alting](https://en.wikipedia.org/wiki/Willem_Arnold_Alting)
+7. Gouverneur Generaal van de V.O.C.: [Willem Arnold Alting](https://en.wikipedia.org/wiki/Willem_Arnold_Alting)
 
 #### Opposition:
 
