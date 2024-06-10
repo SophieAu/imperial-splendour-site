@@ -32,7 +32,7 @@ Dragoon of the "Garde Dragonders" and Officer of the "Hollandse Garde":
 
 <center>
 
-<img src="https://imperialsplendour.com/static/63b3d8d6f638c667b5f318a5cb2dc29b/4220b/up_-_guard_dragoons.png" alt="Dragoon of the Garde Dragonders" width="450" height="600"> <img src="https://media.discordapp.net/attachments/1212039250951020625/1249181272455249941/UP_-_Officer_Guard.png?ex=666706f8&is=6665b578&hm=a1738ce5a01ac0b7bf6a2591f021daee1c0ec1129af584252781e5067ea0b54f&=&format=webp&quality=lossless&width=525&height=701" alt="Officer of the Hollandse Garde" width="450" height="600">
+<img src="https://imperialsplendour.com/static/63b3d8d6f638c667b5f318a5cb2dc29b/4220b/up_-_guard_dragoons.png" alt="Dragoon of the Garde Dragonders" width="450" height="600"> <img src="https://imperialsplendour.com/static/db1ca694e6dc109586587c19c9df473d/4220b/up_-_officer_guard.png" alt="Officer of the Hollandse Garde" width="450" height="600">
 
 </center>
 
@@ -40,7 +40,7 @@ Officer of the "Hollandse Cavalerie" and Fusilier of the "Oranje Lijninfanterie"
 
 <center>
 
-<img src="https://imperialsplendour.com/static/5774d5e9ab62e2a20236fa388fcee620/4220b/up_-_cav_officer.png" alt="Officer of the Hollandse Cavalerie" width="450" height="603"> <img src="https://media.discordapp.net/attachments/1212039250951020625/1249572657771450439/UP_-_Inf_Oranje.png?ex=66687379&is=666721f9&hm=3f16067852636b4d983e37d06cb6388794fc0d70d8c73e226f165285000a682c&=&format=webp&quality=lossless&width=523&height=700" alt="Fusilier of the Oranje Lijninfanterie" width="450" height="603">
+<img src="https://imperialsplendour.com/static/5774d5e9ab62e2a20236fa388fcee620/4220b/up_-_cav_officer.png" alt="Officer of the Hollandse Cavalerie" width="450" height="603"> <img src="https://imperialsplendour.com/static/a1b3b9c8ae3a015d449cf622f14906f4/0ef32/up_-_inf_oranje.png" alt="Fusilier of the Oranje Lijninfanterie" width="450" height="603">
 
 </center>
 
@@ -48,7 +48,7 @@ Fusilier of the Swiss Infantry and Grenadier of the "Waldeck" foreign Infantry:
 
 <center>
 
-<img src="https://media.discordapp.net/attachments/1212039250951020625/1249181432157573120/UP_-_Inf_Swiss.png?ex=6667071e&is=6665b59e&hm=c54d7650f9fbfb040acb738ab00259484601bfa1c5349af16778746e5ab8473e&=&format=webp&quality=lossless&width=523&height=701" alt="Fusilier of the Swiss Infantry" width="450" height="603"> <img src="https://media.discordapp.net/attachments/1212039250951020625/1249181654669332570/UP_-_Waldeck_Gren.png?ex=66670753&is=6665b5d3&hm=4e23c1f5a1aa7e895c7bf5c4384f1d0c570df873c4f92dad283945902e3b1ab4&=&format=webp&quality=lossless&width=522&height=701" alt="Grenadier of the Waldeck foreign Infantry" width="450" height="604">
+<img src="https://imperialsplendour.com/static/e51af49caa92287b25cb9d574ac951d6/4220b/up_-_inf_swiss.png" alt="Fusilier of the Swiss Infantry" width="450" height="603"> <img src="https://imperialsplendour.com/static/03f19535bb2efd81b3b910c113416879/7a752/up_-_waldeck_gren.png" alt="Grenadier of the Waldeck foreign Infantry" width="450" height="604">
 
 </center>
 
@@ -56,7 +56,7 @@ Grenadier of the "Exercitiegenootschappen" patriotic militia, notable for their 
 
 <center>
 
-<img src="https://media.discordapp.net/attachments/1212039250951020625/1249183865990549627/UP_-_Poor_Gren.png?ex=66670962&is=6665b7e2&hm=ed9d4d6fb6ac3d6eafb398ba316309b47156e019e599e6e66b7fab55486130d5&=&format=webp&quality=lossless&width=523&height=701" alt="Grenadier of the Exercitiegenootschappen patriotic militia" width="450" height="603"> <img src="https://media.discordapp.net/attachments/1212039250951020625/1249184427091820615/UP_-_Inf_Militia.png?ex=666709e8&is=6665b868&hm=9652ccc3e8692f881b8f6104f1ac11e5b404d7dc631916d811e55eaace99a045&=&format=webp&quality=lossless&width=522&height=700" alt="Fusilier of the Schutterij militia" width="450" height="604">
+<img src="https://imperialsplendour.com/static/d0a957c2b33a33557e5a3e48ea2e2896/0ef32/up_-_poor_gren.png" alt="Grenadier of the Exercitiegenootschappen patriotic militia" width="450" height="603"> <img src="https://imperialsplendour.com/static/89a644c2ceb4c3fa7f54a21ac11f229c/0ef32/up_-_inf_militia.png" alt="Fusilier of the Schutterij militia" width="450" height="604">
 
 </center>
 
@@ -64,7 +64,7 @@ Dragoon of the "Javaanse Dragonders", Javanese Dragoons in service of the VOC an
 
 <center>
 
-<img src="https://imperialsplendour.com/static/57af1cc18aecd06e82859ab074d5adf0/27330/up_-_col_dragoons.png" alt="Dragoon of the Javaanse Dragonders" width="450" height="600"> <img src="https://media.discordapp.net/attachments/1212039250951020625/1223308848228733028/UP_-_Inf_Line_Colonial.png?ex=666681e5&is=66653065&hm=6161df3cf39f3fe727776f04cc6dd1ed091598e2548bb46add151e89e33854aa&=&format=webp&quality=lossless&width=522&height=701" alt="Regiment de Meuron" width="450" height="604">
+<img src="https://imperialsplendour.com/static/57af1cc18aecd06e82859ab074d5adf0/27330/up_-_col_dragoons.png" alt="Dragoon of the Javaanse Dragonders" width="450" height="600"> <img src="https://imperialsplendour.com/static/01621d1333eff8ea16550e8a2ec09e94/7a752/up_-_inf_line_colonial.png" alt="Regiment de Meuron" width="450" height="604">
 
 </center>
 
