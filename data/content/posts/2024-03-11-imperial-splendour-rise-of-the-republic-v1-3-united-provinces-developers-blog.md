@@ -36,11 +36,11 @@ Dragoon of the "Garde Dragonders" and Officer of the "Hollandse Garde":
 
 </center>
 
-Officer of the "Hollandse Cavalerie":
+Officer of the "Hollandse Cavalerie" and Fusilier of the "Oranje Lijninfanterie":
 
 <center>
 
-<img src="https://media.discordapp.net/attachments/1212039250951020625/1249180923061211226/UP_-_Cav_Officer.png?ex=666706a4&is=6665b524&hm=c7a1b29c849573feda8c55cbe1a648a3f21f45c5f4633f0363f6f6f45415eecd&=&format=webp&quality=lossless&width=523&height=701" alt="Officer of the Hollandse Cavalerie" width="450" height="603">
+<img src="https://media.discordapp.net/attachments/1212039250951020625/1249180923061211226/UP_-_Cav_Officer.png?ex=666706a4&is=6665b524&hm=c7a1b29c849573feda8c55cbe1a648a3f21f45c5f4633f0363f6f6f45415eecd&=&format=webp&quality=lossless&width=523&height=701" alt="Officer of the Hollandse Cavalerie" width="450" height="603"> <img src="https://media.discordapp.net/attachments/1212039250951020625/1249572657771450439/UP_-_Inf_Oranje.png?ex=66687379&is=666721f9&hm=3f16067852636b4d983e37d06cb6388794fc0d70d8c73e226f165285000a682c&=&format=webp&quality=lossless&width=523&height=700" alt="Fusilier of the Oranje Lijninfanterie" width="450" height="603">
 
 </center>
 
