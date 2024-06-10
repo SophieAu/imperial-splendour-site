@@ -32,7 +32,7 @@ Dragoon of the "Garde Dragonders" and Officer of the "Hollandse Garde":
 
 <center>
 
-<img src="https://media.discordapp.net/attachments/1212039250951020625/1249181082318798898/UP_-_Guard_Dragoons.png?ex=666706ca&is=6665b54a&hm=66fb4b9844c0996ae58446ce20f089725a60040eb93bce1f3d84af27d2fd1bd3&=&format=webp&quality=lossless&width=525&height=700" alt="Dragoon of the Garde Dragonders" width="450" height="600"> <img src="https://media.discordapp.net/attachments/1212039250951020625/1249181272455249941/UP_-_Officer_Guard.png?ex=666706f8&is=6665b578&hm=a1738ce5a01ac0b7bf6a2591f021daee1c0ec1129af584252781e5067ea0b54f&=&format=webp&quality=lossless&width=525&height=701" alt="Officer of the Hollandse Garde" width="450" height="600">
+<img src="https://imperialsplendour.com/static/63b3d8d6f638c667b5f318a5cb2dc29b/4220b/up_-_guard_dragoons.png" alt="Dragoon of the Garde Dragonders" width="450" height="600"> <img src="https://media.discordapp.net/attachments/1212039250951020625/1249181272455249941/UP_-_Officer_Guard.png?ex=666706f8&is=6665b578&hm=a1738ce5a01ac0b7bf6a2591f021daee1c0ec1129af584252781e5067ea0b54f&=&format=webp&quality=lossless&width=525&height=701" alt="Officer of the Hollandse Garde" width="450" height="600">
 
 </center>
 
@@ -40,7 +40,7 @@ Officer of the "Hollandse Cavalerie" and Fusilier of the "Oranje Lijninfanterie"
 
 <center>
 
-<img src="https://media.discordapp.net/attachments/1212039250951020625/1249180923061211226/UP_-_Cav_Officer.png?ex=666706a4&is=6665b524&hm=c7a1b29c849573feda8c55cbe1a648a3f21f45c5f4633f0363f6f6f45415eecd&=&format=webp&quality=lossless&width=523&height=701" alt="Officer of the Hollandse Cavalerie" width="450" height="603"> <img src="https://media.discordapp.net/attachments/1212039250951020625/1249572657771450439/UP_-_Inf_Oranje.png?ex=66687379&is=666721f9&hm=3f16067852636b4d983e37d06cb6388794fc0d70d8c73e226f165285000a682c&=&format=webp&quality=lossless&width=523&height=700" alt="Fusilier of the Oranje Lijninfanterie" width="450" height="603">
+<img src="https://imperialsplendour.com/static/5774d5e9ab62e2a20236fa388fcee620/4220b/up_-_cav_officer.png" alt="Officer of the Hollandse Cavalerie" width="450" height="603"> <img src="https://media.discordapp.net/attachments/1212039250951020625/1249572657771450439/UP_-_Inf_Oranje.png?ex=66687379&is=666721f9&hm=3f16067852636b4d983e37d06cb6388794fc0d70d8c73e226f165285000a682c&=&format=webp&quality=lossless&width=523&height=700" alt="Fusilier of the Oranje Lijninfanterie" width="450" height="603">
 
 </center>
 
@@ -64,7 +64,7 @@ Dragoon of the "Javaanse Dragonders", Javanese Dragoons in service of the VOC an
 
 <center>
 
-<img src="https://media.discordapp.net/attachments/1212039250951020625/1249180695356506226/UP_-_Col_Dragoons.png?ex=6667066e&is=6665b4ee&hm=381be6bf2341fc9014438c9b72e999462b25a04531372b70dd79e369f26555c4&=&format=webp&quality=lossless&width=525&height=701" alt="Dragoon of the Javaanse Dragonders" width="450" height="600"> <img src="https://media.discordapp.net/attachments/1212039250951020625/1223308848228733028/UP_-_Inf_Line_Colonial.png?ex=666681e5&is=66653065&hm=6161df3cf39f3fe727776f04cc6dd1ed091598e2548bb46add151e89e33854aa&=&format=webp&quality=lossless&width=522&height=701" alt="Regiment de Meuron" width="450" height="604">
+<img src="https://imperialsplendour.com/static/57af1cc18aecd06e82859ab074d5adf0/27330/up_-_col_dragoons.png" alt="Dragoon of the Javaanse Dragonders" width="450" height="600"> <img src="https://media.discordapp.net/attachments/1212039250951020625/1223308848228733028/UP_-_Inf_Line_Colonial.png?ex=666681e5&is=66653065&hm=6161df3cf39f3fe727776f04cc6dd1ed091598e2548bb46add151e89e33854aa&=&format=webp&quality=lossless&width=522&height=701" alt="Regiment de Meuron" width="450" height="604">
 
 </center>
 
@@ -108,8 +108,16 @@ Also, we added updated flags for the campaign and battles. Have a look at how th
 
 </center>
 
-![Officer of the Hollandse Cavalerie](../_img/up_-_cav_officer.png "Officer of the Hollandse Cavalerie")
+![Regiment de Meuron](../_img/up_-_inf_line_colonial.png "Regiment de Meuron")
 
-![Dragoon of the Javaanse Dragonders](../_img/up_-_col_dragoons.png "Dragoon of the Javaanse Dragonders")
+![Fusilier of the Schutterij militia](../_img/up_-_inf_militia.png "Fusilier of the Schutterij militia")
 
-![Dragoon of the Garde Dragonders](../_img/up_-_guard_dragoons.png "Dragoon of the Garde Dragonders")
+![Fusilier of the Oranje Lijninfanterie](../_img/up_-_inf_oranje.png "Fusilier of the Oranje Lijninfanterie")
+
+![](../_img/up_-_inf_swiss.png)
+
+![](../_img/up_-_officer_guard.png)
+
+![](../_img/up_-_poor_gren.png)
+
+![](../_img/up_-_waldeck_gren.png)
