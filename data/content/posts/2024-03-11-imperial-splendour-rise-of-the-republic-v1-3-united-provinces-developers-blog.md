@@ -107,3 +107,9 @@ Also, we added updated flags for the campaign and battles. Have a look at how th
 ### Our next developer's blog will feature the final part of the Neapolitan army.
 
 </center>
+
+![Officer of the Hollandse Cavalerie](../_img/up_-_cav_officer.png "Officer of the Hollandse Cavalerie")
+
+![Dragoon of the Javaanse Dragonders](../_img/up_-_col_dragoons.png "Dragoon of the Javaanse Dragonders")
+
+![Dragoon of the Garde Dragonders](../_img/up_-_guard_dragoons.png "Dragoon of the Garde Dragonders")
