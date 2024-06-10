@@ -68,6 +68,8 @@ Dragoon of the "Javaanse Dragonders", Javanese Dragoons in service of the VOC an
 
 </center>
 
+(Please note that all of the presented units are still WIP and might be changed in versions after RotR 1.3)
+
 ### **Here are the men who lead your government:**
 
 <center>
