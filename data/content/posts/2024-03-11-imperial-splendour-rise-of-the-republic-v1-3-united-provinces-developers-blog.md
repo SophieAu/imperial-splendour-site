@@ -107,17 +107,3 @@ Also, we added updated flags for the campaign and battles. Have a look at how th
 ### Our next developer's blog will feature the final part of the Neapolitan army.
 
 </center>
-
-![Regiment de Meuron](../_img/up_-_inf_line_colonial.png "Regiment de Meuron")
-
-![Fusilier of the Schutterij militia](../_img/up_-_inf_militia.png "Fusilier of the Schutterij militia")
-
-![Fusilier of the Oranje Lijninfanterie](../_img/up_-_inf_oranje.png "Fusilier of the Oranje Lijninfanterie")
-
-![](../_img/up_-_inf_swiss.png)
-
-![](../_img/up_-_officer_guard.png)
-
-![](../_img/up_-_poor_gren.png)
-
-![](../_img/up_-_waldeck_gren.png)
