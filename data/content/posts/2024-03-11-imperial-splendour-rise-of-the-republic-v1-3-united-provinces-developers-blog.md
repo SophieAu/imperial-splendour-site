@@ -1,7 +1,7 @@
 ---
 title: Imperial Splendour - Rise of the Republic v1.3 - United Provinces
   Developers Blog
-date: 2024-06-09T17:46:53.413Z
+date: 2024-06-12T05:16:54.439Z
 author:
   - QHH
 published: false
