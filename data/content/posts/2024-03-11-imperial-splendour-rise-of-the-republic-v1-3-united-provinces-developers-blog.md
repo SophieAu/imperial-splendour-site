@@ -26,7 +26,7 @@ So, after our position in America and Asia being returned to a form of stability
 
 Act decisively, before we turn into a mere pawn in a chess game.
 
-### So here is part of the army that may help you restore our decadent strength and, maybe, even defy the balance of power of Europe... and further**:**
+### So here is part of the army that may help you restore our decadent strength and, maybe, even defy the balance of power of Europe... and further:
 
 Dragoon of the "Garde Dragonders" and Officer of the "Hollandse Garde": 
 
