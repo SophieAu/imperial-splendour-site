@@ -4,7 +4,7 @@ title: Imperial Splendour - Rise of the Republic v1.3 - United Provinces
 date: 2024-06-12T05:16:54.439Z
 author:
   - QHH
-published: false
+published: true
 excerpt: This is our blog about the United Provinces. So take a look at what
   will be in our next upcoming update.
 ---
