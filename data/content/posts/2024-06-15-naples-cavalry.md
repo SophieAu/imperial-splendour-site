@@ -6,4 +6,4 @@ author:
 published: false
 excerpt: ABC
 ---
-![](../_img/up_-_guard_dragoons.png)
+![General](../_img/20251102120648_1.jpg "General")
