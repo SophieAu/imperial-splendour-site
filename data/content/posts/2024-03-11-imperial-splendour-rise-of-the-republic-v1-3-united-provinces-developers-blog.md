@@ -102,9 +102,7 @@ Also, we added updated flags for the campaign and battles. Have a look at how th
 
 <center>
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/vCs8quP1AFk?si=_6iB37TuvPMhXp3F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-
-</iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/vCs8quP1AFk?si=VOF45G6CA8Nwq_nQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Our next developer's blog will feature the final part of the Neapolitan army.
 
