@@ -52,6 +52,11 @@ Duchy of Tuscany - Guardia Nobile a Cavallo, Cavalleggeri (Medium Cavalry), Guar
 
 <center>
 
+<img src="https://imperialsplendour.com/e82bf751-8356-4459-8fa6-a5ba01a3cfdf/0ef32/DT_-_Cav_Guard.png" alt="Duchy of Tuscany - Guardia Nobile a Cavallo" width="450" height="603"> <img src="https://imperialsplendour.com/static/a1b3b9c8ae3a015d449cf622f14906f4/0ef32/up_-_inf_oranje.png" alt="Cavalleggeri (Medium Cavalry)" width="450" height="603">
+
+<img src="https://imperialsplendour.com/static/a1b3b9c8ae3a015d449cf622f14906f4/0ef32/up_-_inf_oranje.png" alt="Cavalleggeri (Medium Cavalry)" width="450" height="603"> <img src="https://imperialsplendour.com/a4691a74-c1ee-48cf-885c-2488423ed21d" alt="Artiglieria Toscana" width="450" height="603">
+
+
 ![Duchy of Tuscany - Guardia Nobile a Cavallo](../_img/dt_-_cav_guard.png "Duchy of Tuscany - Guardia Nobile a Cavallo")
 
 ![Cavalleggeri (Medium Cavalry)](../_img/dt_-_cav_s.a.r.1.png "Cavalleggeri (Medium Cavalry)")
