@@ -52,8 +52,6 @@ Duchy of Tuscany - Guardia Nobile a Cavallo, Cavalleggeri (Medium Cavalry), Guar
 
 <center>
 
-
-
 ![Duchy of Tuscany - Guardia Nobile a Cavallo](../_img/dt_-_cav_guard.png "Duchy of Tuscany - Guardia Nobile a Cavallo")
 
 ![Cavalleggeri (Medium Cavalry)](../_img/dt_-_cav_s.a.r.1.png "Cavalleggeri (Medium Cavalry)")
@@ -70,11 +68,17 @@ Hannover will get a new custom drum and a buglehorn for the light infantry. The 
 
 <center>
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/rHQZyq0DYEs?si=brM2c1ArVtk3bX5x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/rHQZyq0DYEs?si=brM2c1ArVtk3bX5x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/XGAssGV70KA?si=E8VGXBOyIpRyvNYt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</iframe>
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/TEYM187ApBU?si=d7weS8-YcGVlsyk5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/XGAssGV70KA?si=E8VGXBOyIpRyvNYt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+
+</iframe>
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/TEYM187ApBU?si=d7weS8-YcGVlsyk5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+
+</iframe>
 
 You can take a closer look at the new Hanoverian bulgehorn on sketchfab too:
 
