@@ -1,11 +1,7 @@
 [build]
-  publish = "public/"
+  publish = "dist/"
   functions = "functions"
-
-  ignore = "sh ignore.sh"
-
-[[plugins]]
-  package = "netlify-plugin-gatsby-cache"
+  command = "npm run build"
 
 [[redirects]]
   from = "/version"
