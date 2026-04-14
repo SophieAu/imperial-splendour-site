@@ -1,7 +1,7 @@
 <script lang="ts">
   import headerLogoPng from '@assets/header_logo.png';
   import headerLogoWebp from '@assets/header_logo.webp';
-  import { header as strings } from '../../data/strings';
+  import { header as strings } from '../../strings';
 </script>
 
 <a href="/" aria-label={strings.logoLinkLabel}>

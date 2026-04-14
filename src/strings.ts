@@ -1,4 +1,4 @@
-import { paths } from '../config';
+import { paths } from './config';
 
 export const blog = {
   pageDescription:
@@ -39,8 +39,6 @@ export const home = {
 };
 
 export const newsletterSignup = {
-  textQuestion: "Want to stay informed when there's a new patch or release?",
-  textCTA: 'Subscribe to our newsletter:',
   emailPlaceholder: 'george3@british-empire.co.uk',
   submitButton: "Subscribe"
 };

@@ -1,21 +1,11 @@
 ---
 import { mailchimpForm } from '../config';
-import { newsletterSignup as strings } from '../data/strings';
+import { newsletterSignup as strings } from '../strings';
 import LinkButton from './LinkButton.astro';
 
-interface Props {
-  large?: boolean;
-}
-const { large = false } = Astro.props;
 ---
 
-<section class:list={['newsletter', { large }]}>
-  {large && (
-    <>
-    <p>{strings.textQuestion}</p>
-    <p>{strings.textCTA}</p>
-    </>
-  )}
+<section class='newsletter'>
   <div id="mc_embed_signup">
     <form action={mailchimpForm.action} method="post" target="_blank" novalidate>
       <input
@@ -28,7 +18,7 @@ const { large = false } = Astro.props;
       <div id="newsletter-input" aria-hidden="true">
         <input type="text" name={mailchimpForm.inputName} tabindex="-1" />
       </div>
-      <LinkButton type="submit" name="subscribe" class="submit-button">{strings.submitButton}</LinkButton>
+      <LinkButton type="submit" name="subscribe">{strings.submitButton}</LinkButton>
     </form>
   </div>
 </section>
@@ -50,11 +40,6 @@ const { large = false } = Astro.props;
     flex-direction: row;
   }
 
-  .large #mc_embed_signup > form {
-    flex-direction: column;
-    margin-top: 1rem;
-  }
-
   input[type='email'] {
     background-color: transparent;
     border: none;
@@ -68,17 +53,9 @@ const { large = false } = Astro.props;
     width: 25rem;
   }
 
-  .large input[type='email'] {
-    height: 5rem;
-    margin-top: 0;
-  }
-
   #newsletter-input {
     left: -5000px;
     position: absolute;
   }
 
-  .large .submit-button {
-    margin-top: 1.5rem;
-  }
 </style>

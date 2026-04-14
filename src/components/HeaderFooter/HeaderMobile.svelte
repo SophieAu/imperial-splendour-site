@@ -1,7 +1,7 @@
 <script lang="ts">
   import IconHamburger from "./IconHamburger.svelte";
   import IconClose from "./IconClose.svelte";
-  import { header as strings } from "../../data/strings";
+  import { header as strings } from "../../strings";
   import HeaderLogo from "./HeaderLogo.svelte";
 
   let showMenu = $state(false);

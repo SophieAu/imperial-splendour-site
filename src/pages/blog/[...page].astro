@@ -4,7 +4,7 @@ import PostHeader from '../../components/PostHeader.astro';
 import Layout from '../../layouts/Layout.astro';
 import { pageTitle, slugs, paths } from '../../config';
 import { createPostSlug } from '../../util';
-import { blog as strings} from '../../data/strings';
+import { blog as strings} from '../../strings';
 
 export async function getStaticPaths() {
   const POSTS_PER_PAGE = 6;

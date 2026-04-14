@@ -5,7 +5,7 @@ import Layout from "../layouts/Layout.astro";
 import { pageTitle, slugs, paths } from "../config";
 import LinkButton from "../components/LinkButton.astro";
 import heroBg from "@assets/hero_bg.jpg";
-import { home as strings } from "../data/strings";
+import { home as strings } from "../strings";
 
 const page = (await getEntry("pages", "index"))!;
 const { title, description, heroLogo, heroLogoAlt, heroText, infoBoxes } = page.data;
