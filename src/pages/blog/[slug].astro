@@ -6,7 +6,7 @@ import PostHeader from "../../components/BlogPost/PostHeader.astro";
 import Layout from "../../Layout.astro";
 import { pageTitle, slugs } from "../../config";
 import { getEntry } from "astro:content";
-import { createPostSlug } from "../../util";
+import { createPostSlug, formatLinkList } from "../../util";
 import { post as strings} from '../../strings';
 
 export async function getStaticPaths() {
@@ -38,11 +38,7 @@ const socialMedia = (await getEntry("general", "footer"))!.data.socialMedia;
     <div class="post-footer">
       <p>{strings.socialMediaCallout}</p>
       <p>
-        {
-          socialMedia.map(({ platform, link }, i, arr) => (
-            <><a href={link} target="_blank" rel="noopener noreferrer">{platform}</a>{i < arr.length - 2 && ", "}{i === arr.length - 2 && " and "}</>
-          ))
-        }
+        <Fragment set:html={formatLinkList(socialMedia.map(({ platform, link }) => ({ name: platform, link })))} />
       </p>
       <p>{strings.newsletterCallout}</p>
       <NewsletterSignup />

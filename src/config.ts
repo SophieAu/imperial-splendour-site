@@ -4,22 +4,9 @@ import twitter from '@assets/footer_twitter.svg';
 import gDrive from '@assets/logo_googledrive.svg?url';
 import mediaFire from '@assets/logo_mediafire.svg?url';
 
-type NameLinkTuple = { name: string; link: string };
+import { formatLinkList, type NameLinkTuple } from './util';
+
 export const currentYear = () => new Date().getFullYear();
-
-export const formatStringList = (strings: string[]) => {
-  const isLast = (i: number) => i === strings.length - 1;
-  const isFirst = (i: number) => i === 0;
-
-  return strings.reduce((s, b, i) => {
-    let prefix: string;
-    if (isFirst(i)) prefix = '';
-    else if (isLast(i)) prefix = ' and ';
-    else prefix = ', ';
-
-    return s + prefix + b;
-  }, '');
-};
 
 export const BASE_URL = 'https://imperialsplendour.com';
 export const TWITTER_HANDLE = '@SplendourTeam';
@@ -58,7 +45,7 @@ export const mailchimpForm = {
 };
 
 export const buildCreditsCopyright = (builders: NameLinkTuple[]) =>
-  `© ${currentYear()}, ${formatStringList(builders.map(b => `<a href="${b.link}">${b.name}</a>`))}`
+  `© ${currentYear()}, ${formatLinkList(builders)}`
 
 
 export const imgAlt = {
