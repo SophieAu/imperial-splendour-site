@@ -15,38 +15,35 @@
 <header class="headfoot mobile-header">
   <HeaderLogo />
 
-  {#if !showMenu}
+  <button
+    class="toggle-btn hamburger"
+    class:hidden={showMenu}
+    onclick={toggleMenu}
+    aria-label={strings.hamburgerA11yLabel}
+    aria-expanded={showMenu}
+    aria-controls="mobile-menu"
+  >
+    <IconHamburger />
+  </button>
+
+  <nav id="mobile-menu" class:visible={showMenu}>
+    <ul>
+      {#each strings.menuItems as item}
+        <li>
+          <a href={item.path} onclick={toggleMenu}>{item.title}</a>
+        </li>
+      {/each}
+    </ul>
     <button
-      class="toggle-btn hamburger"
+      class="toggle-btn exit"
       onclick={toggleMenu}
-      aria-label={strings.hamburgerA11yLabel}
+      aria-label={strings.exitA11yLabel}
       aria-expanded={showMenu}
       aria-controls="mobile-menu"
     >
-      <IconHamburger />
+      <IconClose />
     </button>
-  {/if}
-
-  {#if showMenu}
-    <nav id="mobile-menu">
-      <ul>
-        {#each strings.menuItems as item}
-          <li>
-            <a href={item.path} onclick={toggleMenu}>{item.title}</a>
-          </li>
-        {/each}
-      </ul>
-      <button
-        class="toggle-btn exit"
-        onclick={toggleMenu}
-        aria-label={strings.exitA11yLabel}
-        aria-expanded={showMenu}
-        aria-controls="mobile-menu"
-      >
-        <IconClose />
-      </button>
-    </nav>
-  {/if}
+  </nav>
 </header>
 
 <style>
@@ -82,15 +79,19 @@
     color: var(--color-main-bg);
   }
 
+  .hamburger.hidden {
+    display: none;
+  }
+
   .exit {
     color: var(--color-header-footer-bg);
   }
 
   nav {
+    display: none;
     align-items: flex-start;
     background: var(--color-main-bg) var(--bg-jpg);
     bottom: 0;
-    display: flex;
     flex-direction: row;
     height: calc(100vh - 3rem - calc((var(--header-height) - 1.25rem) / 2));
     justify-content: space-between;
@@ -101,6 +102,10 @@
     top: 0;
     width: calc(100vw - 5.5rem);
     z-index: 99;
+  }
+
+  nav.visible {
+    display: flex;
   }
 
   :global(.webp) nav {

@@ -1,8 +1,8 @@
 import discord from '@assets/footer_discord.svg';
 import facebook from '@assets/footer_facebook.svg';
 import twitter from '@assets/footer_twitter.svg';
-import gDrive from '@assets/logo_googledrive.svg';
-import mediaFire from '@assets/logo_mediafire.svg';
+import gDrive from '@assets/logo_googledrive.svg?url';
+import mediaFire from '@assets/logo_mediafire.svg?url';
 
 type NameLinkTuple = { name: string; link: string };
 export const currentYear = () => new Date().getFullYear();
@@ -52,10 +52,6 @@ export const paths = {
   notFound: `/${slugs.notFound}`,
 };
 
-const modDBButton = {
-  popularity: 'https://button.moddb.com/popularity/medium/mods/20800.png',
-};
-
 export const mailchimpForm = {
   action: `https://imperialsplendour.us19.list-manage.com/subscribe/post?u=${MAILCHIMP_USER}&amp;id=${MAILCHIMP_ID}`,
   inputName: `b_${MAILCHIMP_USER}_${MAILCHIMP_ID}`,
@@ -65,7 +61,7 @@ export const buildCreditsCopyright = (builders: NameLinkTuple[]) =>
   `© ${currentYear()}, ${formatStringList(builders.map(b => `<a href="${b.link}">${b.name}</a>`))}`
 
 
-const imgAlt = {
+export const imgAlt = {
   avatar: (name: string) => `Avatar of ${name}`,
   filehost: (platform: string) => `"Download RotR 1.1.9b on ${platform}`,
   socialMedia: (platform: string) => `Imperial Splendour on ${platform}`,
