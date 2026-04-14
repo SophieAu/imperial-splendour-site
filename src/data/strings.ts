@@ -1,5 +1,10 @@
 import { paths } from '../config';
 
+export const factions = {
+  previousButton: 'Go to previous Faction',
+  nextButton: 'Go to next Faction',
+};
+
 export const header = {
   logoAlt: 'Imperial Splendour Logo',
   logoLinkLabel: 'Homepage',

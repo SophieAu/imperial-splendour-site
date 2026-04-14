@@ -3,6 +3,7 @@ import Footer from '../components/HeaderFooter/Footer.astro';
 import HeaderWrapper from '../components/HeaderFooter/HeaderWrapper.astro';
 import { BASE_URL, TWITTER_HANDLE, FALLBACK_IMAGE } from '../config';
 import { getImage } from 'astro:assets';
+import { ClientRouter } from 'astro:transitions';
 import textureBg from '@assets/texture_bg.jpg';
 import textureHeadfoot from '@assets/texture_headfoot.jpg';
 
@@ -61,6 +62,15 @@ const detectNoScript = `!function(b){"use strict";var c=b.documentElement;c.clas
     <script is:inline set:html={detectNoScript} />
 
     <title>{title}</title>
+    <ClientRouter />
+    <script>
+      document.addEventListener('astro:after-swap', () => {
+        if (window.sessionStorage.getItem('webpSupport')) {
+          document.documentElement.classList.add('webp');
+        }
+        document.documentElement.classList.add('yesscript');
+      });
+    </script>
   </head>
   <body style={`--bg-jpg: url('${textureBgJpg.src}'); --bg-webp: url('${textureBgWebp.src}'); --headfoot-jpg: url('${textureHeadfootJpg.src}'); --headfoot-webp: url('${textureHeadfootWebp.src}')`}>
     <HeaderWrapper />
@@ -106,6 +116,7 @@ const detectNoScript = `!function(b){"use strict";var c=b.documentElement;c.clas
     /* breakpoints (for use in JS/inline; use media queries in CSS) */
     --bp-mobile-max: 991px;
     --bp-tablet-min: 992px;
+    --bp-tablet-max: 1023px;
     --bp-desktop-min: 1024px;
   }
 

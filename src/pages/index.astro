@@ -2,18 +2,18 @@
 import { getEntry } from 'astro:content';
 import { getImage } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
+import { pageTitle, slugs, paths } from '../config';
 import LinkButton from '../components/LinkButton.astro';
 import heroBg from '@assets/hero_bg.jpg';
 
-const page = await getEntry('pages', 'index');
-if (!page) throw new Error('index page content not found');
+const page = (await getEntry('pages', 'index'))!;
 const { title, description, heroLogo, heroLogoAlt, heroText, infoBoxes } = page.data;
 
 const heroWebp = await getImage({ src: heroBg, format: 'webp' });
 const heroJpg = await getImage({ src: heroBg, format: 'jpeg' });
 ---
 
-<Layout title={`${title} | Imperial Splendour`} description={description ?? ''} slug="">
+<Layout title={pageTitle(title)} description={description ?? ''} slug={slugs.home}>
   <section class="hero-root">
     <h1 style="display: none">{title}</h1>
     <div
@@ -23,7 +23,7 @@ const heroJpg = await getImage({ src: heroBg, format: 'jpeg' });
       {heroLogo && <img class="hero-logo" src={heroLogo} alt={heroLogoAlt ?? ''} />}
       <p class="hero-text">{heroText}</p>
     </div>
-    <LinkButton href="/download" class="download-btn">Download</LinkButton>
+    <LinkButton href={paths.downloadIndex} class="download-btn">Download</LinkButton>
   </section>
 
   <section class="info-boxes">
