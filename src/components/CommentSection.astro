@@ -1,0 +1,74 @@
+---
+import { post as strings} from '../data/strings';
+
+interface Comment {
+  id?: string;
+  name: string;
+  comment: string;
+  date: string;
+}
+
+interface Props {
+  comments: Comment[];
+}
+
+const { comments } = Astro.props;
+
+const formatDate = (dateStr: string) =>
+  new Date(dateStr).toLocaleDateString('en-US', {
+    month: 'long',
+    day: 'numeric',
+    year: 'numeric',
+  });
+---
+
+<section class="comments">
+  <h2>{strings.comments}</h2>
+  {
+    comments.map(comment => (
+      <article>
+        <header class="comment-header">
+          <p class="author">{comment.name}</p>
+          <p class="date">{formatDate(comment.date)}</p>
+        </header>
+        <p class="body">{comment.comment}</p>
+      </article>
+    ))
+  }
+</section>
+
+<style>
+  .comments {
+    padding-bottom: 3rem;
+  }
+
+ h2,
+ p {
+    margin: 0;
+    padding: 0;
+  }
+
+  article {
+    padding: 1rem 0;
+  }
+
+  .comment-header {
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.25rem;
+    width: 66%;
+  }
+
+  .author {
+    font-size: 2rem;
+  }
+
+  .date {
+    font-size: 1.25rem;
+  }
+
+  .body {
+    width: 66%;
+  }
+</style>

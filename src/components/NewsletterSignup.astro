@@ -1,0 +1,109 @@
+---
+import { mailchimpForm } from '../config';
+import { getImage } from 'astro:assets';
+import textureBtnPng from '@assets/texture_btn.png';
+import { newsletterSignup as strings } from '../data/strings';
+
+const btnWebp = await getImage({ src: textureBtnPng, format: 'webp' });
+const btnOptimised = await getImage({ src: textureBtnPng, format: 'png' });
+
+interface Props {
+  large?: boolean;
+}
+const { large = false } = Astro.props;
+---
+
+<section class:list={['newsletter', { large }]} style={`--btn-png: url('${btnOptimised.src}'); --btn-webp: url('${btnWebp.src}')`}>
+  {large && (
+    <>
+    <p>{strings.textQuestion}</p>
+    <p>{strings.textCTA}</p>
+    </>
+  )}
+  <div id="mc_embed_signup">
+    <form action={mailchimpForm.action} method="post" target="_blank" novalidate>
+      <input
+        type="email"
+        name="EMAIL"
+        placeholder={strings.emailPlaceholder}
+        required
+        aria-label="Email"
+      />
+      <div id="newsletter-input" aria-hidden="true">
+        <input type="text" name={mailchimpForm.inputName} tabindex="-1" />
+      </div>
+      <input class="submit-button" type="submit" value="Subscribe" name="subscribe" />
+    </form>
+  </div>
+</section>
+
+<style>
+  .newsletter {
+    line-height: 2rem;
+    margin-bottom: 5rem;
+    text-align: center;
+ p {
+    margin: 0.125rem;
+  }}
+
+  #mc_embed_signup > form {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .large #mc_embed_signup > form {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  input[type='email'] {
+    background-color: transparent;
+    border: none;
+    box-shadow: inset 0 0 0.5rem 0.25rem rgba(142, 142, 142, 0.8);
+    box-sizing: border-box;
+    font: var(--font-input);
+    height: 4rem;
+    margin-top: 0.25rem;
+    max-width: calc(100vw - 2rem);
+    padding-left: 1.75rem;
+    width: 25rem;
+  }
+
+  .large input[type='email'] {
+    height: 5rem;
+    margin-top: 0;
+  }
+
+  #newsletter-input {
+    left: -5000px;
+    position: absolute;
+  }
+
+  .submit-button {
+    background: no-repeat center/100% var(--btn-png);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font: var(--font-button);
+    height: var(--download-button-height);
+    text-align: center;
+    text-decoration: none;
+    width: var(--download-button-width);
+  }
+
+  :global(.webp) .submit-button {
+    background: no-repeat center/100% var(--btn-webp);
+  }
+
+  .submit-button:hover {
+    color: var(--color-link-hover);
+    cursor: pointer;
+  }
+
+  .large .submit-button {
+    margin-top: 1.5rem;
+  }
+</style>

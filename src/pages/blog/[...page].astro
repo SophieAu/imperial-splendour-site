@@ -1,0 +1,94 @@
+---
+import { getCollection } from 'astro:content';
+import PostHeader from '../../components/PostHeader.astro';
+import Layout from '../../layouts/Layout.astro';
+import { pageTitle, slugs, paths } from '../../config';
+import { createPostSlug } from '../../util';
+import { blog as strings} from '../../data/strings';
+
+export async function getStaticPaths() {
+  const POSTS_PER_PAGE = 6;
+  const allPosts = await getCollection('posts', p => p.data.published);
+  const sorted = allPosts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+  const totalPages = Math.ceil(sorted.length / POSTS_PER_PAGE);
+
+  return Array.from({ length: totalPages }, (_, i) => {
+    const page = i + 1;
+    const posts = sorted.slice((page - 1) * POSTS_PER_PAGE, page * POSTS_PER_PAGE);
+    return {
+      params: { page: page === 1 ? undefined : String(page) },
+      props: { posts, currentPage: page, totalPages },
+    };
+  });
+}
+
+
+const { posts, currentPage, totalPages } = Astro.props;
+---
+
+<Layout
+  title={pageTitle("Blog")}
+  description={strings.pageDescription}
+  slug={slugs.blog}
+>
+  <ul class="post-list">
+    {
+      posts.map(post => {
+        const slug = createPostSlug(post.data.title, post.data.date);
+        return (
+          <li class="post">
+            <PostHeader title={post.data.title} date={post.data.date} link={`${paths.blog}/${slug}`} />
+            <p class="excerpt">{post.data.excerpt}</p>
+          </li>
+        );
+      })
+    }
+  </ul>
+  <section class="pagination">
+    <ul>
+      <li>
+        {currentPage > 1 && <a href={currentPage - 1 === 1 ? paths.blog : `${paths.blog}/${currentPage - 1}`} rel="prev">{strings.previousPage}</a>}
+      </li>
+      <li>
+        {currentPage < totalPages && <a href={`${paths.blog}/${currentPage + 1}`} rel="next">{strings.nextPage}</a>}
+      </li>
+    </ul>
+  </section>
+</Layout>
+
+<style>
+  .post-list {
+    list-style-type: none;
+    padding: 1.5rem 0;
+  }
+
+  .post {
+    padding: 3rem 0;
+  }
+
+  .excerpt {
+    margin: 0;
+    padding: 1rem 0 0;
+  }
+
+  .pagination {
+    font-size: 1.875rem;
+    padding: 2rem 0 5rem;
+
+    ul {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      & > *:last-child {
+        text-align: right;
+      }
+
+      li > * {
+        text-decoration: none;
+      }
+    }
+  }
+</style>
