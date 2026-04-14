@@ -39,6 +39,7 @@ export const home = {
 };
 
 export const newsletterSignup = {
+  emailInputLabel: 'Email',
   emailPlaceholder: 'george3@british-empire.co.uk',
   submitButton: "Subscribe"
 };

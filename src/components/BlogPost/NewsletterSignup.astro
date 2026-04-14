@@ -13,7 +13,7 @@ import LinkButton from '../LinkButton.astro';
         name="EMAIL"
         placeholder={strings.emailPlaceholder}
         required
-        aria-label="Email"
+        aria-label={strings.emailInputLabel}
       />
       <div id="newsletter-input" aria-hidden="true">
         <input type="text" name={mailchimpForm.inputName} tabindex="-1" />
