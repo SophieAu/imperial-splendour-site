@@ -7,6 +7,14 @@ export const blog = {
   nextPage: 'Older >',
 };
 
+export const download = {
+  linkSectionTitle: 'Downloads',
+  otherDownloadsSectionTitle: 'Other Downloads / Submods',
+  downloadByHost: (host: string) => `Download RotR on ${host}`,
+  releaseBlogLinkTitle: "Release Blog",
+  installTutorialLinkTitle: "Installation Tutorial"
+};
+
 export const factions = {
   previousButton: 'Go to previous Faction',
   nextButton: 'Go to next Faction',
@@ -26,34 +34,19 @@ export const header = {
   ],
 };
 
+export const home = {
+  downloadButton: 'Download',
+};
+
 export const newsletterSignup = {
   textQuestion: "Want to stay informed when there's a new patch or release?",
   textCTA: 'Subscribe to our newsletter:',
   emailPlaceholder: 'george3@british-empire.co.uk',
+  submitButton: "Subscribe"
 };
 
 export const post = {
   comments: 'Comments',
   socialMediaCallout: 'Visit us on',
   newsletterCallout: 'and subscribe to our newsletter to stay up to date:',
-};
-
-
-
-/// -------------------------------------------------------------- OLD
-
-export const SITE_TITLE = 'Imperial Splendour';
-export const buildPageTitle = (title: string) => `${title} | ${SITE_TITLE}`;
-
-// ---
-// Components
-
-export const downloadButton = {
-  buttonText: 'Download',
-};
-
-
-export const download = {
-  linkSectionTitle: 'Downloads',
-  otherDownloadsSectionTitle: 'Other Downloads / Submods',
 };

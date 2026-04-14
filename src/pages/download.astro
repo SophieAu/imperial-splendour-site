@@ -1,0 +1,186 @@
+---
+import { getCollection, getEntry, render } from "astro:content";
+import Layout from "../layouts/Layout.astro";
+import LinkButton from "../components/LinkButton.astro";
+import { hostImages, pageTitle, slugs } from "../config";
+import { download as strings } from "../data/strings";
+
+const page = (await getEntry("download", "download"))!;
+const { title, description, mainDownload } = page.data;
+const { Content } = await render(page);
+
+const allDownloads = await getCollection("downloads");
+const main = allDownloads.find((d) => d.data.title === mainDownload);
+const others = allDownloads.filter((d) => d.data.title !== mainDownload);
+---
+
+<Layout title={pageTitle(title)} description={description ?? ""} slug={slugs.downloadIndex}>
+  <section class="container">
+    <div class="info">
+      <Content />
+    </div>
+
+    <h2 class="dl-heading">{strings.linkSectionTitle}</h2>
+    {
+      main && (
+        <>
+          <div class="version-info">{main.data.title}</div>
+          <ul class="filehosts">
+            {main.data.links.map(({ host, link }) => (
+              <li>
+                <LinkButton
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="host-link-button"
+                  aria-label={strings.downloadByHost(host)}
+                >
+                  <img src={hostImages.find(({ host: h }) => h === host)?.image} alt={strings.downloadByHost(host)} />
+                </LinkButton>
+              </li>
+            ))}
+          </ul>
+        </>
+      )
+    }
+  </section>
+
+  {
+    !!others.length && (
+      <section class="other-container">
+        <h2 class="dl-heading">{strings.otherDownloadsSectionTitle}</h2>
+        <table class="mirror-table">
+          <tbody>
+            {others.map(({ data: { title, releaseBlog, installationTutorial, links } }) => (
+              <tr>
+                <td>
+                  <p>{title}</p>
+                  {releaseBlog && (
+                    <p>
+                      <a href={releaseBlog}>{strings.releaseBlogLinkTitle}</a>
+                    </p>
+                  )}
+                  {installationTutorial && (
+                    <p>
+                      <a href={installationTutorial}>{strings.installTutorialLinkTitle}</a>
+                    </p>
+                  )}
+                </td>
+                <td>
+                  {links.map(({ host, link }) => (
+                    <p>
+                      <a href={link} target="_blank" rel="noopener noreferrer">
+                        {host}
+                      </a>
+                    </p>
+                  ))}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </section>
+    )
+  }
+</Layout>
+
+<style>
+  .container {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    align-items: start;
+    margin: 2rem 0;
+    padding-top: 0.5rem;
+
+    @media (max-width: 1023px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .info {
+    grid-row: span 3;
+
+    h2,
+    ul,
+    li {
+      margin: 0 0 1rem;
+    }
+
+    ul {
+      line-height: 2rem;
+      list-style: disc;
+    }
+  }
+
+  .dl-heading {
+    margin: 0;
+    text-align: center;
+  }
+
+  .version-info {
+    margin: 0.5rem auto 0;
+    font-size: 1.125rem;
+    text-align: center;
+    max-width: 24rem;
+  }
+
+  .filehosts {
+    display: grid;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: grid;
+      place-items: center;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .host-link-button {
+    display: grid;
+    place-items: center;
+
+    img {
+      max-height: 3.125rem;
+      max-width: min(16.25rem, 80%);
+    }
+  }
+
+  .other-container {
+    margin: 2.5rem 0 5.5rem;
+  }
+
+  .mirror-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: auto;
+
+    td {
+      padding: 1rem;
+      border: solid 1px;
+      font-size: 1.25rem;
+
+      &:first-child {
+        vertical-align: top;
+
+        p {
+          margin: 0;
+        }
+      }
+
+      &:nth-child(2) {
+        white-space: nowrap;
+
+        p {
+          margin: 0;
+        }
+        p:not(:last-child) {
+          margin-bottom: 0.25rem;
+        }
+      }
+    }
+  }
+</style>

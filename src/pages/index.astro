@@ -1,29 +1,27 @@
 ---
-import { getEntry } from 'astro:content';
-import { getImage } from 'astro:assets';
-import Layout from '../layouts/Layout.astro';
-import { pageTitle, slugs, paths } from '../config';
-import LinkButton from '../components/LinkButton.astro';
-import heroBg from '@assets/hero_bg.jpg';
+import { getEntry } from "astro:content";
+import { getImage } from "astro:assets";
+import Layout from "../layouts/Layout.astro";
+import { pageTitle, slugs, paths } from "../config";
+import LinkButton from "../components/LinkButton.astro";
+import heroBg from "@assets/hero_bg.jpg";
+import { home as strings } from "../data/strings";
 
-const page = (await getEntry('pages', 'index'))!;
+const page = (await getEntry("pages", "index"))!;
 const { title, description, heroLogo, heroLogoAlt, heroText, infoBoxes } = page.data;
 
-const heroWebp = await getImage({ src: heroBg, format: 'webp' });
-const heroJpg = await getImage({ src: heroBg, format: 'jpeg' });
+const heroWebp = await getImage({ src: heroBg, format: "webp" });
+const heroJpg = await getImage({ src: heroBg, format: "jpeg" });
 ---
 
-<Layout title={pageTitle(title)} description={description ?? ''} slug={slugs.home}>
+<Layout title={pageTitle(title)} description={description ?? ""} slug={slugs.home}>
   <section class="hero-root">
     <h1 style="display: none">{title}</h1>
-    <div
-      class="hero-body"
-      style={`--hero-webp: url('${heroWebp.src}'); --hero-jpg: url('${heroJpg.src}')`}
-    >
-      {heroLogo && <img class="hero-logo" src={heroLogo} alt={heroLogoAlt ?? ''} />}
+    <div class="hero-body" style={`--hero-webp: url('${heroWebp.src}'); --hero-jpg: url('${heroJpg.src}')`}>
+      {heroLogo && <img class="hero-logo" src={heroLogo} alt={heroLogoAlt ?? ""} />}
       <p class="hero-text">{heroText}</p>
     </div>
-    <LinkButton href={paths.downloadIndex} class="download-btn">Download</LinkButton>
+    <LinkButton href={paths.downloadIndex} class="download-btn">{strings.downloadButton}</LinkButton>
   </section>
 
   <section class="info-boxes">
@@ -114,26 +112,20 @@ const heroJpg = await getImage({ src: heroBg, format: 'jpeg' });
     display: grid;
     grid: auto-flow dense / repeat(5, 1fr);
     gap: 4rem 2rem;
-  }
 
-  @media (min-width: 1024px) {
-    .info-boxes {
+    @media (min-width: 1024px) {
       margin: 6rem 0;
     }
-  }
 
-  @media (max-width: 1023px) {
-    .info-boxes {
+    @media (max-width: 1023px) {
       display: flex;
       flex-direction: column;
       gap: 0;
       padding: 5rem 3rem 3rem;
       width: calc(100% - 3rem);
     }
-  }
 
-  @media (max-width: 991px) {
-    .info-boxes {
+    @media (max-width: 991px) {
       padding: 5rem 0 3rem;
     }
   }
@@ -145,26 +137,20 @@ const heroJpg = await getImage({ src: heroBg, format: 'jpeg' });
     width: 100%;
   }
 
-  .info-img[data-pos='0'] {
+  .info-img[data-pos="0"] {
     grid-column: 3/6;
   }
 
-  .info-img[data-pos='1'] {
+  .info-img[data-pos="1"] {
     grid-column: 1/4;
   }
-
 
   .info-text {
     font: var(--font-info);
     grid-column: span 2;
-  }
-
-  .info-text > * {
     margin: 0;
-  }
 
-  @media (max-width: 1023px) {
-    .info-text > * {
+    @media (max-width: 1023px) {
       margin: 0 1rem 3rem;
       text-align: center;
     }

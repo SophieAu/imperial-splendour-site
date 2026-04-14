@@ -1,11 +1,7 @@
 ---
 import { mailchimpForm } from '../config';
-import { getImage } from 'astro:assets';
-import textureBtnPng from '@assets/texture_btn.png';
 import { newsletterSignup as strings } from '../data/strings';
-
-const btnWebp = await getImage({ src: textureBtnPng, format: 'webp' });
-const btnOptimised = await getImage({ src: textureBtnPng, format: 'png' });
+import LinkButton from './LinkButton.astro';
 
 interface Props {
   large?: boolean;
@@ -13,7 +9,7 @@ interface Props {
 const { large = false } = Astro.props;
 ---
 
-<section class:list={['newsletter', { large }]} style={`--btn-png: url('${btnOptimised.src}'); --btn-webp: url('${btnWebp.src}')`}>
+<section class:list={['newsletter', { large }]}>
   {large && (
     <>
     <p>{strings.textQuestion}</p>
@@ -32,7 +28,7 @@ const { large = false } = Astro.props;
       <div id="newsletter-input" aria-hidden="true">
         <input type="text" name={mailchimpForm.inputName} tabindex="-1" />
       </div>
-      <input class="submit-button" type="submit" value="Subscribe" name="subscribe" />
+      <LinkButton type="submit" name="subscribe" class="submit-button">{strings.submitButton}</LinkButton>
     </form>
   </div>
 </section>
@@ -80,27 +76,6 @@ const { large = false } = Astro.props;
   #newsletter-input {
     left: -5000px;
     position: absolute;
-  }
-
-  .submit-button {
-    background: no-repeat center/100% var(--btn-png);
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font: var(--font-button);
-    height: var(--download-button-height);
-    text-align: center;
-    text-decoration: none;
-    width: var(--download-button-width);
-  }
-
-  :global(.webp) .submit-button {
-    background: no-repeat center/100% var(--btn-webp);
-  }
-
-  .submit-button:hover {
-    color: var(--color-link-hover);
-    cursor: pointer;
   }
 
   .large .submit-button {

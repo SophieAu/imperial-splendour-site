@@ -1,0 +1,40 @@
+---
+import { getImage } from 'astro:assets';
+import btnPng from '@assets/texture_btn.png';
+
+type Props = (astroHTML.JSX.AnchorHTMLAttributes | astroHTML.JSX.ButtonHTMLAttributes) & {
+  href?: string;
+  class?: string;
+};
+
+const { href, class: className, ...rest } = Astro.props;
+
+const btnWebp = await getImage({ src: btnPng, format: 'webp' });
+const btnOptimised = await getImage({ src: btnPng, format: 'png' });
+---
+
+{href
+  ? <a href={href} class:list={['link-button', className]} style={`--btn-webp: url('${btnWebp.src}'); --btn-png: url('${btnOptimised.src}')`} {...rest}><slot /></a>
+  : <button class:list={['link-button', className]} style={`--btn-webp: url('${btnWebp.src}'); --btn-png: url('${btnOptimised.src}')`} {...rest as astroHTML.JSX.ButtonHTMLAttributes}><slot /></button>
+}
+
+<style>
+  .link-button {
+    background: no-repeat center/100% var(--btn-png);
+    color: var(--color-black);
+    font: var(--font-button);
+    height: var(--download-button-height);
+    text-align: center;
+    text-decoration: none;
+    width: var(--download-button-width);
+    border: none;
+  }
+
+  :global(.webp) .link-button {
+    background: no-repeat center/100% var(--btn-webp);
+  }
+
+  .link-button:hover {
+    color: var(--color-link-hover);
+  }
+</style>
