@@ -1,0 +1,58 @@
+---
+import { getCollection, render } from "astro:content";
+import FlagCarousel from "../../components/FlagCarousel/FlagCarousel.svelte";
+import Layout from "../../layouts/Layout.astro";
+import { pageTitle, slugs } from "../../config";
+
+export async function getStaticPaths() {
+  const factions = await getCollection('factions');
+  const sorted = factions.sort((a, b) => a.data.slug.localeCompare(b.data.slug));
+  const factionList = sorted.map(f => ({
+    title: f.data.title,
+    slug: f.data.slug,
+    flag: f.data.flag,
+  }));
+
+  return sorted.map(faction => ({
+    params: { slug: faction.data.slug },
+    props: { faction, factionList },
+  }));
+}
+
+const { faction, factionList } = Astro.props;
+const { title, description, slug } = faction.data;
+const { Content } = await render(faction);
+---
+
+<Layout
+  title={pageTitle(title)}
+  description={description || title}
+  slug={`${slugs.factions}/${slug}`}
+>
+  <section class="factions">
+    <FlagCarousel selected={slug} factions={factionList} client:load transition:persist />
+    <article class="faction" transition:name="faction-content">
+      <h1>{title}</h1>
+      <Content />
+    </article>
+  </section>
+</Layout>
+
+<style>
+  .faction {
+    margin: 2.5rem 0 5.5rem;
+  }
+
+  .faction h1 {
+    font: var(--font-headline);
+    margin: 0 0 1.5rem;
+    text-decoration: none;
+  }
+
+  .faction {
+    img {
+      max-width: 100%;
+      width: max-content;
+    }
+  }
+</style>

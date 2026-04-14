@@ -1,13 +1,14 @@
 ---
 import { getEntry, render } from 'astro:content';
 import Layout from '../layouts/Layout.astro';
+import { pageTitle, slugs } from '../config';
 
 const page = (await getEntry('pages', '404'))!;
 const { title, description, messageTitle, image, imageAlt } = page.data;
 const { Content } = await render(page);
 ---
 
-<Layout title={`${title} | Imperial Splendour`} description={description} slug="404">
+<Layout title={pageTitle(title)} description={description} slug={slugs.notFound}>
   <div class="root">
     <h1 class="title">{messageTitle}</h1>
     <Content />
