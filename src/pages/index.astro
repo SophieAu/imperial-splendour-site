@@ -1,0 +1,172 @@
+---
+import { getEntry } from 'astro:content';
+import { getImage } from 'astro:assets';
+import Layout from '../layouts/Layout.astro';
+import LinkButton from '../components/LinkButton.astro';
+import heroBg from '@assets/hero_bg.jpg';
+
+const page = await getEntry('pages', 'index');
+if (!page) throw new Error('index page content not found');
+const { title, description, heroLogo, heroLogoAlt, heroText, infoBoxes } = page.data;
+
+const heroWebp = await getImage({ src: heroBg, format: 'webp' });
+const heroJpg = await getImage({ src: heroBg, format: 'jpeg' });
+---
+
+<Layout title={`${title} | Imperial Splendour`} description={description ?? ''} slug="">
+  <section class="hero-root">
+    <h1 style="display: none">{title}</h1>
+    <div
+      class="hero-body"
+      style={`--hero-webp: url('${heroWebp.src}'); --hero-jpg: url('${heroJpg.src}')`}
+    >
+      {heroLogo && <img class="hero-logo" src={heroLogo} alt={heroLogoAlt ?? ''} />}
+      <p class="hero-text">{heroText}</p>
+    </div>
+    <LinkButton href="/download" class="download-btn">Download</LinkButton>
+  </section>
+
+  <section class="info-boxes">
+    {
+      infoBoxes?.map(({ text, image, imgAlt }, i) => (
+        <>
+          <img src={image} alt={imgAlt} data-pos={i % 2} class="info-img" />
+          <p class="info-text">{text}</p>
+        </>
+      ))
+    }
+  </section>
+</Layout>
+
+<style>
+  .hero-root {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: calc(-1 * var(--download-button-height) / 2);
+
+    /* important because the layout forces margins left and right instead */
+    max-width: 100vw !important;
+    width: 100vw !important;
+  }
+
+  @media (min-width: 992px) {
+    .hero-root {
+      height: 62.5vw;
+      max-height: calc(100rem * 1080 / 1920);
+    }
+  }
+
+  @media (max-width: 991px) {
+    .hero-root {
+      height: auto;
+    }
+  }
+
+  .download-btn {
+    margin-top: calc(-1 * var(--download-button-height) / 2);
+  }
+
+  .hero-logo {
+    width: min(50vw, 85rem);
+  }
+
+  .hero-body {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 2.5rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  @media (min-width: 992px) {
+    :global(html:not(.webp)) .hero-body {
+      background: no-repeat bottom/100% var(--hero-jpg);
+    }
+
+    :global(.webp) .hero-body {
+      background: no-repeat bottom/100% var(--hero-webp);
+    }
+  }
+
+  .hero-text {
+    max-width: calc(var(--max-content-width) + 2rem);
+    padding-bottom: 5rem;
+    margin: 0 1rem;
+
+    font: var(--font-hero);
+    color: var(--color-white);
+  }
+
+  @media (max-width: 991px) {
+    .hero-text {
+      margin: 1.5rem 1rem 0;
+      color: var(--color-black);
+    }
+  }
+
+  .info-boxes {
+    box-sizing: border-box;
+    align-items: center;
+    display: grid;
+    grid: auto-flow dense / repeat(5, 1fr);
+    gap: 4rem 2rem;
+  }
+
+  @media (min-width: 1024px) {
+    .info-boxes {
+      margin: 6rem 0;
+    }
+  }
+
+  @media (max-width: 1023px) {
+    .info-boxes {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      padding: 5rem 3rem 3rem;
+      width: calc(100% - 3rem);
+    }
+  }
+
+  @media (max-width: 991px) {
+    .info-boxes {
+      padding: 5rem 0 3rem;
+    }
+  }
+
+  .info-img {
+    padding: 1rem;
+    box-sizing: border-box;
+    object-fit: contain;
+    width: 100%;
+  }
+
+  .info-img[data-pos='0'] {
+    grid-column: 3/6;
+  }
+
+  .info-img[data-pos='1'] {
+    grid-column: 1/4;
+  }
+
+
+  .info-text {
+    font: var(--font-info);
+    grid-column: span 2;
+  }
+
+  .info-text > * {
+    margin: 0;
+  }
+
+  @media (max-width: 1023px) {
+    .info-text > * {
+      margin: 0 1rem 3rem;
+      text-align: center;
+    }
+  }
+</style>
