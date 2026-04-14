@@ -17,9 +17,10 @@ interface Props {
   description: string;
   slug: string;
   ogImage?: string;
+  viewTransitions?: boolean;
 }
 
-const { title, description, slug, ogImage } = Astro.props;
+const { title, description, slug, ogImage, viewTransitions = false } = Astro.props;
 const ogImageUrl = `${BASE_URL}${ogImage || FALLBACK_IMAGE}`;
 const url = `${BASE_URL}/${slug}`;
 
@@ -62,15 +63,17 @@ const detectNoScript = `!function(b){"use strict";var c=b.documentElement;c.clas
     <script is:inline set:html={detectNoScript} />
 
     <title>{title}</title>
-    <ClientRouter />
-    <script>
-      document.addEventListener('astro:after-swap', () => {
-        if (window.sessionStorage.getItem('webpSupport')) {
-          document.documentElement.classList.add('webp');
-        }
-        document.documentElement.classList.add('yesscript');
-      });
-    </script>
+    {viewTransitions && <ClientRouter />}
+    {viewTransitions && (
+      <script>
+        document.addEventListener('astro:after-swap', () => {
+          if (window.sessionStorage.getItem('webpSupport')) {
+            document.documentElement.classList.add('webp');
+          }
+          document.documentElement.classList.add('yesscript');
+        });
+      </script>
+    )}
   </head>
   <body style={`--bg-jpg: url('${textureBgJpg.src}'); --bg-webp: url('${textureBgWebp.src}'); --headfoot-jpg: url('${textureHeadfootJpg.src}'); --headfoot-webp: url('${textureHeadfootWebp.src}')`}>
     <HeaderWrapper />

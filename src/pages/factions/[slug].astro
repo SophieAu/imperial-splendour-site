@@ -28,6 +28,7 @@ const { Content } = await render(faction);
   title={pageTitle(title)}
   description={description || title}
   slug={`${slugs.factions}/${slug}`}
+  viewTransitions
 >
   <section class="factions">
     <FlagCarousel selected={slug} factions={factionList} client:load transition:persist />
