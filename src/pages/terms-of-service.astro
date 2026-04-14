@@ -1,0 +1,33 @@
+---
+import { getEntry, render } from "astro:content";
+import Layout from "../layouts/Layout.astro";
+import { pageTitle, slugs } from "../config";
+
+const page = (await getEntry("pages", "terms-of-service"))!;
+const { title, description } = page.data;
+const { Content } = await render(page);
+---
+
+<Layout title={pageTitle(title)} description={description ?? ''} slug={slugs.termsOfService}>
+  <article class="terms">
+    <Content />
+  </article>
+</Layout>
+
+<style>
+  .terms {
+    margin: 1.5rem 0;
+  }
+
+  .terms {
+    h1 {
+      word-wrap: break-word;
+    }
+  }
+
+  .terms {
+    li > p {
+      margin-bottom: 0;
+    }
+  }
+</style>
