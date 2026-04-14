@@ -1,0 +1,191 @@
+---
+import Footer from '../components/HeaderFooter/Footer.astro';
+import HeaderWrapper from '../components/HeaderFooter/HeaderWrapper.astro';
+import { BASE_URL, TWITTER_HANDLE, FALLBACK_IMAGE } from '../config';
+import { getImage } from 'astro:assets';
+import textureBg from '@assets/texture_bg.jpg';
+import textureHeadfoot from '@assets/texture_headfoot.jpg';
+
+const textureBgWebp = await getImage({ src: textureBg, format: 'webp' });
+const textureBgJpg = await getImage({ src: textureBg, format: 'jpeg' });
+const textureHeadfootWebp = await getImage({ src: textureHeadfoot, format: 'webp' });
+const textureHeadfootJpg = await getImage({ src: textureHeadfoot, format: 'jpeg' });
+
+interface Props {
+  title: string;
+  description: string;
+  slug: string;
+  ogImage?: string;
+}
+
+const { title, description, slug, ogImage } = Astro.props;
+const ogImageUrl = `${BASE_URL}${ogImage || FALLBACK_IMAGE}`;
+const url = `${BASE_URL}/${slug}`;
+
+const detectWebpSupport =
+  '!function(e){"use strict";function s(s){if(s){var t=e.documentElement;t.classList?t.classList.add("webp"):t.className+=" webp",window.sessionStorage.setItem("webpSupport",!0)}}!function(e){if(window.sessionStorage&&window.sessionStorage.getItem("webpSupport"))s(!0);else{var t=new Image;t.onload=t.onerror=function(){e(2===t.height)},t.src="data:image/webp;base64,UklGRi4AAABXRUJQVlA4TCEAAAAvAUAAEB8wAiMwAgSSNtse/cXjxyCCmrYNWPwmHRH9jwMA"}}(s)}(document);';
+const detectNoScript = `!function(b){"use strict";var c=b.documentElement;c.classList?c.classList.add("yesscript"):c.className+=" yesscript"}(document);`;
+---
+
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:url" content={url} />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content={TWITTER_HANDLE} />
+    <meta name="twitter:creator" content={TWITTER_HANDLE} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageUrl} />
+    <meta name="twitter:url" content={url} />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=IM+Fell+English&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC&display=swap"
+      rel="stylesheet"
+    />
+
+    <script is:inline set:html={detectWebpSupport} />
+    <script is:inline set:html={detectNoScript} />
+
+    <title>{title}</title>
+  </head>
+  <body style={`--bg-jpg: url('${textureBgJpg.src}'); --bg-webp: url('${textureBgWebp.src}'); --headfoot-jpg: url('${textureHeadfootJpg.src}'); --headfoot-webp: url('${textureHeadfootWebp.src}')`}>
+    <HeaderWrapper />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    font-size: 16px;
+
+    /* colours */
+    --color-header-footer-bg: #b19776;
+    --color-link-hover: #5c4e3c;
+    --color-blog-meta: #444;
+    --color-main-bg: #f9eeda;
+    --color-white: #fff;
+    --color-black: black;
+
+    /* fonts */
+    --font-family-body: 'IM FELL English', georgia, times, serif;
+    --font-family-heading: 'IM FELL English SC', georgia, serif;
+    --font-headline: normal 3rem var(--font-family-heading);
+    --font-body: normal 1.5rem var(--font-family-body);
+    --font-button: normal 2.5rem / var(--download-button-height) var(--font-family-heading);
+    --font-hero: normal 2.15rem var(--font-family-body);
+    --font-info: normal 1.75rem var(--font-family-body);
+    --font-blog-meta: italic 1.25rem var(--font-family-body);
+    --font-input: normal 1rem var(--font-family-body);
+
+    /* layout */
+    --header-height: 4.5rem;
+    --footer-height: 4.5rem;
+    --footer-mobile-height: 6.5rem;
+    --max-content-width: 65rem;
+    --max-site-width: 100rem;
+    --download-button-height: 6.25rem;
+    --download-button-width: 18.125rem;
+
+    /* breakpoints (for use in JS/inline; use media queries in CSS) */
+    --bp-mobile-max: 991px;
+    --bp-tablet-min: 992px;
+    --bp-desktop-min: 1024px;
+  }
+
+  html,
+  body {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  img {
+    object-fit: contain;
+    width: 100%;
+  }
+
+  picture {
+    line-height: 0;
+  }
+
+  h2 {
+    font: var(--font-headline);
+  }
+
+  a {
+    color: var(--color-black);
+    text-decoration: underline;
+  }
+
+  a:hover {
+    color: var(--color-link-hover);
+  }
+
+  a:hover > * {
+    fill: var(--color-link-hover);
+    opacity: 0.5;
+  }
+
+  body {
+    background: var(--color-main-bg) var(--bg-jpg);
+    font: var(--font-body);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  body.webp {
+    background: var(--color-main-bg) var(--bg-webp);
+  }
+
+  main {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: var(--header-height) 1.5rem 0;
+  }
+
+  main > * {
+    max-width: var(--max-content-width);
+    width: 100%;
+  }
+
+  @media (max-width: 991px) {
+    html:not(.yesscript) main {
+      padding-top: 0;
+    }
+  }
+
+  .headfoot {
+    align-items: center;
+    background-color: var(--color-header-footer-bg);
+    background-image: var(--headfoot-jpg);
+    box-shadow: 0 0 1.25rem 1rem rgba(142, 142, 142, 0.4), 0 0 1.25rem 0.75rem rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 99;
+  }
+
+  .webp .headfoot {
+    background-image: var(--headfoot-webp);
+  }
+</style>

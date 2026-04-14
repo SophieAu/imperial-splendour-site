@@ -1,0 +1,94 @@
+---
+import { getEntry } from 'astro:content';
+import { buildCreditsCopyright, socialMediaImages } from '../../config';
+
+const footer = await getEntry('general', 'footer');
+if (!footer) throw new Error('footer content not found');
+const { siteBuilders, socialMedia } = footer.data;
+
+const credits = buildCreditsCopyright(siteBuilders);
+
+const visibleSocialMedia = socialMedia.filter(({ platform }) => platform !== 'TWCenter');
+---
+
+<footer class="headfoot">
+  <p class="credits" set:html={credits} />
+  <ul class="social-media">
+    {
+      visibleSocialMedia.map(({ platform, link }) => (
+        <li>
+          <a href={link} target="_blank" rel="noopener noreferrer" aria-label={`Imperial Splendour on ${platform}`} style="line-height: 0">
+            <img
+              src={socialMediaImages[platform]}
+              alt={`Imperial Splendour on ${platform}`}
+            />
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</footer>
+
+<style>
+  footer {
+    height: var(--footer-height);
+    padding: 0 2rem;
+  }
+
+  @media (max-width: 991px) {
+    footer {
+      flex-direction: column !important;
+      height: auto;
+      min-height: var(--footer-height);
+      padding: 0 1rem;
+    }
+  }
+
+  .credits {
+    margin: 0;
+    text-align: center;
+  }
+
+  .credits :global(a) {
+    text-decoration: none;
+  }
+
+  .credits :global(a:hover) {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 991px) {
+    .credits {
+      padding: 0.5rem;
+    }
+  }
+
+  .social-media {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .social-media li {
+    align-items: center;
+    display: flex;
+  }
+
+  .social-media img {
+    fill: var(--color-main-bg);
+    height: 2.5rem;
+    object-fit: contain;
+    width: auto;
+  }
+
+  @media (max-width: 991px) {
+    .social-media {
+      justify-content: center;
+      padding: 2rem 0;
+    }
+  }
+</style>

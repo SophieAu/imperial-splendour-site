@@ -1,0 +1,61 @@
+---
+import { header as strings } from '../../data/strings';
+import HeaderLogo from './HeaderLogo.svelte';
+---
+
+<header class="headfoot desktop-header">
+  <HeaderLogo />
+  <nav>
+    <ul>
+      {
+        strings.menuItems.map(item => (
+          <li class={item.path === '/' ? "home-link" : ""}>
+            <a href={item.path}>{item.title}</a>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+</header>
+
+<style>
+  .desktop-header {
+    font: normal 2.5rem var(--font-family-heading);
+    height: var(--header-height);
+    padding: 0 2.5rem 0 1rem;
+    position: fixed;
+    top: 0;
+    width: calc(100vw - 3.5rem);
+  }
+
+  @media (max-width: 1023px) {
+    .desktop-header {
+      display: none !important;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav li {
+    line-height: var(--header-height);
+    margin: 0;
+  }
+
+  nav li:not(:last-child) {
+    padding-right: 4rem;
+  }
+
+  .home-link {
+    display: none;
+  }
+</style>
