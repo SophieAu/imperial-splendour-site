@@ -1,0 +1,46 @@
+---
+import { getEntry, render } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+
+const page = (await getEntry('pages', '404'))!;
+const { title, description, messageTitle, image, imageAlt } = page.data;
+const { Content } = await render(page);
+---
+
+<Layout title={`${title} | Imperial Splendour`} description={description} slug="404">
+  <div class="root">
+    <h1 class="title">{messageTitle}</h1>
+    <Content />
+    {image && <img class="image" src={image} alt={imageAlt ?? ''} />}
+  </div>
+</Layout>
+
+<style>
+  .root {
+    display: grid;
+    margin-top: 4rem;
+    place-items: center;
+  }
+
+  .title {
+    font: var(--font-headline);
+  }
+
+  @media (min-width: 992px) {
+    .title {
+      display: none;
+    }
+  }
+
+  .image {
+    height: 100%;
+    margin-top: 1rem;
+    width: min(80vw, 65rem);
+  }
+
+  @media (max-width: 991px) {
+    .image {
+      display: none;
+    }
+  }
+</style>
