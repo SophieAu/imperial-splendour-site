@@ -2,6 +2,11 @@ import { defineCollection } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 
+const transformImagePath = (imagePath: string, filePath: string) => imagePath.replace("..", `${filePath}/content`)
+
+const image = (filePath: string) => z.string().transform((imgPath) => transformImagePath(imgPath, filePath))
+const optionalImage = (filePath: string) => z.string().optional().transform((imgPath) => imgPath && transformImagePath(imgPath, filePath))
+
 const posts = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './content/posts' }),
   schema: z.object({
@@ -18,7 +23,7 @@ const factions = defineCollection({
   schema: z.object({
     title: z.string(),
     slug: z.string(),
-    flag: z.string(),
+    flag: image("../.."),
     description: z.string().optional().default(''),
   }),
 });
@@ -49,18 +54,18 @@ const pages = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string().optional().default(''),
-    heroImage: z.string().optional(),
-    heroLogo: z.string().optional(),
+    heroImage: optionalImage(".."),
+    heroLogo: optionalImage(".."),
     heroLogoAlt: z.string().optional(),
     heroText: z.string().optional(),
     infoBoxes: z
-      .array(z.object({ text: z.string(), image: z.string(), imgAlt: z.string() }))
+      .array(z.object({ text: z.string(), image: image(".."), imgAlt: z.string() }))
       .optional(),
     contributorsTitle: z.string().optional(),
-    contributors: z.array(z.object({ avatar: z.string(), name: z.string() })).optional(),
+    contributors: z.array(z.object({ avatar: image(".."), name: z.string() })).optional(),
     mainDownload: z.string().optional(),
     messageTitle: z.string().optional(),
-    image: z.string().optional(),
+    image: optionalImage(".."),
     imageAlt: z.string().optional(),
   }),
 });

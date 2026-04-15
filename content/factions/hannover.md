@@ -2,7 +2,7 @@
 slug: hannover
 title: Hannover
 description: "Visit the homeland of the British royal family, the 9th and newest electorate in the Holy Roman Empire."
-flag: /content/_img/flag_hannover.png
+flag: ../_img/flag_hannover.png
 ---
 
 The elector George III has not visited the homeland of his father prince Frederic and grandfather George II. In fact Hannover is ruled by London and its privy council at home. Because of that split the ruling noble families dominate the politics in Hannover.
@@ -28,7 +28,7 @@ So you have to decide: shall you take the risk and leading Hannover to independe
 6. Geheimer Rat [Christian Ludwig August von Arnswaldt](https://de.wikipedia.org/wiki/Christian_Ludwig_August_von_Arnswaldt)
 7. [Wilhelm August Rudloff](https://de.wikipedia.org/wiki/Wilhelm_August_Rudloff)
 8. [Friedrich Ludwig von Berlepsch](https://de.wikipedia.org/wiki/Friedrich_Ludwig_von_Berlepsch)
-9. [Claus von der Decken](https://de.wikipedia.org/wiki/Klaus_von_der_Decken_(Minister)) 
+9. [Claus von der Decken](https://de.wikipedia.org/wiki/Klaus_von_der_Decken_(Minister))
 10. [August Wilhelm Rehberg](https://plato.stanford.edu/entries/august-rehberg/)
 11. [Georg Friedrich Brandes](https://de.wikipedia.org/wiki/Georg_Friedrich_Brandes)
 
@@ -52,7 +52,7 @@ So you have to decide: shall you take the risk and leading Hannover to independe
 ![](https://steamuserimages-a.akamaihd.net/ugc/957481546479949883/3B7B042286C3156302E39047B1D36047495C1C14/)
 
 1. [Christian Gottlieb Daniel Müller](https://de.wikipedia.org/wiki/Christian_Gottlieb_Daniel_M%C3%BCller) (starting admiral)
-2. [Joachim Deetjen](https://de.wikipedia.org/wiki/Elbzollfregatte#K%C3%B6nigreich_Hannover) (no recruitment limitations) 
+2. [Joachim Deetjen](https://de.wikipedia.org/wiki/Elbzollfregatte#K%C3%B6nigreich_Hannover) (no recruitment limitations)
 
 #### Scholars
 ![](https://steamuserimages-a.akamaihd.net/ugc/970993441120077445/F6F80866C951737A69B620114DB93148E0248136/)
@@ -67,16 +67,16 @@ So you have to decide: shall you take the risk and leading Hannover to independe
 8. [August Ludwig Schlözer](https://en.wikipedia.org/wiki/August_Ludwig_von_Schl%C3%B6zer)
 9. [Johann Georg Heinrich Feder](https://en.wikipedia.org/wiki/Johann_Georg_Heinrich_Feder)
 10. [Friedrich Benjamin Osiander](https://en.wikipedia.org/wiki/Friedrich_Benjamin_Osiander)
-11. [Therese Huber](https://en.wikipedia.org/wiki/Therese_Huber) 
+11. [Therese Huber](https://en.wikipedia.org/wiki/Therese_Huber)
 12. [Dorothea Schlözer](https://en.wikipedia.org/wiki/Dorothea_von_Rodde-Schl%C3%B6zer)
-13. [Johann Friedrich Gmelin](https://en.wikipedia.org/wiki/Johann_Friedrich_Gmelin) 
+13. [Johann Friedrich Gmelin](https://en.wikipedia.org/wiki/Johann_Friedrich_Gmelin)
 14. [Gustav Hugo](https://en.wikipedia.org/wiki/Gustav_Hugo)
-15. [Arnold Hermann Ludwig Heeren](https://en.wikipedia.org/wiki/Arnold_Hermann_Ludwig_Heeren) 
-16. [Theodor Hagemann](https://de.wikipedia.org/wiki/Theodor_Hagemann) 
+15. [Arnold Hermann Ludwig Heeren](https://en.wikipedia.org/wiki/Arnold_Hermann_Ludwig_Heeren)
+16. [Theodor Hagemann](https://de.wikipedia.org/wiki/Theodor_Hagemann)
 17. [Philippine von Reden](https://de.wikipedia.org/wiki/Philippine_von_Reden)
 
 #### Envoys
-![](https://steamuserimages-a.akamaihd.net/ugc/957481546479365170/8E1F2F7651FC48BD37E32E1019867F2112852726/) 
+![](https://steamuserimages-a.akamaihd.net/ugc/957481546479365170/8E1F2F7651FC48BD37E32E1019867F2112852726/)
 
 1. [D.(ietrich) H.(einrich) L.(udwi)g Freyherr von Ompteda](https://en.wikipedia.org/wiki/Dietrich_Heinrich_Ludwig_von_Ompteda)
 2. [Basilius von Ramdohr](https://en.wikipedia.org/wiki/Basilius_von_Ramdohr)

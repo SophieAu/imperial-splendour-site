@@ -2,7 +2,7 @@
 slug: usa
 title: United States of America
 description: ""
-flag: /content/_img/flag_usa.png
+flag: ../_img/flag_usa.png
 ---
 
 ## US Army:
@@ -80,36 +80,36 @@ The United States will have their own army and philosophy techtrees to represent
 
 ### Philosophy Tech Tree:
 
-The Philosophy Techtree is divided into 4 different parts. At first there is the scientific advance like "Learned Society". The 2nd part are general political ideas like the "Federal System" and consequently the 3rd the acts to transform the ideas into laws and politics. Finally the 4th are economic ideas and measures.  
+The Philosophy Techtree is divided into 4 different parts. At first there is the scientific advance like "Learned Society". The 2nd part are general political ideas like the "Federal System" and consequently the 3rd the acts to transform the ideas into laws and politics. Finally the 4th are economic ideas and measures.
 ![](https://steamuserimages-a.akamaihd.net/ugc/960857170314591024/2686ABFFCB9CF2FCEA295F5D9A9B7AC404F2B156/)
 
-1.2 Social Contract  
-2.1 Empiricism  
-3.2 Separation of Powers  
-4.1 Encyclopedie  
-5.2 Common Government  
-6.1 Learned Society  
-6.2 [Declaration of Independence](https://en.wikipedia.org/wiki/United_States_Declaration_of_Independence)  
-6.3 [Virginia Declaration of Rights](https://en.wikipedia.org/wiki/Virginia_Declaration_of_Rights)  
-7.2 [Articles of Confederation](https://en.wikipedia.org/wiki/Articles_of_Confederation)  
-8.1 Scientific Method  
-8.2 [Federalism](https://en.wikipedia.org/wiki/Federalist_Papers)  
-8.4 [National Bank](https://en.wikipedia.org/wiki/First_Bank_of_the_United_States)  
-9.2 [Constitution](https://en.wikipedia.org/wiki/United_States_Constitution)  
-9.3 [Judiciary Act](https://en.wikipedia.org/wiki/Judiciary_Act_of_1789)  
-9.4 [Coinage Act](https://en.wikipedia.org/wiki/Coinage_Act_of_1792)  
+1.2 Social Contract
+2.1 Empiricism
+3.2 Separation of Powers
+4.1 Encyclopedie
+5.2 Common Government
+6.1 Learned Society
+6.2 [Declaration of Independence](https://en.wikipedia.org/wiki/United_States_Declaration_of_Independence)
+6.3 [Virginia Declaration of Rights](https://en.wikipedia.org/wiki/Virginia_Declaration_of_Rights)
+7.2 [Articles of Confederation](https://en.wikipedia.org/wiki/Articles_of_Confederation)
+8.1 Scientific Method
+8.2 [Federalism](https://en.wikipedia.org/wiki/Federalist_Papers)
+8.4 [National Bank](https://en.wikipedia.org/wiki/First_Bank_of_the_United_States)
+9.2 [Constitution](https://en.wikipedia.org/wiki/United_States_Constitution)
+9.3 [Judiciary Act](https://en.wikipedia.org/wiki/Judiciary_Act_of_1789)
+9.4 [Coinage Act](https://en.wikipedia.org/wiki/Coinage_Act_of_1792)
 10.2 [Alien and Sedition Acts](https://en.wikipedia.org/wiki/Alien_and_Sedition_Acts)
 
 ### Army Tech Tree:
 
-As the US did not launch a great army or great army reforms in the late 18th century your option are limited here:  
+As the US did not launch a great army or great army reforms in the late 18th century your option are limited here:
 ![](https://steamuserimages-a.akamaihd.net/ugc/960857170314599603/44A3073CE1C6534D82C276ADF7201F382DD8EFD6/)
 
-6.1 [Continental Army](https://en.wikipedia.org/wiki/Continental_Army)  
-7.2 [Regulations for the Order and Discipline of the Troops of the United States](https://en.wikipedia.org/wiki/Regulations_for_the_Order_and_Discipline_of_the_Troops_of_the_United_States)  
-8.1 [First American Regiment Resolution](https://en.wikipedia.org/wiki/First_American_Regiment)  
-10.1 [Legion of the United States](https://en.wikipedia.org/wiki/Legion_of_the_United_States)  
-11.1 [Militia Acts](https://en.wikipedia.org/wiki/Militia_Acts_of_1792)  
+6.1 [Continental Army](https://en.wikipedia.org/wiki/Continental_Army)
+7.2 [Regulations for the Order and Discipline of the Troops of the United States](https://en.wikipedia.org/wiki/Regulations_for_the_Order_and_Discipline_of_the_Troops_of_the_United_States)
+8.1 [First American Regiment Resolution](https://en.wikipedia.org/wiki/First_American_Regiment)
+10.1 [Legion of the United States](https://en.wikipedia.org/wiki/Legion_of_the_United_States)
+11.1 [Militia Acts](https://en.wikipedia.org/wiki/Militia_Acts_of_1792)
 12.3 [Military Academy](https://en.wikipedia.org/wiki/United_States_Military_Academy)
 
 Be aware that the Constitution is THE keytech for both the philosophy AND army techtree!

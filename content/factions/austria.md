@@ -1,7 +1,7 @@
 ---
 title: Austria
 slug: austria
-flag: /content/_img/austria.png
+flag: ../_img/austria.png
 description: Will you bring the Holy Roman Empire finally under Habsburg command
   and smash the overbearing Prussian?
 ---
