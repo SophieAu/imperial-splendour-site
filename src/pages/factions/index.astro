@@ -6,5 +6,11 @@ const factions = await getCollection("factions");
 // Redirect to first faction alphabetically by slug
 const first = factions.sort((a, b) => a.data.slug.localeCompare(b.data.slug))[0];
 
-return Astro.redirect(`${paths.factions}/${first.data.slug}`);
+// return Astro.redirect(`${paths.factions}/${first.data.slug}`);
 ---
+
+<html lang="en">
+    <head>
+        <meta http-equiv="refresh" content={`0; url=${paths.factions}/${first.data.slug}`} />
+    </head>
+</html>
