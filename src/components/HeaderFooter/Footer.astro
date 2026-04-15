@@ -1,14 +1,15 @@
 ---
-import { getEntry } from 'astro:content';
-import { buildCreditsCopyright, socialMediaImages } from '../../config';
+import { getEntry } from "astro:content";
+import { buildCreditsCopyright, socialMediaImages } from "../../config";
+import { footer as strings } from "../../strings";
 
-const footer = await getEntry('general', 'footer');
-if (!footer) throw new Error('footer content not found');
+const footer = await getEntry("general", "footer");
+if (!footer) throw new Error("footer content not found");
 const { siteBuilders, socialMedia } = footer.data;
 
 const credits = buildCreditsCopyright(siteBuilders);
 
-const visibleSocialMedia = socialMedia.filter(({ platform }) => platform !== 'TWCenter');
+const visibleSocialMedia = socialMedia.filter(({ platform }) => platform !== "TWCenter");
 ---
 
 <footer class="headfoot">
@@ -17,11 +18,14 @@ const visibleSocialMedia = socialMedia.filter(({ platform }) => platform !== 'TW
     {
       visibleSocialMedia.map(({ platform, link }) => (
         <li>
-          <a href={link} target="_blank" rel="noopener noreferrer" aria-label={`Imperial Splendour on ${platform}`} style="line-height: 0">
-            <img
-              src={socialMediaImages[platform]}
-              alt={`Imperial Splendour on ${platform}`}
-            />
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={strings.socialMediaLabel(platform)}
+            style="line-height: 0"
+          >
+            <img src={socialMediaImages[platform]} alt={strings.socialMediaLabel(platform)} />
           </a>
         </li>
       ))

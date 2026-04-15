@@ -1,37 +1,31 @@
 ---
-import { post as strings} from '../../strings';
-
-interface Comment {
-  id?: string;
-  name: string;
-  comment: string;
-  date: string;
-}
+import type { CollectionEntry } from "astro:content";
+import { post as strings } from "../../strings";
 
 interface Props {
-  comments: Comment[];
+  comments: CollectionEntry<"comments">[];
 }
 
 const { comments } = Astro.props;
 
 const formatDate = (dateStr: string) =>
-  new Date(dateStr).toLocaleDateString('en-US', {
-    month: 'long',
-    day: 'numeric',
-    year: 'numeric',
+  new Date(dateStr).toLocaleDateString("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
   });
 ---
 
 <section class="comments">
   <h2>{strings.comments}</h2>
   {
-    comments.map(comment => (
+    comments.map((comment) => (
       <article>
         <header class="comment-header">
-          <p class="author">{comment.name}</p>
-          <p class="date">{formatDate(comment.date)}</p>
+          <p class="author">{comment.data.name}</p>
+          <p class="date">{formatDate(comment.data.date)}</p>
         </header>
-        <p class="body">{comment.comment}</p>
+        <p class="body">{comment.data.comment}</p>
       </article>
     ))
   }
@@ -40,16 +34,16 @@ const formatDate = (dateStr: string) =>
 <style>
   .comments {
     padding-bottom: 3rem;
-  }
 
- h2,
- p {
-    margin: 0;
-    padding: 0;
-  }
+    h2,
+    p {
+      margin: 0;
+      padding: 0;
+    }
 
-  article {
-    padding: 1rem 0;
+    article {
+      padding: 1rem 0;
+    }
   }
 
   .comment-header {
@@ -70,5 +64,14 @@ const formatDate = (dateStr: string) =>
 
   .body {
     width: 66%;
+  }
+
+  @media (max-width: 991px) {
+    .body {
+      width: 100%;
+    }
+    .comment-header {
+      width: 100%;
+    }
   }
 </style>

@@ -1,13 +1,12 @@
 ---
-import { getCollection, render } from "astro:content";
+import { getCollection, render, getEntry } from "astro:content";
 import CommentSection from "../../components/BlogPost/CommentSection.astro";
 import NewsletterSignup from "../../components/BlogPost/NewsletterSignup.astro";
 import PostHeader from "../../components/BlogPost/PostHeader.astro";
 import Layout from "../../Layout.astro";
 import { pageTitle, slugs } from "../../config";
-import { getEntry } from "astro:content";
 import { createPostSlug, formatLinkList } from "../../util";
-import { post as strings} from '../../strings';
+import { post as strings } from "../../strings";
 
 export async function getStaticPaths() {
   const allPosts = await getCollection("posts", (p) => p.data.published);
@@ -45,18 +44,7 @@ const socialMedia = (await getEntry("general", "footer"))!.data.socialMedia;
     </div>
   </article>
 
-  {
-    postComments.length > 0 && (
-      <CommentSection
-        comments={postComments.map((c) => ({
-          id: c.id,
-          name: c.data.name,
-          comment: c.data.comment,
-          date: c.data.date,
-        }))}
-      />
-    )
-  }
+  {postComments.length > 0 && <CommentSection comments={postComments} />}
 </Layout>
 
 <style>

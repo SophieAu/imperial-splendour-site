@@ -20,6 +20,10 @@ export const factions = {
   nextButton: 'Go to next Faction',
 };
 
+export const footer = {
+  socialMediaLabel: (platform: string) => `Imperial Splendour on ${platform}`
+}
+
 export const header = {
   logoAlt: 'Imperial Splendour Logo',
   logoLinkLabel: 'Homepage',

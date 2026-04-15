@@ -1,14 +1,14 @@
 ---
-import { getCollection } from 'astro:content';
-import PostHeader from '../../components/BlogPost/PostHeader.astro';
-import Layout from '../../Layout.astro';
-import { pageTitle, slugs, paths } from '../../config';
-import { createPostSlug } from '../../util';
-import { blog as strings} from '../../strings';
+import { getCollection } from "astro:content";
+import PostHeader from "../../components/BlogPost/PostHeader.astro";
+import Layout from "../../Layout.astro";
+import { pageTitle, slugs, paths } from "../../config";
+import { createPostSlug } from "../../util";
+import { blog as strings } from "../../strings";
 
 export async function getStaticPaths() {
   const POSTS_PER_PAGE = 6;
-  const allPosts = await getCollection('posts', p => p.data.published);
+  const allPosts = await getCollection("posts", (p) => p.data.published);
   const sorted = allPosts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
   const totalPages = Math.ceil(sorted.length / POSTS_PER_PAGE);
 
@@ -22,18 +22,13 @@ export async function getStaticPaths() {
   });
 }
 
-
 const { posts, currentPage, totalPages } = Astro.props;
 ---
 
-<Layout
-  title={pageTitle("Blog")}
-  description={strings.pageDescription}
-  slug={slugs.blog}
->
+<Layout title={pageTitle("Blog")} description={strings.pageDescription} slug={slugs.blog}>
   <ul class="post-list">
     {
-      posts.map(post => {
+      posts.map((post) => {
         const slug = createPostSlug(post.data.title, post.data.date);
         return (
           <li class="post">
@@ -47,10 +42,22 @@ const { posts, currentPage, totalPages } = Astro.props;
   <section class="pagination">
     <ul>
       <li>
-        {currentPage > 1 && <a href={currentPage - 1 === 1 ? paths.blog : `${paths.blog}/${currentPage - 1}`} rel="prev">{strings.previousPage}</a>}
+        {
+          currentPage > 1 && (
+            <a href={currentPage - 1 === 1 ? paths.blog : `${paths.blog}/${currentPage - 1}`} rel="prev">
+              {strings.previousPage}
+            </a>
+          )
+        }
       </li>
       <li>
-        {currentPage < totalPages && <a href={`${paths.blog}/${currentPage + 1}`} rel="next">{strings.nextPage}</a>}
+        {
+          currentPage < totalPages && (
+            <a href={`${paths.blog}/${currentPage + 1}`} rel="next">
+              {strings.nextPage}
+            </a>
+          )
+        }
       </li>
     </ul>
   </section>

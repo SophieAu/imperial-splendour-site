@@ -14,11 +14,11 @@ const heroWebp = await getImage({ src: heroBg, format: "webp" });
 const heroJpg = await getImage({ src: heroBg, format: "jpeg" });
 ---
 
-<Layout title={pageTitle(title)} description={description ?? ""} slug={slugs.home}>
+<Layout title={pageTitle(title)} description={description || ""} slug={slugs.home}>
   <section class="hero-root">
-    <h1 style="display: none">{title}</h1>
+    <h1 class="sr-only">{title}</h1>
     <div class="hero-body" style={`--hero-webp: url('${heroWebp.src}'); --hero-jpg: url('${heroJpg.src}')`}>
-      {heroLogo && <img class="hero-logo" src={heroLogo} alt={heroLogoAlt ?? ""} />}
+      {heroLogo && <img class="hero-logo" src={heroLogo} alt={heroLogoAlt || ""} />}
       <p class="hero-text">{heroText}</p>
     </div>
     <LinkButton href={paths.downloadIndex} class="download-btn">{strings.downloadButton}</LinkButton>
@@ -37,6 +37,14 @@ const heroJpg = await getImage({ src: heroBg, format: "jpeg" });
 </Layout>
 
 <style>
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+  }
+
   .hero-root {
     align-items: center;
     display: flex;

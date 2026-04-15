@@ -21,7 +21,7 @@ const { Content } = await render(page);
         {contributorsTitle && <h2>{contributorsTitle}</h2>}
         <ul class="avatars">
           {contributors.map(({ avatar, name }) => (
-            <li class="contributor">
+            <li class="contributor" style={`--avatar-width: ${AVATAR_WIDTH}px`}>
               <img src={avatar} alt={imgAlt.avatar(name)} width={AVATAR_WIDTH} height={AVATAR_HEIGHT} />
               <p>{name}</p>
             </li>
@@ -63,7 +63,7 @@ const { Content } = await render(page);
       margin: 0.5rem 0;
     }
     img {
-      width: 66px;
+      width: var(--avatar-width);
     }
   }
 </style>

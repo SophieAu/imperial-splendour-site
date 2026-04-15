@@ -14,7 +14,7 @@ const main = allDownloads.find((d) => d.data.title === mainDownload);
 const others = allDownloads.filter((d) => d.data.title !== mainDownload);
 ---
 
-<Layout title={pageTitle(title)} description={description ?? ""} slug={slugs.downloadIndex}>
+<Layout title={pageTitle(title)} description={description || ""} slug={slugs.downloadIndex}>
   <section class="container">
     <div class="info">
       <Content />
@@ -35,7 +35,7 @@ const others = allDownloads.filter((d) => d.data.title !== mainDownload);
                   class="host-link-button"
                   aria-label={strings.downloadByHost(host)}
                 >
-                  <img src={hostImages.find(({ host: h }) => h === host)?.image} alt={strings.downloadByHost(host)} />
+                  {hostImages[host] ? <img src={hostImages[host]} alt={strings.downloadByHost(host)} /> : host}
                 </LinkButton>
               </li>
             ))}

@@ -8,7 +8,7 @@ const { title, description } = page.data;
 const { Content } = await render(page);
 ---
 
-<Layout title={pageTitle(title)} description={description ?? ''} slug={slugs.termsOfService}>
+<Layout title={pageTitle(title)} description={description || ""} slug={slugs.termsOfService}>
   <article class="terms">
     <Content />
   </article>
@@ -17,15 +17,11 @@ const { Content } = await render(page);
 <style>
   .terms {
     margin: 1.5rem 0;
-  }
 
-  .terms {
     h1 {
       word-wrap: break-word;
     }
-  }
 
-  .terms {
     li > p {
       margin-bottom: 0;
     }

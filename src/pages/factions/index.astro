@@ -1,8 +1,8 @@
 ---
-import { getCollection } from 'astro:content';
-import { paths } from '../../config';
+import { getCollection } from "astro:content";
+import { paths } from "../../config";
 
-const factions = await getCollection('factions');
+const factions = await getCollection("factions");
 // Redirect to first faction alphabetically by slug
 const first = factions.sort((a, b) => a.data.slug.localeCompare(b.data.slug))[0];
 

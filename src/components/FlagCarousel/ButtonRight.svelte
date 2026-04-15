@@ -1,7 +1,7 @@
 <script lang="ts">
-  import buttonRightPng from '@assets/button_right.png';
-  import buttonRightWebp from '@assets/button_right.webp';
-  import { factions } from '../../data/strings';
+  import buttonRightPng from "@assets/button_right.png";
+  import buttonRightWebp from "@assets/button_right.webp";
+  import { factions } from "../../strings";
 
   interface Props {
     href: string;

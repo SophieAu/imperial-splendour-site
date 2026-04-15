@@ -40,7 +40,7 @@ export const paths = {
 };
 
 export const mailchimpForm = {
-  action: `https://imperialsplendour.us19.list-manage.com/subscribe/post?u=${MAILCHIMP_USER}&amp;id=${MAILCHIMP_ID}`,
+  action: `https://imperialsplendour.us19.list-manage.com/subscribe/post?u=${MAILCHIMP_USER}&id=${MAILCHIMP_ID}`,
   inputName: `b_${MAILCHIMP_USER}_${MAILCHIMP_ID}`,
 };
 
@@ -50,15 +50,15 @@ export const buildCreditsCopyright = (builders: NameLinkTuple[]) =>
 
 export const imgAlt = {
   avatar: (name: string) => `Avatar of ${name}`,
-  filehost: (platform: string) => `"Download RotR 1.1.9b on ${platform}`,
+  filehost: (platform: string) => `Download RotR 1.1.9b on ${platform}`,
   socialMedia: (platform: string) => `Imperial Splendour on ${platform}`,
 };
 
-export const hostImages = [
-  { host: 'ModDB', image: 'https://button.moddb.com/download/medium/236128.png' },
-  { host: 'MediaFire', image: mediaFire },
-  { host: 'Google Drive', image: gDrive },
-];
+export const hostImages: Record<string, string> = {
+  'ModDB': 'https://button.moddb.com/download/medium/236128.png',
+  'MediaFire': mediaFire,
+  'Google Drive': gDrive
+}
 
 export const socialMediaImages: Record<string, string> = {
   ModDB: 'https://button.moddb.com/popularity/medium/mods/20800.png',

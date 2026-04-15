@@ -1,9 +1,9 @@
 ---
-import { getEntry, render } from 'astro:content';
-import Layout from '../Layout.astro';
-import { pageTitle, slugs } from '../config';
+import { getEntry, render } from "astro:content";
+import Layout from "../Layout.astro";
+import { pageTitle, slugs } from "../config";
 
-const page = (await getEntry('pages', '404'))!;
+const page = (await getEntry("pages", "404"))!;
 const { title, description, messageTitle, image, imageAlt } = page.data;
 const { Content } = await render(page);
 ---
@@ -12,7 +12,7 @@ const { Content } = await render(page);
   <div class="root">
     <h1 class="title">{messageTitle}</h1>
     <Content />
-    {image && <img class="image" src={image} alt={imageAlt ?? ''} />}
+    {image && <img class="image" src={image} alt={imageAlt || ""} />}
   </div>
 </Layout>
 

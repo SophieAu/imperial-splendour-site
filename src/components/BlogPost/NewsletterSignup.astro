@@ -1,11 +1,10 @@
 ---
-import { mailchimpForm } from '../../config';
-import { newsletterSignup as strings } from '../../strings';
-import LinkButton from '../LinkButton.astro';
-
+import { mailchimpForm } from "../../config";
+import { newsletterSignup as strings } from "../../strings";
+import LinkButton from "../LinkButton.astro";
 ---
 
-<section class='newsletter'>
+<section class="newsletter">
   <div id="mc_embed_signup">
     <form action={mailchimpForm.action} method="post" target="_blank" novalidate>
       <input
@@ -28,9 +27,10 @@ import LinkButton from '../LinkButton.astro';
     line-height: 2rem;
     margin-bottom: 5rem;
     text-align: center;
- p {
-    margin: 0.125rem;
-  }}
+    p {
+      margin: 0.125rem;
+    }
+  }
 
   #mc_embed_signup > form {
     align-items: center;
@@ -40,7 +40,7 @@ import LinkButton from '../LinkButton.astro';
     flex-direction: row;
   }
 
-  input[type='email'] {
+  input[type="email"] {
     background-color: transparent;
     border: none;
     box-shadow: inset 0 0 0.5rem 0.25rem rgba(142, 142, 142, 0.8);
@@ -57,5 +57,4 @@ import LinkButton from '../LinkButton.astro';
     left: -5000px;
     position: absolute;
   }
-
 </style>
