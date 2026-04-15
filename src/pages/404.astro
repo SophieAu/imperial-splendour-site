@@ -7,13 +7,15 @@ import { Image } from "astro:assets";
 const page = (await getEntry("pages", "404"))!;
 const { title, description, messageTitle, image, imageAlt } = page.data;
 const { Content } = await render(page);
+
+const images = import.meta.glob<{ default: ImageMetadata }>("/content/_img/*.{jpeg,jpg,png,gif}");
 ---
 
 <Layout title={pageTitle(title)} description={description} slug={slugs.notFound}>
   <div class="root">
     <h1 class="title">{messageTitle}</h1>
     <Content />
-    {image && <Image class="image" src={image.default} alt={imageAlt || ""} />}
+    {image && <Image class="image" src={images[image]()} alt={imageAlt || ""} />}
   </div>
 </Layout>
 

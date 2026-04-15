@@ -8,8 +8,8 @@ const images = import.meta.glob<{ default: ImageMetadata }>("/content/_img/*.{jp
 
 const transformImagePath = (imagePath: string, filePath: string) => imagePath.replace("..", `/content`)
 
-const image = (filePath: string) => z.string().transform((imgPath) => images[transformImagePath(imgPath, filePath)]())
-const optionalImage = (filePath: string) => z.string().optional().transform((imgPath) => imgPath ? images[transformImagePath(imgPath, filePath)]() : undefined)
+const image = (filePath: string) => z.string().transform((imgPath) => transformImagePath(imgPath, filePath))
+const optionalImage = (filePath: string) => z.string().optional().transform((imgPath) => imgPath ? transformImagePath(imgPath, filePath) : undefined)
 
 const posts = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './content/posts' }),

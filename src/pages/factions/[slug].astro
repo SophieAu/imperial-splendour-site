@@ -17,6 +17,8 @@ export async function getStaticPaths() {
 const { faction, factionList } = Astro.props;
 const { title, description, slug } = faction.data;
 const { Content } = await render(faction);
+
+const images = import.meta.glob<{ default: ImageMetadata }>("/content/_img/*.{jpeg,jpg,png,gif}");
 ---
 
 <Layout title={pageTitle(title)} description={description || title} slug={`${slugs.factions}/${slug}`} viewTransitions>

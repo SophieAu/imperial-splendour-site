@@ -12,13 +12,17 @@ const { title, description, heroLogo, heroLogoAlt, heroText, infoBoxes } = page.
 
 const heroWebp = await getImage({ src: heroBg, format: "webp" });
 const heroJpg = await getImage({ src: heroBg, format: "jpeg" });
+
+const images = import.meta.glob<{ default: ImageMetadata }>("/content/_img/*.{jpeg,jpg,png,gif}");
+if (!heroLogo || !images[heroLogo])
+  throw new Error(`"${heroLogo}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`);
 ---
 
 <Layout title={pageTitle(title)} description={description || ""} slug={slugs.home}>
   <section class="hero-root">
     <h1 class="sr-only">{title}</h1>
     <div class="hero-body" style={`--hero-webp: url('${heroWebp.src}'); --hero-jpg: url('${heroJpg.src}')`}>
-      {heroLogo && <Image class="hero-logo" src={heroLogo.default} alt={heroLogoAlt || ""} inferSize />}
+      {heroLogo && <Image class="hero-logo" src={images[heroLogo]()} alt={heroLogoAlt || ""} inferSize />}
       <p class="hero-text">{heroText}</p>
     </div>
     <LinkButton href={paths.downloadIndex} class="download-btn">{strings.downloadButton}</LinkButton>
@@ -28,7 +32,7 @@ const heroJpg = await getImage({ src: heroBg, format: "jpeg" });
     {
       infoBoxes?.map(({ text, image, imgAlt }, i) => (
         <>
-          <Image src={image.default} alt={imgAlt} data-pos={i % 2} class="info-img" />
+          <Image src={images[image]()} alt={imgAlt} data-pos={i % 2} class="info-img" />
           <p class="info-text">{text}</p>
         </>
       ))
