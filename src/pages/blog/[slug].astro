@@ -22,7 +22,7 @@ const { Content } = await render(post);
 
 const allComments = await getCollection("comments");
 const postComments = allComments
-  .filter((c) => c.data.slug === slug)
+  .filter((c) => c.data.blogSlug === slug)
   .sort((a, b) => new Date(a.data.date).getTime() - new Date(b.data.date).getTime());
 
 const socialMedia = (await getEntry("general", "footer"))!.data.socialMedia;

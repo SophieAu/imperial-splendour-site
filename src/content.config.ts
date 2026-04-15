@@ -46,7 +46,7 @@ const comments = defineCollection({
   loader: glob({ pattern: '**/*.yml', base: './content/comments' }),
   schema: z.object({
     _id: z.string(),
-    slug: z.string(),
+    blogSlug: z.string(),
     name: z.string(),
     comment: z.string(),
     date: z.string(),
