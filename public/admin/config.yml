@@ -13,7 +13,7 @@ collections:
     files:
     - name: "index"
       label: "Home Page"
-      file: "src/content/pages/index.md"
+      file: "content/pages/index.md"
       fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
@@ -31,7 +31,7 @@ collections:
           - { label: "Image Alt Text", name: "imgAlt", widget: "string" }
     - name: "about"
       label: "About"
-      file: "src/content/pages/about.md"
+      file: "content/pages/about.md"
       fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
@@ -46,14 +46,14 @@ collections:
           - { label: "Name", name: "name", widget: "string" }
     - name: "terms-of-service"
       label: "Terms of Service"
-      file: "src/content/pages/terms-of-service.md"
+      file: "content/pages/terms-of-service.md"
       fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
     - name: "404"
       label: "404"
-      file: "src/content/pages/404.md"
+      file: "content/pages/404.md"
       fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
@@ -66,7 +66,7 @@ collections:
     files:
     - name: "download"
       label: "Download"
-      file: "src/content/download/download.md"
+      file: "content/download/download.md"
       fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
@@ -80,7 +80,7 @@ collections:
         display_fields: ["title"]
   - name: "downloads"
     label: "Downloads"
-    folder: "src/content/downloads"
+    folder: "content/downloads"
     create: true
     slug: "{{title}}"
     extension: "md"
@@ -99,7 +99,7 @@ collections:
           - { label: "Link", name: "link", widget: "string" }
   - name: "blog"
     label: "Blog"
-    folder: "src/content/posts"
+    folder: "content/posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     extension: "md"
@@ -123,7 +123,7 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "factions"
     label: "Factions"
-    folder: "src/content/factions"
+    folder: "content/factions"
     create: true
     slug: "{{slug}}"
     extension: "md"
