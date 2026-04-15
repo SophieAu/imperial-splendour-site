@@ -4,11 +4,13 @@
 	"description": "Imperial Splendour Site",
 	"author": "Sophie Au <sophie@sophieau.com>",
 	"private": true,
+	"type": "module",
 	"scripts": {
 		"dev": "astro dev",
 		"build": "astro build",
 		"preview": "astro preview",
-		"checks": "astro check"
+		"checks": "astro check",
+		"test-local": "astro build && astro preview"
 	},
 	"dependencies": {
 		"@astrojs/rss": "^4.0.18",
