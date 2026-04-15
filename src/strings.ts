@@ -16,6 +16,8 @@ export const download = {
 };
 
 export const factions = {
+  title: "Factions",
+  description: 'Explore the factions you can lead',
   previousButton: 'Go to previous Faction',
   nextButton: 'Go to next Faction',
 };

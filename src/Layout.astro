@@ -20,9 +20,10 @@ interface Props {
   slug: string;
   ogImage?: string;
   viewTransitions?: boolean;
+  redirect?: string;
 }
 
-const { title, description, slug, ogImage, viewTransitions = false } = Astro.props;
+const { title, description, slug, ogImage, viewTransitions = false, redirect } = Astro.props;
 const ogImageUrl = `${BASE_URL}${ogImage || FALLBACK_IMAGE}`;
 const url = `${BASE_URL}/${slug}`;
 
@@ -77,6 +78,8 @@ const detectNoScript = `!function(b){"use strict";var c=b.documentElement;c.clas
         });
       </script>
     )}
+
+    {redirect &&  <meta http-equiv="refresh" content={`0; url=${redirect}`} />}
   </head>
   <body style={`--bg-jpg: url('${textureBgJpg.src}'); --bg-webp: url('${textureBgWebp.src}'); --headfoot-jpg: url('${textureHeadfootJpg.src}'); --headfoot-webp: url('${textureHeadfootWebp.src}')`}>
     <HeaderWrapper />
