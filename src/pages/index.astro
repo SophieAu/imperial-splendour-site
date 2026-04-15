@@ -22,7 +22,7 @@ if (!heroLogo || !images[heroLogo])
   <section class="hero-root">
     <h1 class="sr-only">{title}</h1>
     <div class="hero-body" style={`--hero-webp: url('${heroWebp.src}'); --hero-jpg: url('${heroJpg.src}')`}>
-      {heroLogo && <Image class="hero-logo" src={images[heroLogo]()} alt={heroLogoAlt || ""} inferSize />}
+      {heroLogo && <Image class="hero-logo" src={images[heroLogo]()} alt={heroLogoAlt || ""} />}
       <p class="hero-text">{heroText}</p>
     </div>
     <LinkButton href={paths.downloadIndex} class="download-btn">{strings.downloadButton}</LinkButton>
@@ -92,6 +92,7 @@ if (!heroLogo || !images[heroLogo])
 
   .hero-logo {
     width: min(50vw, 85rem);
+    height: auto;
   }
 
   .hero-body {
@@ -160,6 +161,7 @@ if (!heroLogo || !images[heroLogo])
     box-sizing: border-box;
     object-fit: contain;
     width: 100%;
+    height: auto;
   }
 
   .info-img[data-pos="0"] {
