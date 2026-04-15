@@ -18,7 +18,7 @@ const heroJpg = await getImage({ src: heroBg, format: "jpeg" });
   <section class="hero-root">
     <h1 class="sr-only">{title}</h1>
     <div class="hero-body" style={`--hero-webp: url('${heroWebp.src}'); --hero-jpg: url('${heroJpg.src}')`}>
-      {heroLogo && <img class="hero-logo" src={heroLogoG.src} alt={heroLogoAlt || ""} />}
+      {heroLogo && <img class="hero-logo" src={heroLogo} alt={heroLogoAlt || ""} />}
       <p class="hero-text">{heroText}</p>
     </div>
     <LinkButton href={paths.downloadIndex} class="download-btn">{strings.downloadButton}</LinkButton>
