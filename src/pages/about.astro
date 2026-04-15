@@ -10,8 +10,6 @@ const AVATAR_HEIGHT = 88;
 const page = (await getEntry("pages", "about"))!;
 const { title, description, contributorsTitle, contributors } = page.data;
 const { Content } = await render(page);
-
-const images = import.meta.glob<{ default: ImageMetadata }>("/content/_img/*.{jpeg,jpg,png,gif}");
 ---
 
 <Layout title={pageTitle(title)} description={description} slug={slugs.about}>
@@ -25,7 +23,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>("/content/_img/*.{jp
         <ul class="avatars">
           {contributors.map(({ avatar, name }) => (
             <li class="contributor" style={`--avatar-width: ${AVATAR_WIDTH}px`}>
-              <Image src={images[avatar]()} alt={imgAlt.avatar(name)} width={AVATAR_WIDTH} height={AVATAR_HEIGHT} />
+              <Image src={avatar.default} alt={imgAlt.avatar(name)} width={AVATAR_WIDTH} height={AVATAR_HEIGHT} />
               <p>{name}</p>
             </li>
           ))}

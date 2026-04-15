@@ -2,16 +2,11 @@
   import ButtonLeft from "./ButtonLeft.svelte";
   import ButtonRight from "./ButtonRight.svelte";
   import { paths } from "../../config";
-
-  interface Faction {
-    title: string;
-    slug: string;
-    flag: string;
-  }
+  import type { CollectionEntry } from "astro:content";
 
   interface Props {
     selected: string;
-    factions: Faction[];
+    factions: CollectionEntry<"factions">[];
   }
 
   let { selected, factions }: Props = $props();
@@ -43,10 +38,10 @@
 
   const circularModulo = (base: number) => (value: number) => (value < 0 ? base + value : value % base);
 
-  const selectedIndex = $derived(factions.findIndex((f) => f.slug === selected));
+  const selectedIndex = $derived(factions.findIndex((f) => f.data.slug === selected));
   const modulo = $derived(circularModulo(factions.length));
 
-  const getFaction = (offset: number) => factions[modulo(selectedIndex + offset)];
+  const getFaction = (offset: number) => factions[modulo(selectedIndex + offset)].data;
 
   const calcWidth = (offset: number) => IMAGE_WIDTH / Math.abs(offset || 1);
   const calcHeight = (offset: number) => IMAGE_HEIGHT * (1 - (offset * offset) / 100);
@@ -69,7 +64,7 @@
       style:--img-right="{calcImgRight(offset)}px"
       style:--img-left="{calcImgLeft(offset)}px"
     >
-      <img src={getFaction(offset).flag} alt={getFaction(offset).title} />
+      <img src={getFaction(offset).flag.default.src} alt={getFaction(offset).title} />
     </picture>
 
     {#if offset === 0}

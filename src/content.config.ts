@@ -2,10 +2,14 @@ import { defineCollection } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 
+
+const images = import.meta.glob<{ default: ImageMetadata }>("/content/_img/*.{jpeg,jpg,png,gif}");
+
+
 const transformImagePath = (imagePath: string, filePath: string) => imagePath.replace("..", `/content`)
 
-const image = (filePath: string) => z.string().transform((imgPath) => transformImagePath(imgPath, filePath))
-const optionalImage = (filePath: string) => z.string().optional().transform((imgPath) => imgPath && transformImagePath(imgPath, filePath))
+const image = (filePath: string) => z.string().transform((imgPath) => images[transformImagePath(imgPath, filePath)]())
+const optionalImage = (filePath: string) => z.string().optional().transform((imgPath) => imgPath ? images[transformImagePath(imgPath, filePath)]() : undefined)
 
 const posts = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './content/posts' }),
