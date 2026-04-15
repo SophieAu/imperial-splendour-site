@@ -9,7 +9,7 @@ excerpt: Today's blog is all about Poland! So take a look at what will be in our
 ---
 <center>
 
-![Flag Poland](/content/_img/flag_poland3.png "Flag Poland")
+![Flag Poland](../_img/flag_poland3.png "Flag Poland")
 
 </center>
 
@@ -23,7 +23,7 @@ The Commonwealth will either face complete annihilation or freedom for its peopl
 
 #### **Thanks to** Жук **we can include his submod into our mod. So take a look at our new Polish army:**
 
-![Polish army collage](/content/_img/army.png "Polish army collage")
+![Polish army collage](../_img/army.png "Polish army collage")
 
 Here are some more plates for some of the new units:
 
@@ -65,7 +65,7 @@ But commanding an army will not help you govern the Commonwealth. To be able to 
 
 <center>
 
-![Polish Government](/content/_img/poland-government-full.png "Polish Government")
+![Polish Government](../_img/poland-government-full.png "Polish Government")
 
 </center>
 

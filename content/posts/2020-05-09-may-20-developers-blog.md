@@ -8,13 +8,13 @@ published: true
 ---
 <center>
 
-![](/content/_img/preview-may-20-blog.png)
+![](../_img/preview-may-20-blog.png)
 
 </center>
 
-We know, there haven't been an update or a Developers blog for a long time. But time is a limiting issue when modding. 
+We know, there haven't been an update or a Developers blog for a long time. But time is a limiting issue when modding.
 
-Furthermore, we want to release a clean version 1.2 and not another beta. 
+Furthermore, we want to release a clean version 1.2 and not another beta.
 
 But many things have been made in the background. In order the give the AI the ability to make use of conquered regions we centralised the building chains. So not every faction has his own building chain any more. All factions share the same chains, just the Prestige Buildings, localisation, models and UI are different.
 
@@ -38,27 +38,27 @@ And this is the final model of the special Brunswick building chain:
 
 </center>
 
-Also, many descriptions were added and the website received a complete overhaul. Many bugs you reported were fixed and we try to improve the overhaul quality of the mod. 
+Also, many descriptions were added and the website received a complete overhaul. Many bugs you reported were fixed and we try to improve the overhaul quality of the mod.
 
 And many things will be new in the next version and mods like iporto9393's [Train your Generals at Schools! -&- Fixed Trait and Ancillary Triggers](https://www.twcenter.net/forums/showthread.php?798721-SUBMOD-Train-your-Generals-at-Schools!-amp-Fixed-Trait-and-Ancillary-Triggers) will be incorporated in 1.2.
 
 In addition, those guys will be part of RotR 1.2 as a little anticipation of RotR 1.3:
 
-![](/content/_img/austria-regiment-kaiser.jpg)
+![](../_img/austria-regiment-kaiser.jpg)
 
-![](/content/_img/austria-german-line-infantry-regiment.jpg)
+![](../_img/austria-german-line-infantry-regiment.jpg)
 
-![](/content/_img/austria-hungarian-line-infantry-regiment.jpg)
+![](../_img/austria-hungarian-line-infantry-regiment.jpg)
 
-![](/content/_img/austria-grenzer-regiment.jpg)
+![](../_img/austria-grenzer-regiment.jpg)
 
-![](/content/_img/austria-marines.jpg)
+![](../_img/austria-marines.jpg)
 
-The basic model was made by Flikitos long ago with some slight adaptions made by me. 
+The basic model was made by Flikitos long ago with some slight adaptions made by me.
 
 Furthermore, the Total War Center 2019 Modding Awards are now live. Check it out by clicking on the picture or the link below.
 
-[![Modding Awards Banner](/content/_img/ma-2019-banner.png)](https://www.twcenter.net/forums/showthread.php?804369-2019-MODDING-AWARDS-VOTING-POLLS-ARE-UP-(links-inside!))
+[![Modding Awards Banner](../_img/ma-2019-banner.png)](https://www.twcenter.net/forums/showthread.php?804369-2019-MODDING-AWARDS-VOTING-POLLS-ARE-UP-(links-inside!))
 
 https://www.twcenter.net/forums/showthread.php?804369-2019-MODDING-AWARDS-VOTING-POLLS-ARE-UP-(links-inside!)
 

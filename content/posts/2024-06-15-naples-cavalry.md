@@ -6,4 +6,4 @@ author:
 published: false
 excerpt: ABC
 ---
-![General](/content/_img/20251102120648_1.jpg "General")
+![General](../_img/20251102120648_1.jpg "General")

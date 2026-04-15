@@ -21,6 +21,6 @@ Here is the Austrian army:
 
 <center>
 
-![Austrian army unit icons](/content/_img/austria_units_1.2.png "Austrian army unit icons")
+![Austrian army unit icons](../_img/austria_units_1.2.png "Austrian army unit icons")
 
 </center>

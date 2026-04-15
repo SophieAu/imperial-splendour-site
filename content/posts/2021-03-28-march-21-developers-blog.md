@@ -9,7 +9,7 @@ published: true
 ---
 ### This is the last blog before the next update. Take a look at our latest progress.
 
-During the past months, many minor things were fixed. But also some final larger changes were incorporated. 
+During the past months, many minor things were fixed. But also some final larger changes were incorporated.
 
 Now all units from already done factions are balanced. So each nation has now units representing the quality of their armed forces in the late 18th century. This means as an example that the French monarchy has a rather good cavalry and a weaker infantry. On the contrary, the British cavalry is very weak but the British infantry has good shooting skills.
 
@@ -17,55 +17,55 @@ Also, a large amount of new descriptions have been added by The Shark. He also c
 
 Sir John Barlow and myfate worked on the naval side. Thanks to Sir John Barlow we will be able to present maybe the most magnificent navies you have ever seen.
 
-![HMS Victory 1765; Barfleur Class 2nd Rate (98 guns); Triumph Class Heavy 3rd Rate (74 guns)](/content/_img/naval2.jpg "HMS Victory 1765; Barfleur Class 2nd Rate (98 guns); Triumph Class Heavy 3rd Rate (74 guns)")
+![HMS Victory 1765; Barfleur Class 2nd Rate (98 guns); Triumph Class Heavy 3rd Rate (74 guns)](../_img/naval2.jpg "HMS Victory 1765; Barfleur Class 2nd Rate (98 guns); Triumph Class Heavy 3rd Rate (74 guns)")
 
 Some of the new textures for early British ships. From left to right: HMS Victory 1765; Barfleur Class 2nd Rate (98 guns); Triumph Class Heavy 3rd Rate (74 guns).
 
-![A Spanish 3rd rate](/content/_img/naval3.jpg "A Spanish 3rd rate")
+![A Spanish 3rd rate](../_img/naval3.jpg "A Spanish 3rd rate")
 
 A Spanish 3rd rate watches his French ally's flagship explode. The colour pattern on the Spanish ship corresponds to the "Triunfante Class" 68-gunner ship of the line which will be available since the start of the campaign.
 
-![French 1st rate](/content/_img/naval4.jpg "French 1st rate")
+![French 1st rate](../_img/naval4.jpg "French 1st rate")
 
 A French 1st rate sails against an enemy squadron. The ship depicted here corresponds to a "Terrible Class" 106-gunner ship of the line, using a colour pattern inspired by "Le Bretagne (1766)". This class consists of two ships that will be available since the start of the campaign.
 
 Furthermore, Great Britain got a new flag when turning into a Republic:
 
-![New British republican flag](/content/_img/british-rep-flag-1.jpg "New British republican flag")
+![New British republican flag](../_img/british-rep-flag-1.jpg "New British republican flag")
 
-![British Ships with new republican flag](/content/_img/british-rep-flag-2.jpg "British Ships with new republican flag")
+![British Ships with new republican flag](../_img/british-rep-flag-2.jpg "British Ships with new republican flag")
 
 [The flag was used by British republicans in the early 19th century.](https://en.wikipedia.org/wiki/Republicanism_in_the_United_Kingdom#Revolutionary_republicanism,_1800%E2%80%931848)
 
 Also, some missing gaps in the land units were filled. The British Rifle Corps got its own officers with a fancy uniform:
 
-![British Rifle Corps Officer](/content/_img/british-rifle-corps-officer.jpg "British Rifle Corps Officer")
+![British Rifle Corps Officer](../_img/british-rifle-corps-officer.jpg "British Rifle Corps Officer")
 
 The British artillery wears now a bicorne:
 
-![British artillery bicorne](/content/_img/british-artillery-bicorn.jpg "British artillery bicorne")
+![British artillery bicorne](../_img/british-artillery-bicorn.jpg "British artillery bicorne")
 
 And the Danish have their own white infantry regiments in the West Indies. Although the fighting abilities of those regiments are questionable regarding the number of men is already depleted by the yellow jack and other infections. Their officers are obviously also not the finest...
 
-![Danish white infantry regiments in the West Indies](/content/_img/denmark-white-west-indies-regiment.jpg "Danish white infantry regiments in the West Indies")
+![Danish white infantry regiments in the West Indies](../_img/denmark-white-west-indies-regiment.jpg "Danish white infantry regiments in the West Indies")
 
 The will to fight is beyond question for the following guys! Haiti has now black officers:
 
-![Haiti black officer](/content/_img/haiti-black-officer.jpg "Haiti black officer")
+![Haiti black officer](../_img/haiti-black-officer.jpg "Haiti black officer")
 
 France also got some updates:
 
 The Légion Dabrowski has now a uniform for the famous Lancers:
 
-![Legion Dabrowski Lancers](/content/_img/legion-dabrowski-lancers.jpg "Legion Dabrowski Lancers")
+![Legion Dabrowski Lancers](../_img/legion-dabrowski-lancers.jpg "Legion Dabrowski Lancers")
 
 And the texture for the Légion Noire has been optimized:
 
-![Légion Noire](/content/_img/legion-noire.jpg "Légion Noire")
+![Légion Noire](../_img/legion-noire.jpg "Légion Noire")
 
 Some new tech info pics and eventpics will also be part of the next update:
 
-![new tech info pics and eventpics](/content/_img/eventpics_new.png "new tech info pics and eventpics")
+![new tech info pics and eventpics](../_img/eventpics_new.png "new tech info pics and eventpics")
 
 1. Artillery Training Camp
 2. Déclaration des Droits de l’Homme et du Citoyen

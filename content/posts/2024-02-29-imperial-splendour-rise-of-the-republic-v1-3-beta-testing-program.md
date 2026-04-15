@@ -8,11 +8,11 @@ excerpt: We are searching for new Beta-Testers. Apply today!
 ---
 Hello everyone,
 
-today's blog is about beta testing. With 1.3 we want to deliver a version as stable as possible. And that's why we need you. Creating new content and testing doesn't work at the same time. So if you want to help in creating RotR 1.3 you can apply for testing. Currently, we are planning different stages for testing to get rid of the annoying campaign CTDs. 
+today's blog is about beta testing. With 1.3 we want to deliver a version as stable as possible. And that's why we need you. Creating new content and testing doesn't work at the same time. So if you want to help in creating RotR 1.3 you can apply for testing. Currently, we are planning different stages for testing to get rid of the annoying campaign CTDs.
 
-In the first stage, the new ancillaries will be disabled. 
+In the first stage, the new ancillaries will be disabled.
 
-In the second phase, the new ships will be disabled. 
+In the second phase, the new ships will be disabled.
 
 At last, you have to try out Large Address Aware.
 
@@ -28,7 +28,7 @@ What are the requirements you need to fulfil as a beta tester?
 6. Furthermore, we need you to take a look at our new ships. Are there any weird textures, does the rigging fit, do the sails work and are no people jumping into the water?
 7. Do not publish any undisclosed work and files without our explicit approval.
 
-So if you (want to) fulfil the requirements you can apply at Discord by following this link: 
+So if you (want to) fulfil the requirements you can apply at Discord by following this link:
 
 https://discord.com/channels/762344127899107339/1213228871965745182
 
@@ -40,4 +40,4 @@ Your,
 
 Imperial Splendour team.
 
-![RotR 1.3 promo pic](/content/_img/rotr-1.3teaser.png "RotR 1.3 promo pic")
+![RotR 1.3 promo pic](../_img/rotr-1.3teaser.png "RotR 1.3 promo pic")

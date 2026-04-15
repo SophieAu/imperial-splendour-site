@@ -9,7 +9,7 @@ published: true
 ---
 <center>
 
-![Preview Pic](/content/_img/preview-july-20-blog.png)
+![Preview Pic](../_img/preview-july-20-blog.png)
 
 </center>
 
@@ -23,11 +23,11 @@ The first units are the Black light infantry in 2 variants: Loyal Black Rangers,
 
 #### Loyal Black Rangers:
 
-![GB Loyal Black Rangers](/content/_img/gb-loyal-black-rangers.jpg)
+![GB Loyal Black Rangers](../_img/gb-loyal-black-rangers.jpg)
 
 #### Black Chasseurs:
 
-![GB Black Chasseurs](/content/_img/gb-black-chasseurs.jpg)
+![GB Black Chasseurs](../_img/gb-black-chasseurs.jpg)
 
 </center>
 
@@ -35,7 +35,7 @@ Also the British can recruit a cavalry unit in Hispaniola and Cuba, the Uhlans B
 
 #### <center>Uhlans Britannique:
 
-![GB Uhlans Britannique](/content/_img/gb-ulhans-britannique.jpg)
+![GB Uhlans Britannique](../_img/gb-ulhans-britannique.jpg)
 
 </center>
 
@@ -45,11 +45,11 @@ Also, all factions will have access to some generic colonial units in the West I
 
 #### Generic Black Chasseurs:
 
-![Generic Black Chasseurs](/content/_img/generic-black-chasseurs.jpg)
+![Generic Black Chasseurs](../_img/generic-black-chasseurs.jpg)
 
 #### Generic White Planter Militia:
 
-![Generic White Planter Militia](/content/_img/generic-white-militia-2.jpg)
+![Generic White Planter Militia](../_img/generic-white-militia-2.jpg)
 
 </center>
 
@@ -57,21 +57,21 @@ As you can see, we also created a generic white officer for all West India units
 
 But that's not all. Finally, the British Highlander Light Infantry is done!
 
-![Highlander Light Infantry](/content/_img/gb-light-highlanders.jpg)
+![Highlander Light Infantry](../_img/gb-light-highlanders.jpg)
 
 Also, the Guards have now a light infantry unit replacing the light infantry of the Marines:
 
-![GB Guards Light Infantry](/content/_img/gb-guards-light-infantry.jpg)
+![GB Guards Light Infantry](../_img/gb-guards-light-infantry.jpg)
 
 The 42nd Regiment of Foot, the Black Watch, received an update on their uniforms. They have now the correct lace around their buttonholes.
 
-![Black Watch](/content/_img/gb-black-watch.jpg)
+![Black Watch](../_img/gb-black-watch.jpg)
 
 #### Here are the unit icons:
 
-![British Icons](/content/_img/july-update-britain-units-icons.png)
+![British Icons](../_img/july-update-britain-units-icons.png)
 
-1. Guards Light Infantry 
+1. Guards Light Infantry
 2. West India Regiment
 3. Black Chasseurs
 4. Loyal Black Rangers
@@ -79,7 +79,7 @@ The 42nd Regiment of Foot, the Black Watch, received an update on their uniforms
 6. 42nd Regiment of Foot 'Black Watch'
 7. Highlanders Light Infantry
 
-![Generic West India units](/content/_img/july-update-generic-west-indian-units-icons.png)
+![Generic West India units](../_img/july-update-generic-west-indian-units-icons.png)
 
 1. Black Chasseurs
 2. White Planters Militia
@@ -90,7 +90,7 @@ As already announced iporto9393's [Train your Generals at Schools! -&- Fixed Tra
 
 #### For Admirals:
 
-![Admirals Followers](/content/_img/july-update-admirals-followers.png)
+![Admirals Followers](../_img/july-update-admirals-followers.png)
 
 1. Steward - A Steward cares for the needs of his master.
 2. Ship's cat - A cat is on a ship to control the population of rats and therefore prevent the provisions from being eaten.
@@ -101,7 +101,7 @@ Note that each admiral can have only one follower out of the first three.
 
 #### For Generals:
 
-![general followers](/content/_img/july-update-general-followers.png)
+![general followers](../_img/july-update-general-followers.png)
 
 1. Influential Cousin - This man has influential relatives. In the world of the 18th century where kinship is a major factor in promotion having influential relatives is important. This secures future advancement even when having no talents at all. The cousin also attracts persons without a patron seeking patronage.
 2. Drummer - A drummer is needed to let the soldiers march in cadence. He gives provides the speed of the march. But he acts as a battlefield medic too.
@@ -111,7 +111,7 @@ Note that each admiral can have only one follower out of the first three.
 
 #### For Scholars:
 
-![Scholar Followers](/content/_img/july-update-scholar-followers.png)
+![Scholar Followers](../_img/july-update-scholar-followers.png)
 
 1. Female Doctoral Candidate
 2. Interested Wife

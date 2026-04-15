@@ -10,11 +10,11 @@ As you may have noticed, last weekend we didn't publish any news. We didn't stop
 
 #### At first, the final Savoyard units are done, the royal and regimental artillery crews:
 
-![Savoyard Royal Artillery](/content/_img/20240218154507_1.jpg "Savoyard Royal Artillery")
+![Savoyard Royal Artillery](../_img/20240218154507_1.jpg "Savoyard Royal Artillery")
 
-![Piedmontese Regimental Artillery](/content/_img/20240218164844_1.jpg "Piedmontese Regimental Artillery")
+![Piedmontese Regimental Artillery](../_img/20240218164844_1.jpg "Piedmontese Regimental Artillery")
 
-![Sardinian Regimental Artillery](/content/_img/20240218164828_1.jpg "Sardinian Regimental Artillery")
+![Sardinian Regimental Artillery](../_img/20240218164828_1.jpg "Sardinian Regimental Artillery")
 
 #### Here are close-ups of some units from the Kingdom of Sardinia, the Knights of Saint John and the Duchy of Tuscany:
 
@@ -22,9 +22,9 @@ Kingdom of Sardinia - Guard Grenadier and Fusilier:
 
 <center>
 
-![Kingdom of Sardinia - Guard Grenadier](/content/_img/ks_-_guard_gren.png "Kingdom of Sardinia - Guard Grenadier")
+![Kingdom of Sardinia - Guard Grenadier](../_img/ks_-_guard_gren.png "Kingdom of Sardinia - Guard Grenadier")
 
-![Kingdom of Sardinia - Guard Fusilier](/content/_img/ks_-_guard_reg.png "Kingdom of Sardinia - Guard Fusilier")
+![Kingdom of Sardinia - Guard Fusilier](../_img/ks_-_guard_reg.png "Kingdom of Sardinia - Guard Fusilier")
 
 </center>
 
@@ -32,9 +32,9 @@ Kingdom of Sardinia - Marine and Line Infantry Fusiliers:
 
 <center>
 
-![Kingdom of Sardinia - Marine Fusilier](/content/_img/ks_-_marine_inf.png "Kingdom of Sardinia - Marine Fusiliers")
+![Kingdom of Sardinia - Marine Fusilier](../_img/ks_-_marine_inf.png "Kingdom of Sardinia - Marine Fusiliers")
 
-![Kingdom of Sardinia - Line Infantry Fusiliers](/content/_img/ks_-_line_inf.png "Kingdom of Sardinia - Line Infantry Fusiliers")
+![Kingdom of Sardinia - Line Infantry Fusiliers](../_img/ks_-_line_inf.png "Kingdom of Sardinia - Line Infantry Fusiliers")
 
 </center>
 
@@ -42,9 +42,9 @@ Knights of Saint John - Line Infantry Grenadier and Fusilier:
 
 <center>
 
-![Knights of Saint John - Line Infantry Grenadier](/content/_img/ksj_-_line_gren.png "Knights of Saint John - Line Infantry Grenadier")
+![Knights of Saint John - Line Infantry Grenadier](../_img/ksj_-_line_gren.png "Knights of Saint John - Line Infantry Grenadier")
 
-![Knights of Saint John - Line Infantry Fusilier](/content/_img/ksj_-_line_inf.png "Knights of Saint John - Line Infantry Fusilier")
+![Knights of Saint John - Line Infantry Fusilier](../_img/ksj_-_line_inf.png "Knights of Saint John - Line Infantry Fusilier")
 
 </center>
 
@@ -57,13 +57,13 @@ Duchy of Tuscany - Guardia Nobile a Cavallo, Cavalleggeri (Medium Cavalry), Guar
 <img src="https://imperialsplendour.com/static/a1b3b9c8ae3a015d449cf622f14906f4/0ef32/up_-_inf_oranje.png" alt="Cavalleggeri (Medium Cavalry)" width="450" height="603"> <img src="https://imperialsplendour.com/a4691a74-c1ee-48cf-885c-2488423ed21d" alt="Artiglieria Toscana" width="450" height="603">
 
 
-![Duchy of Tuscany - Guardia Nobile a Cavallo](/content/_img/dt_-_cav_guard.png "Duchy of Tuscany - Guardia Nobile a Cavallo")
+![Duchy of Tuscany - Guardia Nobile a Cavallo](../_img/dt_-_cav_guard.png "Duchy of Tuscany - Guardia Nobile a Cavallo")
 
-![Cavalleggeri (Medium Cavalry)](/content/_img/dt_-_cav_s.a.r.1.png "Cavalleggeri (Medium Cavalry)")
+![Cavalleggeri (Medium Cavalry)](../_img/dt_-_cav_s.a.r.1.png "Cavalleggeri (Medium Cavalry)")
 
-![Guardia a Piedi di Toscana](/content/_img/dt_-_guard_inf.1.png "Guardia a Piedi di Toscana")
+![Guardia a Piedi di Toscana](../_img/dt_-_guard_inf.1.png "Guardia a Piedi di Toscana")
 
-![Artiglieria Toscana](/content/_img/dt_-_art.png "Artiglieria Toscana")
+![Artiglieria Toscana](../_img/dt_-_art.png "Artiglieria Toscana")
 
 </center>
 
@@ -97,11 +97,11 @@ You can take a closer look at the new Hanoverian bulgehorn on sketchfab too:
 
 Furthermore, we work on the UI too. RotR will get a new main menu background. Also, the battle selection screen got an update:
 
-![battle selection screen](/content/_img/20240218154311_1.jpg "battle selection screen")
+![battle selection screen](../_img/20240218154311_1.jpg "battle selection screen")
 
 And the flag of the United Provinces is now the [Statenvlag](https://en.wikipedia.org/wiki/Statenvlag):
 
-![Statenvlag](/content/_img/20240212202954_1.jpg "Statenvlag")
+![Statenvlag](../_img/20240212202954_1.jpg "Statenvlag")
 
 <center>
 

@@ -8,11 +8,11 @@ published: true
 ---
 <center>
 
-![](/content/_img/preview-december-20-blog3.png)
+![](../_img/preview-december-20-blog3.png)
 
 </center>
 
-It's time for a little blog on the 3rd Advent. This time it's mostly about units and another little gift. 
+It's time for a little blog on the 3rd Advent. This time it's mostly about units and another little gift.
 
 <center>
 
@@ -20,33 +20,33 @@ It's time for a little blog on the 3rd Advent. This time it's mostly about units
 
 </center>
 
-![Tiroler Windbüchse Schützen](/content/_img/20201018151507_1.jpg "Tiroler Windbüchse Schützen")
+![Tiroler Windbüchse Schützen](../_img/20201018151507_1.jpg "Tiroler Windbüchse Schützen")
 
-![Cheveauxlegers 'Kaiser'](/content/_img/20201031153150_1.jpg "Cheveauxlegers 'Kaiser'")
+![Cheveauxlegers 'Kaiser'](../_img/20201031153150_1.jpg "Cheveauxlegers 'Kaiser'")
 
-![Cheveauxlegers](/content/_img/20201031153212_1.jpg "Cheveauxlegers")
+![Cheveauxlegers](../_img/20201031153212_1.jpg "Cheveauxlegers")
 
-![Dragoner](/content/_img/20201101201655_1.jpg "Dragoner")
+![Dragoner](../_img/20201101201655_1.jpg "Dragoner")
 
-![Cuirassiers](/content/_img/20201103211827_1.jpg "Cuirassiers")
+![Cuirassiers](../_img/20201103211827_1.jpg "Cuirassiers")
 
-![Carabiniers 'Kaiser'](/content/_img/20201103211836_1.jpg "Carabiniers 'Kaiser'")
+![Carabiniers 'Kaiser'](../_img/20201103211836_1.jpg "Carabiniers 'Kaiser'")
 
-![Deutsche Grenadiers](/content/_img/20201122203928_1.jpg "Deutsche Grenadiers")
+![Deutsche Grenadiers](../_img/20201122203928_1.jpg "Deutsche Grenadiers")
 
-![Hungarian Grenadiers](/content/_img/20201122203941_1.jpg "Hungarian Grenadiers")
+![Hungarian Grenadiers](../_img/20201122203941_1.jpg "Hungarian Grenadiers")
 
 <center>
 
 ### And here are the Icons:
 
-![Unit Icons](/content/_img/austria-unit-icons.png "Unit Icons")
+![Unit Icons](../_img/austria-unit-icons.png "Unit Icons")
 
 ### Furthermore, I have a new building for you:
 
 #### The level 5 generic Parliament Building:
 
-![lvl 5 Parliament](/content/_img/gov-lvl-5-parliament.png "lvl 5 Parliament")
+![lvl 5 Parliament](../_img/gov-lvl-5-parliament.png "lvl 5 Parliament")
 
 ### But now to the promised surprise:
 
