@@ -2,7 +2,7 @@ import { defineCollection } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 
-const transformImagePath = (imagePath: string, filePath: string) => imagePath.replace("..", `${filePath}/content`)
+const transformImagePath = (imagePath: string, filePath: string) => imagePath.replace("..", `/content`)
 
 const image = (filePath: string) => z.string().transform((imgPath) => transformImagePath(imgPath, filePath))
 const optionalImage = (filePath: string) => z.string().optional().transform((imgPath) => imgPath && transformImagePath(imgPath, filePath))

@@ -1,6 +1,6 @@
 ---
 import { getEntry } from "astro:content";
-import { getImage } from "astro:assets";
+import { getImage, Image } from "astro:assets";
 import Layout from "../Layout.astro";
 import { pageTitle, slugs, paths } from "../config";
 import LinkButton from "../components/LinkButton.astro";
@@ -12,13 +12,15 @@ const { title, description, heroLogo, heroLogoAlt, heroText, infoBoxes } = page.
 
 const heroWebp = await getImage({ src: heroBg, format: "webp" });
 const heroJpg = await getImage({ src: heroBg, format: "jpeg" });
+
+const images = import.meta.glob<{ default: ImageMetadata }>("/content/_img/*.{jpeg,jpg,png,gif}");
 ---
 
 <Layout title={pageTitle(title)} description={description || ""} slug={slugs.home}>
   <section class="hero-root">
     <h1 class="sr-only">{title}</h1>
     <div class="hero-body" style={`--hero-webp: url('${heroWebp.src}'); --hero-jpg: url('${heroJpg.src}')`}>
-      {heroLogo && <img class="hero-logo" src={heroLogo} alt={heroLogoAlt || ""} />}
+      {heroLogo && <Image class="hero-logo" src={images[heroLogo]()} alt={heroLogoAlt || ""} inferSize />}
       <p class="hero-text">{heroText}</p>
     </div>
     <LinkButton href={paths.downloadIndex} class="download-btn">{strings.downloadButton}</LinkButton>
@@ -28,7 +30,7 @@ const heroJpg = await getImage({ src: heroBg, format: "jpeg" });
     {
       infoBoxes?.map(({ text, image, imgAlt }, i) => (
         <>
-          <img src={image} alt={imgAlt} data-pos={i % 2} class="info-img" />
+          <Image src={images[image]()} alt={imgAlt} data-pos={i % 2} class="info-img" />
           <p class="info-text">{text}</p>
         </>
       ))
