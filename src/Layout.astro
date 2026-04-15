@@ -6,11 +6,13 @@ import { getImage } from 'astro:assets';
 import { ClientRouter } from 'astro:transitions';
 import textureBg from '@assets/texture_bg.jpg';
 import textureHeadfoot from '@assets/texture_headfoot.jpg';
+import favicon from '@assets/favicon.png';
 
 const textureBgWebp = await getImage({ src: textureBg, format: 'webp' });
 const textureBgJpg = await getImage({ src: textureBg, format: 'jpeg' });
 const textureHeadfootWebp = await getImage({ src: textureHeadfoot, format: 'webp' });
 const textureHeadfootJpg = await getImage({ src: textureHeadfoot, format: 'jpeg' });
+const faviconImage = await getImage({ src: favicon, format: 'png' });
 
 interface Props {
   title: string;
@@ -34,6 +36,7 @@ const detectNoScript = `!function(b){"use strict";var c=b.documentElement;c.clas
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/png" href={faviconImage.src} />
     <meta name="description" content={description} />
 
     <meta property="og:title" content={title} />
