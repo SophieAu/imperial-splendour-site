@@ -2,9 +2,9 @@ backend:
   name: git-gateway
   branch: master
 
-media_folder: public/content/_img
-public_folder: /content/_img
-logo_url: https://imperialsplendour.com/img/hero_logo.png
+media_folder: /content/_img
+public_folder: ../_img
+logo_url: /hero_logo.png
 site_url: https://imperialsplendour.com
 
 collections:
