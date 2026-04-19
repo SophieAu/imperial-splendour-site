@@ -50,13 +50,6 @@ Knights of Saint John - Line Infantry Grenadier and Fusilier:
 
 Duchy of Tuscany - Guardia Nobile a Cavallo, Cavalleggeri (Medium Cavalry), Guardia a Piedi di Toscana and Artiglieria Toscana:
 
-<center>
-
-<img src="https://imperialsplendour.com/e82bf751-8356-4459-8fa6-a5ba01a3cfdf/0ef32/DT_-_Cav_Guard.png" alt="Duchy of Tuscany - Guardia Nobile a Cavallo" width="450" height="603"> <img src="https://imperialsplendour.com/static/a1b3b9c8ae3a015d449cf622f14906f4/0ef32/up_-_inf_oranje.png" alt="Cavalleggeri (Medium Cavalry)" width="450" height="603">
-
-<img src="https://imperialsplendour.com/static/a1b3b9c8ae3a015d449cf622f14906f4/0ef32/up_-_inf_oranje.png" alt="Cavalleggeri (Medium Cavalry)" width="450" height="603"> <img src="https://imperialsplendour.com/a4691a74-c1ee-48cf-885c-2488423ed21d" alt="Artiglieria Toscana" width="450" height="603">
-
-
 ![Duchy of Tuscany - Guardia Nobile a Cavallo](../_img/dt_-_cav_guard.png "Duchy of Tuscany - Guardia Nobile a Cavallo")
 
 ![Cavalleggeri (Medium Cavalry)](../_img/dt_-_cav_s.a.r.1.png "Cavalleggeri (Medium Cavalry)")
@@ -65,7 +58,7 @@ Duchy of Tuscany - Guardia Nobile a Cavallo, Cavalleggeri (Medium Cavalry), Guar
 
 ![Artiglieria Toscana](../_img/dt_-_art.png "Artiglieria Toscana")
 
-</center>
+
 
 #### New music (and instruments):
 
@@ -73,17 +66,11 @@ Hannover will get a new custom drum and a buglehorn for the light infantry. The 
 
 <center>
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/rHQZyq0DYEs?si=brM2c1ArVtk3bX5x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rHQZyq0DYEs?si=FgsecD3se1E2nXuD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-</iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XGAssGV70KA?si=ao4oDoPl5Q4bggvE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/XGAssGV70KA?si=E8VGXBOyIpRyvNYt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-
-</iframe>
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/TEYM187ApBU?si=d7weS8-YcGVlsyk5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-
-</iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TEYM187ApBU?si=l5k8kma75aoyeGjR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 You can take a closer look at the new Hanoverian bulgehorn on sketchfab too:
 
