@@ -50,6 +50,8 @@ Knights of Saint John - Line Infantry Grenadier and Fusilier:
 
 Duchy of Tuscany - Guardia Nobile a Cavallo, Cavalleggeri (Medium Cavalry), Guardia a Piedi di Toscana and Artiglieria Toscana:
 
+<center>
+
 ![Duchy of Tuscany - Guardia Nobile a Cavallo](../_img/dt_-_cav_guard.png "Duchy of Tuscany - Guardia Nobile a Cavallo")
 
 ![Cavalleggeri (Medium Cavalry)](../_img/dt_-_cav_s.a.r.1.png "Cavalleggeri (Medium Cavalry)")
@@ -58,7 +60,7 @@ Duchy of Tuscany - Guardia Nobile a Cavallo, Cavalleggeri (Medium Cavalry), Guar
 
 ![Artiglieria Toscana](../_img/dt_-_art.png "Artiglieria Toscana")
 
-
+</center>
 
 #### New music (and instruments):
 
