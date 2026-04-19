@@ -30,29 +30,11 @@ Act decisively, before we turn into a mere pawn in a chess game.
 
 Dragoon of the "Garde Dragonders" and Officer of the "Hollandse Garde":
 
-<center>
-
-<div style="display:flex; gap:12px; align-items:flex-start;">
-<img src="https://imperialsplendour.com/_img/up_-_guard_dragoons.png" alt="Dragoon of the Garde Dragonders" width="350"> 
-<img src="https://imperialsplendour.com/_astro/up_-_officer_guard.C45giymR_2fPtLp.webp" alt="Officer of the Hollandse Garde" width="350">
-</div>
-
-</center>
+![Dragoon of the "Garde Dragonders" and Officer of the "Hollandse Garde"](../_img/up_-_guard_dragoons_officer_guard.png "Dragoon of the \"Garde Dragonders\" and Officer of the \"Hollandse Garde\"")
 
 Officer of the "Hollandse Cavalerie" and Fusilier of the "Oranje Lijninfanterie":
 
-![](../_img/up_-_cav_officer.png)
-
-![](../_img/up_-_inf_oranje.png)
-
-<center>
-
-<div style="display:flex; gap:12px; align-items:flex-start;">
-<img src="https://imperialsplendour.com/static/5774d5e9ab62e2a20236fa388fcee620/4220b/up_-_cav_officer.png" alt="Officer of the Hollandse Cavalerie" width="350"> 
-<img src="https://imperialsplendour.com/static/a1b3b9c8ae3a015d449cf622f14906f4/0ef32/up_-_inf_oranje.png" alt="Fusilier of the Oranje Lijninfanterie" width="350">
-</div>
-
-</center>
+![Officer of the "Hollandse Cavalerie" and Fusilier of the "Oranje Lijninfanterie"](../_img/up_-_cav_officer_inf_oranje.png "Officer of the \"Hollandse Cavalerie\" and Fusilier of the \"Oranje Lijninfanterie\"")
 
 Fusilier of the Swiss Infantry and Grenadier of the "Waldeck" foreign Infantry:
 
