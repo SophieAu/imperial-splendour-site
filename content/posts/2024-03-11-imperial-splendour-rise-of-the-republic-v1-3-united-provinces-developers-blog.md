@@ -38,11 +38,7 @@ Officer of the "Hollandse Cavalerie" and Fusilier of the "Oranje Lijninfanterie"
 
 Fusilier of the Swiss Infantry and Grenadier of the "Waldeck" foreign Infantry:
 
-<center>
-
-<img src="https://imperialsplendour.com/static/e51af49caa92287b25cb9d574ac951d6/4220b/up_-_inf_swiss.png" alt="Fusilier of the Swiss Infantry" width="450" height="603"> <img src="https://imperialsplendour.com/static/03f19535bb2efd81b3b910c113416879/7a752/up_-_waldeck_gren.png" alt="Grenadier of the Waldeck foreign Infantry" width="450" height="604">
-
-</center>
+![Fusilier of the Swiss Infantry and Grenadier of the "Waldeck" foreign Infantry](../_img/up_-_inf_swiss_waldeck_gren.png "Fusilier of the Swiss Infantry and Grenadier of the \"Waldeck\" foreign Infantry")
 
 Grenadier of the "Exercitiegenootschappen" patriotic militia, notable for their role in the 1787 Patriottentijd "rebellion" and Fusilier of the "Schutterij" militia, the old (Orangist) militia of the Netherlands:
 
