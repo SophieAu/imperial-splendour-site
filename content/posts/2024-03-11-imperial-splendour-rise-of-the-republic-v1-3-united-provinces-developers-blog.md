@@ -42,19 +42,11 @@ Fusilier of the Swiss Infantry and Grenadier of the "Waldeck" foreign Infantry:
 
 Grenadier of the "Exercitiegenootschappen" patriotic militia, notable for their role in the 1787 Patriottentijd "rebellion" and Fusilier of the "Schutterij" militia, the old (Orangist) militia of the Netherlands:
 
-<center>
-
-<img src="https://imperialsplendour.com/static/d0a957c2b33a33557e5a3e48ea2e2896/0ef32/up_-_poor_gren.png" alt="Grenadier of the Exercitiegenootschappen patriotic militia" width="450" height="603"> <img src="https://imperialsplendour.com/static/89a644c2ceb4c3fa7f54a21ac11f229c/0ef32/up_-_inf_militia.png" alt="Fusilier of the Schutterij militia" width="450" height="604">
-
-</center>
+![Grenadier of the "Exercitiegenootschappen" patriotic militia, notable for their role in the 1787 Patriottentijd "rebellion" and Fusilier of the "Schutterij" militia, the old (Orangist) militia of the Netherlands](../_img/up_-_poor_gren_inf_militia.png "Grenadier of the \"Exercitiegenootschappen\" patriotic militia, notable for their role in the 1787 Patriottentijd \"rebellion\" and Fusilier of the \"Schutterij\" militia, the old (Orangist) militia of the Netherlands")
 
 Dragoon of the "V.O.C. Dragonders" and Swiss Regiment de Meuron (1795), in service with the VOC:
 
-<center>
-
-<img src="https://imperialsplendour.com/static/57af1cc18aecd06e82859ab074d5adf0/27330/up_-_col_dragoons.png" alt="V.O.C. Dragonders" width="450" height="600"> <img src="https://imperialsplendour.com/static/01621d1333eff8ea16550e8a2ec09e94/7a752/up_-_inf_line_colonial.png" alt="Regiment de Meuron" width="450" height="604">
-
-</center>
+![Dragoon of the "V.O.C. Dragonders" and Swiss Regiment de Meuron (1795), in service with the VOC](../_img/up_-_col_dragoons_inf_line_colonial.png "Dragoon of the \"V.O.C. Dragonders\" and Swiss Regiment de Meuron (1795), in service with the VOC")
 
 (Please note that all of the presented units are still WIP and might be changed in versions after RotR 1.3)
 
