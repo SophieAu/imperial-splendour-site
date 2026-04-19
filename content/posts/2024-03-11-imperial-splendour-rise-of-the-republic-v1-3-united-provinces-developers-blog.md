@@ -30,7 +30,9 @@ Act decisively, before we turn into a mere pawn in a chess game.
 
 Dragoon of the "Garde Dragonders" and Officer of the "Hollandse Garde":
 
-![](../_img/up_-_guard_dragoons.png)
+![Dragoon of the Garde Dragonders](../_img/up_-_guard_dragoons.png "Dragoon of the Garde Dragonders")
+
+![Officer of the Hollandse Garde](../_img/up_-_officer_guard.png "Officer of the Hollandse Garde")
 
 <center>
 
