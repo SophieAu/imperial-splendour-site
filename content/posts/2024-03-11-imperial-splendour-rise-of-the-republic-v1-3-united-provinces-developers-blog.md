@@ -33,7 +33,7 @@ Dragoon of the "Garde Dragonders" and Officer of the "Hollandse Garde":
 <center>
 
 <div style="display:flex; gap:12px; align-items:flex-start;">
-<img src="https://imperialsplendour.com/_astro/up_-_guard_dragoons.ZeBG4O2E_Z1PgijD.webp" alt="Dragoon of the Garde Dragonders" width="350"> 
+<img src="https://imperialsplendour.com/_img/up_-_guard_dragoons.png" alt="Dragoon of the Garde Dragonders" width="350"> 
 <img src="https://imperialsplendour.com/_astro/up_-_officer_guard.C45giymR_2fPtLp.webp" alt="Officer of the Hollandse Garde" width="350">
 </div>
 
