@@ -30,6 +30,8 @@ Act decisively, before we turn into a mere pawn in a chess game.
 
 Dragoon of the "Garde Dragonders" and Officer of the "Hollandse Garde":
 
+![](../_img/up_-_guard_dragoons.png)
+
 <center>
 
 <img src="https://imperialsplendour.com/d0d5aa56-e355-4132-af01-38691f9b16ca" alt="Dragoon of the Garde Dragonders" width="450" height="600"> <img src="https://imperialsplendour.com/static/db1ca694e6dc109586587c19c9df473d/4220b/up_-_officer_guard.png" alt="Officer of the Hollandse Garde" width="450" height="600">
