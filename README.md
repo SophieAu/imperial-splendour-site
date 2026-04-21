@@ -51,7 +51,6 @@ The site is developed using [Astro](https://astro.build/) and [Svelte 5](https:/
 - [ ] Test on mobile - responsive layout can break silently after dependency updates
 - [ ] Check for console errors in production (browser devtools)
 - [ ] Check the newsletter signup form - does it actually submit and subscribe?
-- [ ] Check Google Fonts are loading (CDN URLs occasionally change)
 
 **Dependencies & Security:**
 
@@ -63,11 +62,5 @@ The site is developed using [Astro](https://astro.build/) and [Svelte 5](https:/
 **Infrastructure:**
 
 - [ ] Check Netlify dashboard - recent builds succeeding? Any errors or warnings?
-- [ ] Verify Netlify CMS is accessible at `/admin` and content can be edited and saved
+- [ ] Verify Decap CMS is accessible at `/admin` and content can be edited and saved
 - [ ] Check analytics for unexpected traffic drops or error spikes
-
----
-
-### Notes
-
-<!-- Quirks, known issues, gotchas, or things future-you should know -->
