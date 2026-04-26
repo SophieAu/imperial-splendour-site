@@ -65,16 +65,30 @@ const socialMedia = (await getEntry("general", "footer"))!.data.socialMedia;
     }
   }
 
+  .text :global(*) {
+    max-width: 100%;
+  }
+
   .post-footer {
     align-items: center;
     display: flex;
     flex-direction: column;
+    text-align: center;
+
     p:not(:nth-child(3)) {
       margin: 0.5rem 0;
     }
 
     p:nth-child(3) {
       margin: 0.5rem 0 -0.25rem;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .post-footer {
+      p:nth-child(3) {
+        margin: 0.5rem 0 0.125rem;
+      }
     }
   }
 </style>

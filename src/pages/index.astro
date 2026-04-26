@@ -142,18 +142,6 @@ if (!heroLogo || !images[heroLogo])
     @media (min-width: 1024px) {
       margin: 6rem 0;
     }
-
-    @media (max-width: 1023px) {
-      display: flex;
-      flex-direction: column;
-      gap: 0;
-      padding: 5rem 3rem 3rem;
-      width: calc(100% - 3rem);
-    }
-
-    @media (max-width: 991px) {
-      padding: 5rem 0 3rem;
-    }
   }
 
   .info-img {
@@ -176,10 +164,39 @@ if (!heroLogo || !images[heroLogo])
     font: var(--font-info);
     grid-column: span 2;
     margin: 0;
+  }
 
-    @media (max-width: 1023px) {
+  @media (max-width: 1023px) {
+    .info-boxes {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      padding: 5rem 3rem 3rem;
+      width: calc(100% - 3rem);
+    }
+
+    .info-text {
       margin: 0 1rem 3rem;
       text-align: center;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .info-boxes {
+      padding: 5rem 0 3rem;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .info-boxes {
+      width: 100%;
+    }
+    .info-text {
+      margin: 0 0 3rem;
+      text-align: center;
+    }
+    .info-img {
+      padding: 1rem 0;
     }
   }
 </style>

@@ -41,7 +41,7 @@ If you have questions, complaints, or suggestions feel free to let us know. Ther
 ## Credits
 The font used is [IM FELL English](https://fonts.google.com/specimen/IM+Fell+English).
 
-The site is developed using [Astro](https://astro.build/) and [Svelte 5](https://svelte.dev/). It is hosted and deployed via [Netlify](https://netlify.com/). Content is managed through [Netlify CMS](https://decapcms.org/) at `/admin`. The newsletter is managed through [Mailchimp](https://mailchimp.com/).
+The site is developed using [Astro](https://astro.build/) and [Svelte 5](https://svelte.dev/). It is hosted and deployed via [Netlify](https://netlify.com/). Content is managed through [Decap CMS](https://decapcms.org/) at `/admin`. The newsletter is managed through [Mailchimp](https://mailchimp.com/).
 
 ## Monthly Maintenance List
 
