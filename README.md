@@ -58,6 +58,7 @@ The site is developed using [Astro](https://astro.build/) and [Svelte 5](https:/
 - [ ] Run `npm audit` - address any security advisories
 - [ ] Update non-breaking deps (patch/minor)
 - [ ] Update breaking deps in a separate commit/deploy
+- [ ] Run `npx fallow` for code quality
 
 **Infrastructure:**
 
