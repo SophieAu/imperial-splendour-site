@@ -9,5 +9,7 @@
   "duplicates": {
 
   },
-  "rules": {}
+  "rules": {
+    "test-only-dependencies": "off"
+  }
 }
