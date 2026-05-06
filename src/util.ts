@@ -1,6 +1,6 @@
 export type NameLinkTuple = { name: string; link: string };
 
-export const formatStringList = (strings: string[]) => {
+const formatStringList = (strings: string[]) => {
     const isLast = (i: number) => i === strings.length - 1;
     const isFirst = (i: number) => i === 0;
 
