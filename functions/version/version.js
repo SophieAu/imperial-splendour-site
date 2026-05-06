@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 //@ts-check
 
-require('isomorphic-fetch');
+import 'isomorphic-fetch';
 
 const headers = {
   'Access-Control-Allow-Origin': '*',
@@ -27,4 +27,4 @@ const handler = async () => ({
   body: getVersion(),
 });
 
-module.exports = { handler };
+export default { handler };
