@@ -6,8 +6,6 @@ import mediaFire from '@assets/logo_mediafire.svg?url';
 
 import { formatLinkList, type NameLinkTuple } from './util';
 
-export const currentYear = () => new Date().getFullYear();
-
 export const BASE_URL = 'https://imperialsplendour.com';
 export const TWITTER_HANDLE = '@SplendourTeam';
 const MAILCHIMP_USER = 'd68145bb4360d40f488bd3c5e';
@@ -45,7 +43,7 @@ export const mailchimpForm = {
 };
 
 export const buildCreditsCopyright = (builders: NameLinkTuple[]) =>
-  `© ${currentYear()}, ${formatLinkList(builders)}`
+  `© ${new Date().getFullYear()}, ${formatLinkList(builders)}`
 
 
 export const imgAlt = {

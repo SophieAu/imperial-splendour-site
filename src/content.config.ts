@@ -3,13 +3,10 @@ import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 
 
-const images = import.meta.glob<{ default: ImageMetadata }>("/content/_img/*.{jpeg,jpg,png,gif}");
+const transformImagePath = (imagePath: string) => imagePath.replace("..", `/content`)
 
-
-const transformImagePath = (imagePath: string, filePath: string) => imagePath.replace("..", `/content`)
-
-const image = (filePath: string) => z.string().transform((imgPath) => transformImagePath(imgPath, filePath))
-const optionalImage = (filePath: string) => z.string().optional().transform((imgPath) => imgPath ? transformImagePath(imgPath, filePath) : undefined)
+const image = () => z.string().transform((imgPath) => transformImagePath(imgPath))
+const optionalImage = () => z.string().optional().transform((imgPath) => imgPath ? transformImagePath(imgPath) : undefined)
 
 const posts = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './content/posts' }),
@@ -27,7 +24,7 @@ const factions = defineCollection({
   schema: z.object({
     title: z.string(),
     slug: z.string(),
-    flag: image("../.."),
+    flag: image(),
     description: z.string().optional().default(''),
   }),
 });
@@ -58,18 +55,18 @@ const pages = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string().optional().default(''),
-    heroImage: optionalImage(".."),
-    heroLogo: optionalImage(".."),
+    heroImage: optionalImage(),
+    heroLogo: optionalImage(),
     heroLogoAlt: z.string().optional(),
     heroText: z.string().optional(),
     infoBoxes: z
-      .array(z.object({ text: z.string(), image: image(".."), imgAlt: z.string() }))
+      .array(z.object({ text: z.string(), image: image(), imgAlt: z.string() }))
       .optional(),
     contributorsTitle: z.string().optional(),
-    contributors: z.array(z.object({ avatar: image(".."), name: z.string() })).optional(),
+    contributors: z.array(z.object({ avatar: image(), name: z.string() })).optional(),
     mainDownload: z.string().optional(),
     messageTitle: z.string().optional(),
-    image: optionalImage(".."),
+    image: optionalImage(),
     imageAlt: z.string().optional(),
   }),
 });
