@@ -24,7 +24,7 @@ const getVersion = async () => {
 const handler = async () => ({
   statusCode: 200,
   headers,
-  body: getVersion(),
+  body: await getVersion(),
 });
 
 export default { handler };
