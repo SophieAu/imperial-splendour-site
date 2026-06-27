@@ -1,18 +1,18 @@
 ---
-import Footer from './components/HeaderFooter/Footer.astro';
-import HeaderWrapper from './components/HeaderFooter/HeaderWrapper.astro';
-import { BASE_URL, TWITTER_HANDLE, FALLBACK_IMAGE } from './config';
-import { getImage } from 'astro:assets';
-import { ClientRouter } from 'astro:transitions';
-import textureBg from '@assets/texture_bg.jpg';
-import textureHeadfoot from '@assets/texture_headfoot.jpg';
-import favicon from '@assets/favicon.png';
+import Footer from "./components/HeaderFooter/Footer.astro";
+import HeaderWrapper from "./components/HeaderFooter/HeaderWrapper.astro";
+import { BASE_URL, TWITTER_HANDLE, FALLBACK_IMAGE } from "./config";
+import { getImage } from "astro:assets";
+import { ClientRouter } from "astro:transitions";
+import textureBg from "@assets/texture_bg.jpg";
+import textureHeadfoot from "@assets/texture_headfoot.jpg";
+import favicon from "@assets/favicon.png";
 
-const textureBgWebp = await getImage({ src: textureBg, format: 'webp' });
-const textureBgJpg = await getImage({ src: textureBg, format: 'jpeg' });
-const textureHeadfootWebp = await getImage({ src: textureHeadfoot, format: 'webp' });
-const textureHeadfootJpg = await getImage({ src: textureHeadfoot, format: 'jpeg' });
-const faviconImage = await getImage({ src: favicon, format: 'png' });
+const textureBgWebp = await getImage({ src: textureBg, format: "webp" });
+const textureBgJpg = await getImage({ src: textureBg, format: "jpeg" });
+const textureHeadfootWebp = await getImage({ src: textureHeadfoot, format: "webp" });
+const textureHeadfootJpg = await getImage({ src: textureHeadfoot, format: "jpeg" });
+const faviconImage = await getImage({ src: favicon, format: "png" });
 
 interface Props {
   title: string;
@@ -29,7 +29,6 @@ const url = `${BASE_URL}/${slug}`;
 
 const detectWebpSupport =
   '!function(e){"use strict";function s(s){if(s){var t=e.documentElement;t.classList?t.classList.add("webp"):t.className+=" webp",window.sessionStorage.setItem("webpSupport",!0)}}!function(e){if(window.sessionStorage&&window.sessionStorage.getItem("webpSupport"))s(!0);else{var t=new Image;t.onload=t.onerror=function(){e(2===t.height)},t.src="data:image/webp;base64,UklGRi4AAABXRUJQVlA4TCEAAAAvAUAAEB8wAiMwAgSSNtse/cXjxyCCmrYNWPwmHRH9jwMA"}}(s)}(document);';
-const detectNoScript = `!function(b){"use strict";var c=b.documentElement;c.classList?c.classList.add("yesscript"):c.className+=" yesscript"}(document);`;
 ---
 
 <!doctype html>
@@ -54,17 +53,10 @@ const detectNoScript = `!function(b){"use strict";var c=b.documentElement;c.clas
     <meta name="twitter:image" content={ogImageUrl} />
     <meta name="twitter:url" content={url} />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=IM+Fell+English&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+English&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC&display=swap" rel="stylesheet" />
 
     <script is:inline set:html={detectWebpSupport} />
-    <script is:inline set:html={detectNoScript} />
 
     <title>{title}</title>
     {viewTransitions && <ClientRouter />}
@@ -74,14 +66,24 @@ const detectNoScript = `!function(b){"use strict";var c=b.documentElement;c.clas
           if (window.sessionStorage.getItem('webpSupport')) {
             document.documentElement.classList.add('webp');
           }
-          document.documentElement.classList.add('yesscript');
         });
       </script>
     )}
 
-    {redirect &&  <meta http-equiv="refresh" content={`0; url=${redirect}`} />}
+    {redirect && <meta http-equiv="refresh" content={`0; url=${redirect}`} />}
+    <noscript>
+      <style>
+        @media (max-width: 991px) {
+          html: main {
+            padding-top: 0;
+          }
+        }
+      </style>
+    </noscript>
   </head>
-  <body style={`--bg-jpg: url('${textureBgJpg.src}'); --bg-webp: url('${textureBgWebp.src}'); --headfoot-jpg: url('${textureHeadfootJpg.src}'); --headfoot-webp: url('${textureHeadfootWebp.src}')`}>
+  <body
+    style={`--bg-jpg: url('${textureBgJpg.src}'); --bg-webp: url('${textureBgWebp.src}'); --headfoot-jpg: url('${textureHeadfootJpg.src}'); --headfoot-webp: url('${textureHeadfootWebp.src}')`}
+  >
     <HeaderWrapper />
     <main>
       <slot />
@@ -103,8 +105,8 @@ const detectNoScript = `!function(b){"use strict";var c=b.documentElement;c.clas
     --color-black: black;
 
     /* fonts */
-    --font-family-body: 'IM FELL English', georgia, times, serif;
-    --font-family-heading: 'IM FELL English SC', georgia, serif;
+    --font-family-body: "IM FELL English", georgia, times, serif;
+    --font-family-heading: "IM FELL English SC", georgia, serif;
     --font-headline: normal 3rem var(--font-family-heading);
     --font-headline-mobile: normal 2.25rem var(--font-family-heading);
     --font-body: normal 1.5rem var(--font-family-body);
@@ -187,12 +189,6 @@ const detectNoScript = `!function(b){"use strict";var c=b.documentElement;c.clas
   main > * {
     max-width: var(--max-content-width);
     width: 100%;
-  }
-
-  @media (max-width: 991px) {
-    html:not(.yesscript) main {
-      padding-top: 0;
-    }
   }
 
   .headfoot {
