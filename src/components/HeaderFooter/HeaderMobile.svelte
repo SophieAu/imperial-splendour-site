@@ -90,7 +90,7 @@
   nav {
     display: none;
     align-items: flex-start;
-    background: var(--color-main-bg) var(--bg-jpg);
+    background: var(--color-main-bg) image-set(var(--bg-webp) type("image/webp"), var(--bg-jpg) type("image/jpeg"));
     bottom: 0;
     flex-direction: row;
     height: calc(100vh - 3rem - calc((var(--header-height) - 1.25rem) / 2));
@@ -106,10 +106,6 @@
 
   nav.visible {
     display: flex;
-  }
-
-  :global(.webp) nav {
-    background: var(--color-main-bg) var(--bg-webp);
   }
 
   nav ul {

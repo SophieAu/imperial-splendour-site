@@ -36,7 +36,7 @@ const btnOptimised = await getImage({ src: btnPng, format: "png" });
 
 <style>
   .link-button {
-    background: no-repeat center/100% var(--btn-png);
+    background: no-repeat center/100% image-set(var(--btn-webp) type("image/webp"), var(--btn-png) type("image/png"));
     color: var(--color-black);
     font: var(--font-button);
     height: var(--download-button-height);
@@ -44,10 +44,6 @@ const btnOptimised = await getImage({ src: btnPng, format: "png" });
     text-decoration: none;
     width: var(--download-button-width);
     border: none;
-  }
-
-  :global(.webp) .link-button {
-    background: no-repeat center/100% var(--btn-webp);
   }
 
   .link-button:hover {

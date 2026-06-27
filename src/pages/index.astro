@@ -107,12 +107,9 @@ if (!heroLogo || !images[heroLogo])
   }
 
   @media (min-width: 992px) {
-    :global(html:not(.webp)) .hero-body {
-      background: no-repeat bottom/100% var(--hero-jpg);
-    }
-
-    :global(.webp) .hero-body {
-      background: no-repeat bottom/100% var(--hero-webp);
+    .hero-body {
+      background: no-repeat bottom/100%
+        image-set(var(--hero-webp) type("image/webp"), var(--hero-jpg) type("image/jpeg"));
     }
   }
 

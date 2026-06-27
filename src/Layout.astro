@@ -26,9 +26,6 @@ interface Props {
 const { title, description, slug, ogImage, viewTransitions = false, redirect } = Astro.props;
 const ogImageUrl = `${BASE_URL}${ogImage || FALLBACK_IMAGE}`;
 const url = `${BASE_URL}/${slug}`;
-
-const detectWebpSupport =
-  '!function(e){"use strict";function s(s){if(s){var t=e.documentElement;t.classList?t.classList.add("webp"):t.className+=" webp",window.sessionStorage.setItem("webpSupport",!0)}}!function(e){if(window.sessionStorage&&window.sessionStorage.getItem("webpSupport"))s(!0);else{var t=new Image;t.onload=t.onerror=function(){e(2===t.height)},t.src="data:image/webp;base64,UklGRi4AAABXRUJQVlA4TCEAAAAvAUAAEB8wAiMwAgSSNtse/cXjxyCCmrYNWPwmHRH9jwMA"}}(s)}(document);';
 ---
 
 <!doctype html>
@@ -56,19 +53,8 @@ const detectWebpSupport =
     <link href="https://fonts.googleapis.com/css?family=IM+Fell+English&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC&display=swap" rel="stylesheet" />
 
-    <script is:inline set:html={detectWebpSupport} />
-
     <title>{title}</title>
     {viewTransitions && <ClientRouter />}
-    {viewTransitions && (
-      <script>
-        document.addEventListener('astro:after-swap', () => {
-          if (window.sessionStorage.getItem('webpSupport')) {
-            document.documentElement.classList.add('webp');
-          }
-        });
-      </script>
-    )}
 
     {redirect && <meta http-equiv="refresh" content={`0; url=${redirect}`} />}
     <noscript>
@@ -167,15 +153,12 @@ const detectWebpSupport =
   }
 
   body {
-    background: var(--color-main-bg) var(--bg-jpg);
+    background-color: var(--color-main-bg);
+    background-image: image-set(var(--bg-webp) type("image/webp"), var(--bg-jpg) type("image/jpeg"));
     font: var(--font-body);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-  }
-
-  body.webp {
-    background: var(--color-main-bg) var(--bg-webp);
   }
 
   main {
@@ -194,15 +177,13 @@ const detectWebpSupport =
   .headfoot {
     align-items: center;
     background-color: var(--color-header-footer-bg);
-    background-image: var(--headfoot-jpg);
-    box-shadow: 0 0 1.25rem 1rem rgba(142, 142, 142, 0.4), 0 0 1.25rem 0.75rem rgba(0, 0, 0, 0.5);
+    background-image: image-set(var(--headfoot-webp) type("image/webp"), var(--headfoot-jpg) type("image/jpeg"));
+    box-shadow:
+      0 0 1.25rem 1rem rgba(142, 142, 142, 0.4),
+      0 0 1.25rem 0.75rem rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     z-index: 99;
-  }
-
-  .webp .headfoot {
-    background-image: var(--headfoot-webp);
   }
 </style>
