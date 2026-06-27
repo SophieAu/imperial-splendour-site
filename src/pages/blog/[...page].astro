@@ -32,7 +32,7 @@ const { posts, currentPage, totalPages } = Astro.props;
         const slug = createPostSlug(post.data.title, post.data.date);
         return (
           <li class="post">
-            <PostHeader title={post.data.title} date={post.data.date} link={`${paths.blog}/${slug}`} />
+            <PostHeader title={post.data.title} date={post.data.date} link={`${paths.blog}/${slug}`} as="h2" />
             <p class="excerpt">{post.data.excerpt}</p>
           </li>
         );

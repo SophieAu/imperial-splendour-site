@@ -30,7 +30,7 @@ const socialMedia = (await getEntry("general", "footer"))!.data.socialMedia;
 
 <Layout title={pageTitle(post.data.title)} description={post.data.excerpt} slug={`${slugs.blog}/${slug}`}>
   <article class="blog-post">
-    <PostHeader title={post.data.title} date={post.data.date} />
+    <PostHeader title={post.data.title} date={post.data.date} as="h1" />
     <div class="text">
       <Content />
     </div>
