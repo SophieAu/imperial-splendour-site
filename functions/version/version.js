@@ -21,10 +21,14 @@ const getVersion = async () => {
   }
 };
 
-const handler = async () => ({
-  statusCode: 200,
-  headers,
-  body: await getVersion(),
-});
+const handler = async () => {
+  try {
+    const version = await getVersion()
+    return { statusCode: 200, headers, body: version }
+  }
+  catch (e) {
+    return { statusCode: 500, headers }
+  }
+};
 
 export default { handler };
