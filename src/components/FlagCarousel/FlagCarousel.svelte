@@ -11,30 +11,10 @@
 
   let { selected, factions }: Props = $props();
 
-  const DESKTOP_OFFSETS = [-4, -3, -2, -1, 0, 1, 2, 3, 4];
-  const TABLET_OFFSETS = [-2, -1, 0, 1, 2];
-  const MOBILE_OFFSETS = [0];
+  const OFFSETS = [-4, -3, -2, -1, 0, 1, 2, 3, 4];
 
   const IMAGE_WIDTH = 132;
   const IMAGE_HEIGHT = 66;
-
-  let indices = $state(MOBILE_OFFSETS);
-
-  const updateIndices = () => {
-    if (window.innerWidth >= 992) {
-      indices = DESKTOP_OFFSETS;
-    } else if (window.innerWidth >= 768) {
-      indices = TABLET_OFFSETS;
-    } else {
-      indices = MOBILE_OFFSETS;
-    }
-  };
-
-  $effect(() => {
-    updateIndices();
-    window.addEventListener("resize", updateIndices);
-    return () => window.removeEventListener("resize", updateIndices);
-  });
 
   const circularModulo = (base: number) => (value: number) => (value < 0 ? base + value : value % base);
 
@@ -51,12 +31,13 @@
 </script>
 
 <div class="carousel">
-  {#each indices as offset (offset)}
+  {#each OFFSETS as offset (offset)}
     {#if offset === 0}
       <ButtonLeft href={`${paths.factions}/${getFaction(-1).slug}`} />
     {/if}
 
     <picture
+      data-offset={Math.abs(offset)}
       style:--w="{calcWidth(offset)}px"
       style:--h="{calcHeight(offset)}px"
       style:--z={-Math.abs(offset)}
@@ -97,5 +78,19 @@
     position: absolute;
     right: var(--img-right);
     width: 132px; /* IMAGE_WIDTH */
+  }
+
+  @media (max-width: 991px) {
+    picture[data-offset="3"],
+    picture[data-offset="4"] {
+      display: none;
+    }
+  }
+
+  @media (max-width: 767px) {
+    picture[data-offset="1"],
+    picture[data-offset="2"] {
+      display: none;
+    }
   }
 </style>
