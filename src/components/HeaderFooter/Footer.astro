@@ -9,7 +9,7 @@ const { siteBuilders, socialMedia } = footer.data;
 
 const credits = buildCreditsCopyright(siteBuilders);
 
-const visibleSocialMedia = socialMedia.filter(({ platform }) => platform !== "TWCenter");
+const visibleSocialMedia = socialMedia.filter(({ platform }) => !!socialMediaImages[platform]);
 ---
 
 <footer class="headfoot">
