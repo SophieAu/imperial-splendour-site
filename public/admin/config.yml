@@ -11,73 +11,81 @@ collections:
   - label: "Pages"
     name: "pages"
     files:
-    - name: "index"
-      label: "Home Page"
-      file: "content/pages/index.md"
-      fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Hero Image", name: "heroImage", widget: "image" }
-      - { label: "Hero Logo", name: "heroLogo", widget: "image" }
-      - { label: "Hero Logo Alt Text", name: "heroLogoAlt", widget: "string" }
-      - { label: "Hero Text", name: "heroText", widget: "markdown" }
-      - label: "Info Boxes"
-        name: "infoBoxes"
-        widget: "list"
-        summary: '{{fields.image}} - {{fields.text}}'
+      - name: "index"
+        label: "Home Page"
+        file: "content/pages/index.md"
         fields:
-          - { label: "Info Text", name: "text", widget: "markdown" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "string" }
+          - { label: "Hero Image", name: "heroImage", widget: "image" }
+          - { label: "Hero Logo", name: "heroLogo", widget: "image" }
+          - {
+              label: "Hero Logo Alt Text",
+              name: "heroLogoAlt",
+              widget: "string",
+            }
+          - { label: "Hero Text", name: "heroText", widget: "markdown" }
+          - label: "Info Boxes"
+            name: "infoBoxes"
+            widget: "list"
+            summary: "{{fields.image}} - {{fields.text}}"
+            fields:
+              - { label: "Info Text", name: "text", widget: "markdown" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Image Alt Text", name: "imgAlt", widget: "string" }
+      - name: "about"
+        label: "About"
+        file: "content/pages/about.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - {
+              label: "Contributors Title",
+              name: "contributorsTitle",
+              widget: "string",
+            }
+          - label: "Contributors"
+            name: "contributors"
+            widget: "list"
+            summary: "{{fields.avatar}} - {{fields.name}}"
+            fields:
+              - { label: "Avatar", name: "avatar", widget: "image" }
+              - { label: "Name", name: "name", widget: "string" }
+      - name: "terms-of-service"
+        label: "Terms of Service"
+        file: "content/pages/terms-of-service.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - name: "404"
+        label: "404"
+        file: "content/pages/404.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "string" }
+          - { label: "Message Title", name: "messageTitle", widget: "string" }
           - { label: "Image", name: "image", widget: "image" }
-          - { label: "Image Alt Text", name: "imgAlt", widget: "string" }
-    - name: "about"
-      label: "About"
-      file: "content/pages/about.md"
-      fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Contributors Title", name: "contributorsTitle", widget: "string" }
-      - label: "Contributors"
-        name: "contributors"
-        widget: "list"
-        summary: '{{fields.avatar}} - {{fields.name}}'
-        fields:
-          - { label: "Avatar", name: "avatar", widget: "image" }
-          - { label: "Name", name: "name", widget: "string" }
-    - name: "terms-of-service"
-      label: "Terms of Service"
-      file: "content/pages/terms-of-service.md"
-      fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
-    - name: "404"
-      label: "404"
-      file: "content/pages/404.md"
-      fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Message Title", name: "messageTitle", widget: "string" }
-      - { label: "Image", name: "image", widget: "image" }
-      - { label: "Image Alt Text", name: "imageAlt", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Image Alt Text", name: "imageAlt", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
   - name: "download"
     label: "Download"
     files:
-    - name: "download"
-      label: "Download"
-      file: "content/download/download.md"
-      fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Instruction Text", name: "body", widget: "markdown" }
-      - label: "Main Download"
-        name: "mainDownload"
-        widget: "relation"
-        collection: "downloads"
-        search_fields: ["title"]
-        value_field: "title"
-        display_fields: ["title"]
+      - name: "download"
+        label: "Download"
+        file: "content/download/download.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "string" }
+          - { label: "Instruction Text", name: "body", widget: "markdown" }
+          - label: "Main Download"
+            name: "mainDownload"
+            widget: "relation"
+            collection: "downloads"
+            search_fields: ["title"]
+            value_field: "title"
+            display_fields: ["title"]
   - name: "downloads"
     label: "Downloads"
     folder: "content/downloads"
@@ -85,17 +93,32 @@ collections:
     slug: "{{title}}"
     extension: "md"
     editor:
-     preview: true
+      preview: true
     fields:
       - { label: "Version/Title", name: "title", widget: "string" }
-      - { label: "Release Blog", name: "releaseBlog", widget: "string", required: false }
-      - { label: "Installation Tutorial", name: "installationTutorial", widget: "string", required: false }
+      - {
+          label: "Release Blog",
+          name: "releaseBlog",
+          widget: "string",
+          required: false,
+        }
+      - {
+          label: "Installation Tutorial",
+          name: "installationTutorial",
+          widget: "string",
+          required: false,
+        }
       - label: "Links"
         name: "links"
         widget: "list"
-        summary: '{{fields.host}} - {{fields.link}}'
+        summary: "{{fields.host}} - {{fields.link}}"
         fields:
-          - { label: "Host", name: "host", widget: "select", options: ["Google Drive", "MediaFire", "ModDB"]}
+          - {
+              label: "Host",
+              name: "host",
+              widget: "select",
+              options: ["Google Drive", "MediaFire", "ModDB"],
+            }
           - { label: "Link", name: "link", widget: "string" }
   - name: "blog"
     label: "Blog"
@@ -104,21 +127,37 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     extension: "md"
     editor:
-     preview: false
+      preview: false
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Authors", name: "author", widget: "list", field: {label: "Author", name: "name", widget: "select", options: [
-            { label: "PikeStance", value: "pike" },
-            { label: "Quintus Hortensius Hortalus", value: "QHH" },
-            { label: "oleg2242", value: "oleg2242" },
-            { label: "Cro_Hunger999", value: "cro" },
-            { label: "TSanada", value: "tsanada" },
-            { label: "Herr Doctor", value: "HD" },
-            { label: "mad orc", value: "madOrc" },
-            { label: "myfate", value: "myfate" },
-            { label: "Sir John Barlow", value: "SirJohn" }]}}
-      - { label: "Published", name: "published", widget: "boolean", default: false }
+      - {
+          label: "Authors",
+          name: "author",
+          widget: "list",
+          field: {
+            label: "Author",
+            name: "name",
+            widget: "select",
+            options: [
+              { label: "PikeStance", value: "pike" },
+              { label: "Quintus Hortensius Hortalus", value: "QHH" },
+              { label: "oleg2242", value: "oleg2242" },
+              { label: "Cro_Hunger999", value: "cro" },
+              { label: "TSanada", value: "tsanada" },
+              { label: "Herr Doctor", value: "HD" },
+              { label: "mad orc", value: "madOrc" },
+              { label: "myfate", value: "myfate" },
+              { label: "Sir John Barlow", value: "SirJohn" },
+            ],
+          },
+        }
+      - {
+          label: "Published",
+          name: "published",
+          widget: "boolean",
+          default: false,
+        }
       - { label: "Excerpt", name: "excerpt", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "factions"
@@ -128,7 +167,7 @@ collections:
     slug: "{{slug}}"
     extension: "md"
     editor:
-     preview: false
+      preview: false
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Slug", name: "slug", widget: "string" }

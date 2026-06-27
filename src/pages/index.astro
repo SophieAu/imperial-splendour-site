@@ -6,25 +6,21 @@ import { pageTitle, slugs, paths } from "../config";
 import LinkButton from "../components/LinkButton.astro";
 import { home as strings } from "../strings";
 
-const page = (await getEntry("pages", "index"))!;
+const page = (await getEntry("homePage", "index"))!;
 const { title, description, heroImage, heroLogo, heroLogoAlt, heroText, infoBoxes } = page.data;
 
 const images = import.meta.glob<{ default: ImageMetadata }>("/content/_img/*.{jpeg,jpg,png,gif}");
-if (!heroLogo || !images[heroLogo])
-  throw new Error(`"${heroLogo}" does not exist in glob: "/content/_img/*.{jpeg,jpg,png,gif}"`);
-if (!heroImage || !images[heroImage])
-  throw new Error(`"${heroImage}" does not exist in glob: "/content/_img/*.{jpeg,jpg,png,gif}"`);
 
 const heroBg = (await images[heroImage]()).default;
 const heroWebp = await getImage({ src: heroBg, format: "webp" });
 const heroJpg = await getImage({ src: heroBg, format: "jpeg" });
 ---
 
-<Layout title={pageTitle(title)} description={description || ""} slug={slugs.home}>
+<Layout title={pageTitle(title)} description={description} slug={slugs.home}>
   <section class="hero-root">
     <h1 class="sr-only">{title}</h1>
     <div class="hero-body" style={`--hero-webp: url('${heroWebp.src}'); --hero-jpg: url('${heroJpg.src}')`}>
-      {heroLogo && <Image class="hero-logo" src={images[heroLogo]()} alt={heroLogoAlt || ""} />}
+      <Image class="hero-logo" src={images[heroLogo]()} alt={heroLogoAlt} />
       <p class="hero-text">{heroText}</p>
     </div>
     <LinkButton href={paths.downloadIndex} class="download-btn">{strings.downloadButton}</LinkButton>
@@ -32,7 +28,7 @@ const heroJpg = await getImage({ src: heroBg, format: "jpeg" });
 
   <section class="info-boxes">
     {
-      infoBoxes?.map(({ text, image, imgAlt }, i) => (
+      infoBoxes.map(({ text, image, imgAlt }, i) => (
         <>
           <Image src={images[image]()} alt={imgAlt} data-pos={i % 2} class="info-img" />
           <p class="info-text">{text}</p>

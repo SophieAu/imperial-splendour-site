@@ -6,7 +6,6 @@ import { z } from 'astro/zod';
 const transformImagePath = (imagePath: string) => imagePath.replace("..", `/content`)
 
 const image = () => z.string().transform((imgPath) => transformImagePath(imgPath))
-const optionalImage = () => z.string().optional().transform((imgPath) => imgPath ? transformImagePath(imgPath) : undefined)
 
 const posts = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './content/posts' }),
@@ -50,24 +49,45 @@ const comments = defineCollection({
   }),
 });
 
-const pages = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './content/pages' }),
+const homePage = defineCollection({
+  loader: glob({ pattern: 'index.md', base: './content/pages' }),
   schema: z.object({
     title: z.string(),
-    description: z.string().optional().default(''),
-    heroImage: optionalImage(),
-    heroLogo: optionalImage(),
-    heroLogoAlt: z.string().optional(),
-    heroText: z.string().optional(),
-    infoBoxes: z
-      .array(z.object({ text: z.string(), image: image(), imgAlt: z.string() }))
-      .optional(),
-    contributorsTitle: z.string().optional(),
-    contributors: z.array(z.object({ avatar: image(), name: z.string() })).optional(),
-    mainDownload: z.string().optional(),
-    messageTitle: z.string().optional(),
-    image: optionalImage(),
-    imageAlt: z.string().optional(),
+    description: z.string(),
+    heroImage: image(),
+    heroLogo: image(),
+    heroLogoAlt: z.string(),
+    heroText: z.string(),
+    infoBoxes: z.array(z.object({ text: z.string(), image: image(), imgAlt: z.string() })),
+  }),
+});
+
+const aboutPage = defineCollection({
+  loader: glob({ pattern: 'about.md', base: './content/pages' }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    contributorsTitle: z.string(),
+    contributors: z.array(z.object({ avatar: image(), name: z.string() })),
+  }),
+});
+
+const termsPage = defineCollection({
+  loader: glob({ pattern: 'terms-of-service.md', base: './content/pages' }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+  }),
+});
+
+const notFoundPage = defineCollection({
+  loader: glob({ pattern: '404.md', base: './content/pages' }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    messageTitle: z.string(),
+    image: image(),
+    imageAlt: z.string(),
   }),
 });
 
@@ -93,7 +113,10 @@ export const collections = {
   factions,
   downloads,
   comments,
-  pages,
+  homePage,
+  aboutPage,
+  termsPage,
+  notFoundPage,
   download,
   general,
 };
