@@ -16,7 +16,7 @@
   const IMAGE_WIDTH = 132;
   const IMAGE_HEIGHT = 66;
 
-  const circularModulo = (base: number) => (value: number) => (value < 0 ? base + value : value % base);
+  const circularModulo = (base: number) => (value: number) => ((value % base) + base) % base;
 
   const selectedIndex = $derived(factions.findIndex((f) => f.slug === selected));
   const modulo = $derived(circularModulo(factions.length));
