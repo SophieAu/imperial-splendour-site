@@ -4,18 +4,20 @@ import { getImage, Image } from "astro:assets";
 import Layout from "../Layout.astro";
 import { pageTitle, slugs, paths } from "../config";
 import LinkButton from "../components/LinkButton.astro";
-import heroBg from "@assets/hero_bg.jpg";
 import { home as strings } from "../strings";
 
 const page = (await getEntry("pages", "index"))!;
-const { title, description, heroLogo, heroLogoAlt, heroText, infoBoxes } = page.data;
-
-const heroWebp = await getImage({ src: heroBg, format: "webp" });
-const heroJpg = await getImage({ src: heroBg, format: "jpeg" });
+const { title, description, heroImage, heroLogo, heroLogoAlt, heroText, infoBoxes } = page.data;
 
 const images = import.meta.glob<{ default: ImageMetadata }>("/content/_img/*.{jpeg,jpg,png,gif}");
 if (!heroLogo || !images[heroLogo])
   throw new Error(`"${heroLogo}" does not exist in glob: "/conten/_img/*.{jpeg,jpg,png,gif}"`);
+if (!heroImage || !images[heroImage])
+  throw new Error(`"${heroImage}" does not exist in glob: "/conten/_img/*.{jpeg,jpg,png,gif}"`);
+
+const heroBg = (await images[heroImage]()).default;
+const heroWebp = await getImage({ src: heroBg, format: "webp" });
+const heroJpg = await getImage({ src: heroBg, format: "jpeg" });
 ---
 
 <Layout title={pageTitle(title)} description={description || ""} slug={slugs.home}>
