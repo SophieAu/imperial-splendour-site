@@ -14,8 +14,13 @@ const VERSION_SOURCE =
 
 const handler = async () => {
   try {
-    const response = await (await fetch(VERSION_SOURCE)).text();
-    const version = response.trim()
+    const response = await fetch(VERSION_SOURCE)
+    if (!response.ok) throw new Error(`${response.status}: ${response.statusText}`)
+
+    const responseText = await response.text();
+    const version = responseText.trim()
+    if (!version) throw new Error("Version is empty")
+
     return { statusCode: 200, headers, body: version }
   }
   catch (e) {
