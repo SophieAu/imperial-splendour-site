@@ -8,7 +8,7 @@ const page = (await getEntry("notFoundPage", "404"))!;
 const { title, description, messageTitle, image, imageAlt } = page.data;
 const { Content } = await render(page);
 
-const images = import.meta.glob<{ default: ImageMetadata }>("/content/_img/*.{jpeg,jpg,png,gif}");
+const images = import.meta.glob<{ default: ImageMetadata }>("/content/_img/*.{jpeg,jpg,png,gif,webp,svg}");
 ---
 
 <Layout title={pageTitle(title)} description={description} slug={slugs.notFound}>

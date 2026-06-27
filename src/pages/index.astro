@@ -9,7 +9,7 @@ import { home as strings } from "../strings";
 const page = (await getEntry("homePage", "index"))!;
 const { title, description, heroImage, heroLogo, heroLogoAlt, heroText, infoBoxes } = page.data;
 
-const images = import.meta.glob<{ default: ImageMetadata }>("/content/_img/*.{jpeg,jpg,png,gif}");
+const images = import.meta.glob<{ default: ImageMetadata }>("/content/_img/*.{jpeg,jpg,png,gif,webp,svg}");
 
 const heroBg = (await images[heroImage]()).default;
 const heroWebp = await getImage({ src: heroBg, format: "webp" });

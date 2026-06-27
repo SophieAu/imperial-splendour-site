@@ -19,7 +19,7 @@ const { faction, factionList } = Astro.props;
 const { title, description, slug } = faction.data;
 const { Content } = await render(faction);
 
-const images = import.meta.glob<{ default: ImageMetadata }>("/content/_img/*.{jpeg,jpg,png,gif}");
+const images = import.meta.glob<{ default: ImageMetadata }>("/content/_img/*.{jpeg,jpg,png,gif,webp,svg}");
 const resolvedFactions = await Promise.all(
   factionList.map(async (f) => {
     const flagImage = await images[f.data.flag]();
