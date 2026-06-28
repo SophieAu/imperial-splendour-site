@@ -1,7 +1,4 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
 //@ts-check
-
-import 'isomorphic-fetch';
 
 const headers = {
   'Access-Control-Allow-Origin': '*',

@@ -15,14 +15,12 @@
 	"dependencies": {
 		"@astrojs/rss": "^4.0.18",
 		"astro": "^7.0.3",
-		"isomorphic-fetch": "^3.0.0",
 		"svelte": "^5.55.0"
 	},
 	"devDependencies": {
 		"@astrojs/check": "^0.9.9",
 		"@astrojs/sitemap": "^3.7.3",
 		"@astrojs/svelte": "^9.0.0",
-		"@types/isomorphic-fetch": "^0.0.39",
 		"typescript": "^6.0.3"
 	}
 }
