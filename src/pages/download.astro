@@ -49,36 +49,32 @@ const others = allDownloads.filter((d) => d.data.title !== mainDownload);
     !!others.length && (
       <section class="other-container">
         <h2 class="dl-heading">{strings.otherDownloadsSectionTitle}</h2>
-        <table class="mirror-table">
-          <tbody>
-            {others.map(({ data: { title, releaseBlog, installationTutorial, links } }) => (
-              <tr>
-                <td>
-                  <p>{title}</p>
-                  {releaseBlog && (
-                    <p>
-                      <a href={releaseBlog}>{strings.releaseBlogLinkTitle}</a>
-                    </p>
-                  )}
-                  {installationTutorial && (
-                    <p>
-                      <a href={installationTutorial}>{strings.installTutorialLinkTitle}</a>
-                    </p>
-                  )}
-                </td>
-                <td>
-                  {links.map(({ host, link }) => (
-                    <p>
-                      <a href={link} target="_blank" rel="noopener noreferrer">
-                        {host}
-                      </a>
-                    </p>
-                  ))}
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+        <ul class="mirror-list">
+          {others.map(({ data: { title, releaseBlog, installationTutorial, links } }) => (
+            <li>
+              <div class="dl-info">
+                <p>{title}</p>
+                {releaseBlog && (
+                  <p>
+                    <a href={releaseBlog}>{strings.releaseBlogLinkTitle}</a>
+                  </p>
+                )}
+                {installationTutorial && (
+                  <p>
+                    <a href={installationTutorial}>{strings.installTutorialLinkTitle}</a>
+                  </p>
+                )}
+              </div>
+              <div class="dl-links">
+                {links.map(({ host, link }) => (
+                  <a href={link} target="_blank" rel="noopener noreferrer">
+                    {host}
+                  </a>
+                ))}
+              </div>
+            </li>
+          ))}
+        </ul>
       </section>
     )
   }
@@ -88,6 +84,7 @@ const others = allDownloads.filter((d) => d.data.title !== mainDownload);
   .container {
     display: grid;
     grid-template-columns: 1fr max-content;
+    grid-template-rows: min-content min-content 1fr;
     align-items: start;
     margin: 2rem 0;
     padding-top: 0.5rem;
@@ -153,34 +150,44 @@ const others = allDownloads.filter((d) => d.data.title !== mainDownload);
     margin: 2.5rem 0 5.5rem;
   }
 
-  .mirror-table {
-    border-collapse: collapse;
-    width: 100%;
-    margin: auto;
+  .mirror-list {
+    display: grid;
+    grid-template-columns: 1fr max-content;
 
-    td {
-      padding: 1rem;
-      border: solid 1px;
-      font-size: 1.25rem;
+    margin: 0;
+    padding: 0;
+    border: solid 1px;
 
-      &:first-child {
-        vertical-align: top;
+    font-size: 1.25rem;
 
-        p {
-          margin: 0;
-        }
-      }
+    li {
+      display: grid;
+      grid-template-columns: subgrid;
+      grid-column: span 2;
+    }
 
-      &:nth-child(2) {
-        white-space: nowrap;
+    li:not(:first-child) {
+      border-top: solid 1px;
+    }
+  }
 
-        p {
-          margin: 0;
-        }
-        p:not(:last-child) {
-          margin-bottom: 0.25rem;
-        }
-      }
+  .dl-info {
+    padding: 1rem;
+    border-right: solid 1px;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .dl-links {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    padding-right: 2rem;
+
+    a:not(:last-child) {
+      margin-bottom: 0.25rem;
     }
   }
 </style>
