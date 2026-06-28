@@ -1,6 +1,6 @@
 ---
 import { getImage } from "astro:assets";
-import btnPng from "@assets/texture_btn.png";
+import btnTexture from "@assets/texture_btn.png";
 
 type Props = (astroHTML.JSX.AnchorHTMLAttributes | astroHTML.JSX.ButtonHTMLAttributes) & {
   href?: string;
@@ -9,8 +9,8 @@ type Props = (astroHTML.JSX.AnchorHTMLAttributes | astroHTML.JSX.ButtonHTMLAttri
 
 const { href, class: className, ...rest } = Astro.props;
 
-const btnWebp = await getImage({ src: btnPng, format: "webp" });
-const btnOptimised = await getImage({ src: btnPng, format: "png" });
+const btnWebp = await getImage({ src: btnTexture, format: "webp" });
+const btnPng = await getImage({ src: btnTexture });
 ---
 
 {
@@ -18,7 +18,7 @@ const btnOptimised = await getImage({ src: btnPng, format: "png" });
     <a
       href={href}
       class:list={["link-button", className]}
-      style={`--btn-webp: url('${btnWebp.src}'); --btn-png: url('${btnOptimised.src}')`}
+      style={`--btn-webp: url('${btnWebp.src}'); --btn-png: url('${btnPng.src}')`}
       {...(rest as astroHTML.JSX.AnchorHTMLAttributes)}
     >
       <slot />
@@ -26,7 +26,7 @@ const btnOptimised = await getImage({ src: btnPng, format: "png" });
   ) : (
     <button
       class:list={["link-button", className]}
-      style={`--btn-webp: url('${btnWebp.src}'); --btn-png: url('${btnOptimised.src}')`}
+      style={`--btn-webp: url('${btnWebp.src}'); --btn-png: url('${btnPng.src}')`}
       {...(rest as astroHTML.JSX.ButtonHTMLAttributes)}
     >
       <slot />
