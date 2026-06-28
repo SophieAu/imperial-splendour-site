@@ -2,8 +2,9 @@
 import { getCollection, getEntry, render } from "astro:content";
 import Layout from "../Layout.astro";
 import LinkButton from "../components/LinkButton.astro";
-import { hostImages, pageTitle, slugs } from "../config";
+import { pageTitle, slugs } from "../config";
 import { download as strings } from "../strings";
+import { hostImages } from "../thirdPartyConfig";
 
 const page = (await getEntry("download", "download"))!;
 const { title, description, mainDownload } = page.data;
