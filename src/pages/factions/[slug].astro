@@ -4,6 +4,7 @@ import { getImage } from "astro:assets";
 import FlagCarousel from "../../components/FlagCarousel/FlagCarousel.svelte";
 import Layout from "../../Layout.astro";
 import { pageTitle, slugs } from "../../config";
+import { FLAG_WIDTH } from "../../components/FlagCarousel/constants";
 
 export async function getStaticPaths() {
   const factions = await getCollection("factions");
@@ -23,7 +24,10 @@ const images = import.meta.glob<{ default: ImageMetadata }>("/content/_img/*.{jp
 const resolvedFactions = await Promise.all(
   factionList.map(async (f) => {
     const flagImage = await images[f.data.flag]();
-    const optimizedFlag = await getImage({ src: flagImage.default, width: 132 }); /* IMAGE_WIDTH from Flag Carousel */
+    const optimizedFlag = await getImage({
+      src: flagImage.default,
+      width: FLAG_WIDTH,
+    });
     return { ...f.data, flag: optimizedFlag.src };
   }),
 );
