@@ -48,8 +48,6 @@ export const buildCreditsCopyright = (builders: NameLinkTuple[]) =>
 
 export const imgAlt = {
   avatar: (name: string) => `Avatar of ${name}`,
-  filehost: (platform: string) => `Download RotR 1.1.9b on ${platform}`,
-  socialMedia: (platform: string) => `Imperial Splendour on ${platform}`,
 };
 
 export const hostImages: Record<string, string> = {
