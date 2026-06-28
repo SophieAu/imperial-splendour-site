@@ -6,23 +6,27 @@ const formatStringList = (strings: string[]) => {
 
     return strings.reduce((s, b, i) => {
         let prefix: string;
-        if (isFirst(i)) prefix = '';
-        else if (isLast(i)) prefix = ' and ';
-        else prefix = ', ';
+        if (isFirst(i)) prefix = "";
+        else if (isLast(i)) prefix = " and ";
+        else prefix = ", ";
 
         return s + prefix + b;
-    }, '');
+    }, "");
 };
 
 export const formatLinkList = (items: NameLinkTuple[]) =>
-    formatStringList(items.map(({ name, link }) => `<a href="${link}" target="_blank" rel="noopener noreferrer">${name}</a>`));
+    formatStringList(
+        items.map(({ name, link }) =>
+            `<a href="${link}" target="_blank" rel="noopener noreferrer">${name}</a>`
+        ),
+    );
 
 export const createPostSlug = (title: string, date: Date) => {
-    const dateStr = date.toISOString().split('T')[0]; // YYYY-MM-DD
+    const dateStr = date.toISOString().split("T")[0]; // YYYY-MM-DD
     const slug = title
         .toLowerCase()
-        .replace(/\s/g, '-')
-        .replace(/[^\w-]/g, '')
-        .replace(/(-+)/g, '-');
+        .replace(/\s/g, "-")
+        .replace(/[^\w-]/g, "")
+        .replace(/(-+)/g, "-");
     return `${dateStr}-${slug}`;
-}
+};

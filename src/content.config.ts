@@ -1,14 +1,15 @@
-import { defineCollection } from 'astro:content';
-import { glob } from 'astro/loaders';
-import { z } from 'astro/zod';
+import { defineCollection } from "astro:content";
+import { glob } from "astro/loaders";
+import { z } from "astro/zod";
 
+const transformImagePath = (imagePath: string) =>
+  imagePath.replace("..", `/content`);
 
-const transformImagePath = (imagePath: string) => imagePath.replace("..", `/content`)
-
-const image = () => z.string().transform((imgPath) => transformImagePath(imgPath))
+const image = () =>
+  z.string().transform((imgPath) => transformImagePath(imgPath));
 
 const posts = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './content/posts' }),
+  loader: glob({ pattern: "**/*.md", base: "./content/posts" }),
   schema: z.object({
     title: z.string(),
     date: z.coerce.date(),
@@ -19,27 +20,29 @@ const posts = defineCollection({
 });
 
 const factions = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './content/factions' }),
+  loader: glob({ pattern: "**/*.md", base: "./content/factions" }),
   schema: z.object({
     title: z.string(),
     slug: z.string(),
     flag: image(),
-    description: z.string().optional().default(''),
+    description: z.string().optional().default(""),
   }),
 });
 
 const downloads = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './content/downloads' }),
+  loader: glob({ pattern: "**/*.md", base: "./content/downloads" }),
   schema: z.object({
     title: z.string(),
     releaseBlog: z.string().optional(),
     installationTutorial: z.string().optional(),
-    links: z.array(z.object({ host: z.string(), link: z.string() })).default([]),
+    links: z.array(z.object({ host: z.string(), link: z.string() })).default(
+      [],
+    ),
   }),
 });
 
 const comments = defineCollection({
-  loader: glob({ pattern: '**/*.yml', base: './content/comments' }),
+  loader: glob({ pattern: "**/*.yml", base: "./content/comments" }),
   schema: z.object({
     _id: z.string(),
     blogSlug: z.string(),
@@ -50,7 +53,7 @@ const comments = defineCollection({
 });
 
 const homePage = defineCollection({
-  loader: glob({ pattern: 'index.md', base: './content/pages' }),
+  loader: glob({ pattern: "index.md", base: "./content/pages" }),
   schema: z.object({
     title: z.string(),
     description: z.string(),
@@ -58,12 +61,14 @@ const homePage = defineCollection({
     heroLogo: image(),
     heroLogoAlt: z.string(),
     heroText: z.string(),
-    infoBoxes: z.array(z.object({ text: z.string(), image: image(), imgAlt: z.string() })),
+    infoBoxes: z.array(
+      z.object({ text: z.string(), image: image(), imgAlt: z.string() }),
+    ),
   }),
 });
 
 const aboutPage = defineCollection({
-  loader: glob({ pattern: 'about.md', base: './content/pages' }),
+  loader: glob({ pattern: "about.md", base: "./content/pages" }),
   schema: z.object({
     title: z.string(),
     description: z.string(),
@@ -73,7 +78,7 @@ const aboutPage = defineCollection({
 });
 
 const termsPage = defineCollection({
-  loader: glob({ pattern: 'terms-of-service.md', base: './content/pages' }),
+  loader: glob({ pattern: "terms-of-service.md", base: "./content/pages" }),
   schema: z.object({
     title: z.string(),
     description: z.string(),
@@ -81,7 +86,7 @@ const termsPage = defineCollection({
 });
 
 const notFoundPage = defineCollection({
-  loader: glob({ pattern: '404.md', base: './content/pages' }),
+  loader: glob({ pattern: "404.md", base: "./content/pages" }),
   schema: z.object({
     title: z.string(),
     description: z.string(),
@@ -92,16 +97,16 @@ const notFoundPage = defineCollection({
 });
 
 const download = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './content/download' }),
+  loader: glob({ pattern: "**/*.md", base: "./content/download" }),
   schema: z.object({
     title: z.string(),
-    description: z.string().optional().default(''),
+    description: z.string().optional().default(""),
     mainDownload: z.string(),
   }),
 });
 
 const general = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './content/general' }),
+  loader: glob({ pattern: "**/*.md", base: "./content/general" }),
   schema: z.object({
     siteBuilders: z.array(z.object({ name: z.string(), link: z.string() })),
     socialMedia: z.array(z.object({ platform: z.string(), link: z.string() })),

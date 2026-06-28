@@ -1,22 +1,26 @@
-import rss from '@astrojs/rss';
-import { getCollection } from 'astro:content';
-import type { APIContext } from 'astro';
-import { BASE_URL, paths } from '../config';
-import { createPostSlug } from '../util';
+import rss from "@astrojs/rss";
+import { getCollection } from "astro:content";
+import type { APIContext } from "astro";
+import { BASE_URL, paths } from "../config";
+import { createPostSlug } from "../util";
 
 export async function GET(context: APIContext) {
-  const posts = await getCollection('posts', p => p.data.published);
-  const sorted = posts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+  const posts = await getCollection("posts", (p) => p.data.published);
+  const sorted = posts.sort((a, b) =>
+    b.data.date.getTime() - a.data.date.getTime()
+  );
 
   return rss({
-    title: 'Imperial Splendour',
-    description: 'Imperial Splendour: Rise of the Republic — development blog',
+    title: "Imperial Splendour",
+    description: "Imperial Splendour: Rise of the Republic — development blog",
     site: context.site!,
-    items: sorted.map(post => ({
+    items: sorted.map((post) => ({
       title: post.data.title,
       pubDate: post.data.date,
       description: post.data.excerpt,
-      link: `${BASE_URL}${paths.blog}/${createPostSlug(post.data.title, post.data.date)}`,
+      link: `${BASE_URL}${paths.blog}/${
+        createPostSlug(post.data.title, post.data.date)
+      }`,
     })),
   });
 }
