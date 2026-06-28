@@ -10,6 +10,16 @@
     showMenu = !showMenu;
     document.body.style.overflow = showMenu ? "hidden" : "";
   }
+
+  $effect(() => {
+    // removes the overflow:hidden if you resize with an open mobile menu
+    const mq = window.matchMedia("(min-width: 1024px)");
+
+    const onChange = (e: MediaQueryListEvent) => e.matches && showMenu && toggleMenu();
+
+    mq.addEventListener("change", onChange);
+    return () => mq.removeEventListener("change", onChange);
+  });
 </script>
 
 <header class="headfoot mobile-header">
