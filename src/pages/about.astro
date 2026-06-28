@@ -1,8 +1,9 @@
 ---
 import { getEntry, render } from "astro:content";
 import Layout from "../Layout.astro";
-import { imgAlt, pageTitle, slugs } from "../config";
+import { pageTitle, slugs } from "../config";
 import { Image } from "astro:assets";
+import { about as strings } from "../strings";
 
 const AVATAR_WIDTH = 66;
 const AVATAR_HEIGHT = 88;
@@ -25,7 +26,12 @@ const images = import.meta.glob<{ default: ImageMetadata }>("/content/_img/*.{jp
         <ul class="avatars">
           {contributors.map(({ avatar, name }) => (
             <li class="contributor" style={`--avatar-width: ${AVATAR_WIDTH}px`}>
-              <Image src={images[avatar]()} alt={imgAlt.avatar(name)} width={AVATAR_WIDTH} height={AVATAR_HEIGHT} />
+              <Image
+                src={images[avatar]()}
+                alt={strings.avatarImgAlt(name)}
+                width={AVATAR_WIDTH}
+                height={AVATAR_HEIGHT}
+              />
               <p>{name}</p>
             </li>
           ))}

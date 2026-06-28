@@ -1,5 +1,9 @@
 import { paths } from './config';
 
+export const about = {
+  avatarImgAlt: (name: string) => `Avatar of ${name}`,
+};
+
 export const blog = {
   pageDescription:
     'Follow the Imperial Splendour team and get a deep insight into the development process.',

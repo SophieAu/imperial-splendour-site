@@ -18,7 +18,6 @@ export const pageTitle = (title: string) => `${title} | Imperial Splendour`;
 export const slugs = {
   home: '',
   downloadIndex: 'download',
-  downloadRotR: 'download/rotr',
   blog: 'blog',
   about: 'about',
   termsOfService: 'terms-of-service',
@@ -29,7 +28,6 @@ export const slugs = {
 export const paths = {
   home: '/',
   downloadIndex: `/${slugs.downloadIndex}`,
-  downloadRotR: `/${slugs.downloadRotR}`,
   blog: `/${slugs.blog}`,
   about: `/${slugs.about}`,
   termsOfService: `/${slugs.termsOfService}`,
@@ -46,9 +44,6 @@ export const buildCreditsCopyright = (builders: NameLinkTuple[]) =>
   `© ${new Date().getFullYear()}, ${formatLinkList(builders)}`
 
 
-export const imgAlt = {
-  avatar: (name: string) => `Avatar of ${name}`,
-};
 
 export const hostImages: Record<string, string> = {
   'ModDB': 'https://button.moddb.com/download/medium/236128.png',
