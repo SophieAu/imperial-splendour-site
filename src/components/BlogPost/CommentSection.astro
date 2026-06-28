@@ -1,19 +1,13 @@
 ---
 import type { CollectionEntry } from "astro:content";
 import { post as strings } from "../../strings";
+import { formatDate } from "../../util";
 
 interface Props {
   comments: CollectionEntry<"comments">[];
 }
 
 const { comments } = Astro.props;
-
-const formatDate = (dateStr: string) =>
-  new Date(dateStr).toLocaleDateString("en-US", {
-    month: "long",
-    day: "numeric",
-    year: "numeric",
-  });
 ---
 
 <section class="comments">

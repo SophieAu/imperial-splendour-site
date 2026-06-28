@@ -21,6 +21,13 @@ export const formatLinkList = (items: NameLinkTuple[]) =>
         ),
     );
 
+export const formatDate = (date: string | Date) =>
+    new Date(date).toLocaleDateString("en-US", {
+        month: "long",
+        day: "numeric",
+        year: "numeric",
+    });
+
 export const createPostSlug = (title: string, date: Date) => {
     const dateStr = date.toISOString().split("T")[0]; // YYYY-MM-DD
     const slug = title

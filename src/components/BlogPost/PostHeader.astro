@@ -1,4 +1,6 @@
 ---
+import { formatDate } from "../../util";
+
 interface Props {
   title: string;
   date: Date;
@@ -7,11 +9,7 @@ interface Props {
 }
 
 const { title, date, link, as: As } = Astro.props;
-const formattedDate = date.toLocaleDateString("en-US", {
-  month: "long",
-  day: "numeric",
-  year: "numeric",
-});
+const formattedDate = formatDate(date);
 ---
 
 <header class="post-header">
