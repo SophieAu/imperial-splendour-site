@@ -10,7 +10,7 @@ mainDownload: "Imperial Splendour - Rise of the Republic v1.2 Northern Wars Upda
 * At least 13GB hard drive space
 * To use the launcher: at least Windows 7
 
-If you need help, check out the [installation tutorial](/blog/2022-08-01-rotr-12-installation-tutorial/).
+If you need help, check out the [installation tutorial](/blog/2022-08-01-rotr-1-2-installation-tutorial/).
 
 **More download options are below, just scroll down. Please read the following informations!**
 

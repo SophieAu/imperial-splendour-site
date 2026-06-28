@@ -1,0 +1,13 @@
+# Blog posts whose slug changed when URLs moved from title-derived to filename-based.
+# Old slugs collapsed "1.2"/"v1.3" to "12"/"v13"; preserve inbound links and SEO.
+/blog/2018-07-08-rotr-119-patch-2  /blog/2018-07-08-rotr-1-1-9-patch-2  301
+/blog/2018-07-28-rotr-119b-patch-3  /blog/2018-07-28-rotr-patch-3  301
+/blog/2019-02-03-imperial-splendour-rise-of-the-republic-v12-january-preview  /blog/2019-02-03-rise-of-the-republic-v1-2-january-preview  301
+/blog/2022-08-01-all-factions-unlocked-submod-for-rotr-12  /blog/2022-08-01-all-factions-unlocked-submod-for-rotr-1-2  301
+/blog/2022-08-01-rise-of-the-republic-12-northern-wars-update-release-blog  /blog/2022-08-01-rise-of-the-republic-1-2-northern-wars-update-release-blog  301
+/blog/2022-08-01-rotr-12-installation-tutorial  /blog/2022-08-01-rotr-1-2-installation-tutorial  301
+/blog/2024-02-22-imperial-splendour-rise-of-the-republic-v13-february-developers-blog  /blog/2024-02-22-imperial-splendour-rise-of-the-republic-v1-3-february-preview  301
+/blog/2024-03-01-imperial-splendour-rise-of-the-republic-v13-beta-testing-program  /blog/2024-03-01-imperial-splendour-rise-of-the-republic-v1-3-beta-testing-program  301
+/blog/2024-03-10-imperial-splendour-rise-of-the-republic-v13-poland-developers-blog  /blog/2024-03-10-imperial-splendour-rise-of-the-republic-v1-3-poland-developers-blog  301
+/blog/2024-03-18-imperial-splendour-rise-of-the-republic-v121-release-blog  /blog/2024-03-18-imperial-splendour-rise-of-the-republic-v1-2-1-release-blog  301
+/blog/2024-06-15-imperial-splendour-rise-of-the-republic-v13-united-provinces  /blog/2024-06-15-imperial-splendour-rise-of-the-republic-v1-3-united-provinces-developers-blog  301

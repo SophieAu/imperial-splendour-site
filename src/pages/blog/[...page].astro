@@ -3,7 +3,6 @@ import { getCollection } from "astro:content";
 import PostHeader from "../../components/BlogPost/PostHeader.astro";
 import Layout from "../../Layout.astro";
 import { pageTitle, slugs, paths } from "../../config";
-import { createPostSlug } from "../../util";
 import { blog as strings } from "../../strings";
 
 export async function getStaticPaths() {
@@ -28,15 +27,12 @@ const { posts, currentPage, totalPages } = Astro.props;
 <Layout title={pageTitle("Blog")} description={strings.pageDescription} slug={slugs.blog}>
   <ul class="post-list">
     {
-      posts.map((post) => {
-        const slug = createPostSlug(post.data.title, post.data.date);
-        return (
-          <li class="post">
-            <PostHeader title={post.data.title} date={post.data.date} link={`${paths.blog}/${slug}`} as="h2" />
-            <p class="excerpt">{post.data.excerpt}</p>
-          </li>
-        );
-      })
+      posts.map((post) => (
+        <li class="post">
+          <PostHeader title={post.data.title} date={post.data.date} link={`${paths.blog}/${post.id}`} as="h2" />
+          <p class="excerpt">{post.data.excerpt}</p>
+        </li>
+      ))
     }
   </ul>
   <section class="pagination">

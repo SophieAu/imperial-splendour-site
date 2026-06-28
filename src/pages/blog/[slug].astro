@@ -5,13 +5,13 @@ import NewsletterSignup from "../../components/BlogPost/NewsletterSignup.astro";
 import PostHeader from "../../components/BlogPost/PostHeader.astro";
 import Layout from "../../Layout.astro";
 import { pageTitle, slugs } from "../../config";
-import { createPostSlug, formatLinkList } from "../../util";
+import { formatLinkList } from "../../util";
 import { post as strings } from "../../strings";
 
 export async function getStaticPaths() {
   const allPosts = await getCollection("posts", (p) => p.data.published);
   return allPosts.map((post) => ({
-    params: { slug: createPostSlug(post.data.title, post.data.date) },
+    params: { slug: post.id },
     props: { post },
   }));
 }
