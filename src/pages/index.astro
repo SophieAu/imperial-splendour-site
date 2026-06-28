@@ -36,19 +36,6 @@ const heroJpg = await getImage({ src: heroBg, format: "jpeg" });
       ))
     }
   </section>
-
-  <script>
-    const w = window as any;
-    if (w.netlifyIdentity) {
-      w.netlifyIdentity.on("init", (user: any) => {
-        if (!user) {
-          w.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
-          });
-        }
-      });
-    }
-  </script>
 </Layout>
 
 <style>
