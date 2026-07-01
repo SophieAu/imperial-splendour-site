@@ -1,17 +1,15 @@
 ---
-import { getCollection } from "astro:content";
 import { pageTitle, paths } from "../../config";
 import Layout from "../../Layout.astro";
 import { factions as strings } from "../../strings";
+import { getFirstFactionSlug } from "../../util";
 
-const factions = await getCollection("factions");
-// Redirect to first faction alphabetically by slug
-const first = factions.sort((a, b) => a.data.slug.localeCompare(b.data.slug))[0];
+const firstFactionSlug = getFirstFactionSlug();
 ---
 
 <Layout
     title={pageTitle(strings.title)}
     description={strings.description}
     slug={paths.factions}
-    redirect={`${paths.factions}/${first.data.slug}`}
+    redirect={`${paths.factions}/${firstFactionSlug}`}
 />

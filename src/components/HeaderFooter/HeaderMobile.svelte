@@ -4,6 +4,8 @@
   import { header as strings } from "../../strings";
   import HeaderLogo from "./HeaderLogo.svelte";
 
+  let { menuItems }: { menuItems: { title: string; path: string }[] } = $props();
+
   let showMenu = $state(false);
 
   function toggleMenu() {
@@ -38,7 +40,7 @@
 
   <nav id="mobile-menu" class:visible={showMenu}>
     <ul>
-      {#each strings.menuItems as item}
+      {#each menuItems as item}
         <li>
           <a href={item.path} onclick={toggleMenu}>{item.title}</a>
         </li>

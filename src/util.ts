@@ -1,3 +1,10 @@
+import { getCollection } from "astro:content";
+
+export const getFirstFactionSlug = async () => {
+    const factions = await getCollection("factions");
+    return factions.sort((a, b) => a.data.slug.localeCompare(b.data.slug))[0].data.slug;
+};
+
 export type NameLinkTuple = { name: string; link: string };
 
 const formatStringList = (strings: string[]) => {
